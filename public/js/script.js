@@ -1,0 +1,292 @@
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Datos de competencias digitales basados en los resultados reales de Profermaco
+            const competencias = [
+                {
+                    name: "Comunicación y Colaboración Digital",
+                    score: 30,
+                    color: "#3498db",
+                    description: "Primera etapa de desarrollo en herramientas de comunicación digital, con oportunidades de crecimiento en videollamadas y espacios colaborativos."
+                },
+                {
+                    name: "Pensamiento Crítico Digital",
+                    score: 40,
+                    color: "#2ecc71", 
+                    description: "Fundamentos establecidos para analizar información digital, con potencial de desarrollo en evaluación de herramientas tecnológicas."
+                },
+                {
+                    name: "Resiliencia y Flexibilidad Digital",
+                    score: 38,
+                    color: "#e74c3c",
+                    description: "Capacidad inicial para mantener rendimiento ante cambios tecnológicos, con gran potencial de fortalecimiento gradual."
+                },
+                {
+                    name: "Agilidad Digital",
+                    score: 36,
+                    color: "#f1c40f",
+                    description: "Habilidades fundamentales para integrar procesos digitales, con oportunidades de desarrollo en velocidad de adaptación."
+                },
+                {
+                    name: "Alfabetización Tecnológica",
+                    score: 28,
+                    color: "#9b59b6",
+                    description: "Fundamentos en herramientas básicas como hojas de cálculo y almacenamiento en la nube, listos para profundizar."
+                },
+                {
+                    name: "Resolución de Problemas Tecnológicos",
+                    score: 30,
+                    color: "#e67e22",
+                    description: "Base establecida para identificar y resolver problemas tecnológicos comunes en el entorno farmacéutico."
+                },
+                {
+                    name: "Ciberseguridad",
+                    score: 28,
+                    color: "#34495e",
+                    description: "Conocimientos iniciales en seguridad digital y gestión de contraseñas, área importante para el sector farmacéutico."
+                },
+                {
+                    name: "Creación de Contenido Digital",
+                    score: 25,
+                    color: "#16a085",
+                    description: "Competencias iniciales en edición básica de contenido, perfectas para desarrollar material ferretero digital."
+                },
+                {
+                    name: "Análisis de Datos",
+                    score: 35,
+                    color: "#c0392b",
+                    description: "Fundamentos en interpretación de datos ferreteros, área estratégica con gran potencial de crecimiento."
+                },
+                {
+                    name: "Marketing Digital",
+                    score: 18,
+                    color: "#8e44ad",
+                    description: "Oportunidad excepcional para desarrollar competencias especializadas en marketing ferretero digital."
+                }
+            ];
+            
+            // Ordenar competencias por puntaje (de mayor a menor)
+            competencias.sort((a, b) => b.score - a.score);
+            
+            // Configuración del gráfico radial
+            const svgWidth = 500;
+            const svgHeight = 500;
+            const centerX = svgWidth / 2;
+            const centerY = svgHeight / 2;
+            const maxRadius = Math.min(centerX, centerY) - 30;
+            
+            const svg = document.getElementById('radial-chart');
+            
+            // Crear grupos para los elementos
+            const bgCirclesGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            bgCirclesGroup.setAttribute("id", "background-circles");
+            
+            const segmentsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            segmentsGroup.setAttribute("id", "segments");
+            
+            const labelsGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            labelsGroup.setAttribute("id", "labels");
+            
+            svg.appendChild(bgCirclesGroup);
+            svg.appendChild(segmentsGroup);
+            svg.appendChild(labelsGroup);
+            
+            // Espacio entre cada segmento
+            const segmentGap = 4;
+            // Ancho de cada segmento
+            const segmentWidth = (maxRadius - (competencias.length - 1) * segmentGap) / competencias.length;
+            
+            // Crear círculos de fondo
+            for (let i = 0; i < competencias.length; i++) {
+                const radius = maxRadius - i * (segmentWidth + segmentGap);
+                
+                // Círculo de fondo
+                const bgCircle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                bgCircle.setAttribute("cx", centerX);
+                bgCircle.setAttribute("cy", centerY);
+                bgCircle.setAttribute("r", radius);
+                bgCircle.setAttribute("fill", "none");
+                bgCircle.setAttribute("stroke", "#e0e0e0");
+                bgCircle.setAttribute("stroke-width", segmentWidth);
+                bgCircle.setAttribute("opacity", "0.5");
+                bgCirclesGroup.appendChild(bgCircle);
+            }
+            
+            // Crear segmentos para cada competencia
+            competencias.forEach((competencia, index) => {
+                const radius = maxRadius - index * (segmentWidth + segmentGap);
+                const circumference = 2 * Math.PI * radius;
+                const scorePercentage = competencia.score / 100;
+                const dashLength = circumference * scorePercentage;
+                const dashGap = circumference - dashLength;
+                
+                // Crear segmento
+                const segment = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                segment.setAttribute("cx", centerX);
+                segment.setAttribute("cy", centerY);
+                segment.setAttribute("r", radius);
+                segment.setAttribute("fill", "none");
+                segment.setAttribute("stroke", competencia.color);
+                segment.setAttribute("stroke-width", segmentWidth);
+                segment.setAttribute("stroke-dasharray", dashLength + " " + dashGap);
+                segment.setAttribute("stroke-dashoffset", circumference * 0.25); // Inicio en la parte superior
+                segment.setAttribute("class", "segment");
+                segment.setAttribute("data-index", index);
+                segmentsGroup.appendChild(segment);
+                
+                // Crear etiquetas de porcentaje al final de cada barra
+                const endAngle = Math.PI * 2 * scorePercentage - Math.PI / 2;
+                const labelEndX = centerX + Math.cos(endAngle) * radius;
+                const labelEndY = centerY + Math.sin(endAngle) * radius;
+                
+                // Crear un fondo para la etiqueta para mejor legibilidad
+                const labelBg = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                labelBg.setAttribute("cx", labelEndX);
+                labelBg.setAttribute("cy", labelEndY);
+                labelBg.setAttribute("r", 12);
+                labelBg.setAttribute("fill", competencia.color);
+                labelBg.setAttribute("stroke", "white");
+                labelBg.setAttribute("stroke-width", "1");
+                labelsGroup.appendChild(labelBg);
+                
+                // Crear etiqueta de porcentaje
+                const percentLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                percentLabel.setAttribute("x", labelEndX);
+                percentLabel.setAttribute("y", labelEndY);
+                percentLabel.setAttribute("text-anchor", "middle");
+                percentLabel.setAttribute("dominant-baseline", "middle");
+                percentLabel.setAttribute("fill", "white");
+                percentLabel.setAttribute("font-size", "0.65rem");
+                percentLabel.setAttribute("font-weight", "bold");
+                percentLabel.textContent = competencia.score + "%";
+                labelsGroup.appendChild(percentLabel);
+                
+                // Crear elemento de leyenda
+                const legendItems = document.getElementById('legend-items');
+                const legendItem = document.createElement('div');
+                legendItem.className = 'legend-item';
+                legendItem.setAttribute('data-index', index);
+                
+                legendItem.innerHTML = `
+                    <div class="legend-color" style="background-color: ${competencia.color}"></div>
+                    <div class="legend-content">
+                        <div class="legend-header">
+                            <div class="legend-name">${competencia.name}</div>
+                            <div class="legend-score">${competencia.score}%</div>
+                        </div>
+                        <div class="legend-description">${competencia.description}</div>
+                    </div>
+                `;
+                
+                legendItems.appendChild(legendItem);
+                
+                // Interactividad entre el gráfico y la leyenda
+                segment.addEventListener('mouseover', function() {
+                    this.setAttribute('stroke-width', parseInt(segmentWidth * 1.2) + 'px');
+                    const index = this.getAttribute('data-index');
+                    const legendItem = document.querySelector(`.legend-item[data-index="${index}"]`);
+                    legendItem.style.backgroundColor = '#f5f5f5';
+                });
+                
+                segment.addEventListener('mouseout', function() {
+                    this.setAttribute('stroke-width', segmentWidth + 'px');
+                    const index = this.getAttribute('data-index');
+                    const legendItem = document.querySelector(`.legend-item[data-index="${index}"]`);
+                    legendItem.style.backgroundColor = '';
+                });
+                
+                legendItem.addEventListener('mouseover', function() {
+                    this.style.backgroundColor = '#f5f5f5';
+                    const index = this.getAttribute('data-index');
+                    const segment = document.querySelector(`.segment[data-index="${index}"]`);
+                    segment.setAttribute('stroke-width', parseInt(segmentWidth * 1.2) + 'px');
+                });
+                
+                legendItem.addEventListener('mouseout', function() {
+                    this.style.backgroundColor = '';
+                    const index = this.getAttribute('data-index');
+                    const segment = document.querySelector(`.segment[data-index="${index}"]`);
+                    segment.setAttribute('stroke-width', segmentWidth + 'px');
+                });
+            });
+
+            // Función para animar los gráficos circulares de progreso
+            function animateCircularProgress() {
+                const progressBars = document.querySelectorAll('.progress-bar');
+                const progressPercentages = [21, 16, 26]; // Porcentajes de progreso para Profermaco
+                
+                progressBars.forEach((bar, index) => {
+                    const radius = 75;
+                    const circumference = 2 * Math.PI * radius;
+                    const percentage = progressPercentages[index];
+                    const strokeDasharray = (percentage / 100) * circumference;
+                    const strokeDashoffset = circumference - strokeDasharray;
+                    
+                    // Establecer valores iniciales
+                    bar.style.strokeDasharray = circumference;
+                    bar.style.strokeDashoffset = circumference;
+                    
+                    // Animar después de un pequeño retraso
+                    setTimeout(() => {
+                        bar.style.strokeDasharray = `${strokeDasharray} ${circumference}`;
+                        bar.style.strokeDashoffset = '0';
+                    }, 500 + index * 200);
+                });
+            }
+
+            // Iniciar animación de los gráficos circulares
+            animateCircularProgress();
+        });
+        
+        // FUNCIONES PARA EL ROADMAP DINÁMICO
+        function togglePhase(phaseNumber) {
+            const content = document.getElementById(`phase-${phaseNumber}`);
+            const phase = content.parentElement;
+            
+            // Toggle active state
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                phase.classList.remove('active');
+            } else {
+                // Close all other phases
+                document.querySelectorAll('.toggle-content').forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.phase').forEach(p => p.classList.remove('active'));
+                
+                // Open selected phase
+                content.classList.add('active');
+                phase.classList.add('active');
+                
+                // Update progress based on phase
+                updateProgress(phaseNumber);
+            }
+        }
+        
+        function updateProgress(phase) {
+            const progressFill = document.getElementById('overall-progress');
+            const milestones = document.querySelectorAll('.milestone-dot');
+            
+            const progressValues = [0, 25, 50, 75, 100]; // Ajustado para 4 fases
+            progressFill.style.width = progressValues[phase] + '%';
+            
+            // Update milestone states
+            milestones.forEach((milestone, index) => {
+                milestone.classList.remove('completed', 'current');
+                if (index < phase) {
+                    milestone.classList.add('completed');
+                } else if (index === phase) {
+                    milestone.classList.add('current');
+                }
+            });
+        }
+        
+        // Initialize roadmap with first phase open
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                togglePhase(1);
+                
+                // Animate progress bar on load
+                setTimeout(() => {
+                    document.getElementById('overall-progress').style.width = '25%';
+                }, 1000);
+            }, 500);
+        });
+    
