@@ -64,3 +64,31 @@ const {
         <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);" set:html={resumen} />
     </div>
 </section>
+
+<script>
+    function animateCircularProgress() {
+        const progressBars = document.querySelectorAll('.progress-bar');
+        const progressPercentages = [21, 16, 26]; // Porcentajes de progreso para Profermaco
+        
+        progressBars.forEach((bar: any, index: any) => {
+            const radius = 75;
+            const circumference = 2 * Math.PI * radius;
+            const percentage = progressPercentages[index];
+            const strokeDasharray = (percentage / 100) * circumference;
+            const strokeDashoffset = circumference - strokeDasharray;
+            
+            // Establecer valores iniciales
+            bar.style.strokeDasharray = circumference;
+            bar.style.strokeDashoffset = circumference;
+            
+            // Animar después de un pequeño retraso
+            setTimeout(() => {
+                bar.style.strokeDasharray = `${strokeDasharray} ${circumference}`;
+                bar.style.strokeDashoffset = '0';
+            }, 500 + index * 200);
+        });
+    }
+
+    // Iniciar animación de los gráficos circulares
+    animateCircularProgress();
+</script>

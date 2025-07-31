@@ -106,3 +106,58 @@ const {
         </div>
     </div>
 </section>
+
+<script>
+    function togglePhase(phaseNumber: any) {
+        const content = document.getElementById(`phase-${phaseNumber}`);
+        const phase = content?.parentElement;
+        
+        // Toggle active state
+        if (content?.classList.contains('active')) {
+            content.classList.remove('active');
+            phase?.classList.remove('active');
+        } else {
+            // Close all other phases
+            document.querySelectorAll('.toggle-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.phase').forEach(p => p.classList.remove('active'));
+            
+            // Open selected phase
+            content?.classList.add('active');
+            phase?.classList.add('active');
+            
+            // Update progress based on phase
+            updateProgress(phaseNumber);
+        }
+    }
+    
+    function updateProgress(phase: any) {
+        const progressFill = document.getElementById('overall-progress') as HTMLElement;
+        const milestones = document.querySelectorAll('.milestone-dot') as NodeListOf<HTMLElement>;
+        
+        const progressValues = [0, 25, 50, 75, 100]; // Ajustado para 4 fases
+        progressFill.style.width = progressValues[phase] + '%';
+        
+        // Update milestone states
+        milestones.forEach((milestone, index) => {
+            milestone.classList.remove('completed', 'current');
+            if (index < phase) {
+                milestone.classList.add('completed');
+            } else if (index === phase) {
+                milestone.classList.add('current');
+            }
+        });
+    }
+    
+    // Initialize roadmap with first phase open
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(() => {
+            togglePhase(1);
+            
+            // Animate progress bar on load
+            setTimeout(() => {
+              const progressFill = document.getElementById('overall-progress') as HTMLElement;
+              progressFill.style.width = '25%';
+            }, 1000);
+        }, 500);
+    });
+</script>
