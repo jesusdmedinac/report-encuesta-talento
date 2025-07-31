@@ -1,8 +1,12 @@
 ---
+const {
+    anio = new Date().getFullYear(),
+    texto = "Skilt. Todos los derechos reservados."
+} = Astro.props;
 ---
 <footer class="footer">
     <div class="container">
         <div class="logo-footer">skilt<span class="dot">.</span></div>
-        <p>© 2025 Skilt. Todos los derechos reservados.</p>
+        <p>© {anio} {texto}</p>
     </div>
 </footer>

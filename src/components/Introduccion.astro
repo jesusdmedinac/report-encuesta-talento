@@ -1,8 +1,12 @@
 ---
+const {
+    titulo = "Introducción",
+    contenido = "Profermaco se encuentra en una etapa inicial muy prometedora de su proceso de transformación digital ferretera. La evaluación aplicada a 22 colaboradores revela una organización con fundamentos sólidos y una extraordinaria oportunidad de crecimiento digital. Los resultados muestran que el equipo está en la primera fase de desarrollo digital, con una cultura organizacional receptiva al cambio y una actitud positiva hacia las nuevas tecnologías. Esta etapa representa el punto de partida ideal para implementar una estrategia integral de transformación que permita a Profermaco posicionarse como líder en innovación digital del sector ferretero y de materiales de construcción en el mercado ecuatoriano."
+} = Astro.props;
 ---
 <section>
-    <h2>Introducción</h2>
+    <h2>{titulo}</h2>
     <div class="exec-summary">
-        <p>Profermaco se encuentra en una etapa inicial muy prometedora de su proceso de transformación digital ferretera. La evaluación aplicada a 22 colaboradores revela una organización con fundamentos sólidos y una extraordinaria oportunidad de crecimiento digital. Los resultados muestran que el equipo está en la primera fase de desarrollo digital, con una cultura organizacional receptiva al cambio y una actitud positiva hacia las nuevas tecnologías. Esta etapa representa el punto de partida ideal para implementar una estrategia integral de transformación que permita a Profermaco posicionarse como líder en innovación digital del sector ferretero y de materiales de construcción en el mercado ecuatoriano.</p>
+        <p>{contenido}</p>
     </div>
 </section>

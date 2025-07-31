@@ -1,91 +1,66 @@
 ---
+const {
+    titulo = "Uso de la Inteligencia Artificial",
+    graficos = [
+        {
+            titulo: "Adopción de IA",
+            porcentaje: 21,
+            descripcion: "Profermaco está en la primera etapa de adopción de IA, con un 21% de avance que representa una base sólida para comenzar a implementar soluciones de inteligencia artificial específicas para la industria ferretera y de materiales de construcción.",
+            idGradiente: "gradient-adoption",
+            coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"]
+        },
+        {
+            titulo: "Uso en el Trabajo",
+            porcentaje: 16,
+            descripcion: "El uso práctico de IA en las operaciones diarias está en fase inicial (16%), representando una extraordinaria oportunidad para integrar herramientas de inteligencia artificial en procesos ferreteros como gestión de inventarios y atención al cliente.",
+            idGradiente: "gradient-usage",
+            coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"]
+        },
+        {
+            titulo: "Ética y Responsabilidad",
+            porcentaje: 26,
+            descripcion: "La conciencia ética en IA está en desarrollo (26%), proporcionando una base fundamental para implementar prácticas responsables de inteligencia artificial, especialmente importante en el sector ferretero donde la precisión en recomendaciones de productos y servicios es crítica.",
+            idGradiente: "gradient-ethics",
+            coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"]
+        }
+    ],
+    resumen = "<strong>Oportunidad estratégica:</strong> Los resultados de Profermaco en inteligencia artificial muestran una primera etapa de desarrollo con fundamentos prometedores. Con adopción en 21%, uso práctico en 16% y conciencia ética en 26%, la empresa está perfectamente posicionada para implementar una estrategia gradual de IA enfocada en aplicaciones ferreterías específicas. Las principales oportunidades se encuentran en automatización de procesos de inventario, sistemas de recomendación para clientes y análisis predictivo de demanda de materiales de construcción."
+} = Astro.props;
 ---
 <section>
-    <h2>Uso de la Inteligencia Artificial</h2>
+    <h2>{titulo}</h2>
     
     <div class="circular-charts-wrapper">
-        <div class="circular-chart-item">
-            <div class="chart-title">Adopción de IA</div>
-            <div class="circular-progress">
-                <svg class="progress-ring" width="180" height="180">
-                    <defs>
-                        <linearGradient id="gradient-adoption" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#34D399;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#6EE7B7;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <circle class="progress-bg" cx="90" cy="90" r="75"></circle>
-                    <circle class="progress-bar" cx="90" cy="90" r="75" stroke="url(#gradient-adoption)"></circle>
-                </svg>
-                <div class="progress-text">
-                    <div class="progress-percentage">21%</div>
-                    <div class="progress-label">Avance</div>
+        {graficos.map((grafico: any) => (
+            <div class="circular-chart-item">
+                <div class="chart-title">{grafico.titulo}</div>
+                <div class="circular-progress">
+                    <svg class="progress-ring" width="180" height="180">
+                        <defs>
+                            <linearGradient id={grafico.idGradiente} x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style={`stop-color:${grafico.coloresGradiente[0]};stop-opacity:1`} />
+                                <stop offset="50%" style={`stop-color:${grafico.coloresGradiente[1]};stop-opacity:1`} />
+                                <stop offset="100%" style={`stop-color:${grafico.coloresGradiente[2]};stop-opacity:1`} />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress-bg" cx="90" cy="90" r="75"></circle>
+                        <circle class="progress-bar" cx="90" cy="90" r="75" stroke={`url(#${grafico.idGradiente})`} data-percent={grafico.porcentaje}></circle>
+                    </svg>
+                    <div class="progress-text">
+                        <div class="progress-percentage">{grafico.porcentaje}%</div>
+                        <div class="progress-label">Avance</div>
+                    </div>
+                </div>
+                <div class="chart-details">
+                    <div class="chart-description">
+                        {grafico.descripcion}
+                    </div>
                 </div>
             </div>
-            <div class="chart-details">
-                <div class="chart-description">
-                    Profermaco está en la primera etapa de adopción de IA, con un 21% de avance que representa una base sólida para comenzar a implementar soluciones de inteligencia artificial específicas para la industria ferretera y de materiales de construcción.
-                </div>
-            </div>
-        </div>
-        
-        <div class="circular-chart-item">
-            <div class="chart-title">Uso en el Trabajo</div>
-            <div class="circular-progress">
-                <svg class="progress-ring" width="180" height="180">
-                    <defs>
-                        <linearGradient id="gradient-usage" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#FBBF24;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#FDE047;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <circle class="progress-bg" cx="90" cy="90" r="75"></circle>
-                    <circle class="progress-bar" cx="90" cy="90" r="75" stroke="url(#gradient-usage)"></circle>
-                </svg>
-                <div class="progress-text">
-                    <div class="progress-percentage">16%</div>
-                    <div class="progress-label">Avance</div>
-                </div>
-            </div>
-            <div class="chart-details">
-                <div class="chart-description">
-                    El uso práctico de IA en las operaciones diarias está en fase inicial (16%), representando una extraordinaria oportunidad para integrar herramientas de inteligencia artificial en procesos ferreteros como gestión de inventarios y atención al cliente.
-                </div>
-            </div>
-        </div>
-        
-        <div class="circular-chart-item">
-            <div class="chart-title">Ética y Responsabilidad</div>
-            <div class="circular-progress">
-                <svg class="progress-ring" width="180" height="180">
-                    <defs>
-                        <linearGradient id="gradient-ethics" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                            <stop offset="50%" style="stop-color:#A78BFA;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#C4B5FD;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <circle class="progress-bg" cx="90" cy="90" r="75"></circle>
-                    <circle class="progress-bar" cx="90" cy="90" r="75" stroke="url(#gradient-ethics)"></circle>
-                </svg>
-                <div class="progress-text">
-                    <div class="progress-percentage">26%</div>
-                    <div class="progress-label">Avance</div>
-                </div>
-            </div>
-            <div class="chart-details">
-                <div class="chart-description">
-                    La conciencia ética en IA está en desarrollo (26%), proporcionando una base fundamental para implementar prácticas responsables de inteligencia artificial, especialmente importante en el sector ferretero donde la precisión en recomendaciones de productos y servicios es crítica.
-                </div>
-            </div>
-        </div>
+        ))}
     </div>
     
     <div style="background: #f8f9fa; border-radius: 12px; padding: 20px; margin-top: 25px; border-left: 4px solid #2563EB;">
-        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);">
-            <strong>Oportunidad estratégica:</strong> Los resultados de Profermaco en inteligencia artificial muestran una primera etapa de desarrollo con fundamentos prometedores. Con adopción en 21%, uso práctico en 16% y conciencia ética en 26%, la empresa está perfectamente posicionada para implementar una estrategia gradual de IA enfocada en aplicaciones ferreterías específicas. Las principales oportunidades se encuentran en automatización de procesos de inventario, sistemas de recomendación para clientes y análisis predictivo de demanda de materiales de construcción.
-        </p>
+        <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);" set:html={resumen} />
     </div>
 </section>

@@ -1,20 +1,51 @@
 ---
+const {
+    titulo = "Madurez Digital",
+    puntuacionGeneral = 2.1,
+    puntuacionPromedioSector = 1.7,
+    puntuacionMetaSector = 3.75,
+    nombreEmpresa = "Profermaco",
+    parrafoIntroductorio = "Profermaco se encuentra en la primera etapa de madurez digital (2.1/10), con una excelente oportunidad de crecimiento de 1.65 puntos hacia la meta del sector (3.75/10). Este indicador refleja un potencial extraordinario para desarrollar la capacidad organizacional de aprovechar tecnologías digitales de manera estratégica en el sector ferretero y de materiales de construcción.",
+    componentes = [
+        {
+            nombre: "Capacidad para aprender nuevas tecnologías",
+            puntuacion: 2.1,
+            descripcion: "El equipo de Profermaco está en la primera etapa de desarrollo de habilidades tecnológicas. Existe una excelente oportunidad para implementar programas de capacitación específicos para el sector ferretero que fortalezcan la adaptación a nuevas herramientas digitales.",
+            color: "var(--color-company)",
+            colorGradiente: "#4387ff",
+            meta: 3.75
+        },
+        {
+            nombre: "Actitud frente a nuevas tecnologías",
+            puntuacion: 2.1,
+            descripcion: "El equipo muestra una actitud receptiva hacia las nuevas tecnologías, estableciendo una base sólida para el crecimiento. Con el apoyo adecuado y programas de capacitación bien estructurados, esta actitud positiva puede transformarse en competencias digitales avanzadas aplicadas al sector ferretero y de materiales de construcción.",
+            color: "var(--color-gap)",
+            colorGradiente: "#a78bfa",
+            meta: 7.5
+        }
+    ]
+} = Astro.props;
+
+const medidaGeneralStyle = `width: ${puntuacionGeneral * 10}%; left: 0;`;
+const gapGeneralStyle = `width: ${(puntuacionMetaSector - puntuacionGeneral) * 10}%; left: ${puntuacionGeneral * 10}%;`;
+const promedioGeneralStyle = `left: ${puntuacionPromedioSector * 10}%;`;
+const targetGeneralStyle = `left: ${puntuacionMetaSector * 10}%;`;
 ---
 <section>
-    <h2>Madurez Digital</h2>
+    <h2>{titulo}</h2>
     
     <div class="bullet-graph">
         <div class="bullet-title">
-            <span>2.1/10</span>
+            <span>{puntuacionGeneral}/10</span>
         </div>
         <div class="bullet-container">
             <div class="bullet-range bullet-range-poor"></div>
             <div class="bullet-range bullet-range-fair"></div>
             <div class="bullet-range bullet-range-good"></div>
-            <div class="bullet-measure" style="width: 21%; left: 0;"></div>
-            <div class="bullet-gap" style="width: 16.5%; left: 21%;"></div>
-            <div class="bullet-average" style="left: 17%;"></div>
-            <div class="bullet-target" style="left: 37.5%;"></div>
+            <div class="bullet-measure" style={medidaGeneralStyle}></div>
+            <div class="bullet-gap" style={gapGeneralStyle}></div>
+            <div class="bullet-average" style={promedioGeneralStyle}></div>
+            <div class="bullet-target" style={targetGeneralStyle}></div>
         </div>
         <div class="bullet-labels">
             <div>0</div>
@@ -38,11 +69,11 @@
             </div>
             <div class="bullet-item">
                 <div class="legend-color" style="background-color: var(--color-company);"></div>
-                <span>Profermaco</span>
+                <span>{nombreEmpresa}</span>
             </div>
             <div class="bullet-item">
                 <div class="legend-color" style="background-color: var(--color-average); width: 2px; height: 15px;"></div>
-                <span>Promedio sector (1.7)</span>
+                <span>Promedio sector ({puntuacionPromedioSector})</span>
             </div>
             <div class="bullet-item gap-item">
                 <div class="legend-color" style="background-color: var(--color-gap);"></div>
@@ -54,49 +85,30 @@
             </div>
         </div>
     </div>
-    <p>Profermaco se encuentra en la primera etapa de madurez digital (2.1/10), con una excelente oportunidad de crecimiento de 1.65 puntos hacia la meta del sector (3.75/10). Este indicador refleja un potencial extraordinario para desarrollar la capacidad organizacional de aprovechar tecnologías digitales de manera estratégica en el sector ferretero y de materiales de construcción.</p>
+    <p>{parrafoIntroductorio}</p>
     
     <h4 style="margin-top: 30px; color: var(--primary); font-size: 1.15rem;">Componentes de la Madurez Digital</h4>
     
     <div style="display: grid; grid-template-columns: 1fr; gap: 25px; margin: 20px 0 30px;">
-        <!-- Capacidad para aprender nuevas tecnologías -->
-        <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <span style="font-weight: 600; font-size: 1rem;">Capacidad para aprender nuevas tecnologías</span>
-                <span style="background: var(--color-company); color: white; font-weight: 700; padding: 4px 12px; border-radius: 20px; font-size: 0.9rem;">2.1/10</span>
+        {componentes.map((componente: any) => (
+            <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                    <span style="font-weight: 600; font-size: 1rem;">{componente.nombre}</span>
+                    <span style={`background: ${componente.color}; color: white; font-weight: 700; padding: 4px 12px; border-radius: 20px; font-size: 0.9rem;`}>{componente.puntuacion}/10</span>
+                </div>
+                <div style="position: relative; height: 16px; background: #f0f0f0; border-radius: 8px; overflow: hidden; margin-bottom: 8px;">
+                    <div style={`position: absolute; height: 100%; width: ${componente.puntuacion * 10}%; background: linear-gradient(to right, ${componente.color}, ${componente.colorGradiente}); border-radius: 8px 0 0 8px;`}></div>
+                    <div style={`position: absolute; height: 24px; width: 2px; background: var(--color-target); top: -4px; left: ${componente.meta * 10}%; box-shadow: 0 0 5px rgba(17, 24, 39, 0.3);`}></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-secondary);">
+                    <span>0</span>
+                    <span>2.5</span>
+                    <span>5</span>
+                    <span>7.5</span>
+                    <span>10</span>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.95rem; color: var(--text-secondary);">{componente.descripcion}</p>
             </div>
-            <div style="position: relative; height: 16px; background: #f0f0f0; border-radius: 8px; overflow: hidden; margin-bottom: 8px;">
-                <div style="position: absolute; height: 100%; width: 21%; background: linear-gradient(to right, var(--color-company), #4387ff); border-radius: 8px 0 0 8px;"></div>
-                <div style="position: absolute; height: 24px; width: 2px; background: var(--color-target); top: -4px; left: 37.5%; box-shadow: 0 0 5px rgba(17, 24, 39, 0.3);"></div>
-            </div>
-            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-secondary);">
-                <span>0</span>
-                <span>2.5</span>
-                <span>5</span>
-                <span>7.5</span>
-                <span>10</span>
-            </div>
-            <p style="margin-top: 15px; font-size: 0.95rem; color: var(--text-secondary);">El equipo de Profermaco está en la primera etapa de desarrollo de habilidades tecnológicas. Existe una excelente oportunidad para implementar programas de capacitación específicos para el sector ferretero que fortalezcan la adaptación a nuevas herramientas digitales.</p>
-        </div>
-        
-        <!-- Actitud frente a nuevas tecnologías -->
-        <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <span style="font-weight: 600; font-size: 1rem;">Actitud frente a nuevas tecnologías</span>
-                <span style="background: var(--color-gap); color: white; font-weight: 700; padding: 4px 12px; border-radius: 20px; font-size: 0.9rem;">2.1/10</span>
-            </div>
-            <div style="position: relative; height: 16px; background: #f0f0f0; border-radius: 8px; overflow: hidden; margin-bottom: 8px;">
-                <div style="position: absolute; height: 100%; width: 21%; background: linear-gradient(to right, var(--color-gap), #a78bfa); border-radius: 8px 0 0 8px;"></div>
-                <div style="position: absolute; height: 24px; width: 2px; background: var(--color-target); top: -4px; left: 75%; box-shadow: 0 0 5px rgba(17, 24, 39, 0.3);"></div>
-            </div>
-            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-secondary);">
-                <span>0</span>
-                <span>2.5</span>
-                <span>5</span>
-                <span>7.5</span>
-                <span>10</span>
-            </div>
-            <p style="margin-top: 15px; font-size: 0.95rem; color: var(--text-secondary);">El equipo muestra una actitud receptiva hacia las nuevas tecnologías, estableciendo una base sólida para el crecimiento. Con el apoyo adecuado y programas de capacitación bien estructurados, esta actitud positiva puede transformarse en competencias digitales avanzadas aplicadas al sector ferretero y de materiales de construcción.</p>
-        </div>
+        ))}
     </div>
 </section>

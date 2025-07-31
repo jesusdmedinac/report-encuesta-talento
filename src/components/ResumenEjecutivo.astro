@@ -1,115 +1,131 @@
 ---
+const {
+    titulo = "Resumen Ejecutivo",
+    resumenGeneral = "El diagnóstico integral de transformación digital de Profermaco revela una organización ferretera en la primera etapa de desarrollo digital, con bases sólidas y extraordinarias oportunidades de crecimiento. Los resultados reflejan un potencial excepcional para evolucionar hacia un modelo digital intermedio que genere ventajas competitivas reales en el mercado ferretero ecuatoriano, optimizando procesos operativos y mejorando significativamente la experiencia del cliente.",
+    puntuacionesDimensiones = [
+        { nombre: "Madurez Digital", puntuacion: 2.1, color: "#F59E0B" },
+        { nombre: "Competencias Digitales", puntuacion: 1.5, color: "#EF4444" },
+        { nombre: "Uso de IA", puntuacion: 1.2, color: "#8B5CF6" },
+        { nombre: "Cultura Digital", puntuacion: 2.0, color: "#F59E0B" }
+    ],
+    puntuacionGeneral = {
+        puntuacion: 1.7,
+        etiqueta: "PUNTUACIÓN GENERAL",
+        descripcion: "Primera Etapa de Desarrollo Digital"
+    },
+    fortalezas = [
+        "<strong>Madurez digital en desarrollo (2.1/10)</strong> - La mejor puntuación organizacional",
+        "<strong>Cultura organizacional receptiva (2.0/10)</strong> - Base sólida para el cambio",
+        "<strong>Liderazgo comprometido</strong> - Dirección alineada con transformación digital",
+        "<strong>Equipo de 22 colaboradores</strong> - Tamaño ideal para transformación ágil"
+    ],
+    oportunidades = [
+        "<strong>Competencias digitales (1.5/10)</strong> - Excelente oportunidad para capacitación especializada",
+        "<strong>Uso práctico de IA (16%)</strong> - Potencial para automatización ferretera",
+        "<strong>Formación digital estructurada</strong> - Oportunidad para crear programa especializado",
+        "<strong>Margen de crecimiento (2.05 puntos)</strong> - Oportunidad realista y alcanzable"
+    ],
+    resumenPlanAccion = [
+        {
+            titulo: "🏗️ Fundamentos (0-4 meses)",
+            color: "#EF4444",
+            puntos: [
+                "Excel intermedio para gestión de inventarios ferreteros",
+                "Google Workspace para optimizar comunicación del equipo",
+                "Introducción práctica a ChatGPT para atención al cliente"
+            ]
+        },
+        {
+            titulo: "⚙️ Automatización (4-8 meses)",
+            color: "#F59E0B",
+            puntos: [
+                "WhatsApp Business para consultas automáticas",
+                "Optimización de sistemas POS ferreteros",
+                "Herramientas de análisis de ventas con Google Analytics"
+            ]
+        },
+        {
+            titulo: "📈 Análisis (8-12 meses)",
+            color: "#3B82F6",
+            puntos: [
+                "Excel avanzado con tablas dinámicas para análisis",
+                "Power BI para dashboards visuales de ferretería",
+                "Técnicas básicas de forecasting de inventarios"
+            ]
+        },
+        {
+            titulo: "🌟 Consolidación (12-15 meses)",
+            color: "#10B981",
+            puntos: [
+                "Liderazgo digital para gestión de equipos",
+                "Estrategias de e-commerce farmacéutico",
+                "Certificación en transformación digital para retail"
+            ]
+        }
+    ],
+    conclusion = "<strong>Profermaco está en la posición ideal para desarrollar gradualmente sus competencias digitales ferreterías mediante un plan realista de 15 meses.</strong> Con una inversión estratégica en 240 horas de capacitación práctica, la organización puede alcanzar el nivel intermedio (3.75/5) utilizando recursos educativos accesibles y especializados: Microsoft Learn, Google Academy, Meta Business Academy, y capacitación con proveedores locales especializados en tecnología para el sector ferretero."
+} = Astro.props;
 ---
 <section>
-    <h2>Resumen Ejecutivo</h2>
+    <h2>{titulo}</h2>
     
     <div class="exec-summary">
-        <p>El diagnóstico integral de transformación digital de Profermaco revela una organización ferretera en la primera etapa de desarrollo digital, con bases sólidas y extraordinarias oportunidades de crecimiento. Los resultados reflejan un potencial excepcional para evolucionar hacia un modelo digital intermedio que genere ventajas competitivas reales en el mercado ferretero ecuatoriano, optimizando procesos operativos y mejorando significativamente la experiencia del cliente.</p>
+        <p>{resumenGeneral}</p>
     </div>
 
-    <!-- Resumen de puntuaciones por dimensión -->
     <div style="background: white; border-radius: 16px; padding: 25px; margin: 25px 0; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
         <h3 style="color: var(--primary); margin-bottom: 20px; text-align: center;">Puntuación por Dimensiones</h3>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-            
-            <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 12px;">
-                <div style="font-size: 2rem; font-weight: 800; color: #F59E0B; line-height: 1;">2.1</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Madurez Digital</div>
-                <div style="width: 100%; height: 6px; background: #e9ecef; border-radius: 3px; margin-top: 8px;">
-                    <div style="width: 21%; height: 100%; background: #F59E0B; border-radius: 3px;"></div>
+            {puntuacionesDimensiones.map((dim: any) => (
+                <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 12px;">
+                    <div style={`font-size: 2rem; font-weight: 800; color: ${dim.color}; line-height: 1;`}>{dim.puntuacion}</div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">{dim.nombre}</div>
+                    <div style="width: 100%; height: 6px; background: #e9ecef; border-radius: 3px; margin-top: 8px;">
+                        <div style={`width: ${dim.puntuacion * 10}%; height: 100%; background: ${dim.color}; border-radius: 3px;`}></div>
+                    </div>
                 </div>
-            </div>
-            
-            <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 12px;">
-                <div style="font-size: 2rem; font-weight: 800; color: #EF4444; line-height: 1;">1.5</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Competencias Digitales</div>
-                <div style="width: 100%; height: 6px; background: #e9ecef; border-radius: 3px; margin-top: 8px;">
-                    <div style="width: 15%; height: 100%; background: #EF4444; border-radius: 3px;"></div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 12px;">
-                <div style="font-size: 2rem; font-weight: 800; color: #8B5CF6; line-height: 1;">1.2</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Uso de IA</div>
-                <div style="width: 100%; height: 6px; background: #e9ecef; border-radius: 3px; margin-top: 8px;">
-                    <div style="width: 12%; height: 100%; background: #8B5CF6; border-radius: 3px;"></div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 12px;">
-                <div style="font-size: 2rem; font-weight: 800; color: #F59E0B; line-height: 1;">2.0</div>
-                <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Cultura Digital</div>
-                <div style="width: 100%; height: 6px; background: #e9ecef; border-radius: 3px; margin-top: 8px;">
-                    <div style="width: 20%; height: 100%; background: #F59E0B; border-radius: 3px;"></div>
-                </div>
-            </div>
-            
+            ))}
         </div>
         
         <div style="text-align: center; margin-top: 25px; padding: 20px; background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(37, 99, 235, 0.02)); border-radius: 12px; border-left: 4px solid var(--color-company);">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-company); line-height: 1;">1.7</div>
-            <div style="font-size: 1rem; color: var(--primary); margin-top: 5px; font-weight: 600;">PUNTUACIÓN GENERAL</div>
-            <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 5px;">Primera Etapa de Desarrollo Digital</div>
+            <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-company); line-height: 1;">{puntuacionGeneral.puntuacion}</div>
+            <div style="font-size: 1rem; color: var(--primary); margin-top: 5px; font-weight: 600;">{puntuacionGeneral.etiqueta}</div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 5px;">{puntuacionGeneral.descripcion}</div>
         </div>
     </div>
 
-    <!-- Fortalezas y Oportunidades -->
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 30px 0;">
-        
-        <!-- Fortalezas Principales -->
         <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.02)); border-radius: 16px; padding: 25px; border-left: 4px solid #10B981;">
             <h4 style="color: #10B981; margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
                 <span style="font-size: 1.5rem;">💪</span>
                 Fortalezas Principales
             </h4>
             <div style="display: flex; flex-direction: column; gap: 15px;">
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #10B981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">1</span>
-                    <span style="font-size: 0.9rem;"><strong>Madurez digital en desarrollo (2.1/10)</strong> - La mejor puntuación organizacional</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #10B981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">2</span>
-                    <span style="font-size: 0.9rem;"><strong>Cultura organizacional receptiva (2.0/10)</strong> - Base sólida para el cambio</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #10B981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">3</span>
-                    <span style="font-size: 0.9rem;"><strong>Liderazgo comprometido</strong> - Dirección alineada con transformación digital</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #10B981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">4</span>
-                    <span style="font-size: 0.9rem;"><strong>Equipo de 22 colaboradores</strong> - Tamaño ideal para transformación ágil</span>
-                </div>
+                {fortalezas.map((item: any, index: any) => (
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="background: #10B981; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">{index + 1}</span>
+                        <span style="font-size: 0.9rem;" set:html={item} />
+                    </div>
+                ))}
             </div>
         </div>
 
-        <!-- Oportunidades de Crecimiento -->
         <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(245, 158, 11, 0.02)); border-radius: 16px; padding: 25px; border-left: 4px solid #F59E0B;">
             <h4 style="color: #F59E0B; margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
                 <span style="font-size: 1.5rem;">🌟</span>
                 Áreas de Mayor Potencial
             </h4>
             <div style="display: flex; flex-direction: column; gap: 15px;">
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #F59E0B; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">1</span>
-                    <span style="font-size: 0.9rem;"><strong>Competencias digitales (1.5/10)</strong> - Excelente oportunidad para capacitación especializada</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #F59E0B; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">2</span>
-                    <span style="font-size: 0.9rem;"><strong>Uso práctico de IA (16%)</strong> - Potencial para automatización ferretera</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #F59E0B; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">3</span>
-                    <span style="font-size: 0.9rem;"><strong>Formación digital estructurada</strong> - Oportunidad para crear programa especializado</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <span style="background: #F59E0B; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">4</span>
-                    <span style="font-size: 0.9rem;"><strong>Margen de crecimiento (2.05 puntos)</strong> - Oportunidad realista y alcanzable</span>
-                </div>
+                {oportunidades.map((item: any, index: any) => (
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="background: #F59E0B; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700;">{index + 1}</span>
+                        <span style="font-size: 0.9rem;" set:html={item} />
+                    </div>
+                ))}
             </div>
         </div>
     </div>
 
-    <!-- Resumen -->
     <div style="background: white; border-radius: 16px; padding: 30px; margin: 30px 0; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
         <h3 style="color: var(--primary); margin-bottom: 25px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
             <span style="font-size: 1.5rem;">🚀</span>
@@ -117,49 +133,18 @@
         </h3>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            
-            <div style="padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #EF4444;">
-                <h5 style="color: #EF4444; margin-bottom: 10px; font-size: 1rem;">🏗️ Fundamentos (0-4 meses)</h5>
-                <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                    <li>Excel intermedio para gestión de inventarios ferreteros</li>
-                    <li>Google Workspace para optimizar comunicación del equipo</li>
-                    <li>Introducción práctica a ChatGPT para atención al cliente</li>
-                </ul>
-            </div>
-            
-            <div style="padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #F59E0B;">
-                <h5 style="color: #F59E0B; margin-bottom: 10px; font-size: 1rem;">⚙️ Automatización (4-8 meses)</h5>
-                <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                    <li>WhatsApp Business para consultas automáticas</li>
-                    <li>Optimización de sistemas POS ferreteros</li>
-                    <li>Herramientas de análisis de ventas con Google Analytics</li>
-                </ul>
-            </div>
-            
-            <div style="padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #3B82F6;">
-                <h5 style="color: #3B82F6; margin-bottom: 10px; font-size: 1rem;">📈 Análisis (8-12 meses)</h5>
-                <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                    <li>Excel avanzado con tablas dinámicas para análisis</li>
-                    <li>Power BI para dashboards visuales de ferretería</li>
-                    <li>Técnicas básicas de forecasting de inventarios</li>
-                </ul>
-            </div>
-            
-            <div style="padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #10B981;">
-                <h5 style="color: #10B981; margin-bottom: 10px; font-size: 1rem;">🌟 Consolidación (12-15 meses)</h5>
-                <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                    <li>Liderazgo digital para gestión de equipos</li>
-                    <li>Estrategias de e-commerce farmacéutico</li>
-                    <li>Certificación en transformación digital para retail</li>
-                </ul>
-            </div>
-            
+            {resumenPlanAccion.map((fase: any) => (
+                <div style={`padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid ${fase.color};`}>
+                    <h5 style={`color: ${fase.color}; margin-bottom: 10px; font-size: 1rem;`}>{fase.titulo}</h5>
+                    <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+                        {fase.puntos.map((punto: any) => <li set:html={punto} />)}
+                    </ul>
+                </div>
+            ))}
         </div>
         
         <div style="margin-top: 25px; padding: 20px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.02)); border-radius: 12px; border-left: 4px solid #10B981;">
-            <p style="margin: 0; font-size: 1rem; line-height: 1.6; color: var(--text-primary); text-align: center;">
-                <strong>Profermaco está en la posición ideal para desarrollar gradualmente sus competencias digitales ferreterías mediante un plan realista de 15 meses.</strong> Con una inversión estratégica en 240 horas de capacitación práctica, la organización puede alcanzar el nivel intermedio (3.75/5) utilizando recursos educativos accesibles y especializados: Microsoft Learn, Google Academy, Meta Business Academy, y capacitación con proveedores locales especializados en tecnología para el sector ferretero.
-            </p>
+            <p style="margin: 0; font-size: 1rem; line-height: 1.6; color: var(--text-primary); text-align: center;" set:html={conclusion} />
         </div>
     </div>
 </section>

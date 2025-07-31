@@ -1,19 +1,25 @@
 ---
+const {
+    titulo = "Competencias Digitales",
+    promedio = 1.5,
+    descripcionPromedio = "Las competencias digitales de Profermaco están en una etapa inicial de desarrollo, representando una excelente oportunidad para implementar programas de capacitación específicos para el sector ferretero y de materiales de construcción.",
+    nivelDesarrollo = "PRIMERA ETAPA DE DESARROLLO",
+    datosGrafico = []
+} = Astro.props;
 ---
 <section>
-    <h2>Competencias Digitales</h2>
+    <h2>{titulo}</h2>
     
-    <!-- Nuevo contenedor para el promedio fuera del gráfico -->
     <div class="average-container">
         <div class="average-score">
-            <div class="average-value">1.5</div>
+            <div class="average-value">{promedio}</div>
             <div class="average-label">Promedio</div>
         </div>
         <div class="average-details">
             <div class="average-description">
-                Las competencias digitales de Profermaco están en una etapa inicial de desarrollo, representando una excelente oportunidad para implementar programas de capacitación específicos para el sector ferretero y de materiales de construcción.
+                {descripcionPromedio}
             </div>
-            <div class="level-badge">PRIMERA ETAPA DE DESARROLLO</div>
+            <div class="level-badge">{nivelDesarrollo}</div>
         </div>
     </div>
     
@@ -29,3 +35,8 @@
         </div>
     </div>
 </section>
+
+<script define:vars={{ datosGrafico }}>
+    // El script para renderizar el gráfico se moverá a un archivo JS externo
+    // y recibirá `datosGrafico` para renderizar el contenido.
+</script>
