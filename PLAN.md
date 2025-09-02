@@ -21,14 +21,9 @@ Esta fase se encarga de preparar los datos crudos y establecer las reglas para s
 2.  **Mapeo de Preguntas a Dimensiones:**
     * Se creará un "diccionario de mapeo" que asocie cada código de pregunta (ej. `D1_ADAPT`, `D2_DATA`) con su dimensión correspondiente en el JSON final (`Madurez Digital`, `Competencias Digitales`, etc.). Esto es fundamental para la agregación de datos.
 
-3.  **Definición de Escalas de Puntuación:**
-    * Se establecerá una regla para convertir las respuestas cualitativas (ej. "Muy cómodo/a", "Casi siempre") en valores numéricos. Por ejemplo:
-        * `Nunca` / `Muy incómodo` = **1 punto**
-        * `Raramente` / `Incómodo` = **2 puntos**
-        * `A veces` / `Neutral` = **3 puntos**
-        * `Frecuentemente` / `Cómodo` = **4 puntos**
-        * `Casi siempre` / `Muy cómodo` = **5 puntos**
-    * Esta escala se aplicará a todas las preguntas de tipo Likert para poder calcular promedios. El algoritmo debe ser flexible para usar una escala de 1 a 5 o de 1 a 10, según la estructura del JSON final.
+3.  **Verificación de Escalas de Puntuación:**
+    * El algoritmo confirmará que las respuestas de tipo Likert en el CSV ya son valores numéricos (escala de 1 a 4).
+    * No se requiere una conversión de texto a número, lo que simplifica el procesamiento. El script directamente parseará estos valores como números.
 
 ---
 
@@ -37,7 +32,7 @@ Esta fase se encarga de preparar los datos crudos y establecer las reglas para s
 Este módulo se enfoca en procesar los datos numéricos para obtener todas las métricas, puntuaciones y porcentajes.
 
 1.  **Cálculo de Puntuaciones por Dimensión:**
-    * Para cada una de las 2402 respuestas, el algoritmo convertirá las respuestas de cada pregunta a su valor numérico usando la escala definida en la Fase 1.
+    * Para cada una de las 2402 respuestas, el algoritmo leerá directamente el valor numérico de cada pregunta.
     * Luego, calculará la **puntuación promedio** para cada dimensión principal (Madurez Digital, Competencias Digitales, Cultura, etc.) promediando los resultados de todas las preguntas asociadas a esa dimensión.
     * Hará lo mismo para las sub-dimensiones (ej. `Capacidad para aprender`, `Actitud frente a nuevas tecnologías`).
 

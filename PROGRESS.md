@@ -18,11 +18,22 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ---
 
-## Próximos Pasos (Fase 2)
+## Próximos Pasos (Fase 2 Simplificada)
 
-1.  **Crear el mapeo de preguntas a dimensiones:** Definir en un archivo `mappings.json` cómo cada pregunta del CSV se corresponde con una dimensión del reporte (ej. Madurez Digital, Cultura Organizacional).
-2.  **Implementar la lógica de puntuación:** Traducir las respuestas cualitativas (ej. "Muy cómodo/a") a valores numéricos.
-3.  **Calcular todas las métricas:** Desarrollar las funciones para calcular los promedios por dimensión, sub-dimensión y la puntuación general.
+1.  **Crear el mapeo de preguntas a dimensiones:** Definir en un archivo `mappings.json` cómo cada encabezado de pregunta del CSV se corresponde con una dimensión del reporte.
+2.  **Calcular todas las métricas:** Desarrollar las funciones para calcular los promedios por dimensión, sub-dimensión y la puntuación general, utilizando directamente los valores numéricos (1-4) del CSV.
+
+---
+
+## Pensamientos y Estrategia
+
+*   **Mapeo de Preguntas:** El archivo CSV real usa preguntas completas como encabezados, no códigos cortos como `D1_ADAPT`. Esto es un detalle importante. El archivo `mappings.json` deberá ser muy preciso, mapeando el texto exacto de la pregunta a la clave de la dimensión correspondiente (ej. `"madurezDigital_adaptabilidad"`). Esto hace que el mapeo sea más verboso pero más claro.
+
+*   **Simplificación de Lógica:** Dado que el CSV ya contiene puntuaciones numéricas (1-4), el paso de "Implementar la lógica de puntuación" se ha eliminado. El script no necesita convertir texto a número, lo que acelera el desarrollo.
+
+*   **Privacidad de Datos (PII):** El CSV contiene información personal identificable (nombres, correos). Es **crítico** que el script **excluya** estas columnas del procesamiento y, sobre todo, que **no las incluya** en el archivo final `src/data/globalData.json`. Me aseguraré de filtrar estos datos desde el inicio.
+
+*   **Complejidad:** El gran número de columnas (preguntas) requerirá un bucle de procesamiento bien estructurado para agregar los datos correctamente en sus respectivas dimensiones y sub-dimensiones. La clave será el archivo de mapeo.
 
 ---
 

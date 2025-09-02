@@ -26,14 +26,12 @@ Esta fase se centra en traducir las respuestas de la encuesta en métricas y pun
 
 1.  **Mapeo de Preguntas a Dimensiones:**
     *   Crea un archivo de configuración, por ejemplo `src/scripts/mappings.json`.
-    *   En este archivo, define un objeto que mapee cada código de pregunta del CSV (ej. `D1_ADAPT`) a su dimensión y sub-dimensión correspondiente en la estructura del `globalData.json`.
+    *   En este archivo, define un objeto que mapee cada encabezado de pregunta del CSV a su dimensión y sub-dimensión correspondiente en la estructura del `globalData.json`.
 
-2.  **Definición de Escalas:**
-    *   En `generate-report.mjs`, implementa una función que convierta las respuestas de texto (ej. "Muy cómodo/a") a su valor numérico (ej. 5), basándose en la escala de puntuación definida en `PLAN.md`.
-
-3.  **Motor de Cálculo:**
+2.  **Motor de Cálculo:**
     *   Itera sobre cada respuesta del CSV ya parseado.
-    *   Aplica el mapeo y la conversión de escala para calcular las puntuaciones promedio para:
+    *   Aplica el mapeo para leer directamente las puntuaciones numéricas (que ya vienen en el CSV en una escala de 1 a 4).
+    *   Calcula las puntuaciones promedio para:
         *   Cada sub-dimensión.
         *   Cada dimensión principal.
         *   La puntuación general (`puntuacionGeneral`).
