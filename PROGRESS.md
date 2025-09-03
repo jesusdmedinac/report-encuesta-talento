@@ -6,45 +6,38 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ## Estado Actual
 
-**Fase Actual:** **Inicio de la Fase 2: Implementación del Módulo de Análisis Cuantitativo.**
+**Fase Actual:** **Final de la Fase 2.** El módulo de análisis cuantitativo está completo.
 
-### Pasos Completados (Fase 1)
+### Pasos Completados (Fase 1 y 2)
 
--   [x] **`IMPLEMENTATION_PLAN.md` creado:** Tenemos una hoja de ruta clara y detallada.
--   [x] **Script `src/scripts/generate-report.mjs` creado:** El archivo principal para nuestra lógica está listo.
--   [x] **Dependencia `papaparse` instalada:** El proyecto está equipado para manejar archivos CSV.
--   [x] **Lógica de carga de CSV implementada:** El script puede leer y parsear el archivo de respuestas.
--   [x] **Análisis inicial del CSV (`responses-TBjwOGHs-final.csv`):** Hemos confirmado que el archivo contiene los datos necesarios y entendemos su estructura.
-
----
-
-## Próximos Pasos (Fase 2 Simplificada)
-
-1.  **Crear el mapeo de preguntas a dimensiones:** Definir en un archivo `mappings.json` cómo cada encabezado de pregunta del CSV se corresponde con una dimensión del reporte.
-2.  **Calcular todas las métricas:** Desarrollar las funciones para calcular los promedios por dimensión, sub-dimensión y la puntuación general, utilizando directamente los valores numéricos (1-4) del CSV.
+-   [x] **`IMPLEMENTATION_PLAN.md` creado:** Hoja de ruta detallada.
+-   [x] **Script `src/scripts/generate-report.mjs` creado:** Punto de entrada para la lógica.
+-   [x] **Dependencia `papaparse` instalada:** El proyecto puede manejar archivos CSV.
+-   [x] **Lógica de carga de CSV implementada:** El script lee y parsea el archivo de respuestas desde un argumento (`--csv`).
+-   [x] **Filtrado de PII:** El script excluye automáticamente columnas con datos personales sensibles.
+-   [x] **Motor de Cálculo Cuantitativo:** La función `performQuantitativeAnalysis` está implementada. Lee los mapeos, procesa todas las respuestas y calcula correctamente los promedios para cada dimensión y sub-dimensión.
+-   [x] **Salida de Resultados:** El script muestra en consola los resultados numéricos del análisis.
 
 ---
 
-## Pensamientos y Estrategia
+## Próximos Pasos (Fase 3)
 
-*   **Mapeo de Preguntas:** El archivo CSV real usa preguntas completas como encabezados, no códigos cortos como `D1_ADAPT`. Esto es un detalle importante. El archivo `mappings.json` deberá ser muy preciso, mapeando el texto exacto de la pregunta a la clave de la dimensión correspondiente (ej. `"madurezDigital_adaptabilidad"`). Esto hace que el mapeo sea más verboso pero más claro.
-
-*   **Simplificación de Lógica:** Dado que el CSV ya contiene puntuaciones numéricas (1-4), el paso de "Implementar la lógica de puntuación" se ha eliminado. El script no necesita convertir texto a número, lo que acelera el desarrollo.
-
-*   **Privacidad de Datos (PII):** El CSV contiene información personal identificable (nombres, correos). Es **crítico** que el script **excluya** estas columnas del procesamiento y, sobre todo, que **no las incluya** en el archivo final `src/data/globalData.json`. Me aseguraré de filtrar estos datos desde el inicio.
-
-*   **Complejidad:** El gran número de columnas (preguntas) requerirá un bucle de procesamiento bien estructurado para agregar los datos correctamente en sus respectivas dimensiones y sub-dimensiones. La clave será el archivo de mapeo.
+1.  **Iniciar la Fase 3: Implementación del Módulo de Análisis Cualitativo (Intérprete de IA).**
+2.  **Instalar dependencia de IA:** Añadir `@google/generative-ai` al proyecto.
+3.  **Configurar acceso a la API:** Implementar la carga segura de la `GEMINI_API_KEY` desde variables de entorno.
+4.  **Generar Prompts:** Crear funciones para construir los prompts que se enviarán al modelo de IA, tanto para el análisis de respuestas abiertas como para la generación de narrativas generales.
+5.  **Ejecutar llamadas a la IA:** Implementar la lógica para comunicarse con el LLM y obtener los textos generados, incluyendo manejo de errores.
 
 ---
 
 ## Pensamientos y Estrategia
 
-*   **Mapeo de Preguntas:** El archivo CSV real usa preguntas completas como encabezados, no códigos cortos como `D1_ADAPT`. Esto es un detalle importante. El archivo `mappings.json` deberá ser muy preciso, mapeando el texto exacto de la pregunta a la clave de la dimensión correspondiente (ej. `"madurezDigital_adaptabilidad"`). Esto hace que el mapeo sea más verboso pero más claro.
+*   **Mapeo de Preguntas:** El enfoque de usar preguntas completas como claves en `mappings.json` ha demostrado ser efectivo en la Fase 2.
 
-*   **Limpieza de Datos:** Las respuestas de texto libre y las escalas Likert son consistentes en su mayoría, pero el script deberá ser robusto para manejar posibles variaciones o errores tipográficos menores para no descartar datos valiosos.
+*   **Privacidad de Datos (PII):** El filtrado de datos personales a nivel de script es una salvaguarda crucial que se mantendrá.
 
-*   **Privacidad de Datos (PII):** El CSV contiene información personal identificable (nombres, correos). Es **crítico** que el script **excluya** estas columnas del procesamiento y, sobre todo, que **no las incluya** en el archivo final `src/data/globalData.json`. Me aseguraré de filtrar estos datos desde el inicio.
+*   **Integración de IA:** El principal desafío de la Fase 3 será diseñar prompts efectivos que entreguen resultados consistentes y de alta calidad. Será un proceso iterativo de refinamiento de prompts.
 
-*   **Complejidad:** El gran número de columnas (preguntas) requerirá un bucle de procesamiento bien estructurado para agregar los datos correctamente en sus respectivas dimensiones y sub-dimensiones. La clave será el archivo de mapeo.
+*   **Estructura de Datos Final:** A medida que se desarrolle la Fase 3, se deberá pensar en cómo fusionar los resultados cuantitativos (Fase 2) con los cualitativos (Fase 3) para construir la estructura final de `globalData.json` en la Fase 4.
 
-Estoy listo para proceder con la Fase 2 cuando me indiques.
+Estoy listo para proceder con la Fase 3 cuando me indiques.

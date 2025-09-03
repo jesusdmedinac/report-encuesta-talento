@@ -1,0 +1,102 @@
+{
+  "D1_ADAPT: Cuando se introduce una nueva herramienta o software en la empresa, ¿con qué frecuencia eres uno de los primeros en probarlo?": {
+    "dimension": "madurezDigital",
+    "subDimension": "actitudFrenteANuevasTecnologias"
+  },
+  "D1_ADAPT: ¿Qué tan cómodo/a te sientes cuando tus tareas diarias cambian debido a la implementación de una nueva tecnología?": {
+    "dimension": "madurezDigital",
+    "subDimension": "actitudFrenteANuevasTecnologias"
+  },
+  "D1_ADAPT: ¿Con qué frecuencia buscas activamente tutoriales, videos o documentación para aprender a usar mejor las herramientas digitales de tu trabajo?": {
+    "dimension": "madurezDigital",
+    "subDimension": "capacidadParaAprender"
+  },
+  "D1_SOLVING: Si un programa no funciona como esperas, ¿con qué frecuencia intentas resolver el problema por tu cuenta antes de contactar a TI o soporte?": {
+    "dimension": "madurezDigital",
+    "subDimension": "capacidadParaAprender"
+  },
+  "D1_SOLVING: ¿Con qué frecuencia utilizas plataformas en línea (ej. Google, YouTube, foros) para encontrar soluciones a problemas tecnológicos relacionados con tu trabajo?": {
+    "dimension": "madurezDigital",
+    "subDimension": "capacidadParaAprender"
+  },
+  "D1_PROACTIVITY: ¿Con qué frecuencia utilizas funciones avanzadas de software (ej. atajos de teclado, scripts, fórmulas complejas) para realizar tareas más rápido?": {
+    "dimension": "madurezDigital",
+    "subDimension": "capacidadParaAprender"
+  },
+  "D1_PROACTIVITY: ¿Con qué frecuencia revisas tus procesos de trabajo para ver si hay tareas manuales que se pueden digitalizar o automatizar?": {
+    "dimension": "madurezDigital",
+    "subDimension": "actitudFrenteANuevasTecnologias"
+  },
+  "D2_DATA: ¿Qué tan cómodo/a te sientes al utilizar datos para respaldar tus argumentos o decisiones en el trabajo?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "analisisDeDatos"
+  },
+  "D2_DATA: ¿Con qué frecuencia utilizas herramientas de análisis (ej. Excel avanzado, Power BI) para visualizar o interpretar datos en tu trabajo?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "analisisDeDatos"
+  },
+  "D2_DATA: ¿Con qué frecuencia encuentras la información relevante para tu trabajo de forma rápida y sencilla en los sistemas de la empresa?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "alfabetizacionTecnologica"
+  },
+  "D2_COLLAB: ¿Con qué frecuencia utilizas las funciones de edición y colaboración en tiempo real en documentos (ej. Google Docs, Office 365)?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "comunicacionYColaboracion"
+  },
+  "D2_COLLAB: ¿Qué tan cómodo/a te sientes al presentar información y comunicar resultados a través de plataformas virtuales (ej. Zoom, Teams)?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "comunicacionYColaboracion"
+  },
+  "D2_SECURITY: ¿Con qué frecuencia verificas la identidad del remitente antes de hacer clic en un enlace de un correo electrónico sospechoso?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "ciberseguridad"
+  },
+  "D2_SECURITY: ¿Con qué frecuencia cambias tus contraseñas de trabajo?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "ciberseguridad"
+  },
+  "D2_SECURITY: ¿Con qué frecuencia utilizas un gestor de contraseñas (ej. LastPass, 1Password, el gestor de tu navegador) para administrar tus credenciales?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "ciberseguridad"
+  },
+  "D2_SECURITY: ¿Qué tan cómodo/a te sientes al configurar y utilizar la autenticación de dos pasos (2FA) en tus cuentas de trabajo?": {
+    "dimension": "competenciasDigitales",
+    "subDimension": "ciberseguridad"
+  },
+  "D3_LEADERSHIP: ¿Qué tan a menudo los líderes de tu área comunican cómo la tecnología está ayudando a la empresa a alcanzar sus objetivos?": {
+    "dimension": "culturaOrganizacional",
+    "subDimension": "liderazgoYVision"
+  },
+  "D3_ENVIRONMENT: ¿Con qué frecuencia se realizan reuniones o talleres en tu departamento para compartir conocimientos sobre nuevas herramientas o usos de la tecnología?": {
+    "dimension": "culturaOrganizacional",
+    "subDimension": "formacionYDesarrollo"
+  },
+  "D3_SUPPORT: ¿Qué tan de acuerdo estás con la siguiente afirmación?: \"La empresa me proporciona la formación necesaria para mantenerme actualizado/a digitalmente\"": {
+    "dimension": "culturaOrganizacional",
+    "subDimension": "formacionYDesarrollo"
+  },
+  "D3_ENVIRONMENT: Cuando se prueba una nueva tecnología y no funciona, ¿qué tan rápido vuelve el equipo a probar otra solución?": {
+    "dimension": "culturaOrganizacional",
+    "subDimension": "aperturaTecnologica"
+  },
+  "D3_ENVIRONMENT: ¿Con qué frecuencia se reconoce y celebra el uso innovador de la tecnología por parte de los compañeros de trabajo?": {
+    "dimension": "culturaOrganizacional",
+    "subDimension": "aperturaTecnologica"
+  },
+  "D4_USAGE: En los últimos 6 meses, ¿con qué frecuencia has utilizado herramientas de IA Generativa (ej. ChatGPT, Copilot, Bard) para tareas de trabajo?": {
+    "dimension": "usoInteligenciaArtificial",
+    "subDimension": "usoEnElTrabajo"
+  },
+  "D4_USAGE: Si utilizas IA, ¿qué tan cómodo/a te sientes al escribir instrucciones claras (prompts) para obtener los resultados que necesitas?": {
+    "dimension": "usoInteligenciaArtificial",
+    "subDimension": "usoEnElTrabajo"
+  },
+  "D4_MINDSET: ¿Qué tan interesado/a estás en recibir formación sobre cómo utilizar herramientas de IA para tu rol?": {
+    "dimension": "usoInteligenciaArtificial",
+    "subDimension": "adopcion"
+  },
+  "D4_ETHICS: ¿Con qué frecuencia verificas la exactitud de la información generada por una IA antes de utilizarla en un entregable final?": {
+    "dimension": "usoInteligenciaArtificial",
+    "subDimension": "etica"
+  }
+}
