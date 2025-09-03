@@ -75,12 +75,13 @@ const calculateAverage = (arr) => {
     return sum / arr.length;
 };
 
+const scaleToTen = (score) => score * 2.5;
+
 // --- Lógica Principal de Análisis ---
 
 function performQuantitativeAnalysis(data, mappings) {
     const scores = {};
 
-    // Inicializar dinámicamente la estructura de scores
     for (const question in mappings) {
         const { dimension, subDimension } = mappings[question];
         if (!scores[dimension]) {
@@ -91,7 +92,6 @@ function performQuantitativeAnalysis(data, mappings) {
         }
     }
 
-    // Acumular puntuaciones
     for (const row of data) {
         for (const question in row) {
             const mapping = mappings[question];
@@ -104,7 +104,6 @@ function performQuantitativeAnalysis(data, mappings) {
         }
     }
 
-    // Calcular promedios
     const results = {};
     for (const dimension in scores) {
         results[dimension] = {};
@@ -120,49 +119,43 @@ function performQuantitativeAnalysis(data, mappings) {
 function generateReportJson(analysisResults, totalRespondents) {
     const template = loadJson(TEMPLATE_PATH);
 
-    // --- Calcular Promedios Generales ---
     const madurezDigitalAvg = calculateAverage(Object.values(analysisResults.madurezDigital));
     const brechaDigitalAvg = calculateAverage(Object.values(analysisResults.brechaDigital));
     const usoInteligenciaArtificialAvg = calculateAverage(Object.values(analysisResults.usoInteligenciaArtificial));
     const culturaOrganizacionalAvg = calculateAverage(Object.values(analysisResults.culturaOrganizacional));
     const overallAvg = calculateAverage([madurezDigitalAvg, brechaDigitalAvg, usoInteligenciaArtificialAvg, culturaOrganizacionalAvg]);
 
-    // --- Actualizar Header ---
     template.header.empleadosEvaluados = totalRespondents.toString();
 
-    // --- Actualizar Resumen Ejecutivo ---
-    template.resumenEjecutivo.puntuacionGeneral.puntuacion = parseFloat(overallAvg.toFixed(1));
+    template.resumenEjecutivo.puntuacionGeneral.puntuacion = parseFloat(scaleToTen(overallAvg).toFixed(1));
     template.resumenEjecutivo.puntuacionesDimensiones = [
-        { nombre: "Madurez Digital", puntuacion: parseFloat(madurezDigitalAvg.toFixed(1)), color: "#F59E0B" },
-        { nombre: "Competencias Digitales", puntuacion: parseFloat(brechaDigitalAvg.toFixed(1)), color: "#EF4444" },
-        { nombre: "Uso de IA", puntuacion: parseFloat(usoInteligenciaArtificialAvg.toFixed(1)), color: "#8B5CF6" },
-        { nombre: "Cultura Digital", puntuacion: parseFloat(culturaOrganizacionalAvg.toFixed(1)), color: "#10B981" }
+        { nombre: "Madurez Digital", puntuacion: parseFloat(scaleToTen(madurezDigitalAvg).toFixed(1)), color: "#F59E0B" },
+        { nombre: "Competencias Digitales", puntuacion: parseFloat(scaleToTen(brechaDigitalAvg).toFixed(1)), color: "#EF4444" },
+        { nombre: "Uso de IA", puntuacion: parseFloat(scaleToTen(usoInteligenciaArtificialAvg).toFixed(1)), color: "#8B5CF6" },
+        { nombre: "Cultura Digital", puntuacion: parseFloat(scaleToTen(culturaOrganizacionalAvg).toFixed(1)), color: "#10B981" }
     ];
     
-    // --- Actualizar Brecha Digital ---
-    template.brechaDigital.puntuacionEmpresa = parseFloat(overallAvg.toFixed(1));
+    template.brechaDigital.puntuacionEmpresa = parseFloat(scaleToTen(overallAvg).toFixed(1));
+    template.brechaDigital.puntuacionMetaSector = 9.38; // 3.75 * 2.5
 
-    // --- Actualizar Madurez Digital ---
-    template.madurezDigital.puntuacionGeneral = parseFloat(madurezDigitalAvg.toFixed(1));
+    template.madurezDigital.puntuacionGeneral = parseFloat(scaleToTen(madurezDigitalAvg).toFixed(1));
     template.madurezDigital.componentes = Object.entries(analysisResults.madurezDigital).map(([key, value]) => ({
         nombre: key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()),
-        puntuacion: value,
-        descripcion: `Puntuación de ${value.toFixed(2)}/4.0 en ${key}.`,
+        puntuacion: parseFloat(scaleToTen(value).toFixed(1)),
+        descripcion: `Puntuación de ${parseFloat(scaleToTen(value).toFixed(2))}/10 en ${key}.`,
         color: "var(--color-company)",
         colorGradiente: "#4387ff",
-        meta: 3.75
+        meta: 9.38 // 3.75 * 2.5
     }));
 
-    // --- Actualizar Competencias Digitales (ahora Brecha Digital) ---
-    template.competenciasDigitales.promedio = parseFloat(brechaDigitalAvg.toFixed(1));
+    template.competenciasDigitales.promedio = parseFloat(scaleToTen(brechaDigitalAvg).toFixed(1));
     template.competenciasDigitales.competencias = Object.entries(analysisResults.brechaDigital).map(([key, value]) => ({
         name: key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()),
         score: Math.round((value / 4) * 100),
-        color: '#3498db', // Color genérico, se puede mejorar
+        color: '#3498db',
         description: `Nivel de desarrollo en ${key}.`
     }));
 
-    // --- Actualizar Uso de IA ---
     const iaAdopcion = calculateAverage([
         analysisResults.usoInteligenciaArtificial.interesEnAprendizaje,
         analysisResults.usoInteligenciaArtificial.percepcionDeRiesgo,
@@ -178,23 +171,23 @@ function generateReportJson(analysisResults, totalRespondents) {
     template.usoInteligenciaArtificial.graficos[1].porcentaje = Math.round((iaUso / 4) * 100);
     template.usoInteligenciaArtificial.graficos[2].porcentaje = Math.round((iaEtica / 4) * 100);
 
-    // --- Actualizar Cultura Organizacional ---
     const culturaLiderazgo = calculateAverage([analysisResults.culturaOrganizacional.liderazgoYVision, analysisResults.culturaOrganizacional.reconocimiento]);
     const culturaFormacion = calculateAverage([analysisResults.culturaOrganizacional.ambienteDeAprendizaje, analysisResults.culturaOrganizacional.apoyoOrganizacional]);
     const culturaApertura = analysisResults.culturaOrganizacional.experimentacion;
 
-    template.culturaOrganizacional.tarjetas[0].puntuacion = parseFloat(culturaApertura.toFixed(1));
-    template.culturaOrganizacional.tarjetas[1].puntuacion = parseFloat(culturaFormacion.toFixed(1));
-    template.culturaOrganizacional.tarjetas[2].puntuacion = parseFloat(culturaLiderazgo.toFixed(1));
+    template.culturaOrganizacional.tarjetas[0].puntuacion = parseFloat(scaleToTen(culturaApertura).toFixed(1));
+    template.culturaOrganizacional.tarjetas[1].puntuacion = parseFloat(scaleToTen(culturaFormacion).toFixed(1));
+    template.culturaOrganizacional.tarjetas[2].puntuacion = parseFloat(scaleToTen(culturaLiderazgo).toFixed(1));
 
-    // --- Añadir Scores de Roles Específicos ---
     template.roleSpecificScores = {};
     Object.keys(analysisResults)
         .filter(dim => dim.startsWith('rol'))
         .forEach(dim => {
-            template.roleSpecificScores[dim] = analysisResults[dim];
+            template.roleSpecificScores[dim] = {};
+            for (const subDim in analysisResults[dim]) {
+                template.roleSpecificScores[dim][subDim] = parseFloat(scaleToTen(analysisResults[dim][subDim]).toFixed(2));
+            }
         });
-
 
     return template;
 }
