@@ -2,7 +2,7 @@
   "header": {
     "empresa": "Profermaco",
     "fechaDiagnostico": "Lunes 9 de junio de 2025",
-    "empleadosEvaluados": "22",
+    "empleadosEvaluados": "2402",
     "titulo": "Reporte de Transformación Digital Organizacional"
   },
   "introduccion": {
@@ -11,7 +11,7 @@
   },
   "brechaDigital": {
     "titulo": "Brecha Digital",
-    "puntuacionEmpresa": 1.7,
+    "puntuacionEmpresa": 3,
     "puntuacionPromedioSector": 1.6,
     "puntuacionMetaSector": 3.75,
     "textoNivelActual": "Primera etapa de desarrollo",
@@ -22,95 +22,67 @@
   },
   "madurezDigital": {
     "titulo": "Madurez Digital",
-    "puntuacionGeneral": 2.1,
+    "puntuacionGeneral": 3,
     "puntuacionPromedioSector": 1.7,
     "puntuacionMetaSector": 3.75,
     "nombreEmpresa": "Profermaco",
     "parrafoIntroductorio": "Profermaco se encuentra en la primera etapa de madurez digital (2.1/10), con una excelente oportunidad de crecimiento de 1.65 puntos hacia la meta del sector (3.75/10). Este indicador refleja un potencial extraordinario para desarrollar la capacidad organizacional de aprovechar tecnologías digitales de manera estratégica en el sector ferretero y de materiales de construcción.",
     "componentes": [
       {
-        "nombre": "Capacidad para aprender nuevas tecnologías",
-        "puntuacion": 2.1,
-        "descripcion": "El equipo de Profermaco está en la primera etapa de desarrollo de habilidades tecnológicas. Existe una excelente oportunidad para implementar programas de capacitación específicos para el sector ferretero que fortalezcan la adaptación a nuevas herramientas digitales.",
+        "nombre": "Adaptabilidad",
+        "puntuacion": 3.17,
+        "descripcion": "Puntuación de 3.17/4.0 en adaptabilidad.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 3.75
       },
       {
-        "nombre": "Actitud frente a nuevas tecnologías",
-        "puntuacion": 2.1,
-        "descripcion": "El equipo muestra una actitud receptiva hacia las nuevas tecnologías, estableciendo una base sólida para el crecimiento. Con el apoyo adecuado y programas de capacitación bien estructurados, esta actitud positiva puede transformarse en competencias digitales avanzadas aplicadas al sector ferretero y de materiales de construcción.",
-        "color": "var(--color-gap)",
-        "colorGradiente": "#a78bfa",
-        "meta": 7.5
+        "nombre": "Resolucion De Problemas",
+        "puntuacion": 3.04,
+        "descripcion": "Puntuación de 3.04/4.0 en resolucionDeProblemas.",
+        "color": "var(--color-company)",
+        "colorGradiente": "#4387ff",
+        "meta": 3.75
+      },
+      {
+        "nombre": "Proactividad Digital",
+        "puntuacion": 2.93,
+        "descripcion": "Puntuación de 2.93/4.0 en proactividadDigital.",
+        "color": "var(--color-company)",
+        "colorGradiente": "#4387ff",
+        "meta": 3.75
       }
     ]
   },
   "competenciasDigitales": {
     "titulo": "Competencias Digitales",
-    "promedio": 1.5,
+    "promedio": 3.1,
     "descripcionPromedio": "Las competencias digitales de Profermaco están en una etapa inicial de desarrollo, representando una excelente oportunidad para implementar programas de capacitación específicos para el sector ferretero y de materiales de construcción.",
     "nivelDesarrollo": "PRIMERA ETAPA DE DESARROLLO",
     "competencias": [
       {
-        "name": "Comunicación y Colaboración Digital",
-        "score": 30,
+        "name": "Analisis De Datos",
+        "score": 79,
         "color": "#3498db",
-        "description": "Primera etapa de desarrollo en herramientas de comunicación digital, con oportunidades de crecimiento en videollamadas y espacios colaborativos."
+        "description": "Nivel de desarrollo en analisisDeDatos."
       },
       {
-        "name": "Pensamiento Crítico Digital",
-        "score": 40,
-        "color": "#2ecc71",
-        "description": "Fundamentos establecidos para analizar información digital, con potencial de desarrollo en evaluación de herramientas tecnológicas."
+        "name": "Alfabetizacion De Datos",
+        "score": 78,
+        "color": "#3498db",
+        "description": "Nivel de desarrollo en alfabetizacionDeDatos."
       },
       {
-        "name": "Resiliencia y Flexibilidad Digital",
-        "score": 38,
-        "color": "#e74c3c",
-        "description": "Capacidad inicial para mantener rendimiento ante cambios tecnológicos, con gran potencial de fortalecimiento gradual."
-      },
-      {
-        "name": "Agilidad Digital",
-        "score": 36,
-        "color": "#f1c40f",
-        "description": "Habilidades fundamentales para integrar procesos digitales, con oportunidades de desarrollo en velocidad de adaptación."
-      },
-      {
-        "name": "Alfabetización Tecnológica",
-        "score": 28,
-        "color": "#9b59b6",
-        "description": "Fundamentos en herramientas básicas como hojas de cálculo y almacenamiento en la nube, listos para profundizar."
-      },
-      {
-        "name": "Resolución de Problemas Tecnológicos",
-        "score": 30,
-        "color": "#e67e22",
-        "description": "Base establecida para identificar y resolver problemas tecnológicos comunes en el entorno farmacéutico."
+        "name": "Colaboracion Digital",
+        "score": 77,
+        "color": "#3498db",
+        "description": "Nivel de desarrollo en colaboracionDigital."
       },
       {
         "name": "Ciberseguridad",
-        "score": 28,
-        "color": "#34495e",
-        "description": "Conocimientos iniciales en seguridad digital y gestión de contraseñas, área importante para el sector farmacéutico."
-      },
-      {
-        "name": "Creación de Contenido Digital",
-        "score": 25,
-        "color": "#16a085",
-        "description": "Competencias iniciales en edición básica de contenido, perfectas para desarrollar material ferretero digital."
-      },
-      {
-        "name": "Análisis de Datos",
-        "score": 35,
-        "color": "#c0392b",
-        "description": "Fundamentos en interpretación de datos ferreteros, área estratégica con gran potencial de crecimiento."
-      },
-      {
-        "name": "Marketing Digital",
-        "score": 18,
-        "color": "#8e44ad",
-        "description": "Oportunidad excepcional para desarrollar competencias especializadas en marketing ferretero digital."
+        "score": 78,
+        "color": "#3498db",
+        "description": "Nivel de desarrollo en ciberseguridad."
       }
     ]
   },
@@ -119,24 +91,36 @@
     "graficos": [
       {
         "titulo": "Adopción de IA",
-        "porcentaje": 21,
+        "porcentaje": 62,
         "descripcion": "Profermaco está en la primera etapa de adopción de IA, con un 21% de avance que representa una base sólida para comenzar a implementar soluciones de inteligencia artificial específicas para la industria ferretera y de materiales de construcción.",
         "idGradiente": "gradient-adoption",
-        "coloresGradiente": ["#10B981", "#34D399", "#6EE7B7"]
+        "coloresGradiente": [
+          "#10B981",
+          "#34D399",
+          "#6EE7B7"
+        ]
       },
       {
         "titulo": "Uso en el Trabajo",
-        "porcentaje": 16,
+        "porcentaje": 77,
         "descripcion": "El uso práctico de IA en las operaciones diarias está en fase inicial (16%), representando una extraordinaria oportunidad para integrar herramientas de inteligencia artificial en procesos ferreteros como gestión de inventarios y atención al cliente.",
         "idGradiente": "gradient-usage",
-        "coloresGradiente": ["#F59E0B", "#FBBF24", "#FDE047"]
+        "coloresGradiente": [
+          "#F59E0B",
+          "#FBBF24",
+          "#FDE047"
+        ]
       },
       {
         "titulo": "Ética y Responsabilidad",
-        "porcentaje": 26,
+        "porcentaje": 80,
         "descripcion": "La conciencia ética en IA está en desarrollo (26%), proporcionando una base fundamental para implementar prácticas responsables de inteligencia artificial, especialmente importante en el sector ferretero donde la precisión en recomendaciones de productos y servicios es crítica.",
         "idGradiente": "gradient-ethics",
-        "coloresGradiente": ["#8B5CF6", "#A78BFA", "#C4B5FD"]
+        "coloresGradiente": [
+          "#8B5CF6",
+          "#A78BFA",
+          "#C4B5FD"
+        ]
       }
     ],
     "resumen": "<strong>Oportunidad estratégica:</strong> Los resultados de Profermaco en inteligencia artificial muestran una primera etapa de desarrollo con fundamentos prometedores. Con adopción en 21%, uso práctico en 16% y conciencia ética en 26%, la empresa está perfectamente posicionada para implementar una estrategia gradual de IA enfocada en aplicaciones ferreterías específicas. Las principales oportunidades se encuentran en automatización de procesos de inventario, sistemas de recomendación para clientes y análisis predictivo de demanda de materiales de construcción."
@@ -146,42 +130,78 @@
     "tarjetas": [
       {
         "titulo": "Apertura Tecnológica Organizacional",
-        "puntuacion": 2.0,
+        "puntuacion": 3.1,
         "etiquetaNivel": "Primera etapa",
         "colorIcono": "linear-gradient(135deg, #F59E0B, #FBBF24)",
         "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7L12 12L22 7L12 2Z\"/><path d=\"M2 17L12 22L22 17\"/><path d=\"M2 12L12 17L22 12\"/></svg>",
         "metricas": [
-          { "icono": "🚀", "valor": "40%", "etiqueta": "Adopción de nuevas herramientas" },
-          { "icono": "🔄", "valor": "40%", "etiqueta": "Flexibilidad al cambio" },
-          { "icono": "💡", "valor": "35%", "etiqueta": "Procesos de implementación estructurados" }
+          {
+            "icono": "🚀",
+            "valor": "40%",
+            "etiqueta": "Adopción de nuevas herramientas"
+          },
+          {
+            "icono": "🔄",
+            "valor": "40%",
+            "etiqueta": "Flexibilidad al cambio"
+          },
+          {
+            "icono": "💡",
+            "valor": "35%",
+            "etiqueta": "Procesos de implementación estructurados"
+          }
         ],
         "fraseClave": "Organización ferretera en la primera etapa de desarrollo tecnológico",
         "narrativa": "Profermaco está comenzando su proceso de apertura tecnológica, con equipos receptivos al cambio y liderazgo comprometido. Esta etapa inicial representa la oportunidad perfecta para establecer bases sólidas e implementar procesos estructurados que faciliten la adopción exitosa de tecnologías específicas para el sector ferretero y de materiales de construcción."
       },
       {
         "titulo": "Formación y Desarrollo Digital",
-        "puntuacion": 1.8,
+        "puntuacion": 3,
         "etiquetaNivel": "Oportunidad",
         "colorIcono": "linear-gradient(135deg, #EF4444, #F87171)",
         "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2 3H8C9.1 3 10 3.9 10 5V19C10 20.1 9.1 21 8 21H2V3Z\"/><path d=\"M22 3H16C14.9 3 14 3.9 14 5V19C14 20.1 14.9 21 16 21H22V3Z\"/><path d=\"M10 12H14\"/></svg>",
         "metricas": [
-          { "icono": "📚", "valor": "26%", "etiqueta": "Programas de formación disponibles" },
-          { "icono": "⏰", "valor": "30%", "etiqueta": "Aplicación práctica del aprendizaje" },
-          { "icono": "🎯", "valor": "28%", "etiqueta": "Ambiente de aprendizaje inspirador" }
+          {
+            "icono": "📚",
+            "valor": "26%",
+            "etiqueta": "Programas de formación disponibles"
+          },
+          {
+            "icono": "⏰",
+            "valor": "30%",
+            "etiqueta": "Aplicación práctica del aprendizaje"
+          },
+          {
+            "icono": "🎯",
+            "valor": "28%",
+            "etiqueta": "Ambiente de aprendizaje inspirador"
+          }
         ],
         "fraseClave": "Oportunidad perfecta para crear un programa de capacitación ferretera digital",
         "narrativa": "Profermaco tiene la oportunidad de diseñar e implementar un programa de formación digital específico para la industria ferretera. Esta área representa el mayor potencial de mejora, donde inversiones estratégicas en capacitación pueden generar resultados transformadores en competencias, productividad y satisfacción del equipo."
       },
       {
         "titulo": "Liderazgo y Visión Digital",
-        "puntuacion": 2.0,
+        "puntuacion": 3.1,
         "etiquetaNivel": "Primera etapa",
         "colorIcono": "linear-gradient(135deg, #F59E0B, #FBBF24)",
         "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 21V5C16 4.4 15.6 4 15 4H9C8.4 4 8 4.4 8 5V21L12 18L16 21Z\"/><circle cx=\"12\" cy=\"8\" r=\"2\"/></svg>",
         "metricas": [
-          { "icono": "👥", "valor": "38%", "etiqueta": "Líderes como ejemplo digital" },
-          { "icono": "🎯", "valor": "40%", "etiqueta": "Fomento activo de tecnología" },
-          { "icono": "💼", "valor": "42%", "etiqueta": "Confianza en liderazgo digital" }
+          {
+            "icono": "👥",
+            "valor": "38%",
+            "etiqueta": "Líderes como ejemplo digital"
+          },
+          {
+            "icono": "🎯",
+            "valor": "40%",
+            "etiqueta": "Fomento activo de tecnología"
+          },
+          {
+            "icono": "💼",
+            "valor": "42%",
+            "etiqueta": "Confianza en liderazgo digital"
+          }
         ],
         "fraseClave": "Liderazgo comprometido con la transformación digital ferretera",
         "narrativa": "El liderazgo de Profermaco muestra un compromiso inicial sólido con la agenda digital. Los directivos están en una posición ideal para convertirse en champions de la transformación digital, desarrollando una visión clara y estrategias específicas que inspiren confianza en el equipo sobre el futuro digital de la empresa ferretera."
@@ -190,9 +210,18 @@
     "insights": {
       "titulo": "💡 Insights Clave de Cultura Organizacional",
       "puntos": [
-        { "icono": "🏗️", "texto": "<strong>Base sólida:</strong> Apertura tecnológica en primera etapa (2.0/10)" },
-        { "icono": "🎓", "texto": "<strong>Gran oportunidad:</strong> Formación digital estructurada (1.8/10)" },
-        { "icono": "🎯", "texto": "<strong>Liderazgo preparado:</strong> Visión digital en desarrollo (2.0/10)" }
+        {
+          "icono": "🏗️",
+          "texto": "<strong>Base sólida:</strong> Apertura tecnológica en primera etapa (2.0/10)"
+        },
+        {
+          "icono": "🎓",
+          "texto": "<strong>Gran oportunidad:</strong> Formación digital estructurada (1.8/10)"
+        },
+        {
+          "icono": "🎯",
+          "texto": "<strong>Liderazgo preparado:</strong> Visión digital en desarrollo (2.0/10)"
+        }
       ],
       "resumen": "La cultura organizacional de Profermaco está en la primera etapa de desarrollo digital, con fundamentos sólidos y excelentes oportunidades de crecimiento. La organización está perfectamente posicionada para una transformación cultural gradual que incluya programas de capacitación específicos para el sector ferretero, fortalecimiento del liderazgo digital y desarrollo de procesos sistematizados para la adopción tecnológica organizacional."
     }
@@ -201,23 +230,60 @@
     "titulo": "Plan de Acción Organizacional",
     "resumen": "Basado en los resultados del diagnóstico de Profermaco, se presenta un plan de acción estratégico y realista de transformación digital ferretera en 4 fases para desarrollar gradualmente las competencias digitales desde su nivel actual (1.7/10) hacia un nivel intermedio sólido (3.75/10). Este plan de 15 meses está diseñado específicamente para la industria ferretera, enfocándose en mejoras prácticas, graduales y sostenibles que generen impacto real en la operación diaria.",
     "metricasResumen": [
-      { "valor": "2.05", "etiqueta": "Oportunidad de Crecimiento", "prioridad": "Importante", "color": "var(--color-critical)" },
-      { "valor": "240h", "etiqueta": "Capacitación Práctica", "prioridad": "Realista", "color": "var(--color-high-priority)" },
-      { "valor": "15", "etiqueta": "Meses de Duración", "prioridad": "Gradual", "color": "var(--color-medium-priority)" },
-      { "valor": "3.75", "etiqueta": "Meta Intermedia", "prioridad": "Alcanzable", "color": "var(--color-low-priority)" }
+      {
+        "valor": "2.05",
+        "etiqueta": "Oportunidad de Crecimiento",
+        "prioridad": "Importante",
+        "color": "var(--color-critical)"
+      },
+      {
+        "valor": "240h",
+        "etiqueta": "Capacitación Práctica",
+        "prioridad": "Realista",
+        "color": "var(--color-high-priority)"
+      },
+      {
+        "valor": "15",
+        "etiqueta": "Meses de Duración",
+        "prioridad": "Gradual",
+        "color": "var(--color-medium-priority)"
+      },
+      {
+        "valor": "3.75",
+        "etiqueta": "Meta Intermedia",
+        "prioridad": "Alcanzable",
+        "color": "var(--color-low-priority)"
+      }
     ],
     "tracker": {
       "titulo": "Progreso del Plan de Transformación Digital Ferretera",
       "subtitulo": "15 meses para desarrollar competencias digitales sólidas en el sector ferretero",
-      "hitos": ["Inicio", "4 meses", "10 meses", "15 meses"]
+      "hitos": [
+        "Inicio",
+        "4 meses",
+        "10 meses",
+        "15 meses"
+      ]
     },
     "roadmap": [],
     "beneficios": {
       "cuantificables": [
-        { "metrica": "Eficiencia en gestión de inventarios", "valor": "+35%" },
-        { "metrica": "Tiempo en procesos manuales", "valor": "-40%" },
-        { "metrica": "Satisfacción del cliente", "valor": "+30%" },
-        { "metrica": "Precisión en análisis de ventas", "valor": "+45%" }
+        {
+          "metrica": "Eficiencia en gestión de inventarios",
+          "valor": "+35%"
+        },
+        {
+          "metrica": "Tiempo en procesos manuales",
+          "valor": "-40%"
+        },
+        {
+          "metrica": "Satisfacción del cliente",
+          "valor": "+30%"
+        },
+        {
+          "metrica": "Precisión en análisis de ventas",
+          "valor": "+45%"
+        }
       ],
       "cualitativos": [
         "Referente digital en el sector ferretero",
@@ -232,13 +298,29 @@
     "titulo": "Resumen Ejecutivo",
     "resumenGeneral": "El diagnóstico integral de transformación digital de Profermaco revela una organización ferretera en la primera etapa de desarrollo digital, con bases sólidas y extraordinarias oportunidades de crecimiento. Los resultados reflejan un potencial excepcional para evolucionar hacia un modelo digital intermedio que genere ventajas competitivas reales en el mercado ferretero ecuatoriano, optimizando procesos operativos y mejorando significativamente la experiencia del cliente.",
     "puntuacionesDimensiones": [
-      { "nombre": "Madurez Digital", "puntuacion": 2.1, "color": "#F59E0B" },
-      { "nombre": "Competencias Digitales", "puntuacion": 1.5, "color": "#EF4444" },
-      { "nombre": "Uso de IA", "puntuacion": 1.2, "color": "#8B5CF6" },
-      { "nombre": "Cultura Digital", "puntuacion": 2.0, "color": "#F59E0B" }
+      {
+        "nombre": "Madurez Digital",
+        "puntuacion": 3,
+        "color": "#F59E0B"
+      },
+      {
+        "nombre": "Competencias Digitales",
+        "puntuacion": 3.1,
+        "color": "#EF4444"
+      },
+      {
+        "nombre": "Uso de IA",
+        "puntuacion": 2.8,
+        "color": "#8B5CF6"
+      },
+      {
+        "nombre": "Cultura Digital",
+        "puntuacion": 3,
+        "color": "#10B981"
+      }
     ],
     "puntuacionGeneral": {
-      "puntuacion": 1.7,
+      "puntuacion": 3,
       "etiqueta": "PUNTUACIÓN GENERAL",
       "descripcion": "Primera Etapa de Desarrollo Digital"
     },
@@ -258,5 +340,53 @@
   "footer": {
     "anio": "2025",
     "texto": "Skilt. Todos los derechos reservados."
+  },
+  "roleSpecificScores": {
+    "rolLiderazgo": {
+      "usoDeBI": 2.61,
+      "exploracionTecnologica": 2.76,
+      "gestionDeRiesgo": 2.95,
+      "estrategiaTecnologica": 2.83
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 2.12,
+      "monitoreoDeRendimiento": 3.37,
+      "liderazgoDeAdopcion": 2.94,
+      "optimizacionDeColaboracion": 3.33,
+      "usoDeIAEnGestion": 3.13
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 2.84,
+      "analiticaDeCliente": 2.96,
+      "comunicacionConClientes": 2.48,
+      "automatizacionDeMarketing": 2.55,
+      "usoDeIA": 2.89,
+      "usoDeSEO": 1.72,
+      "gestionDePaidMedia": 2.54
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 2.78,
+      "hojasDeCalculoAvanzadas": 3,
+      "plataformasDeGestion": 2.13,
+      "digitalizacionDeProcesos": 3.1,
+      "usoDeIA": 2.08
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 2.34,
+      "cloudComputing": 3.21,
+      "mejoraDeInfraestructura": 2.57,
+      "metodologiasDeDesarrollo": 3.07,
+      "usoDeIAEnDesarrollo": 3.15,
+      "scripting": 2.51,
+      "basesDeDatos": 2.77,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
   }
 }
