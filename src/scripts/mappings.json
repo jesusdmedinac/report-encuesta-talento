@@ -1,66 +1,66 @@
 {
   "D1_ADAPT: Cuando se introduce una nueva herramienta o software en la empresa, ¿con qué frecuencia eres uno de los primeros en probarlo?": {
     "dimension": "madurezDigital",
-    "subDimension": "actitudFrenteANuevasTecnologias"
+    "subDimension": "adaptabilidad"
   },
   "D1_ADAPT: ¿Qué tan cómodo/a te sientes cuando tus tareas diarias cambian debido a la implementación de una nueva tecnología?": {
     "dimension": "madurezDigital",
-    "subDimension": "actitudFrenteANuevasTecnologias"
+    "subDimension": "adaptabilidad"
   },
   "D1_ADAPT: ¿Con qué frecuencia buscas activamente tutoriales, videos o documentación para aprender a usar mejor las herramientas digitales de tu trabajo?": {
     "dimension": "madurezDigital",
-    "subDimension": "capacidadParaAprender"
+    "subDimension": "adaptabilidad"
   },
   "D1_SOLVING: Si un programa no funciona como esperas, ¿con qué frecuencia intentas resolver el problema por tu cuenta antes de contactar a TI o soporte?": {
     "dimension": "madurezDigital",
-    "subDimension": "capacidadParaAprender"
+    "subDimension": "resolucionDeProblemas"
   },
   "D1_SOLVING: ¿Con qué frecuencia utilizas plataformas en línea (ej. Google, YouTube, foros) para encontrar soluciones a problemas tecnológicos relacionados con tu trabajo?": {
     "dimension": "madurezDigital",
-    "subDimension": "capacidadParaAprender"
+    "subDimension": "resolucionDeProblemas"
   },
   "D1_PROACTIVITY: ¿Con qué frecuencia utilizas funciones avanzadas de software (ej. atajos de teclado, scripts, fórmulas complejas) para realizar tareas más rápido?": {
     "dimension": "madurezDigital",
-    "subDimension": "capacidadParaAprender"
+    "subDimension": "proactividadDigital"
   },
   "D1_PROACTIVITY: ¿Con qué frecuencia revisas tus procesos de trabajo para ver si hay tareas manuales que se pueden digitalizar o automatizar?": {
     "dimension": "madurezDigital",
-    "subDimension": "actitudFrenteANuevasTecnologias"
+    "subDimension": "proactividadDigital"
   },
   "D2_DATA: ¿Qué tan cómodo/a te sientes al utilizar datos para respaldar tus argumentos o decisiones en el trabajo?": {
-    "dimension": "competenciasDigitales",
+    "dimension": "brechaDigital",
     "subDimension": "analisisDeDatos"
   },
   "D2_DATA: ¿Con qué frecuencia utilizas herramientas de análisis (ej. Excel avanzado, Power BI) para visualizar o interpretar datos en tu trabajo?": {
-    "dimension": "competenciasDigitales",
+    "dimension": "brechaDigital",
     "subDimension": "analisisDeDatos"
   },
   "D2_DATA: ¿Con qué frecuencia encuentras la información relevante para tu trabajo de forma rápida y sencilla en los sistemas de la empresa?": {
-    "dimension": "competenciasDigitales",
-    "subDimension": "alfabetizacionTecnologica"
+    "dimension": "brechaDigital",
+    "subDimension": "alfabetizacionDeDatos"
   },
   "D2_COLLAB: ¿Con qué frecuencia utilizas las funciones de edición y colaboración en tiempo real en documentos (ej. Google Docs, Office 365)?": {
-    "dimension": "competenciasDigitales",
-    "subDimension": "comunicacionYColaboracion"
+    "dimension": "brechaDigital",
+    "subDimension": "colaboracionDigital"
   },
   "D2_COLLAB: ¿Qué tan cómodo/a te sientes al presentar información y comunicar resultados a través de plataformas virtuales (ej. Zoom, Teams)?": {
-    "dimension": "competenciasDigitales",
-    "subDimension": "comunicacionYColaboracion"
+    "dimension": "brechaDigital",
+    "subDimension": "colaboracionDigital"
   },
   "D2_SECURITY: ¿Con qué frecuencia verificas la identidad del remitente antes de hacer clic en un enlace de un correo electrónico sospechoso?": {
-    "dimension": "competenciasDigitales",
+    "dimension": "brechaDigital",
     "subDimension": "ciberseguridad"
   },
   "D2_SECURITY: ¿Con qué frecuencia cambias tus contraseñas de trabajo?": {
-    "dimension": "competenciasDigitales",
+    "dimension": "brechaDigital",
     "subDimension": "ciberseguridad"
   },
   "D2_SECURITY: ¿Con qué frecuencia utilizas un gestor de contraseñas (ej. LastPass, 1Password, el gestor de tu navegador) para administrar tus credenciales?": {
-    "dimension": "competenciasDigitales",
+    "dimension": "brechaDigital",
     "subDimension": "ciberseguridad"
   },
   "D2_SECURITY: ¿Qué tan cómodo/a te sientes al configurar y utilizar la autenticación de dos pasos (2FA) en tus cuentas de trabajo?": {
-    "dimension": "competenciasDigitales",
+    "dimension": "brechaDigital",
     "subDimension": "ciberseguridad"
   },
   "D3_LEADERSHIP: ¿Qué tan a menudo los líderes de tu área comunican cómo la tecnología está ayudando a la empresa a alcanzar sus objetivos?": {
@@ -69,34 +69,182 @@
   },
   "D3_ENVIRONMENT: ¿Con qué frecuencia se realizan reuniones o talleres en tu departamento para compartir conocimientos sobre nuevas herramientas o usos de la tecnología?": {
     "dimension": "culturaOrganizacional",
-    "subDimension": "formacionYDesarrollo"
+    "subDimension": "ambienteDeAprendizaje"
   },
-  "D3_SUPPORT: ¿Qué tan de acuerdo estás con la siguiente afirmación?: \"La empresa me proporciona la formación necesaria para mantenerme actualizado/a digitalmente\"": {
+  "D3_SUPPORT: ¿Qué tan de acuerdo estás con la siguiente afirmación?: \"La empresa me proporciona la formación necesaria para mantenerme actualizado/a digitalmente\".": {
     "dimension": "culturaOrganizacional",
-    "subDimension": "formacionYDesarrollo"
+    "subDimension": "apoyoOrganizacional"
   },
   "D3_ENVIRONMENT: Cuando se prueba una nueva tecnología y no funciona, ¿qué tan rápido vuelve el equipo a probar otra solución?": {
     "dimension": "culturaOrganizacional",
-    "subDimension": "aperturaTecnologica"
+    "subDimension": "experimentacion"
   },
   "D3_ENVIRONMENT: ¿Con qué frecuencia se reconoce y celebra el uso innovador de la tecnología por parte de los compañeros de trabajo?": {
     "dimension": "culturaOrganizacional",
-    "subDimension": "aperturaTecnologica"
+    "subDimension": "reconocimiento"
   },
   "D4_USAGE: En los últimos 6 meses, ¿con qué frecuencia has utilizado herramientas de IA Generativa (ej. ChatGPT, Copilot, Bard) para tareas de trabajo?": {
     "dimension": "usoInteligenciaArtificial",
-    "subDimension": "usoEnElTrabajo"
+    "subDimension": "frecuenciaDeUso"
   },
   "D4_USAGE: Si utilizas IA, ¿qué tan cómodo/a te sientes al escribir instrucciones claras (prompts) para obtener los resultados que necesitas?": {
     "dimension": "usoInteligenciaArtificial",
-    "subDimension": "usoEnElTrabajo"
+    "subDimension": "habilidadDeUso"
+  },
+  "D4_USAGE: ¿Cuál de las siguientes afirmaciones describe mejor tu situación actual respecto al uso de IA en el trabajo?": {
+    "dimension": "usoInteligenciaArtificial",
+    "subDimension": "nivelDeAdopcion"
+  },
+  "D4_MINDSET: ¿Qué tan preocupado/a estás de que la IA pueda reducir la necesidad de personas en tu puesto de trabajo actual?": {
+    "dimension": "usoInteligenciaArtificial",
+    "subDimension": "percepcionDeRiesgo"
   },
   "D4_MINDSET: ¿Qué tan interesado/a estás en recibir formación sobre cómo utilizar herramientas de IA para tu rol?": {
     "dimension": "usoInteligenciaArtificial",
-    "subDimension": "adopcion"
+    "subDimension": "interesEnAprendizaje"
   },
   "D4_ETHICS: ¿Con qué frecuencia verificas la exactitud de la información generada por una IA antes de utilizarla en un entregable final?": {
     "dimension": "usoInteligenciaArtificial",
-    "subDimension": "etica"
+    "subDimension": "eticaYVerificacion"
+  },
+  "M1_BI: ¿Con qué frecuencia utilizas herramientas de Business Intelligence (BI) para analizar métricas de desempeño y tomar decisiones estratégicas?": {
+    "dimension": "rolLiderazgo",
+    "subDimension": "usoDeBI"
+  },
+  "M1_EXPLORATION: ¿Con qué frecuencia dedicas tiempo a explorar nuevas tecnologías que podrían impactar tu industria o modelo de negocio?": {
+    "dimension": "rolLiderazgo",
+    "subDimension": "exploracionTecnologica"
+  },
+  "M1_RISK: ¿Qué tan cómodo/a te sientes al asignar presupuesto a proyectos de transformación digital de alto riesgo?": {
+    "dimension": "rolLiderazgo",
+    "subDimension": "gestionDeRiesgo"
+  },
+  "M1_STRATEGY: ¿Con qué frecuencia discutes el impacto de la IA en la estrategia de la empresa con tu equipo?": {
+    "dimension": "rolLiderazgo",
+    "subDimension": "estrategiaTecnologica"
+  },
+  "M1_STRATEGY: ¿Qué tan de acuerdo estás con la afirmación?: \"Mi equipo de liderazgo tiene un plan claro para integrar nuevas tecnologías en nuestra estrategia a 3 años.\"": {
+    "dimension": "rolLiderazgo",
+    "subDimension": "estrategiaTecnologica"
+  },
+  "M2_PROJECT_MGMT: ¿Con qué frecuencia utilizas software de gestión de proyectos (ej. Asana, Jira, Planner) para organizar las tareas de tu equipo?": {
+    "dimension": "rolMandosMedios",
+    "subDimension": "gestionDeProyectos"
+  },
+  "M2_PERFORMANCE: ¿Qué tan cómodo/a te sientes al usar dashboards o reportes automatizados para monitorear el rendimiento de tu equipo?": {
+    "dimension": "rolMandosMedios",
+    "subDimension": "monitoreoDeRendimiento"
+  },
+  "M2_ADOPTION: ¿Con qué frecuencia propones y lideras la adopción de nuevas herramientas digitales dentro de tu equipo?": {
+    "dimension": "rolMandosMedios",
+    "subDimension": "liderazgoDeAdopcion"
+  },
+  "M2_COLLAB: ¿Qué tan de acuerdo estás con la afirmación?: \"Mi equipo utiliza las herramientas colaborativas de la empresa (ej. Teams, Slack) de forma óptima para comunicarse y trabajar juntos.\"": {
+    "dimension": "rolMandosMedios",
+    "subDimension": "optimizacionDeColaboracion"
+  },
+  "M2_IA_MGMT: ¿Qué tan cómodo/a te sientes al utilizar IA para analizar datos y generar resúmenes de rendimiento de tu equipo?": {
+    "dimension": "rolMandosMedios",
+    "subDimension": "usoDeIAEnGestion"
+  },
+  "M3_CRM: ¿Con qué frecuencia utilizas el CRM (ej. Hubspot, Salesforce) para gestionar la totalidad de tu pipeline de ventas o relación con el cliente?": {
+    "dimension": "rolComercialCliente",
+    "subDimension": "usoDeCRM"
+  },
+  "M3_ANALYTICS: ¿Qué tan cómodo/a te sientes al usar herramientas de análisis (ej. Google Analytics) o escucha social para entender el comportamiento del cliente?": {
+    "dimension": "rolComercialCliente",
+    "subDimension": "analiticaDeCliente"
+  },
+  "M3_COMMUNICATION: ¿Con qué frecuencia utilizas herramientas de comunicación digital (ej. plataformas de video, chat en vivo) para interactuar con clientes externos?": {
+    "dimension": "rolComercialCliente",
+    "subDimension": "comunicacionConClientes"
+  },
+  "M3_AUTOMATION: ¿Qué tan de acuerdo estás con la afirmación?: \"Utilizo herramientas de automatización de ventas o marketing (ej. Hubspot, Mailchimp) para optimizar mis procesos.\"": {
+    "dimension": "rolComercialCliente",
+    "subDimension": "automatizacionDeMarketing"
+  },
+  "M3_IA_USAGE: ¿Qué tan cómodo/a te sientes al utilizar IA (ej. para generar copys, emails de ventas o resumir interacciones) en tu trabajo diario?": {
+    "dimension": "rolComercialCliente",
+    "subDimension": "usoDeIA"
+  },
+  "M3_SEO: ¿Con qué frecuencia utilizas herramientas SEO (ej. Semrush, Ahrefs) para realizar análisis de palabras clave o monitorear el posicionamiento?": {
+    "dimension": "rolComercialCliente",
+    "subDimension": "usoDeSEO"
+  },
+  "M3_PAID_MEDIA: ¿Qué tan cómodo/a te sientes creando y gestionando campañas de publicidad pagada en redes sociales (ej. Facebook Ads, LinkedIn Ads)?": {
+    "dimension": "rolComercialCliente",
+    "subDimension": "gestionDePaidMedia"
+  },
+  "M4_ERP: ¿Qué tan cómodo/a te sientes al utilizar el sistema ERP (Enterprise Resource Planning) para las operaciones clave de tu trabajo?": {
+    "dimension": "rolOperacionesAdminFinanzas",
+    "subDimension": "usoDeERP"
+  },
+  "M4_SPREADSHEETS: ¿Qué tan cómodo/a te sientes al utilizar funciones avanzadas de hojas de cálculo (ej. Tablas Dinámicas, Power Query) para analizar datos financieros o de operaciones?": {
+    "dimension": "rolOperacionesAdminFinanzas",
+    "subDimension": "hojasDeCalculoAvanzadas"
+  },
+  "M4_PLATFORMS: ¿Con qué frecuencia utilizas plataformas digitales para la gestión de facturas, pedidos, inventario o rutas logísticas?": {
+    "dimension": "rolOperacionesAdminFinanzas",
+    "subDimension": "plataformasDeGestion"
+  },
+  "M4_DIGITIZATION: ¿Qué tan de acuerdo estás con la afirmación?: \"Los procesos clave de mi área están digitalizados, reduciendo la necesidad de papel o tareas manuales.\"": {
+    "dimension": "rolOperacionesAdminFinanzas",
+    "subDimension": "digitalizacionDeProcesos"
+  },
+  "M4_IA_USAGE: ¿Con qué frecuencia utilizas herramientas de IA para ayudar con el análisis de datos o la generación de informes en tu área?": {
+    "dimension": "rolOperacionesAdminFinanzas",
+    "subDimension": "usoDeIA"
+  },
+  "M5_CODE_MGMT: ¿Con qué frecuencia utilizas herramientas de gestión de código y colaboración (ej. GitHub, GitLab) en tu trabajo diario?": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "gestionDeCodigo"
+  },
+  "M5_CLOUD: ¿Qué tan cómodo/a te sientes al utilizar entornos o servicios de cloud computing (ej. AWS, Azure, Google Cloud)?": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "cloudComputing"
+  },
+  "M5_INFRA: ¿Con qué frecuencia participas en la mejora continua de la infraestructura tecnológica de la empresa?": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "mejoraDeInfraestructura"
+  },
+  "M5_METHODOLOGY: ¿Qué tan de acuerdo estás con la afirmación?: \"Estoy familiarizado/a con las últimas metodologías de desarrollo (ej. DevOps, Agile, CI/CD).\"": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "metodologiasDeDesarrollo"
+  },
+  "M5_IA_DEV: ¿Qué tan cómodo/a te sientes al utilizar IA (ej. GitHub Copilot, depuradores de código) para mejorar tu código o solucionar problemas?": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "usoDeIAEnDesarrollo"
+  },
+  "M5_SCRIPTING: ¿Con qué frecuencia escribes o modificas scripts en un lenguaje como Python o JavaScript para automatizar tareas?": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "scripting"
+  },
+  "M5_DATABASE: ¿Con qué frecuencia utilizas consultas SQL para extraer o manipular datos de las bases de la empresa?": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "basesDeDatos"
+  },
+  "M5_DESIGN: ¿Qué tan cómodo/a te sientes creando prototipos o diseños de interfaz de usuario utilizando herramientas como Figma, Sketch o Adobe XD?": {
+    "dimension": "rolTecnicoProducto",
+    "subDimension": "diseñoUI"
+  },
+  "M6_HRIS: ¿Con qué frecuencia utilizas el software de gestión de RRHH (HRIS) para automatizar procesos clave (ej. onboarding, nóminas, vacaciones)?": {
+    "dimension": "rolSoporteInterno",
+    "subDimension": "usoDeHRIS"
+  },
+  "M6_RECRUITMENT: ¿Qué tan cómodo/a te sientes al utilizar herramientas de reclutamiento digital (ej. ATS - Applicant Tracking System, LinkedIn Recruiter)?": {
+    "dimension": "rolSoporteInterno",
+    "subDimension": "reclutamientoDigital"
+  },
+  "M6_LEARNING: ¿Con qué frecuencia utilizas plataformas de e-learning para ofrecer programas de capacitación a los empleados?": {
+    "dimension": "rolSoporteInterno",
+    "subDimension": "plataformasDeCapacitacion"
+  },
+  "M6_DOC_MGMT: ¿Qué tan de acuerdo estás con la afirmación?: \"La empresa tiene una gestión de documentos segura y eficiente para los expedientes de personal o documentos legales.\"": {
+    "dimension": "rolSoporteInterno",
+    "subDimension": "gestionDocumental"
+  },
+  "M6_IA_USAGE: ¿Con qué frecuencia utilizas herramientas de IA para redactar descripciones de puesto, comunicaciones internas o revisar documentos básicos?": {
+    "dimension": "rolSoporteInterno",
+    "subDimension": "usoDeIA"
   }
 }
