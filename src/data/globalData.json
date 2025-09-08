@@ -1,9 +1,10 @@
 {
   "header": {
-    "empresa": "Profermaco",
-    "fechaDiagnostico": "Lunes 9 de junio de 2025",
+    "empresa": "Banco de Guayaquil",
+    "fechaDiagnostico": "miércoles, 3 de septiembre de 2025",
     "empleadosEvaluados": "2402",
-    "titulo": "Reporte de Transformación Digital Organizacional"
+    "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
+    "idReporte": "TBjwOGHs"
   },
   "introduccion": {
     "titulo": "Introducción",
@@ -15,7 +16,7 @@
     "puntuacionPromedioSector": 1.6,
     "puntuacionMetaSector": 9.38,
     "textoNivelActual": "Primera etapa de desarrollo",
-    "nombreEmpresa": "Profermaco",
+    "nombreEmpresa": "Banco de Guayaquil",
     "textoOportunidadParrafo": "Profermaco se encuentra en una posición excepcional para acelerar su transformación digital. Con un nivel actual de 1.7/5 y una meta sectorial de 3.75/5, existe una valiosa oportunidad de crecimiento de 2.05 puntos que posiciona a la empresa para un desarrollo digital estratégico y sistemático. Esta brecha representa el potencial perfecto para implementar mejoras graduales y sostenibles que generen impacto real en la operación farmacéutica.",
     "parrafo1": "Los resultados revelan que Profermaco está en la primera etapa de su desarrollo digital, una fase caracterizada por fundamentos sólidos y grandes oportunidades de mejora sistemática. La organización muestra una base establecida para el crecimiento, especialmente en madurez digital (2.1/10) y una cultura organizacional receptiva (2.0/10), elementos clave para el éxito de cualquier proceso de transformación.",
     "parrafo2": "Para consolidarse como referente en el sector ferretero ecuatoriano, es fundamental que Profermaco evolucione hacia el <strong>nivel intermedio-avanzado de competencias digitales</strong> (3.75+ puntos). Este nivel representa no solo el dominio de herramientas digitales esenciales para la industria ferretera y de construcción, sino también la capacidad de optimizar procesos, tomar decisiones basadas en datos y ofrecer un servicio más eficiente a sus clientes. Las organizaciones ferreterías que alcanzan este nivel se caracterizan por equipos capacitados, procesos automatizados y una ventaja competitiva sostenible en el mercado de materiales de construcción."
@@ -25,7 +26,7 @@
     "puntuacionGeneral": 7.6,
     "puntuacionPromedioSector": 1.7,
     "puntuacionMetaSector": 3.75,
-    "nombreEmpresa": "Profermaco",
+    "nombreEmpresa": "Banco de Guayaquil",
     "parrafoIntroductorio": "Profermaco se encuentra en la primera etapa de madurez digital (2.1/10), con una excelente oportunidad de crecimiento de 1.65 puntos hacia la meta del sector (3.75/10). Este indicador refleja un potencial extraordinario para desarrollar la capacidad organizacional de aprovechar tecnologías digitales de manera estratégica en el sector ferretero y de materiales de construcción.",
     "componentes": [
       {

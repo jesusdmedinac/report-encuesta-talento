@@ -116,7 +116,7 @@ function performQuantitativeAnalysis(data, mappings) {
     return results;
 }
 
-function generateReportJson(analysisResults, totalRespondents) {
+function generateReportJson(analysisResults, totalRespondents, empresaNombre, reportId) {
     const template = loadJson(TEMPLATE_PATH);
 
     const madurezDigitalAvg = calculateAverage(Object.values(analysisResults.madurezDigital));
@@ -125,7 +125,16 @@ function generateReportJson(analysisResults, totalRespondents) {
     const culturaOrganizacionalAvg = calculateAverage(Object.values(analysisResults.culturaOrganizacional));
     const overallAvg = calculateAverage([madurezDigitalAvg, brechaDigitalAvg, usoInteligenciaArtificialAvg, culturaOrganizacionalAvg]);
 
+    // --- Actualización del Header ---
+    const hoy = new Date();
+    const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+    template.header.empresa = empresaNombre;
+    template.header.fechaDiagnostico = hoy.toLocaleDateString('es-ES', opcionesFecha);
+    template.header.titulo = `Reporte de Transformación Digital para ${empresaNombre}`;
+    template.header.idReporte = reportId;
     template.header.empleadosEvaluados = totalRespondents.toString();
+
 
     template.resumenEjecutivo.puntuacionGeneral.puntuacion = parseFloat(scaleToTen(overallAvg).toFixed(1));
     template.resumenEjecutivo.puntuacionesDimensiones = [
@@ -137,6 +146,7 @@ function generateReportJson(analysisResults, totalRespondents) {
     
     template.brechaDigital.puntuacionEmpresa = parseFloat(scaleToTen(overallAvg).toFixed(1));
     template.brechaDigital.puntuacionMetaSector = 9.38; // 3.75 * 2.5
+    template.brechaDigital.nombreEmpresa = empresaNombre;
 
     template.madurezDigital.puntuacionGeneral = parseFloat(scaleToTen(madurezDigitalAvg).toFixed(1));
     template.madurezDigital.componentes = Object.entries(analysisResults.madurezDigital).map(([key, value]) => ({
@@ -147,6 +157,7 @@ function generateReportJson(analysisResults, totalRespondents) {
         colorGradiente: "#4387ff",
         meta: 9.38 // 3.75 * 2.5
     }));
+    template.madurezDigital.nombreEmpresa = empresaNombre;
 
     template.competenciasDigitales.promedio = parseFloat(scaleToTen(brechaDigitalAvg).toFixed(1));
     template.competenciasDigitales.competencias = Object.entries(analysisResults.brechaDigital).map(([key, value]) => ({
@@ -199,9 +210,12 @@ function main() {
     console.log('Iniciando la generación del reporte...');
 
     const csvFilePath = getArgument('--csv');
-    if (!csvFilePath) {
-        console.error('Error: Debes proporcionar la ruta al archivo CSV usando el argumento --csv.');
-        console.error('Ejemplo: node src/scripts/generate-report.mjs --csv=./data/respuestas-por-puntos.csv');
+    const empresaNombre = getArgument('--empresa');
+    const reportId = getArgument('--reportId');
+
+    if (!csvFilePath || !empresaNombre || !reportId) {
+        console.error('Error: Faltan argumentos obligatorios.');
+        console.error('Ejemplo: node src/scripts/generate-report.mjs --csv=./data/respuestas.csv --empresa="Mi Empresa" --reportId="REP001"');
         process.exit(1);
     }
 
@@ -221,7 +235,7 @@ function main() {
     const quantitativeResults = performQuantitativeAnalysis(surveyData, mappings);
 
     console.log('Generando el archivo JSON del reporte...');
-    const reportJson = generateReportJson(quantitativeResults, surveyData.length);
+    const reportJson = generateReportJson(quantitativeResults, surveyData.length, empresaNombre, reportId);
 
     try {
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(reportJson, null, 2), 'utf8');
