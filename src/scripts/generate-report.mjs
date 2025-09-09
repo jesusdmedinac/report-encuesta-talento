@@ -2,10 +2,10 @@ import fs from 'fs';
 import Papa from 'papaparse';
 import path from 'path';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import OpenAI from 'openai';
 
 // --- Constantes y Configuraciones ---
 const MAPPINGS_PATH = path.join(process.cwd(), 'src', 'scripts', 'mappings.json');
-const OUTPUT_PATH = path.join(process.cwd(), 'src', 'data', 'globalData.json');
 const TEMPLATE_PATH = path.join(process.cwd(), 'src', 'data', 'globalData.json');
 
 
@@ -117,7 +117,7 @@ function performQuantitativeAnalysis(data, mappings) {
     return results;
 }
 
-async function performQualitativeAnalysis(model, quantitativeResults) {
+async function performQualitativeAnalysis(provider, aiClient, modelName, quantitativeResults) {
     console.log('Iniciando análisis cualitativo con IA...');
     const insights = {};
 
@@ -137,13 +137,30 @@ async function performQualitativeAnalysis(model, quantitativeResults) {
 
     try {
         console.log('Generando resumen ejecutivo...');
-        const result = await model.generateContent(summaryPrompt);
-        const response = await result.response;
-        insights.resumenEjecutivo = response.text();
+        let generatedText = "";
+
+        switch (provider) {
+            case 'gemini':
+                const geminiResult = await aiClient.generateContent(summaryPrompt);
+                const geminiResponse = await geminiResult.response;
+                generatedText = geminiResponse.text();
+                break;
+
+            case 'openai':
+                const openAIResult = await aiClient.chat.completions.create({
+                    model: modelName,
+                    messages: [{ role: 'user', content: summaryPrompt }],
+                });
+                generatedText = openAIResult.choices[0].message.content;
+                break;
+        }
+
+        insights.resumenEjecutivo = generatedText;
         console.log('Resumen ejecutivo generado por IA.');
+
     } catch (error) {
-        console.error('Error al generar el resumen ejecutivo con IA:', error);
-        insights.resumenEjecutivo = "No se pudo generar el resumen ejecutivo debido a un error. Por favor, revise la configuración de la API y los logs del modelo.";
+        console.error(`Error al generar el resumen ejecutivo con ${provider}:`, error);
+        insights.resumenEjecutivo = `No se pudo generar el resumen ejecutivo con ${provider}. Por favor, revise la configuración de la API y los logs del modelo.`;
     }
 
     return insights;
@@ -246,16 +263,42 @@ function generateReportJson(analysisResults, qualitativeResults, totalRespondent
 async function main() {
     console.log('Iniciando la generación del reporte...');
 
-    // --- Configuración de IA ---
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) {
-        console.error('Error: La variable de entorno GEMINI_API_KEY no está configurada.');
-        console.error('Por favor, configúrala con tu clave de API de Google Generative AI.');
-        process.exit(1);
+    const provider = getArgument('--provider') || 'gemini';
+    const modelName = getArgument('--model');
+
+    let aiClient;
+    let effectiveModelName;
+
+    console.log(`Usando el proveedor de IA: ${provider}`);
+
+    switch (provider) {
+        case 'gemini':
+            const geminiApiKey = process.env.GEMINI_API_KEY;
+            if (!geminiApiKey) {
+                console.error('Error: La variable de entorno GEMINI_API_KEY no está configurada.');
+                process.exit(1);
+            }
+            effectiveModelName = modelName || 'gemini-1.5-flash';
+            const genAI = new GoogleGenerativeAI(geminiApiKey);
+            aiClient = genAI.getGenerativeModel({ model: effectiveModelName });
+            break;
+
+        case 'openai':
+            const openaiApiKey = process.env.OPENAI_API_KEY;
+            if (!openaiApiKey) {
+                console.error('Error: La variable de entorno OPENAI_API_KEY no está configurada.');
+                process.exit(1);
+            }
+            effectiveModelName = modelName || 'gpt-4o';
+            aiClient = new OpenAI({ apiKey: openaiApiKey });
+            break;
+
+        default:
+            console.error(`Error: Proveedor de IA no soportado: ${provider}. Soportados: 'gemini', 'openai'.`);
+            process.exit(1);
     }
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    console.log('Cliente de IA inicializado.');
+
+    console.log(`Cliente de IA inicializado con el modelo: ${effectiveModelName}.`);
 
     const csvFilePath = getArgument('--csv');
     const empresaNombre = getArgument('--empresa');
@@ -263,7 +306,7 @@ async function main() {
 
     if (!csvFilePath || !empresaNombre || !reportId) {
         console.error('Error: Faltan argumentos obligatorios.');
-        console.error('Ejemplo: node src/scripts/generate-report.mjs --csv=./data/respuestas.csv --empresa="Mi Empresa" --reportId="REP001"');
+        console.error('Ejemplo: node src/scripts/generate-report.mjs --csv=./data/respuestas.csv --empresa="Mi Empresa" --reportId="REP001" --provider=gemini');
         process.exit(1);
     }
 
@@ -283,12 +326,13 @@ async function main() {
     const quantitativeResults = performQuantitativeAnalysis(surveyData, mappings);
 
     console.log('Realizando análisis cualitativo...');
-    const qualitativeResults = await performQualitativeAnalysis(model, quantitativeResults);
+    const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults);
 
     console.log('Generando el archivo JSON del reporte...');
     const reportJson = generateReportJson(quantitativeResults, qualitativeResults, surveyData.length, empresaNombre, reportId);
 
     try {
+        const OUTPUT_PATH = path.join(process.cwd(), 'src', 'data', `globalData.${provider}.json`);
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(reportJson, null, 2), 'utf8');
         console.log(`Reporte generado exitosamente en: ${OUTPUT_PATH}`);
     } catch (error) {
