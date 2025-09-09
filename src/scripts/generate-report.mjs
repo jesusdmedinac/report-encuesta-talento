@@ -1,6 +1,7 @@
 import fs from 'fs';
 import Papa from 'papaparse';
 import path from 'path';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // --- Constantes y Configuraciones ---
 const MAPPINGS_PATH = path.join(process.cwd(), 'src', 'scripts', 'mappings.json');
@@ -116,8 +117,44 @@ function performQuantitativeAnalysis(data, mappings) {
     return results;
 }
 
-function generateReportJson(analysisResults, totalRespondents, empresaNombre, reportId) {
+async function performQualitativeAnalysis(model, quantitativeResults) {
+    console.log('Iniciando análisis cualitativo con IA...');
+    const insights = {};
+
+    const summaryPrompt = `
+        Eres un consultor experto en transformación digital.
+        Basado en los siguientes resultados cuantitativos de una encuesta de madurez digital,
+        donde la puntuación va de 1 (muy en desacuerdo) a 4 (muy de acuerdo),
+        genera un resumen ejecutivo conciso y profesional de 3 párrafos.
+
+        Resultados Cuantitativos (promedios de 1 a 4):
+        ${JSON.stringify(quantitativeResults, null, 2)}
+
+        El resumen debe ser accionable, escrito en un tono de experto a cliente, y resaltar 
+        las áreas clave de fortaleza y debilidad sin usar un lenguaje demasiado técnico.
+        Finaliza con una nota optimista sobre el potencial de mejora.
+    `;
+
+    try {
+        console.log('Generando resumen ejecutivo...');
+        const result = await model.generateContent(summaryPrompt);
+        const response = await result.response;
+        insights.resumenEjecutivo = response.text();
+        console.log('Resumen ejecutivo generado por IA.');
+    } catch (error) {
+        console.error('Error al generar el resumen ejecutivo con IA:', error);
+        insights.resumenEjecutivo = "No se pudo generar el resumen ejecutivo debido a un error. Por favor, revise la configuración de la API y los logs del modelo.";
+    }
+
+    return insights;
+}
+
+function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId) {
     const template = loadJson(TEMPLATE_PATH);
+
+    // --- Integración de Análisis Cualitativo ---
+    template.resumenEjecutivo.resumenGeneral = qualitativeResults.resumenEjecutivo;
+
 
     const madurezDigitalAvg = calculateAverage(Object.values(analysisResults.madurezDigital));
     const brechaDigitalAvg = calculateAverage(Object.values(analysisResults.brechaDigital));
@@ -206,8 +243,19 @@ function generateReportJson(analysisResults, totalRespondents, empresaNombre, re
 
 // --- Punto de Entrada Principal ---
 
-function main() {
+async function main() {
     console.log('Iniciando la generación del reporte...');
+
+    // --- Configuración de IA ---
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+        console.error('Error: La variable de entorno GEMINI_API_KEY no está configurada.');
+        console.error('Por favor, configúrala con tu clave de API de Google Generative AI.');
+        process.exit(1);
+    }
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    console.log('Cliente de IA inicializado.');
 
     const csvFilePath = getArgument('--csv');
     const empresaNombre = getArgument('--empresa');
@@ -234,8 +282,11 @@ function main() {
     console.log('Realizando análisis cuantitativo...');
     const quantitativeResults = performQuantitativeAnalysis(surveyData, mappings);
 
+    console.log('Realizando análisis cualitativo...');
+    const qualitativeResults = await performQualitativeAnalysis(model, quantitativeResults);
+
     console.log('Generando el archivo JSON del reporte...');
-    const reportJson = generateReportJson(quantitativeResults, surveyData.length, empresaNombre, reportId);
+    const reportJson = generateReportJson(quantitativeResults, qualitativeResults, surveyData.length, empresaNombre, reportId);
 
     try {
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(reportJson, null, 2), 'utf8');
