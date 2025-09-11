@@ -9,7 +9,7 @@ const MAPPINGS_PATH = path.join(process.cwd(), 'src', 'scripts', 'mappings.json'
 const TEMPLATE_PATH = path.join(process.cwd(), 'src', 'data', 'globalData.json');
 
 
-const PII_COLUMNS = [
+const NON_QUANTITATIVE_COLUMNS = [
     '#', 'DEMO_CONSENT: Política de privacidad de datos', 'DEMO_CONTACT: Nombre',
     'DEMO_CONTACT: Apellido', 'DEMO_CONTACT: Email', 'DEMO_PROFESSIONAL: Departamento:',
     'DEMO_PROFESSIONAL: Nivel de estudios:', 'DEMO_PROFESSIONAL: Menciona el rol que cumples en tu empresa:',
@@ -57,7 +57,7 @@ function loadCsv(filePath) {
         return parsedData.data.map(row => {
             const newRow = {};
             for (const key in row) {
-                if (!PII_COLUMNS.includes(key.trim())) {
+                if (!NON_QUANTITATIVE_COLUMNS.includes(key.trim())) {
                     newRow[key.trim()] = row[key];
                 }
             }
