@@ -1,43 +1,71 @@
-# Astro Starter Kit: Minimal
+# Reporte de Madurez Digital
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este es un proyecto Astro para visualizar un reporte de madurez digital generado automáticamente.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Estructura del Proyecto
 
 ```text
 /
 ├── public/
 ├── src/
+│   ├── components/
+│   ├── data/
+│   │   └── globalData.json
+│   ├── layouts/
 │   └── pages/
-│       └── index.astro
+├── data/
+│   └── Csv con respuestas
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+-   **`src/components`**: Contiene los componentes de Astro que renderizan cada sección del reporte.
+-   **`src/data/globalData.json`**: Es el corazón del reporte. Este archivo JSON contiene todos los datos (cuantitativos y cualitativos) que se muestran en el frontend. Es generado por el script `generate-report`.
+-   **`src/scripts/generate-report.mjs`**: Script de Node.js que procesa un archivo CSV de respuestas, realiza análisis y genera el `globalData.json`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🧞 Comandos
 
-Any static assets, like images, can be placed in the `public/` directory.
+| Comando | Acción |
+| :--- | :--- |
+| `npm install` | Instala las dependencias. |
+| `npm run dev` | Inicia el servidor de desarrollo en `localhost:4321`. |
+| `npm run build` | Compila el sitio para producción en `./dist/`. |
+| `npm run preview` | Previsualiza el sitio compilado. |
+| `npm run generate-report` | **Genera un nuevo reporte a partir de un CSV.** |
 
-## 🧞 Commands
+## 🤖 Generación Automática de Reportes
 
-All commands are run from the root of the project, from a terminal:
+Este proyecto incluye un potente script para procesar los resultados de una encuesta de madurez digital y generar automáticamente el archivo de datos (`globalData.json`) que alimenta el reporte visual.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Requisitos
 
-## 👀 Want to learn more?
+1.  **Archivo CSV**: Necesitas un archivo con las respuestas de la encuesta.
+2.  **Clave de API de IA**: El script utiliza un modelo de lenguaje grande (Gemini o OpenAI) para generar análisis cualitativos. Debes tener una clave de API.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Pasos para Generar un Reporte
+
+1.  **Configura las variables de entorno**:
+    Crea un archivo `.env` en la raíz del proyecto o exporta las variables en tu terminal.
+
+    *   **Para Gemini**:
+        ```bash
+        export GEMINI_API_KEY="tu_api_key_de_google_ai"
+        ```
+    *   **Para OpenAI**:
+        ```bash
+        export OPENAI_API_KEY="tu_api_key_de_openai"
+        ```
+
+2.  **Ejecuta el script**:
+    Utiliza el comando `npm run generate-report` y pásale los siguientes argumentos:
+    *   `--csv`: Ruta al archivo de respuestas.
+    *   `--empresa`: Nombre de la empresa para el reporte.
+    *   `--reportId`: Un identificador único para el reporte.
+    *   `--provider` (opcional): El proveedor de IA a utilizar. Puede ser `gemini` (por defecto) u `openai`.
+
+    **Ejemplo de uso:**
+    ```bash
+    npm run generate-report -- --csv=./data/responses-TBjwOGHs-final.csv --empresa="Skilt" --reportId="SKL-001" --provider=gemini
+    ```
+
+3.  **Verifica el resultado**:
+    El script creará un nuevo archivo de datos en `src/data/`, nombrado según el proveedor (ej. `globalData.gemini.json`). La página del reporte utilizará estos datos para renderizar la visualización actualizada.

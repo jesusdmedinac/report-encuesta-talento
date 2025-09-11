@@ -2,33 +2,33 @@
 
 Este documento detalla el plan por fases para implementar el algoritmo de generación de reportes dentro del proyecto Astro actual. El objetivo es crear un script que procese un archivo CSV de respuestas, realice análisis cuantitativos y cualitativos (usando IA), y genere el archivo `src/data/globalData.json` que alimenta el frontend del reporte.
 
-## Fase 1: Configuración del Entorno y Carga de Datos
+## Fase 1: Configuración del Entorno y Carga de Datos [COMPLETADO]
 
 El objetivo de esta fase es preparar la estructura del proyecto para el nuevo script y asegurar que podamos leer y procesar los datos crudos desde un archivo CSV.
 
-1.  **Crear el Script Principal:**
+1.  **Crear el Script Principal: [COMPLETADO]**
     *   Crea un nuevo archivo en `src/scripts/generate-report.mjs`. Este será el punto de entrada para toda la lógica de generación del reporte.
 
-2.  **Instalar Dependencias:**
+2.  **Instalar Dependencias: [COMPLETADO]**
     *   Necesitaremos una librería para parsear el archivo CSV. `papaparse` es una excelente opción. Ejecuta el siguiente comando para instalarla:
         ```bash
         npm install papaparse
         ```
 
-3.  **Cargar y Parsear el CSV:**
+3.  **Cargar y Parsear el CSV: [COMPLETADO]**
     *   Dentro de `generate-report.mjs`, implementa la lógica para leer un archivo CSV. El path al archivo CSV se pasará como un argumento de línea de comandos.
     *   Utiliza `papaparse` para convertir el contenido del CSV en un array de objetos JavaScript.
     *   Realiza una limpieza básica de los datos: elimina filas vacías o con datos incompletos que sean críticos para el análisis.
 
-## Fase 2: Implementación del Módulo de Análisis Cuantitativo
+## Fase 2: Implementación del Módulo de Análisis Cuantitativo [COMPLETADO]
 
 Esta fase se centra en traducir las respuestas de la encuesta en métricas y puntuaciones numéricas, siguiendo el `PLAN.md`.
 
-1.  **Mapeo de Preguntas a Dimensiones:**
+1.  **Mapeo de Preguntas a Dimensiones: [COMPLETADO]**
     *   Crea un archivo de configuración, por ejemplo `src/scripts/mappings.json`.
     *   En este archivo, define un objeto que mapee cada encabezado de pregunta del CSV a su dimensión y sub-dimensión correspondiente en la estructura del `globalData.json`.
 
-2.  **Motor de Cálculo:**
+2.  **Motor de Cálculo: [COMPLETADO]**
     *   Itera sobre cada respuesta del CSV ya parseado.
     *   Aplica el mapeo para leer directamente las puntuaciones numéricas (que ya vienen en el CSV en una escala de 1 a 4).
     *   Calcula las puntuaciones promedio para:
@@ -38,35 +38,35 @@ Esta fase se centra en traducir las respuestas de la encuesta en métricas y pun
     *   Calcula los porcentajes específicos requeridos, como los de `Uso de IA` y `Cultura Organizacional`.
     *   Almacena todos estos valores calculados en un objeto JavaScript que siga la estructura del `globalData.json`.
 
-## Fase 3: Implementación del Módulo de Análisis Cualitativo (Intérprete de IA)
+## Fase 3: Implementación del Módulo de Análisis Cualitativo (Intérprete de IA) [COMPLETADO]
 
 En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar las narrativas y análisis de texto.
 
-1.  **Configurar Acceso a la API de IA:**
+1.  **Configurar Acceso a la API de IA: [COMPLETADO]**
     *   El script necesitará acceso a una API de IA generativa (ej. Google AI Studio para Gemini).
     *   Instala el cliente de la API correspondiente (ej. `npm install @google/generative-ai`).
     *   La configuración (como la API Key) debe manejarse a través de variables de entorno para mantener la seguridad.
 
-2.  **Generación de Prompts:**
+2.  **Generación de Prompts: [COMPLETADO]**
     *   Crea funciones que generen los prompts dinámicamente, como se describe en `PLAN.md`.
     *   **Prompt para Síntesis de Texto Abierto:** Debe tomar una lista de respuestas a una pregunta abierta y pedir al LLM que identifique temas clave y genere una narrativa.
     *   **Prompt para Narrativas Generales:** Debe tomar los datos cuantitativos de la Fase 2 (ej. puntuación general, dimensión más fuerte/débil) y pedir al LLM que redacte la `introduccion`, el `resumenEjecutivo`, etc.
 
-3.  **Ejecutar Llamadas a la IA:**
+3.  **Ejecutar Llamadas a la IA: [COMPLETADO]**
     *   Implementa la lógica para enviar los prompts al LLM y recibir las respuestas.
     *   Añade manejo de errores para las llamadas a la API.
 
-4.  **Integrar Resultados:**
+4.  **Integrar Resultados: [COMPLETADO]**
     *   Toma el texto generado por el LLM y añádelo al objeto de datos que se está construyendo.
 
-## Fase 4: Ensamblaje Final y Generación del Archivo
+## Fase 4: Ensamblaje Final y Generación del Archivo [COMPLETADO]
 
 Esta es la última fase del script, donde se une todo y se produce el archivo final.
 
-1.  **Unir Datos Cuantitativos y Cualitativos:**
+1.  **Unir Datos Cuantitativos y Cualitativos: [COMPLETADO]**
     *   Asegúrate de que el objeto de datos principal contenga tanto los cálculos numéricos de la Fase 2 como las narrativas de texto de la Fase 3.
 
-2.  **Generar el JSON Final:**
+2.  **Generar el JSON Final: [COMPLETADO]**
     *   Utiliza el módulo `fs` de Node.js para escribir el objeto de datos completo en el archivo `src/data/globalData.json`.
     *   El contenido debe ser "pretty-printed" (formateado con indentación) para que sea legible por humanos.
 

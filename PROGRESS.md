@@ -6,38 +6,49 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ## Estado Actual
 
-**Fase Actual:** **Final de la Fase 2.** El módulo de análisis cuantitativo está completo.
+**Fase Actual:** **Final de la Fase 4.** Los módulos de análisis cuantitativo y cualitativo están implementados y ensamblados.
 
-### Pasos Completados (Fase 1 y 2)
+### Pasos Completados (Fase 1 a 4)
 
--   [x] **`IMPLEMENTATION_PLAN.md` creado:** Hoja de ruta detallada.
--   [x] **Script `src/scripts/generate-report.mjs` creado:** Punto de entrada para la lógica.
--   [x] **Dependencia `papaparse` instalada:** El proyecto puede manejar archivos CSV.
--   [x] **Lógica de carga de CSV implementada:** El script lee y parsea el archivo de respuestas desde un argumento (`--csv`).
--   [x] **Filtrado de PII:** El script excluye automáticamente columnas con datos personales sensibles.
--   [x] **Motor de Cálculo Cuantitativo:** La función `performQuantitativeAnalysis` está implementada. Lee los mapeos, procesa todas las respuestas y calcula correctamente los promedios para cada dimensión y sub-dimensión.
--   [x] **Salida de Resultados:** El script muestra en consola los resultados numéricos del análisis.
+-   [x] **Fase 1: Configuración y Carga de Datos:**
+    -   [x] Script `generate-report.mjs` creado.
+    -   [x] Dependencia `papaparse` instalada y funcionando.
+    -   [x] Carga y parseo de CSV desde un argumento de línea de comandos.
+    -   [x] Filtrado de columnas con información personal identificable (PII).
+
+-   [x] **Fase 2: Análisis Cuantitativo:**
+    -   [x] Mapeo de preguntas a dimensiones (`mappings.json`).
+    -   [x] Motor de cálculo implementado en `performQuantitativeAnalysis`.
+    -   [x] Cálculo de promedios para dimensiones y sub-dimensiones.
+
+-   [x] **Fase 3: Análisis Cualitativo (Intérprete de IA):**
+    -   [x] Dependencias `@google/generative-ai` y `openai` instaladas.
+    -   [x] Carga segura de claves de API (`GEMINI_API_KEY`, `OPENAI_API_KEY`) desde variables de entorno.
+    -   [x] Implementada la función `performQualitativeAnalysis` que se conecta a un proveedor de IA (`gemini` u `openai`).
+    -   [x] Generación de un prompt dinámico para el `resumenEjecutivo` basado en los resultados cuantitativos.
+    -   [x] Integración del texto generado por IA en el flujo de datos.
+
+-   [x] **Fase 4: Ensamblaje y Generación del Archivo:**
+    -   [x] La función `generateReportJson` une los datos cuantitativos y cualitativos.
+    -   [x] El script genera el archivo `globalData.{provider}.json` en `src/data/`.
+    -   [x] El script ahora es configurable mediante argumentos: `--csv`, `--empresa`, `--reportId`, `--provider`.
 
 ---
 
-## Próximos Pasos (Fase 3)
+## Próximos Pasos (Fase 5)
 
-1.  **Iniciar la Fase 3: Implementación del Módulo de Análisis Cualitativo (Intérprete de IA).**
-2.  **Instalar dependencia de IA:** Añadir `@google/generative-ai` al proyecto.
-3.  **Configurar acceso a la API:** Implementar la carga segura de la `GEMINI_API_KEY` desde variables de entorno.
-4.  **Generar Prompts:** Crear funciones para construir los prompts que se enviarán al modelo de IA, tanto para el análisis de respuestas abiertas como para la generación de narrativas generales.
-5.  **Ejecutar llamadas a la IA:** Implementar la lógica para comunicarse con el LLM y obtener los textos generados, incluyendo manejo de errores.
+1.  **Iniciar la Fase 5: Integración y Documentación.**
+2.  **Crear comando en `package.json`:** Añadir el script `generate-report` para facilitar su ejecución.
+3.  **Actualizar `README.md`:** Documentar el nuevo script, sus argumentos y las variables de entorno requeridas.
+4.  **Refinamiento (Opcional):**
+    -   Expandir el análisis cualitativo para generar narrativas en otras secciones del reporte (ej. análisis de respuestas abiertas).
+    -   Añadir validación de esquema para el JSON generado.
 
 ---
 
 ## Pensamientos y Estrategia
 
-*   **Mapeo de Preguntas:** El enfoque de usar preguntas completas como claves en `mappings.json` ha demostrado ser efectivo en la Fase 2.
+*   **Flexibilidad de IA:** La decisión de soportar múltiples proveedores de IA (Gemini y OpenAI) añade una gran flexibilidad al script.
+*   **Modularidad:** El código está bien estructurado en funciones (`performQuantitativeAnalysis`, `performQualitativeAnalysis`, `generateReportJson`), lo que facilita su mantenimiento y expansión.
+*   **Enfoque Iterativo:** El análisis cualitativo se ha centrado en el `resumenEjecutivo` como primer paso. Esto sigue un enfoque iterativo y permite añadir más análisis de IA en el futuro sin rehacer la estructura principal.
 
-*   **Privacidad de Datos (PII):** El filtrado de datos personales a nivel de script es una salvaguarda crucial que se mantendrá.
-
-*   **Integración de IA:** El principal desafío de la Fase 3 será diseñar prompts efectivos que entreguen resultados consistentes y de alta calidad. Será un proceso iterativo de refinamiento de prompts.
-
-*   **Estructura de Datos Final:** A medida que se desarrolle la Fase 3, se deberá pensar en cómo fusionar los resultados cuantitativos (Fase 2) con los cualitativos (Fase 3) para construir la estructura final de `globalData.json` en la Fase 4.
-
-Estoy listo para proceder con la Fase 3 cuando me indiques.
