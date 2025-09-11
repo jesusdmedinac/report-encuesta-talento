@@ -62,9 +62,46 @@ Este proyecto incluye un potente script para procesar los resultados de una encu
     *   `--reportId`: Un identificador único para el reporte.
     *   `--provider` (opcional): El proveedor de IA a utilizar. Puede ser `gemini` (por defecto) u `openai`.
 
-    **Ejemplo de uso:**
+    **Ejemplos de uso:**
     ```bash
-    npm run generate-report -- --csv=./data/responses-TBjwOGHs-final.csv --empresa="Skilt" --reportId="SKL-001" --provider=gemini
+    # Generar reporte con Gemini
+    npm run generate-report -- \
+      --csv=./data/responses-TBjwOGHs-final.csv \
+      --empresa="Skilt" \
+      --reportId="SKL-001" \
+      --provider=gemini \
+      --model="gemini-2.5-pro"
+    
+    # Generar reporte con OpenAI
+    npm run generate-report -- \
+      --csv=./data/responses-TBjwOGHs-final.csv \
+      --empresa="Skilt" \
+      --reportId="SKL-001" \
+      --provider=openai \
+      --model="gpt-5"
+    ```
+
+### Scripts de Ayuda
+
+Para facilitar la generación de reportes, se han creado dos scripts que ejecutan los comandos con la configuración predefinida:
+
+-   `./generate-gemini.sh`: Genera el reporte utilizando Gemini.
+-   `./generate-openai.sh`: Genera el reporte utilizando OpenAI.
+
+**Uso:**
+
+1.  Asegúrate de haber configurado la variable de entorno correspondiente (`GEMINI_API_KEY` o `OPENAI_API_KEY`).
+2.  Otorga permisos de ejecución a los scripts si es necesario:
+    ```bash
+    chmod +x generate-gemini.sh generate-openai.sh
+    ```
+3.  Ejecuta el script deseado:
+    ```bash
+    ./generate-gemini.sh
+    ```
+    o
+    ```bash
+    ./generate-openai.sh
     ```
 
 3.  **Verifica el resultado**:
