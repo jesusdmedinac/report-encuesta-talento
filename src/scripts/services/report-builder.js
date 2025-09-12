@@ -32,15 +32,16 @@ function buildResumenEjecutivo(qualitativeResults, averages) {
     };
 }
 
-function buildBrechaDigital(empresaNombre, overallAvg) {
+function buildBrechaDigital(empresaNombre, overallAvg, qualitativeResults) {
+    const brechaTexts = qualitativeResults.brechaDigital || {};
     return {
         puntuacionEmpresa: parseFloat(scaleToTen(overallAvg).toFixed(1)),
         puntuacionMetaSector: 9.38, // TODO: Mover a config.js
         nombreEmpresa: empresaNombre,
-        textoNivelActual: "", // TODO: Llenar con análisis de IA
-        textoOportunidadParrafo: "", // TODO: Llenar con análisis de IA
-        parrafo1: "", // TODO: Llenar con análisis de IA
-        parrafo2: "", // TODO: Llenar con análisis de IA
+        textoNivelActual: brechaTexts.textoNivelActual || "Análisis no disponible.",
+        textoOportunidadParrafo: brechaTexts.textoOportunidadParrafo || "Análisis no disponible.",
+        parrafo1: brechaTexts.parrafo1 || "Análisis no disponible.",
+        parrafo2: brechaTexts.parrafo2 || "Análisis no disponible.",
     };
 }
 
@@ -182,7 +183,7 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.header = buildHeader(empresaNombre, reportId, totalRespondents);
     template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
     template.introduccion.contenido = qualitativeResults.introduccion; // Asignación directa
-    template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg);
+    template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);
     template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults);
     template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults);
     template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults);
