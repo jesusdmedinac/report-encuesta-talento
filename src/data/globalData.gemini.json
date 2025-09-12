@@ -4,7 +4,9 @@
     "fechaDiagnostico": "jueves, 11 de septiembre de 2025",
     "empleadosEvaluados": "2402",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
-    "idReporte": "TBjwOGHs"
+    "idReporte": "TBjwOGHs",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro"
   },
   "introduccion": {
     "titulo": "Introducción",

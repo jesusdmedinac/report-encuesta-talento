@@ -1,10 +1,15 @@
 ---
+import "../styles/global.css";
+
 const {
     empresa = "Profermaco",
     fechaDiagnostico = "Lunes 9 de junio de 2025",
     empleadosEvaluados = "22",
     titulo = "Reporte de Transformación Digital Organizacional"
 } = Astro.props;
+
+const reports = await Astro.glob('../data/globalData.*.json');
+const providers = reports.map(report => report.header.provider);
 ---
 <header>
     <div class="container header-container">
@@ -26,7 +31,14 @@ const {
             </div>
         </div>
     </div>
+    <nav class="container">
+      <ul class="flex gap-4">
+        {providers.map(provider => (
+          <li ><a href={`/${provider}`} class="text-primary hover:underline">{provider}</a></li>
+        ))}
+      </ul>
+    </nav>
     <div class="container">
-        <h1>{titulo}</h1>
+      <h1>{titulo}</h1>
     </div>
 </header>
