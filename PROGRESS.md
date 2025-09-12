@@ -6,49 +6,45 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ## Estado Actual
 
-**Fase Actual:** **Final de la Fase 4.** Los módulos de análisis cuantitativo y cualitativo están implementados y ensamblados.
+**Fase Actual:** **Expansión de la Fase 3.** Tras una refactorización completa, el script es modular y robusto. Estamos listos para expandir la generación de contenido por IA a todas las secciones del reporte.
 
-### Pasos Completados (Fase 1 a 4)
+### Pasos Completados
 
--   [x] **Fase 1: Configuración y Carga de Datos:**
-    -   [x] Script `generate-report.mjs` creado.
-    -   [x] Dependencia `papaparse` instalada y funcionando.
-    -   [x] Carga y parseo de CSV desde un argumento de línea de comandos.
-    -   [x] Filtrado de columnas con información personal identificable (PII).
+-   [x] **Fase 1 y 2: Carga y Análisis Cuantitativo:** Completadas.
 
--   [x] **Fase 2: Análisis Cuantitativo:**
-    -   [x] Mapeo de preguntas a dimensiones (`mappings.json`).
-    -   [x] Motor de cálculo implementado en `performQuantitativeAnalysis`.
-    -   [x] Cálculo de promedios para dimensiones y sub-dimensiones.
+-   [x] **Fase de Refactorización (SOLID, DRY, SoC):**
+    -   [x] **Fase 1 (Estructural):** El script monolítico `generate-report.mjs` ha sido descompuesto en módulos con responsabilidades únicas (Separation of Concerns).
+        -   `config.js`: Para configuración centralizada.
+        -   `utils.js`: Para funciones de ayuda reutilizables (DRY).
+        -   `services/csv-processor.js`: Para la lógica del CSV.
+        -   `services/ai-analyzer.js`: Para la lógica de IA.
+        -   `services/report-builder.js`: Para la construcción del reporte.
+    -   [x] **Fase 2 (Funcional):** La función `generateReportJson` fue descompuesta en funciones "constructoras" (`build...`) más pequeñas y puras.
+    -   [x] **Verificación:** Se ha verificado con éxito que la refactorización no introdujo regresiones funcionales mediante la ejecución de los scripts para Gemini y OpenAI.
 
 -   [x] **Fase 3: Análisis Cualitativo (Intérprete de IA):**
-    -   [x] Dependencias `@google/generative-ai` y `openai` instaladas.
-    -   [x] Carga segura de claves de API (`GEMINI_API_KEY`, `OPENAI_API_KEY`) desde variables de entorno.
-    -   [x] Implementada la función `performQualitativeAnalysis` que se conecta a un proveedor de IA (`gemini` u `openai`).
-    -   [x] Generación de un prompt dinámico para el `resumenEjecutivo` basado en los resultados cuantitativos.
-    -   [x] Integración del texto generado por IA en el flujo de datos.
+    -   [x] Dependencias de IA instaladas y carga de API keys funcionando.
+    -   [x] **Estrategia de IA mejorada:** Se implementó una estrategia de **único prompt con respuesta JSON garantizada**, utilizando el "modo JSON" nativo de las APIs de Gemini y OpenAI. Esto es más robusto y escalable que la idea original de múltiples prompts.
+    -   [x] **Contenido generado:** La IA ahora genera el `resumenEjecutivo` y la `introduccion` del reporte.
 
--   [x] **Fase 4: Ensamblaje y Generación del Archivo:**
-    -   [x] La función `generateReportJson` une los datos cuantitativos y cualitativos.
-    -   [x] El script genera el archivo `globalData.{provider}.json` en `src/data/`.
-    -   [x] El script ahora es configurable mediante argumentos: `--csv`, `--empresa`, `--reportId`, `--provider`.
+-   [x] **Fase 4 y 5: Ensamblaje y Documentación:** Completadas.
 
 ---
 
-## Próximos Pasos (Fase 5)
+## Próximos Pasos
 
-1.  **Iniciar la Fase 5: Integración y Documentación.**
-2.  **Crear comando en `package.json`:** Añadir el script `generate-report` para facilitar su ejecución.
-3.  **Actualizar `README.md`:** Documentar el nuevo script, sus argumentos y las variables de entorno requeridas.
-4.  **Refinamiento (Opcional):**
-    -   Expandir el análisis cualitativo para generar narrativas en otras secciones del reporte (ej. análisis de respuestas abiertas).
+1.  **Continuar la Expansión de la Fase 3:**
+    -   Ampliar el prompt y la lógica de `ai-analyzer.js` y `report-builder.js` para generar el contenido de las demás secciones del reporte, una por una (ej. `brechaDigital`, `madurezDigital`, etc.).
+    -   Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA.
+
+2.  **Refinamiento Final:**
+    -   Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js`.
     -   Añadir validación de esquema para el JSON generado.
 
 ---
 
 ## Pensamientos y Estrategia
 
-*   **Flexibilidad de IA:** La decisión de soportar múltiples proveedores de IA (Gemini y OpenAI) añade una gran flexibilidad al script.
-*   **Modularidad:** El código está bien estructurado en funciones (`performQuantitativeAnalysis`, `performQualitativeAnalysis`, `generateReportJson`), lo que facilita su mantenimiento y expansión.
-*   **Enfoque Iterativo:** El análisis cualitativo se ha centrado en el `resumenEjecutivo` como primer paso. Esto sigue un enfoque iterativo y permite añadir más análisis de IA en el futuro sin rehacer la estructura principal.
+*   **Arquitectura Robusta:** La refactorización ha sido un éxito. La arquitectura actual es modular, mantenible y fácil de extender. Los principios SOLID y DRY nos dan una base sólida para el futuro.
+*   **Estrategia de IA Superior:** El enfoque de "único prompt con JSON" es más eficiente y coherente que el plan original. Nos permite escalar la generación de contenido de forma más sencilla.
 

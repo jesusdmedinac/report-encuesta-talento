@@ -10,46 +10,54 @@ Este documento detalla el plan por fases para implementar el algoritmo de genera
 
 ...
 
-## Fase 3: Generación Comprensiva de Narrativas por IA (Intérprete de IA)
+## Fase 3: Refactorización y Modularización (SOLID, DRY, SoC) [COMPLETADO]
 
-En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **todas** las narrativas y análisis de texto del reporte, expandiendo la implementación inicial.
+Antes de expandir la generación de narrativas, se realizó una fase de refactorización para mejorar la calidad, mantenibilidad y escalabilidad del script.
 
-1.  **Refactorizar el Módulo de IA:**
-    *   Modificar la función `performQualitativeAnalysis` para que orqueste múltiples llamadas a la API de IA, en lugar de una sola.
-    *   La función deberá devolver un objeto `insights` que contenga todos los textos generados, mapeados a su ubicación en el `globalData.json` final.
+1.  **Aplicar Principio de Responsabilidad Única (SRP):**
+    *   El script monolítico se descompuso en módulos con responsabilidades claras: `config`, `utils`, `csv-processor`, `ai-analyzer`, y `report-builder`.
 
-2.  **Implementar Estrategia Multi-Prompt:**
-    *   Crear una función generadora de prompts por cada sección del reporte que requiera texto dinámico (Introducción, Brecha Digital, etc.).
-    *   Cada función de prompt recibirá los datos cuantitativos relevantes de la Fase 2 y deberá formatearlos en un contexto claro y conciso para el LLM.
+2.  **Aplicar Principio DRY (Don't Repeat Yourself):**
+    *   Se crearon funciones de utilidad (ej. `formatDimensionName`) para centralizar lógica repetida.
 
-3.  **Expandir la Generación de Contenido:**
-    *   Implementar la lógica para generar los textos de todas las secciones identificadas, incluyendo:
-        *   `resumenEjecutivo` (fortalezas, oportunidades, descripción del nivel)
-        *   `introduccion.contenido`
-        *   Textos de `brechaDigital`
-        *   Párrafos en `madurezDigital`, `competenciasDigitales`
-        *   Descripciones y resúmenes en `usoInteligenciaArtificial` y `culturaOrganizacional`
+3.  **Implementar Funciones Puras en el `report-builder`:**
+    *   La función `generateReportJson` se descompuso en funciones "constructoras" (`build...`) más pequeñas y puras, mejorando la predictibilidad y facilidad para realizar pruebas.
+
+## Fase 4: Generación Comprensiva de Narrativas por IA (Intérprete de IA)
+
+En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **todas** las narrativas y análisis de texto del reporte, utilizando una estrategia de único prompt con respuesta JSON garantizada.
+
+1.  **Implementar Estrategia de Único Prompt con JSON:**
+    *   Modificar la función `performQualitativeAnalysis` para construir un único prompt que solicite a la IA la generación de un objeto JSON que contenga todos los textos necesarios.
+    *   Configurar las llamadas a las APIs de IA para que utilicen su **modo JSON nativo** (`response_format: { type: "json_object" }` para OpenAI, `responseMimeType: "application/json"` para Gemini). Esto garantiza respuestas bien formadas y elimina errores de parseo.
+
+2.  **Expandir el Esquema del JSON de IA:**
+    *   De forma incremental, añadir nuevas claves al objeto JSON solicitado en el prompt para cubrir todas las secciones del reporte:
+        *   `resumenEjecutivo` (fortalezas, oportunidades, etc.)
+        *   `introduccion`
+        *   Textos para `brechaDigital`
+        *   Párrafos para `madurezDigital`, `competenciasDigitales`
+        *   Descripciones y resúmenes para `usoInteligenciaArtificial` y `culturaOrganizacional`
         *   Resumen del `planAccion`
 
-4.  **Integrar Resultados Completos:**
-    *   Actualizar la función `generateReportJson` para que tome el objeto `insights` completo y lo integre en la plantilla del `globalData.json`.
+3.  **Integrar Resultados Completos:**
+    *   Actualizar las funciones `build...` en `report-builder.js` para que consuman los nuevos campos de texto generados por la IA desde el objeto `qualitativeResults`.
 
-## Fase 4: Ensamblaje Final y Generación del Archivo [COMPLETADO]
+## Fase 5: Ensamblaje Final y Generación del Archivo [COMPLETADO]
 
 Esta es la última fase del script, donde se une todo y se produce el archivo final.
 
 1.  **Unir Datos Cuantitativos y Cualitativos: [COMPLETADO]**
-    *   Asegúrate de que el objeto de datos principal contenga tanto los cálculos numéricos de la Fase 2 como las narrativas de texto de la Fase 3.
+    *   El orquestador principal (`generate-report.mjs`) une los resultados de `performQuantitativeAnalysis` y `performQualitativeAnalysis`.
 
 2.  **Generar el JSON Final: [COMPLETADO]**
-    *   Utiliza el módulo `fs` de Node.js para escribir el objeto de datos completo en el archivo `src/data/globalData.json`.
-    *   El contenido debe ser "pretty-printed" (formateado con indentación) para que sea legible por humanos.
+    *   El script escribe el objeto de datos completo en el archivo `src/data/globalData.[provider].json`.
 
 3.  **Validación (Opcional pero Recomendado):**
     *   Considera crear un esquema JSON (schema) que defina la estructura de `globalData.json`.
     *   Añade un paso de validación en el script para asegurar que el JSON generado cumple con el esquema antes de guardarlo.
 
-## Fase 5: Integración y Documentación [COMPLETADO]
+## Fase 6: Integración y Documentación [COMPLETADO]
 
 Para finalizar, haremos que el script sea fácil de usar y documentaremos su funcionamiento.
 

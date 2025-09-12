@@ -12,15 +12,26 @@ Este es un proyecto Astro para visualizar un reporte de madurez digital generado
 │   ├── data/
 │   │   └── globalData.json
 │   ├── layouts/
-│   └── pages/
+│   ├── pages/
+│   └── scripts/
+│       ├── services/
+│       │   ├── ai-analyzer.js
+│       │   ├── csv-processor.js
+│       │   └── report-builder.js
+│       ├── config.js
+│       ├── generate-report.mjs
+│       ├── mappings.json
+│       └── utils.js
 ├── data/
 │   └── Csv con respuestas
 └── package.json
 ```
 
--   **`src/components`**: Contiene los componentes de Astro que renderizan cada sección del reporte.
--   **`src/data/globalData.json`**: Es el corazón del reporte. Este archivo JSON contiene todos los datos (cuantitativos y cualitativos) que se muestran en el frontend. Es generado por el script `generate-report`.
--   **`src/scripts/generate-report.mjs`**: Script de Node.js que procesa un archivo CSV de respuestas, realiza análisis y genera el `globalData.json`.
+-   **`src/components`**: Componentes de Astro que renderizan cada sección del reporte.
+-   **`src/data/globalData.json`**: Corazón del reporte, contiene todos los datos que se muestran. Es generado por el script.
+-   **`src/scripts/generate-report.mjs`**: Punto de entrada del script. Orquesta la ejecución de los diferentes módulos.
+-   **`src/scripts/services/`**: Módulos con la lógica de negocio principal (análisis de IA, procesamiento de CSV, construcción del reporte).
+-   **`src/scripts/config.js`**: Archivo para constantes y configuración del script.
 
 ## 🧞 Comandos
 

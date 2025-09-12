@@ -53,28 +53,22 @@ Al final de esta fase, el algoritmo tendrá un objeto estructurado con todos los
 
 #### **Fase 3: Módulo de Análisis Cualitativo (Generación Comprensiva de Narrativas por IA)**
 
-En esta fase, la IA generativa crea todos los textos analíticos y narrativas del reporte. Esto se logrará a través de una serie de prompts específicos y dirigidos, utilizando los datos de la Fase 2 como contexto.
+En esta fase, la IA generativa crea todos los textos analíticos y narrativas del reporte. Esto se logra a través de un **único prompt dirigido** que solicita a la IA una respuesta estructurada en formato **JSON**, utilizando los datos de la Fase 2 como contexto.
 
 1.  **Análisis de Sentimiento y Temas (Respuestas Abiertas):**
     *   Se agruparán las respuestas a preguntas abiertas (ej. `D3_OPEN`).
-    *   Un prompt inicial analizará estas respuestas para identificar temas recurrentes, sentimiento general y extraer citas o frases clave. Este análisis enriquecerá los prompts posteriores.
+    *   Un prompt inicial analizará estas respuestas para identificar temas recurrentes, sentimiento general y extraer citas o frases clave. Este análisis enriquecerá el prompt principal.
 
-2.  **Generación de Textos por Sección (Multi-Prompt):**
-    *   El algoritmo no usará un único prompt monolítico. En su lugar, ejecutará una secuencia de llamadas a la IA, cada una diseñada para generar el texto de una sección específica del reporte.
-    *   **Contexto para cada prompt:** Cada llamada incluirá los datos cuantitativos relevantes (puntuación general, scores de dimensiones, comparativas, etc.) y los temas extraídos del análisis de respuestas abiertas.
+2.  **Generación de Textos por Sección (Único Prompt con JSON):**
+    *   El algoritmo no usará múltiples llamadas. En su lugar, ejecutará **una sola llamada a la IA** con un prompt cuidadosamente diseñado.
+    *   Este prompt instruirá al modelo para que devuelva un objeto JSON completo, donde cada clave corresponde a una sección del reporte (ej. `"resumenEjecutivo"`, `"introduccion"`, etc.).
+    *   Se utilizará el **modo JSON** nativo de la API de la IA para garantizar que la respuesta sea siempre un JSON válido.
 
-3.  **Textos a Generar:**
-    *   **Resumen Ejecutivo:** `resumenGeneral`, listas de `fortalezas` y `oportunidades`.
-    *   **Introducción:** `contenido` del párrafo introductorio.
-    *   **Brecha Digital:** `textoNivelActual`, `textoOportunidadParrafo`, y los párrafos de análisis (`parrafo1`, `parrafo2`).
-    *   **Madurez Digital:** `parrafoIntroductorio`.
-    *   **Competencias Digitales:** `descripcionPromedio` y `nivelDesarrollo`.
-    *   **Uso de IA:** Descripciones para cada gráfico (`graficos[].descripcion`) y el `resumen` de la sección.
-    *   **Cultura Organizacional:** `fraseClave` y `narrativa` para cada tarjeta, y el `insights.resumen`.
-    *   **Plan de Acción:** El `resumen` general del plan.
+3.  **Contexto para el Prompt:**
+    *   La llamada a la IA incluirá los datos cuantitativos relevantes (puntuación general, scores de dimensiones, etc.) y, opcionalmente, los temas extraídos del análisis de respuestas abiertas.
 
-4.  **Ejemplo de Prompt (para la sección de Madurez Digital):**
-    *   *"Eres un consultor de transformación digital. Redacta un párrafo introductorio (campo 'parrafoIntroductorio') para la sección de 'Madurez Digital' de un reporte. Datos clave: Puntuación general de la dimensión: {puntuacion_madurez_digital}/10. Componente más fuerte: {nombre_componente_fuerte} ({puntuacion_fuerte}/10). Componente más débil: {nombre_componente_debil} ({puntuacion_debil}/10). Nombre de la empresa: {nombre_empresa}. Enfoca el texto en la situación actual y la oportunidad de crecimiento."*
+4.  **Ejemplo de Prompt (Conceptual):**
+    *   *"Eres un consultor de transformación digital. Basado en los siguientes datos {datos_cuantitativos}, genera una respuesta en formato JSON con las claves `resumenEjecutivo` y `madurezDigital`. Para `resumenEjecutivo`, redacta un análisis de 3 párrafos. Para `madurezDigital`, redacta un párrafo introductorio enfocado en la situación actual y la oportunidad de crecimiento."*
 
 --- 
 
