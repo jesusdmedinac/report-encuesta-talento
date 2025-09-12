@@ -4,20 +4,22 @@
     "fechaDiagnostico": "viernes, 12 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
-    "empleadosEvaluados": "2402"
+    "empleadosEvaluados": "2402",
+    "provider": "gemini",
+    "model": "gemini-2.5-pro"
   },
   "introduccion": {
     "titulo": "Introducción",
-    "contenido": "Le damos la bienvenida a los resultados de su diagnóstico de madurez digital. Este informe ha sido diseñado para ofrecer una visión clara y detallada de las capacidades digitales actuales de su organización, identificando tanto las fortalezas consolidadas como las áreas de oportunidad más significativas. Nuestro objetivo es proporcionar una hoja de ruta estratégica y constructiva que les permita acelerar su transformación, capitalizar su potencial y posicionarse como líderes en la era digital. A continuación, exploraremos juntos los hallazgos clave y las recomendaciones para su próximo nivel de crecimiento."
+    "contenido": "Le damos la bienvenida a los resultados de su Diagnóstico de Madurez Digital. Este informe tiene como objetivo proporcionar una visión clara y objetiva de las capacidades, fortalezas y áreas de oportunidad de su organización en el panorama digital actual. Los datos y análisis presentados a continuación están diseñados para ser una herramienta constructiva que facilite la conversación estratégica y sirva como base para definir los próximos pasos en su emocionante viaje de transformación digital."
   },
   "brechaDigital": {
     "puntuacionEmpresa": 7.5,
     "puntuacionMetaSector": 9.38,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "Nivel Competitivo",
-    "textoOportunidadParrafo": "Actualmente, la organización presenta una puntuación de madurez digital convertida de 7.26 sobre 10, un resultado sólido que la posiciona como competitiva. Sin embargo, la meta para las empresas líderes del sector se sitúa en 9.38. Esta brecha de 2.12 puntos no representa una debilidad, sino una clara oportunidad estratégica para diferenciarse, optimizar operaciones y capturar un mayor valor en el mercado a través de una transformación digital acelerada y enfocada.",
-    "parrafo1": "El análisis detallado muestra que la organización cuenta con fundamentos robustos. Las altas puntuaciones en adaptabilidad (3.17), análisis de datos (3.16) y ciberseguridad (3.13) demuestran que el equipo posee las habilidades esenciales para operar en un entorno digital. Esta base es una ventaja competitiva clave, indicando que la cultura es receptiva al cambio y que existe una competencia general en el manejo y la protección de la información.",
-    "parrafo2": "Para cerrar la brecha hacia el liderazgo del sector, el enfoque debe pasar de la competencia funcional a la proactividad estratégica, área que presenta la puntuación más baja del grupo (2.93). Los próximos pasos deben centrarse en fomentar una cultura de innovación donde los equipos no solo usen las herramientas disponibles, sino que busquen activamente nuevas soluciones tecnológicas para anticipar necesidades y resolver problemas de negocio. Esto implica establecer programas de innovación, incentivar la experimentación y capacitar a los líderes para que conecten las iniciativas tecnológicas directamente con los objetivos estratégicos de la empresa."
+    "textoOportunidadParrafo": "Con una puntuación actual de 7.37 sobre 10, la empresa se posiciona como un jugador competitivo en el ámbito digital. Sin embargo, en comparación con la meta del sector de 9.38, existe una oportunidad clara y alcanzable para evolucionar de una posición competitiva a una de liderazgo. Esta brecha no representa una debilidad, sino un mapa de ruta preciso hacia la excelencia, indicando las áreas específicas donde la inversión estratégica generará el mayor impacto para superar a la competencia.",
+    "parrafo1": "El análisis de la brecha digital fundamental revela una base sólida y bien equilibrada en la organización. Con puntuaciones consistentemente altas en Análisis de Datos (3.16), Alfabetización de Datos (3.12), Colaboración Digital (3.08) y Ciberseguridad (3.13), es evidente que el equipo posee las habilidades esenciales para operar eficazmente en un entorno digital. Esta competencia generalizada es un activo estratégico valioso, demostrando que la empresa ha cultivado con éxito una cultura que valora los datos y la seguridad digital.",
+    "parrafo2": "Para cerrar la brecha hacia el liderazgo del sector, el enfoque debe pasar de la competencia a la maestría. Los próximos pasos recomendados incluyen la transición de un análisis de datos descriptivo a uno prescriptivo y predictivo, la optimización de las herramientas de colaboración con flujos de trabajo automatizados y la integración de la ciberseguridad de forma proactiva en todas las fases del desarrollo de productos y procesos. El objetivo es aprovechar la sólida base existente para construir capacidades diferenciadoras que generen una ventaja competitiva sostenible."
   },
   "madurezDigital": {
     "puntuacionGeneral": 7.6,
@@ -85,44 +87,75 @@
     "resumen": "",
     "graficos": [
       {
-        "nombre": "Adopción y Curiosidad",
+        "titulo": "Adopción y Curiosidad",
         "porcentaje": 62,
-        "descripcion": ""
+        "descripcion": "",
+        "idGradiente": "gradient-adoption",
+        "coloresGradiente": [
+          "#10B981",
+          "#34D399",
+          "#6EE7B7"
+        ]
       },
       {
-        "nombre": "Uso y Aplicación",
+        "titulo": "Uso y Aplicación",
         "porcentaje": 77,
-        "descripcion": ""
+        "descripcion": "",
+        "idGradiente": "gradient-usage",
+        "coloresGradiente": [
+          "#F59E0B",
+          "#FBBF24",
+          "#FDE047"
+        ]
       },
       {
-        "nombre": "Ética y Verificación",
+        "titulo": "Ética y Verificación",
         "porcentaje": 80,
-        "descripcion": ""
+        "descripcion": "",
+        "idGradiente": "gradient-ethics",
+        "coloresGradiente": [
+          "#8B5CF6",
+          "#A78BFA",
+          "#C4B5FD"
+        ]
       }
     ]
   },
   "culturaOrganizacional": {
     "insights": {
-      "resumen": ""
+      "resumen": "",
+      "puntos": []
     },
     "tarjetas": [
       {
         "titulo": "Apertura a la experimentación",
         "puntuacion": 7.7,
         "fraseClave": "",
-        "narrativa": ""
+        "narrativa": "",
+        "metricas": [],
+        "etiquetaNivel": "",
+        "colorIcono": "",
+        "icono": ""
       },
       {
         "titulo": "Formación y Apoyo",
         "puntuacion": 7.5,
         "fraseClave": "",
-        "narrativa": ""
+        "narrativa": "",
+        "metricas": [],
+        "etiquetaNivel": "",
+        "colorIcono": "",
+        "icono": ""
       },
       {
         "titulo": "Liderazgo y Visión",
         "puntuacion": 7.6,
         "fraseClave": "",
-        "narrativa": ""
+        "narrativa": "",
+        "metricas": [],
+        "etiquetaNivel": "",
+        "colorIcono": "",
+        "icono": ""
       }
     ]
   },
@@ -195,7 +228,7 @@
     }
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "Este diagnóstico revela una organización con una base digital sólida y un notable potencial de crecimiento. Las fortalezas residen en una alta capacidad de adaptación (3.17), un sólido apoyo organizacional (3.27) y un excepcional interés del equipo en aprender sobre nuevas tecnologías como la Inteligencia Artificial (3.6). Estas cualidades indican una cultura preparada para el cambio y una fuerza laboral motivada, elementos cruciales para cualquier iniciativa de transformación exitosa.\n\nNo obstante, existen brechas estratégicas que requieren atención prioritaria. La adopción real de herramientas avanzadas es baja, especialmente en IA (1.82) y SEO (1.72), lo que contrasta con el interés del personal. Asimismo, se observa una oportunidad para que el liderazgo asuma un rol más activo en la definición y ejecución de la estrategia tecnológica, ya que áreas como el uso de Business Intelligence (2.61) y la exploración de nuevas tecnologías (2.76) muestran un margen de mejora considerable. La falta de datos en el área de Soporte Interno (RRHH) representa un punto ciego que debe ser abordado.\n\nEl camino a seguir es claro y prometedor. Capitalizando el entusiasmo existente, la organización puede cerrar estas brechas enfocándose en la implementación práctica y estratégica de la tecnología, y no solo en la capacitación teórica. Fortalecer el liderazgo tecnológico y alinear las herramientas digitales con los objetivos comerciales permitirá convertir el potencial latente en resultados tangibles, posicionando a la empresa como un referente innovador en su sector.",
+    "resumenGeneral": "Este diagnóstico de madurez digital revela una organización con bases sólidas y un notable potencial para la transformación. Las fortalezas clave residen en un fuerte apoyo organizacional, una alta adaptabilidad al cambio y un excepcional interés del equipo en aprender sobre nuevas tecnologías como la Inteligencia Artificial. La plantilla demuestra una competencia considerable en áreas fundamentales como el análisis de datos, la ciberseguridad y la colaboración digital, lo que constituye un excelente punto de partida para iniciativas más avanzadas.\n\nA pesar de estas fortalezas, existen brechas críticas que limitan el avance. Se observa una desconexión significativa entre el interés en la IA (3.6/4) y su adopción real (1.82/4), lo que sugiere barreras en la implementación. Adicionalmente, áreas estratégicas como el uso de Business Intelligence por parte del liderazgo (2.61/4) y las capacidades de marketing digital, especialmente en SEO (1.72/4), se encuentran subdesarrolladas. Estas debilidades indican que, si bien la cultura es propicia, la aplicación estratégica de la tecnología para la toma de decisiones y la captación de clientes necesita un impulso decidido.\n\nEn conclusión, la empresa se encuentra en un punto de inflexión. Posee el capital humano y la disposición cultural necesarios para acelerar su transformación digital. El enfoque inmediato debe ser capacitar al liderazgo en el uso de datos para la estrategia, cerrar las brechas en las herramientas comerciales y operativas, y crear una hoja de ruta clara para convertir el alto interés en IA en proyectos piloto tangibles. Al alinear la estrategia tecnológica con el entusiasmo existente, la organización está bien posicionada para capitalizar sus fortalezas y convertirse en un referente digital en su sector.",
     "puntuacionGeneral": {
       "puntuacion": 7.5
     },

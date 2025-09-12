@@ -4,20 +4,22 @@
     "fechaDiagnostico": "viernes, 12 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
-    "empleadosEvaluados": "2402"
+    "empleadosEvaluados": "2402",
+    "provider": "openai",
+    "model": "gpt-5"
   },
   "introduccion": {
     "titulo": "Introducción",
-    "contenido": "Gracias por confiar en este diagnóstico de madurez digital. El objetivo es entregar una lectura clara y accionable del punto de partida de la organización, identificando fortalezas, brechas y oportunidades de impacto, para orientar una hoja de ruta priorizada que acelere resultados de negocio. El enfoque es práctico y constructivo: capitalizar lo que ya funciona, corregir lo crítico con rapidez y habilitar capacidades que consoliden una mejora sostenida."
+    "contenido": "Bienvenido al reporte de diagnóstico de madurez digital. Su propósito es ofrecer una visión clara y accionable del estado actual de la organización, identificando fortalezas, brechas y prioridades para acelerar resultados de negocio. A partir de evidencia cuantitativa, presentamos hallazgos clave y una hoja de ruta sugerida, con un enfoque positivo y pragmático orientado a capturar valor de manera progresiva y medible."
   },
   "brechaDigital": {
     "puntuacionEmpresa": 7.5,
     "puntuacionMetaSector": 9.38,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "Nivel Competitivo",
-    "textoOportunidadParrafo": "La empresa presenta un promedio de 3.12/4 (≈7.81/10) frente a una meta sectorial de 9.38/10, con una brecha de ≈1.57 puntos (≈17%). Esta diferencia es abordable mediante estandarización de prácticas de datos, refuerzo de alfabetización y colaboración digital, y una postura de ciberseguridad preventiva, priorizando casos de uso de alto valor para cerrar la brecha con rapidez.",
-    "parrafo1": "El estado actual muestra bases consistentes en la gestión de datos y capacidades digitales: análisis de datos (3.16), alfabetización (3.12), colaboración digital (3.08) y ciberseguridad (3.13). Estas puntuaciones indican prácticas presentes y un lenguaje común en torno a los datos, aunque con variabilidad entre áreas y limitado grado de estandarización. La madurez es suficiente para escalar iniciativas, siempre que se definan reglas claras de gobierno, calidad y responsabilidades, y se asegure la integración con procesos de negocio.",
-    "parrafo2": "Para cerrar la brecha, recomendamos: definir un marco de gobierno de datos ligero (propietarios, catálogo mínimo y calidad de datos críticos), elevar la alfabetización con micro-capacitaciones por rol y casos prácticos, fortalecer la colaboración digital con estándares de trabajo y herramientas integradas, y consolidar una higiene de ciberseguridad (MFA, backups, gestión de accesos y simulaciones de phishing). En paralelo, priorizar 3–5 casos de uso de alto impacto (p. ej., analítica comercial, eficiencia operativa y reporting ejecutivo con BI), con métricas de valor claras y un ciclo de mejora continua. Este enfoque permite capturar beneficios tempranos y crear tracción para alcanzar la meta sectorial."
+    "textoOportunidadParrafo": "Con un promedio equivalente a 7.8 sobre 10 en Brecha Digital, la organización se sitúa alrededor del 83% de la meta sectorial (9.38/10), dejando un margen de mejora de aproximadamente 1.6 puntos. Esta distancia representa una oportunidad concreta para estandarizar prácticas de datos, fortalecer la seguridad y amplificar la colaboración digital, acelerando el impacto en decisiones y eficiencia.",
+    "parrafo1": "El estado actual revela competencias consistentes en análisis de datos, alfabetización y ciberseguridad, con la colaboración digital ligeramente por debajo pero estable. En conjunto, el promedio se ubica cerca de 3.12 sobre 4, lo que sugiere capacidades presentes pero con variabilidad entre áreas y procesos. Existen herramientas y habilidades, pero su aplicación no es homogénea ni sistemática; coexisten casos de uso de datos con prácticas manuales y criterios dispares de calidad y acceso.",
+    "parrafo2": "Para cerrar la brecha, proponemos un enfoque disciplinado en cuatro frentes: gobierno de datos ligero con definiciones comunes, controles de calidad y permisos de acceso; programas de alfabetización segmentados por rol con métricas de adopción; automatización del reporting y tableros de autoservicio para decisiones oportunas; y refuerzo de ciberseguridad mediante controles básicos, capacitación y simulaciones. Con metas trimestrales, indicadores claros y patrocinio ejecutivo, es factible avanzar del nivel competitivo hacia el referente sectorial en un horizonte de 9 a 12 meses."
   },
   "madurezDigital": {
     "puntuacionGeneral": 7.6,
@@ -85,44 +87,75 @@
     "resumen": "",
     "graficos": [
       {
-        "nombre": "Adopción y Curiosidad",
+        "titulo": "Adopción y Curiosidad",
         "porcentaje": 62,
-        "descripcion": ""
+        "descripcion": "",
+        "idGradiente": "gradient-adoption",
+        "coloresGradiente": [
+          "#10B981",
+          "#34D399",
+          "#6EE7B7"
+        ]
       },
       {
-        "nombre": "Uso y Aplicación",
+        "titulo": "Uso y Aplicación",
         "porcentaje": 77,
-        "descripcion": ""
+        "descripcion": "",
+        "idGradiente": "gradient-usage",
+        "coloresGradiente": [
+          "#F59E0B",
+          "#FBBF24",
+          "#FDE047"
+        ]
       },
       {
-        "nombre": "Ética y Verificación",
+        "titulo": "Ética y Verificación",
         "porcentaje": 80,
-        "descripcion": ""
+        "descripcion": "",
+        "idGradiente": "gradient-ethics",
+        "coloresGradiente": [
+          "#8B5CF6",
+          "#A78BFA",
+          "#C4B5FD"
+        ]
       }
     ]
   },
   "culturaOrganizacional": {
     "insights": {
-      "resumen": ""
+      "resumen": "",
+      "puntos": []
     },
     "tarjetas": [
       {
         "titulo": "Apertura a la experimentación",
         "puntuacion": 7.7,
         "fraseClave": "",
-        "narrativa": ""
+        "narrativa": "",
+        "metricas": [],
+        "etiquetaNivel": "",
+        "colorIcono": "",
+        "icono": ""
       },
       {
         "titulo": "Formación y Apoyo",
         "puntuacion": 7.5,
         "fraseClave": "",
-        "narrativa": ""
+        "narrativa": "",
+        "metricas": [],
+        "etiquetaNivel": "",
+        "colorIcono": "",
+        "icono": ""
       },
       {
         "titulo": "Liderazgo y Visión",
         "puntuacion": 7.6,
         "fraseClave": "",
-        "narrativa": ""
+        "narrativa": "",
+        "metricas": [],
+        "etiquetaNivel": "",
+        "colorIcono": "",
+        "icono": ""
       }
     ]
   },
@@ -195,7 +228,7 @@
     }
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "La organización se sitúa en una madurez digital intermedia-alta, con bases sólidas para acelerar. Destacan el apoyo organizacional (3.27), la adaptabilidad (3.17), el uso de cloud (3.21), el monitoreo de rendimiento (3.37) y la colaboración interna (3.33). En capacidades transversales, el manejo de datos y la ciberseguridad se ubican en torno a 3.1–3.16, mientras que el talento muestra habilidad para usar IA (3.2) y un alto interés por aprender (3.6), una combinación valiosa para impulsar iniciativas de impacto en el corto plazo.\n\nLas principales brechas se concentran en la adopción efectiva de IA (1.82) y la percepción de riesgo (2.03), un ambiente de aprendizaje aún inmaduro (2.73) y mecanismos de reconocimiento mejorables (2.99). A nivel de liderazgo, el uso de BI (2.61) y la estrategia tecnológica (2.83) requieren refuerzo, y en mandos medios la gestión de proyectos es baja (2.12). En la cadena comercial, SEO (1.72), automatización de marketing (2.55) y comunicación con clientes (2.48) limitan el alcance digital; en operaciones, faltan plataformas de gestión (2.13) y uso de IA (2.08). En el frente técnico, gestión de código (2.34) y diseño UI (0) son cuellos de botella, y en soporte interno (HRIS, reclutamiento, capacitación, gestión documental, IA) se observa ausencia de capacidades.\n\nRecomendamos un plan en 90 días: 1) establecer gobierno y hoja de ruta de IA con casos de uso priorizados y controles de riesgo; 2) activar el stack de soporte interno (HRIS, LMS, gestión documental) y elevar la disciplina de proyectos; 3) fortalecer el motor comercial con CRM, automatización y SEO; 4) mejorar la higiene técnica (repositorios, prácticas de desarrollo y UI) y ampliar el uso de BI en la dirección. Con foco y secuenciación, es factible cerrar la brecha y capturar mejoras rápidas en productividad, experiencia de cliente y crecimiento.",
+    "resumenGeneral": "El diagnóstico muestra una base digital sólida y con capacidad de ejecución. La organización destaca por su adaptabilidad y resolución de problemas, acompañada de un apoyo organizacional consistente. En datos y seguridad se sitúa en niveles competitivos, y en tecnología sobresalen la adopción de servicios en la nube, el monitoreo del rendimiento y la colaboración entre equipos. Además, el interés por aprender sobre IA y las habilidades básicas para utilizarla son altas, lo que prepara el terreno para acelerar su aplicación.\n\nLas principales brechas están en la adopción efectiva de IA, en el frente comercial digital y en funciones de soporte. La adopción actual de IA es baja y la percepción de riesgo frena el despliegue; en comercial se observan debilidades en SEO, automatización de marketing y comunicación con clientes; y en soporte interno no se han implementado plataformas clave como RR. HH. (HRIS), capacitación y gestión documental. También conviene fortalecer la gestión de proyectos, el uso ejecutivo de inteligencia de negocio (BI) y prácticas de ingeniería como la gestión de código y el diseño UI, además de estandarizar plataformas de gestión.\n\nRecomendamos un plan en dos horizontes: en 90 días, activar 2-3 casos de uso de IA con impacto claro, establecer una disciplina ligera de gestión de proyectos, ejecutar quick wins en CRM y marketing digital, y habilitar una plataforma básica de RR. HH. y de formación; en 6-12 meses, formalizar un gobierno de datos pragmático, madurar SEO y automatización, reforzar BI para liderazgo y elevar prácticas de ingeniería. El punto de partida es favorable y el potencial de mejora es alto, con capacidad real de capturar valor en el corto plazo y escalarlo de forma sostenida.",
     "puntuacionGeneral": {
       "puntuacion": 7.5
     },

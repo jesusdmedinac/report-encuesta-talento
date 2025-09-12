@@ -3,7 +3,7 @@ import { loadJson, calculateAverage, scaleToTen, formatDimensionName } from '../
 
 // --- Funciones "Constructoras" por Sección ---
 
-function buildHeader(empresaNombre, reportId, totalRespondents) {
+function buildHeader(empresaNombre, reportId, totalRespondents, provider, model) {
     const hoy = new Date();
     const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     return {
@@ -12,6 +12,8 @@ function buildHeader(empresaNombre, reportId, totalRespondents) {
         titulo: `Reporte de Transformación Digital para ${empresaNombre}`,
         idReporte: reportId,
         empleadosEvaluados: totalRespondents.toString(),
+        provider: provider,
+        model: model,
     };
 }
 
@@ -91,19 +93,25 @@ function buildUsoInteligenciaArtificial(analysisResults) {
         resumen: "", // TODO: Llenar con análisis de IA
         graficos: [
             {
-                nombre: "Adopción y Curiosidad",
+                titulo: "Adopción y Curiosidad",
                 porcentaje: Math.round((iaAdopcion / 4) * 100),
-                descripcion: "" // TODO: Llenar con análisis de IA
+                descripcion: "", // TODO: Llenar con análisis de IA
+                idGradiente: "gradient-adoption",
+                coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"]
             },
             {
-                nombre: "Uso y Aplicación",
+                titulo: "Uso y Aplicación",
                 porcentaje: Math.round((iaUso / 4) * 100),
-                descripcion: "" // TODO: Llenar con análisis de IA
+                descripcion: "", // TODO: Llenar con análisis de IA
+                idGradiente: "gradient-usage",
+                coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"]
             },
             {
-                nombre: "Ética y Verificación",
+                titulo: "Ética y Verificación",
                 porcentaje: Math.round((iaEtica / 4) * 100),
-                descripcion: "" // TODO: Llenar con análisis de IA
+                descripcion: "", // TODO: Llenar con análisis de IA
+                idGradiente: "gradient-ethics",
+                coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"]
             }
         ]
     };
@@ -116,26 +124,39 @@ function buildCulturaOrganizacional(analysisResults) {
 
     return {
         insights: {
-            resumen: "" // TODO: Llenar con análisis de IA
+            resumen: "", // TODO: Llenar con análisis de IA
+            puntos: [], // Placeholder
         },
         tarjetas: [
             {
                 titulo: "Apertura a la experimentación",
                 puntuacion: parseFloat(scaleToTen(culturaApertura).toFixed(1)),
                 fraseClave: "", // TODO: Llenar con análisis de IA
-                narrativa: "" // TODO: Llenar con análisis de IA
+                narrativa: "", // TODO: Llenar con análisis de IA
+                metricas: [], // Placeholder
+                etiquetaNivel: "", // Placeholder
+                colorIcono: "", // Placeholder
+                icono: "", // Placeholder
             },
             {
                 titulo: "Formación y Apoyo",
                 puntuacion: parseFloat(scaleToTen(culturaFormacion).toFixed(1)),
                 fraseClave: "", // TODO: Llenar con análisis de IA
-                narrativa: "" // TODO: Llenar con análisis de IA
+                narrativa: "", // TODO: Llenar con análisis de IA
+                metricas: [], // Placeholder
+                etiquetaNivel: "", // Placeholder
+                colorIcono: "", // Placeholder
+                icono: "", // Placeholder
             },
             {
                 titulo: "Liderazgo y Visión",
                 puntuacion: parseFloat(scaleToTen(culturaLiderazgo).toFixed(1)),
                 fraseClave: "", // TODO: Llenar con análisis de IA
-                narrativa: "" // TODO: Llenar con análisis de IA
+                narrativa: "", // TODO: Llenar con análisis de IA
+                metricas: [], // Placeholder
+                etiquetaNivel: "", // Placeholder
+                colorIcono: "", // Placeholder
+                icono: "", // Placeholder
             }
         ]
     };
@@ -166,7 +187,7 @@ function buildRoleSpecificScores(analysisResults) {
  * @param {string} reportId - ID del reporte.
  * @returns {Object} - El objeto JSON completo del reporte.
  */
-export function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId) {
+export function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId, provider, model) {
     const template = loadJson(TEMPLATE_PATH);
 
     // --- Cálculos de Puntuaciones Generales ---
@@ -180,7 +201,7 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
 
     // --- Ensamblaje del Reporte Final ---
     // Cada sección es construida por su propia función pura.
-    template.header = buildHeader(empresaNombre, reportId, totalRespondents);
+    template.header = buildHeader(empresaNombre, reportId, totalRespondents, provider, model);
     template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
     template.introduccion.contenido = qualitativeResults.introduccion; // Asignación directa
     template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);

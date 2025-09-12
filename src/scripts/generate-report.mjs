@@ -47,7 +47,7 @@ async function main() {
 
         // 5. Construir y Guardar el Reporte
         console.log('Generando el archivo JSON del reporte...');
-        const reportJson = generateReportJson(quantitativeResults, qualitativeResults, quantitativeData.length, empresaNombre, reportId);
+        const reportJson = generateReportJson(quantitativeResults, qualitativeResults, quantitativeData.length, empresaNombre, reportId, provider, effectiveModelName);
 
         const OUTPUT_PATH = path.join(process.cwd(), 'src', 'data', `globalData.${provider}.json`);
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(reportJson, null, 2), 'utf8');
