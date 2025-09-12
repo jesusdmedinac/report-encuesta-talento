@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import OpenAI from 'openai';
+import { scaleToTen } from '../utils.js';
 
 /**
  * Inicializa y devuelve un cliente de IA basado en el proveedor especificado.
@@ -45,24 +46,48 @@ export function initializeAiClient(provider, modelName) {
 }
 
 /**
+ * Escala recursivamente todas las puntuaciones numéricas en un objeto.
+ * @param {Object} data - El objeto con los resultados cuantitativos.
+ * @returns {Object} - Un nuevo objeto con todas las puntuaciones escaladas a 10.
+ */
+function scaleScores(data) {
+    const scaledData = {};
+    for (const key in data) {
+        if (typeof data[key] === 'object' && data[key] !== null) {
+            scaledData[key] = scaleScores(data[key]);
+        } else if (typeof data[key] === 'number') {
+            // Redondea a 2 decimales para mayor claridad en el prompt
+            scaledData[key] = parseFloat(scaleToTen(data[key]).toFixed(2));
+        } else {
+            scaledData[key] = data[key];
+        }
+    }
+    return scaledData;
+}
+
+
+/**
  * Realiza el análisis cualitativo generando texto a través de una IA.
  * @param {string} provider - El proveedor de IA.
  * @param {Object} aiClient - La instancia del cliente de IA.
  * @param {string} modelName - El nombre del modelo.
- * @param {Object} quantitativeResults - Los resultados del análisis cuantitativo.
+ * @param {Object} quantitativeResults - Los resultados del análisis cuantitativo (escala 1-4).
  * @returns {Promise<Object>} - Una promesa que resuelve al objeto con los textos generados.
  */
 export async function performQualitativeAnalysis(provider, aiClient, modelName, quantitativeResults) {
     console.log('Iniciando análisis cualitativo con IA...');
 
+    // Escala los resultados a una base de 10 para la IA
+    const scaledResults = scaleScores(quantitativeResults);
+
     const comprehensivePrompt = `
         Eres un consultor experto en transformación digital.
         Basado en los siguientes resultados cuantitativos de una encuesta de madurez digital,
-        donde la puntuación va de 1 (muy en desacuerdo) a 4 (muy de acuerdo),
-        genera un objeto JSON con dos propiedades: "resumenEjecutivo" e "introduccion".
+        donde la puntuación ha sido escalada a una base de 1 a 10,
+        genera un objeto JSON con cuatro propiedades: "resumenEjecutivo", "introduccion", "brechaDigital" y "madurezDigital".
 
-        Resultados Cuantitativos (promedios de 1 a 4):
-        ${JSON.stringify(quantitativeResults, null, 2)}
+        Resultados Cuantitativos (promedios en escala de 1 a 10):
+        ${JSON.stringify(scaledResults, null, 2)}
 
         Instrucciones para el contenido del JSON:
         1.  **resumenEjecutivo**: Un resumen conciso y profesional de 3 párrafos. Debe ser accionable, escrito en un tono de experto a cliente, y resaltar las áreas clave de fortaleza y debilidad sin usar un lenguaje demasiado técnico. Finaliza con una nota optimista sobre el potencial de mejora.
@@ -72,10 +97,13 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
             - **textoOportunidadParrafo**: Un párrafo que explique la oportunidad de crecimiento de la empresa en comparación con la meta del sector (puntuacionMetaSector: 9.38 sobre 10).
             - **parrafo1**: Un párrafo que analice el estado actual de la madurez digital de la empresa.
             - **parrafo2**: Un párrafo que describa los próximos pasos o el enfoque recomendado para cerrar la brecha digital.
+        4.  **madurezDigital**: Un objeto para la sección de Madurez Digital. Basado en las puntuaciones de la sub-sección 'madurezDigital' en los resultados cuantitativos, genera lo siguiente:
+            - **parrafoIntroductorio**: Un párrafo que analice la puntuación general de esta dimensión y su significado para la empresa.
+            - **componentes**: Un ARRAY de objetos. Cada objeto debe tener dos propiedades: 'nombre' (el identificador del componente, ej. 'adaptabilidad') y 'descripcion' (un párrafo que analiza la puntuación específica de ese componente y sugiere áreas de enfoque).
     `;
 
     try {
-        console.log('Generando textos cualitativos (resumen e introducción)...');
+        console.log('Generando textos cualitativos con datos escalados...');
         let generatedText = "";
 
         switch (provider) {

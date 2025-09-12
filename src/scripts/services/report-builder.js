@@ -47,19 +47,35 @@ function buildBrechaDigital(empresaNombre, overallAvg, qualitativeResults) {
     };
 }
 
-function buildMadurezDigital(empresaNombre, madurezDigitalAvg, analysisResults) {
+function buildMadurezDigital(empresaNombre, madurezDigitalAvg, analysisResults, qualitativeResults) {
+    const madurezTexts = qualitativeResults.madurezDigital || {};
+    const componentesAI = madurezTexts.componentes || [];
+    
+    // Crear un mapa para buscar descripciones de IA fácilmente por el nombre del componente
+    const descripcionMap = new Map();
+    if (Array.isArray(componentesAI)) {
+        componentesAI.forEach(c => {
+            // Normalizar el nombre para que coincida con las claves de analysisResults (ej. 'proactividadDigital')
+            const normalizedName = c.nombre.replace(/\s+/g, '');
+            descripcionMap.set(normalizedName.toLowerCase(), c.descripcion);
+        });
+    }
+
     return {
         puntuacionGeneral: parseFloat(scaleToTen(madurezDigitalAvg).toFixed(1)),
         nombreEmpresa: empresaNombre,
-        parrafoIntroductorio: "", // TODO: Llenar con análisis de IA
-        componentes: Object.entries(analysisResults.madurezDigital).map(([key, value]) => ({
-            nombre: formatDimensionName(key),
-            puntuacion: parseFloat(scaleToTen(value).toFixed(1)),
-            descripcion: `Puntuación de ${parseFloat(scaleToTen(value).toFixed(2))}/10 en ${formatDimensionName(key)}.`,
-            color: "var(--color-company)",
-            colorGradiente: "#4387ff",
-            meta: 9.38 // TODO: Mover a config.js
-        })),
+        parrafoIntroductorio: madurezTexts.parrafoIntroductorio || "Análisis no disponible.",
+        componentes: Object.entries(analysisResults.madurezDigital).map(([key, value]) => {
+            const descripcionIA = descripcionMap.get(key.toLowerCase());
+            return {
+                nombre: formatDimensionName(key),
+                puntuacion: parseFloat(scaleToTen(value).toFixed(1)),
+                descripcion: descripcionIA || `Puntuación de ${parseFloat(scaleToTen(value).toFixed(2))}/10 en ${formatDimensionName(key)}.`,
+                color: "var(--color-company)",
+                colorGradiente: "#4387ff",
+                meta: 9.38 // TODO: Mover a config.js
+            };
+        }),
     };
 }
 
@@ -205,7 +221,7 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
     template.introduccion.contenido = qualitativeResults.introduccion; // Asignación directa
     template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);
-    template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults);
+    template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults, qualitativeResults);
     template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults);
     template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults);
     template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults);
