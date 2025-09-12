@@ -9,18 +9,23 @@ const MAPPINGS_PATH = path.join(process.cwd(), 'src', 'scripts', 'mappings.json'
 const TEMPLATE_PATH = path.join(process.cwd(), 'src', 'data', 'globalData.json');
 
 
-const NON_QUANTITATIVE_COLUMNS = [
+const PII_COLUMNS = [
     '#', 'DEMO_CONSENT: Política de privacidad de datos', 'DEMO_CONTACT: Nombre',
     'DEMO_CONTACT: Apellido', 'DEMO_CONTACT: Email', 'DEMO_PROFESSIONAL: Departamento:',
     'DEMO_PROFESSIONAL: Nivel de estudios:', 'DEMO_PROFESSIONAL: Menciona el rol que cumples en tu empresa:',
     'DEMO_PROFESSIONAL: Menciona cuáles son las tres principales responsabilidades o actividades que desempeñas en ese rol:',
     'DEMO_PROFESSIONAL: Other', 'DEMO_PROFESSIONAL: ¿Hacia qué posición, área o tipo de rol aspiras llegar en tu desarrollo profesional?',
-    'DEMO_PROFESSIONAL: Género:', 'DEMO_PROFESSIONAL: Rango de Edad:',
-    'D1_OPEN: Si pudieras describir tu viaje de aprendizaje digital en una frase, ¿cuál sería?',
-    'D2_OPEN: Pensando en las herramientas que usas a diario, ¿qué te ayudaría a ser más eficiente: una nueva herramienta, más capacitación en las actuales, o algo diferente?',
-    'D3_OPEN: Desde tu perspectiva, ¿qué es lo más importante que la empresa podría hacer para acelerar nuestra cultura digital?',
-    'D4_OPEN: Pensando en el futuro, ¿cuál es tu mayor expectativa o preocupación sobre el uso de la Inteligencia Artificial en tu rol?'
+    'DEMO_PROFESSIONAL: Género:', 'DEMO_PROFESSIONAL: Rango de Edad:'
 ];
+
+const OPEN_ENDED_QUESTIONS = {
+    'D1_OPEN': 'D1_OPEN: Si pudieras describir tu viaje de aprendizaje digital en una frase, ¿cuál sería?',
+    'D2_OPEN': 'D2_OPEN: Pensando en las herramientas que usas a diario, ¿qué te ayudaría a ser más eficiente: una nueva herramienta, más capacitación en las actuales, o algo diferente?',
+    'D3_OPEN': 'D3_OPEN: Desde tu perspectiva, ¿qué es lo más importante que la empresa podría hacer para acelerar nuestra cultura digital?',
+    'D4_OPEN': 'D4_OPEN: Pensando en el futuro, ¿cuál es tu mayor expectativa o preocupación sobre el uso de la Inteligencia Artificial en tu rol?'
+};
+
+const ALL_NON_QUANTITATIVE_COLUMNS = [...PII_COLUMNS, ...Object.values(OPEN_ENDED_QUESTIONS)];
 
 
 // --- Funciones de Utilidad ---
@@ -54,15 +59,30 @@ function loadCsv(filePath) {
             process.exit(1);
         }
 
-        return parsedData.data.map(row => {
-            const newRow = {};
+        const quantitativeData = [];
+        const openEndedData = {};
+        for (const key in OPEN_ENDED_QUESTIONS) {
+            openEndedData[key] = [];
+        }
+
+        for (const row of parsedData.data) {
+            const quantRow = {};
             for (const key in row) {
-                if (!NON_QUANTITATIVE_COLUMNS.includes(key.trim())) {
-                    newRow[key.trim()] = row[key];
+                const trimmedKey = key.trim();
+                if (!ALL_NON_QUANTITATIVE_COLUMNS.includes(trimmedKey)) {
+                    quantRow[trimmedKey] = row[key];
+                } else {
+                    for (const open_key in OPEN_ENDED_QUESTIONS) {
+                        if (OPEN_ENDED_QUESTIONS[open_key] === trimmedKey && row[key]) {
+                            openEndedData[open_key].push(row[key]);
+                        }
+                    }
                 }
             }
-            return newRow;
-        });
+            quantitativeData.push(quantRow);
+        }
+
+        return { quantitativeData, openEndedData };
 
     } catch (error) {
         console.error(`Error al leer o procesar el archivo CSV: ${error.message}`);
