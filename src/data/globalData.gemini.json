@@ -10,26 +10,26 @@
   },
   "introduccion": {
     "titulo": "Introducción",
-    "contenido": "Le damos la bienvenida a su reporte de diagnóstico de madurez digital. Este análisis ha sido diseñado para ofrecer una visión clara y detallada de las capacidades, competencias y cultura digital de la organización en el momento actual. El propósito de este documento es servir como un punto de partida estratégico, identificando tanto las fortalezas consolidadas que nos impulsan, como las oportunidades de mejora que trazarán nuestra hoja de ruta hacia la excelencia digital. Los resultados aquí presentados son una herramienta constructiva para alinear esfuerzos, priorizar inversiones y potenciar el talento colectivo en el camino de la transformación."
+    "contenido": "Les damos la bienvenida a los resultados de su diagnóstico de madurez digital. Este informe ha sido diseñado para proporcionar una visión clara y objetiva de las capacidades digitales actuales de su organización, identificando tanto las fortalezas consolidadas como las oportunidades estratégicas de crecimiento. Nuestro objetivo es que este análisis sirva como una hoja de ruta práctica y constructiva para acelerar su transformación digital y potenciar su ventaja competitiva en el mercado."
   },
   "brechaDigital": {
     "puntuacionEmpresa": 7.5,
     "puntuacionMetaSector": 9.38,
     "nombreEmpresa": "Banco de Guayaquil",
-    "textoNivelActual": "Nivel Competitivo",
-    "textoOportunidadParrafo": "Con una puntuación general de 7.81 sobre 10, la empresa se posiciona en un nivel competitivo en cuanto a sus competencias digitales fundamentales. Sin embargo, la meta de los líderes del sector se sitúa en 9.38, lo que revela una oportunidad estratégica significativa. Cerrar esta brecha de 1.57 puntos no solo implica mejorar las capacidades actuales, sino evolucionar de ser un competidor sólido a un referente de innovación y eficiencia digital en el mercado.",
-    "parrafo1": "El estado actual de las competencias digitales de la organización es notablemente sólido y equilibrado. Se observan puntuaciones altas y consistentes en áreas críticas como el análisis de datos (7.9), la alfabetización de datos (7.8), la colaboración digital (7.7) y la ciberseguridad (7.82). Esta homogeneidad sugiere que existe una conciencia generalizada y una base de conocimiento robusta en los pilares fundamentales que sostienen a una empresa digitalmente madura. Esta base es una ventaja competitiva crucial que facilita la adopción de iniciativas más avanzadas.",
-    "parrafo2": "Para cerrar la brecha con los líderes del sector, el enfoque debe pasar de la competencia a la maestría. Los próximos pasos recomendados incluyen la implementación de programas para evolucionar del análisis de datos a la toma de decisiones predictiva y prescriptiva. Es fundamental fomentar una cultura de colaboración proactiva, utilizando herramientas avanzadas para romper silos y acelerar la innovación. En ciberseguridad, se debe transitar de un enfoque reactivo a una estrategia proactiva de inteligencia de amenazas. El objetivo es integrar estas competencias en el ADN estratégico de la empresa para que impulsen el crecimiento de manera continua."
+    "textoNivelActual": "Nivel Competitivo con Potencial de Liderazgo",
+    "textoOportunidadParrafo": "Con una puntuación general de 7.15 sobre 10, su organización se posiciona en un nivel competitivo. Sin embargo, existe una brecha significativa frente a la puntuación meta del sector de 9.38. Esta diferencia no representa una debilidad, sino una clara oportunidad de crecimiento. Cerrar esta brecha implica pasar de ser un competidor sólido a un líder de mercado, lo que se puede lograr mediante inversiones estratégicas en tecnología, talento y procesos para superar a la competencia y establecer nuevos estándares en la industria.",
+    "parrafo1": "El estado actual de su madurez digital muestra una base sólida, con fortalezas notables en la adaptabilidad de los equipos y las competencias de datos. No obstante, el análisis revela una heterogeneidad en el desarrollo digital entre los distintos departamentos. Mientras que algunas áreas demuestran capacidades avanzadas, otras, como las funciones de soporte interno, y competencias específicas como el uso de SEO en el área comercial, muestran un desarrollo incipiente. Esta inconsistencia limita el potencial sinérgico de la organización y frena la capacidad de alcanzar la máxima eficiencia operativa.",
+    "parrafo2": "Para cerrar la brecha digital de manera efectiva, el enfoque recomendado es la estandarización y elevación de las competencias en toda la organización. Es crucial diseñar un plan de acción que priorice las áreas con mayor rezago, implementando programas de capacitación específicos y adoptando herramientas tecnológicas clave (como plataformas de gestión de RRHH o CRM avanzados). Fomentar una cultura de aprendizaje continuo, apoyada por el liderazgo, será el motor que impulse esta nivelación y transforme las oportunidades identificadas en resultados de negocio tangibles."
   },
   "madurezDigital": {
     "puntuacionGeneral": 7.6,
     "nombreEmpresa": "Banco de Guayaquil",
-    "parrafoIntroductorio": "La dimensión de Madurez Digital, con una puntuación promedio de 7.62, indica que la organización cuenta con una fuerza laboral ágil y preparada para el entorno digital. Este resultado es muy positivo, ya que refleja que los colaboradores poseen una buena disposición para adaptarse a nuevas herramientas, una capacidad sólida para resolver problemas de forma digital y una creciente proactividad. Esta madurez actitudinal es el cimiento sobre el cual se pueden construir y escalar con éxito las iniciativas de transformación tecnológica más ambiciosas.",
+    "parrafoIntroductorio": "Con una puntuación promedio de 7.62 en esta dimensión, la organización demuestra un nivel de madurez digital individual y de equipo notablemente alto. Esta calificación refleja una fuerza laboral que no solo se adapta con facilidad a los cambios tecnológicos, sino que también utiliza activamente las herramientas digitales para resolver problemas y buscar mejoras. Esta es una de las mayores fortalezas de la empresa y constituye una base cultural sólida sobre la cual construir iniciativas de transformación más ambiciosas, asegurando una adopción más rápida y efectiva.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
         "puntuacion": 7.9,
-        "descripcion": "Con una puntuación de 7.92, la adaptabilidad es una de las mayores fortalezas de la cultura organizacional. El equipo demuestra una excelente capacidad para ajustarse a nuevos sistemas, procesos y tecnologías. Para capitalizar esta fortaleza, se recomienda involucrar a los empleados en las fases tempranas de los proyectos de cambio, permitiéndoles co-crear soluciones y actuar como embajadores de la transformación, asegurando así una adopción más rápida y efectiva a lo largo de toda la empresa.",
+        "descripcion": "La adaptabilidad, con una puntuación destacada de 7.92, es un pilar fundamental de su cultura. Los equipos muestran una capacidad excepcional para ajustarse a nuevas tecnologías y dinámicas de mercado. Para capitalizar esta fortaleza, se recomienda involucrar a estos equipos como 'early adopters' y promotores del cambio en futuros proyectos tecnológicos, permitiéndoles co-crear soluciones y acelerar la adopción en el resto de la organización.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -37,7 +37,7 @@
       {
         "nombre": "Resolucion De Problemas",
         "puntuacion": 7.6,
-        "descripcion": "La puntuación de 7.6 en resolución de problemas indica que los empleados son competentes en el uso de herramientas digitales para superar los desafíos diarios. La oportunidad aquí reside en estandarizar y escalar esta habilidad. Se sugiere crear espacios formales, como comunidades de práctica o talleres de innovación, donde se compartan las mejores prácticas y se promueva el uso de metodologías data-driven para abordar problemas complejos de negocio de manera colaborativa e interdisciplinaria.",
+        "descripcion": "La habilidad para resolver problemas con herramientas digitales es sólida (7.6), lo que indica una alta eficiencia operativa en el día a día. La principal oportunidad de mejora consiste en evolucionar de un enfoque reactivo a uno proactivo. Se sugiere potenciar el uso de análisis de datos para anticipar desafíos operativos, identificar patrones y optimizar procesos antes de que surjan inconvenientes.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -45,7 +45,7 @@
       {
         "nombre": "Proactividad Digital",
         "puntuacion": 7.3,
-        "descripcion": "La proactividad digital, con un 7.33, es una competencia sólida pero con el mayor margen de mejora dentro de esta dimensión. Si bien los equipos resuelven problemas eficazmente, hay una oportunidad para fomentar una mentalidad más exploratoria, donde los empleados no solo usen las herramientas disponibles, sino que busquen y propongan activamente nuevas soluciones digitales para optimizar sus flujos de trabajo. Implementar programas de reconocimiento para la innovación y ofrecer 'tiempo de exploración' puede ser un catalizador clave para impulsar esta competencia.",
+        "descripcion": "Con una puntuación de 7.33, la proactividad digital está bien establecida. Los colaboradores demuestran iniciativa en la búsqueda y aplicación de tecnología para mejorar su desempeño. Para fomentar aún más esta cualidad, se puede formalizar espacios para la innovación, como 'sandboxes' tecnológicos o programas de intraemprendimiento, donde los empleados puedan proponer y experimentar con nuevas herramientas con el respaldo de la organización.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -54,32 +54,32 @@
   },
   "competenciasDigitales": {
     "promedio": 7.8,
-    "nivelDesarrollo": "",
-    "descripcionPromedio": "",
+    "nivelDesarrollo": "COMPETENCIAS CONSOLIDADAS",
+    "descripcionPromedio": "La organización presenta un nivel de competencia digital general muy elevado, con un promedio de 7.81. Este resultado es excepcional y demuestra que la plantilla no solo está familiarizada con el entorno digital, sino que posee una comprensión profunda de áreas críticas como los datos, la colaboración y la seguridad. Esta base de conocimiento es un activo estratégico que reduce significativamente el riesgo en proyectos de transformación y habilita una toma de decisiones ágil e informada en todos los niveles.",
     "competencias": [
       {
         "name": "Analisis De Datos",
         "score": 79,
         "color": "#3498db",
-        "description": "Nivel de desarrollo en Analisis De Datos."
+        "description": "Con una calificación sobresaliente de 7.9, la capacidad de análisis de datos es una ventaja competitiva clave. El siguiente nivel es trascender el análisis descriptivo para adoptar modelos predictivos y prescriptivos. La recomendación es invertir en capacitación avanzada y herramientas de Business Intelligence que permitan no solo entender el pasado, sino también anticipar el futuro y automatizar decisiones."
       },
       {
         "name": "Alfabetizacion De Datos",
         "score": 78,
         "color": "#3498db",
-        "description": "Nivel de desarrollo en Alfabetizacion De Datos."
+        "description": "Una puntuación de 7.8 en alfabetización de datos indica que el personal comprende el valor estratégico de la información. Para mantener y potenciar esta capacidad, es fundamental continuar con la democratización de los datos. Esto se logra mediante la implementación de dashboards accesibles y promoviendo una cultura donde la argumentación basada en datos sea la norma en todas las reuniones y decisiones."
       },
       {
         "name": "Colaboracion Digital",
         "score": 77,
         "color": "#3498db",
-        "description": "Nivel de desarrollo en Colaboracion Digital."
+        "description": "La colaboración digital (7.7) es eficiente, lo que sugiere flujos de trabajo internos bien optimizados. La oportunidad de mejora radica en extender esta eficiencia a la colaboración externa. Se recomienda explorar plataformas unificadas que integren la comunicación con clientes, proveedores y socios estratégicos, rompiendo silos de información y fomentando un ecosistema de innovación abierta."
       },
       {
         "name": "Ciberseguridad",
         "score": 78,
         "color": "#3498db",
-        "description": "Nivel de desarrollo en Ciberseguridad."
+        "description": "La conciencia y práctica en ciberseguridad (7.82) son excelentes, un pilar indispensable para proteger los activos digitales de la empresa. Para asegurar que esta fortaleza perdure, se debe establecer un programa de formación continua y realizar simulacros periódicos que mantengan al equipo alerta y actualizado sobre las últimas amenazas y mejores prácticas de seguridad."
       }
     ]
   },
@@ -228,7 +228,7 @@
     }
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "El presente diagnóstico revela que la organización posee una base sólida y una cultura propicia para acelerar su transformación digital. Destacan como fortalezas clave una alta capacidad de adaptación (7.92), un notable interés en el aprendizaje de nuevas tecnologías como la Inteligencia Artificial (9.0), y un fuerte apoyo organizacional (8.18). Estas cualidades indican que el equipo no solo está preparado para el cambio, sino que lo desea activamente, lo cual es el activo más valioso en cualquier proceso de modernización.\n\nNo obstante, se han identificado brechas estratégicas que requieren atención inmediata. La más significativa es la desconexión entre la alta habilidad e interés en la IA (8.0 y 9.0 respectivamente) y su bajo nivel de adopción real (4.55), lo que sugiere una falta de estrategia o herramientas para su implementación. Adicionalmente, existen áreas operativas con un considerable margen de mejora, como el uso de SEO en el área comercial (4.3), la gestión de proyectos en mandos medios (5.3), y una notoria ausencia de herramientas digitales en roles de soporte interno, lo cual representa un riesgo de eficiencia y una fuente de silos operativos.\n\nEl camino a seguir es claro y prometedor. La organización debe capitalizar el entusiasmo y la capacidad de su gente enfocándose en una estrategia de implementación tecnológica dirigida, proveyendo las herramientas necesarias en áreas críticas y creando puentes entre el potencial y la aplicación práctica. Al cerrar estas brechas específicas, la empresa no solo mejorará su eficiencia operativa, sino que se posicionará para innovar y liderar en su sector, transformando su alto potencial en resultados de negocio tangibles.",
+    "resumenGeneral": "Tras un análisis exhaustivo de los resultados de la encuesta de madurez digital, se observa que su organización posee una base sólida y un capital humano con una notable capacidad de adaptación (7.92) y un fuerte apoyo organizacional (8.18). Estas fortalezas, combinadas con un alto interés en el aprendizaje de nuevas tecnologías como la Inteligencia Artificial (9.0), indican una cultura preparada y dispuesta al cambio. Las competencias digitales fundamentales, como el análisis de datos (7.9) y la ciberseguridad (7.82), se encuentran en un nivel avanzado, lo que constituye una ventaja competitiva significativa y un excelente punto de partida para futuras iniciativas de transformación.\n\nNo obstante, el diagnóstico revela oportunidades estratégicas de mejora que, si se abordan, pueden acelerar su crecimiento. Se identifica una brecha importante entre el alto interés y la habilidad en IA (8.0) y su nivel de adopción real en los procesos (4.55), lo que sugiere una desconexión entre la intención y la implementación. Asimismo, existen disparidades en la madurez digital entre diferentes roles; áreas como Soporte Interno (calificaciones de 0) y ciertas competencias comerciales como SEO (4.3) y gestión de proyectos para mandos medios (5.3) requieren atención prioritaria para estandarizar las capacidades y maximizar la eficiencia en toda la empresa.\n\nEl camino hacia la excelencia digital está claramente delineado. Su organización tiene el activo más valioso: un equipo motivado y un liderazgo que apoya la visión digital. El enfoque recomendado es trazar una hoja de ruta que priorice la capacitación dirigida, la adopción de herramientas tecnológicas en las áreas más rezagadas y la creación de un entorno de aprendizaje más estructurado (6.83). Al cerrar estas brechas específicas, no solo optimizarán sus operaciones, sino que se posicionarán para liderar la innovación en su sector. El potencial para capitalizar sus fortalezas existentes y convertirlas en un liderazgo de mercado es inmenso.",
     "puntuacionGeneral": {
       "puntuacion": 7.5
     },

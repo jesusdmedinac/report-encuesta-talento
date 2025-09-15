@@ -33,8 +33,8 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 1.  **Continuar la Expansión de la Fase 4 (Generación de Contenido):**
     -   Ampliar el prompt y la lógica de `ai-analyzer.js` y `report-builder.js` para generar el contenido de las demás secciones del reporte, una por una. El orden sugerido es:
-        -   [ ] `madurezDigital`
-        -   [ ] `competenciasDigitales`
+        -   [x] `madurezDigital`
+        -   [x] `competenciasDigitales`
         -   [ ] `usoInteligenciaArtificial`
         -   [ ] `culturaOrganizacional`
         -   [ ] `planAccion`

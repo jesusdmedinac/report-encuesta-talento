@@ -84,7 +84,7 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         Eres un consultor experto en transformación digital.
         Basado en los siguientes resultados cuantitativos de una encuesta de madurez digital,
         donde la puntuación ha sido escalada a una base de 1 a 10,
-        genera un objeto JSON con cuatro propiedades: "resumenEjecutivo", "introduccion", "brechaDigital" y "madurezDigital".
+        genera un objeto JSON con cinco propiedades: "resumenEjecutivo", "introduccion", "brechaDigital", "madurezDigital" y "competenciasDigitales".
 
         Resultados Cuantitativos (promedios en escala de 1 a 10):
         ${JSON.stringify(scaledResults, null, 2)}
@@ -100,6 +100,10 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         4.  **madurezDigital**: Un objeto para la sección de Madurez Digital. Basado en las puntuaciones de la sub-sección 'madurezDigital' en los resultados cuantitativos, genera lo siguiente:
             - **parrafoIntroductorio**: Un párrafo que analice la puntuación general de esta dimensión y su significado para la empresa.
             - **componentes**: Un ARRAY de objetos. Cada objeto debe tener dos propiedades: 'nombre' (el identificador del componente, ej. 'adaptabilidad') y 'descripcion' (un párrafo que analiza la puntuación específica de ese componente y sugiere áreas de enfoque).
+        5.  **competenciasDigitales**: Un objeto para la sección de Competencias Digitales. Basado en las puntuaciones de la sub-sección 'brechaDigital' (que en realidad representa las competencias), genera lo siguiente:
+            - **descripcionPromedio**: Un párrafo que analice la puntuación general de esta dimensión y su significado.
+            - **nivelDesarrollo**: Una frase corta que describa el nivel de desarrollo (ej. 'FUNDAMENTOS ESTABLECIDOS', 'ETAPA INICIAL').
+            - **competencias**: Un ARRAY de objetos. Cada objeto debe tener dos propiedades: 'name' (el identificador de la competencia, ej. 'agilidadDigital') y 'description' (un párrafo que analiza la puntuación específica de esa competencia y ofrece una recomendación o insight).
     `;
 
     try {

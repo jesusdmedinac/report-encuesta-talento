@@ -79,17 +79,32 @@ function buildMadurezDigital(empresaNombre, madurezDigitalAvg, analysisResults, 
     };
 }
 
-function buildCompetenciasDigitales(brechaDigitalAvg, analysisResults) {
+function buildCompetenciasDigitales(brechaDigitalAvg, analysisResults, qualitativeResults) {
+    const competenciasTexts = qualitativeResults.competenciasDigitales || {};
+    const competenciasAI = competenciasTexts.competencias || [];
+
+    // Crear un mapa para buscar descripciones de IA fácilmente
+    const descripcionMap = new Map();
+    if (Array.isArray(competenciasAI)) {
+        competenciasAI.forEach(c => {
+            const normalizedName = c.name.replace(/\s+/g, '');
+            descripcionMap.set(normalizedName.toLowerCase(), c.description);
+        });
+    }
+
     return {
         promedio: parseFloat(scaleToTen(brechaDigitalAvg).toFixed(1)),
-        nivelDesarrollo: "", // TODO: Llenar con análisis de IA
-        descripcionPromedio: "", // TODO: Llenar con análisis de IA
-        competencias: Object.entries(analysisResults.brechaDigital).map(([key, value]) => ({
-            name: formatDimensionName(key),
-            score: Math.round((value / 4) * 100),
-            color: '#3498db',
-            description: `Nivel de desarrollo en ${formatDimensionName(key)}.`
-        })),
+        nivelDesarrollo: competenciasTexts.nivelDesarrollo || "Análisis no disponible.",
+        descripcionPromedio: competenciasTexts.descripcionPromedio || "Análisis no disponible.",
+        competencias: Object.entries(analysisResults.brechaDigital).map(([key, value]) => {
+            const descripcionIA = descripcionMap.get(key.toLowerCase());
+            return {
+                name: formatDimensionName(key),
+                score: Math.round((value / 4) * 100),
+                color: '#3498db', // TODO: Considerar si el color debe ser dinámico
+                description: descripcionIA || `Nivel de desarrollo en ${formatDimensionName(key)}.`
+            };
+        }),
     };
 }
 
@@ -222,7 +237,7 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.introduccion.contenido = qualitativeResults.introduccion; // Asignación directa
     template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);
     template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults, qualitativeResults);
-    template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults);
+    template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults, qualitativeResults);
     template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults);
     template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults);
     template.roleSpecificScores = buildRoleSpecificScores(analysisResults);
