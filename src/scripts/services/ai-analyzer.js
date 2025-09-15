@@ -84,7 +84,7 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         Eres un consultor experto en transformación digital.
         Basado en los siguientes resultados cuantitativos de una encuesta de madurez digital,
         donde la puntuación ha sido escalada a una base de 1 a 10,
-        genera un objeto JSON con cinco propiedades: "resumenEjecutivo", "introduccion", "brechaDigital", "madurezDigital" y "competenciasDigitales".
+        genera un objeto JSON con seis propiedades: "resumenEjecutivo", "introduccion", "brechaDigital", "madurezDigital", "competenciasDigitales" y "usoInteligenciaArtificial".
 
         Resultados Cuantitativos (promedios en escala de 1 a 10):
         ${JSON.stringify(scaledResults, null, 2)}
@@ -104,6 +104,13 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
             - **descripcionPromedio**: Un párrafo que analice la puntuación general de esta dimensión y su significado.
             - **nivelDesarrollo**: Una frase corta que describa el nivel de desarrollo (ej. 'FUNDAMENTOS ESTABLECIDOS', 'ETAPA INICIAL').
             - **competencias**: Un ARRAY de objetos. Cada objeto debe tener dos propiedades: 'name' (el identificador de la competencia, ej. 'agilidadDigital') y 'description' (un párrafo que analiza la puntuación específica de esa competencia y ofrece una recomendación o insight).
+        6.  **usoInteligeligenciaArtificial**: Un objeto para la sección de Uso de IA. Basado en las puntuaciones de la sub-sección 'usoInteligenciaArtificial', genera lo siguiente:
+            - **resumen**: Un párrafo que resuma el estado general de la empresa en cuanto a IA, destacando oportunidades estratégicas. Debe contener la etiqueta "<strong>" para resaltar la idea principal.
+            - **graficos**: Un ARRAY de 3 objetos, uno para cada una de las siguientes agrupaciones (los títulos deben ser exactos):
+                1.  **Adopción y Curiosidad**: Analiza las puntuaciones combinadas de 'interesEnAprendizaje', 'percepcionDeRiesgo' y 'nivelDeAdopcion'.
+                2.  **Uso y Aplicación**: Analiza las puntuaciones combinadas de 'frecuenciaDeUso' y 'habilidadDeUso'.
+                3.  **Ética y Verificación**: Analiza la puntuación de 'eticaYVerificacion'.
+              Cada objeto del array debe tener una única propiedad: 'descripcion' (un párrafo que analice la puntuación del grupo y su implicación para la empresa).
     `;
 
     try {

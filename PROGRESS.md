@@ -35,7 +35,7 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   Ampliar el prompt y la lógica de `ai-analyzer.js` y `report-builder.js` para generar el contenido de las demás secciones del reporte, una por una. El orden sugerido es:
         -   [x] `madurezDigital`
         -   [x] `competenciasDigitales`
-        -   [ ] `usoInteligenciaArtificial`
+        -   [x] `usoInteligenciaArtificial`
         -   [ ] `culturaOrganizacional`
         -   [ ] `planAccion`
     -   Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA.

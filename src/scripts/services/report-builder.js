@@ -108,7 +108,10 @@ function buildCompetenciasDigitales(brechaDigitalAvg, analysisResults, qualitati
     };
 }
 
-function buildUsoInteligenciaArtificial(analysisResults) {
+function buildUsoInteligenciaArtificial(analysisResults, qualitativeResults) {
+    const iaTexts = qualitativeResults.usoInteligenciaArtificial || {};
+    const graficosAI = iaTexts.graficos || [];
+
     const iaAdopcion = calculateAverage([
         analysisResults.usoInteligenciaArtificial.interesEnAprendizaje,
         analysisResults.usoInteligenciaArtificial.percepcionDeRiesgo,
@@ -121,26 +124,26 @@ function buildUsoInteligenciaArtificial(analysisResults) {
     const iaEtica = analysisResults.usoInteligenciaArtificial.eticaYVerificacion;
 
     return {
-        resumen: "", // TODO: Llenar con análisis de IA
+        resumen: iaTexts.resumen || "Análisis no disponible.",
         graficos: [
             {
                 titulo: "Adopción y Curiosidad",
                 porcentaje: Math.round((iaAdopcion / 4) * 100),
-                descripcion: "", // TODO: Llenar con análisis de IA
+                descripcion: graficosAI[0]?.descripcion || "Análisis no disponible.",
                 idGradiente: "gradient-adoption",
                 coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"]
             },
             {
                 titulo: "Uso y Aplicación",
                 porcentaje: Math.round((iaUso / 4) * 100),
-                descripcion: "", // TODO: Llenar con análisis de IA
+                descripcion: graficosAI[1]?.descripcion || "Análisis no disponible.",
                 idGradiente: "gradient-usage",
                 coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"]
             },
             {
                 titulo: "Ética y Verificación",
                 porcentaje: Math.round((iaEtica / 4) * 100),
-                descripcion: "", // TODO: Llenar con análisis de IA
+                descripcion: graficosAI[2]?.descripcion || "Análisis no disponible.",
                 idGradiente: "gradient-ethics",
                 coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"]
             }
@@ -238,7 +241,7 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);
     template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults, qualitativeResults);
     template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults, qualitativeResults);
-    template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults);
+    template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults, qualitativeResults);
     template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults);
     template.roleSpecificScores = buildRoleSpecificScores(analysisResults);
     

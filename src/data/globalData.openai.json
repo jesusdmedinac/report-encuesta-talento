@@ -10,26 +10,26 @@
   },
   "introduccion": {
     "titulo": "Introducción",
-    "contenido": "Gracias por confiar en este diagnóstico de madurez digital. El propósito de este reporte es ofrecer una visión objetiva, priorizada y accionable del estado actual, identificando brechas frente a las mejores prácticas del sector y proponiendo un camino claro de mejora. El enfoque es positivo y constructivo: capitalizamos fortalezas existentes, reducimos fricciones críticas y habilitamos capacidades que aceleren resultados de negocio."
+    "contenido": "Gracias por participar en este diagnóstico de madurez digital. El objetivo es ofrecer una visión clara, priorizada y accionable sobre el estado actual, las brechas frente a la referencia del sector y las palancas concretas para acelerar resultados. El tono de este informe es constructivo: valoramos los avances alcanzados y proponemos próximos pasos pragmáticos para consolidar capacidades y escalar impacto en toda la organización."
   },
   "brechaDigital": {
     "puntuacionEmpresa": 7.5,
     "puntuacionMetaSector": 9.38,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "Nivel Competitivo",
-    "textoOportunidadParrafo": "La puntuación general estimada es de 6.27 sobre 10 frente a una meta sectorial de 9.38, lo que refleja una brecha de 3.11 puntos (≈33%). Este diferencial es abordable con un plan de ejecución enfocado en fundamentos internos, crecimiento comercial y escalamiento responsable de IA.",
-    "parrafo1": "El estado actual muestra una base sólida pero heterogénea: competencias de datos y cultura de apoyo por encima de 7.5, capacidades técnicas en cloud y desarrollo consistentes, y digitalización de procesos avanzada. Sin embargo, el soporte interno carece de plataformas clave (RR. HH., capacitación, documental), la adopción de IA a escala es incipiente y el frente comercial presenta oportunidades claras en SEO y automatización. Estas asimetrías explican la distancia con la meta, no por falta de potencial, sino por la ausencia de ciertos habilitadores transversales.",
-    "parrafo2": "Para cerrar la brecha recomendamos: 1) Fundamentos transversales (0–90 días): implementar gestión documental, plataforma de capacitación y el diseño del HRIS; estandarizar gestión de proyectos con una PMO ligera. 2) Crecimiento (0–120 días): ejecutar un plan SEO básico (técnico, contenido y autoridad), mejorar comunicación con clientes y activar automatizaciones de CRM/marketing. 3) IA responsable (0–180 días): definir gobierno, riesgos y privacidad; priorizar 3–5 casos de negocio con ROI claro (ej. atención al cliente, back-office, analítica) y escalar tras pilotos. Este enfoque reduce fricción operativa, acelera adquisición/conversión y habilita el despliegue seguro de IA, acortando de forma tangible la brecha con el estándar del sector."
+    "textoOportunidadParrafo": "La puntuación general aproximada es 6.27/10 frente a una meta sectorial de 9.38, evidenciando una oportunidad de mejora de ~3.11 puntos. Este gap puede cerrarse priorizando adopción a escala (especialmente IA), fortaleciendo funciones habilitadoras (Soporte Interno) y profesionalizando el frente comercial digital (SEO y automatización), con un retorno esperado en eficiencia operativa, ingresos y velocidad de ejecución.",
+    "parrafo1": "El estado actual refleja una base competitiva con capacidades técnicas y culturales relevantes: datos sólidos, cloud estable, monitoreo del desempeño y una cultura que apoya la transformación. Sin embargo, la madurez es desigual entre áreas: funciones internas críticas se encuentran en etapa inicial o inexistentes y la adopción de IA a nivel organizacional no acompaña el nivel de habilidad individual. En el frente de clientes, el desempeño digital es correcto, pero tácticas clave de generación de demanda y visibilidad (SEO y automatización) limitan el alcance.",
+    "parrafo2": "Para cerrar la brecha, proponemos un enfoque en oleadas: (1) Acelerar casos de uso de IA con gobierno, seguridad y métricas claras de valor; (2) Profesionalizar marketing digital con un ‘baseline’ SEO, automatizaciones y contenido dirigido a performance; (3) Modernizar Soporte Interno con HRIS, LMS y gestión documental que habiliten escalabilidad y cumplimiento; (4) Fortalecer la ejecución con una PMO ágil y un portafolio de plataformas racionalizado. Este plan, acompañado de rituales de adopción y aprendizaje, permite capturar ganancias rápidas y construir capacidades sostenibles."
   },
   "madurezDigital": {
     "puntuacionGeneral": 7.6,
     "nombreEmpresa": "Banco de Guayaquil",
-    "parrafoIntroductorio": "La dimensión de madurez digital promedia ≈ 7.62/10, indicando una organización adaptable, resolutiva y con buena disposición al cambio. Este nivel permite absorber iniciativas de mejora y escalar prácticas modernas, siempre que se fortalezcan algunos habilitadores (gestión de proyectos, plataformas de soporte y diseño de experiencias) para convertir la intención en ejecución consistente.",
+    "parrafoIntroductorio": "La dimensión de madurez digital promedia ~7.62/10, señal de una organización adaptable, resolutiva y con iniciativa tecnológica. Este nivel implica que la empresa ya cuenta con prácticas efectivas para operar en entornos cambiantes, y que el reto principal no es ‘saber hacer’, sino estandarizar y escalar ese ‘saber’ a lo largo y ancho del negocio, conectándolo con resultados medibles.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
         "puntuacion": 7.9,
-        "descripcion": "Con 7.92, la organización responde bien a cambios y nuevas prioridades. Para sostener este desempeño, recomendamos institucionalizar mecanismos de ajuste continuo (rituales de retrospectiva, OKR trimestrales y revisión de portafolio) y reforzar la lectura de señales del mercado con investigación sistemática de cliente/competidor.",
+        "descripcion": "Con 7.92, la organización responde bien a cambios y nuevas herramientas. Recomendamos institucionalizar esta fortaleza mediante rituales de cambio (reviews quincenales, experimentos controlados, retros) y ‘playbooks’ reutilizables por área, de modo que la adaptación deje de depender de individuos y pase a ser un músculo organizacional.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -37,7 +37,7 @@
       {
         "nombre": "Resolucion De Problemas",
         "puntuacion": 7.6,
-        "descripcion": "La puntuación de 7.6 muestra competencias sólidas para diagnosticar y resolver. Para elevar el impacto, estandarice metodologías (A3, 5 Porqués, análisis causa-raíz) y conecte estos ciclos con tableros de métricas, de modo que cada aprendizaje se traduzca en mejoras repetibles y medibles.",
+        "descripcion": "El 7.6 indica capacidad sólida para diagnosticar y resolver cuellos de botella. Para escalar, formalice técnicas comunes (A3, 5 porqués, árboles de decisión) y compleméntelas con analítica de datos accesible al equipo, asegurando que cada problema relevante tenga un ‘owner’, una hipótesis medible y una cadencia de seguimiento.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -45,7 +45,7 @@
       {
         "nombre": "Proactividad Digital",
         "puntuacion": 7.3,
-        "descripcion": "Con 7.33 existe iniciativa para proponer y adoptar soluciones. El siguiente paso es convertir la proactividad en un flujo sostenido: backlog de oportunidades priorizado por valor, sprints de mejoras rápidas, micro-presupuestos para experimentación y reconocimiento explícito a iniciativas con resultados.",
+        "descripcion": "Con 7.33, existe iniciativa, pero aún hay espacio para incrementar el ritmo de mejora continua. Sugerimos un backlog de iniciativas digitales por área con criterios de priorización (impacto vs. esfuerzo), un presupuesto de experimentación y OKR trimestrales que vinculen la proactividad con métricas de negocio.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -55,41 +55,41 @@
   "competenciasDigitales": {
     "promedio": 7.8,
     "nivelDesarrollo": "FUNDAMENTOS ESTABLECIDOS",
-    "descripcionPromedio": "Las competencias digitales (datos, colaboración y seguridad) promedian ≈ 7.80/10, lo que sugiere fundamentos robustos para operar con criterios data-driven y de seguridad adecuados. Esta base reduce el riesgo operativo y habilita proyectos de mayor complejidad (automatización, personalización, IA) sin comprometer el control.",
+    "descripcionPromedio": "Las competencias núcleo (datos, colaboración y ciberseguridad) promedian ~7.81/10, un nivel avanzado que permite operar con confianza, compartir información y proteger activos digitales de manera consistente. Esta base es un habilitador directo para escalar automatización y casos de uso de IA con menor riesgo.",
     "competencias": [
       {
         "name": "Analisis De Datos",
         "score": 79,
         "color": "#3498db",
-        "description": "Con 7.9, el análisis es consistente. Recomendación: ampliar el autoservicio analítico con modelos semánticos y tableros estandarizados, y priorizar 2–3 casos avanzados (pronósticos, propensión, optimización) alineados a objetivos comerciales y operativos."
+        "description": "Con 7.9, el análisis de datos es una fortaleza. Recomendamos estandarizar dashboards accionables por función y habilitar ‘self-service analytics’ con gobernanza, para reducir tiempos de decisión y elevar la calidad de las hipótesis de negocio."
       },
       {
         "name": "Alfabetizacion De Datos",
         "score": 78,
         "color": "#3498db",
-        "description": "La alfabetización de 7.8 indica habilidades extendidas. Para consolidarla, establezca un marco de gobierno de datos con glosario común, calidad por dominio y formaciones cortas por rol (ejecutivo, operativo, técnico) que aseguren consistencia en la toma de decisiones."
+        "description": "El 7.8 indica que la mayoría entiende y aplica conceptos de datos. Para el siguiente nivel, implemente itinerarios formativos por rol (negocio, operaciones, marketing) y certificaciones internas que garanticen un lenguaje común y buenas prácticas."
       },
       {
         "name": "Colaboracion Digital",
         "score": 77,
         "color": "#3498db",
-        "description": "Con 7.7, la colaboración es efectiva. Siguiente paso: simplificar el set de herramientas, definir normas de uso (canales, etiquetado, repositorios) y habilitar espacios de co-creación con clientes internos/externos para acelerar la innovación y la entrega."
+        "description": "Con 7.7, la colaboración es efectiva. El foco debe estar en la interoperabilidad entre herramientas, políticas claras de documentación y etiquetado, y métricas de uso que aseguren que la información fluye sin fricciones entre equipos."
       },
       {
         "name": "Ciberseguridad",
         "score": 78,
         "color": "#3498db",
-        "description": "La seguridad en 7.82 es un buen punto de partida. Recomendamos fortalecer capacitación recurrente (phishing y buenas prácticas), aplicar principios de mínimo privilegio y segmentación, y extender la evaluación de riesgo a proveedores y casos de uso de IA."
+        "description": "El 7.82 refleja controles y conciencia robustos. Para sostener el crecimiento, fortalezca la gestión de identidades, el hardening de endpoints y la seguridad en el ciclo de vida de datos y modelos de IA, incluyendo pruebas periódicas y simulacros."
       }
     ]
   },
   "usoInteligenciaArtificial": {
-    "resumen": "",
+    "resumen": "El estado de IA combina habilidad alta (8), frecuencia de uso positiva (7.35) y gran interés por aprender (9) con una adopción organizacional aún baja (4.55) y percepción de riesgo moderada (5.07). <strong>La oportunidad clave es pasar del uso individual a la adopción a escala con gobierno, casos de negocio y guardrails claros</strong>, acelerando valor en procesos comerciales, operativos y de producto.",
     "graficos": [
       {
         "titulo": "Adopción y Curiosidad",
         "porcentaje": 62,
-        "descripcion": "",
+        "descripcion": "Adopción y Curiosidad: El interés por aprender (9) es muy elevado, pero la adopción (4.55) es baja y la percepción de riesgo (5.07) sugiere cautela. Recomendamos un marco de gobierno de IA con evaluación de riesgos, catálogo de casos priorizados por ROI y un proceso de aprobación ágil que convierta la curiosidad en implementación segura.",
         "idGradiente": "gradient-adoption",
         "coloresGradiente": [
           "#10B981",
@@ -100,7 +100,7 @@
       {
         "titulo": "Uso y Aplicación",
         "porcentaje": 77,
-        "descripcion": "",
+        "descripcion": "Uso y Aplicación: La frecuencia (7.35) y la habilidad (8) muestran un colectivo de ‘power users’ capaz de producir valor. El siguiente paso es estandarizar patrones de uso (prompts, plantillas, integraciones en workflows) y crear comunidades de práctica por rol para multiplicar el impacto.",
         "idGradiente": "gradient-usage",
         "coloresGradiente": [
           "#F59E0B",
@@ -111,7 +111,7 @@
       {
         "titulo": "Ética y Verificación",
         "porcentaje": 80,
-        "descripcion": "",
+        "descripcion": "Ética y Verificación: Con 8, existen buenas prácticas en revisión, trazabilidad y control. Sostenga este nivel con checklists por tipo de caso, auditorías muestrales y capacitación continua, alineando requisitos legales y de seguridad con la experimentación responsable.",
         "idGradiente": "gradient-ethics",
         "coloresGradiente": [
           "#8B5CF6",
@@ -228,7 +228,7 @@
     }
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "El diagnóstico sitúa a la organización en un nivel competitivo de madurez digital (promedio general ≈ 6.27/10), con fortalezas claras en competencias de datos (≈ 7.8–7.9), cultura de apoyo (apoyo organizacional 8.18) y capacidades técnicas en cloud (8.03) y metodologías de desarrollo (7.67). La digitalización de procesos (7.75) y el desempeño de mandos medios en monitoreo (8.43) y colaboración (8.32) refuerzan la base operativa. Además, existe alta habilidad (8.0) e interés (9.0) para el uso de IA, acompañados de buenas prácticas de ética y verificación (8.0).\n\nLas principales brechas que restringen el impacto incluyen la adopción efectiva de IA a escala (4.55) y la madurez en gestión del riesgo de su uso (5.07), junto con vacíos críticos en soporte interno: HRIS, reclutamiento digital, capacitación, gestión documental e IA en soporte (todos en 0). En go-to-market, el SEO (4.3) y la comunicación con clientes (6.2) requieren refuerzo; en operaciones y gestión, plataformas de gestión (5.32) y gestión de proyectos (5.3) necesitan estandarización. En producto, el diseño/UI (0) y la gestión de código (5.85) limitan la experiencia de usuario y la escalabilidad técnica.\n\nRecomendamos un plan 90-180 días en cinco frentes: 1) Fundamentos internos: implantar gestión documental y una plataforma de capacitación, y diseñar el roadmap de HRIS. 2) Crecimiento comercial: establecer fundamentos de SEO, automatizaciones de CRM/marketing y protocolos de comunicación. 3) IA responsable: gobierno y casos de uso priorizados con pilotos en operaciones y atención. 4) Ejecución: elevar la disciplina de proyectos con una PMO ligera y tableros de desempeño. 5) Producto: activar la función UI/UX y fortalecer prácticas de gestión de código. Con este foco, la organización puede cerrar rápidamente brechas clave y convertir su potencial en resultados sostenibles.",
+    "resumenGeneral": "El diagnóstico sitúa a la organización en un nivel competitivo de madurez digital (promedio general ≈ 6.27/10), con fortalezas claras en competencias de datos (7.8–7.9), cultura de apoyo (8.18), capacidades cloud (8.03) y monitoreo/colaboración en mandos medios (8.43 y 8.32). En el uso de IA destaca una habilidad alta (8) y gran interés por aprender (9), acompañado de prácticas sólidas de ética y verificación (8).\nLas principales brechas se concentran en la adopción a escala de IA (4.55) y en funciones habilitadoras internas, hoy subdesarrolladas o nulas (Soporte Interno: 0 en HRIS, reclutamiento, capacitación y gestión documental). En el frente comercial y de marketing, SEO (4.3), automatización (6.38) y comunicación con clientes (6.2) requieren impulso; en operaciones, plataformas de gestión (5.32) y en gestión de proyectos (5.3) existe margen para robustecer la ejecución.\nRecomendamos un plan en 90–120 días que priorice: pilotos de IA con gobierno y métricas de valor; un “baseline” de marketing digital (SEO/automatización) orientado a performance; modernización de soporte interno (HRIS, LMS y gestión documental) y consolidación de plataformas y PMO ágil. Con foco, patrocinios visibles y métricas de impacto, la empresa puede cerrar la brecha con el sector y capturar eficiencias y crecimiento sostenibles.",
     "puntuacionGeneral": {
       "puntuacion": 7.5
     },
