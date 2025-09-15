@@ -151,46 +151,58 @@ function buildUsoInteligenciaArtificial(analysisResults, qualitativeResults) {
     };
 }
 
-function buildCulturaOrganizacional(analysisResults) {
+function buildCulturaOrganizacional(analysisResults, qualitativeResults) {
+    const culturaTexts = qualitativeResults.culturaOrganizacional || {};
+    const insightsAI = culturaTexts.insights || {};
+    const tarjetasAI = culturaTexts.tarjetas || [];
+
     const culturaLiderazgo = calculateAverage([analysisResults.culturaOrganizacional.liderazgoYVision, analysisResults.culturaOrganizacional.reconocimiento]);
     const culturaFormacion = calculateAverage([analysisResults.culturaOrganizacional.ambienteDeAprendizaje, analysisResults.culturaOrganizacional.apoyoOrganizacional]);
     const culturaApertura = analysisResults.culturaOrganizacional.experimentacion;
 
+    // Mapeo para asegurar que asignamos la info de IA a la tarjeta correcta
+    const aiDataMap = {
+        'Apertura a la experimentación': tarjetasAI[0] || {},
+        'Formación y Apoyo': tarjetasAI[1] || {},
+        'Liderazgo y Visión': tarjetasAI[2] || {},
+    };
+
     return {
         insights: {
-            resumen: "", // TODO: Llenar con análisis de IA
-            puntos: [], // Placeholder
+            resumen: insightsAI.resumen || "Análisis no disponible.",
+            puntos: insightsAI.puntos || [],
         },
         tarjetas: [
             {
                 titulo: "Apertura a la experimentación",
                 puntuacion: parseFloat(scaleToTen(culturaApertura).toFixed(1)),
-                fraseClave: "", // TODO: Llenar con análisis de IA
-                narrativa: "", // TODO: Llenar con análisis de IA
-                metricas: [], // Placeholder
-                etiquetaNivel: "", // Placeholder
-                colorIcono: "", // Placeholder
-                icono: "", // Placeholder
+                fraseClave: aiDataMap['Apertura a la experimentación'].fraseClave || "",
+                narrativa: aiDataMap['Apertura a la experimentación'].narrativa || "Análisis no disponible.",
+                etiquetaNivel: aiDataMap['Apertura a la experimentación'].etiquetaNivel || "",
+                // Campos estáticos o que no vienen de la IA
+                metricas: [],
+                colorIcono: "",
+                icono: "",
             },
             {
                 titulo: "Formación y Apoyo",
                 puntuacion: parseFloat(scaleToTen(culturaFormacion).toFixed(1)),
-                fraseClave: "", // TODO: Llenar con análisis de IA
-                narrativa: "", // TODO: Llenar con análisis de IA
-                metricas: [], // Placeholder
-                etiquetaNivel: "", // Placeholder
-                colorIcono: "", // Placeholder
-                icono: "", // Placeholder
+                fraseClave: aiDataMap['Formación y Apoyo'].fraseClave || "",
+                narrativa: aiDataMap['Formación y Apoyo'].narrativa || "Análisis no disponible.",
+                etiquetaNivel: aiDataMap['Formación y Apoyo'].etiquetaNivel || "",
+                metricas: [],
+                colorIcono: "",
+                icono: "",
             },
             {
                 titulo: "Liderazgo y Visión",
                 puntuacion: parseFloat(scaleToTen(culturaLiderazgo).toFixed(1)),
-                fraseClave: "", // TODO: Llenar con análisis de IA
-                narrativa: "", // TODO: Llenar con análisis de IA
-                metricas: [], // Placeholder
-                etiquetaNivel: "", // Placeholder
-                colorIcono: "", // Placeholder
-                icono: "", // Placeholder
+                fraseClave: aiDataMap['Liderazgo y Visión'].fraseClave || "",
+                narrativa: aiDataMap['Liderazgo y Visión'].narrativa || "Análisis no disponible.",
+                etiquetaNivel: aiDataMap['Liderazgo y Visión'].etiquetaNivel || "",
+                metricas: [],
+                colorIcono: "",
+                icono: "",
             }
         ]
     };
@@ -242,7 +254,7 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults, qualitativeResults);
     template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults, qualitativeResults);
     template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults, qualitativeResults);
-    template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults);
+    template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults, qualitativeResults);
     template.roleSpecificScores = buildRoleSpecificScores(analysisResults);
     
     // Plan de acción se mantiene como estático por ahora

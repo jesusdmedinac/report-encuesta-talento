@@ -36,7 +36,7 @@ Este documento registra el estado actual del plan de implementación, los pasos 
         -   [x] `madurezDigital`
         -   [x] `competenciasDigitales`
         -   [x] `usoInteligenciaArtificial`
-        -   [ ] `culturaOrganizacional`
+        -   [x] `culturaOrganizacional`
         -   [ ] `planAccion`
     -   Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA.
 

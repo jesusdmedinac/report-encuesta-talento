@@ -84,7 +84,7 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         Eres un consultor experto en transformación digital.
         Basado en los siguientes resultados cuantitativos de una encuesta de madurez digital,
         donde la puntuación ha sido escalada a una base de 1 a 10,
-        genera un objeto JSON con seis propiedades: "resumenEjecutivo", "introduccion", "brechaDigital", "madurezDigital", "competenciasDigitales" y "usoInteligenciaArtificial".
+        genera un objeto JSON con siete propiedades: "resumenEjecutivo", "introduccion", "brechaDigital", "madurezDigital", "competenciasDigitales", "usoInteligenciaArtificial" y "culturaOrganizacional".
 
         Resultados Cuantitativos (promedios en escala de 1 a 10):
         ${JSON.stringify(scaledResults, null, 2)}
@@ -111,6 +111,15 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
                 2.  **Uso y Aplicación**: Analiza las puntuaciones combinadas de 'frecuenciaDeUso' y 'habilidadDeUso'.
                 3.  **Ética y Verificación**: Analiza la puntuación de 'eticaYVerificacion'.
               Cada objeto del array debe tener una única propiedad: 'descripcion' (un párrafo que analice la puntuación del grupo y su implicación para la empresa).
+        7.  **culturaOrganizacional**: Un objeto para la sección de Cultura Organizacional. Basado en las puntuaciones de la sub-sección 'culturaOrganizacional', genera lo siguiente:
+            - **insights**: Un objeto que contenga:
+                - **resumen**: Un párrafo que resuma el estado general de la cultura digital de la empresa.
+                - **puntos**: Un ARRAY de 3 objetos. Cada objeto debe tener las propiedades 'icono' (un emoji relevante) y 'texto' (una frase corta con la puntuación, usando la etiqueta "<strong>" para el concepto clave).
+            - **tarjetas**: Un ARRAY de 3 objetos, uno para cada una de las siguientes agrupaciones (los títulos deben ser exactos):
+                1.  **Apertura a la experimentación**: Basado en la puntuación de 'experimentacion'.
+                2.  **Formación y Apoyo**: Basado en las puntuaciones combinadas de 'ambienteDeAprendizaje' y 'apoyoOrganizacional'.
+                3.  **Liderazgo y Visión**: Basado en las puntuaciones combinadas de 'liderazgoYVision' y 'reconocimiento'.
+              Cada objeto de la tarjeta debe tener las siguientes propiedades generadas por la IA: 'etiquetaNivel' (ej. 'Primera etapa'), 'fraseClave' (una cita inspiradora sobre el estado actual) y 'narrativa' (un párrafo de análisis y recomendación).
     `;
 
     try {
