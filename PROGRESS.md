@@ -31,14 +31,12 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ## Próximos Pasos
 
-1.  **Continuar la Expansión de la Fase 4 (Generación de Contenido):**
-    -   Ampliar el prompt y la lógica de `ai-analyzer.js` y `report-builder.js` para generar el contenido de las demás secciones del reporte, una por una. El orden sugerido es:
-        -   [x] `madurezDigital`
-        -   [x] `competenciasDigitales`
-        -   [x] `usoInteligenciaArtificial`
-        -   [x] `culturaOrganizacional`
-        -   [ ] `planAccion`
-    -   Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA.
+1.  **Implementar la Nueva Estructura del Plan de Acción:**
+    -   [x] Definir la estructura de datos para `planAccion` (resumen general + listado de iniciativas medibles).
+    -   [ ] Actualizar la lógica de generación en `ai-analyzer.js` y `report-builder.js` para producir el nuevo objeto `planAccion`.
+    -   [ ] Reescribir el componente `src/components/PlanAccion.astro` desde cero para que visualice la nueva estructura de datos.
+    -   [ ] Volver a importar y renderizar el nuevo componente `PlanAccion` en `src/pages/[report].astro`.
+    -   [ ] Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA al generar las iniciativas.
 
 2.  **Refinamiento Final:**
     -   Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js`.

@@ -68,7 +68,7 @@ En esta fase, la IA generativa crea todos los textos analíticos y narrativas de
     *   La llamada a la IA incluirá los datos cuantitativos relevantes (puntuación general, scores de dimensiones, etc.) y, opcionalmente, los temas extraídos del análisis de respuestas abiertas.
 
 4.  **Ejemplo de Prompt (Conceptual):**
-    *   *"Eres un consultor de transformación digital. Basado en los siguientes datos {datos_cuantitativos}, genera una respuesta en formato JSON con las claves `resumenEjecutivo` y `madurezDigital`. Para `resumenEjecutivo`, redacta un análisis de 3 párrafos. Para `madurezDigital`, redacta un párrafo introductorio enfocado en la situación actual y la oportunidad de crecimiento."*
+    *   *"Eres un consultor experto en transformación digital. Basado en los siguientes datos cuantitativos {datos_cuantitativos} y cualitativos {temas_respuestas_abiertas}, genera una respuesta en formato JSON. La respuesta debe incluir un `planAccion` detallado. Este objeto `planAccion` debe tener un `resumenGeneral` (un párrafo introductorio) y un array de `iniciativas`. Genera entre 2 y 4 iniciativas basadas en las oportunidades más claras de los datos. Cada iniciativa debe ser un objeto con: `id` (ej. 'CD-001'), `titulo`, `descripcion`, `areaEnfoque` (ej. 'Competencias Digitales'), `objetivosClave` (array de 3 a 4 strings), `metricasExito` (array de 2 a 3 objetos con `metrica` y `valorObjetivo`), `responsableSugerido`, `plazoEstimado` (ej. '3-6 meses') y `prioridad` ('Alta', 'Media' o 'Baja')."*
 
 --- 
 

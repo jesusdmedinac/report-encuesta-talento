@@ -37,11 +37,12 @@ En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **tod
         *   `introduccion`
         *   Textos para `brechaDigital`
         *   Párrafos para `madurezDigital`, `competenciasDigitales`
-        *   Descripciones y resúmenes para `usoInteligenciaArtificial` y `culturaOrganizacional`
-        *   Resumen del `planAccion`
+        *   Descripciones y resúmenes para `usoInteligenciaArtificial` y `culturaOrganizacional`.
+        *   Un `planAccion` estructurado. Este objeto contendrá un `resumenGeneral` y un array de `iniciativas`. Cada iniciativa será un objeto con: `id`, `titulo`, `descripcion`, `areaEnfoque`, `objetivosClave` (array), `metricasExito` (array de objetos con `metrica` y `valorObjetivo`), `responsableSugerido`, `plazoEstimado`, y `prioridad`.
 
-3.  **Integrar Resultados Completos:**
-    *   Actualizar las funciones `build...` en `report-builder.js` para que consuman los nuevos campos de texto generados por la IA desde el objeto `qualitativeResults`.
+3.  **Integrar Resultados y Refactorizar Frontend:**
+    *   Actualizar las funciones `build...` en `report-builder.js` para que consuman y ensamblen la nueva estructura del `planAccion`.
+    *   **Reescribir el componente `src/components/PlanAccion.astro` desde cero** para que sea capaz de interpretar y renderizar visualmente el nuevo objeto `planAccion`, incluyendo el listado de iniciativas con todos sus detalles.
 
 ## Fase 5: Ensamblaje Final y Generación del Archivo [COMPLETADO]
 

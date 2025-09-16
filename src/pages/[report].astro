@@ -7,7 +7,7 @@ import MadurezDigital from '../components/MadurezDigital.astro';
 import CompetenciasDigitales from '../components/CompetenciasDigitales.astro';
 import UsoInteligenciaArtificial from '../components/UsoInteligenciaArtificial.astro';
 import CulturaOrganizacional from '../components/CulturaOrganizacional.astro';
-import PlanAccion from '../components/PlanAccion.astro';
+// import PlanAccion from '../components/PlanAccion.astro';
 import ResumenEjecutivo from '../components/ResumenEjecutivo.astro';
 import Footer from '../components/Footer.astro';
 import Divider from '../components/Divider.astro';
@@ -101,14 +101,14 @@ const globalData = await import(`../data/globalData.${report}.json`);
 
     <Divider />
 
-    <PlanAccion
+    {/*<PlanAccion
       titulo={globalData.planAccion.titulo}
       resumen={globalData.planAccion.resumen}
       metricasResumen={globalData.planAccion.metricasResumen}
       tracker={globalData.planAccion.tracker}
       roadmap={globalData.planAccion.roadmap}
       beneficios={globalData.planAccion.beneficios}
-    />
+    />*/}
 
     <Divider />
 
@@ -126,4 +126,4 @@ const globalData = await import(`../data/globalData.${report}.json`);
     anio={globalData.footer.anio}
     texto={globalData.footer.texto}
   />
-</html>
+</html>html>
