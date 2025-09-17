@@ -51,11 +51,9 @@ function buildMadurezDigital(empresaNombre, madurezDigitalAvg, analysisResults, 
     const madurezTexts = qualitativeResults.madurezDigital || {};
     const componentesAI = madurezTexts.componentes || [];
     
-    // Crear un mapa para buscar descripciones de IA fácilmente por el nombre del componente
     const descripcionMap = new Map();
     if (Array.isArray(componentesAI)) {
         componentesAI.forEach(c => {
-            // Normalizar el nombre para que coincida con las claves de analysisResults (ej. 'proactividadDigital')
             const normalizedName = c.nombre.replace(/\s+/g, '');
             descripcionMap.set(normalizedName.toLowerCase(), c.descripcion);
         });
@@ -83,7 +81,6 @@ function buildCompetenciasDigitales(brechaDigitalAvg, analysisResults, qualitati
     const competenciasTexts = qualitativeResults.competenciasDigitales || {};
     const competenciasAI = competenciasTexts.competencias || [];
 
-    // Crear un mapa para buscar descripciones de IA fácilmente
     const descripcionMap = new Map();
     if (Array.isArray(competenciasAI)) {
         competenciasAI.forEach(c => {
@@ -101,7 +98,7 @@ function buildCompetenciasDigitales(brechaDigitalAvg, analysisResults, qualitati
             return {
                 name: formatDimensionName(key),
                 score: Math.round((value / 4) * 100),
-                color: '#3498db', // TODO: Considerar si el color debe ser dinámico
+                color: '#3498db',
                 description: descripcionIA || `Nivel de desarrollo en ${formatDimensionName(key)}.`
             };
         }),
@@ -126,27 +123,9 @@ function buildUsoInteligenciaArtificial(analysisResults, qualitativeResults) {
     return {
         resumen: iaTexts.resumen || "Análisis no disponible.",
         graficos: [
-            {
-                titulo: "Adopción y Curiosidad",
-                porcentaje: Math.round((iaAdopcion / 4) * 100),
-                descripcion: graficosAI[0]?.descripcion || "Análisis no disponible.",
-                idGradiente: "gradient-adoption",
-                coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"]
-            },
-            {
-                titulo: "Uso y Aplicación",
-                porcentaje: Math.round((iaUso / 4) * 100),
-                descripcion: graficosAI[1]?.descripcion || "Análisis no disponible.",
-                idGradiente: "gradient-usage",
-                coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"]
-            },
-            {
-                titulo: "Ética y Verificación",
-                porcentaje: Math.round((iaEtica / 4) * 100),
-                descripcion: graficosAI[2]?.descripcion || "Análisis no disponible.",
-                idGradiente: "gradient-ethics",
-                coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"]
-            }
+            { titulo: "Adopción y Curiosidad", porcentaje: Math.round((iaAdopcion / 4) * 100), descripcion: graficosAI[0]?.descripcion || "Análisis no disponible.", idGradiente: "gradient-adoption", coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"] },
+            { titulo: "Uso y Aplicación", porcentaje: Math.round((iaUso / 4) * 100), descripcion: graficosAI[1]?.descripcion || "Análisis no disponible.", idGradiente: "gradient-usage", coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"] },
+            { titulo: "Ética y Verificación", porcentaje: Math.round((iaEtica / 4) * 100), descripcion: graficosAI[2]?.descripcion || "Análisis no disponible.", idGradiente: "gradient-ethics", coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"] }
         ]
     };
 }
@@ -160,7 +139,6 @@ function buildCulturaOrganizacional(analysisResults, qualitativeResults) {
     const culturaFormacion = calculateAverage([analysisResults.culturaOrganizacional.ambienteDeAprendizaje, analysisResults.culturaOrganizacional.apoyoOrganizacional]);
     const culturaApertura = analysisResults.culturaOrganizacional.experimentacion;
 
-    // Mapeo para asegurar que asignamos la info de IA a la tarjeta correcta
     const aiDataMap = {
         'Apertura a la experimentación': tarjetasAI[0] || {},
         'Formación y Apoyo': tarjetasAI[1] || {},
@@ -168,97 +146,16 @@ function buildCulturaOrganizacional(analysisResults, qualitativeResults) {
     };
 
     return {
-        insights: {
-            resumen: insightsAI.resumen || "Análisis no disponible.",
-            puntos: insightsAI.puntos || [],
-        },
+        insights: { resumen: insightsAI.resumen || "Análisis no disponible.", puntos: insightsAI.puntos || [] },
         tarjetas: [
-            {
-                titulo: "Apertura a la experimentación",
-                puntuacion: parseFloat(scaleToTen(culturaApertura).toFixed(1)),
-                fraseClave: aiDataMap['Apertura a la experimentación'].fraseClave || "",
-                narrativa: aiDataMap['Apertura a la experimentación'].narrativa || "Análisis no disponible.",
-                etiquetaNivel: aiDataMap['Apertura a la experimentación'].etiquetaNivel || "",
-                // Campos estáticos o que no vienen de la IA
-                metricas: [],
-                colorIcono: "",
-                icono: "",
-            },
-            {
-                titulo: "Formación y Apoyo",
-                puntuacion: parseFloat(scaleToTen(culturaFormacion).toFixed(1)),
-                fraseClave: aiDataMap['Formación y Apoyo'].fraseClave || "",
-                narrativa: aiDataMap['Formación y Apoyo'].narrativa || "Análisis no disponible.",
-                etiquetaNivel: aiDataMap['Formación y Apoyo'].etiquetaNivel || "",
-                metricas: [],
-                colorIcono: "",
-                icono: "",
-            },
-            {
-                titulo: "Liderazgo y Visión",
-                puntuacion: parseFloat(scaleToTen(culturaLiderazgo).toFixed(1)),
-                fraseClave: aiDataMap['Liderazgo y Visión'].fraseClave || "",
-                narrativa: aiDataMap['Liderazgo y Visión'].narrativa || "Análisis no disponible.",
-                etiquetaNivel: aiDataMap['Liderazgo y Visión'].etiquetaNivel || "",
-                metricas: [],
-                colorIcono: "",
-                icono: "",
-            }
+            { titulo: "Apertura a la experimentación", puntuacion: parseFloat(scaleToTen(culturaApertura).toFixed(1)), fraseClave: aiDataMap['Apertura a la experimentación'].fraseClave || "", narrativa: aiDataMap['Apertura a la experimentación'].narrativa || "Análisis no disponible.", etiquetaNivel: aiDataMap['Apertura a la experimentación'].etiquetaNivel || "", metricas: [], colorIcono: "", icono: "" },
+            { titulo: "Formación y Apoyo", puntuacion: parseFloat(scaleToTen(culturaFormacion).toFixed(1)), fraseClave: aiDataMap['Formación y Apoyo'].fraseClave || "", narrativa: aiDataMap['Formación y Apoyo'].narrativa || "Análisis no disponible.", etiquetaNivel: aiDataMap['Formación y Apoyo'].etiquetaNivel || "", metricas: [], colorIcono: "", icono: "" },
+            { titulo: "Liderazgo y Visión", puntuacion: parseFloat(scaleToTen(culturaLiderazgo).toFixed(1)), fraseClave: aiDataMap['Liderazgo y Visión'].fraseClave || "", narrativa: aiDataMap['Liderazgo y Visión'].narrativa || "Análisis no disponible.", etiquetaNivel: aiDataMap['Liderazgo y Visión'].etiquetaNivel || "", metricas: [], colorIcono: "", icono: "" }
         ]
     };
 }
 
-function buildRoleSpecificScores(analysisResults) {
-    const scores = {};
-    Object.keys(analysisResults)
-        .filter(dim => dim.startsWith('rol'))
-        .forEach(dim => {
-            scores[dim] = {};
-            for (const subDim in analysisResults[dim]) {
-                scores[dim][subDim] = parseFloat(scaleToTen(analysisResults[dim][subDim]).toFixed(2));
-            }
-        });
-    return scores;
-}
-
-
-// --- Orquestador Principal del Constructor de Reporte ---
-
-/**
- * Construye el objeto JSON final del reporte a partir de los datos de análisis.
- * @param {Object} analysisResults - Resultados del análisis cuantitativo.
- * @param {Object} qualitativeResults - Resultados del análisis cualitativo (textos de IA).
- * @param {number} totalRespondents - Número total de encuestados.
- * @param {string} empresaNombre - Nombre de la empresa.
- * @param {string} reportId - ID del reporte.
- * @returns {Object} - El objeto JSON completo del reporte.
- */
-export function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId, provider, model) {
-    const template = loadJson(TEMPLATE_PATH);
-
-    // --- Cálculos de Puntuaciones Generales ---
-    const averages = {
-        madurezDigitalAvg: calculateAverage(Object.values(analysisResults.madurezDigital)),
-        brechaDigitalAvg: calculateAverage(Object.values(analysisResults.brechaDigital)),
-        usoInteligenciaArtificialAvg: calculateAverage(Object.values(analysisResults.usoInteligenciaArtificial)),
-        culturaOrganizacionalAvg: calculateAverage(Object.values(analysisResults.culturaOrganizacional)),
-    };
-    averages.overallAvg = calculateAverage(Object.values(averages));
-
-    // --- Ensamblaje del Reporte Final ---
-    // Cada sección es construida por su propia función pura.
-    template.header = buildHeader(empresaNombre, reportId, totalRespondents, provider, model);
-    template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
-    template.introduccion.contenido = qualitativeResults.introduccion; // Asignación directa
-    template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);
-    template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults, qualitativeResults);
-    template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults, qualitativeResults);
-    template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults, qualitativeResults);
-    template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults, qualitativeResults);
-    function buildPlanAccion(qualitativeResults) {
-    // La IA ya devuelve la estructura completa y correcta para el plan de acción.
-    // Simplemente la tomamos y la asignamos.
-    // Se añade una guarda por si el objeto no viene en los resultados cualitativos.
+function buildPlanAccion(qualitativeResults) {
     return qualitativeResults.planAccion || {
         resumenGeneral: "El análisis del plan de acción no está disponible.",
         iniciativas: []
@@ -281,19 +178,9 @@ function buildRoleSpecificScores(analysisResults) {
 
 // --- Orquestador Principal del Constructor de Reporte ---
 
-/**
- * Construye el objeto JSON final del reporte a partir de los datos de análisis.
- * @param {Object} analysisResults - Resultados del análisis cuantitativo.
- * @param {Object} qualitativeResults - Resultados del análisis cualitativo (textos de IA).
- * @param {number} totalRespondents - Número total de encuestados.
- * @param {string} empresaNombre - Nombre de la empresa.
- * @param {string} reportId - ID del reporte.
- * @returns {Object} - El objeto JSON completo del reporte.
- */
 export function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId, provider, model) {
     const template = loadJson(TEMPLATE_PATH);
 
-    // --- Cálculos de Puntuaciones Generales ---
     const averages = {
         madurezDigitalAvg: calculateAverage(Object.values(analysisResults.madurezDigital)),
         brechaDigitalAvg: calculateAverage(Object.values(analysisResults.brechaDigital)),
@@ -302,11 +189,9 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     };
     averages.overallAvg = calculateAverage(Object.values(averages));
 
-    // --- Ensamblaje del Reporte Final ---
-    // Cada sección es construida por su propia función pura.
     template.header = buildHeader(empresaNombre, reportId, totalRespondents, provider, model);
     template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
-    template.introduccion.contenido = qualitativeResults.introduccion; // Asignación directa
+    template.introduccion.contenido = qualitativeResults.introduccion;
     template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);
     template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults, qualitativeResults);
     template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults, qualitativeResults);
@@ -314,15 +199,6 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults, qualitativeResults);
     template.planAccion = buildPlanAccion(qualitativeResults);
     template.roleSpecificScores = buildRoleSpecificScores(analysisResults);
-    
-    // Plan de acción se mantiene como estático por ahora
-    // template.planAccion = {};
-
-    return template;
-}
-    
-    // Plan de acción se mantiene como estático por ahora
-    // template.planAccion = {};
 
     return template;
 }
