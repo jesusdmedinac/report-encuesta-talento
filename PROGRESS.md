@@ -33,9 +33,9 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 1.  **Implementar la Nueva Estructura del Plan de Acción:**
     -   [x] Definir la estructura de datos para `planAccion` (resumen general + listado de iniciativas medibles).
-    -   [ ] Actualizar la lógica de generación en `ai-analyzer.js` y `report-builder.js` para producir el nuevo objeto `planAccion`.
-    -   [ ] Reescribir el componente `src/components/PlanAccion.astro` desde cero para que visualice la nueva estructura de datos.
-    -   [ ] Volver a importar y renderizar el nuevo componente `PlanAccion` en `src/pages/[report].astro`.
+    -   [x] Actualizar la lógica de generación en `ai-analyzer.js` y `report-builder.js` para producir el nuevo objeto `planAccion`.
+    -   [x] Reescribir el componente `src/components/PlanAccion.astro` desde cero para que visualice la nueva estructura de datos.
+    -   [x] Volver a importar y renderizar el nuevo componente `PlanAccion` en `src/pages/[report].astro`.
     -   [ ] Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA al generar las iniciativas.
 
 2.  **Refinamiento Final:**
