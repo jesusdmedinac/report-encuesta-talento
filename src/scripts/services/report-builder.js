@@ -255,7 +255,71 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults, qualitativeResults);
     template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults, qualitativeResults);
     template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults, qualitativeResults);
+    function buildPlanAccion(qualitativeResults) {
+    // La IA ya devuelve la estructura completa y correcta para el plan de acción.
+    // Simplemente la tomamos y la asignamos.
+    // Se añade una guarda por si el objeto no viene en los resultados cualitativos.
+    return qualitativeResults.planAccion || {
+        resumenGeneral: "El análisis del plan de acción no está disponible.",
+        iniciativas: []
+    };
+}
+
+function buildRoleSpecificScores(analysisResults) {
+    const scores = {};
+    Object.keys(analysisResults)
+        .filter(dim => dim.startsWith('rol'))
+        .forEach(dim => {
+            scores[dim] = {};
+            for (const subDim in analysisResults[dim]) {
+                scores[dim][subDim] = parseFloat(scaleToTen(analysisResults[dim][subDim]).toFixed(2));
+            }
+        });
+    return scores;
+}
+
+
+// --- Orquestador Principal del Constructor de Reporte ---
+
+/**
+ * Construye el objeto JSON final del reporte a partir de los datos de análisis.
+ * @param {Object} analysisResults - Resultados del análisis cuantitativo.
+ * @param {Object} qualitativeResults - Resultados del análisis cualitativo (textos de IA).
+ * @param {number} totalRespondents - Número total de encuestados.
+ * @param {string} empresaNombre - Nombre de la empresa.
+ * @param {string} reportId - ID del reporte.
+ * @returns {Object} - El objeto JSON completo del reporte.
+ */
+export function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId, provider, model) {
+    const template = loadJson(TEMPLATE_PATH);
+
+    // --- Cálculos de Puntuaciones Generales ---
+    const averages = {
+        madurezDigitalAvg: calculateAverage(Object.values(analysisResults.madurezDigital)),
+        brechaDigitalAvg: calculateAverage(Object.values(analysisResults.brechaDigital)),
+        usoInteligenciaArtificialAvg: calculateAverage(Object.values(analysisResults.usoInteligenciaArtificial)),
+        culturaOrganizacionalAvg: calculateAverage(Object.values(analysisResults.culturaOrganizacional)),
+    };
+    averages.overallAvg = calculateAverage(Object.values(averages));
+
+    // --- Ensamblaje del Reporte Final ---
+    // Cada sección es construida por su propia función pura.
+    template.header = buildHeader(empresaNombre, reportId, totalRespondents, provider, model);
+    template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
+    template.introduccion.contenido = qualitativeResults.introduccion; // Asignación directa
+    template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);
+    template.madurezDigital = buildMadurezDigital(empresaNombre, averages.madurezDigitalAvg, analysisResults, qualitativeResults);
+    template.competenciasDigitales = buildCompetenciasDigitales(averages.brechaDigitalAvg, analysisResults, qualitativeResults);
+    template.usoInteligenciaArtificial = buildUsoInteligenciaArtificial(analysisResults, qualitativeResults);
+    template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults, qualitativeResults);
+    template.planAccion = buildPlanAccion(qualitativeResults);
     template.roleSpecificScores = buildRoleSpecificScores(analysisResults);
+    
+    // Plan de acción se mantiene como estático por ahora
+    // template.planAccion = {};
+
+    return template;
+}
     
     // Plan de acción se mantiene como estático por ahora
     // template.planAccion = {};

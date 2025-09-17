@@ -84,7 +84,7 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         Eres un consultor experto en transformación digital.
         Basado en los siguientes resultados cuantitativos de una encuesta de madurez digital,
         donde la puntuación ha sido escalada a una base de 1 a 10,
-        genera un objeto JSON con siete propiedades: "resumenEjecutivo", "introduccion", "brechaDigital", "madurezDigital", "competenciasDigitales", "usoInteligenciaArtificial" y "culturaOrganizacional".
+        genera un objeto JSON con ocho propiedades: "resumenEjecutivo", "introduccion", "brechaDigital", "madurezDigital", "competenciasDigitales", "usoInteligenciaArtificial", "culturaOrganizacional" y "planAccion".
 
         Resultados Cuantitativos (promedios en escala de 1 a 10):
         ${JSON.stringify(scaledResults, null, 2)}
@@ -104,7 +104,7 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
             - **descripcionPromedio**: Un párrafo que analice la puntuación general de esta dimensión y su significado.
             - **nivelDesarrollo**: Una frase corta que describa el nivel de desarrollo (ej. 'FUNDAMENTOS ESTABLECIDOS', 'ETAPA INICIAL').
             - **competencias**: Un ARRAY de objetos. Cada objeto debe tener dos propiedades: 'name' (el identificador de la competencia, ej. 'agilidadDigital') y 'description' (un párrafo que analiza la puntuación específica de esa competencia y ofrece una recomendación o insight).
-        6.  **usoInteligeligenciaArtificial**: Un objeto para la sección de Uso de IA. Basado en las puntuaciones de la sub-sección 'usoInteligenciaArtificial', genera lo siguiente:
+        6.  **usoInteligenciaArtificial**: Un objeto para la sección de Uso de IA. Basado en las puntuaciones de la sub-sección 'usoInteligenciaArtificial', genera lo siguiente:
             - **resumen**: Un párrafo que resuma el estado general de la empresa en cuanto a IA, destacando oportunidades estratégicas. Debe contener la etiqueta "<strong>" para resaltar la idea principal.
             - **graficos**: Un ARRAY de 3 objetos, uno para cada una de las siguientes agrupaciones (los títulos deben ser exactos):
                 1.  **Adopción y Curiosidad**: Analiza las puntuaciones combinadas de 'interesEnAprendizaje', 'percepcionDeRiesgo' y 'nivelDeAdopcion'.
@@ -120,6 +120,18 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
                 2.  **Formación y Apoyo**: Basado en las puntuaciones combinadas de 'ambienteDeAprendizaje' y 'apoyoOrganizacional'.
                 3.  **Liderazgo y Visión**: Basado en las puntuaciones combinadas de 'liderazgoYVision' y 'reconocimiento'.
               Cada objeto de la tarjeta debe tener las siguientes propiedades generadas por la IA: 'etiquetaNivel' (ej. 'Primera etapa'), 'fraseClave' (una cita inspiradora sobre el estado actual) y 'narrativa' (un párrafo de análisis y recomendación).
+        8.  **planAccion**: Un objeto detallado para el Plan de Acción. Basado en las puntuaciones más bajas y las oportunidades más claras de los datos, genera lo siguiente:
+            - **resumenGeneral**: Un párrafo introductorio que establezca la visión estratégica del plan de acción.
+            - **iniciativas**: Un ARRAY de 3 a 4 iniciativas. Cada iniciativa debe ser un objeto con las siguientes propiedades:
+                - **id**: Un identificador único (ej. 'CD-001').
+                - **titulo**: Un título claro y conciso para la iniciativa.
+                - **descripcion**: Un párrafo que explique en qué consiste la iniciativa y por qué es importante.
+                - **areaEnfoque**: El área principal que impacta (ej. 'Competencias Digitales', 'Cultura Organizacional').
+                - **objetivosClave**: Un ARRAY de 3 a 4 strings que listen los resultados esperados.
+                - **metricasExito**: Un ARRAY de 2 a 3 objetos, donde cada objeto tiene 'metrica' (el KPI a medir) y 'valorObjetivo' (el resultado deseado, ej. 'De 45% a 80%').
+                - **responsableSugerido**: El rol o departamento que debería liderar la iniciativa.
+                - **plazoEstimado**: El tiempo estimado para la implementación (ej. '3-6 meses').
+                - **prioridad**: La prioridad de la iniciativa ('Alta', 'Media', o 'Baja').
     `;
 
     try {
