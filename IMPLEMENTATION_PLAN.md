@@ -31,28 +31,20 @@ En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **tod
 
 Este es un paso nuevo y crucial para enriquecer el reporte con la voz directa de los empleados.
 
-1.  **Extracción de Datos Cualitativos:** Se modificará `csv-processor.js` para leer y agrupar todas las respuestas de texto de las preguntas abiertas (ej. `D1_OPEN`).
-
-2.  **Generación de Objeto de Insights (`analisisCualitativo`):** Se realizarán llamadas preliminares a la IA en `ai-analyzer.js` para cada pregunta abierta. La IA analizará las respuestas y generará un objeto JSON estructurado con `temasClave`, `sentimientoGeneral` y `citasDestacadas`.
-
-3.  **Nuevo Componente de Visualización:** Se creará un nuevo componente, `src/components/AnalisisCualitativo.astro`, diseñado específicamente para recibir y mostrar de forma clara y atractiva los insights generados en el paso anterior.
+-   [ ] Extracción cualitativa en `csv-processor.js`: agrupar columnas libres (ej. `D1_OPEN`), limpiar, anonimizar y deduplicar.
+-   [ ] Pre-análisis en `ai-analyzer.js`: batching/resumen por lotes con control de tokens y fusión de resultados.
+-   [ ] Objeto `analisisCualitativo`: `temas` [{ id, etiqueta, palabrasClave, conteo, sentimiento, citas }], `resumenGeneral`, `metricaSentimiento`.
+-   [ ] Componente `src/components/AnalisisCualitativo.astro` para visualizar temas, sentimiento y citas.
 
 ### 4.2. Generación de Narrativas Principales
 
-1.  **Implementar Estrategia de Único Prompt con JSON:** Se construirá un único prompt que solicite a la IA la generación de un objeto JSON que contenga todos los textos de las secciones principales del reporte.
-
-2.  **Inyección de Contexto Cuantitativo y Cualitativo:** El prompt principal se enriquecerá con los resultados del análisis cuantitativo y, crucialmente, con los insights (temas y citas) generados en la sub-fase 4.1.
-
-3.  **Expandir el Esquema del JSON de IA:** Se solicitarán todas las claves necesarias para el reporte:
-    *   `resumenEjecutivo`: Un objeto que contenga `resumenGeneral`, `fortalezas` y `oportunidades`.
-    *   `introduccion`, `brechaDigital`, `madurezDigital`, etc.
-    *   `planAccion` estructurado con `resumenGeneral` e `iniciativas`.
-
-4.  **Integrar Resultados y Refactorizar Frontend:**
-    *   Actualizar las funciones `build...` en `report-builder.js` para que consuman y ensamblen las nuevas estructuras de datos.
-    *   **Reescribir el componente `src/components/PlanAccion.astro`** desde cero.
-    *   **Refactorizar el componente `src/components/ResumenEjecutivo.astro`** para eliminar datos estáticos.
-    *   **Integrar el nuevo componente `src/components/AnalisisCualitativo.astro`** en la página principal del reporte.
+-   [x] Estrategia de único prompt con JSON para generar las narrativas principales.
+-   [ ] Inyección de contexto cuantitativo y cualitativo (depende de 4.1) en el prompt principal.
+-   [x] Esquema del JSON de IA ampliado: `resumenEjecutivo` con `fortalezas`/`oportunidades`, `introduccion`, `brechaDigital`, `planAccion` detallado.
+-   [x] Integración de resultados en `report-builder.js` y frontend:
+    -   [x] Reescritura de `src/components/PlanAccion.astro`.
+    -   [x] Refactor de `src/components/ResumenEjecutivo.astro` (sin datos estáticos).
+    -   [ ] Integración de `src/components/AnalisisCualitativo.astro` en la página principal.
 
 ## Fase 5: Ensamblaje Final y Generación del Archivo [COMPLETADO]
 
@@ -80,3 +72,10 @@ Para finalizar, haremos que el script sea fácil de usar y documentaremos su fun
     *   Explica cómo ejecutar el nuevo script, incluyendo cómo pasar la ruta al archivo CSV de entrada.
     *   Documenta las variables de entorno necesarias (como la `API_KEY` para el servicio de IA).
 
+## Fase 7: Validación, Tipado, Configuración y Observabilidad
+
+-   [ ] Esquemas y validación: definir y aplicar validación (zod/ajv) para `AIResponse` y `Report` final en puntos de entrada/salida.
+-   [ ] Contratos de datos: añadir tipos compartidos (TS/JSDoc) para alinear `ai-analyzer`, `report-builder` y componentes Astro.
+-   [ ] Configuración centralizada: mover valores mágicos a `config.js` (umbrales, pesos, límites IA, feature flags) con overrides por sector/cliente/entorno.
+-   [ ] Trazabilidad: ampliar `header` con `schemaVersion`, `promptVersion`, `provider`, `model`, `generatedAt`; opción de guardar `rawAiResponse` en modo debug (sin PII).
+-   [ ] Pruebas mínimas: unit tests en `csv-processor` y `report-builder`, snapshots del JSON final y render tests de componentes clave.

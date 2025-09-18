@@ -56,16 +56,17 @@ Al final de esta fase, el algoritmo tendrá un objeto estructurado con todos los
 En esta fase, la IA generativa crea todos los textos analíticos del reporte. El proceso se divide en dos pasos clave para asegurar la máxima calidad y relevancia.
 
 1.  **Pre-Análisis de Respuestas Abiertas y Generación de Insights:**
-    *   El script primero agrupará todas las respuestas de texto de las preguntas abiertas (ej. `D1_OPEN`).
-    *   Se ejecutará una **primera llamada a la IA** por cada pregunta abierta. El objetivo de esta llamada es analizar el texto crudo y devolver un objeto JSON estructurado con los `temasClave` recurrentes, el `sentimientoGeneral` y `citasDestacadas` anónimas.
-    *   El conjunto de estos análisis se agrupará en un nuevo objeto principal llamado `analisisCualitativo`, que será mostrado directamente en el reporte a través de un nuevo componente dedicado.
+    *   Extracción y normalización: el script agrupará las respuestas de texto (ej. `D1_OPEN`), aplicará anonimización básica, limpieza, y deduplicación.
+    *   Batching y control de tokens: se ejecutará una **primera pasada de IA** por lotes para identificar `temas` y sentimiento sin exceder límites de contexto; luego se fusionarán resultados.
+    *   Se generará un objeto `analisisCualitativo` con estructura estable: `temas` [{ id, etiqueta, palabrasClave, conteo, sentimiento, citas }], `resumenGeneral` y `metricaSentimiento`.
+    *   Este objeto se visualizará con un componente dedicado y servirá como contexto para el prompt principal.
 
 2.  **Generación de Narrativas Principales con Contexto Enriquecido:**
     *   Se ejecutará una **segunda y única llamada a la IA** para generar el resto de las secciones del reporte (`resumenEjecutivo`, `introduccion`, `planAccion`, etc.).
     *   El prompt para esta llamada será enriquecido con dos tipos de contexto:
         1.  Los **datos cuantitativos** de la Fase 2 (puntuaciones, promedios).
         2.  Los **insights cualitativos** (temas y citas) generados en el paso anterior.
-    *   Se utilizará el **modo JSON** nativo de la API para garantizar una respuesta estructurada y válida.
+    *   Se utilizará el **modo JSON** nativo y se validará la salida contra un esquema pactado antes de continuar.
 
 4.  **Ejemplo de Flujo de Prompts (Conceptual):**
     *   **Prompt 1 (Pre-Análisis):** *"Analiza las siguientes respuestas a la pregunta '...': {respuestas_abiertas_raw}. Devuelve un JSON con las claves `temasClave` (array de strings), `sentimientoGeneral` (string) y `citasDestacadas` (array de 3 strings)."*
@@ -84,6 +85,16 @@ Esta es la última etapa, donde se unen los resultados de las fases anteriores.
     * Insertará los datos numéricos de la Fase 2 y los textos generados por la IA de la Fase 3 en los lugares correspondientes de la plantilla.
 
 3.  **Validación y Exportación:**
-    * Finalmente, validará que la estructura del archivo sea un JSON correcto y lo guardará.
+    * Validar contra el esquema del `Report` final; añadir metadatos en `header` (`schemaVersion`, `promptVersion`, `provider`, `model`, `generatedAt`).
+    * Guardar el archivo sólo si pasa la validación, con logs trazables.
 
-Con este diseño, tendrás un sistema robusto capaz de generar análisis profundos y personalizados para cualquier empresa, manteniendo la coherencia y la calidad del reporte final.
+---
+
+#### **Fase 5: Validación, Configuración y Trazabilidad**
+
+1.  **Esquemas y Contratos:** definir esquemas (zod/ajv) para `AIResponse` y `Report` y validarlos en puntos de entrada/salida.
+2.  **Contratos de Datos Compartidos:** establecer tipos compartidos (TS/JSDoc) entre `ai-analyzer`, `report-builder` y componentes.
+3.  **Configuración Centralizada:** mover valores mágicos a `config.js` (umbrales, pesos, límites IA, feature flags) con overrides por sector/cliente/entorno.
+4.  **Observabilidad:** incluir versionado de `schemaVersion`/`promptVersion`, logs estructurados y opción de persistir `rawAiResponse` en modo debug (sin PII).
+
+Con este diseño, tendrás un sistema robusto, trazable y gobernable capaz de generar análisis profundos y personalizados para cualquier empresa, manteniendo la coherencia y la calidad del reporte final.

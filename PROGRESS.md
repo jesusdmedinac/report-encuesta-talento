@@ -31,27 +31,31 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ## Próximos Pasos
 
-1.  **Implementar la Nueva Estructura del Plan de Acción:**
-    -   [x] Definir la estructura de datos para `planAccion` (resumen general + listado de iniciativas medibles).
-    -   [x] Actualizar la lógica de generación en `ai-analyzer.js` y `report-builder.js` para producir el nuevo objeto `planAccion`.
-    -   [x] Reescribir el componente `src/components/PlanAccion.astro` desde cero para que visualice la nueva estructura de datos.
-    -   [x] Volver a importar y renderizar el nuevo componente `PlanAccion` en `src/pages/[report].astro`.
+1.  **Validación de Esquema y Contratos de Datos:**
+    -   [ ] Definir esquemas para `AIResponse` y para el `Report` final (zod o ajv).
+    -   [ ] Validar la respuesta cruda de IA antes de procesar y fallar temprano con errores claros.
+    -   [ ] Validar el objeto final consumido por los componentes antes de escribir el archivo.
+    -   [ ] Añadir `schemaVersion` y `promptVersion` al `header` para trazabilidad.
 
-2.  **Mejorar la Generación del Resumen Ejecutivo:**
-    -   [x] Actualizar el prompt en `ai-analyzer.js` para que la IA genere listas de `fortalezas` y `oportunidades`.
-    -   [x] Actualizar la función `buildResumenEjecutivo` en `report-builder.js` para procesar los nuevos datos.
-    -   [x] Eliminar datos estáticos y secciones redundantes (ej. `resumenPlanAccion`) del componente `ResumenEjecutivo.astro`.
-    -   [x] Asegurar que el componente renderice dinámicamente las `fortalezas` y `oportunidades` generadas.
+2.  **Análisis y Visualización de Preguntas Abiertas:**
+    -   [ ] `csv-processor.js`: extracción, normalización, anonimización y deduplicación de texto libre.
+    -   [ ] `ai-analyzer.js`: batching/resumen por lotes, fusión de temas y control de tokens.
+    -   [ ] Generar `analisisCualitativo` con estructura: `temas` [{ id, etiqueta, palabrasClave, conteo, sentimiento, citas }], `resumenGeneral`, `metricaSentimiento`.
+    -   [ ] Crear `src/components/AnalisisCualitativo.astro` para visualizar insights.
+    -   [ ] Integrar el componente en la página del reporte y enriquecer el prompt principal con estos insights.
 
-3.  **Implementar Análisis y Visualización de Preguntas Abiertas:**
-    -   [ ] **Fase 1 (Extracción):** Modificar `csv-processor.js` para extraer las respuestas de texto libre de las preguntas abiertas.
-    -   [ ] **Fase 2 (Análisis IA):** Modificar `ai-analyzer.js` para realizar un pre-análisis temático de las respuestas y generar un nuevo objeto `analisisCualitativo` en el JSON.
-    -   [ ] **Fase 3 (Componente):** Crear un nuevo componente `src/components/AnalisisCualitativo.astro` para visualizar estos insights (temas, sentimiento, citas).
-    -   [ ] **Fase 4 (Integración):** Añadir el nuevo componente a la página del reporte y usar los insights generados para enriquecer el prompt principal.
+3.  **Configuración y Parametrización:**
+    -   [ ] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js` con overrides por sector/cliente/entorno.
+    -   [ ] Incluir `umbrales`, `pesos`, `limitesIA` y `featureFlags`.
 
-4.  **Refinamiento Final:**
-    -   [ ] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js`.
-    -   [ ] Añadir validación de esquema para el JSON generado.
+4.  **Observabilidad y Trazabilidad:**
+    -   [ ] Incluir en `header`: `provider`, `model`, `schemaVersion`, `promptVersion`, `generatedAt`.
+    -   [ ] Log estructurado y almacenamiento opcional de `rawAiResponse` en modo debug (sin PII).
+
+5.  **Tests Mínimos de Regresión:**
+    -   [ ] Unit tests para `csv-processor` y `report-builder`.
+    -   [ ] Snapshots del JSON final para detectar regresiones estructurales.
+    -   [ ] Render de `PlanAccion.astro` y `AnalisisCualitativo.astro` con datos mock.
 
 ---
 
@@ -59,4 +63,4 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 *   **Arquitectura Robusta:** La refactorización ha sido un éxito. La arquitectura actual es modular, mantenible y fácil de extender. Los principios SOLID y DRY nos dan una base sólida para el futuro.
 *   **Estrategia de IA Superior:** El enfoque de "único prompt con JSON" es más eficiente y coherente que el plan original. Nos permite escalar la generación de contenido de forma más sencilla.
-
+*   **Gobernanza de Datos:** Versionado de esquemas y prompts para auditoría y capacidad de rollback.
