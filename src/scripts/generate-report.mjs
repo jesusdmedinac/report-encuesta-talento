@@ -25,15 +25,25 @@ async function main() {
         const reportId = getArgument('--reportId');
         const skipOpenEnded = process.argv.includes('--skip-open-ended');
         const refreshOpenEnded = process.argv.includes('--refresh-open-ended');
+        const offline = process.argv.includes('--offline');
 
         if (!csvFilePath || !empresaNombre || !reportId) {
             throw new Error('Faltan argumentos obligatorios. Se requiere --csv, --empresa, y --reportId.');
         }
 
-        // 2. Inicializar Cliente de IA
-        const { aiClient, effectiveModelName } = initializeAiClient(provider, modelName);
-        if (process.env.DEBUG_AI === '1' || process.env.DEBUG_AI === 'true') {
-            console.log('DEBUG_AI activado: se guardarán respuestas crudas de IA en ./debug');
+        // 2. Inicializar Cliente de IA (omitido en modo offline)
+        let aiClient = null;
+        let effectiveModelName = modelName;
+        if (!offline) {
+            const init = initializeAiClient(provider, modelName);
+            aiClient = init.aiClient;
+            effectiveModelName = init.effectiveModelName;
+            if (process.env.DEBUG_AI === '1' || process.env.DEBUG_AI === 'true') {
+                console.log('DEBUG_AI activado: se guardarán respuestas crudas de IA en ./debug');
+            }
+        } else {
+            effectiveModelName = modelName || 'offline';
+            console.log('Modo OFFLINE: se omiten llamadas a IA.');
         }
 
         // 3. Cargar y Procesar Datos
@@ -58,7 +68,7 @@ async function main() {
                     console.warn('No se pudo leer el caché de abiertas. Se intentará regenerar.', e.message);
                 }
             }
-            if (!openEndedAnalysis && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
+            if (!offline && !openEndedAnalysis && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
                 console.log('Generando pre‑análisis de abiertas (sin script externo)...');
                 openEndedAnalysis = await preAnalyzeOpenEnded(provider, aiClient, effectiveModelName, openEndedData);
                 try {
@@ -74,7 +84,21 @@ async function main() {
         }
 
         console.log('Realizando análisis cualitativo...');
-        const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, openEndedAnalysis || null);
+        let qualitativeResults;
+        if (offline) {
+            qualitativeResults = {
+                resumenEjecutivo: {},
+                introduccion: 'Generación offline: textos de IA omitidos.',
+                brechaDigital: {},
+                madurezDigital: {},
+                competenciasDigitales: {},
+                usoInteligenciaArtificial: {},
+                culturaOrganizacional: {},
+                planAccion: { resumenGeneral: 'Generación offline.', iniciativas: [] },
+            };
+        } else {
+            qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, openEndedAnalysis || null);
+        }
         // Si la IA falló y no devolvió analisisCualitativo, inyectar el caché directamente
         if (openEndedAnalysis && !qualitativeResults.analisisCualitativo) {
             qualitativeResults.analisisCualitativo = openEndedAnalysis;

@@ -6,6 +6,34 @@ import path from 'path';
 import { scaleToTen } from '../utils.js';
 import { IA_CHARTS } from '../config.js';
 
+// --- Utilidades de reintento ---
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+function isRetryableError(err) {
+    const msg = String(err && (err.message || err.statusText || err)).toLowerCase();
+    const code = err && (err.status || err.code);
+    return (
+        code === 429 || code === 503 ||
+        msg.includes('overloaded') ||
+        msg.includes('unavailable') ||
+        msg.includes('rate limit') ||
+        msg.includes('timeout') ||
+        msg.includes('fetch failed')
+    );
+}
+async function withRetries(fn, { attempts = Number(process.env.AI_MAX_RETRIES || 3), baseDelayMs = Number(process.env.AI_RETRY_BASE_MS || 800) } = {}) {
+    let lastErr;
+    for (let i = 1; i <= attempts; i++) {
+        try { return await fn(); } catch (e) {
+            lastErr = e;
+            if (i === attempts || !isRetryableError(e)) break;
+            const delay = baseDelayMs * Math.pow(2, i - 1);
+            console.warn(`IA intento ${i}/${attempts} falló (${e.message || e}). Reintentando en ${delay}ms...`);
+            await sleep(delay);
+        }
+    }
+    throw lastErr;
+}
+
 /**
  * Inicializa y devuelve un cliente de IA basado en el proveedor especificado.
  * @param {string} provider - El proveedor de IA ('gemini' o 'openai').
@@ -163,18 +191,22 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
 
         switch (provider) {
             case 'gemini': {
-                const geminiResult = await aiClient.generateContent(comprehensivePrompt);
-                const geminiResponse = await geminiResult.response;
-                generatedText = geminiResponse.text();
+                generatedText = await withRetries(async () => {
+                    const geminiResult = await aiClient.generateContent(comprehensivePrompt);
+                    const geminiResponse = await geminiResult.response;
+                    return geminiResponse.text();
+                });
                 break;
             }
             case 'openai': {
-                const openAIResult = await aiClient.chat.completions.create({
-                    model: modelName,
-                    messages: [{ role: 'user', content: comprehensivePrompt }],
-                    response_format: { type: "json_object" },
+                generatedText = await withRetries(async () => {
+                    const openAIResult = await aiClient.chat.completions.create({
+                        model: modelName,
+                        messages: [{ role: 'user', content: comprehensivePrompt }],
+                        response_format: { type: "json_object" },
+                    });
+                    return openAIResult.choices[0].message.content || '';
                 });
-                generatedText = openAIResult.choices[0].message.content || '';
                 break;
             }
         }

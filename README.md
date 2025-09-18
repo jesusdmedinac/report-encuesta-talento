@@ -78,7 +78,7 @@ Este proyecto incluye un potente script para procesar los resultados de una encu
     ```bash
     # Generar reporte con Gemini
     npm run generate-report -- \
-      --csv=./data/responses-por-puntos.csv \
+      --csv=./data/respuestas-por-puntos.csv \
       --empresa="Skilt" \
       --reportId="SKL-001" \
       --provider=gemini \
@@ -86,35 +86,47 @@ Este proyecto incluye un potente script para procesar los resultados de una encu
     
     # Generar reporte con OpenAI
     npm run generate-report -- \
-      --csv=./data/responses-por-puntos.csv \
+      --csv=./data/respuestas-por-puntos.csv \
       --empresa="Skilt" \
       --reportId="SKL-001" \
       --provider=openai \
       --model="gpt-5"
     ```
 
-### Scripts de Ayuda
+### Script Unificado de Generación
 
-Para facilitar la generación de reportes, se han creado dos scripts que ejecutan los comandos con la configuración predefinida:
+Para simplificar la ejecución y evitar duplicación, usa `./generate.sh` y elige el proveedor con `--provider` (o variable `PROVIDER`). Carga `.env` automáticamente y valida precondiciones.
 
--   `./generate-gemini.sh`: Genera el reporte utilizando Gemini.
--   `./generate-openai.sh`: Genera el reporte utilizando OpenAI.
+Ejemplos:
 
-**Uso:**
+```bash
+# Gemini por defecto
+./generate.sh --provider=gemini \
+  --csv=./data/respuestas-por-puntos.csv \
+  --empresa="Banco de Guayaquil" \
+  --reportId="TBjwOGHs" \
+  --model="gemini-2.5-pro"
 
-1.  Asegúrate de haber configurado la variable de entorno correspondiente (`GEMINI_API_KEY` o `OPENAI_API_KEY`).
-2.  Otorga permisos de ejecución a los scripts si es necesario:
-    ```bash
-    chmod +x generate-gemini.sh generate-openai.sh
-    ```
-3.  Ejecuta el script deseado:
-    ```bash
-    ./generate-gemini.sh
-    ```
-    o
-    ```bash
-    ./generate-openai.sh
-    ```
+# OpenAI (mantiene gpt-5 por defecto si no se pasa --model)
+./generate.sh --provider=openai \
+  --csv=./data/respuestas-por-puntos.csv \
+  --empresa="Banco de Guayaquil" \
+  --reportId="TBjwOGHs" \
+  --model="gpt-5"
+
+# Refrescar caché de abiertas antes de generar
+REFRESH_OPEN_ENDED=1 ./generate.sh --provider=gemini --refresh-open-ended
+
+# Usar variables de entorno para defaults
+CSV_PATH=./data/respuestas-por-puntos.csv \
+EMPRESA="Banco de Guayaquil" \
+REPORT_ID=TBjwOGHs \
+MODEL=gemini-2.5-pro \
+./generate.sh --provider=gemini
+
+# Modo offline (sin llamadas a IA, más rápido)
+./generate.sh --provider=gemini --offline
+```
 
 3.  **Verifica el resultado**:
     El script creará un nuevo archivo de datos en `src/data/`, nombrado según el proveedor (ej. `globalData.gemini.json`). La página del reporte utilizará estos datos para renderizar la visualización actualizada.
