@@ -7,8 +7,11 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - Puntos de entrada:
   - `./generate.sh --provider=gemini|openai [flags]` (recomendado)
   - `npm run generate-report -- --csv=... --empresa=... --reportId=... --provider=... --model=...`
+  - `npm run generate-respuestas-index -- --csv=... --out=public/respuestas-index.json` (listado admin)
 - Datos fuente: `data/respuestas-por-puntos.csv` (mapeado correcto).
 - Salida: `src/data/globalData.<provider>.json` y caché cualitativo `src/data/openEnded.<reportId>.json`.
+- Salida individual (nuevo proceso independiente): `src/data/individual/<employeeId>.json` y opcional `src/data/ind-openEnded.<employeeId>.json`.
+- Listado de respuestas: `public/respuestas-index.json` (para la página `/respuestas`).
 - Tests: `npm test` (Node test runner).
 
 ## Estado Actual
@@ -23,6 +26,10 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `./generate.sh --provider=openai [--offline] [--refresh-open-ended] [flags_adicionales]`
 - Caché de abiertas (manual):
   - `npm run generate-open-ended -- --csv=./data/respuestas-por-puntos.csv --reportId=<ID> --provider=<gemini|openai> --model=<modelo> [--force]`
+- Reportes individuales (independiente del global):
+  - `npm run generate-individual -- --csv=./data/respuestas-por-puntos.csv --empresa=<Empresa> [--ids=a,b] [--limit=N] [--provider=gemini|openai] [--model=<modelo>] [--ai] [--offline]`
+- Índice para listado de respuestas:
+  - `npm run generate-respuestas-index -- --csv=./data/respuestas-por-puntos.csv --out=public/respuestas-index.json`
 - Desarrollo y pruebas:
   - `npm test`
   - `npm run dev` (visualización del reporte en `/gemini` o `/openai` si existen JSONs)
@@ -56,6 +63,12 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `validator.js`: validación con `ajv`/`ajv-formats`.
 - `src/components/AnalisisCualitativo.astro`: visualización de abiertas.
 - `src/pages/[report].astro`: integra todas las secciones.
+- Individual:
+  - `src/scripts/generate-individual-reports.mjs` (a implementar)
+  - `src/pages/empleados/[id].astro` y `src/pages/empleados/index.astro` (a implementar)
+- Listado de respuestas:
+  - `src/scripts/generate-respuestas-index.mjs` (a implementar)
+  - `src/pages/respuestas/index.astro` (a implementar)
 
 ## Decisiones y Gotchas
 - CSV correcto: usar `data/respuestas-por-puntos.csv`. Otros CSV sin prefijos de mapeo producirán valores vacíos.
@@ -64,6 +77,10 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `AnalisisCualitativo` muestra badge “offline” si el caché lo indica.
 - Esquema: `header.generatedAt` valida con formato `date-time` (ajv-formats requerido).
 - Reintentos IA: automáticos ante 429/503/timeouts; ajustables por env.
+### Individual
+- Privacidad: no exponer PII; usar `employeeId` pseudónimo determinístico. El mapa `employeeId -> email` (si se requiere) debe guardarse en `./debug/.local-map.json` (gitignored).
+- Costos: por defecto `--offline`. Habilitar `--ai` solo para un subconjunto con `--ids`/`--limit`.
+- Escalabilidad: soportar `--limit` y `--concurrency` (cuando haya IA) para lotes.
 
 ## Próximos Pasos Sugeridos
 - Tests adicionales: snapshots del JSON completo y render tests de componentes.
@@ -74,3 +91,7 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 1) `PROGRESS.md` → panorama y próximos pasos
 2) `IMPLEMENTATION_PLAN.md` → decisiones técnicas y fases
 3) Código en `src/scripts/` y componentes en `src/components/`
+- Listado de respuestas
+  - Filtrado client-side: normalizar búsqueda a minúsculas y sin acentos; comparar contra `nombreL` y `emailL`.
+  - Performance: scroll infinito con lotes de 50–100 y `IntersectionObserver`.
+  - Seguridad/privacidad: el sitio está detrás de auth; añadir `noindex` en la página y preferir `Cache-Control: private, no-store` para el asset.

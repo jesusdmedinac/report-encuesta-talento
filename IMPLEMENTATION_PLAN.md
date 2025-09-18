@@ -102,3 +102,53 @@ Para finalizar, haremos que el script sea fácil de usar y documentaremos su fun
     - Cargar caché si existe y enriquecer el prompt principal.
     - Flags: `--skip-open-ended` (omite), `--refresh-open-ended` (regenera antes de generar).
 -   [ ] Componente `src/components/AnalisisCualitativo.astro` para visualizar temas, sentimiento y citas.
+
+---
+
+## Fase 9: Reportes Individuales (proceso independiente)
+
+Objetivo: generar y visualizar reportes por empleado sin impactar el flujo global.
+
+Alcance técnico:
+- CLI nuevo `src/scripts/generate-individual-reports.mjs` con flags: `--csv`, `--empresa`, `--ids`, `--limit`, `--provider`, `--model`, `--ai`, `--offline`, `--outDir`.
+- Identificador pseudónimo por empleado (`employeeId`) determinístico. No exponer PII en salida.
+- Salida por empleado: `src/data/individual/<employeeId>.json` con `header`, `scores` y `openEnded` propios (limpios/anonimizados). Caché IA opcional `src/data/ind-openEnded.<employeeId>.json`.
+- Esquema ligero `src/scripts/schemas/individual.schema.json` y validador.
+- Rutas nuevas en Astro: `src/pages/empleados/[id].astro` (detalle) y `src/pages/empleados/index.astro` (listado) que no tocan `[report].astro`.
+
+Pasos:
+1) Diseño y especificación (este documento + README/AGENTS).
+2) Implementar extracción/limpieza por fila y cálculo de puntajes individuales (reusar `csv-processor`).
+3) Generador CLI: escritura de JSON y caché por empleado; flags de volumen (`--ids`, `--limit`).
+4) Validación con esquema y pruebas mínimas (snapshot de un JSON individual).
+5) Páginas Astro de visualización independiente.
+6) Documentación y ejemplos de uso.
+
+---
+
+## Fase 10: Listado de Respuestas con Búsqueda e Infinito
+
+Objetivo: página `/respuestas` con un buscador superior que filtra por nombre o correo (case/acentos-insensitive) y listado con scroll infinito.
+
+Alcance técnico:
+- Generar índice público `public/respuestas-index.json` con campos: `nombreCompleto`, `email`, `nombreL`, `emailL` (y opcional `area`/`rol`).
+- Script CLI `src/scripts/generate-respuestas-index.mjs` con flags `--csv`, `--out`.
+- Página `src/pages/respuestas/index.astro` + componente cliente (hidratado) que:
+  - Carga/parsea el índice, normaliza la query (minúsculas + sin acentos) y filtra por `nombreL`/`emailL`.
+  - Renderiza en lotes de 50–100 usando `IntersectionObserver` (scroll infinito) y debounce (200–300 ms).
+
+Privacidad y performance:
+- El sitio está protegido por auth; añadir `meta noindex` en la página.
+- Sugerir `Cache-Control: private, no-store` para el JSON de índice.
+
+Pasos:
+1) Definir formato del índice y CLI en docs (este plan, README/AGENTS).
+2) Implementar `generate-respuestas-index.mjs` y registrar script npm.
+3) Crear página `/respuestas` con buscador e infinito (cliente). Afinar lote y debounce.
+4) Validación manual de performance con dataset real (2–5k filas).
+5) Documentar uso y consideraciones de privacidad/caché.
+
+Criterios de aceptación:
+- Búsqueda filtra indistintamente por nombre/correo sin sensibilidad a mayúsculas/acentos.
+- Scroll infinito fluido sin bloqueos en 2–5k filas.
+- Índice JSON solo contiene los campos definidos (sin PII adicional), servido desde `public/`.

@@ -59,7 +59,21 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 5.  **Tests Mínimos de Regresión:**
     -   [x] Unit tests para `csv-processor` y `report-builder`.
     -   [x] Snapshots del JSON final (proyección) para detectar regresiones estructurales.
-    -   [ ] Render de componentes clave (opcional) con datos mock.
+-   [ ] Render de componentes clave (opcional) con datos mock.
+
+6.  **Reportes Individuales (proceso independiente):**
+    -   [ ] Diseñar e implementar `generate-individual-reports.mjs` (CLI separado, por defecto offline, con filtro `--ids/--limit`).
+    -   [ ] Crear esquema `individual.schema.json` y validar salidas.
+    -   [ ] Añadir rutas Astro independientes `/empleados/` y `/empleados/[id]` para visualizar.
+    -   [ ] Asegurar que no se exponga PII; usar `employeeId` pseudónimo.
+    -   [ ] Documentar comandos en README y AGENTS (parcialmente listo).
+
+7.  **Listado de Respuestas (búsqueda + infinito):**
+    -   [x] Definir alcance y plan en docs (README, AGENTS, IMPLEMENTATION_PLAN).
+    -   [ ] Implementar `generate-respuestas-index.mjs` que produzca `public/respuestas-index.json`.
+    -   [ ] Crear página `src/pages/respuestas/index.astro` con buscador e infinito (client-side, debounce + IntersectionObserver).
+    -   [ ] Validar rendimiento con dataset real y ajustar tamaño de lote (50–100) y debounce (200–300 ms).
+    -   [ ] Añadir `noindex` y revisar headers de caché en hosting.
 
 ---
 

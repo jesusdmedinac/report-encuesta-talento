@@ -44,6 +44,76 @@ Este es un proyecto Astro para visualizar un reporte de madurez digital generado
 | `npm run generate-report` | **Genera un nuevo reporte a partir de un CSV.** |
 | `npm run generate-open-ended` | Genera el caché de preguntas abiertas con IA (o modo offline). |
 
+## 👤 Reportes individuales (proceso independiente)
+
+Además del reporte global, se puede generar un reporte por empleado sin afectar el flujo existente. Este proceso es independiente y escribe un JSON por persona que luego puede visualizarse en rutas separadas.
+
+Principios:
+- Privacidad primero: no se incluye PII en la salida (sin nombre/email). Se usa un `employeeId` pseudónimo.
+- Por defecto sin IA (offline) para ser económico y rápido; se puede habilitar IA por demanda con `--ai`.
+- Control de volumen: filtra por `--ids` o `--limit` para no procesar toda la base si no es necesario.
+
+Salida esperada:
+- `src/data/individual/<employeeId>.json` con: `header` (empresa, employeeId, generatedAt, provider/model/mode), `scores` por dimensión/subdimensión y `openEnded` del propio empleado (limpias/anonimizadas).
+
+CLI propuesto (se implementará en `src/scripts/generate-individual-reports.mjs`):
+```bash
+# Generar todos en modo offline (recomendado)
+npm run generate-individual -- \
+  --csv=./data/respuestas-por-puntos.csv \
+  --empresa="Skilt" \
+  --provider=gemini \
+  --offline
+
+# Generar un subconjunto por IDs conocidos
+npm run generate-individual -- \
+  --csv=./data/respuestas-por-puntos.csv \
+  --empresa="Skilt" \
+  --ids=emp_01,emp_07,emp_42 \
+  --offline
+
+# Habilitar IA solo para individuos seleccionados (usa caché por empleado)
+npm run generate-individual -- \
+  --csv=./data/respuestas-por-puntos.csv \
+  --empresa="Skilt" \
+  --ids=emp_07 \
+  --provider=openai --model=gpt-5 \
+  --ai
+```
+
+Notas operativas:
+- Identificador: por defecto se usa un `employeeId` determinístico (hash) derivado de un campo estable (p.ej. email). La salida nunca expone ese campo.
+- Caché cualitativo por empleado: `src/data/ind-openEnded.<employeeId>.json` cuando se usa `--ai`.
+- Páginas Astro: se expondrán rutas separadas, p.ej. `/empleados/<employeeId>` y un índice `/empleados/` con los disponibles.
+
+## 🔎 Listado de respuestas con búsqueda e infinito
+
+Objetivo: ofrecer una página administrativa con un listado de respuestas paginado por scroll infinito y un buscador superior que filtre indistintamente por nombre o correo, normalizando siempre a minúsculas (y sin acentos).
+
+Datos de respaldo:
+- Índice ligero en `public/respuestas-index.json` (para servirlo tal cual) con campos mínimos:
+  - `nombreCompleto`, `email` (en claro; el sitio ya está protegido por auth).
+  - `nombreL`, `emailL`: versiones normalizadas (minúsculas/sin acentos) para filtrar rápido en el cliente.
+  - Opcional: `area`/`rol` si quieres mostrar columnas adicionales.
+
+CLI propuesto (se implementará):
+```bash
+npm run generate-respuestas-index -- \
+  --csv=./data/respuestas-por-puntos.csv \
+  --out=public/respuestas-index.json
+```
+
+UX/Comportamiento:
+- Página en `src/pages/respuestas/index.astro` que:
+  - Carga el índice vía `fetch('/respuestas-index.json')`.
+  - Normaliza la query a minúsculas (y sin acentos) y filtra contra `nombreL` y `emailL`.
+  - Renderiza en lotes de 50–100 ítems con IntersectionObserver (scroll infinito).
+  - Debounce de 200–300 ms para búsquedas.
+
+Privacidad y cacheo:
+- El sitio ya requiere auth; aun así, añade `<meta name="robots" content="noindex">` en la página.
+- Configura `Cache-Control: private, no-store` para el JSON de índice en el hosting si es factible.
+
 ## 🤖 Generación Automática de Reportes
 
 Este proyecto incluye un potente script para procesar los resultados de una encuesta de madurez digital y generar automáticamente el archivo de datos (`globalData.json`) que alimenta el reporte visual.
