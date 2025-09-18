@@ -17,9 +17,14 @@ function sentimentColor(s) {
   {data.resumenGeneral && (
     <p class="resumen">{data.resumenGeneral}</p>
   )}
-  {data.metricaSentimiento && (
+  {(data.metricaSentimiento || data?.source?.offline) && (
     <div class="sentimiento" style={`--sent-color: ${sentimentColor(data.metricaSentimiento)}`}>
-      Sentimiento global: <strong>{data.metricaSentimiento}</strong>
+      {data.metricaSentimiento && (<>
+        Sentimiento global: <strong>{data.metricaSentimiento}</strong>
+      </>)}
+      {data?.source?.offline && (
+        <span class="badge-offline" title="Generado sin IA (modo offline)">offline</span>
+      )}
       <span class="dot" />
     </div>
   )}
@@ -67,6 +72,7 @@ function sentimentColor(s) {
   .resumen { text-align: center; color: #475569; max-width: 860px; margin: 0 auto 1rem; }
   .sentimiento { text-align: center; color: #334155; display: flex; gap: .5rem; align-items: center; justify-content: center; margin-bottom: 2rem; }
   .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--sent-color, #6B7280); display: inline-block; margin-left: .25rem; }
+  .badge-offline { background:#fef3c7; color:#92400e; border-radius:999px; padding:.1rem .4rem; font-size:.7rem; text-transform:uppercase; }
 
   .preguntas-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
   @media (min-width: 900px) { .preguntas-grid { grid-template-columns: 1fr 1fr; } }
@@ -87,4 +93,3 @@ function sentimentColor(s) {
   .citas { margin: .5rem 0 0 .9rem; color: #334155; padding-left: .6rem; }
   .citas li { margin: .25rem 0; list-style: disc; }
 </style>
-

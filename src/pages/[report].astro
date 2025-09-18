@@ -41,6 +41,9 @@ const globalData = await import(`../data/globalData.${report}.json`);
     generatedAt={globalData.header.generatedAt}
     empleadosEvaluados={globalData.header.empleadosEvaluados}
     titulo={globalData.header.titulo}
+    provider={globalData.header.provider}
+    model={globalData.header.model}
+    generationMode={globalData.header.generationMode}
   />
 
   <div class="container">

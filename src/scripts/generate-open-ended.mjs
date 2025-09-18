@@ -97,10 +97,12 @@ async function main() {
     } catch (e) {
       console.warn('Fallo IA en pre‑análisis. Generando caché en modo offline:', e.message);
       analysis = buildFallbackOpenEnded(openEndedData);
+      // Marcar el origen como offline en source
+      try { analysis.source = { ...(analysis.source||{}), offline: true }; } catch {}
     }
 
     const cache = {
-      source: { csvPath: csvFilePath, csvHash, rowCount, generatedAt: new Date().toISOString() },
+      source: { csvPath: csvFilePath, csvHash, rowCount, generatedAt: new Date().toISOString(), ...(analysis.source?.offline ? { offline: true } : {}) },
       ...analysis,
     };
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(cache, null, 2), 'utf8');
