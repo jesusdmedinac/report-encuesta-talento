@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate-report": "node src/scripts/generate-report.mjs"
+    "generate-report": "node src/scripts/generate-report.mjs",
+    "generate-open-ended": "node src/scripts/generate-open-ended.mjs"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

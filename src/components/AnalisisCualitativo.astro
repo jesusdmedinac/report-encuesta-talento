@@ -1,0 +1,90 @@
+---
+// Props: analisis con forma { resumenGeneral, metricaSentimiento?, preguntas: { CODE: { temas[], resumenGeneral, metricaSentimiento } } }
+const { analisis } = Astro.props;
+
+const data = analisis || { resumenGeneral: '', preguntas: {} };
+
+function sentimentColor(s) {
+  const k = String(s || '').toLowerCase();
+  if (k.includes('positivo')) return '#10B981';
+  if (k.includes('negativo')) return '#EF4444';
+  return '#6B7280';
+}
+---
+
+<section class="analisis-cualitativo">
+  <h2>Análisis Cualitativo de Respuestas Abiertas</h2>
+  {data.resumenGeneral && (
+    <p class="resumen">{data.resumenGeneral}</p>
+  )}
+  {data.metricaSentimiento && (
+    <div class="sentimiento" style={`--sent-color: ${sentimentColor(data.metricaSentimiento)}`}>
+      Sentimiento global: <strong>{data.metricaSentimiento}</strong>
+      <span class="dot" />
+    </div>
+  )}
+
+  <div class="preguntas-grid">
+    {Object.entries(data.preguntas || {}).map(([code, detalle]: any) => (
+      <div class="pregunta-card">
+        <header class="card-header">
+          <h3>{code}</h3>
+          {detalle.metricaSentimiento && (
+            <span class="badge" style={`background-color: ${sentimentColor(detalle.metricaSentimiento)}`}>{detalle.metricaSentimiento}</span>
+          )}
+        </header>
+        {detalle.resumenGeneral && <p class="intro">{detalle.resumenGeneral}</p>}
+
+        <div class="temas">
+          {(detalle.temas || []).map((t: any) => (
+            <div class="tema">
+              <div class="tema-head">
+                <span class="tema-id">{t.id}</span>
+                <h4>{t.etiqueta}</h4>
+                {typeof t.conteo !== 'undefined' && <span class="conteo">{t.conteo}</span>}
+              </div>
+              {Array.isArray(t.palabrasClave) && t.palabrasClave.length > 0 && (
+                <div class="chips">
+                  {t.palabrasClave.slice(0, 6).map((k: string) => (<span class="chip">{k}</span>))}
+                </div>
+              )}
+              {Array.isArray(t.citas) && t.citas.length > 0 && (
+                <ul class="citas">
+                  {t.citas.slice(0, 3).map((c: string) => (<li>“{c}”</li>))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .analisis-cualitativo { padding: 40px 0; }
+  .analisis-cualitativo h2 { font-size: 2rem; text-align: center; color: var(--color-primary, #1E293B); margin-bottom: 0.5rem; }
+  .resumen { text-align: center; color: #475569; max-width: 860px; margin: 0 auto 1rem; }
+  .sentimiento { text-align: center; color: #334155; display: flex; gap: .5rem; align-items: center; justify-content: center; margin-bottom: 2rem; }
+  .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--sent-color, #6B7280); display: inline-block; margin-left: .25rem; }
+
+  .preguntas-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  @media (min-width: 900px) { .preguntas-grid { grid-template-columns: 1fr 1fr; } }
+
+  .pregunta-card { background: #fff; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,.06); padding: 1rem 1.25rem; }
+  .card-header { display:flex; align-items:center; justify-content: space-between; gap: .75rem; border-bottom: 1px solid #e2e8f0; padding-bottom: .5rem; margin-bottom: .75rem; }
+  .card-header h3 { margin: 0; font-size: 1.05rem; color: #0f172a; }
+  .badge { color: #fff; padding: .2rem .6rem; border-radius: 999px; font-size: .75rem; text-transform: capitalize; }
+  .intro { color: #475569; margin: .5rem 0 1rem; }
+
+  .tema { border: 1px solid #eef2f7; border-radius: 12px; padding: .75rem; margin-bottom: .75rem; }
+  .tema-head { display:flex; align-items:center; gap: .5rem; }
+  .tema-id { font-size: .75rem; color: #64748b; background: #f1f5f9; border-radius: 6px; padding: .1rem .4rem; }
+  .tema h4 { margin: 0; font-size: 1rem; color: #111827; flex: 1; }
+  .conteo { font-size: .8rem; color: #475569; background: #f8fafc; padding: .1rem .4rem; border-radius: 6px; }
+  .chips { display:flex; flex-wrap: wrap; gap: .4rem; margin-top: .5rem; }
+  .chip { background: #eef2ff; color: #3730a3; padding: .2rem .5rem; border-radius: 999px; font-size: .75rem; }
+  .citas { margin: .5rem 0 0 .9rem; color: #334155; padding-left: .6rem; }
+  .citas li { margin: .25rem 0; list-style: disc; }
+</style>
+

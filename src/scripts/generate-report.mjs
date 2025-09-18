@@ -75,6 +75,10 @@ async function main() {
 
         console.log('Realizando análisis cualitativo...');
         const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, openEndedAnalysis || null);
+        // Si la IA falló y no devolvió analisisCualitativo, inyectar el caché directamente
+        if (openEndedAnalysis && !qualitativeResults.analisisCualitativo) {
+            qualitativeResults.analisisCualitativo = openEndedAnalysis;
+        }
 
         // 5. Construir y Guardar el Reporte
         console.log('Generando el archivo JSON del reporte...');

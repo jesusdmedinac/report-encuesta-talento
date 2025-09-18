@@ -358,6 +358,3 @@ function majoritySentiment(arr) {
     const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
     return entries[0][0];
 }
-b[1]-a[1]);
-    return entries[0][0];
-}

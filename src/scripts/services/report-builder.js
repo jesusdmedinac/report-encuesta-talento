@@ -203,6 +203,10 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     template.culturaOrganizacional = buildCulturaOrganizacional(analysisResults, qualitativeResults);
     template.planAccion = buildPlanAccion(qualitativeResults);
     template.roleSpecificScores = buildRoleSpecificScores(analysisResults);
+    // Incluir analisis cualitativo (si existe) para visualización dedicada
+    if (qualitativeResults && qualitativeResults.analisisCualitativo) {
+        template.analisisCualitativo = qualitativeResults.analisisCualitativo;
+    }
 
     return template;
 }

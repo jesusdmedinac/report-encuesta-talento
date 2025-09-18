@@ -18,7 +18,7 @@
         "model": { "type": "string" },
         "schemaVersion": { "type": "string" },
         "promptVersion": { "type": "string" },
-        "generatedAt": { "type": "string", "format": "date-time" }
+        "generatedAt": { "type": "string" }
       },
       "required": ["empresa", "fechaDiagnostico", "titulo", "idReporte", "empleadosEvaluados", "provider", "model"]
     },
@@ -214,4 +214,3 @@
     "roleSpecificScores"
   ]
 }
-

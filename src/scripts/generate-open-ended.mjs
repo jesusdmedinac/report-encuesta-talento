@@ -6,6 +6,46 @@ import { getArgument } from './utils.js';
 import { loadAndProcessCsv } from './services/csv-processor.js';
 import { initializeAiClient, preAnalyzeOpenEnded } from './services/ai-analyzer.js';
 
+function buildFallbackOpenEnded(openEndedData) {
+  const STOP = new Set(['para','sobre','con','como','que','del','los','las','una','uno','esta','este','ser','mas','más','mejor','herramientas','empresa','por','del','de','la','el','y','o','u','al','en','se','su','sus','es','son','muy','tan','hay','lo','las','los']);
+  const out = { preguntas: {}, resumenGeneral: '', metricaSentimiento: 'neutral' };
+  for (const [code, responses] of Object.entries(openEndedData)) {
+    if (!Array.isArray(responses) || responses.length === 0) continue;
+    const counts = new Map();
+    const idxByToken = new Map();
+    responses.forEach((r, idx) => {
+      String(r).toLowerCase().split(/[^a-záéíóúñü0-9]+/i).forEach(tok => {
+        const t = tok.normalize('NFD').replace(/\p{Diacritic}/gu, '');
+        if (!t || t.length < 5) return;
+        if (STOP.has(t)) return;
+        counts.set(t, (counts.get(t) || 0) + 1);
+        if (!idxByToken.has(t)) idxByToken.set(t, []);
+        const arr = idxByToken.get(t);
+        if (arr.length < 5) arr.push(idx);
+      });
+    });
+    const top = Array.from(counts.entries()).sort((a,b)=>b[1]-a[1]).slice(0,5);
+    const temas = top.map(([tok, cnt], i) => ({
+      id: `T-${i+1}`,
+      etiqueta: tok,
+      palabrasClave: [tok],
+      conteo: cnt,
+      sentimiento: 'neutral',
+      citas: (idxByToken.get(tok) || []).slice(0,3).map(ix => String(responses[ix]))
+    }));
+    out.preguntas[code] = {
+      temas,
+      resumenGeneral: temas.length ? `Temas recurrentes: ${temas.slice(0,5).map(t=>t.etiqueta).join(', ')}.` : 'Sin temas destacados (modo offline).',
+      metricaSentimiento: 'neutral'
+    };
+  }
+  try {
+    const labels = Object.values(out.preguntas).flatMap(q => (q.temas||[]).map(t=>t.etiqueta));
+    out.resumenGeneral = labels.length ? `Temas recurrentes: ${Array.from(new Set(labels)).slice(0,8).join(', ')}.` : '';
+  } catch {}
+  return out;
+}
+
 async function main() {
   try {
     const csvFilePath = getArgument('--csv');
@@ -49,9 +89,15 @@ async function main() {
       process.exit(0);
     }
 
-    // Pre‑análisis por lotes
+    // Pre‑análisis por lotes (con fallback offline)
     console.log('Realizando pre‑análisis de preguntas abiertas...');
-    const analysis = await preAnalyzeOpenEnded(provider, aiClient, effectiveModelName, openEndedData);
+    let analysis;
+    try {
+      analysis = await preAnalyzeOpenEnded(provider, aiClient, effectiveModelName, openEndedData);
+    } catch (e) {
+      console.warn('Fallo IA en pre‑análisis. Generando caché en modo offline:', e.message);
+      analysis = buildFallbackOpenEnded(openEndedData);
+    }
 
     const cache = {
       source: { csvPath: csvFilePath, csvHash, rowCount, generatedAt: new Date().toISOString() },
@@ -66,4 +112,3 @@ async function main() {
 }
 
 main();
-

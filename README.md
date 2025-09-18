@@ -42,6 +42,7 @@ Este es un proyecto Astro para visualizar un reporte de madurez digital generado
 | `npm run build` | Compila el sitio para producción en `./dist/`. |
 | `npm run preview` | Previsualiza el sitio compilado. |
 | `npm run generate-report` | **Genera un nuevo reporte a partir de un CSV.** |
+| `npm run generate-open-ended` | Genera el caché de preguntas abiertas con IA (o modo offline). |
 
 ## 🤖 Generación Automática de Reportes
 
@@ -77,7 +78,7 @@ Este proyecto incluye un potente script para procesar los resultados de una encu
     ```bash
     # Generar reporte con Gemini
     npm run generate-report -- \
-      --csv=./data/responses-TBjwOGHs-final.csv \
+      --csv=./data/responses-por-puntos.csv \
       --empresa="Skilt" \
       --reportId="SKL-001" \
       --provider=gemini \
@@ -85,7 +86,7 @@ Este proyecto incluye un potente script para procesar los resultados de una encu
     
     # Generar reporte con OpenAI
     npm run generate-report -- \
-      --csv=./data/responses-TBjwOGHs-final.csv \
+      --csv=./data/responses-por-puntos.csv \
       --empresa="Skilt" \
       --reportId="SKL-001" \
       --provider=openai \
@@ -117,3 +118,32 @@ Para facilitar la generación de reportes, se han creado dos scripts que ejecuta
 
 3.  **Verifica el resultado**:
     El script creará un nuevo archivo de datos en `src/data/`, nombrado según el proveedor (ej. `globalData.gemini.json`). La página del reporte utilizará estos datos para renderizar la visualización actualizada.
+
+### Análisis de Preguntas Abiertas (caché reutilizable)
+
+Para controlar costos/tiempo y enriquecer el reporte con insights cualitativos, el pre‑análisis de abiertas se realiza y se cachea por separado:
+
+- Generar caché de abiertas:
+  ```bash
+  npm run generate-open-ended -- \
+    --csv=./data/respuestas-por-puntos.csv \
+    --reportId=TBjwOGHs \
+    --provider=gemini \
+    --model=gemini-1.5-flash \
+    --force # opcional, para regenerar
+  ```
+- El caché se guarda en `src/data/openEnded.<reportId>.json` e incluye:
+  - `source`: `{ csvPath, csvHash, rowCount, generatedAt }`
+  - `preguntas`: `{ D1_OPEN: { temas[], resumenGeneral, metricaSentimiento, citas[] }, ... }`
+  - `resumenGeneral` global
+
+Integración en el generador principal:
+- `--skip-open-ended`: omite el uso de abiertas
+- `--refresh-open-ended`: regenera el caché antes de generar
+
+Modo offline (sin salida a red):
+- Si la IA no está disponible, `generate-open-ended` crea un caché básico a partir de frecuencias y citas (temas/citas neutras), evitando bloquear el flujo.
+- En `generate-report`, si la IA falla, el `analisisCualitativo` se incluye desde el caché para que el frontend lo muestre.
+
+Debug de respuestas IA (opcional):
+- Establece `DEBUG_AI=1` para guardar las respuestas crudas en `./debug/`.

@@ -39,11 +39,12 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 2.  **Análisis y Visualización de Preguntas Abiertas (con caché):**
     -   [x] `csv-processor.js`: extracción, normalización, anonimización y deduplicación de texto libre.
-    -   [ ] Script dedicado `src/scripts/generate-open-ended.mjs` para pre‑análisis por lotes (IA) y generación de caché.
-    -   [ ] Salida de caché: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt) + `preguntas` + `resumenGeneral`.
-    -   [ ] Flags en el generador principal: `--skip-open-ended` (omite) y `--refresh-open-ended` (regenera caché).
+    -   [x] Script dedicado `src/scripts/generate-open-ended.mjs` para pre‑análisis por lotes (IA) y generación de caché.
+    -   [x] Salida de caché: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt) + `preguntas` + `resumenGeneral`.
+    -   [x] Flags en el generador principal: `--skip-open-ended` (omite) y `--refresh-open-ended` (regenera caché).
     -   [x] Carga del caché en `generate-report.mjs` y uso para enriquecer el prompt principal y la sección `AnalisisCualitativo`.
-    -   [ ] Crear `src/components/AnalisisCualitativo.astro` para visualizar insights.
+    -   [x] Crear `src/components/AnalisisCualitativo.astro` para visualizar insights.
+    -   [x] Fallback offline: si la IA falla por red, el script genera un caché con temas y citas básicas a partir de texto.
 
 3.  **Configuración y Parametrización:**
     -   [x] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js` con overrides por sector/cliente/entorno.
@@ -66,3 +67,11 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 *   **Arquitectura Robusta:** La refactorización ha sido un éxito. La arquitectura actual es modular, mantenible y fácil de extender. Los principios SOLID y DRY nos dan una base sólida para el futuro.
 *   **Estrategia de IA Superior:** El enfoque de "único prompt con JSON" es más eficiente y coherente que el plan original. Nos permite escalar la generación de contenido de forma más sencilla.
 *   **Gobernanza de Datos:** Versionado de esquemas y prompts para auditoría y capacidad de rollback.
+
+---
+
+## Actualizaciones Recientes
+
+-   Se añadió un fallback offline al pre‑análisis de abiertas para garantizar caché útil incluso sin conectividad.
+-   Se integró `analisisCualitativo` en el JSON final y en la página del reporte.
+-   Se ajustó la validación del esquema para `generatedAt` (string simple) mientras se evalúa integrar `ajv-formats`.

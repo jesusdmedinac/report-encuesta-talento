@@ -31,20 +31,23 @@ En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **tod
 
 Este es un paso nuevo y crucial para enriquecer el reporte con la voz directa de los empleados.
 
--   [ ] Extracción cualitativa en `csv-processor.js`: agrupar columnas libres (ej. `D1_OPEN`), limpiar, anonimizar y deduplicar.
--   [ ] Pre-análisis en `ai-analyzer.js`: batching/resumen por lotes con control de tokens y fusión de resultados.
--   [ ] Objeto `analisisCualitativo`: `temas` [{ id, etiqueta, palabrasClave, conteo, sentimiento, citas }], `resumenGeneral`, `metricaSentimiento`.
--   [ ] Componente `src/components/AnalisisCualitativo.astro` para visualizar temas, sentimiento y citas.
+-   [x] Extracción cualitativa en `csv-processor.js`: agrupar columnas libres (ej. `D1_OPEN`), limpiar, anonimizar y deduplicar.
+-   [x] Pre-análisis en `ai-analyzer.js`: batching/resumen por lotes con control de tokens y fusión de resultados.
+-   [x] Objeto `analisisCualitativo`: `temas` [{ id, etiqueta, palabrasClave, conteo, sentimiento, citas }], `resumenGeneral`, `metricaSentimiento`.
+-   [x] Componente `src/components/AnalisisCualitativo.astro` para visualizar temas, sentimiento y citas.
+    
+    Mejora de resiliencia:
+    -   [x] Fallback offline en `generate-open-ended.mjs`: cuando la IA no está disponible, se generan temas/citas a partir de frecuencia de términos para no bloquear el flujo.
 
 ### 4.2. Generación de Narrativas Principales
 
 -   [x] Estrategia de único prompt con JSON para generar las narrativas principales.
--   [ ] Inyección de contexto cuantitativo y cualitativo (depende de 4.1) en el prompt principal.
+-   [x] Inyección de contexto cuantitativo y cualitativo (depende de 4.1) en el prompt principal.
 -   [x] Esquema del JSON de IA ampliado: `resumenEjecutivo` con `fortalezas`/`oportunidades`, `introduccion`, `brechaDigital`, `planAccion` detallado.
 -   [x] Integración de resultados en `report-builder.js` y frontend:
     -   [x] Reescritura de `src/components/PlanAccion.astro`.
     -   [x] Refactor de `src/components/ResumenEjecutivo.astro` (sin datos estáticos).
-    -   [ ] Integración de `src/components/AnalisisCualitativo.astro` en la página principal.
+    -   [x] Integración de `src/components/AnalisisCualitativo.astro` en la página principal.
 
 ## Fase 5: Ensamblaje Final y Generación del Archivo [COMPLETADO]
 
@@ -59,6 +62,7 @@ Esta es la última fase del script, donde se une todo y se produce el archivo fi
 3.  **Validación (Opcional pero Recomendado):**
     *   Considera crear un esquema JSON (schema) que defina la estructura de `globalData.json`.
     *   Añade un paso de validación en el script para asegurar que el JSON generado cumple con el esquema antes de guardarlo.
+    *   Nota: por ahora `header.generatedAt` valida como `string` (sin `date-time`), a la espera de integrar `ajv-formats`.
 
 ## Fase 6: Integración y Documentación [COMPLETADO]
 
@@ -82,11 +86,15 @@ Para finalizar, haremos que el script sea fácil de usar y documentaremos su fun
 
 ## Fase 8: Script de Preguntas Abiertas con Caché
 
--   [ ] Script dedicado `src/scripts/generate-open-ended.mjs` para procesar abiertas:
+-   [x] Script dedicado `src/scripts/generate-open-ended.mjs` para procesar abiertas:
     - Limpieza/anonimización/deduplicación (ya en `csv-processor`).
     - Batching a IA por pregunta (lotes) y fusión de resultados.
     - Esquema de salida: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt), `preguntas` y `resumenGeneral`.
--   [ ] Hash de contenido (`csvHash`) y reutilización del caché por defecto; `--force` para regenerar.
+-   [x] Hash de contenido (`csvHash`) y reutilización del caché por defecto; `--force` para regenerar.
+    
+    Flags de integración en el generador principal:
+    -   [x] `--skip-open-ended` (omite abiertas)
+    -   [x] `--refresh-open-ended` (regenera caché antes de generar)
 -   [x] Integración en el generador principal:
     - Cargar caché si existe y enriquecer el prompt principal.
     - Flags: `--skip-open-ended` (omite), `--refresh-open-ended` (regenera antes de generar).
