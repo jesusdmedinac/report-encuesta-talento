@@ -106,7 +106,10 @@ async function main() {
 
         // 5. Construir y Guardar el Reporte
         console.log('Generando el archivo JSON del reporte...');
-        const reportJson = generateReportJson(quantitativeResults, qualitativeResults, quantitativeData.length, empresaNombre, reportId, provider, effectiveModelName);
+        // Determinar el modo de generación para trazabilidad
+        const generationMode = offline ? 'offline' : (qualitativeResults.__generationMode || 'online');
+
+        const reportJson = generateReportJson(quantitativeResults, qualitativeResults, quantitativeData.length, empresaNombre, reportId, provider, effectiveModelName, generationMode);
         // Validación del reporte final contra el esquema
         try {
           validateData(reportJson, 'report');

@@ -18,7 +18,8 @@
         "model": { "type": "string" },
         "schemaVersion": { "type": "string" },
         "promptVersion": { "type": "string" },
-        "generatedAt": { "type": "string", "format": "date-time" }
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "generationMode": { "type": "string", "enum": ["online", "offline", "online-degraded"] }
       },
       "required": ["empresa", "fechaDiagnostico", "titulo", "idReporte", "empleadosEvaluados", "provider", "model"]
     },

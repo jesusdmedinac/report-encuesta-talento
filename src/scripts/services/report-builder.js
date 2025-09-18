@@ -3,7 +3,7 @@ import { loadJson, calculateAverage, scaleToTen, formatDimensionName } from '../
 
 // --- Funciones "Constructoras" por Sección ---
 
-function buildHeader(empresaNombre, reportId, totalRespondents, provider, model) {
+function buildHeader(empresaNombre, reportId, totalRespondents, provider, model, generationMode) {
     const hoy = new Date();
     const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     return {
@@ -17,6 +17,7 @@ function buildHeader(empresaNombre, reportId, totalRespondents, provider, model)
         schemaVersion: SCHEMA_VERSION,
         promptVersion: PROMPT_VERSION,
         generatedAt: new Date().toISOString(),
+        generationMode: generationMode || 'online',
     };
 }
 
@@ -182,7 +183,7 @@ function buildRoleSpecificScores(analysisResults) {
 
 // --- Orquestador Principal del Constructor de Reporte ---
 
-export function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId, provider, model) {
+export function generateReportJson(analysisResults, qualitativeResults, totalRespondents, empresaNombre, reportId, provider, model, generationMode) {
     const template = loadJson(TEMPLATE_PATH);
 
     const averages = {
@@ -193,7 +194,7 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     };
     averages.overallAvg = calculateAverage(Object.values(averages));
 
-    template.header = buildHeader(empresaNombre, reportId, totalRespondents, provider, model);
+    template.header = buildHeader(empresaNombre, reportId, totalRespondents, provider, model, generationMode);
     template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
     template.introduccion.contenido = qualitativeResults.introduccion;
     template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);

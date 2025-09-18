@@ -185,6 +185,7 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
                 - **prioridad**: La prioridad de la iniciativa ('Alta', 'Media', o 'Baja').
     `;
 
+    let generationMode = 'online';
     try {
         console.log('Generando textos cualitativos con datos escalados...');
         let generatedText = "";
@@ -233,23 +234,35 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         const repaired = sanitizeJsonLike(generatedText);
         try {
             const insights = JSON.parse(repaired);
-            console.log('Textos cualitativos generados y parseados correctamente.');
+            // Validar contra el esquema de respuesta de IA
+            try {
+                validateData(insights, 'ai-response');
+            } catch (ve) {
+                generationMode = 'online-degraded';
+                console.warn('Validación de AIResponse falló. Se usará degradación con placeholders. Motivo:', ve.message);
+                return buildAiFallback(analisisCualitativo);
+            }
+            console.log('Textos cualitativos generados, parseados y validados.');
             if (analisisCualitativo) {
                 insights.analisisCualitativo = analisisCualitativo;
             }
+            insights.__generationMode = generationMode;
             return insights;
         } catch (parseErr) {
+            generationMode = 'online-degraded';
             console.error('Fallo al parsear JSON de IA tras reparación. Mensaje:', parseErr.message);
-            throw new Error(`No se pudo parsear la salida de IA (${provider}). Revisa DEBUG_AI para ver la respuesta cruda.`);
+            const fb = buildAiFallback(analisisCualitativo);
+            fb.__generationMode = generationMode;
+            return fb;
         }
 
     } catch (error) {
+        generationMode = 'online-degraded';
         console.error(`Error al generar el análisis cualitativo con ${provider}:`, error);
-        // Devuelve un objeto con valores por defecto en caso de error para no romper el resto del script
-        return {
-            resumenEjecutivo: `No se pudo generar el resumen ejecutivo con ${provider}.`,
-            introduccion: `No se pudo generar la introducción con ${provider}.`
-        };
+        const fb = buildAiFallback(null);
+        fb.__generationMode = generationMode;
+        if (analisisCualitativo) fb.analisisCualitativo = analisisCualitativo;
+        return fb;
     }
 }
 
@@ -268,6 +281,22 @@ function sanitizeJsonLike(text) {
         t = t.slice(start, end + 1);
     }
     return t;
+}
+
+// Construye un objeto fallback que cumple con el esquema ai-response
+function buildAiFallback(analisisCualitativo) {
+    const obj = {
+        resumenEjecutivo: { resumenGeneral: 'Análisis no disponible.', fortalezas: [], oportunidades: [] },
+        introduccion: 'Análisis no disponible.',
+        brechaDigital: { textoNivelActual: 'Análisis no disponible.', textoOportunidadParrafo: 'Análisis no disponible.', parrafo1: 'Análisis no disponible.', parrafo2: 'Análisis no disponible.' },
+        madurezDigital: { parrafoIntroductorio: 'Análisis no disponible.', componentes: [] },
+        competenciasDigitales: { nivelDesarrollo: 'Análisis no disponible.', descripcionPromedio: 'Análisis no disponible.', competencias: [] },
+        usoInteligenciaArtificial: { resumen: 'Análisis no disponible.', graficos: [{ descripcion: 'Análisis no disponible.' }, { descripcion: 'Análisis no disponible.' }, { descripcion: 'Análisis no disponible.' }] },
+        culturaOrganizacional: { insights: { resumen: 'Análisis no disponible.', puntos: [] }, tarjetas: [{ narrativa: 'Análisis no disponible.' }, { narrativa: 'Análisis no disponible.' }, { narrativa: 'Análisis no disponible.' }] },
+        planAccion: { resumenGeneral: 'Análisis no disponible.', iniciativas: [] },
+    };
+    if (analisisCualitativo) obj.analisisCualitativo = analisisCualitativo;
+    return obj;
 }
 
 // --- Pre-análisis por lotes de preguntas abiertas ---
