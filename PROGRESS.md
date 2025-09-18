@@ -36,7 +36,6 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [x] Actualizar la lógica de generación en `ai-analyzer.js` y `report-builder.js` para producir el nuevo objeto `planAccion`.
     -   [x] Reescribir el componente `src/components/PlanAccion.astro` desde cero para que visualice la nueva estructura de datos.
     -   [x] Volver a importar y renderizar el nuevo componente `PlanAccion` en `src/pages/[report].astro`.
-    -   [ ] Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA al generar las iniciativas.
 
 2.  **Mejorar la Generación del Resumen Ejecutivo:**
     -   [x] Actualizar el prompt en `ai-analyzer.js` para que la IA genere listas de `fortalezas` y `oportunidades`.
@@ -44,9 +43,15 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [x] Eliminar datos estáticos y secciones redundantes (ej. `resumenPlanAccion`) del componente `ResumenEjecutivo.astro`.
     -   [x] Asegurar que el componente renderice dinámicamente las `fortalezas` y `oportunidades` generadas.
 
-3.  **Refinamiento Final:**
-    -   Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js`.
-    -   Añadir validación de esquema para el JSON generado.
+3.  **Implementar Análisis y Visualización de Preguntas Abiertas:**
+    -   [ ] **Fase 1 (Extracción):** Modificar `csv-processor.js` para extraer las respuestas de texto libre de las preguntas abiertas.
+    -   [ ] **Fase 2 (Análisis IA):** Modificar `ai-analyzer.js` para realizar un pre-análisis temático de las respuestas y generar un nuevo objeto `analisisCualitativo` en el JSON.
+    -   [ ] **Fase 3 (Componente):** Crear un nuevo componente `src/components/AnalisisCualitativo.astro` para visualizar estos insights (temas, sentimiento, citas).
+    -   [ ] **Fase 4 (Integración):** Añadir el nuevo componente a la página del reporte y usar los insights generados para enriquecer el prompt principal.
+
+4.  **Refinamiento Final:**
+    -   [ ] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js`.
+    -   [ ] Añadir validación de esquema para el JSON generado.
 
 ---
 

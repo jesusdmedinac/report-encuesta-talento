@@ -25,26 +25,34 @@ Antes de expandir la generación de narrativas, se realizó una fase de refactor
 
 ## Fase 4: Generación Comprensiva de Narrativas por IA (Intérprete de IA)
 
-En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **todas** las narrativas y análisis de texto del reporte, utilizando una estrategia de único prompt con respuesta JSON garantizada.
+En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **todas** las narrativas y análisis de texto del reporte. Se divide en dos sub-procesos: el análisis de respuestas abiertas y la generación de las narrativas principales.
 
-1.  **Implementar Estrategia de Único Prompt con JSON:**
-    *   Modificar la función `performQualitativeAnalysis` para construir un único prompt que solicite a la IA la generación de un objeto JSON que contenga todos los textos necesarios.
-    *   Configurar las llamadas a las APIs de IA para que utilicen su **modo JSON nativo** (`response_format: { type: "json_object" }` para OpenAI, `responseMimeType: "application/json"` para Gemini). Esto garantiza respuestas bien formadas y elimina errores de parseo.
+### 4.1. Análisis de Respuestas Abiertas y Creación de Insights
 
-2.  **Expandir el Esquema del JSON de IA:**
-    *   De forma incremental, añadir nuevas claves al objeto JSON solicitado en el prompt para cubrir todas las secciones del reporte:
-        *   `resumenEjecutivo`: Un objeto que contenga el `resumenGeneral` (párrafos de texto), `fortalezas` (un array de strings) y `oportunidades` (un array de strings).
-        *   `introduccion`
-        *   Textos para `brechaDigital`
-        *   Párrafos para `madurezDigital`, `competenciasDigitales`
-        *   Descripciones y resúmenes para `usoInteligenciaArtificial` y `culturaOrganizacional`.
-        *   Un `planAccion` estructurado. Este objeto contendrá un `resumenGeneral` y un array de `iniciativas`. Cada iniciativa será un objeto con: `id`, `titulo`, `descripcion`, `areaEnfoque`, `objetivosClave` (array), `metricasExito` (array de objetos con `metrica` y `valorObjetivo`), `responsableSugerido`, `plazoEstimado`, y `prioridad`.
+Este es un paso nuevo y crucial para enriquecer el reporte con la voz directa de los empleados.
 
-3.  **Integrar Resultados y Refactorizar Frontend:**
-    *   Actualizar las funciones `build...` en `report-builder.js` para que consuman y ensamblen la nueva estructura del `planAccion`.
-    *   **Reescribir el componente `src/components/PlanAccion.astro` desde cero** para que sea capaz de interpretar y renderizar visualmente el nuevo objeto `planAccion`, incluyendo el listado de iniciativas con todos sus detalles.
-    *   **Refactorizar el componente `src/components/ResumenEjecutivo.astro`** para eliminar datos estáticos y asegurar que renderice correctamente los datos generados por la IA (fortalezas, oportunidades).
-    *   **Refactorizar el componente `src/components/ResumenEjecutivo.astro`** para eliminar datos estáticos y asegurar que renderice correctamente los datos generados por la IA (fortalezas, oportunidades).
+1.  **Extracción de Datos Cualitativos:** Se modificará `csv-processor.js` para leer y agrupar todas las respuestas de texto de las preguntas abiertas (ej. `D1_OPEN`).
+
+2.  **Generación de Objeto de Insights (`analisisCualitativo`):** Se realizarán llamadas preliminares a la IA en `ai-analyzer.js` para cada pregunta abierta. La IA analizará las respuestas y generará un objeto JSON estructurado con `temasClave`, `sentimientoGeneral` y `citasDestacadas`.
+
+3.  **Nuevo Componente de Visualización:** Se creará un nuevo componente, `src/components/AnalisisCualitativo.astro`, diseñado específicamente para recibir y mostrar de forma clara y atractiva los insights generados en el paso anterior.
+
+### 4.2. Generación de Narrativas Principales
+
+1.  **Implementar Estrategia de Único Prompt con JSON:** Se construirá un único prompt que solicite a la IA la generación de un objeto JSON que contenga todos los textos de las secciones principales del reporte.
+
+2.  **Inyección de Contexto Cuantitativo y Cualitativo:** El prompt principal se enriquecerá con los resultados del análisis cuantitativo y, crucialmente, con los insights (temas y citas) generados en la sub-fase 4.1.
+
+3.  **Expandir el Esquema del JSON de IA:** Se solicitarán todas las claves necesarias para el reporte:
+    *   `resumenEjecutivo`: Un objeto que contenga `resumenGeneral`, `fortalezas` y `oportunidades`.
+    *   `introduccion`, `brechaDigital`, `madurezDigital`, etc.
+    *   `planAccion` estructurado con `resumenGeneral` e `iniciativas`.
+
+4.  **Integrar Resultados y Refactorizar Frontend:**
+    *   Actualizar las funciones `build...` en `report-builder.js` para que consuman y ensamblen las nuevas estructuras de datos.
+    *   **Reescribir el componente `src/components/PlanAccion.astro`** desde cero.
+    *   **Refactorizar el componente `src/components/ResumenEjecutivo.astro`** para eliminar datos estáticos.
+    *   **Integrar el nuevo componente `src/components/AnalisisCualitativo.astro`** en la página principal del reporte.
 
 ## Fase 5: Ensamblaje Final y Generación del Archivo [COMPLETADO]
 

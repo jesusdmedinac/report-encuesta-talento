@@ -53,22 +53,23 @@ Al final de esta fase, el algoritmo tendrá un objeto estructurado con todos los
 
 #### **Fase 3: Módulo de Análisis Cualitativo (Generación Comprensiva de Narrativas por IA)**
 
-En esta fase, la IA generativa crea todos los textos analíticos y narrativas del reporte. Esto se logra a través de un **único prompt dirigido** que solicita a la IA una respuesta estructurada en formato **JSON**, utilizando los datos de la Fase 2 como contexto.
+En esta fase, la IA generativa crea todos los textos analíticos del reporte. El proceso se divide en dos pasos clave para asegurar la máxima calidad y relevancia.
 
-1.  **Análisis de Sentimiento y Temas (Respuestas Abiertas):**
-    *   Se agruparán las respuestas a preguntas abiertas (ej. `D3_OPEN`).
-    *   Un prompt inicial analizará estas respuestas para identificar temas recurrentes, sentimiento general y extraer citas o frases clave. Este análisis enriquecerá el prompt principal.
+1.  **Pre-Análisis de Respuestas Abiertas y Generación de Insights:**
+    *   El script primero agrupará todas las respuestas de texto de las preguntas abiertas (ej. `D1_OPEN`).
+    *   Se ejecutará una **primera llamada a la IA** por cada pregunta abierta. El objetivo de esta llamada es analizar el texto crudo y devolver un objeto JSON estructurado con los `temasClave` recurrentes, el `sentimientoGeneral` y `citasDestacadas` anónimas.
+    *   El conjunto de estos análisis se agrupará en un nuevo objeto principal llamado `analisisCualitativo`, que será mostrado directamente en el reporte a través de un nuevo componente dedicado.
 
-2.  **Generación de Textos por Sección (Único Prompt con JSON):**
-    *   El algoritmo no usará múltiples llamadas. En su lugar, ejecutará **una sola llamada a la IA** con un prompt cuidadosamente diseñado.
-    *   Este prompt instruirá al modelo para que devuelva un objeto JSON completo, donde cada clave corresponde a una sección del reporte (ej. `"resumenEjecutivo"`, `"introduccion"`, etc.).
-    *   Se utilizará el **modo JSON** nativo de la API de la IA para garantizar que la respuesta sea siempre un JSON válido.
+2.  **Generación de Narrativas Principales con Contexto Enriquecido:**
+    *   Se ejecutará una **segunda y única llamada a la IA** para generar el resto de las secciones del reporte (`resumenEjecutivo`, `introduccion`, `planAccion`, etc.).
+    *   El prompt para esta llamada será enriquecido con dos tipos de contexto:
+        1.  Los **datos cuantitativos** de la Fase 2 (puntuaciones, promedios).
+        2.  Los **insights cualitativos** (temas y citas) generados en el paso anterior.
+    *   Se utilizará el **modo JSON** nativo de la API para garantizar una respuesta estructurada y válida.
 
-3.  **Contexto para el Prompt:**
-    *   La llamada a la IA incluirá los datos cuantitativos relevantes (puntuación general, scores de dimensiones, etc.) y, opcionalmente, los temas extraídos del análisis de respuestas abiertas.
-
-4.  **Ejemplo de Prompt (Conceptual):**
-    *   *"Eres un consultor experto... Basado en los datos {datos_cuantitativos}, genera una respuesta JSON con las claves `resumenEjecutivo` y `planAccion`. Para `resumenEjecutivo`, crea un objeto con `resumenGeneral` (3 párrafos), `fortalezas` (array de 3-4 strings) y `oportunidades` (array de 3-4 strings). Para `planAccion`, crea un objeto con `resumenGeneral` y un array de `iniciativas` detalladas..."*
+4.  **Ejemplo de Flujo de Prompts (Conceptual):**
+    *   **Prompt 1 (Pre-Análisis):** *"Analiza las siguientes respuestas a la pregunta '...': {respuestas_abiertas_raw}. Devuelve un JSON con las claves `temasClave` (array de strings), `sentimientoGeneral` (string) y `citasDestacadas` (array de 3 strings)."*
+    *   **Prompt 2 (Principal):** *"Eres un consultor experto. Basado en los datos cuantitativos {datos_cuantitativos} y los siguientes insights cualitativos {insights_del_paso_anterior}, genera una respuesta JSON con las claves `resumenEjecutivo` (incluyendo fortalezas y oportunidades), `introduccion` y `planAccion` (con iniciativas detalladas). Asegúrate de que tus textos reflejen tanto los números como los temas mencionados por los empleados."*
 
 --- 
 
