@@ -18,8 +18,9 @@ function buildHeader(empresaNombre, reportId, totalRespondents, provider, model)
 }
 
 function buildResumenEjecutivo(qualitativeResults, averages) {
+    const resumenAI = qualitativeResults.resumenEjecutivo || {};
     return {
-        resumenGeneral: qualitativeResults.resumenEjecutivo,
+        resumenGeneral: resumenAI.resumenGeneral || "Análisis no disponible.",
         puntuacionGeneral: {
             puntuacion: parseFloat(scaleToTen(averages.overallAvg).toFixed(1))
         },
@@ -29,8 +30,8 @@ function buildResumenEjecutivo(qualitativeResults, averages) {
             { nombre: "Uso de IA", puntuacion: parseFloat(scaleToTen(averages.usoInteligenciaArtificialAvg).toFixed(1)), color: "#8B5CF6" },
             { nombre: "Cultura Digital", puntuacion: parseFloat(scaleToTen(averages.culturaOrganizacionalAvg).toFixed(1)), color: "#10B981" }
         ],
-        fortalezas: [], // TODO: Llenar con análisis de IA
-        oportunidades: [], // TODO: Llenar con análisis de IA
+        fortalezas: resumenAI.fortalezas || [],
+        oportunidades: resumenAI.oportunidades || [],
     };
 }
 

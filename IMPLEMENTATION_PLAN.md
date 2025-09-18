@@ -43,6 +43,8 @@ En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **tod
 3.  **Integrar Resultados y Refactorizar Frontend:**
     *   Actualizar las funciones `build...` en `report-builder.js` para que consuman y ensamblen la nueva estructura del `planAccion`.
     *   **Reescribir el componente `src/components/PlanAccion.astro` desde cero** para que sea capaz de interpretar y renderizar visualmente el nuevo objeto `planAccion`, incluyendo el listado de iniciativas con todos sus detalles.
+    *   **Refactorizar el componente `src/components/ResumenEjecutivo.astro`** para eliminar datos estáticos y asegurar que renderice correctamente los datos generados por la IA (fortalezas, oportunidades).
+    *   **Refactorizar el componente `src/components/ResumenEjecutivo.astro`** para eliminar datos estáticos y asegurar que renderice correctamente los datos generados por la IA (fortalezas, oportunidades).
 
 ## Fase 5: Ensamblaje Final y Generación del Archivo [COMPLETADO]
 

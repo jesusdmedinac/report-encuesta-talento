@@ -1,69 +1,15 @@
 ---
 const {
     titulo = "Resumen Ejecutivo",
-    resumenGeneral = "El diagnóstico integral de transformación digital de Profermaco revela una organización ferretera en la primera etapa de desarrollo digital, con bases sólidas y extraordinarias oportunidades de crecimiento. Los resultados reflejan un potencial excepcional para evolucionar hacia un modelo digital intermedio que genere ventajas competitivas reales en el mercado ferretero ecuatoriano, optimizando procesos operativos y mejorando significativamente la experiencia del cliente.",
-    puntuacionesDimensiones = [
-        { nombre: "Madurez Digital", puntuacion: 2.1, color: "#F59E0B" },
-        { nombre: "Competencias Digitales", puntuacion: 1.5, color: "#EF4444" },
-        { nombre: "Uso de IA", puntuacion: 1.2, color: "#8B5CF6" },
-        { nombre: "Cultura Digital", puntuacion: 2.0, color: "#F59E0B" }
-    ],
+    resumenGeneral = "Generando resumen...",
+    puntuacionesDimensiones = [],
     puntuacionGeneral = {
-        puntuacion: 1.7,
+        puntuacion: 0,
         etiqueta: "PUNTUACIÓN GENERAL",
-        descripcion: "Primera Etapa de Desarrollo Digital"
+        descripcion: ""
     },
-    fortalezas = [
-        "<strong>Madurez digital en desarrollo (2.1/10)</strong> - La mejor puntuación organizacional",
-        "<strong>Cultura organizacional receptiva (2.0/10)</strong> - Base sólida para el cambio",
-        "<strong>Liderazgo comprometido</strong> - Dirección alineada con transformación digital",
-        "<strong>Equipo de 22 colaboradores</strong> - Tamaño ideal para transformación ágil"
-    ],
-    oportunidades = [
-        "<strong>Competencias digitales (1.5/10)</strong> - Excelente oportunidad para capacitación especializada",
-        "<strong>Uso práctico de IA (16%)</strong> - Potencial para automatización ferretera",
-        "<strong>Formación digital estructurada</strong> - Oportunidad para crear programa especializado",
-        "<strong>Margen de crecimiento (2.05 puntos)</strong> - Oportunidad realista y alcanzable"
-    ],
-    resumenPlanAccion = [
-        {
-            titulo: "🏗️ Fundamentos (0-4 meses)",
-            color: "#EF4444",
-            puntos: [
-                "Excel intermedio para gestión de inventarios ferreteros",
-                "Google Workspace para optimizar comunicación del equipo",
-                "Introducción práctica a ChatGPT para atención al cliente"
-            ]
-        },
-        {
-            titulo: "⚙️ Automatización (4-8 meses)",
-            color: "#F59E0B",
-            puntos: [
-                "WhatsApp Business para consultas automáticas",
-                "Optimización de sistemas POS ferreteros",
-                "Herramientas de análisis de ventas con Google Analytics"
-            ]
-        },
-        {
-            titulo: "📈 Análisis (8-12 meses)",
-            color: "#3B82F6",
-            puntos: [
-                "Excel avanzado con tablas dinámicas para análisis",
-                "Power BI para dashboards visuales de ferretería",
-                "Técnicas básicas de forecasting de inventarios"
-            ]
-        },
-        {
-            titulo: "🌟 Consolidación (12-15 meses)",
-            color: "#10B981",
-            puntos: [
-                "Liderazgo digital para gestión de equipos",
-                "Estrategias de e-commerce farmacéutico",
-                "Certificación en transformación digital para retail"
-            ]
-        }
-    ],
-    conclusion = "<strong>Profermaco está en la posición ideal para desarrollar gradualmente sus competencias digitales ferreterías mediante un plan realista de 15 meses.</strong> Con una inversión estratégica en 240 horas de capacitación práctica, la organización puede alcanzar el nivel intermedio (3.75/5) utilizando recursos educativos accesibles y especializados: Microsoft Learn, Google Academy, Meta Business Academy, y capacitación con proveedores locales especializados en tecnología para el sector ferretero."
+    fortalezas = [],
+    oportunidades = [],
 } = Astro.props;
 ---
 <section>
@@ -123,28 +69,6 @@ const {
                     </div>
                 ))}
             </div>
-        </div>
-    </div>
-
-    <div style="background: white; border-radius: 16px; padding: 30px; margin: 30px 0; box-shadow: 0 8px 25px rgba(0,0,0,0.08); border: 1px solid #f0f0f0;">
-        <h3 style="color: var(--primary); margin-bottom: 25px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px;">
-            <span style="font-size: 1.5rem;">🚀</span>
-            Resumen Plan de Acción
-        </h3>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            {resumenPlanAccion.map((fase: any) => (
-                <div style={`padding: 20px; background: #f8f9fa; border-radius: 12px; border-left: 4px solid ${fase.color};`}>
-                    <h5 style={`color: ${fase.color}; margin-bottom: 10px; font-size: 1rem;`}>{fase.titulo}</h5>
-                    <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                        {fase.puntos.map((punto: any) => <li set:html={punto} />)}
-                    </ul>
-                </div>
-            ))}
-        </div>
-        
-        <div style="margin-top: 25px; padding: 20px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.02)); border-radius: 12px; border-left: 4px solid #10B981;">
-            <p style="margin: 0; font-size: 1rem; line-height: 1.6; color: var(--text-primary); text-align: center;" set:html={conclusion} />
         </div>
     </div>
 </section>

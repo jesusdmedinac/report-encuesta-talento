@@ -90,7 +90,10 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         ${JSON.stringify(scaledResults, null, 2)}
 
         Instrucciones para el contenido del JSON:
-        1.  **resumenEjecutivo**: Un resumen conciso y profesional de 3 párrafos. Debe ser accionable, escrito en un tono de experto a cliente, y resaltar las áreas clave de fortaleza y debilidad sin usar un lenguaje demasiado técnico. Finaliza con una nota optimista sobre el potencial de mejora.
+        1.  **resumenEjecutivo**: Un objeto que contenga tres propiedades:
+            - **resumenGeneral**: Un resumen conciso y profesional de 3 párrafos, escrito en un tono de experto a cliente, que resalte las áreas clave de fortaleza y debilidad sin usar un lenguaje demasiado técnico y finalice con una nota optimista.
+            - **fortalezas**: Un ARRAY de 3 a 4 strings. Cada string debe ser una fortaleza clave identificada en los datos, idealmente incluyendo la puntuación relevante.
+            - **oportunidades**: Un ARRAY de 3 a 4 strings. Cada string debe ser una oportunidad de mejora clara basada en los datos, idealmente incluyendo la puntuación relevante.
         2.  **introduccion**: Un párrafo de introducción para el reporte. Debe dar la bienvenida, mencionar el propósito del diagnóstico y establecer un tono positivo y constructivo para el resto del documento.
         3.  **brechaDigital**: Un objeto que contiene los textos para la sección de Brecha Digital. Basado en la puntuación general (overallAvg), genera los siguientes textos:
             - **textoNivelActual**: Una frase corta que describa el nivel actual de la empresa (ej. 'Nivel Competitivo', 'En Desarrollo', 'Líder del Sector').
