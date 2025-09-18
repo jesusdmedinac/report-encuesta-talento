@@ -159,3 +159,18 @@ Modo offline (sin salida a red):
 
 Debug de respuestas IA (opcional):
 - Establece `DEBUG_AI=1` para guardar las respuestas crudas en `./debug/`.
+
+### Variables de Entorno y Flags
+
+- Variables de entorno soportadas:
+  - `GEMINI_API_KEY` / `OPENAI_API_KEY`: claves para proveedores de IA.
+  - `CSV_PATH`, `EMPRESA`, `REPORT_ID`, `MODEL`, `PROVIDER`: valores por defecto para `./generate.sh`.
+  - `DEBUG_AI`: si es `1`, guarda las respuestas crudas de IA.
+  - `AI_MAX_RETRIES`: número de reintentos ante errores transitorios de IA (por defecto `3`).
+  - `AI_RETRY_BASE_MS`: retardo base en ms para backoff exponencial (por defecto `800`).
+
+- Flags comunes en `./generate.sh` y/o `npm run generate-report`:
+  - `--offline`: no realiza llamadas a IA; usa datos cuantitativos y el caché existente.
+  - `--skip-open-ended`: no usa ni genera caché de abiertas.
+  - `--refresh-open-ended`: regenera el caché de abiertas antes de generar el reporte.
+  - Passthrough: puedes añadir cualquier flag soportado por `generate-report.mjs` tras `./generate.sh`.
