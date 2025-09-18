@@ -74,10 +74,7 @@ async function main() {
         }
 
         console.log('Realizando análisis cualitativo...');
-        const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, null);
-        if (openEndedAnalysis) {
-            qualitativeResults.analisisCualitativo = openEndedAnalysis;
-        }
+        const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, openEndedAnalysis || null);
         // Validación mínima del output de IA
         try {
             validateAiResponse(qualitativeResults);

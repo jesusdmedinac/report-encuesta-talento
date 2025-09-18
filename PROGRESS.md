@@ -42,7 +42,7 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [ ] Script dedicado `src/scripts/generate-open-ended.mjs` para pre‑análisis por lotes (IA) y generación de caché.
     -   [ ] Salida de caché: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt) + `preguntas` + `resumenGeneral`.
     -   [ ] Flags en el generador principal: `--skip-open-ended` (omite) y `--refresh-open-ended` (regenera caché).
-    -   [ ] Carga del caché en `generate-report.mjs` y uso para enriquecer el prompt principal y la sección `AnalisisCualitativo`.
+    -   [x] Carga del caché en `generate-report.mjs` y uso para enriquecer el prompt principal y la sección `AnalisisCualitativo`.
     -   [ ] Crear `src/components/AnalisisCualitativo.astro` para visualizar insights.
 
 3.  **Configuración y Parametrización:**

@@ -87,7 +87,7 @@ Para finalizar, haremos que el script sea fácil de usar y documentaremos su fun
     - Batching a IA por pregunta (lotes) y fusión de resultados.
     - Esquema de salida: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt), `preguntas` y `resumenGeneral`.
 -   [ ] Hash de contenido (`csvHash`) y reutilización del caché por defecto; `--force` para regenerar.
--   [ ] Integración en el generador principal:
+-   [x] Integración en el generador principal:
     - Cargar caché si existe y enriquecer el prompt principal.
     - Flags: `--skip-open-ended` (omite), `--refresh-open-ended` (regenera antes de generar).
 -   [ ] Componente `src/components/AnalisisCualitativo.astro` para visualizar temas, sentimiento y citas.

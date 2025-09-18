@@ -86,7 +86,10 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
     // Pre-análisis de preguntas abiertas si existen datos
     let analisisCualitativo = undefined;
     try {
-        if (openEndedData && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
+        if (openEndedData && openEndedData.preguntas) {
+            // Ya viene pre-analizado desde caché/externo
+            analisisCualitativo = openEndedData;
+        } else if (openEndedData && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
             analisisCualitativo = await preAnalyzeOpenEnded(provider, aiClient, modelName, openEndedData);
             console.log('Pre-análisis cualitativo completado.');
         }
