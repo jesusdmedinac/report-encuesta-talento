@@ -1,3 +1,4 @@
+import { validateData } from './validator.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import OpenAI from 'openai';
 import fs from 'fs';
@@ -355,5 +356,8 @@ function majoritySentiment(arr) {
         if (counts[k] !== undefined) counts[k] += 1;
     }
     const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+    return entries[0][0];
+}
+b[1]-a[1]);
     return entries[0][0];
 }

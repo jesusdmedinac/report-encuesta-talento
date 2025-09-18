@@ -13,6 +13,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@tailwindcss/vite": "^4.1.13",
+    "ajv": "^8.17.1",
     "astro": "^5.12.6",
     "openai": "^5.20.0",
     "papaparse": "^5.5.3",
