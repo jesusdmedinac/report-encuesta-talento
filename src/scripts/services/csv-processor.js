@@ -35,8 +35,8 @@ function parseCsvFile(filePath) {
  */
 function processSurveyData(rows) {
     const quantitativeData = [];
-    const openEndedData = {};
-    Object.keys(OPEN_ENDED_QUESTIONS).forEach(key => openEndedData[key] = []);
+    const openEndedDataRaw = {};
+    Object.keys(OPEN_ENDED_QUESTIONS).forEach(key => openEndedDataRaw[key] = []);
 
     for (const row of rows) {
         const quantRow = {};
@@ -47,7 +47,7 @@ function processSurveyData(rows) {
             } else {
                 for (const open_key in OPEN_ENDED_QUESTIONS) {
                     if (OPEN_ENDED_QUESTIONS[open_key] === trimmedKey && row[key]) {
-                        openEndedData[open_key].push(row[key]);
+                        openEndedDataRaw[open_key].push(String(row[key]));
                     }
                 }
             }
@@ -55,6 +55,7 @@ function processSurveyData(rows) {
         quantitativeData.push(quantRow);
     }
 
+    const openEndedData = cleanOpenEndedData(openEndedDataRaw);
     return { quantitativeData, openEndedData };
 }
 
@@ -119,4 +120,60 @@ export function performQuantitativeAnalysis(data, mappings) {
     }
 
     return results;
+}
+
+// --- Utilidades de limpieza/anonomización de texto libre ---
+
+function normalizeText(t) {
+    return String(t)
+        .replace(/\s+/g, ' ')
+        .replace(/[\u200B-\u200D\uFEFF]/g, '')
+        .trim();
+}
+
+function anonymizeText(t) {
+    let s = t;
+    // Emails
+    s = s.replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, '[EMAIL]');
+    // Teléfonos (7+ dígitos, con separadores comunes)
+    s = s.replace(/\b(?:\+?\d[\d\s().-]{6,}\d)\b/g, '[TEL]');
+    // Menciones @usuario
+    s = s.replace(/@[a-z0-9_\-.]+/gi, '[USER]');
+    return s;
+}
+
+function isNoisyOrTooShort(t) {
+    if (!t) return true;
+    const len = t.length;
+    if (len < 5) return true; // muy corto
+    // evitar respuestas triviales
+    const lower = t.toLowerCase();
+    const trivial = ['na', 'n/a', 'ninguna', 'no', 'none', 'sin', '—', '-', 'n/a.', 'ninguno'];
+    if (trivial.includes(lower)) return true;
+    return false;
+}
+
+function deduplicate(arr) {
+    const seen = new Set();
+    const out = [];
+    for (const item of arr) {
+        const key = item.toLowerCase();
+        if (!seen.has(key)) {
+            seen.add(key);
+            out.push(item);
+        }
+    }
+    return out;
+}
+
+function cleanOpenEndedData(openEndedDataRaw) {
+    const cleaned = {};
+    for (const key of Object.keys(openEndedDataRaw)) {
+        const arr = openEndedDataRaw[key]
+            .map(normalizeText)
+            .map(anonymizeText)
+            .filter(x => !isNoisyOrTooShort(x));
+        cleaned[key] = deduplicate(arr);
+    }
+    return cleaned;
 }

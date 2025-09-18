@@ -97,4 +97,22 @@ Esta es la última etapa, donde se unen los resultados de las fases anteriores.
 3.  **Configuración Centralizada:** mover valores mágicos a `config.js` (umbrales, pesos, límites IA, feature flags) con overrides por sector/cliente/entorno.
 4.  **Observabilidad:** incluir versionado de `schemaVersion`/`promptVersion`, logs estructurados y opción de persistir `rawAiResponse` en modo debug (sin PII).
 
-Con este diseño, tendrás un sistema robusto, trazable y gobernable capaz de generar análisis profundos y personalizados para cualquier empresa, manteniendo la coherencia y la calidad del reporte final.
+---
+
+#### **Fase 6: Preguntas Abiertas con Caché (Desacoplado)**
+
+Para controlar tiempos y costos, el pre‑análisis cualitativo de preguntas abiertas se separa en un script dedicado con caché reutilizable.
+
+1.  **Script dedicado:** `src/scripts/generate-open-ended.mjs`.
+    - Lee CSV, limpia/anonimiza/deduplica y ejecuta IA por lotes (batching + fusión).
+    - Escribe `src/data/openEnded.<reportId>.json` con estructura:
+      - `source`: { csvPath, csvHash, rowCount, generatedAt }
+      - `preguntas`: { D1_OPEN: { temas[], resumenGeneral, metricaSentimiento, citas } ... }
+      - `resumenGeneral` global.
+2.  **Caché por hash:** usa `csvHash` para evitar recomputar si los datos no cambian; `--force` fuerza regeneración.
+3.  **Integración en generador principal:**
+    - `generate-report.mjs` cargará `openEnded.<reportId>.json` si existe y lo inyectará al prompt principal.
+    - Flags: `--skip-open-ended` (omite uso), `--refresh-open-ended` (regenera antes de generar el reporte).
+4.  **Visualización:** componente `AnalisisCualitativo.astro` muestra temas, sentimiento y citas.
+
+Con este diseño, tendrás un sistema robusto, trazable y gobernable capaz de generar análisis profundos y personalizados para cualquier empresa, manteniendo la coherencia y la calidad del reporte final con tiempos de ejecución predecibles.

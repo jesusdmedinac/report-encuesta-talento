@@ -1,7 +1,7 @@
 {
   "header": {
     "empresa": "Banco de Guayaquil",
-    "fechaDiagnostico": "miércoles, 17 de septiembre de 2025",
+    "fechaDiagnostico": "jueves, 18 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
     "empleadosEvaluados": "2402",
@@ -9,30 +9,30 @@
     "model": "gemini-2.5-pro",
     "schemaVersion": "1.0.0",
     "promptVersion": "1.0.0",
-    "generatedAt": "2025-09-18T03:25:33.003Z"
+    "generatedAt": "2025-09-18T04:34:05.186Z"
   },
   "introduccion": {
     "titulo": "Introducción",
-    "contenido": "Le damos la bienvenida a los resultados de su Diagnóstico de Madurez Digital. Este informe ha sido diseñado para proporcionar una visión clara y objetiva del estado actual de su organización en su viaje de transformación. A través del análisis de los datos recopilados, hemos identificado tanto sus fortalezas consolidadas como las oportunidades estratégicas de crecimiento. Nuestro objetivo es que este documento sirva como una herramienta valiosa y un punto de partida para construir, de manera colaborativa, un plan de acción que impulse a su empresa hacia la excelencia digital."
+    "contenido": "Le damos la bienvenida a los resultados de su Diagnóstico de Madurez Digital. Este informe ha sido diseñado para proporcionarle una visión clara y accionable del estado actual de su organización en el panorama digital. El propósito de este análisis es identificar tanto las áreas de fortaleza que debemos potenciar como las oportunidades de mejora que nos permitirán acelerar su transformación. A lo largo de este documento, encontrará un análisis detallado y recomendaciones estratégicas para construir sobre sus sólidos cimientos y alcanzar nuevos niveles de eficiencia e innovación."
   },
   "brechaDigital": {
     "puntuacionEmpresa": 7.5,
     "puntuacionMetaSector": 9.38,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "Nivel Competitivo",
-    "textoOportunidadParrafo": "Con una puntuación general de 7.04 sobre 10, su organización se posiciona en un nivel competitivo. Sin embargo, la meta para los líderes del sector se sitúa en 9.38. Esta diferencia de 2.34 puntos no es una debilidad, sino la hoja de ruta que define su potencial de crecimiento. Cerrar esta brecha representa la oportunidad de pasar de ser un competidor sólido a un verdadero referente en la industria, optimizando la eficiencia, la innovación y la experiencia del cliente.",
-    "parrafo1": "El estado actual de su madurez digital se caracteriza por una base sólida pero un desarrollo desigual. Poseen fortalezas significativas en la cultura de apoyo y en competencias de datos fundamentales. No obstante, esta solidez se ve contrastada por brechas en áreas de ejecución clave, como la gestión de proyectos y la adopción de tecnologías específicas en roles comerciales y de soporte. Esto indica que la transformación ha avanzado en la mentalidad y las habilidades básicas, pero ahora requiere un impulso en la estandarización de procesos y la implementación de herramientas especializadas.",
-    "parrafo2": "Para cerrar la brecha digital, el enfoque recomendado es doble. Primero, es crucial capitalizar las fortalezas existentes, utilizando el alto interés en IA y el apoyo del liderazgo como motores para proyectos piloto de alto impacto. Segundo, se debe implementar un plan de acción dirigido a las áreas más débiles, como la capacitación en SEO, la formalización de la gestión de proyectos y la digitalización completa de las áreas de soporte. Este enfoque equilibrado asegurará que toda la organización avance de manera cohesionada, transformando el potencial en resultados tangibles."
+    "textoOportunidadParrafo": "Con una puntuación promedio de madurez digital consolidada, su organización se encuentra en un nivel competitivo. Sin embargo, existe una oportunidad significativa para ascender hacia la excelencia y convertirse en un líder del sector, cuya meta se sitúa en una puntuación de 9.38. Cerrar esta brecha no solo implica adoptar más tecnología, sino refinar la estrategia, unificar procesos y maximizar el potencial de su talento.",
+    "parrafo1": "El estado actual de su madurez digital se caracteriza por una base sólida y una alta capacidad de adaptación en sus equipos. Se observa un desempeño destacado en competencias de datos y una percepción positiva hacia la innovación. No obstante, esta madurez no es homogénea en toda la organización; existen 'islas' de excelencia junto a áreas, como Soporte Interno y ciertas funciones comerciales, que operan con un déficit digital significativo. Esta disparidad representa el principal obstáculo para una transformación cohesiva y de alto impacto.",
+    "parrafo2": "Para cerrar la brecha digital, el enfoque recomendado es doble. Primero, es crucial estandarizar y digitalizar los procesos en las áreas menos maduras para establecer una base operativa uniforme y eficiente. Segundo, se debe capitalizar el interés existente en tecnologías avanzadas como la IA, creando programas piloto estructurados que conviertan la curiosidad individual en valor de negocio tangible. Este enfoque pragmático asegurará tanto la solidez de los fundamentos como el liderazgo en la innovación."
   },
   "madurezDigital": {
     "puntuacionGeneral": 7.6,
     "nombreEmpresa": "Banco de Guayaquil",
-    "parrafoIntroductorio": "Con una puntuación promedio de 7.62 sobre 10 en la dimensión de Madurez Digital, la organización demuestra una capacidad notable para navegar en el entorno digital. Esta puntuación indica que los equipos son, en general, ágiles, capaces de resolver problemas de manera efectiva y comienzan a mostrar una mentalidad proactiva hacia la tecnología. Es un pilar fundamental sobre el cual se pueden construir iniciativas de transformación más ambiciosas, ya que refleja una mentalidad preparada para el cambio.",
+    "parrafoIntroductorio": "Con una puntuación general de 7.62 sobre 10 en Madurez Digital, la organización demuestra una capacidad notable para navegar en el entorno digital. Este resultado indica que sus colaboradores poseen una mentalidad ágil y están bien equipados para enfrentar los cambios tecnológicos. La fortaleza principal reside en la adaptabilidad, aunque existe una oportunidad para fomentar una mayor proactividad en la búsqueda y propuesta de soluciones digitales desde la base.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
         "puntuacion": 7.9,
-        "descripcion": "La puntuación de 7.92 en adaptabilidad es excelente y refleja una fuerza laboral flexible y abierta al cambio. El equipo se siente cómodo con nuevas herramientas y procesos. Para capitalizar esta fortaleza, se recomienda formalizar esta capacidad innata mediante la adopción de marcos de trabajo ágiles (Agile/Scrum) en áreas clave, transformando la reactividad positiva en una proactividad estructurada.",
+        "descripcion": "La puntuación de 7.92 en adaptabilidad es excelente y refleja una fuerza laboral flexible y abierta al cambio. Esta es una ventaja competitiva clave que debe ser aprovechada activamente. Se recomienda involucrar a los equipos en fases tempranas de la implementación de nuevas tecnologías para capitalizar su disposición y acelerar los procesos de adopción en toda la empresa.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -40,7 +40,7 @@
       {
         "nombre": "Resolucion De Problemas",
         "puntuacion": 7.6,
-        "descripcion": "Una puntuación de 7.6 en resolución de problemas indica una sólida competencia para enfrentar desafíos. Los equipos no solo identifican problemas, sino que también buscan soluciones de manera eficaz. El siguiente paso es enriquecer esta habilidad con un mayor uso de datos. Fomentar el uso de dashboards y herramientas de análisis para la toma de decisiones puede elevar la calidad y la velocidad de la resolución de problemas.",
+        "descripcion": "Con 7.6, la capacidad para resolver problemas utilizando herramientas digitales es sólida. El equipo no solo usa la tecnología para sus tareas, sino que la aplica para superar obstáculos. Para elevar esta competencia, se sugiere formalizar metodologías de 'problem-solving' que integren el análisis de datos como paso fundamental, promoviendo decisiones más informadas y estratégicas.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -48,7 +48,7 @@
       {
         "nombre": "Proactividad Digital",
         "puntuacion": 7.3,
-        "descripcion": "Con 7.33, la proactividad digital es el área con mayor oportunidad de crecimiento dentro de esta dimensión. Si bien el equipo es adaptable, podría ser más proactivo en la búsqueda y propuesta de nuevas soluciones tecnológicas. Para fomentarlo, se pueden crear espacios de innovación, como 'hackathons' internos o programas de intraemprendimiento, que incentiven y premien la exploración de nuevas tecnologías para resolver problemas de negocio.",
+        "descripcion": "La proactividad digital, con 7.33, es el área con mayor potencial de mejora dentro de esta dimensión. Si bien es una buena puntuación, indica que la iniciativa para buscar y proponer nuevas herramientas o mejoras de procesos digitales no está completamente generalizada. Fomentar una cultura de 'innovación ascendente', creando canales formales para que los empleados compartan ideas y experimenten, podría desbloquear un valor significativo.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
         "meta": 9.38
@@ -57,42 +57,42 @@
   },
   "competenciasDigitales": {
     "promedio": 7.8,
-    "nivelDesarrollo": "FUNDAMENTOS SÓLIDOS",
-    "descripcionPromedio": "La organización exhibe un nivel de competencias digitales muy sólido, con un promedio de 7.81 sobre 10. Este resultado es una de las mayores fortalezas identificadas en el diagnóstico. Indica que el personal no solo posee las habilidades técnicas necesarias en áreas cruciales como el análisis de datos y la ciberseguridad, sino que también entiende la importancia de la colaboración digital. Esta base de talento es el motor que puede y debe impulsar la adopción de tecnologías más complejas y la ejecución de la estrategia digital.",
+    "nivelDesarrollo": "FUNDAMENTOS ESTABLECIDOS",
+    "descripcionPromedio": "La organización presenta un promedio de 7.81 sobre 10 en competencias digitales fundamentales, lo que indica una base de talento muy sólida. Los colaboradores demuestran un alto dominio en el manejo, análisis y seguridad de la información digital. Esta robustez en las competencias transversales es un pilar esencial que facilita la implementación de cualquier iniciativa de transformación digital más compleja, reduciendo la fricción y maximizando las posibilidades de éxito.",
     "competencias": [
       {
         "name": "Analisis De Datos",
         "score": 79,
         "color": "#3498db",
-        "description": "Con una puntuación de 7.9, la capacidad de análisis de datos es avanzada. El equipo se siente cómodo interpretando información para la toma de decisiones. La recomendación es evolucionar de un análisis descriptivo (qué pasó) a un análisis predictivo y prescriptivo (qué pasará y qué debemos hacer), utilizando herramientas más sofisticadas y modelos de Machine Learning."
+        "description": "Con una puntuación de 7.9, la capacidad de análisis de datos es una fortaleza notable. El equipo es competente en la interpretación de información para la toma de decisiones. La recomendación es evolucionar de un análisis descriptivo a uno predictivo, invirtiendo en herramientas y capacitación que permitan anticipar tendencias y comportamientos."
       },
       {
         "name": "Alfabetizacion De Datos",
         "score": 78,
         "color": "#3498db",
-        "description": "Una puntuación de 7.8 en alfabetización de datos es un activo invaluable, demostrando que los equipos entienden y pueden comunicar información basada en datos. Para maximizar este potencial, se sugiere promover una cultura de 'data storytelling', capacitando a los líderes para que presenten insights de manera convincente y visual, asegurando que los datos impulsen la acción en todos los niveles."
+        "description": "La alfabetización de datos (7.8) es igualmente alta, lo que significa que los empleados entienden el valor de los datos y cómo utilizarlos en su día a día. Para consolidar esta fortaleza, se sugiere crear un glosario de datos unificado y promover la visualización de datos como el estándar para la comunicación de resultados en la organización."
       },
       {
         "name": "Colaboracion Digital",
         "score": 77,
         "color": "#3498db",
-        "description": "El nivel de colaboración digital, con 7.7, es robusto. Las herramientas de colaboración están siendo utilizadas de manera efectiva. La oportunidad aquí reside en la optimización de flujos de trabajo. Se recomienda realizar una auditoría de las herramientas actuales para asegurar que están plenamente integradas entre sí y con los procesos de negocio, eliminando silos de información y mejorando la eficiencia."
+        "description": "Un 7.7 en colaboración digital indica un uso efectivo de las plataformas disponibles para el trabajo en equipo. Los flujos de comunicación son eficientes. La oportunidad aquí reside en la optimización, explorando integraciones avanzadas entre herramientas y automatizando flujos de trabajo interdepartamentales para reducir aún más las fricciones operativas."
       },
       {
         "name": "Ciberseguridad",
         "score": 78,
         "color": "#3498db",
-        "description": "La puntuación de 7.82 en ciberseguridad es tranquilizadora y demuestra una alta conciencia sobre los riesgos digitales. Esta es una competencia que requiere atención constante. Se recomienda mantener este nivel de alerta mediante la implementación de simulacros de phishing periódicos y formaciones avanzadas sobre las nuevas amenazas, convirtiendo la ciberseguridad en un pilar de la cultura corporativa."
+        "description": "La ciberseguridad, con 7.82, es una competencia bien arraigada. Existe una conciencia clara sobre los riesgos y las buenas prácticas. El siguiente paso es mantener esta ventaja a través de formaciones continuas sobre amenazas emergentes (como el phishing basado en IA) y realizar simulacros periódicos para asegurar que el conocimiento se mantenga actualizado y aplicable."
       }
     ]
   },
   "usoInteligenciaArtificial": {
-    "resumen": "El análisis del uso de Inteligencia Artificial revela una paradoja fascinante y una oportunidad estratégica inmensa. Existe un entusiasmo y un interés por aprender (9.0) y una habilidad de uso (8.0) excepcionalmente altos, lo cual es un activo raro y valioso. Sin embargo, esto contrasta fuertemente con un bajo nivel de adopción real (4.55) y una percepción de riesgo moderada (5.07). <strong>La organización se encuentra en un punto de inflexión crucial: posee el talento y el interés para liderar con IA, pero necesita una estrategia clara para superar la brecha de adopción y convertir el potencial en una ventaja competitiva real.</strong>",
+    "resumen": "El panorama de la Inteligencia Artificial en la organización es un estudio de contrastes. Existe un extraordinario interés en aprender (9.0) y una alta habilidad de uso (8.0) entre quienes la emplean, junto con un enfoque responsable hacia la ética (8.0). Sin embargo, esto choca frontalmente con un nivel de adopción a nivel de procesos muy bajo (4.55). La oportunidad estratégica es clara: <strong>es imperativo construir un puente entre el enorme entusiasmo y la habilidad latente del equipo y la implementación formal de la IA para generar valor de negocio.</strong>",
     "graficos": [
       {
         "titulo": "Adopción y Curiosidad",
         "porcentaje": 62,
-        "descripcion": "Los datos de 'Adopción y Curiosidad' muestran un desequilibrio clave. El altísimo interés en aprender (9.0) choca con el bajo nivel de adopción (4.55), con la percepción de riesgo (5.07) actuando como un posible freno. Esto sugiere que el personal está listo y ansioso por usar IA, pero carece de las herramientas, los casos de uso definidos o la guía estratégica para hacerlo de manera segura y efectiva. La prioridad es crear un puente entre la curiosidad y la aplicación práctica.",
+        "descripcion": "El análisis de Adopción y Curiosidad revela una paradoja: mientras el interés por aprender sobre IA es casi perfecto (9.0), el nivel de adopción real en los procesos de la empresa es notablemente bajo (4.55). Esto sugiere que la barrera no es la falta de voluntad del equipo, sino probablemente la ausencia de una estrategia clara, casos de uso definidos o el acceso a las herramientas adecuadas. La percepción de riesgo, moderada (5.07), puede ser un factor contribuyente pero no prohibitivo.",
         "idGradiente": "gradient-adoption",
         "coloresGradiente": [
           "#10B981",
@@ -103,7 +103,7 @@
       {
         "titulo": "Uso y Aplicación",
         "porcentaje": 77,
-        "descripcion": "El análisis de 'Uso y Aplicación' es muy positivo. Una alta habilidad (8.0) combinada con una frecuencia de uso considerable (7.35) por parte de quienes ya utilizan la IA, indica que los 'early adopters' son altamente competentes y ven valor en las herramientas. El desafío no es la capacidad del usuario, sino la escalabilidad. La estrategia debe centrarse en democratizar el acceso a estas herramientas y compartir las mejores prácticas de los usuarios avanzados con el resto de la organización.",
+        "descripcion": "En Uso y Aplicación, los datos son muy positivos. La habilidad de uso (8.0) y la frecuencia (7.35) indican que los empleados que han adoptado la IA por su cuenta son 'power users'. No solo la utilizan a menudo, sino que lo hacen con gran competencia. Esto valida que la capacidad interna ya existe y está lista para ser escalada; el desafío es pasar de un uso individual y aislado a una aplicación estratégica y generalizada.",
         "idGradiente": "gradient-usage",
         "coloresGradiente": [
           "#F59E0B",
@@ -114,7 +114,7 @@
       {
         "titulo": "Ética y Verificación",
         "porcentaje": 80,
-        "descripcion": "La sección de 'Ética y Verificación' es una fortaleza sobresaliente, con una puntuación de 8.0. Esto demuestra un enfoque maduro y responsable hacia la IA, centrado en la calidad y la fiabilidad de los resultados. Esta base ética es un diferenciador competitivo fundamental que debe ser comunicado y utilizado como un pilar en la estrategia de gobernanza de IA, generando confianza tanto interna como externamente.",
+        "descripcion": "La alta puntuación en Ética y Verificación (8.0) es un activo estratégico fundamental. Demuestra que el equipo tiene una conciencia madura sobre la importancia de utilizar la IA de manera responsable, validando sus resultados y considerando sus implicaciones. Esta base ética sólida reduce significativamente los riesgos asociados a una adopción más amplia y debe ser un pilar central en la gobernanza de IA de la compañía.",
         "idGradiente": "gradient-ethics",
         "coloresGradiente": [
           "#8B5CF6",
@@ -126,19 +126,19 @@
   },
   "culturaOrganizacional": {
     "insights": {
-      "resumen": "La cultura organizacional es un pilar robusto para la transformación digital, con un promedio general de 7.6. Se destaca un excepcional apoyo de la organización y una visión clara por parte del liderazgo. Sin embargo, existe una oportunidad para fortalecer el ambiente de aprendizaje, asegurando que el apoyo estructural se traduzca en oportunidades de desarrollo de habilidades más formales y accesibles para todos.",
+      "resumen": "La cultura organizacional es un catalizador clave para la transformación digital, mostrando un fuerte apoyo directivo y una saludable apertura a la experimentación. Los empleados se sienten respaldados por la organización para adoptar nuevas tecnologías. Sin embargo, existe una clara oportunidad de mejora en la formalización de un ambiente de aprendizaje estructurado que vaya más allá del apoyo general y ofrezca rutas de desarrollo claras y accesibles para todos.",
       "puntos": [
         {
-          "icono": "🤝",
-          "texto": "Fuerte <strong>Apoyo Organizacional</strong> (8.18) para la transformación digital."
+          "icono": "🏢",
+          "texto": "Un sobresaliente <strong>Apoyo Organizacional</strong> con una puntuación de 8.18."
         },
         {
-          "icono": "🎯",
-          "texto": "Sólido <strong>Liderazgo y Visión</strong> (7.8) que guían el camino."
+          "icono": "🧪",
+          "texto": "Una sólida cultura de <strong>Experimentación</strong> que fomenta la innovación, con 7.7."
         },
         {
-          "icono": "🌱",
-          "texto": "Oportunidad de mejora en el <strong>Ambiente de Aprendizaje</strong> (6.83)."
+          "icono": "🎓",
+          "texto": "Oportunidad clave en el <strong>Ambiente de Aprendizaje</strong>, el área con menor puntuación (6.83)."
         }
       ]
     },
@@ -146,9 +146,9 @@
       {
         "titulo": "Apertura a la experimentación",
         "puntuacion": 7.7,
-        "fraseClave": "\"El error es el preludio de la innovación.\"",
-        "narrativa": "Con una puntuación de 7.7 en experimentación, la empresa ha creado un entorno seguro donde probar nuevas ideas es bienvenido. Esta es una base excelente para la innovación. Para llevarlo al siguiente nivel, se recomienda crear canales más formales para la experimentación, como 'sandboxes' tecnológicos, presupuestos de innovación para equipos o programas de 'intraemprendimiento' que permitan que las ideas más prometedoras se conviertan en proyectos reales.",
-        "etiquetaNivel": "Cultura Favorable",
+        "fraseClave": "La curiosidad es el motor del logro; aquí, ese motor está en marcha.",
+        "narrativa": "Con una puntuación de 7.7 en experimentación, la empresa demuestra una cultura que no teme probar cosas nuevas. Este es un terreno fértil para la innovación. Para potenciarlo, se recomienda formalizar esta apertura creando 'sandboxes' tecnológicos y programas piloto con objetivos claros pero con margen para el error. Celebrar tanto los éxitos como los aprendizajes de los fracasos reforzará aún más esta mentalidad.",
+        "etiquetaNivel": "Cultura Innovadora",
         "metricas": [],
         "colorIcono": "",
         "icono": ""
@@ -156,9 +156,9 @@
       {
         "titulo": "Formación y Apoyo",
         "puntuacion": 7.5,
-        "fraseClave": "\"Las herramientas son importantes, pero el conocimiento para usarlas lo es más.\"",
-        "narrativa": "Existe un contraste interesante entre el altísimo apoyo organizacional (8.18) y un ambiente de aprendizaje más moderado (6.83). Esto sugiere que la organización proporciona los recursos y el permiso para innovar, pero podría mejorar la forma en que estructura y promueve el aprendizaje continuo. Se recomienda implementar plataformas de e-learning, crear comunidades de práctica y programas de mentoría para asegurar que el desarrollo de habilidades digitales sea sistemático y no solo dependa de la iniciativa individual.",
-        "etiquetaNivel": "Soporte Estructural",
+        "fraseClave": "Se ha construido un puerto seguro (Apoyo), ahora es momento de trazar los mapas de navegación (Formación).",
+        "narrativa": "La brecha entre el altísimo Apoyo Organizacional (8.18) y el más modesto Ambiente de Aprendizaje (6.83) es reveladora. La organización ofrece los recursos y el respaldo, pero los empleados pueden no tener claro cómo acceder o aprovechar las oportunidades de formación. Se sugiere implementar una plataforma de aprendizaje centralizada (LMS), crear itinerarios formativos por rol y comunicar activamente las oportunidades de desarrollo disponibles.",
+        "etiquetaNivel": "Apoyo Sólido, Formación a Desarrollar",
         "metricas": [],
         "colorIcono": "",
         "icono": ""
@@ -166,9 +166,9 @@
       {
         "titulo": "Liderazgo y Visión",
         "puntuacion": 7.6,
-        "fraseClave": "\"Una visión sin ejecución es solo una alucinación.\"",
-        "narrativa": "El liderazgo de la empresa comunica una visión digital clara y motivadora (7.8). Para asegurar que esta visión se traduzca en acciones consistentes en toda la organización, es fundamental reforzar los mecanismos de reconocimiento (7.48). Celebrar públicamente los éxitos digitales, grandes y pequeños, y vincular los logros en transformación a las evaluaciones de desempeño puede alinear de manera más efectiva el comportamiento individual con los objetivos estratégicos.",
-        "etiquetaNivel": "Visión Clara",
+        "fraseClave": "La visión sin ejecución es una alucinación; aquí, la visión tiene un rumbo claro.",
+        "narrativa": "Las puntuaciones combinadas de Liderazgo y Visión (7.8) y Reconocimiento (7.48) indican que la dirección comunica eficazmente el rumbo digital y valora los esfuerzos en esta línea. Para fortalecer este pilar, se recomienda que los líderes no solo comuniquen la visión, sino que también actúen como 'sponsors' activos de iniciativas digitales clave y que el sistema de reconocimiento destaque explícitamente los comportamientos y resultados alineados con la transformación digital.",
+        "etiquetaNivel": "Liderazgo con Visión",
         "metricas": [],
         "colorIcono": "",
         "icono": ""
@@ -176,116 +176,91 @@
     ]
   },
   "planAccion": {
-    "resumenGeneral": "Este Plan de Acción está diseñado para transformar los insights de este diagnóstico en resultados tangibles. Se enfoca en un número limitado de iniciativas de alto impacto que abordan las oportunidades más críticas y capitalizan las fortalezas existentes. El objetivo es generar un impulso significativo en el corto y mediano plazo, sentando las bases para una madurez digital sostenible y un liderazgo sectorial.",
+    "resumenGeneral": "El siguiente plan de acción está diseñado para abordar las oportunidades más críticas identificadas en el diagnóstico. La estrategia se centrará en tres pilares interconectados: la digitalización de áreas fundamentales para establecer una base operativa homogénea, el fortalecimiento de competencias específicas para mejorar la ejecución comercial y de proyectos, y la creación de un marco para la adopción estratégica de la Inteligencia Artificial, convirtiendo el potencial latente en una ventaja competitiva real.",
     "iniciativas": [
       {
-        "id": "IA-001",
-        "titulo": "Programa de Adopción Estratégica de Inteligencia Artificial",
-        "descripcion": "Capitaliza el extraordinario interés y habilidad del equipo (9.0 y 8.0) para cerrar la brecha de adopción (4.55). Esta iniciativa identificará casos de uso de alto valor, creará un marco de gobernanza para mitigar riesgos (5.07) y proporcionará las herramientas y la formación necesarias para escalar el uso de la IA de manera segura y efectiva.",
-        "areaEnfoque": "Uso de Inteligencia Artificial",
+        "id": "HR-001",
+        "titulo": "Digitalización Integral de Procesos de Soporte Interno (RRHH)",
+        "descripcion": "Esta iniciativa aborda la brecha digital crítica en el área de Soporte Interno, que actualmente carece de herramientas especializadas (puntuación 0.0). Se implementarán plataformas tecnológicas fundamentales para la gestión de personal (HRIS), reclutamiento digital y capacitación, sentando las bases para una gestión de talento moderna y eficiente.",
+        "areaEnfoque": "Procesos y Herramientas",
         "objetivosClave": [
-          "Identificar y priorizar 5 casos de uso de IA con ROI claro.",
-          "Desarrollar y comunicar una guía de uso ético y responsable de la IA.",
-          "Implementar 2 proyectos piloto de IA en áreas clave como operaciones o marketing.",
-          "Capacitar al 40% del personal en herramientas de IA generativa."
+          "Seleccionar e implementar un sistema de información de RRHH (HRIS).",
+          "Digitalizar y optimizar el ciclo completo de reclutamiento y selección.",
+          "Lanzar una plataforma de aprendizaje en línea (LMS) con contenido relevante.",
+          "Establecer un sistema de gestión documental centralizado y seguro."
         ],
         "metricasExito": [
           {
-            "metrica": "Nivel de Adopción de IA",
-            "valorObjetivo": "De 4.55 a 7.0"
+            "metrica": "Puntuación de uso de herramientas digitales en Soporte Interno",
+            "valorObjetivo": "De 0.0 a 6.0"
           },
           {
-            "metrica": "Número de procesos de negocio optimizados con IA",
-            "valorObjetivo": "3 procesos clave"
+            "metrica": "Tiempo promedio para cubrir una vacante",
+            "valorObjetivo": "Reducción del 30%"
           }
         ],
-        "responsableSugerido": "Comité de Innovación / CTO",
-        "plazoEstimado": "6-9 meses",
+        "responsableSugerido": "Dirección de Recursos Humanos / IT",
+        "plazoEstimado": "9-12 meses",
         "prioridad": "Alta"
       },
       {
-        "id": "MKT-002",
-        "titulo": "Programa de Impulso a la Visibilidad Digital y Marketing de Resultados",
-        "descripcion": "Aborda la debilidad crítica en el uso de SEO (4.3) y fortalece otras áreas del rol comercial. La iniciativa se centrará en desarrollar una estrategia SEO integral, capacitar al equipo en analítica de clientes y optimizar el uso de herramientas de automatización de marketing y gestión de medios pagados para impulsar el crecimiento.",
-        "areaEnfoque": "Capacidades de Roles (Comercial y Cliente)",
+        "id": "IA-001",
+        "titulo": "Programa Acelerador de Adopción de Inteligencia Artificial",
+        "descripcion": "Para cerrar la brecha entre el alto interés (9.0) y la baja adopción (4.55) de la IA, esta iniciativa lanzará una serie de proyectos piloto estructurados en departamentos clave. El objetivo es demostrar el valor de negocio de la IA en casos de uso concretos, desarrollar competencias prácticas y crear una guía de buenas prácticas para su escalado en la organización.",
+        "areaEnfoque": "Uso de Inteligencia Artificial",
         "objetivosClave": [
-          "Implementar una estrategia SEO on-page y off-page.",
-          "Capacitar al equipo comercial en el uso avanzado de CRM y analítica de clientes.",
-          "Automatizar 3 flujos de nutrición de leads.",
-          "Mejorar el ROI de la inversión en paid media en un 15%."
+          "Identificar y priorizar 3-5 casos de uso de IA con alto potencial de ROI.",
+          "Formar equipos multifuncionales para la ejecución de los pilotos.",
+          "Medir y comunicar el impacto de los pilotos en la eficiencia y los resultados.",
+          "Desarrollar un marco ético y de gobernanza para el uso de la IA."
         ],
         "metricasExito": [
           {
-            "metrica": "Puntuación de competencia en 'Uso de SEO'",
-            "valorObjetivo": "De 4.3 a 7.0"
+            "metrica": "Nivel de Adopción de IA en procesos",
+            "valorObjetivo": "De 4.55 a 6.5"
           },
           {
-            "metrica": "Tráfico orgánico cualificado",
-            "valorObjetivo": "Aumento del 30%"
-          },
-          {
-            "metrica": "Tasa de conversión de MQL a SQL",
-            "valorObjetivo": "Aumento del 20%"
+            "metrica": "Número de procesos de negocio mejorados con IA",
+            "valorObjetivo": "Al menos 3"
           }
         ],
-        "responsableSugerido": "Director Comercial / CMO",
+        "responsableSugerido": "Comité de Innovación / CTO",
         "plazoEstimado": "6 meses",
         "prioridad": "Alta"
       },
       {
-        "id": "PM-003",
-        "titulo": "Estandarización de la Gestión de Proyectos Digitales",
-        "descripcion": "Responde a la baja puntuación en Gestión de Proyectos (5.3). Esta iniciativa busca implementar una metodología ágil estandarizada (ej. Scrum) y una herramienta de gestión de proyectos centralizada para mejorar la visibilidad, la colaboración y la eficiencia en la ejecución de iniciativas digitales en toda la organización.",
-        "areaEnfoque": "Capacidades de Roles (Mandos Medios)",
+        "id": "CD-001",
+        "titulo": "Fortalecimiento de Competencias Comerciales y de Gestión de Proyectos",
+        "descripcion": "Esta iniciativa se enfoca en elevar las capacidades en áreas de bajo rendimiento que impactan directamente en los resultados, como el uso de SEO (4.3) y la gestión de proyectos por mandos medios (5.3). Se implementará un programa de upskilling intensivo, acompañado de la estandarización de herramientas y metodologías.",
+        "areaEnfoque": "Competencias Digitales",
         "objetivosClave": [
-          "Seleccionar e implementar una plataforma de gestión de proyectos.",
-          "Certificar al 80% de los mandos medios como Scrum Masters o Product Owners.",
-          "Reducir el tiempo promedio de ciclo de los proyectos en un 20%.",
-          "Asegurar que el 100% de los proyectos estratégicos se gestionen en la nueva plataforma."
+          "Capacitar al equipo comercial en estrategias y herramientas de SEO y Paid Media.",
+          "Estandarizar una metodología de gestión de proyectos (ej. Agile/Scrum).",
+          "Implementar una herramienta centralizada para la gestión y seguimiento de proyectos.",
+          "Crear dashboards para monitorizar el rendimiento de campañas y proyectos."
         ],
         "metricasExito": [
           {
-            "metrica": "Puntuación de competencia en 'Gestión de Proyectos'",
+            "metrica": "Puntuación de uso de SEO",
+            "valorObjetivo": "De 4.3 a 7.0"
+          },
+          {
+            "metrica": "Puntuación de Gestión de Proyectos",
             "valorObjetivo": "De 5.3 a 7.5"
           },
           {
-            "metrica": "Porcentaje de proyectos entregados a tiempo y en presupuesto",
-            "valorObjetivo": "Del 60% al 85%"
+            "metrica": "Tasa de cumplimiento de hitos de proyecto",
+            "valorObjetivo": "Aumento del 25%"
           }
         ],
-        "responsableSugerido": "Oficina de Proyectos (PMO) / COO",
+        "responsableSugerido": "Dirección Comercial / Oficina de Proyectos (PMO)",
         "plazoEstimado": "3-6 meses",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "HR-004",
-        "titulo": "Digitalización Integral de Procesos de Soporte Interno",
-        "descripcion": "Esta iniciativa fundacional aborda la ausencia total de digitalización en el área de Soporte Interno (puntuaciones de 0). Se enfoca en la implementación de tecnologías clave como un Sistema de Información de RRHH (HRIS), plataformas de reclutamiento digital y un sistema de gestión documental para modernizar el área y mejorar la experiencia del empleado.",
-        "areaEnfoque": "Capacidades de Roles (Soporte Interno)",
-        "objetivosClave": [
-          "Implementar un HRIS para centralizar la información de empleados.",
-          "Digitalizar el proceso de reclutamiento de extremo a extremo.",
-          "Lanzar una plataforma de capacitación online (LMS) con al menos 10 cursos disponibles.",
-          "Reducir el uso de papel en procesos de RRHH en un 80%."
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Puntuación de madurez general del rol 'Soporte Interno'",
-            "valorObjetivo": "De 0 a 6.0"
-          },
-          {
-            "metrica": "Tiempo promedio para cubrir una vacante",
-            "valorObjetivo": "Reducción del 25%"
-          }
-        ],
-        "responsableSugerido": "Director de Recursos Humanos",
-        "plazoEstimado": "9-12 meses",
         "prioridad": "Media"
       }
     ]
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "Este diagnóstico de madurez digital revela una organización en una posición competitiva y con un potencial de crecimiento significativo. Se observan fortalezas notables en la cultura organizacional, particularmente en el apoyo percibido desde la dirección y en el gran interés y habilidad del equipo para adoptar tecnologías avanzadas como la Inteligencia Artificial. La plantilla demuestra una alta capacidad de adaptación y sólidas competencias en áreas fundamentales como el análisis de datos y la ciberseguridad, lo que constituye una base excelente para futuras iniciativas.\n\nSin embargo, el análisis también identifica áreas de oportunidad claras que requieren atención estratégica. Existe una brecha considerable entre el alto interés en la IA y su nivel de adopción real, lo que sugiere una falta de estrategia o de casos de uso definidos. Además, se detectan debilidades en capacidades específicas como la optimización para motores de búsqueda (SEO) y la gestión formal de proyectos. La digitalización de áreas de soporte interno, como Recursos Humanos, representa una brecha crítica que debe ser abordada para lograr una transformación homogénea.\n\nEn resumen, la organización cuenta con el capital humano y la disposición cultural necesarios para acelerar su transformación digital. El camino a seguir implica capitalizar el entusiasmo existente mediante la implementación de un plan de acción enfocado, que estructure la innovación, estandarice procesos clave y fortalezca las competencias específicas más débiles. Con un enfoque estratégico, la empresa está bien posicionada para cerrar la brecha con los líderes del sector y consolidar su ventaja competitiva en el mercado.",
+    "resumenGeneral": "Este diagnóstico de madurez digital revela una organización con una base sólida y un capital humano con una notable capacidad de adaptación y habilidad en el uso de tecnologías emergentes. Los resultados indican fortalezas significativas en áreas como el apoyo organizacional, la colaboración y una excepcional curiosidad por la inteligencia artificial. Esta disposición positiva es un activo invaluable que posiciona a la empresa favorablemente para acelerar su transformación digital.\n\nSin embargo, el análisis también identifica brechas estratégicas que requieren atención prioritaria. La más destacada es la desconexión entre el alto interés y la habilidad en IA y su bajo nivel de adopción formal en los procesos de negocio. Asimismo, existen debilidades puntuales en competencias críticas como la gestión de proyectos y el marketing digital (SEO), además de una ausencia casi total de herramientas digitales en las áreas de soporte interno, lo que representa un riesgo de eficiencia y una barrera para la escalabilidad.\n\nEl camino a seguir es claro y prometedor. Capitalizando el entusiasmo y las competencias existentes, el enfoque debe centrarse en formalizar la experimentación, implementar herramientas estandarizadas en las áreas rezagadas y lanzar programas de capacitación específicos. Al cerrar estas brechas, la organización no solo optimizará sus operaciones internas, sino que también desbloqueará nuevas oportunidades de crecimiento y consolidará una ventaja competitiva sostenible en el mercado.",
     "puntuacionGeneral": {
       "puntuacion": 7.5
     },
@@ -312,16 +287,16 @@
       }
     ],
     "fortalezas": [
-      "Excepcional interés del equipo en aprender sobre Inteligencia Artificial (9.0/10), indicando una alta receptividad a la innovación.",
-      "Fuerte apoyo organizacional percibido para la transformación digital (8.18/10), creando un ambiente propicio para el cambio.",
-      "Capacidades avanzadas en monitoreo de rendimiento y optimización de la colaboración (8.43/10 y 8.32/10 respectivamente) en los mandos medios.",
-      "Sólida base de competencias digitales en análisis de datos, alfabetización de datos y ciberseguridad (promedio de 7.81/10)."
+      "Excepcional Interés en Aprendizaje sobre IA, demostrando una alta curiosidad y disposición del equipo (9.0/10).",
+      "Sólido Apoyo Organizacional para la adopción de nuevas tecnologías y formas de trabajo (8.18/10).",
+      "Alta Habilidad de Uso de la Inteligencia Artificial entre los colaboradores que ya la utilizan (8.0/10).",
+      "Competencias fundamentales robustas en Análisis y Alfabetización de Datos (7.9 y 7.8/10 respectivamente)."
     ],
     "oportunidades": [
-      "Cerrar la brecha entre el alto interés en IA y su bajo nivel de adopción actual (4.55/10) mediante una estrategia de implementación clara.",
-      "Fortalecer las capacidades de marketing digital, especialmente en SEO, donde la puntuación es críticamente baja (4.3/10).",
-      "Mejorar y estandarizar las metodologías de gestión de proyectos, una competencia con margen de mejora en los mandos medios (5.3/10).",
-      "Digitalizar de manera urgente las funciones de Soporte Interno (RRHH), que actualmente carecen de herramientas y procesos digitales (puntuaciones de 0/10)."
+      "Digitalización del rol de Soporte Interno (RRHH), que actualmente carece de herramientas digitales (puntuación de 0.0/10).",
+      "Incrementar el bajo Nivel de Adopción de la Inteligencia Artificial a nivel de procesos de negocio (4.55/10).",
+      "Mejorar las competencias del equipo Comercial en el Uso de SEO, un área de bajo desempeño actual (4.3/10).",
+      "Fortalecer la Gestión de Proyectos en los Mandos Medios para mejorar la ejecución y entrega (5.3/10)."
     ]
   },
   "footer": {

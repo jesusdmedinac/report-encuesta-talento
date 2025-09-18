@@ -44,10 +44,8 @@ async function main() {
         // 4. Realizar Análisis
         console.log('Realizando análisis cuantitativo...');
         const quantitativeResults = performQuantitativeAnalysis(quantitativeData, mappings);
-        // TODO: Usar openEndedData en el análisis cualitativo
-
         console.log('Realizando análisis cualitativo...');
-        const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults);
+        const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, openEndedData);
         // Validación mínima del output de IA
         try {
             validateAiResponse(qualitativeResults);

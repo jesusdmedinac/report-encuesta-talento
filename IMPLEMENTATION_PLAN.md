@@ -79,3 +79,15 @@ Para finalizar, haremos que el script sea fácil de usar y documentaremos su fun
 -   [ ] Configuración centralizada: mover valores mágicos a `config.js` (umbrales, pesos, límites IA, feature flags) con overrides por sector/cliente/entorno.
 -   [ ] Trazabilidad: ampliar `header` con `schemaVersion`, `promptVersion`, `provider`, `model`, `generatedAt`; opción de guardar `rawAiResponse` en modo debug (sin PII).
 -   [ ] Pruebas mínimas: unit tests en `csv-processor` y `report-builder`, snapshots del JSON final y render tests de componentes clave.
+
+## Fase 8: Script de Preguntas Abiertas con Caché
+
+-   [ ] Script dedicado `src/scripts/generate-open-ended.mjs` para procesar abiertas:
+    - Limpieza/anonimización/deduplicación (ya en `csv-processor`).
+    - Batching a IA por pregunta (lotes) y fusión de resultados.
+    - Esquema de salida: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt), `preguntas` y `resumenGeneral`.
+-   [ ] Hash de contenido (`csvHash`) y reutilización del caché por defecto; `--force` para regenerar.
+-   [ ] Integración en el generador principal:
+    - Cargar caché si existe y enriquecer el prompt principal.
+    - Flags: `--skip-open-ended` (omite), `--refresh-open-ended` (regenera antes de generar).
+-   [ ] Componente `src/components/AnalisisCualitativo.astro` para visualizar temas, sentimiento y citas.

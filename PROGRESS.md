@@ -37,12 +37,13 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [x] Validar el objeto final consumido por los componentes antes de escribir el archivo.
     -   [x] Añadir `schemaVersion` y `promptVersion` al `header` para trazabilidad.
 
-2.  **Análisis y Visualización de Preguntas Abiertas:**
-    -   [ ] `csv-processor.js`: extracción, normalización, anonimización y deduplicación de texto libre.
-    -   [ ] `ai-analyzer.js`: batching/resumen por lotes, fusión de temas y control de tokens.
-    -   [ ] Generar `analisisCualitativo` con estructura: `temas` [{ id, etiqueta, palabrasClave, conteo, sentimiento, citas }], `resumenGeneral`, `metricaSentimiento`.
+2.  **Análisis y Visualización de Preguntas Abiertas (con caché):**
+    -   [x] `csv-processor.js`: extracción, normalización, anonimización y deduplicación de texto libre.
+    -   [ ] Script dedicado `src/scripts/generate-open-ended.mjs` para pre‑análisis por lotes (IA) y generación de caché.
+    -   [ ] Salida de caché: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt) + `preguntas` + `resumenGeneral`.
+    -   [ ] Flags en el generador principal: `--skip-open-ended` (omite) y `--refresh-open-ended` (regenera caché).
+    -   [ ] Carga del caché en `generate-report.mjs` y uso para enriquecer el prompt principal y la sección `AnalisisCualitativo`.
     -   [ ] Crear `src/components/AnalisisCualitativo.astro` para visualizar insights.
-    -   [ ] Integrar el componente en la página del reporte y enriquecer el prompt principal con estos insights.
 
 3.  **Configuración y Parametrización:**
     -   [x] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js` con overrides por sector/cliente/entorno.

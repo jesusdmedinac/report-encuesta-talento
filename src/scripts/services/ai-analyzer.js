@@ -3,6 +3,7 @@ import OpenAI from 'openai';
 import fs from 'fs';
 import path from 'path';
 import { scaleToTen } from '../utils.js';
+import { IA_CHARTS } from '../config.js';
 
 /**
  * Inicializa y devuelve un cliente de IA basado en el proveedor especificado.
@@ -76,11 +77,22 @@ function scaleScores(data) {
  * @param {Object} quantitativeResults - Los resultados del análisis cuantitativo (escala 1-4).
  * @returns {Promise<Object>} - Una promesa que resuelve al objeto con los textos generados.
  */
-export async function performQualitativeAnalysis(provider, aiClient, modelName, quantitativeResults) {
+export async function performQualitativeAnalysis(provider, aiClient, modelName, quantitativeResults, openEndedData) {
     console.log('Iniciando análisis cualitativo con IA...');
 
     // Escala los resultados a una base de 10 para la IA
     const scaledResults = scaleScores(quantitativeResults);
+
+    // Pre-análisis de preguntas abiertas si existen datos
+    let analisisCualitativo = undefined;
+    try {
+        if (openEndedData && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
+            analisisCualitativo = await preAnalyzeOpenEnded(provider, aiClient, modelName, openEndedData);
+            console.log('Pre-análisis cualitativo completado.');
+        }
+    } catch (e) {
+        console.warn('Pre-análisis cualitativo falló, se continúa sin analisisCualitativo:', e.message);
+    }
 
     const comprehensivePrompt = `
         Eres un consultor experto en transformación digital.
@@ -90,6 +102,8 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
 
         Resultados Cuantitativos (promedios en escala de 1 a 10):
         ${JSON.stringify(scaledResults, null, 2)}
+
+        ${analisisCualitativo ? `\nInsights Cualitativos resumidos de respuestas abiertas:\n${JSON.stringify(analisisCualitativo, null, 2)}\n` : ''}
 
         Instrucciones para el contenido del JSON:
         1.  **resumenEjecutivo**: Un objeto que contenga tres propiedades:
@@ -184,6 +198,9 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         try {
             const insights = JSON.parse(repaired);
             console.log('Textos cualitativos generados y parseados correctamente.');
+            if (analisisCualitativo) {
+                insights.analisisCualitativo = analisisCualitativo;
+            }
             return insights;
         } catch (parseErr) {
             console.error('Fallo al parsear JSON de IA tras reparación. Mensaje:', parseErr.message);
@@ -215,4 +232,125 @@ function sanitizeJsonLike(text) {
         t = t.slice(start, end + 1);
     }
     return t;
+}
+
+// --- Pre-análisis por lotes de preguntas abiertas ---
+async function preAnalyzeOpenEnded(provider, aiClient, modelName, openEndedData) {
+    const result = { preguntas: {}, resumenGeneral: '', metricaSentimiento: 'neutral' };
+    for (const [code, responses] of Object.entries(openEndedData)) {
+        if (!Array.isArray(responses) || responses.length === 0) continue;
+        const batches = batchStrings(responses, 10000, 80); // char limit aprox y tamaño
+        const partials = [];
+        for (const batch of batches) {
+            const prompt = buildOpenEndedPrompt(code, batch);
+            const jsonText = await callJson(provider, aiClient, modelName, prompt);
+            const repaired = sanitizeJsonLike(jsonText);
+            try {
+                const parsed = JSON.parse(repaired);
+                partials.push(parsed);
+            } catch (e) {
+                console.warn(`No se pudo parsear batch de ${code}:`, e.message);
+            }
+        }
+        result.preguntas[code] = mergeThemePartials(partials);
+    }
+    // Resumen general básico a partir de etiquetas
+    try {
+        const labels = Object.values(result.preguntas)
+            .flatMap(q => (q.temas || []).map(t => t.etiqueta))
+            .filter(Boolean);
+        if (labels.length) {
+            const uniq = Array.from(new Set(labels)).slice(0, 8).join(', ');
+            result.resumenGeneral = `Temas recurrentes: ${uniq}.`;
+        }
+    } catch {}
+    return result;
+}
+
+function batchStrings(items, maxChars = 10000, maxItems = 80) {
+    const batches = [];
+    let current = [];
+    let chars = 0;
+    for (const s of items) {
+        const c = s.length + 1;
+        if (current.length && (chars + c > maxChars || current.length >= maxItems)) {
+            batches.push(current);
+            current = [];
+            chars = 0;
+        }
+        current.push(s);
+        chars += c;
+    }
+    if (current.length) batches.push(current);
+    return batches;
+}
+
+function buildOpenEndedPrompt(code, responsesBatch) {
+    return `Eres un analista de insights cualitativos.
+Analiza las siguientes respuestas (anonimizadas) a la pregunta ${code}.
+Devuelve SOLO JSON con la forma: {"temas":[{"id":"T-001","etiqueta":"...","palabrasClave":["..."],"conteo":12,"sentimiento":"positivo|neutral|negativo","citas":["..."]}],"resumenGeneral":"...","metricaSentimiento":"positivo|neutral|negativo"}
+Respuestas:
+${JSON.stringify(responsesBatch, null, 2)}
+`;
+}
+
+async function callJson(provider, aiClient, modelName, prompt) {
+    switch (provider) {
+        case 'gemini': {
+            const res = await aiClient.generateContent(prompt);
+            const r = await res.response;
+            return r.text();
+        }
+        case 'openai': {
+            const res = await aiClient.chat.completions.create({
+                model: modelName,
+                messages: [{ role: 'user', content: prompt }],
+                response_format: { type: 'json_object' },
+            });
+            return res.choices[0].message.content || '';
+        }
+        default:
+            throw new Error(`Proveedor no soportado: ${provider}`);
+    }
+}
+
+function mergeThemePartials(partials) {
+    const out = { temas: [], resumenGeneral: '', metricaSentimiento: 'neutral' };
+    const map = new Map();
+    let sentiments = [];
+    for (const p of partials) {
+        const temas = Array.isArray(p.temas) ? p.temas : [];
+        for (const t of temas) {
+            const key = String(t.etiqueta || t.id || '').toLowerCase().trim();
+            if (!key) continue;
+            if (!map.has(key)) map.set(key, { id: t.id || `T-${map.size+1}`, etiqueta: t.etiqueta || key, palabrasClave: new Set(), conteo: 0, sentimiento: 'neutral', citas: [] });
+            const agg = map.get(key);
+            agg.conteo += Number(t.conteo || 0);
+            (t.palabrasClave || []).forEach(k => agg.palabrasClave.add(String(k)));
+            if (Array.isArray(t.citas)) {
+                for (const c of t.citas) {
+                    if (agg.citas.length < 3) agg.citas.push(String(c));
+                }
+            }
+        }
+        if (p.metricaSentimiento) sentiments.push(p.metricaSentimiento);
+        if (p.resumenGeneral && !out.resumenGeneral) out.resumenGeneral = p.resumenGeneral;
+    }
+    out.temas = Array.from(map.values()).map(x => ({ ...x, palabrasClave: Array.from(x.palabrasClave) }));
+    if (!out.resumenGeneral && out.temas.length) {
+        const labs = out.temas.slice(0, 6).map(t => t.etiqueta).join(', ');
+        out.resumenGeneral = `Temas más frecuentes: ${labs}.`;
+    }
+    out.metricaSentimiento = majoritySentiment(sentiments);
+    return out;
+}
+
+function majoritySentiment(arr) {
+    const counts = { positivo: 0, neutral: 0, negativo: 0 };
+    for (const s of arr) {
+        const k = (String(s).toLowerCase());
+        if (counts[k] !== undefined) counts[k] += 1;
+    }
+    const entries = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+    return entries[0][0];
 }
