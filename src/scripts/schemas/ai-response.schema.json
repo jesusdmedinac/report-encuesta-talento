@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/ai-response.schema.json",
+  "title": "AIResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "resumenEjecutivo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "resumenGeneral": { "type": "string" },
+        "fortalezas": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "oportunidades": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["resumenGeneral", "fortalezas", "oportunidades"]
+    },
+    "introduccion": { "type": "string" },
+    "brechaDigital": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "textoNivelActual": { "type": "string" },
+        "textoOportunidadParrafo": { "type": "string" },
+        "parrafo1": { "type": "string" },
+        "parrafo2": { "type": "string" }
+      },
+      "required": ["textoNivelActual", "textoOportunidadParrafo", "parrafo1", "parrafo2"]
+    },
+    "madurezDigital": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "parrafoIntroductorio": { "type": "string" },
+        "componentes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "nombre": { "type": "string" },
+              "descripcion": { "type": "string" }
+            },
+            "required": ["nombre", "descripcion"]
+          }
+        }
+      },
+      "required": ["parrafoIntroductorio", "componentes"]
+    },
+    "competenciasDigitales": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nivelDesarrollo": { "type": "string" },
+        "descripcionPromedio": { "type": "string" },
+        "competencias": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" }
+            },
+            "required": ["name", "description"]
+          }
+        }
+      },
+      "required": ["nivelDesarrollo", "descripcionPromedio", "competencias"]
+    },
+    "usoInteligenciaArtificial": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "resumen": { "type": "string" },
+        "graficos": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "descripcion": { "type": "string" }
+            },
+            "required": ["descripcion"]
+          }
+        }
+      },
+      "required": ["resumen", "graficos"]
+    },
+    "culturaOrganizacional": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "insights": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "resumen": { "type": "string" },
+            "puntos": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["resumen", "puntos"]
+        },
+        "tarjetas": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "fraseClave": { "type": "string" },
+              "narrativa": { "type": "string" },
+              "etiquetaNivel": { "type": "string" }
+            },
+            "required": ["narrativa"]
+          }
+        }
+      },
+      "required": ["insights", "tarjetas"]
+    },
+    "planAccion": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "resumenGeneral": { "type": "string" },
+        "iniciativas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "id": { "type": "string" },
+              "titulo": { "type": "string" },
+              "descripcion": { "type": "string" },
+              "areaEnfoque": { "type": "string" },
+              "objetivosClave": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "metricasExito": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "metrica": { "type": "string" },
+                    "valorObjetivo": { "type": "string" }
+                  },
+                  "required": ["metrica", "valorObjetivo"]
+                }
+              },
+              "responsableSugerido": { "type": "string" },
+              "plazoEstimado": { "type": "string" },
+              "prioridad": { "type": "string", "enum": ["Alta", "Media", "Baja"] }
+            },
+            "required": [
+              "id",
+              "titulo",
+              "descripcion",
+              "areaEnfoque",
+              "objetivosClave",
+              "metricasExito",
+              "responsableSugerido",
+              "plazoEstimado",
+              "prioridad"
+            ]
+          }
+        }
+      },
+      "required": ["resumenGeneral", "iniciativas"]
+    }
+  },
+  "required": [
+    "resumenEjecutivo",
+    "introduccion",
+    "brechaDigital",
+    "madurezDigital",
+    "competenciasDigitales",
+    "usoInteligenciaArtificial",
+    "culturaOrganizacional",
+    "planAccion"
+  ]
+}
+
