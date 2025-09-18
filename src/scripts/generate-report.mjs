@@ -5,7 +5,7 @@ import path from 'path';
 import { MAPPINGS_PATH } from './config.js';
 import { getArgument, loadJson } from './utils.js';
 import { loadAndProcessCsv, performQuantitativeAnalysis } from './services/csv-processor.js';
-import { initializeAiClient, performQualitativeAnalysis } from './services/ai-analyzer.js';
+import { initializeAiClient, performQualitativeAnalysis, preAnalyzeOpenEnded } from './services/ai-analyzer.js';
 import { generateReportJson } from './services/report-builder.js';
 import { validateAiResponse, validateFinalReport } from './services/validator.js';
 
@@ -23,6 +23,8 @@ async function main() {
         const csvFilePath = getArgument('--csv');
         const empresaNombre = getArgument('--empresa');
         const reportId = getArgument('--reportId');
+        const skipOpenEnded = process.argv.includes('--skip-open-ended');
+        const refreshOpenEnded = process.argv.includes('--refresh-open-ended');
 
         if (!csvFilePath || !empresaNombre || !reportId) {
             throw new Error('Faltan argumentos obligatorios. Se requiere --csv, --empresa, y --reportId.');
@@ -44,8 +46,38 @@ async function main() {
         // 4. Realizar Análisis
         console.log('Realizando análisis cuantitativo...');
         const quantitativeResults = performQuantitativeAnalysis(quantitativeData, mappings);
+        // Manejo de caché para abiertas
+        const openEndedCachePath = path.join(process.cwd(), 'src', 'data', `openEnded.${reportId}.json`);
+        let openEndedAnalysis = null;
+        if (!skipOpenEnded) {
+            if (!refreshOpenEnded && fs.existsSync(openEndedCachePath)) {
+                try {
+                    openEndedAnalysis = JSON.parse(fs.readFileSync(openEndedCachePath, 'utf8'));
+                    console.log(`Cargando caché de abiertas desde ${openEndedCachePath}`);
+                } catch (e) {
+                    console.warn('No se pudo leer el caché de abiertas. Se intentará regenerar.', e.message);
+                }
+            }
+            if (!openEndedAnalysis && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
+                console.log('Generando pre‑análisis de abiertas (sin script externo)...');
+                openEndedAnalysis = await preAnalyzeOpenEnded(provider, aiClient, effectiveModelName, openEndedData);
+                try {
+                    fs.writeFileSync(openEndedCachePath, JSON.stringify({
+                        source: { csvPath: csvFilePath, rowCount: quantitativeData.length, generatedAt: new Date().toISOString() },
+                        ...openEndedAnalysis,
+                    }, null, 2), 'utf8');
+                    console.log(`Caché de abiertas guardado en ${openEndedCachePath}`);
+                } catch {}
+            }
+        } else {
+            console.log('Flag --skip-open-ended activo: se omite el pre‑análisis de abiertas.');
+        }
+
         console.log('Realizando análisis cualitativo...');
-        const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, openEndedData);
+        const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults, null);
+        if (openEndedAnalysis) {
+            qualitativeResults.analisisCualitativo = openEndedAnalysis;
+        }
         // Validación mínima del output de IA
         try {
             validateAiResponse(qualitativeResults);

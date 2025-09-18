@@ -235,7 +235,7 @@ function sanitizeJsonLike(text) {
 }
 
 // --- Pre-análisis por lotes de preguntas abiertas ---
-async function preAnalyzeOpenEnded(provider, aiClient, modelName, openEndedData) {
+export async function preAnalyzeOpenEnded(provider, aiClient, modelName, openEndedData) {
     const result = { preguntas: {}, resumenGeneral: '', metricaSentimiento: 'neutral' };
     for (const [code, responses] of Object.entries(openEndedData)) {
         if (!Array.isArray(responses) || responses.length === 0) continue;
