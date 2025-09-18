@@ -1,0 +1,137 @@
+---
+import "../../styles/global.css";
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Listado de Respuestas</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      :root { --border:#e5e7eb; --text:#0f172a; --muted:#475569; --bg:#f8fafc; --primary:#1d4ed8; }
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; margin:0; color: var(--text); background:#ffffff; }
+      .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+      h1 { font-size: 1.5rem; margin: 0 0 12px; }
+      .subtitle { color: var(--muted); margin-bottom: 20px; }
+      .search-bar { position: sticky; top: 0; background: #fff; z-index: 10; padding: 12px 0; border-bottom: 1px solid var(--border); }
+      .search-input { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; font-size: 1rem; }
+      .list { margin-top: 18px; display: grid; grid-template-columns: 1fr; gap: 10px; }
+      .item { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; background: #fff; display:flex; align-items: center; justify-content: space-between; gap: 12px; }
+      .name { font-weight: 600; }
+      .email { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .empty { text-align: center; color: var(--muted); padding: 24px 0; }
+      .count { color: var(--muted); font-size: .9rem; }
+      .sentinel { height: 1px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Listado de respuestas</h1>
+      <p class="subtitle">Busca por nombre o correo. Desplázate para cargar más.</p>
+
+      <div class="search-bar">
+        <input id="q" class="search-input" type="search" placeholder="Buscar por nombre o correo..." autocomplete="off" />
+      </div>
+
+      <div class="count" id="count"></div>
+      <div id="list" class="list"></div>
+      <div id="sentinel" class="sentinel"></div>
+    </div>
+
+    <script>
+      // Datos hardcoded (10 elementos)
+      const DATA = [
+        { nombreCompleto: 'Ana María Pérez', email: 'ana.perez@example.com' },
+        { nombreCompleto: 'José Luis García', email: 'jose.garcia@example.com' },
+        { nombreCompleto: 'María-José Andrade', email: 'maria.andrade@example.com' },
+        { nombreCompleto: 'Carlos Núñez', email: 'carlos.nunez@example.com' },
+        { nombreCompleto: 'Luisa Fernández', email: 'luisa.fernandez@example.com' },
+        { nombreCompleto: 'Andrés López', email: 'andres.lopez@example.com' },
+        { nombreCompleto: 'Damián Chicaiza', email: 'dchicaiza@bancoguayaquil.com' },
+        { nombreCompleto: 'Sofía Márquez', email: 'sofia.marquez@example.com' },
+        { nombreCompleto: 'Elena Álvarez', email: 'elena.alvarez@example.com' },
+        { nombreCompleto: 'Miguel Angel', email: 'miguel.angel@example.com' }
+      ].map(x => ({
+        ...x,
+        nombreL: normalize(x.nombreCompleto),
+        emailL: normalize(x.email),
+      }));
+
+      const listEl = document.getElementById('list');
+      const countEl = document.getElementById('count');
+      const qEl = document.getElementById('q');
+      const sentinel = document.getElementById('sentinel');
+
+      let filtered = DATA.slice();
+      let visible = 10; // Para demo: mostramos hasta 10 (todo el dataset)
+
+      function normalize(str) {
+        if (!str) return '';
+        try {
+          return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        } catch {
+          return String(str).toLowerCase();
+        }
+      }
+
+      function render() {
+        listEl.innerHTML = '';
+        const slice = filtered.slice(0, visible);
+        for (const item of slice) {
+          const row = document.createElement('div');
+          row.className = 'item';
+          row.innerHTML = `
+            <div>
+              <div class="name">${item.nombreCompleto}</div>
+              <div class="email">${item.email}</div>
+            </div>
+          `;
+          listEl.appendChild(row);
+        }
+        if (slice.length === 0) {
+          const empty = document.createElement('div');
+          empty.className = 'empty';
+          empty.textContent = 'No se encontraron resultados';
+          listEl.appendChild(empty);
+        }
+        countEl.textContent = `${filtered.length} resultado(s)`;
+      }
+
+      function applyFilter() {
+        const q = normalize(qEl.value);
+        if (!q) {
+          filtered = DATA.slice();
+        } else {
+          filtered = DATA.filter(x => x.nombreL.includes(q) || x.emailL.includes(q));
+        }
+        visible = Math.min(10, filtered.length); // demo
+        render();
+      }
+
+      // Debounce
+      let tid;
+      qEl.addEventListener('input', () => {
+        clearTimeout(tid);
+        tid = setTimeout(applyFilter, 250);
+      });
+
+      // Infinito (para demo incrementaría en bloques, pero dataset=10)
+      const io = new IntersectionObserver(entries => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            const next = Math.min(filtered.length, visible + 10);
+            if (next !== visible) {
+              visible = next; render();
+            }
+          }
+        }
+      });
+      io.observe(sentinel);
+
+      // Primer render
+      render();
+    </script>
+  </body>
+</html>
+
