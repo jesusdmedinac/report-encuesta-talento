@@ -105,7 +105,20 @@
             "resumen": { "type": "string" },
             "puntos": {
               "type": "array",
-              "items": { "type": "string" }
+              "items": {
+                "oneOf": [
+                  { "type": "string" },
+                  {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "icono": { "type": "string" },
+                      "texto": { "type": "string" }
+                    },
+                    "required": ["texto"]
+                  }
+                ]
+              }
             }
           },
           "required": ["resumen", "puntos"]
@@ -190,4 +203,3 @@
     "planAccion"
   ]
 }
-

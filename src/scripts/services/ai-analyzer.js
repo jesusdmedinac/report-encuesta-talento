@@ -190,6 +190,9 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         console.log('Generando textos cualitativos con datos escalados...');
         let generatedText = "";
 
+        // Timestamp para archivos de depuración
+        const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+
         switch (provider) {
             case 'gemini': {
                 generatedText = await withRetries(async () => {
@@ -221,7 +224,6 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
             try {
                 const dbgDir = path.join(process.cwd(), 'debug');
                 if (!fs.existsSync(dbgDir)) fs.mkdirSync(dbgDir, { recursive: true });
-                const stamp = new Date().toISOString().replace(/[:.]/g, '-');
                 const dbgPath = path.join(dbgDir, `ai-response.${provider}.${stamp}.json.txt`);
                 fs.writeFileSync(dbgPath, generatedText, 'utf8');
                 console.log(`DEBUG_AI: respuesta cruda guardada en ${dbgPath}`);
@@ -240,6 +242,18 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
             } catch (ve) {
                 generationMode = 'online-degraded';
                 console.warn('Validación de AIResponse falló. Se usará degradación con placeholders. Motivo:', ve.message);
+                // Guardar artefactos de error para depuración
+                try {
+                    const dbgDir = path.join(process.cwd(), 'debug');
+                    if (!fs.existsSync(dbgDir)) fs.mkdirSync(dbgDir, { recursive: true });
+                    const base = path.join(dbgDir, `ai-response.failed.${provider}.${stamp}`);
+                    fs.writeFileSync(base + '.raw.txt', generatedText, 'utf8');
+                    fs.writeFileSync(base + '.sanitized.json', repaired, 'utf8');
+                    fs.writeFileSync(base + '.error.txt', String(ve && ve.message || ve), 'utf8');
+                    console.log(`Artefactos de depuración guardados en ${base}.*`);
+                } catch (e) {
+                    console.warn('No se pudieron guardar artefactos de depuración de validación:', e.message);
+                }
                 return buildAiFallback(analisisCualitativo);
             }
             console.log('Textos cualitativos generados, parseados y validados.');
@@ -251,6 +265,18 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         } catch (parseErr) {
             generationMode = 'online-degraded';
             console.error('Fallo al parsear JSON de IA tras reparación. Mensaje:', parseErr.message);
+            // Guardar artefactos de error para depuración
+            try {
+                const dbgDir = path.join(process.cwd(), 'debug');
+                if (!fs.existsSync(dbgDir)) fs.mkdirSync(dbgDir, { recursive: true });
+                const base = path.join(dbgDir, `ai-response.parse-failed.${provider}.${stamp}`);
+                fs.writeFileSync(base + '.raw.txt', generatedText || '', 'utf8');
+                fs.writeFileSync(base + '.sanitized.json', repaired || '', 'utf8');
+                fs.writeFileSync(base + '.error.txt', String(parseErr && parseErr.message || parseErr), 'utf8');
+                console.log(`Artefactos de depuración guardados en ${base}.*`);
+            } catch (e) {
+                console.warn('No se pudieron guardar artefactos de depuración de parseo:', e.message);
+            }
             const fb = buildAiFallback(analisisCualitativo);
             fb.__generationMode = generationMode;
             return fb;

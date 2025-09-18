@@ -1,0 +1,4 @@
+Error de validación de esquema para 'ai-response':
+- /culturaOrganizacional/insights/puntos/0 must be string
+- /culturaOrganizacional/insights/puntos/1 must be string
+- /culturaOrganizacional/insights/puntos/2 must be string

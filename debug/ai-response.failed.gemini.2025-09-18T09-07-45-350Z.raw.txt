@@ -1,0 +1,197 @@
+{
+  "resumenEjecutivo": {
+    "resumenGeneral": "El análisis exhaustivo de la madurez digital de su organización revela una base sólida en varias dimensiones clave, lo que demuestra un compromiso significativo con la transformación. Áreas como el Apoyo Organizacional (8.18), la Habilidad en el Uso de IA (8.0) y un notable Interés en el Aprendizaje de IA (9.0) destacan como fortalezas que impulsan el progreso.\n\nSin embargo, el diagnóstico también señala oportunidades claras para acelerar su evolución digital. La baja adopción de IA (4.55), la gestión de proyectos en mandos medios (5.3) y, críticamente, la digitalización en áreas como Soporte Interno (0) y Diseño UI (0) representan puntos donde una intervención estratégica puede generar un impacto transformador. El deseo constante de capacitación expresado en las respuestas cualitativas subraya la disposición de su equipo para abordar estas brechas.\n\nEstamos en un momento propicio para capitalizar el entusiasmo por el aprendizaje y las competencias ya existentes, dirigiendo esfuerzos hacia la integración de herramientas y metodologías digitales en las áreas rezagadas. Con un plan de acción focalizado, su organización está en una excelente posición para cerrar estas brechas y consolidar su liderazgo en el entorno digital.",
+    "fortalezas": [
+      "Alto Apoyo Organizacional, con una puntuación de 8.18, indicando un ambiente propicio para el cambio.",
+      "Marcado Interés en el Aprendizaje de Inteligencia Artificial (9.0), señalando una gran disposición para la adopción futura.",
+      "Sólida Habilidad en el Uso de IA (8.0) y en Cloud Computing (8.03) entre los usuarios activos.",
+      "Buen nivel en Análisis y Alfabetización de Datos (7.9 y 7.8 respectivamente), fundamentales para la toma de decisiones."
+    ],
+    "oportunidades": [
+      "Bajo Nivel de Adopción de IA (4.55), a pesar del alto interés, lo que sugiere una brecha en la implementación estratégica.",
+      "Deficiencias críticas en la digitalización de Soporte Interno (0.0) y Diseño UI (0.0), requiriendo una atención urgente.",
+      "Necesidad de mejorar la Gestión de Proyectos en Mandos Medios (5.3) y el Uso de SEO en el rol Comercial (4.3).",
+      "El Ambiente de Aprendizaje (6.83) y el uso de Plataformas de Gestión (5.32) en Operaciones/Finanzas necesitan ser robustecidos."
+    ]
+  },
+  "introduccion": "Este informe presenta un diagnóstico integral de la madurez digital de su organización, basado en un análisis cuantitativo y cualitativo de la encuesta realizada. Nuestro objetivo es ofrecer una visión clara de sus fortalezas actuales y las áreas con mayor potencial de crecimiento, proporcionando recomendaciones estratégicas para impulsar su proceso de transformación digital. Abordaremos este análisis desde una perspectiva constructiva, buscando no solo identificar desafíos, sino también las oportunidades inherentes para fortalecer su competitividad y eficiencia en el panorama digital actual.",
+  "brechaDigital": {
+    "textoNivelActual": "Nivel Intermedio en Desarrollo",
+    "textoOportunidadParrafo": "Con una puntuación promedio de 6.27 sobre 10, la organización se encuentra en una etapa intermedia de su viaje digital. Existe una oportunidad significativa para cerrar la brecha con la puntuación meta del sector de 9.38, lo que implica una aceleración en la adopción e integración de capacidades digitales avanzadas y una mayor consistencia en su aplicación a través de todos los departamentos y roles.",
+    "parrafo1": "El estado actual de la madurez digital de la empresa se caracteriza por un avance heterogéneo. Si bien se observan fortalezas notables en áreas como el apoyo organizacional y el interés en la inteligencia artificial, persisten importantes desafíos en la adopción e implementación efectiva de herramientas y metodologías digitales en diversos roles y procesos. La falta de digitalización en áreas críticas y la variabilidad en la capacitación limitan la capacidad global de la organización para operar de manera óptima en un ecosistema digital.",
+    "parrafo2": "Para cerrar la brecha digital, los próximos pasos deben centrarse en una estrategia dual: potenciar las áreas de alto rendimiento y abordar de manera prioritaria las deficiencias identificadas. Esto implica desarrollar programas de capacitación personalizados, invertir en infraestructura y plataformas digitales para los roles más rezagados, y fomentar una cultura de experimentación y adopción activa. Es crucial establecer métricas claras de progreso y un seguimiento continuo para asegurar que las iniciativas de transformación se traduzcan en mejoras tangibles en la eficiencia y la innovación."
+  },
+  "madurezDigital": {
+    "parrafoIntroductorio": "La dimensión de Madurez Digital, con un promedio general de 7.62, refleja una organización con una capacidad robusta para enfrentar los desafíos del entorno actual. Este resultado sugiere que la empresa posee los fundamentos necesarios para una evolución continua, aunque siempre hay margen para afinar estas capacidades y asegurar una aplicación uniforme en todos los niveles y funciones.",
+    "componentes": [
+      {
+        "nombre": "adaptabilidad",
+        "descripcion": "Con una puntuación de 7.92, la capacidad de Adaptabilidad de la organización es una fortaleza notable. Esto indica que el equipo está bien preparado para ajustarse a los cambios tecnológicos y del mercado, un activo invaluable en la era digital. Para mantener este nivel, se recomienda seguir fomentando un entorno que valore el aprendizaje continuo y la flexibilidad."
+      },
+      {
+        "nombre": "resolucionDeProblemas",
+        "descripcion": "La Resolución de Problemas alcanza un sólido 7.6. Esta puntuación demuestra que los colaboradores son eficaces al enfrentar obstáculos, probablemente utilizando herramientas y enfoques digitales cuando es necesario. Se podría explorar la implementación de metodologías ágiles o design thinking para potenciar aún más esta competencia, especialmente en la aplicación de soluciones innovadoras."
+      },
+      {
+        "nombre": "proactividadDigital",
+        "descripcion": "Con 7.33, la Proactividad Digital es buena, indicando que hay una inclinación a buscar y aplicar soluciones digitales sin esperar directrices explícitas. Para elevar esta proactividad, se sugiere crear espacios donde los empleados puedan proponer y experimentar con nuevas herramientas o procesos digitales, y reconocer activamente estas iniciativas."
+      }
+    ]
+  },
+  "competenciasDigitales": {
+    "descripcionPromedio": "Con una puntuación promedio de 7.81, las competencias digitales de la organización muestran una base sólida. Los colaboradores demuestran un buen nivel de conocimiento y aplicación en áreas fundamentales, lo que es un pilar crucial para cualquier estrategia de transformación digital.",
+    "nivelDesarrollo": "FUNDAMENTOS ESTABLECIDOS",
+    "competencias": [
+      {
+        "name": "analisisDeDatos",
+        "description": "El Análisis de Datos obtiene una puntuación de 7.9. Esto indica una fuerte capacidad para interpretar información y extraer insights, esencial para la toma de decisiones basada en evidencia. La recomendación es profundizar en el uso de herramientas de visualización avanzada y capacitación en modelos predictivos para capitalizar aún más esta fortaleza."
+      },
+      {
+        "name": "alfabetizacionDeDatos",
+        "description": "Con 7.8, la Alfabetización de Datos es robusta, lo que significa que los colaboradores entienden cómo trabajar con datos de manera efectiva. Para seguir mejorando, se podría fomentar la creación de un 'lenguaje de datos' común en la organización y promover el acceso a fuentes de datos confiables y relevantes para todos los equipos."
+      },
+      {
+        "name": "colaboracionDigital",
+        "description": "La Colaboración Digital, con un 7.7, refleja una buena adaptación a las herramientas y metodologías de trabajo en equipo en entornos virtuales. Se sugiere explorar plataformas de colaboración más integradas y multifuncionales para optimizar la comunicación y la gestión de proyectos, alineándose con las necesidades de capacitación expresadas cualitativamente."
+      },
+      {
+        "name": "ciberseguridad",
+        "description": "Una puntuación de 7.82 en Ciberseguridad demuestra una sólida conciencia y prácticas seguras. Esto es vital para proteger los activos digitales de la empresa. La recomendación es mantener capacitaciones periódicas y actualizaciones sobre las últimas amenazas, así como reforzar las políticas internas para asegurar la continuidad de este alto nivel de protección."
+      }
+    ]
+  },
+  "usoInteligenciaArtificial": {
+    "resumen": "El panorama del uso de la Inteligencia Artificial en la organización es de <strong>alto potencial y baja adopción efectiva</strong>. Existe un entusiasmo notable por aprender y utilizar la IA, sin embargo, este interés no se ha traducido aún en un nivel de adopción generalizado, lo que representa una oportunidad estratégica clave para impulsar la eficiencia y la innovación.",
+    "graficos": [
+      {
+        "descripcion": "Esta agrupación, con un promedio de 6.21, revela una paradoja: un extraordinario interés en el aprendizaje de IA (9.0) contrasta fuertemente con un bajo nivel de adopción (4.55), y una percepción de riesgo moderada (5.07). Esto sugiere que, si bien hay una gran voluntad de explorar la IA, existen barreras significativas que impiden su implementación práctica, posiblemente relacionadas con la falta de claridad en las aplicaciones, recursos o un camino de adopción estructurado."
+      },
+      {
+        "descripcion": "Con un promedio de 7.68, las puntuaciones de Frecuencia de Uso (7.35) y Habilidad de Uso (8.0) son bastante sólidas. Esto indica que aquellos colaboradores que sí están utilizando la IA lo hacen con una competencia considerable. La oportunidad reside en identificar a estos 'campeones' de la IA y apalancarlos para guiar a otros, transformando el interés general en uso práctico y efectivo a gran escala."
+      },
+      {
+        "descripcion": "La puntuación de Ética y Verificación de 8.0 es muy positiva, mostrando que la organización tiene una fuerte conciencia sobre la importancia de un uso responsable de la IA. Esto es fundamental para construir confianza y asegurar que las implementaciones futuras se realicen bajo principios sólidos. Mantener y reforzar esta base ética será clave a medida que la adopción de IA crezca."
+      }
+    ]
+  },
+  "culturaOrganizacional": {
+    "insights": {
+      "resumen": "La cultura organizacional de la empresa se distingue por un fuerte Apoyo Organizacional y un Liderazgo con visión, lo cual proporciona un terreno fértil para la transformación digital. No obstante, el Ambiente de Aprendizaje, aunque presente, muestra espacio para ser robustecido, lo que se alinea con la demanda general de 'capacitación' expresada en los comentarios cualitativos.",
+      "puntos": [
+        {
+          "icono": "🤝",
+          "texto": "Alto <strong>Apoyo Organizacional</strong>: 8.18"
+        },
+        {
+          "icono": "🧠",
+          "texto": "Potencial en <strong>Ambiente de Aprendizaje</strong>: 6.83"
+        },
+        {
+          "icono": "💡",
+          "texto": "Fuerte <strong>Liderazgo y Visión</strong>: 7.8"
+        }
+      ]
+    },
+    "tarjetas": [
+      {
+        "etiquetaNivel": "Nivel Prometedor",
+        "fraseClave": "La experimentación es la brújula en el camino de la innovación.",
+        "narrativa": "La apertura a la experimentación, con una puntuación de 7.7, es un activo valioso que indica que la organización está dispuesta a probar nuevas ideas y enfoques. Para maximizar este potencial, se recomienda formalizar un marco para la experimentación segura, asignando recursos específicos y celebrando los aprendizajes, tanto de éxitos como de fracasos, fomentando una cultura de mejora continua."
+      },
+      {
+        "etiquetaNivel": "Base Sólida con Potencial",
+        "fraseClave": "Un entorno de aprendizaje continuo, reforzado por un apoyo incondicional.",
+        "narrativa": "Con un promedio de 7.51 entre el Apoyo Organizacional (8.18) y el Ambiente de Aprendizaje (6.83), existe una base fuerte. El alto apoyo demuestra que los colaboradores se sienten respaldados. Sin embargo, el ambiente de aprendizaje tiene margen de mejora, alineándose con las necesidades de 'capacitación' y 'nuevas herramientas' expresadas en los comentarios cualitativos. Se sugiere invertir en programas de capacitación más dinámicos y personalizados, que no solo ofrezcan herramientas sino también espacios para la práctica y el intercambio de conocimientos."
+      },
+      {
+        "etiquetaNivel": "Visión Clara y Motivación",
+        "fraseClave": "Un liderazgo que inspira y un reconocimiento que impulsa el compromiso digital.",
+        "narrativa": "El Liderazgo y Visión, junto con el Reconocimiento, suman un promedio de 7.64. Esto indica que la dirección proporciona una visión clara para la transformación digital (7.8) y que existe un buen nivel de reconocimiento (7.48) por los esfuerzos digitales. Para fortalecer aún más esta área, los líderes podrían convertirse en 'embajadores digitales' activos, demostrando el uso de herramientas y fomentando una mentalidad digital desde arriba, conectando el reconocimiento con la adopción de nuevas prácticas."
+      }
+    ]
+  },
+  "planAccion": {
+    "resumenGeneral": "El plan de acción propuesto está diseñado para catalizar la transformación digital de la organización, abordando las áreas de mayor oportunidad y capitalizando las fortalezas existentes. Se enfoca en la adopción estratégica de la Inteligencia Artificial, la digitalización de roles clave y el fortalecimiento continuo de las competencias digitales a través de la capacitación. La visión es construir una organización ágil, innovadora y plenamente equipada para el futuro digital.",
+    "iniciativas": [
+      {
+        "id": "IA-001",
+        "titulo": "Impulso a la Adopción Estratégica de Inteligencia Artificial",
+        "descripcion": "Esta iniciativa busca cerrar la brecha entre el alto interés en IA (9.0) y su bajo nivel de adopción (4.55). Se implementará un programa piloto para identificar casos de uso de IA en áreas de alto impacto, proporcionando las herramientas y el soporte técnico necesarios, y fomentando el intercambio de conocimiento entre los 'campeones' de IA y el resto de la organización.",
+        "areaEnfoque": "Uso de Inteligencia Artificial, Competencias Digitales",
+        "objetivosClave": [
+          "Incrementar el nivel de adopción de herramientas de IA en procesos clave.",
+          "Identificar y capitalizar el conocimiento de 'early adopters' de IA.",
+          "Reducir las barreras de entrada para el uso práctico de la IA en el día a día.",
+          "Abordar preocupaciones sobre seguridad y ética en el uso de IA mediante guías claras."
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Puntuación de Nivel de Adopción de IA",
+            "valorObjetivo": "De 4.55 a 7.0"
+          },
+          {
+            "metrica": "Número de casos de uso de IA implementados",
+            "valorObjetivo": "5 nuevos casos de uso"
+          }
+        ],
+        "responsableSugerido": "Gerencia de Innovación / CTO",
+        "plazoEstimado": "6-9 meses",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "CD-002",
+        "titulo": "Programa de Fortalecimiento de Competencias Digitales por Rol",
+        "descripcion": "Esta iniciativa busca subsanar las deficiencias críticas de digitalización en roles específicos, como Soporte Interno (0.0), Diseño UI (0.0), Gestión de Proyectos en Mandos Medios (5.3) y Uso de SEO en Comercial (4.3), y Uso de IA en Operaciones (5.2). Se diseñarán planes de capacitación y dotación de herramientas específicos para cada rol, asegurando que todos los equipos cuenten con los recursos y el conocimiento necesario para operar digitalmente.",
+        "areaEnfoque": "Competencias Digitales, Cultura Organizacional",
+        "objetivosClave": [
+          "Eliminar la brecha de digitalización en áreas críticas como Soporte Interno y Diseño UI.",
+          "Mejorar las puntuaciones en Gestión de Proyectos y Uso de SEO.",
+          "Garantizar que cada rol tenga acceso y capacitación en las herramientas digitales pertinentes.",
+          "Elevar la percepción de utilidad y efectividad de las plataformas de gestión (5.32)."
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Puntuación de Digitalización en Soporte Interno y Diseño UI",
+            "valorObjetivo": "De 0.0 a 6.0"
+          },
+          {
+            "metrica": "Puntuación de Gestión de Proyectos (Mandos Medios)",
+            "valorObjetivo": "De 5.3 a 7.5"
+          },
+          {
+            "metrica": "Puntuación de Uso de SEO (Comercial)",
+            "valorObjetivo": "De 4.3 a 6.5"
+          }
+        ],
+        "responsableSugerido": "Dirección de RRHH / Gerentes de Área",
+        "plazoEstimado": "9-12 meses",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "CO-003",
+        "titulo": "Fomento de un Ambiente de Aprendizaje Continuo y Colaborativo",
+        "descripcion": "Basado en la puntuación del Ambiente de Aprendizaje (6.83) y la alta demanda de 'capacitación' en los insights cualitativos, esta iniciativa busca revitalizar y estructurar las oportunidades de desarrollo. Se crearán 'bootcamps' internos, talleres prácticos y plataformas de e-learning con micro-cursos, fomentando el aprendizaje entre pares y la aplicación inmediata de nuevos conocimientos, con un enfoque en 'nuevas herramientas' y 'actuales'.",
+        "areaEnfoque": "Cultura Organizacional, Competencias Digitales",
+        "objetivosClave": [
+          "Mejorar la puntuación del ambiente de aprendizaje organizacional.",
+          "Aumentar la participación en programas de capacitación digital.",
+          "Promover la colaboración y el intercambio de mejores prácticas digitales entre equipos.",
+          "Integrar la capacitación como un elemento constante y accesible de la jornada laboral."
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Puntuación de Ambiente de Aprendizaje",
+            "valorObjetivo": "De 6.83 a 8.0"
+          },
+          {
+            "metrica": "% de empleados que participan en capacitaciones trimestrales",
+            "valorObjetivo": "De 40% a 75%"
+          }
+        ],
+        "responsableSugerido": "Dirección de RRHH / Líderes de Aprendizaje y Desarrollo",
+        "plazoEstimado": "Ongoing, con hitos trimestrales",
+        "prioridad": "Alta"
+      }
+    ]
+  }
+}

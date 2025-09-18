@@ -159,6 +159,10 @@ Modo offline (sin salida a red):
 
 Debug de respuestas IA (opcional):
 - Establece `DEBUG_AI=1` para guardar las respuestas crudas en `./debug/`.
+- En caso de error de parseo o validación del esquema, el sistema siempre guarda artefactos de depuración en `./debug/`:
+  - `ai-response.parse-failed.<provider>.<timestamp>.raw.txt` y `.sanitized.json`
+  - `ai-response.failed.<provider>.<timestamp>.raw.txt` y `.sanitized.json` (cuando no pasa la validación)
+  - Cada uno incluye un `.error.txt` con el detalle del fallo.
 
 ### Variables de Entorno y Flags
 
