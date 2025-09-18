@@ -1,0 +1,45 @@
+{
+  "header": {
+    "empresa": "EmpresaX",
+    "idReporte": "RPT-001",
+    "provider": "gemini"
+  },
+  "resumenEjecutivo": {
+    "puntuacionGeneral": 7.2,
+    "puntuacionesDimensiones": [
+      { "nombre": "Madurez Digital", "puntuacion": 6.8 },
+      { "nombre": "Competencias Digitales", "puntuacion": 7.4 },
+      { "nombre": "Uso de IA", "puntuacion": 7.6 },
+      { "nombre": "Cultura Digital", "puntuacion": 6.8 }
+    ]
+  },
+  "madurezDigital": {
+    "componentes": [
+      { "nombre": "Adaptabilidad", "puntuacion": 7.5 },
+      { "nombre": "Resolucion De Problemas", "puntuacion": 7.0 },
+      { "nombre": "Proactividad Digital", "puntuacion": 6.0 }
+    ]
+  },
+  "competenciasDigitales": {
+    "competencias": [
+      { "name": "Analisis De Datos", "score": 80 },
+      { "name": "Alfabetizacion De Datos", "score": 75 },
+      { "name": "Colaboracion Digital", "score": 65 },
+      { "name": "Ciberseguridad", "score": 75 }
+    ]
+  },
+  "usoInteligenciaArtificial": {
+    "graficos": [
+      { "titulo": "Adopción y Curiosidad", "porcentaje": 74 },
+      { "titulo": "Uso y Aplicación", "porcentaje": 78 },
+      { "titulo": "Ética y Verificación", "porcentaje": 80 }
+    ]
+  },
+  "culturaOrganizacional": {
+    "tarjetas": [
+      { "titulo": "Apertura a la experimentación", "puntuacion": 7.3 },
+      { "titulo": "Formación y Apoyo", "puntuacion": 6.6 },
+      { "titulo": "Liderazgo y Visión", "puntuacion": 6.9 }
+    ]
+  }
+}
