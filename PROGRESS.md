@@ -6,7 +6,7 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ## Estado Actual
 
-**Fase Actual:** **Refinamiento Final.** La implementación de todas las secciones principales del reporte, incluyendo un `planAccion` dinámico y medible, ha sido completada. El sistema es funcional de extremo a extremo. La fase actual se centra en los últimos detalles de refinamiento, como la incorporación de datos de preguntas abiertas.
+**Fase Actual:** **Refinamiento Final + Robustez Operativa.** El sistema está funcional de extremo a extremo. Se integró validación de la salida de IA, reintentos con backoff, modo offline y trazabilidad de `generationMode` en el `header`. La fase actual se centra en pulir detalles de visualización/observabilidad y ampliar cobertura de pruebas.
 
 ### Pasos Completados
 
@@ -32,41 +32,42 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 ## Próximos Pasos
 
 1.  **Validación de Esquema y Contratos de Datos:**
-    -   [x] Definir esquemas para `AIResponse` y para el `Report` final (zod o ajv).
-    -   [x] Validar la respuesta cruda de IA antes de procesar y fallar temprano con errores claros.
+    -   [x] Definir esquemas para `AIResponse` y para el `Report` final (ajv + ajv-formats).
+    -   [x] Validar la respuesta de IA (con tolerancia para `insights.puntos` como string u objeto `{icono, texto}`).
     -   [x] Validar el objeto final consumido por los componentes antes de escribir el archivo.
-    -   [x] Añadir `schemaVersion` y `promptVersion` al `header` para trazabilidad.
+    -   [x] Añadir `schemaVersion`, `promptVersion` y `generationMode` al `header` para trazabilidad.
 
 2.  **Análisis y Visualización de Preguntas Abiertas (con caché):**
     -   [x] `csv-processor.js`: extracción, normalización, anonimización y deduplicación de texto libre.
     -   [x] Script dedicado `src/scripts/generate-open-ended.mjs` para pre‑análisis por lotes (IA) y generación de caché.
     -   [x] Salida de caché: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt) + `preguntas` + `resumenGeneral`.
     -   [x] Flags en el generador principal: `--skip-open-ended` (omite) y `--refresh-open-ended` (regenera caché).
-    -   [x] Carga del caché en `generate-report.mjs` y uso para enriquecer el prompt principal y la sección `AnalisisCualitativo`.
+    -   [x] Carga del caché en `generate-report.mjs` y uso para enriquecer el prompt principal y la sección `AnalisisCualitativo` (badge "offline" si el caché proviene de fallback).
     -   [x] Crear `src/components/AnalisisCualitativo.astro` para visualizar insights.
     -   [x] Fallback offline: si la IA falla por red, el script genera un caché con temas y citas básicas a partir de texto.
 
 3.  **Configuración y Parametrización:**
     -   [x] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js` con overrides por sector/cliente/entorno.
     -   [ ] Incluir `umbrales`, `pesos`, `limitesIA` y `featureFlags`.
-    -   Nota: avance parcial — se centralizaron `META_SECTOR_SCORE`, paleta (`COLORS`) y gradientes de IA (`IA_CHARTS`); pendientes umbrales/pesos/feature flags y overrides por cliente/sector.
+    -   Nota: avance parcial — centralizados `META_SECTOR_SCORE`, paleta (`COLORS`), gradientes IA (`IA_CHARTS`), límites de batch (`LIMITES_IA`), `UMBRAL/ PESOS/ FEATURE_FLAGS`; pendientes overrides por cliente/sector.
 
 4.  **Observabilidad y Trazabilidad:**
-    -   [x] Incluir en `header`: `provider`, `model`, `schemaVersion`, `promptVersion`, `generatedAt`.
-    -   [x] Log y almacenamiento opcional de `rawAiResponse` en modo debug (sin PII).
+    -   [x] Incluir en `header`: `provider`, `model`, `schemaVersion`, `promptVersion`, `generatedAt`, `generationMode`.
+    -   [x] Reintentos IA con backoff exponencial (configurables por `AI_MAX_RETRIES`, `AI_RETRY_BASE_MS`).
+    -   [x] Artefactos de depuración al fallar parseo/validación IA en `./debug/`.
 
 5.  **Tests Mínimos de Regresión:**
-    -   [ ] Unit tests para `csv-processor` y `report-builder`.
-    -   [ ] Snapshots del JSON final para detectar regresiones estructurales.
-    -   [ ] Render de `PlanAccion.astro` y `AnalisisCualitativo.astro` con datos mock.
+    -   [x] Unit tests para `csv-processor` y `report-builder`.
+    -   [x] Snapshots del JSON final (proyección) para detectar regresiones estructurales.
+    -   [ ] Render de componentes clave (opcional) con datos mock.
 
 ---
 
 ## Pensamientos y Estrategia
 
-*   **Arquitectura Robusta:** La refactorización ha sido un éxito. La arquitectura actual es modular, mantenible y fácil de extender. Los principios SOLID y DRY nos dan una base sólida para el futuro.
-*   **Estrategia de IA Superior:** El enfoque de "único prompt con JSON" es más eficiente y coherente que el plan original. Nos permite escalar la generación de contenido de forma más sencilla.
-*   **Gobernanza de Datos:** Versionado de esquemas y prompts para auditoría y capacidad de rollback.
+*   **Arquitectura Robusta:** Modular y extensible; SOLID/DRY aplicados.
+*   **Estrategia de IA:** Único prompt con JSON + validación de esquema; degradación controlada y modo offline garantizan continuidad.
+*   **Gobernanza de Datos:** Versionado de esquemas y prompts; trazabilidad con `generationMode` y artefactos de depuración.
 
 ---
 

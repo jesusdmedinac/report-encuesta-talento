@@ -78,11 +78,11 @@ Para finalizar, haremos que el script sea fácil de usar y documentaremos su fun
 
 ## Fase 7: Validación, Tipado, Configuración y Observabilidad
 
--   [ ] Esquemas y validación: definir y aplicar validación (zod/ajv) para `AIResponse` y `Report` final en puntos de entrada/salida.
+-   [x] Esquemas y validación: validar con `ajv` + `ajv-formats` la salida de IA (`AIResponse`) y el `Report` final. Tolerancia en `insights.puntos` (string u objeto `{icono, texto}`).
 -   [ ] Contratos de datos: añadir tipos compartidos (TS/JSDoc) para alinear `ai-analyzer`, `report-builder` y componentes Astro.
--   [ ] Configuración centralizada: mover valores mágicos a `config.js` (umbrales, pesos, límites IA, feature flags) con overrides por sector/cliente/entorno.
--   [ ] Trazabilidad: ampliar `header` con `schemaVersion`, `promptVersion`, `provider`, `model`, `generatedAt`; opción de guardar `rawAiResponse` en modo debug (sin PII).
--   [ ] Pruebas mínimas: unit tests en `csv-processor` y `report-builder`, snapshots del JSON final y render tests de componentes clave.
+-   [x] Configuración centralizada: `config.js` con `UMBRALES`, `PESOS`, `LIMITES_IA`, `FEATURE_FLAGS`. Pendiente: overrides por sector/cliente/entorno.
+-   [x] Trazabilidad: `header` con `schemaVersion`, `promptVersion`, `provider`, `model`, `generatedAt`, `generationMode`. Artefactos de depuración en `./debug/` y reintentos IA configurables (`AI_MAX_RETRIES`, `AI_RETRY_BASE_MS`).
+-   [x] Pruebas mínimas: unit tests y snapshots del JSON final. Pendiente: render tests de componentes clave.
 
 ## Fase 8: Script de Preguntas Abiertas con Caché
 
@@ -91,6 +91,9 @@ Para finalizar, haremos que el script sea fácil de usar y documentaremos su fun
     - Batching a IA por pregunta (lotes) y fusión de resultados.
     - Esquema de salida: `src/data/openEnded.<reportId>.json` con `source` (csvPath, csvHash, rowCount, generatedAt), `preguntas` y `resumenGeneral`.
 -   [x] Hash de contenido (`csvHash`) y reutilización del caché por defecto; `--force` para regenerar.
+    
+    Mejora de resiliencia:
+    -   [x] Fallback offline y marca `source.offline: true` cuando no hay IA.
     
     Flags de integración en el generador principal:
     -   [x] `--skip-open-ended` (omite abiertas)

@@ -26,6 +26,7 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - Desarrollo y pruebas:
   - `npm test`
   - `npm run dev` (visualización del reporte en `/gemini` o `/openai` si existen JSONs)
+  - `./commit-all.sh` para comitear cambios locales con tests (ver opciones en el script)
 
 ## Flags y Variables
 - Flags de generación:
@@ -37,12 +38,14 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `CSV_PATH`, `EMPRESA`, `REPORT_ID`, `MODEL`, `PROVIDER`: defaults para `./generate.sh`.
   - `DEBUG_AI=1`: guarda respuestas crudas en `./debug` (cuando hay IA).
   - `AI_MAX_RETRIES` (default 3) y `AI_RETRY_BASE_MS` (default 800): reintentos IA.
+  - `DEBUG_AI=1`: guarda respuesta cruda de IA. En fallos de parseo/validación siempre se guardan artefactos en `./debug/` aunque no esté activo.
 
 ## Flujo de Preguntas Abiertas
 - Entrada: extraídas/limpiadas desde `csv-processor` (véase `OPEN_ENDED_QUESTIONS` en `config.js`).
 - Caché: `src/data/openEnded.<reportId>.json` con `source`, `preguntas`, `resumenGeneral`.
 - Generación del reporte: el caché se inyecta en el prompt; si la IA falla, se incluye tal cual en `globalData.<provider>.json` como `analisisCualitativo`.
 - Fallback offline: si no hay red/IA, se generan temas/citas básicos para no bloquear.
+  - El caché offline se marca con `source.offline: true` para señalizarlo en UI.
 
 ## Estructura Relevante
 - `src/scripts/generate-report.mjs`: orquestador principal.
@@ -57,6 +60,8 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 ## Decisiones y Gotchas
 - CSV correcto: usar `data/respuestas-por-puntos.csv`. Otros CSV sin prefijos de mapeo producirán valores vacíos.
 - Modo offline: útil en entornos sin red o para CI; genera placeholders para textos IA.
+  - El `Header` muestra badges de `provider`, `model` y `generationMode` (online, online-degraded, offline).
+  - `AnalisisCualitativo` muestra badge “offline” si el caché lo indica.
 - Esquema: `header.generatedAt` valida con formato `date-time` (ajv-formats requerido).
 - Reintentos IA: automáticos ante 429/503/timeouts; ajustables por env.
 
@@ -69,4 +74,3 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 1) `PROGRESS.md` → panorama y próximos pasos
 2) `IMPLEMENTATION_PLAN.md` → decisiones técnicas y fases
 3) Código en `src/scripts/` y componentes en `src/components/`
-

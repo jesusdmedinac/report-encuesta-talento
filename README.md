@@ -95,7 +95,7 @@ Este proyecto incluye un potente script para procesar los resultados de una encu
 
 ### Script Unificado de Generación
 
-Para simplificar la ejecución y evitar duplicación, usa `./generate.sh` y elige el proveedor con `--provider` (o variable `PROVIDER`). Carga `.env` automáticamente y valida precondiciones.
+Para simplificar la ejecución y evitar duplicación, usa `./generate.sh` y elige el proveedor con `--provider` (o variable `PROVIDER`). Carga `.env` automáticamente y valida precondiciones. Los scripts anteriores (`generate-gemini.sh` y `generate-openai.sh`) fueron reemplazados por este comando unificado.
 
 Ejemplos:
 
@@ -130,6 +130,10 @@ MODEL=gemini-2.5-pro \
 
 3.  **Verifica el resultado**:
     El script creará un nuevo archivo de datos en `src/data/`, nombrado según el proveedor (ej. `globalData.gemini.json`). La página del reporte utilizará estos datos para renderizar la visualización actualizada.
+
+Indicadores en la interfaz:
+- El `Header` muestra `provider`, `model` y `generationMode` (online, online-degraded, offline).
+- `AnalisisCualitativo` muestra un badge “offline” si el caché de abiertas fue generado sin IA.
 
 ### Análisis de Preguntas Abiertas (caché reutilizable)
 
