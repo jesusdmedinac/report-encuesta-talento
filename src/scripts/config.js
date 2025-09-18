@@ -57,3 +57,32 @@ export const IA_CHARTS = {
         title: 'Ética y Verificación',
     },
 };
+
+// --- Parámetros de configuración ampliados ---
+
+// Umbrales de interpretación y niveles (ejemplo, ajustables por cliente/sector)
+export const UMBRALES = {
+    madurez: { bajo: 4.0, medio: 6.5, alto: 8.0 }, // escala 0-10
+    competencias: { bajo: 40, medio: 70, alto: 85 }, // escala 0-100
+};
+
+// Pesos por dimensión (si se requieren promedios ponderados en el futuro)
+export const PESOS = {
+    madurezDigital: 1,
+    brechaDigital: 1,
+    usoInteligenciaArtificial: 1,
+    culturaOrganizacional: 1,
+};
+
+// Límites para llamadas a IA / batching
+export const LIMITES_IA = {
+    preAnalisis: {
+        maxCharsBatch: 10000,
+        maxItemsBatch: 80,
+    }
+};
+
+// Feature flags para habilitar/deshabilitar funcionalidades
+export const FEATURE_FLAGS = {
+    enableOpenEndedPreanalysis: true,
+};

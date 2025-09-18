@@ -4,7 +4,7 @@ import OpenAI from 'openai';
 import fs from 'fs';
 import path from 'path';
 import { scaleToTen } from '../utils.js';
-import { IA_CHARTS } from '../config.js';
+import { IA_CHARTS, LIMITES_IA } from '../config.js';
 
 // --- Utilidades de reintento ---
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -275,7 +275,11 @@ export async function preAnalyzeOpenEnded(provider, aiClient, modelName, openEnd
     const result = { preguntas: {}, resumenGeneral: '', metricaSentimiento: 'neutral' };
     for (const [code, responses] of Object.entries(openEndedData)) {
         if (!Array.isArray(responses) || responses.length === 0) continue;
-        const batches = batchStrings(responses, 10000, 80); // char limit aprox y tamaño
+        const batches = batchStrings(
+            responses,
+            LIMITES_IA?.preAnalisis?.maxCharsBatch ?? 10000,
+            LIMITES_IA?.preAnalisis?.maxItemsBatch ?? 80
+        );
         const partials = [];
         for (const batch of batches) {
             const prompt = buildOpenEndedPrompt(code, batch);
