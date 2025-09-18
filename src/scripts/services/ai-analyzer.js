@@ -1,5 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import OpenAI from 'openai';
+import fs from 'fs';
+import path from 'path';
 import { scaleToTen } from '../utils.js';
 
 /**
@@ -142,25 +144,51 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
         let generatedText = "";
 
         switch (provider) {
-            case 'gemini':
+            case 'gemini': {
                 const geminiResult = await aiClient.generateContent(comprehensivePrompt);
                 const geminiResponse = await geminiResult.response;
                 generatedText = geminiResponse.text();
                 break;
-
-            case 'openai':
+            }
+            case 'openai': {
                 const openAIResult = await aiClient.chat.completions.create({
                     model: modelName,
                     messages: [{ role: 'user', content: comprehensivePrompt }],
                     response_format: { type: "json_object" },
                 });
-                generatedText = openAIResult.choices[0].message.content;
+                generatedText = openAIResult.choices[0].message.content || '';
                 break;
+            }
         }
 
-        const insights = JSON.parse(generatedText);
-        console.log('Textos cualitativos generados y parseados correctamente.');
-        return insights;
+        // Observabilidad: persistir respuesta cruda en modo debug
+        const DEBUG_AI = process.env.DEBUG_AI === '1' || process.env.DEBUG_AI === 'true';
+        const truncatedPreview = (generatedText || '').slice(0, 180);
+        console.log(`Respuesta IA recibida (${generatedText.length} chars). Preview: ${truncatedPreview.replace(/\n/g, ' ')}...`);
+
+        if (DEBUG_AI) {
+            try {
+                const dbgDir = path.join(process.cwd(), 'debug');
+                if (!fs.existsSync(dbgDir)) fs.mkdirSync(dbgDir, { recursive: true });
+                const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+                const dbgPath = path.join(dbgDir, `ai-response.${provider}.${stamp}.json.txt`);
+                fs.writeFileSync(dbgPath, generatedText, 'utf8');
+                console.log(`DEBUG_AI: respuesta cruda guardada en ${dbgPath}`);
+            } catch (e) {
+                console.warn('No se pudo guardar la respuesta cruda de IA:', e.message);
+            }
+        }
+
+        // Intento de reparación si el JSON viene con fences u otros adornos
+        const repaired = sanitizeJsonLike(generatedText);
+        try {
+            const insights = JSON.parse(repaired);
+            console.log('Textos cualitativos generados y parseados correctamente.');
+            return insights;
+        } catch (parseErr) {
+            console.error('Fallo al parsear JSON de IA tras reparación. Mensaje:', parseErr.message);
+            throw new Error(`No se pudo parsear la salida de IA (${provider}). Revisa DEBUG_AI para ver la respuesta cruda.`);
+        }
 
     } catch (error) {
         console.error(`Error al generar el análisis cualitativo con ${provider}:`, error);
@@ -170,4 +198,21 @@ export async function performQualitativeAnalysis(provider, aiClient, modelName, 
             introduccion: `No se pudo generar la introducción con ${provider}.`
         };
     }
+}
+
+// --- Utilidades de reparación/normalización de JSON ---
+function sanitizeJsonLike(text) {
+    if (!text) return text;
+    let t = String(text).trim();
+    // Eliminar fences tipo ```json ... ```
+    if (t.startsWith('```')) {
+        t = t.replace(/^```json/i, '').replace(/^```/, '').replace(/```\s*$/m, '').trim();
+    }
+    // Quedarse con el contenido entre la primera llave y la última
+    const start = t.indexOf('{');
+    const end = t.lastIndexOf('}');
+    if (start !== -1 && end !== -1 && end > start) {
+        t = t.slice(start, end + 1);
+    }
+    return t;
 }

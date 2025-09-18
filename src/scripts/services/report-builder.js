@@ -1,4 +1,4 @@
-import { TEMPLATE_PATH, SCHEMA_VERSION, PROMPT_VERSION } from '../config.js';
+import { TEMPLATE_PATH, SCHEMA_VERSION, PROMPT_VERSION, META_SECTOR_SCORE, COLORS, IA_CHARTS } from '../config.js';
 import { loadJson, calculateAverage, scaleToTen, formatDimensionName } from '../utils.js';
 
 // --- Funciones "Constructoras" por Sección ---
@@ -42,7 +42,7 @@ function buildBrechaDigital(empresaNombre, overallAvg, qualitativeResults) {
     const brechaTexts = qualitativeResults.brechaDigital || {};
     return {
         puntuacionEmpresa: parseFloat(scaleToTen(overallAvg).toFixed(1)),
-        puntuacionMetaSector: 9.38, // TODO: Mover a config.js
+        puntuacionMetaSector: META_SECTOR_SCORE,
         nombreEmpresa: empresaNombre,
         textoNivelActual: brechaTexts.textoNivelActual || "Análisis no disponible.",
         textoOportunidadParrafo: brechaTexts.textoOportunidadParrafo || "Análisis no disponible.",
@@ -73,9 +73,9 @@ function buildMadurezDigital(empresaNombre, madurezDigitalAvg, analysisResults, 
                 nombre: formatDimensionName(key),
                 puntuacion: parseFloat(scaleToTen(value).toFixed(1)),
                 descripcion: descripcionIA || `Puntuación de ${parseFloat(scaleToTen(value).toFixed(2))}/10 en ${formatDimensionName(key)}.`,
-                color: "var(--color-company)",
-                colorGradiente: "#4387ff",
-                meta: 9.38 // TODO: Mover a config.js
+                color: COLORS.company,
+                colorGradiente: COLORS.componentGradient,
+                meta: META_SECTOR_SCORE
             };
         }),
     };
@@ -102,7 +102,7 @@ function buildCompetenciasDigitales(brechaDigitalAvg, analysisResults, qualitati
             return {
                 name: formatDimensionName(key),
                 score: Math.round((value / 4) * 100),
-                color: '#3498db',
+                color: COLORS.competenciasBar,
                 description: descripcionIA || `Nivel de desarrollo en ${formatDimensionName(key)}.`
             };
         }),
@@ -127,9 +127,9 @@ function buildUsoInteligenciaArtificial(analysisResults, qualitativeResults) {
     return {
         resumen: iaTexts.resumen || "Análisis no disponible.",
         graficos: [
-            { titulo: "Adopción y Curiosidad", porcentaje: Math.round((iaAdopcion / 4) * 100), descripcion: graficosAI[0]?.descripcion || "Análisis no disponible.", idGradiente: "gradient-adoption", coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"] },
-            { titulo: "Uso y Aplicación", porcentaje: Math.round((iaUso / 4) * 100), descripcion: graficosAI[1]?.descripcion || "Análisis no disponible.", idGradiente: "gradient-usage", coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"] },
-            { titulo: "Ética y Verificación", porcentaje: Math.round((iaEtica / 4) * 100), descripcion: graficosAI[2]?.descripcion || "Análisis no disponible.", idGradiente: "gradient-ethics", coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"] }
+            { titulo: IA_CHARTS.adoption.title, porcentaje: Math.round((iaAdopcion / 4) * 100), descripcion: graficosAI[0]?.descripcion || "Análisis no disponible.", idGradiente: IA_CHARTS.adoption.id, coloresGradiente: IA_CHARTS.adoption.colors },
+            { titulo: IA_CHARTS.usage.title, porcentaje: Math.round((iaUso / 4) * 100), descripcion: graficosAI[1]?.descripcion || "Análisis no disponible.", idGradiente: IA_CHARTS.usage.id, coloresGradiente: IA_CHARTS.usage.colors },
+            { titulo: IA_CHARTS.ethics.title, porcentaje: Math.round((iaEtica / 4) * 100), descripcion: graficosAI[2]?.descripcion || "Análisis no disponible.", idGradiente: IA_CHARTS.ethics.id, coloresGradiente: IA_CHARTS.ethics.colors }
         ]
     };
 }

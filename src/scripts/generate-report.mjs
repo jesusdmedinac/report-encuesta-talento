@@ -30,6 +30,9 @@ async function main() {
 
         // 2. Inicializar Cliente de IA
         const { aiClient, effectiveModelName } = initializeAiClient(provider, modelName);
+        if (process.env.DEBUG_AI === '1' || process.env.DEBUG_AI === 'true') {
+            console.log('DEBUG_AI activado: se guardarán respuestas crudas de IA en ./debug');
+        }
 
         // 3. Cargar y Procesar Datos
         console.log(`Cargando mapeos desde: ${MAPPINGS_PATH}`);

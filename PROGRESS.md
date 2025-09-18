@@ -32,10 +32,10 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 ## Próximos Pasos
 
 1.  **Validación de Esquema y Contratos de Datos:**
-    -   [ ] Definir esquemas para `AIResponse` y para el `Report` final (zod o ajv).
-    -   [ ] Validar la respuesta cruda de IA antes de procesar y fallar temprano con errores claros.
-    -   [ ] Validar el objeto final consumido por los componentes antes de escribir el archivo.
-    -   [ ] Añadir `schemaVersion` y `promptVersion` al `header` para trazabilidad.
+    -   [x] Definir esquemas para `AIResponse` y para el `Report` final (zod o ajv).
+    -   [x] Validar la respuesta cruda de IA antes de procesar y fallar temprano con errores claros.
+    -   [x] Validar el objeto final consumido por los componentes antes de escribir el archivo.
+    -   [x] Añadir `schemaVersion` y `promptVersion` al `header` para trazabilidad.
 
 2.  **Análisis y Visualización de Preguntas Abiertas:**
     -   [ ] `csv-processor.js`: extracción, normalización, anonimización y deduplicación de texto libre.
@@ -45,12 +45,13 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [ ] Integrar el componente en la página del reporte y enriquecer el prompt principal con estos insights.
 
 3.  **Configuración y Parametrización:**
-    -   [ ] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js` con overrides por sector/cliente/entorno.
+    -   [x] Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js` con overrides por sector/cliente/entorno.
     -   [ ] Incluir `umbrales`, `pesos`, `limitesIA` y `featureFlags`.
+    -   Nota: avance parcial — se centralizaron `META_SECTOR_SCORE`, paleta (`COLORS`) y gradientes de IA (`IA_CHARTS`); pendientes umbrales/pesos/feature flags y overrides por cliente/sector.
 
 4.  **Observabilidad y Trazabilidad:**
-    -   [ ] Incluir en `header`: `provider`, `model`, `schemaVersion`, `promptVersion`, `generatedAt`.
-    -   [ ] Log estructurado y almacenamiento opcional de `rawAiResponse` en modo debug (sin PII).
+    -   [x] Incluir en `header`: `provider`, `model`, `schemaVersion`, `promptVersion`, `generatedAt`.
+    -   [x] Log y almacenamiento opcional de `rawAiResponse` en modo debug (sin PII).
 
 5.  **Tests Mínimos de Regresión:**
     -   [ ] Unit tests para `csv-processor` y `report-builder`.

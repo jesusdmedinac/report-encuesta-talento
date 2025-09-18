@@ -37,6 +37,7 @@ const globalData = await import(`../data/globalData.${report}.json`);
   <Header 
     empresa={globalData.header.empresa}
     fechaDiagnostico={globalData.header.fechaDiagnostico}
+    generatedAt={globalData.header.generatedAt}
     empleadosEvaluados={globalData.header.empleadosEvaluados}
     titulo={globalData.header.titulo}
   />

@@ -5,11 +5,17 @@ const {
     empresa = "Profermaco",
     fechaDiagnostico = "Lunes 9 de junio de 2025",
     empleadosEvaluados = "22",
-    titulo = "Reporte de Transformación Digital Organizacional"
+    titulo = "Reporte de Transformación Digital Organizacional",
+    generatedAt
 } = Astro.props;
 
 const reports = await Astro.glob('../data/globalData.*.json');
 const providers = reports.map(report => report.header.provider);
+
+// Preferir la marca de tiempo precisa de generación si está disponible
+const fechaMostrada = generatedAt
+  ? new Date(generatedAt).toLocaleString('es-ES', { dateStyle: 'full', timeStyle: 'short' })
+  : fechaDiagnostico;
 ---
 <header>
     <div class="container header-container">
@@ -23,7 +29,7 @@ const providers = reports.map(report => report.header.provider);
             </div>
             <div class="meta-item">
                 <span class="meta-label">Fecha del Diagnóstico:</span>
-                <span>{fechaDiagnostico}</span>
+                <span>{fechaMostrada}</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Empleados Evaluados:</span>

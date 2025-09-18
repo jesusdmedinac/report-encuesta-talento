@@ -30,3 +30,30 @@ export const ALL_NON_QUANTITATIVE_COLUMNS = [...PII_COLUMNS, ...Object.values(OP
 // --- Versionado y Gobernanza ---
 export const SCHEMA_VERSION = '1.0.0';
 export const PROMPT_VERSION = '1.0.0';
+
+// --- Parámetros de Negocio y Presentación (centralización) ---
+export const META_SECTOR_SCORE = 9.38;
+
+export const COLORS = {
+    company: 'var(--color-company)',
+    componentGradient: '#4387ff',
+    competenciasBar: '#3498db',
+};
+
+export const IA_CHARTS = {
+    adoption: {
+        id: 'gradient-adoption',
+        colors: ['#10B981', '#34D399', '#6EE7B7'],
+        title: 'Adopción y Curiosidad',
+    },
+    usage: {
+        id: 'gradient-usage',
+        colors: ['#F59E0B', '#FBBF24', '#FDE047'],
+        title: 'Uso y Aplicación',
+    },
+    ethics: {
+        id: 'gradient-ethics',
+        colors: ['#8B5CF6', '#A78BFA', '#C4B5FD'],
+        title: 'Ética y Verificación',
+    },
+};
