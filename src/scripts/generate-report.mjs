@@ -7,6 +7,7 @@ import { getArgument, loadJson } from './utils.js';
 import { loadAndProcessCsv, performQuantitativeAnalysis } from './services/csv-processor.js';
 import { initializeAiClient, performQualitativeAnalysis } from './services/ai-analyzer.js';
 import { generateReportJson } from './services/report-builder.js';
+import { validateAiResponse, validateFinalReport } from './services/validator.js';
 
 /**
  * Punto de entrada principal del script.
@@ -44,10 +45,26 @@ async function main() {
 
         console.log('Realizando análisis cualitativo...');
         const qualitativeResults = await performQualitativeAnalysis(provider, aiClient, effectiveModelName, quantitativeResults);
+        // Validación mínima del output de IA
+        try {
+            validateAiResponse(qualitativeResults);
+            console.log('✅ AIResponse válido.');
+        } catch (ve) {
+            console.error(`\n❌ AIResponse inválido: ${ve.message}\n`);
+            process.exit(1);
+        }
 
         // 5. Construir y Guardar el Reporte
         console.log('Generando el archivo JSON del reporte...');
         const reportJson = generateReportJson(quantitativeResults, qualitativeResults, quantitativeData.length, empresaNombre, reportId, provider, effectiveModelName);
+        // Validación mínima del reporte final
+        try {
+            validateFinalReport(reportJson);
+            console.log('✅ Reporte final válido.');
+        } catch (ve) {
+            console.error(`\n❌ Reporte final inválido: ${ve.message}\n`);
+            process.exit(1);
+        }
 
         const OUTPUT_PATH = path.join(process.cwd(), 'src', 'data', `globalData.${provider}.json`);
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(reportJson, null, 2), 'utf8');

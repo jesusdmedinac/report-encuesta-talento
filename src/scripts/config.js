@@ -26,3 +26,7 @@ export const OPEN_ENDED_QUESTIONS = {
 
 // Agrupa todas las columnas que no contienen datos cuantitativos.
 export const ALL_NON_QUANTITATIVE_COLUMNS = [...PII_COLUMNS, ...Object.values(OPEN_ENDED_QUESTIONS)];
+
+// --- Versionado y Gobernanza ---
+export const SCHEMA_VERSION = '1.0.0';
+export const PROMPT_VERSION = '1.0.0';

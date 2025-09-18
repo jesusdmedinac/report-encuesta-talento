@@ -1,4 +1,4 @@
-import { TEMPLATE_PATH } from '../config.js';
+import { TEMPLATE_PATH, SCHEMA_VERSION, PROMPT_VERSION } from '../config.js';
 import { loadJson, calculateAverage, scaleToTen, formatDimensionName } from '../utils.js';
 
 // --- Funciones "Constructoras" por Sección ---
@@ -14,6 +14,9 @@ function buildHeader(empresaNombre, reportId, totalRespondents, provider, model)
         empleadosEvaluados: totalRespondents.toString(),
         provider: provider,
         model: model,
+        schemaVersion: SCHEMA_VERSION,
+        promptVersion: PROMPT_VERSION,
+        generatedAt: new Date().toISOString(),
     };
 }
 
