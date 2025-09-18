@@ -33,7 +33,7 @@ En esta fase, integraremos un modelo de lenguaje grande (LLM) para generar **tod
 
 2.  **Expandir el Esquema del JSON de IA:**
     *   De forma incremental, añadir nuevas claves al objeto JSON solicitado en el prompt para cubrir todas las secciones del reporte:
-        *   `resumenEjecutivo` (fortalezas, oportunidades, etc.)
+        *   `resumenEjecutivo`: Un objeto que contenga el `resumenGeneral` (párrafos de texto), `fortalezas` (un array de strings) y `oportunidades` (un array de strings).
         *   `introduccion`
         *   Textos para `brechaDigital`
         *   Párrafos para `madurezDigital`, `competenciasDigitales`

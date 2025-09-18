@@ -38,7 +38,13 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [x] Volver a importar y renderizar el nuevo componente `PlanAccion` en `src/pages/[report].astro`.
     -   [ ] Incorporar las respuestas a preguntas abiertas (`openEndedData`) como contexto para la IA al generar las iniciativas.
 
-2.  **Refinamiento Final:**
+2.  **Mejorar la Generación del Resumen Ejecutivo:**
+    -   [ ] Actualizar el prompt en `ai-analyzer.js` para que la IA genere listas de `fortalezas` y `oportunidades`.
+    -   [ ] Actualizar la función `buildResumenEjecutivo` en `report-builder.js` para procesar los nuevos datos.
+    -   [ ] Eliminar datos estáticos y secciones redundantes (ej. `resumenPlanAccion`) del componente `ResumenEjecutivo.astro`.
+    -   [ ] Asegurar que el componente renderice dinámicamente las `fortalezas` y `oportunidades` generadas.
+
+3.  **Refinamiento Final:**
     -   Mover valores mágicos (ej. `puntuacionMetaSector`) a `config.js`.
     -   Añadir validación de esquema para el JSON generado.
 
