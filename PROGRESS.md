@@ -1,6 +1,6 @@
 # Progreso de Implementación: Generador de Reportes
 <!-- progress:start -->
-Progreso: 81% (completadas 44 de 54)
+Progreso: 85% (completadas 46 de 54)
 <!-- progress:end -->
 
 
@@ -85,17 +85,19 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [x] Etiquetas de nivel (bajo/medio/alto) con colores aptos para impresión.
     -   [x] Escala de visualización ajustada a 1–10 (x2.5) en tiles y barras.
     -   [ ] (Opcional) Delta vs. promedio global si se carga `globalData.*.json`.
+    -   [x] Refinar resumen KPI: cartas por dimensión con oración integrada.
 
 9.  **Contrato individual y comparativos (PRESEDENT_REPORT.md):**
     -   [x] Añadir metadatos al JSON individual: `schema_version`, `generated_at`, `provenance`, `subject.assessed_on`.
     -   [x] Normalizar a 1–10 en el generador y conservar crudos 1–4 para trazabilidad.
     -   [x] Calcular `collective_average10` por dimensión (cohorte completa).
     -   [x] Definir `targets` en `config.js` y computar `gap10`.
-    -   [ ] Calcular percentil general (PERCENTILE.INC) por dimensión.
+    -   [x] Calcular percentil general (PERCENTILE.INC) por dimensión.
     -   [x] Actualizar UI individual para mostrar resumen (valor, meta, brecha, promedio colectivo).
-    -   [ ] Mostrar percentil en la UI individual.
+    -   [x] Mostrar percentil en la UI individual.
 
 10. **Narrativa determinista y plan de acción:**
+    -   [x] Añadir narrativa breve por dimensión en la UI (oración clara).
     -   [ ] Definir catálogo estático de recomendaciones por dimensión/subdimensión.
     -   [ ] Seleccionar acciones por reglas (top brechas) y agregar `action_plan` al JSON.
     -   [ ] Mostrar sección “Plan de acción” en la página individual.

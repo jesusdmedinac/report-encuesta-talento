@@ -50,6 +50,14 @@ function levelLabel10(v10) {
   if (v10 <= 9.25) return { text: 'Medio', cls: 'lvl-mid' };
   return { text: 'Alto', cls: 'lvl-high' };
 }
+
+const dimsOrder = ['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'];
+const dimLabels = {
+  madurezDigital: 'Madurez Digital',
+  brechaDigital: 'Competencias Digitales',
+  usoInteligenciaArtificial: 'Uso de IA',
+  culturaOrganizacional: 'Cultura Digital',
+};
 ---
 <!doctype html>
 <html lang="es">
@@ -72,11 +80,12 @@ function levelLabel10(v10) {
       .btn { background:#0ea5e9; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; }
       .btn:focus { outline:2px solid #0284c7; outline-offset:2px; }
 
-      .tiles { display:grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-      @media (max-width: 900px) { .tiles { grid-template-columns: 1fr 1fr; } }
-      .tile { border:1px solid #e5e7eb; border-radius:12px; padding:14px; background:#fff; }
-      .tile .k { font-size:.9rem; color:#475569; }
-      .tile .v { font-size:1.8rem; font-weight:700; }
+      .kpi-cards { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      @media (max-width: 900px) { .kpi-cards { grid-template-columns: 1fr; } }
+      .kpi-card { border:1px solid #e5e7eb; border-radius:12px; padding:14px; background:#fff; page-break-inside: avoid; }
+      .kpi-head { display:flex; align-items:center; justify-content: space-between; gap:8px; margin-bottom:8px; }
+      .kpi-title { font-weight:600; }
+      .kpi-val { font-size:1.6rem; font-weight:700; }
       .lvl { display:inline-block; margin-left:.5rem; padding:.1rem .45rem; border-radius:999px; font-size:.7rem; }
       .lvl-low { background:#fee2e2; color:#7f1d1d; }
       .lvl-mid { background:#fef3c7; color:#78350f; }
@@ -92,6 +101,7 @@ function levelLabel10(v10) {
       .quotes { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
       @media (max-width: 900px) { .quotes { grid-template-columns: 1fr; } }
       blockquote { font-style: italic; color:#334155; border-left:4px solid #e5e7eb; margin: 0; padding: 8px 12px; background:#f8fafc; border-radius: 8px; }
+      .narrative { color:#334155; margin: 6px 0; }
 
       @media print {
         .topbar .back, .topbar .btn { display:none; }
@@ -120,32 +130,30 @@ function levelLabel10(v10) {
 
           <section class="card">
             <h2>Resumen de KPIs (escala 1–10)</h2>
-            <div class="tiles">
-              {tiles.map(t => {
-                const lvl = levelLabel10(t.value);
+            <div class="kpi-cards">
+              {dimsOrder.map(dim => {
+                const tile = tiles.find(t => t.key === dim) || { value: 0 };
+                const s = doc?.summary?.dimensions?.[dim] || { current10: tile.value, target10: 8.0, gap10: 0, collectiveAverage10: 0, percentile: 0 };
+                const lvl = levelLabel10(s.current10 ?? tile.value);
+                const label = dimLabels[dim] || dim;
+                const over = Number(((s.current10 ?? tile.value) - s.target10).toFixed(1));
+                const overSign = over >= 0 ? '+' : '';
+                const rel = Number(((s.current10 ?? tile.value) - s.collectiveAverage10).toFixed(1));
+                const relSign = rel >= 0 ? '+' : '';
                 return (
-                  <div class="tile">
-                    <div class="k">{t.label}</div>
-                    <div class="v">{t.value}<span class={`lvl ${lvl.cls}`}>{lvl.text}</span></div>
-                    <div class="bar" aria-hidden="true"><i style={`width: ${Math.min(100, (t.value/10)*100)}%`}></i></div>
+                  <div class="kpi-card">
+                    <div class="kpi-head">
+                      <div class="kpi-title">{label}</div>
+                      <div class="kpi-val">{s.current10 ?? tile.value}<span class={`lvl ${lvl.cls}`}>{lvl.text}</span></div>
+                    </div>
+                    <div class="bar" aria-hidden="true" style="margin-bottom:8px"><i style={`width: ${Math.min(100, ((s.current10 ?? tile.value)/10)*100)}%`}></i></div>
+                    <p class="narrative">
+                      Estás en {s.current10 ?? tile.value}/10 en {label}; tu resultado está {overSign}{over} puntos {over >= 0 ? 'por encima' : 'por debajo'} de la meta ({s.target10}/10) y {relSign}{rel} {rel >= 0 ? 'sobre' : 'bajo'} el promedio del grupo ({s.collectiveAverage10}/10), ubicándote en el percentil {s.percentile} (mejor que el {s.percentile}% del grupo).
+                    </p>
                   </div>
                 );
               })}
             </div>
-            {doc?.summary?.dimensions && (
-              <div style="margin-top:12px">
-                {Object.entries(doc.summary.dimensions).map(([dim, s]) => (
-                  <div class="row">
-                    <div class="name">{dim.replace(/([A-Z])/g,' $1').replace(/^./, s => s.toUpperCase())}</div>
-                    <div style="flex:1"></div>
-                    <div class="val" title="Valor actual">{s.current10}</div>
-                    <div class="val" title="Meta">/ {s.target10}</div>
-                    <div class="val" title="Brecha">(Δ {s.gap10})</div>
-                    <div class="val" title="Promedio cohorte">↔ {s.collectiveAverage10}</div>
-                  </div>
-                ))}
-              </div>
-            )}
           </section>
 
           <section class="card">

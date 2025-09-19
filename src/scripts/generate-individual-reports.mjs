@@ -93,6 +93,18 @@ async function main() {
       return [d, +v.toFixed(2)];
     }));
 
+    function percentileRankInc(values, x) {
+      const arr = (values || []).filter(v => Number.isFinite(v));
+      const n = arr.length;
+      if (!n) return 0;
+      let below = 0, equal = 0;
+      for (const v of arr) {
+        if (v < x) below++; else if (v === x) equal++;
+      }
+      const pr = ((below + 0.5 * equal) / n) * 100;
+      return Math.round(pr);
+    }
+
     let count = 0;
     for (let i = 0; i < rows.length; i++) {
       if (!isNaN(limit) && count >= limit) break;
@@ -129,11 +141,13 @@ async function main() {
         const target10 = Number(TARGETS_10[d] ?? 8.0);
         const gap10 = +(target10 - current10).toFixed(1);
         const collective10 = Number(collectiveAvg10[d] || 0);
+        const pr = percentileRankInc(collectByDim[d], current10);
         summary.dimensions[d] = {
           current10,
           target10,
           gap10,
           collectiveAverage10: collective10,
+          percentile: pr,
         };
       }
 
