@@ -75,6 +75,12 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [ ] Validar rendimiento con dataset real y ajustar tamaño de lote (50–100) y debounce (200–300 ms).
     -   [ ] Añadir `noindex` y revisar headers de caché en hosting.
 
+8.  **Página Individual imprimible:**
+    -   [ ] Rediseñar `src/pages/empleados/[id].astro` con tiles, barras por subdimensión y secciones claras.
+    -   [ ] Añadir `@media print` (ocultar navegación, botón imprimir; `page-break-inside: avoid`).
+    -   [ ] Etiquetas de nivel (bajo/medio/alto) con colores aptos para impresión.
+    -   [ ] (Opcional) Delta vs. promedio global si se carga `globalData.*.json`.
+
 ---
 
 ## Pensamientos y Estrategia

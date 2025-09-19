@@ -152,3 +152,28 @@ Criterios de aceptación:
 - Búsqueda filtra indistintamente por nombre/correo sin sensibilidad a mayúsculas/acentos.
 - Scroll infinito fluido sin bloqueos en 2–5k filas.
 - Índice JSON solo contiene los campos definidos (sin PII adicional), servido desde `public/`.
+
+---
+
+## Fase 11: Página Individual imprimible (one‑page)
+
+Objetivo: que el detalle de empleado sea un reporte auto‑contenible optimizado para exportar/Imprimir como PDF.
+
+Diseño propuesto (sin tabs, todo visible):
+- Header compacto: nombre, email, empresa, fecha, botón “Imprimir” (oculto en `@media print`).
+- KPI Tiles (4): promedios de Madurez, Competencias, IA, Cultura (escala 1–5) con badge de nivel (Bajo/Medio/Alto) y colores print‑friendly.
+- Sección Dimensiones: tarjetas por dimensión con barras horizontales por subdimensión (1–5), leyenda mínima, y (opcional) delta vs promedio global si disponible.
+- Sección Abiertas: tarjetas por D1–D4 con cita principal (anonimizada) y formato de comillas.
+- Footer: marca/fecha.
+
+Print CSS:
+- `@media print`: ocultar navegación, botón Imprimir; `-webkit-print-color-adjust: exact; color-adjust: exact`.
+- `page-break-inside: avoid` en `.card`/secciones; `page-break-before` en títulos de sección cuando sea necesario.
+- Tipografía legible, márgenes aptos para A4.
+
+Pasos:
+1) Reestructurar `src/pages/empleados/[id].astro` a secciones (Header, Tiles, Dimensiones, Abiertas, Footer).
+2) Añadir barras CSS (sin librerías) y badges por nivel (umbral en `config.js`).
+3) Añadir `@media print` con reglas de corte y colores.
+4) (Opcional) Cargar `globalData.*.json` para calcular deltas por subdimensión.
+5) Validar impresión en navegadores comunes (Chrome/Edge/Firefox) y ajustar cortes.
