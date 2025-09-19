@@ -10,6 +10,7 @@
     "astro": "astro",
     "generate-report": "node src/scripts/generate-report.mjs",
     "generate-open-ended": "node src/scripts/generate-open-ended.mjs",
+    "generate-respuestas-index": "node src/scripts/generate-respuestas-index.mjs",
     "test": "node --test"
   },
   "dependencies": {

@@ -7,7 +7,7 @@ import { ALL_NON_QUANTITATIVE_COLUMNS, OPEN_ENDED_QUESTIONS } from '../config.js
  * @param {string} filePath - Ruta al archivo CSV.
  * @returns {Array} - Un array de objetos, donde cada objeto es una fila del CSV.
  */
-function parseCsvFile(filePath) {
+export function parseCsvFile(filePath) {
     try {
         const csvFileContent = fs.readFileSync(filePath, 'utf8');
         const parsedData = Papa.parse(csvFileContent, {

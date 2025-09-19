@@ -40,38 +40,22 @@ import "../../styles/global.css";
     </div>
 
     <script>
-      // Datos hardcoded (10 elementos)
-      const DATA = [
-        { nombreCompleto: 'Ana María Pérez', email: 'ana.perez@example.com' },
-        { nombreCompleto: 'José Luis García', email: 'jose.garcia@example.com' },
-        { nombreCompleto: 'María-José Andrade', email: 'maria.andrade@example.com' },
-        { nombreCompleto: 'Carlos Núñez', email: 'carlos.nunez@example.com' },
-        { nombreCompleto: 'Luisa Fernández', email: 'luisa.fernandez@example.com' },
-        { nombreCompleto: 'Andrés López', email: 'andres.lopez@example.com' },
-        { nombreCompleto: 'Damián Chicaiza', email: 'dchicaiza@bancoguayaquil.com' },
-        { nombreCompleto: 'Sofía Márquez', email: 'sofia.marquez@example.com' },
-        { nombreCompleto: 'Elena Álvarez', email: 'elena.alvarez@example.com' },
-        { nombreCompleto: 'Miguel Angel', email: 'miguel.angel@example.com' }
-      ].map(x => ({
-        ...x,
-        nombreL: normalize(x.nombreCompleto),
-        emailL: normalize(x.email),
-      }));
-
       const listEl = document.getElementById('list');
       const countEl = document.getElementById('count');
       const qEl = document.getElementById('q');
       const sentinel = document.getElementById('sentinel');
 
-      let filtered = DATA.slice();
-      let visible = 10; // Para demo: mostramos hasta 10 (todo el dataset)
+      const BATCH_SIZE = 50;
+      let DATA = [];
+      let filtered = [];
+      let visible = 0;
 
       function normalize(str) {
         if (!str) return '';
         try {
-          return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+          return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
         } catch {
-          return String(str).toLowerCase();
+          return String(str).toLowerCase().trim();
         }
       }
 
@@ -83,8 +67,8 @@ import "../../styles/global.css";
           row.className = 'item';
           row.innerHTML = `
             <div>
-              <div class="name">${item.nombreCompleto}</div>
-              <div class="email">${item.email}</div>
+              <div class=\"name\">${item.nombreCompleto}</div>
+              <div class=\"email\">${item.email}</div>
             </div>
           `;
           listEl.appendChild(row);
@@ -105,33 +89,49 @@ import "../../styles/global.css";
         } else {
           filtered = DATA.filter(x => x.nombreL.includes(q) || x.emailL.includes(q));
         }
-        visible = Math.min(10, filtered.length); // demo
+        visible = Math.min(BATCH_SIZE, filtered.length);
         render();
       }
 
-      // Debounce
+      // Debounce búsqueda
       let tid;
       qEl.addEventListener('input', () => {
         clearTimeout(tid);
         tid = setTimeout(applyFilter, 250);
       });
 
-      // Infinito (para demo incrementaría en bloques, pero dataset=10)
+      // Scroll infinito
       const io = new IntersectionObserver(entries => {
         for (const e of entries) {
-          if (e.isIntersecting) {
-            const next = Math.min(filtered.length, visible + 10);
-            if (next !== visible) {
-              visible = next; render();
-            }
+          if (e.isIntersecting && filtered.length > visible) {
+            const next = Math.min(filtered.length, visible + BATCH_SIZE);
+            if (next !== visible) { visible = next; render(); }
           }
         }
       });
       io.observe(sentinel);
 
-      // Primer render
-      render();
+      async function init() {
+        try {
+          // Indicador de carga inicial
+          countEl.textContent = 'Cargando…';
+          const res = await fetch('/respuestas-index.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('No se pudo cargar el índice');
+          const raw = await res.json();
+          DATA = raw.map(x => ({
+            ...x,
+            nombreL: x.nombreL || normalize(x.nombreCompleto),
+            emailL: x.emailL || normalize(x.email),
+          }));
+          applyFilter();
+        } catch (err) {
+          listEl.innerHTML = '<div class="empty">Error al cargar el índice</div>';
+          countEl.textContent = '';
+          console.error(err);
+        }
+      }
+
+      init();
     </script>
   </body>
 </html>
-
