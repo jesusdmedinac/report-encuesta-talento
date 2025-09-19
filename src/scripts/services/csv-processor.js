@@ -177,3 +177,42 @@ function cleanOpenEndedData(openEndedDataRaw) {
     }
     return cleaned;
 }
+
+/**
+ * Calcula puntajes individuales (una sola fila) por dimensión/subdimensión
+ * usando el mismo mapeo que el análisis global.
+ * @param {Object} row - Fila del CSV (cruda) del empleado.
+ * @param {Object} mappings - Mapeo de pregunta -> { dimension, subDimension }.
+ * @returns {Object}
+ */
+export function performIndividualAnalysis(row, mappings) {
+    const scores = {};
+    // inicializar estructura
+    for (const question in mappings) {
+        const { dimension, subDimension } = mappings[question];
+        if (!scores[dimension]) scores[dimension] = {};
+        if (!scores[dimension][subDimension]) scores[dimension][subDimension] = [];
+    }
+
+    // poblar desde la fila
+    for (const question in row) {
+        const mapping = mappings[question];
+        if (mapping) {
+            const score = parseInt(row[question], 10);
+            if (!isNaN(score)) {
+                scores[mapping.dimension][mapping.subDimension].push(score);
+            }
+        }
+    }
+
+    // calcular promedio por subdimensión
+    const results = {};
+    for (const dimension in scores) {
+        results[dimension] = {};
+        for (const subDimension in scores[dimension]) {
+            const avg = calculateAverage(scores[dimension][subDimension]);
+            results[dimension][subDimension] = parseFloat(avg.toFixed(2));
+        }
+    }
+    return results;
+}

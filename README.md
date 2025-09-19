@@ -56,14 +56,13 @@ Principios:
 Salida esperada:
 - `src/data/individual/<employeeId>.json` con: `header` (empresa, employeeId, generatedAt, provider/model/mode), `scores` por dimensión/subdimensión y `openEnded` del propio empleado (limpias/anonimizadas).
 
-CLI propuesto (se implementará en `src/scripts/generate-individual-reports.mjs`):
+CLI (implementado en `src/scripts/generate-individual-reports.mjs`):
 ```bash
-# Generar todos en modo offline (recomendado)
+# Generar un subconjunto (p. ej. 5 primeros) para validar
 npm run generate-individual -- \
   --csv=./data/respuestas-por-puntos.csv \
   --empresa="Skilt" \
-  --provider=gemini \
-  --offline
+  --limit=5
 
 # Generar un subconjunto por IDs conocidos
 npm run generate-individual -- \
@@ -72,18 +71,15 @@ npm run generate-individual -- \
   --ids=emp_01,emp_07,emp_42 \
   --offline
 
-# Habilitar IA solo para individuos seleccionados (usa caché por empleado)
+# Generar todos (sin límite)
 npm run generate-individual -- \
   --csv=./data/respuestas-por-puntos.csv \
-  --empresa="Skilt" \
-  --ids=emp_07 \
-  --provider=openai --model=gpt-5 \
-  --ai
+  --empresa="Skilt"
 ```
 
 Notas operativas:
 - Identificador: por defecto se usa un `employeeId` determinístico (hash) derivado de un campo estable (p.ej. email). La salida nunca expone ese campo.
-- Caché cualitativo por empleado: `src/data/ind-openEnded.<employeeId>.json` cuando se usa `--ai`.
+- Futuro: caché cualitativo por empleado: `src/data/ind-openEnded.<employeeId>.json` cuando se use IA.
 - Páginas Astro: se expondrán rutas separadas, p.ej. `/empleados/<employeeId>` y un índice `/empleados/` con los disponibles.
 
 ## 🔎 Listado de respuestas con búsqueda e infinito

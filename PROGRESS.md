@@ -62,11 +62,11 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 -   [ ] Render de componentes clave (opcional) con datos mock.
 
 6.  **Reportes Individuales (proceso independiente):**
-    -   [ ] Diseñar e implementar `generate-individual-reports.mjs` (CLI separado, por defecto offline, con filtro `--ids/--limit`).
+    -   [x] Implementar `generate-individual-reports.mjs` (CLI separado, offline por defecto, con `--limit`).
     -   [ ] Crear esquema `individual.schema.json` y validar salidas.
     -   [ ] Añadir rutas Astro independientes `/empleados/` y `/empleados/[id]` para visualizar.
-    -   [ ] Asegurar que no se exponga PII; usar `employeeId` pseudónimo.
-    -   [ ] Documentar comandos en README y AGENTS (parcialmente listo).
+    -   [ ] Asegurar que no se exponga PII; usar `employeeId` pseudónimo o confirmar uso de PII bajo auth.
+    -   [x] Documentar comandos en README y AGENTS (listado básico).
 
 7.  **Listado de Respuestas (búsqueda + infinito):**
     -   [x] Definir alcance y plan en docs (README, AGENTS, IMPLEMENTATION_PLAN).

@@ -1,0 +1,100 @@
+{
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-19T02:01:47.067Z",
+    "schema": "individual-1.0",
+    "id": "af2c5b73dfed8f77",
+    "subject": {
+      "nombreCompleto": "María José Morán Monge",
+      "email": "mmoran1@bancoguayaquil.com"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 2.33,
+      "resolucionDeProblemas": 3,
+      "proactividadDigital": 2
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 3.5,
+      "alfabetizacionDeDatos": 3,
+      "colaboracionDigital": 3.5,
+      "ciberseguridad": 2.75
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 2,
+      "ambienteDeAprendizaje": 1,
+      "apoyoOrganizacional": 3,
+      "experimentacion": 2,
+      "reconocimiento": 2
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 4,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 1,
+      "percepcionDeRiesgo": 1,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 2
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 3,
+      "monitoreoDeRendimiento": 3,
+      "liderazgoDeAdopcion": 2,
+      "optimizacionDeColaboracion": 4,
+      "usoDeIAEnGestion": 3
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "No es algo que habitualmente realizo, no ha estado del todo priorizado en mis temas laborales o personales, pero tampoco soy ajena a explorar o aprender"
+    ],
+    "D2_OPEN": [
+      "Capacitacion sobre el uso de ciertas herramientas para maximizar el uso"
+    ],
+    "D3_OPEN": [
+      "Partiendo desde este diagnostico, identificar de ser posible las necesidades de cada equipo o grupo y facilitarnos guias, cursos internos o externos, y/o contarnos noticias tecnologicas o casos de uso exitoso en empresas a fines o no para motivarnos en esta cultura"
+    ],
+    "D4_OPEN": [
+      "Expectativas mas que preocupaciones. De que manera poder aprovechar e integrar la IA en las actividades diarias asi como en el desarrollo de las iniciativas que puedan solucionar dolores de los usuarios internos y externos, generando eficiencias e impacto al negocio"
+    ]
+  }
+}
