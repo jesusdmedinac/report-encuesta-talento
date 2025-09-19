@@ -1,39 +1,39 @@
 {
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-19T02:01:47.067Z",
+    "generatedAt": "2025-09-19T02:17:07.764Z",
     "schema": "individual-1.0",
-    "id": "23810a5a4cd1b48f",
+    "id": "2kknwpnofed3uzhkmnx2kknwpno6zayf",
     "subject": {
-      "nombreCompleto": "ANDREA TORRES",
-      "email": "ATORRES3@BANCOGUAYAQUIL.COM"
+      "nombreCompleto": "Kristel Andrade",
+      "email": "Kandrade1@bancoguayaquil.com"
     }
   },
   "scores": {
     "madurezDigital": {
-      "adaptabilidad": 2.67,
-      "resolucionDeProblemas": 2.5,
-      "proactividadDigital": 2.5
+      "adaptabilidad": 3,
+      "resolucionDeProblemas": 2,
+      "proactividadDigital": 3
     },
     "brechaDigital": {
-      "analisisDeDatos": 2.5,
-      "alfabetizacionDeDatos": 3,
+      "analisisDeDatos": 3,
+      "alfabetizacionDeDatos": 2,
       "colaboracionDigital": 3,
-      "ciberseguridad": 3.5
+      "ciberseguridad": 2.5
     },
     "culturaOrganizacional": {
       "liderazgoYVision": 3,
-      "ambienteDeAprendizaje": 3,
+      "ambienteDeAprendizaje": 2,
       "apoyoOrganizacional": 3,
-      "experimentacion": 3,
-      "reconocimiento": 3
+      "experimentacion": 2,
+      "reconocimiento": 2
     },
     "usoInteligenciaArtificial": {
       "frecuenciaDeUso": 3,
       "habilidadDeUso": 3,
-      "nivelDeAdopcion": 2,
-      "percepcionDeRiesgo": 3,
-      "interesEnAprendizaje": 3,
+      "nivelDeAdopcion": 1,
+      "percepcionDeRiesgo": 2,
+      "interesEnAprendizaje": 4,
       "eticaYVerificacion": 3
     },
     "rolLiderazgo": {
@@ -50,20 +50,20 @@
       "usoDeIAEnGestion": 0
     },
     "rolComercialCliente": {
-      "usoDeCRM": 4,
-      "analiticaDeCliente": 3,
-      "comunicacionConClientes": 4,
-      "automatizacionDeMarketing": 3,
-      "usoDeIA": 3,
-      "usoDeSEO": 2,
-      "gestionDePaidMedia": 2
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
     },
     "rolOperacionesAdminFinanzas": {
-      "usoDeERP": 0,
-      "hojasDeCalculoAvanzadas": 0,
-      "plataformasDeGestion": 0,
-      "digitalizacionDeProcesos": 0,
-      "usoDeIA": 0
+      "usoDeERP": 3,
+      "hojasDeCalculoAvanzadas": 3,
+      "plataformasDeGestion": 2,
+      "digitalizacionDeProcesos": 1,
+      "usoDeIA": 3
     },
     "rolTecnicoProducto": {
       "gestionDeCodigo": 0,
@@ -85,16 +85,16 @@
   },
   "openEnded": {
     "D1_OPEN": [
-      "Avanzando de acuerdo a cursos establecidos por el banco"
+      "los datos cambian el modo de analizar al cliente"
     ],
     "D2_OPEN": [
-      "Una herramienta en la cual simplifique los procesos operativos"
+      "capacitarme mas en ellas"
     ],
     "D3_OPEN": [
-      "Que exista mas autoatencion en productos para empresas"
+      "que las herramientas esten para todos no solo para quienes estan en tribu"
     ],
     "D4_OPEN": [
-      "Nos va ayudar para poder mitigar conflictos que talvez no podamos resolver o darnos ideas para poder hacerlo"
+      "Mi preocupacion que no se analice la informacion que da las IA"
     ]
   }
 }

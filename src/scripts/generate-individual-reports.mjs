@@ -65,6 +65,7 @@ async function main() {
 
     const mappings = loadJson(MAPPINGS_PATH);
 
+    const ID_COL = '#';
     const NAME_COL = 'DEMO_CONTACT: Nombre';
     const LAST_COL = 'DEMO_CONTACT: Apellido';
     const EMAIL_COL = 'DEMO_CONTACT: Email';
@@ -75,6 +76,7 @@ async function main() {
     for (let i = 0; i < rows.length; i++) {
       if (!isNaN(limit) && count >= limit) break;
       const row = rows[i];
+      const csvId = (row[ID_COL] || '').toString().trim();
       const nombre = (row[NAME_COL] || '').toString().trim();
       const apellido = (row[LAST_COL] || '').toString().trim();
       const email = (row[EMAIL_COL] || '').toString().trim();
@@ -82,7 +84,7 @@ async function main() {
       if (!nombre && !apellido && !email) continue;
 
       const nombreCompleto = [nombre, apellido].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
-      const id = hashId(email, nombreCompleto || `row-${i}`);
+      const id = csvId || hashId(email, nombreCompleto || `row-${i}`);
 
       // Análisis cuantitativo individual
       const scores = performIndividualAnalysis(row, mappings);
@@ -115,4 +117,3 @@ async function main() {
 }
 
 main();
-

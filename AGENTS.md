@@ -12,6 +12,7 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - Salida: `src/data/globalData.<provider>.json` y caché cualitativo `src/data/openEnded.<reportId>.json`.
 - Salida individual (nuevo proceso independiente): `src/data/individual/<employeeId>.json` y opcional `src/data/ind-openEnded.<employeeId>.json`.
 - Listado de respuestas: `public/respuestas-index.json` (para la página `/respuestas`).
+  - Incluye `id` desde la columna `#` del CSV (fallback a hash si falta) para enlazar a `/empleados/{id}`.
 - Tests: `npm test` (Node test runner).
 
 ## Estado Actual
@@ -65,10 +66,10 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - `src/pages/[report].astro`: integra todas las secciones.
 - Individual:
   - `src/scripts/generate-individual-reports.mjs` (a implementar)
-  - `src/pages/empleados/[id].astro` y `src/pages/empleados/index.astro` (a implementar)
+  - `src/pages/empleados/[id].astro` (detalle mínimo implementado)
 - Listado de respuestas:
-  - `src/scripts/generate-respuestas-index.mjs` (a implementar)
-  - `src/pages/respuestas/index.astro` (a implementar)
+  - `src/scripts/generate-respuestas-index.mjs` (implementado)
+  - `src/pages/respuestas/index.astro` (implementado)
 
 ## Decisiones y Gotchas
 - CSV correcto: usar `data/respuestas-por-puntos.csv`. Otros CSV sin prefijos de mapeo producirán valores vacíos.

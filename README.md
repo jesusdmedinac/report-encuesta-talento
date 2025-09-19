@@ -92,7 +92,7 @@ Datos de respaldo:
   - `nombreL`, `emailL`: versiones normalizadas (minúsculas/sin acentos) para filtrar rápido en el cliente.
   - Opcional: `area`/`rol` si quieres mostrar columnas adicionales.
 
-CLI propuesto (se implementará):
+CLI (implementado):
 ```bash
 npm run generate-respuestas-index -- \
   --csv=./data/respuestas-por-puntos.csv \
@@ -105,6 +105,11 @@ UX/Comportamiento:
   - Normaliza la query a minúsculas (y sin acentos) y filtra contra `nombreL` y `emailL`.
   - Renderiza en lotes de 50–100 ítems con IntersectionObserver (scroll infinito).
   - Debounce de 200–300 ms para búsquedas.
+  - Enlaza cada fila a `/empleados/{id}`.
+
+Detalle individual:
+- `src/pages/empleados/[id].astro` carga `src/data/individual/{id}.json` y visualiza puntajes y abiertas.
+- El `id` proviene de la columna `#` del CSV (fallback a hash determinístico si no existe).
 
 Privacidad y cacheo:
 - El sitio ya requiere auth; aun así, añade `<meta name="robots" content="noindex">` en la página.

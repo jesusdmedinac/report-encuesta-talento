@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { parseCsvFile } from './services/csv-processor.js';
+import crypto from 'crypto';
 
 function getArgument(key) {
   const arg = process.argv.find(a => a.startsWith(key + '='));
@@ -25,6 +26,10 @@ function ensureDir(filePath) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
+function cryptoHash(str) {
+  return crypto.createHash('sha1').update(String(str)).digest('hex').slice(0, 16);
+}
+
 async function main() {
   try {
     const csvPath = getArgument('--csv') || path.join(process.cwd(), 'data', 'respuestas-por-puntos.csv');
@@ -38,6 +43,7 @@ async function main() {
     const rows = parseCsvFile(csvPath);
     console.log(`Filas leídas: ${rows.length}`);
 
+    const ID_COL = '#';
     const NAME_COL = 'DEMO_CONTACT: Nombre';
     const LAST_COL = 'DEMO_CONTACT: Apellido';
     const EMAIL_COL = 'DEMO_CONTACT: Email';
@@ -46,6 +52,7 @@ async function main() {
     const index = [];
 
     for (const row of rows) {
+      const csvId = (row[ID_COL] || '').toString().trim();
       const nombre = (row[NAME_COL] || '').toString().trim();
       const apellido = (row[LAST_COL] || '').toString().trim();
       const email = (row[EMAIL_COL] || '').toString().trim();
@@ -54,12 +61,14 @@ async function main() {
 
       const nombreCompleto = [nombre, apellido].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
       const emailL = normalize(email);
-      // Deduplicar por email cuando esté presente
-      const dedupeKey = emailL || `${normalize(nombreCompleto)}#${index.length}`;
+      const id = csvId || cryptoHash(email || nombreCompleto || String(index.length));
+      // Deduplicar por ID (preferente) o email si no hay ID
+      const dedupeKey = id || emailL || `${normalize(nombreCompleto)}#${index.length}`;
       if (seenEmails.has(dedupeKey)) continue;
       seenEmails.add(dedupeKey);
 
       index.push({
+        id,
         nombreCompleto,
         email,
         nombreL: normalize(nombreCompleto),
@@ -78,4 +87,3 @@ async function main() {
 }
 
 main();
-

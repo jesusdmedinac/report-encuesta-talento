@@ -1,0 +1,90 @@
+---
+import { promises as fs } from 'fs';
+import path from 'path';
+import "../../styles/global.css";
+
+export async function getStaticPaths() {
+  const dir = path.resolve(process.cwd(), 'src/data/individual');
+  try {
+    const files = await fs.readdir(dir);
+    const jsons = files.filter(f => f.endsWith('.json'));
+    return jsons.map(f => ({ params: { id: f.replace('.json', '') } }));
+  } catch {
+    return [];
+  }
+}
+
+const { id } = Astro.params;
+const dataPath = path.resolve(process.cwd(), 'src/data/individual', `${id}.json`);
+const exists = await fs.access(dataPath).then(() => true).catch(() => false);
+let doc = null;
+if (exists) {
+  const raw = await fs.readFile(dataPath, 'utf8');
+  doc = JSON.parse(raw);
+}
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Empleado {id}</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      .container { max-width: 900px; margin: 0 auto; padding: 24px; }
+      .header { display:flex; justify-content: space-between; align-items: center; }
+      .muted { color: #64748b; }
+      .card { border:1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin: 12px 0; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+      h2 { margin: 0 0 8px; font-size: 1.1rem; }
+      .pill {display:inline-block; background:#eef2ff; color:#3730a3; padding:.1rem .5rem; border-radius:999px; font-size:.75rem; }
+      .back { color: #1d4ed8; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="/respuestas" class="back">← Volver al listado</a>
+        <span class="muted">ID: {id}</span>
+      </div>
+      {doc ? (
+        <>
+          <h1>{doc.header?.subject?.nombreCompleto}</h1>
+          {doc.header?.subject?.email && (<div class="muted">{doc.header.subject.email}</div>)}
+          <div class="muted">{doc.header?.empresa} · <span class="pill">{new Date(doc.header?.generatedAt).toLocaleString('es-ES')}</span></div>
+
+          <div class="card">
+            <h2>Puntajes</h2>
+            <div class="grid">
+              {Object.entries(doc.scores || {}).map(([dim, subs]) => (
+                <div>
+                  <strong>{dim}</strong>
+                  <ul>
+                    {Object.entries(subs).map(([k, v]) => (<li>{k}: {v}</li>))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Respuestas abiertas</h2>
+            <div class="grid">
+              {Object.entries(doc.openEnded || {}).map(([code, arr]) => (
+                <div>
+                  <strong>{code}</strong>
+                  <ul>
+                    {(arr || []).map((t) => (<li>“{t}”</li>))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div class="card">No existe información para este empleado.</div>
+      )}
+    </div>
+  </body>
+ </html>
+

@@ -1,28 +1,28 @@
 {
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-19T02:01:47.067Z",
+    "generatedAt": "2025-09-19T02:17:07.762Z",
     "schema": "individual-1.0",
-    "id": "a4ff040703d7fd6b",
+    "id": "6shrpxkhvetnqja8al8326shrpxki2q9",
     "subject": {
-      "nombreCompleto": "Lia Ferrety Bajaña",
-      "email": "lferrety@bancoguayaquil.com"
+      "nombreCompleto": "DANNY FABIANI CHICAIZA CASTRO",
+      "email": "dchicaiza@bancoguayaquil.com"
     }
   },
   "scores": {
     "madurezDigital": {
-      "adaptabilidad": 3.33,
-      "resolucionDeProblemas": 4,
-      "proactividadDigital": 3
+      "adaptabilidad": 3.67,
+      "resolucionDeProblemas": 3.5,
+      "proactividadDigital": 3.5
     },
     "brechaDigital": {
-      "analisisDeDatos": 2,
+      "analisisDeDatos": 4,
       "alfabetizacionDeDatos": 4,
-      "colaboracionDigital": 2.5,
-      "ciberseguridad": 3.25
+      "colaboracionDigital": 4,
+      "ciberseguridad": 3.5
     },
     "culturaOrganizacional": {
-      "liderazgoYVision": 4,
+      "liderazgoYVision": 3,
       "ambienteDeAprendizaje": 3,
       "apoyoOrganizacional": 4,
       "experimentacion": 3,
@@ -30,9 +30,9 @@
     },
     "usoInteligenciaArtificial": {
       "frecuenciaDeUso": 3,
-      "habilidadDeUso": 4,
+      "habilidadDeUso": 3,
       "nivelDeAdopcion": 2,
-      "percepcionDeRiesgo": 2,
+      "percepcionDeRiesgo": 1,
       "interesEnAprendizaje": 4,
       "eticaYVerificacion": 4
     },
@@ -50,13 +50,13 @@
       "usoDeIAEnGestion": 0
     },
     "rolComercialCliente": {
-      "usoDeCRM": 1,
-      "analiticaDeCliente": 3,
-      "comunicacionConClientes": 1,
-      "automatizacionDeMarketing": 3,
-      "usoDeIA": 3,
-      "usoDeSEO": 1,
-      "gestionDePaidMedia": 4
+      "usoDeCRM": 4,
+      "analiticaDeCliente": 4,
+      "comunicacionConClientes": 3,
+      "automatizacionDeMarketing": 2,
+      "usoDeIA": 2,
+      "usoDeSEO": 2,
+      "gestionDePaidMedia": 2
     },
     "rolOperacionesAdminFinanzas": {
       "usoDeERP": 0,
@@ -85,16 +85,16 @@
   },
   "openEnded": {
     "D1_OPEN": [
-      "Enriquecedor"
+      "PROACTIVO"
     ],
     "D2_OPEN": [
-      "Una nueva herramienta que me permita ayudar a clientes en consultas rapidas y puntuales"
+      "DESARROLLO DE NUEVAS HERRAMIENTAS"
     ],
     "D3_OPEN": [
-      "Capacitaciones"
+      "INTEGRAR LA CULTURA GENERAL AL TRABAJO DIARIO"
     ],
     "D4_OPEN": [
-      "La facilidad en poder ayudar y facilitar los procedimientos de cada cliente"
+      "LA MAYOR EXPECTATIVA ES QUE NOS AYUDE A SER MAS EFICIENTES EN NUESTRO ROL"
     ]
   }
 }

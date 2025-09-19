@@ -64,14 +64,14 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 6.  **Reportes Individuales (proceso independiente):**
     -   [x] Implementar `generate-individual-reports.mjs` (CLI separado, offline por defecto, con `--limit`).
     -   [ ] Crear esquema `individual.schema.json` y validar salidas.
-    -   [ ] Añadir rutas Astro independientes `/empleados/` y `/empleados/[id]` para visualizar.
+    -   [x] Añadir ruta Astro `/empleados/[id]` (detalle mínimo) para visualizar JSON individual.
     -   [ ] Asegurar que no se exponga PII; usar `employeeId` pseudónimo o confirmar uso de PII bajo auth.
     -   [x] Documentar comandos en README y AGENTS (listado básico).
 
 7.  **Listado de Respuestas (búsqueda + infinito):**
     -   [x] Definir alcance y plan en docs (README, AGENTS, IMPLEMENTATION_PLAN).
-    -   [ ] Implementar `generate-respuestas-index.mjs` que produzca `public/respuestas-index.json`.
-    -   [ ] Crear página `src/pages/respuestas/index.astro` con buscador e infinito (client-side, debounce + IntersectionObserver).
+    -   [x] Implementar `generate-respuestas-index.mjs` que produzca `public/respuestas-index.json` (incluye `id`).
+    -   [x] Crear página `src/pages/respuestas/index.astro` con buscador e infinito (client-side, debounce + IntersectionObserver) y enlaces a `/empleados/{id}`.
     -   [ ] Validar rendimiento con dataset real y ajustar tamaño de lote (50–100) y debounce (200–300 ms).
     -   [ ] Añadir `noindex` y revisar headers de caché en hosting.
 
