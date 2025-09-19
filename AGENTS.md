@@ -67,6 +67,7 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - Individual:
   - `src/scripts/generate-individual-reports.mjs` (a implementar)
   - `src/pages/empleados/[id].astro` (detalle mínimo implementado)
+  - Próximo contrato (inspirado en PRESEDENT_REPORT.md): agregar metadatos (`schema_version`, `generated_at`, `provenance`), valores normalizados a 1–10 y comparativos (promedio colectivo, meta/gap, percentil general) sin romper compatibilidad.
 - Listado de respuestas:
   - `src/scripts/generate-respuestas-index.mjs` (implementado)
   - `src/pages/respuestas/index.astro` (implementado)
@@ -82,6 +83,8 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - Privacidad: no exponer PII; usar `employeeId` pseudónimo determinístico. El mapa `employeeId -> email` (si se requiere) debe guardarse en `./debug/.local-map.json` (gitignored).
 - Costos: por defecto `--offline`. Habilitar `--ai` solo para un subconjunto con `--ids`/`--limit`.
 - Escalabilidad: soportar `--limit` y `--concurrency` (cuando haya IA) para lotes.
+- Comparativos/percentiles: primero promedio colectivo y percentil general (PERCENTILE.INC). Segmentados en una fase posterior.
+- Metas/gaps: definir targets por dimensión en `config.js` para computar `gap10` (target − current).
 
 ## Próximos Pasos Sugeridos
 - Tests adicionales: snapshots del JSON completo y render tests de componentes.

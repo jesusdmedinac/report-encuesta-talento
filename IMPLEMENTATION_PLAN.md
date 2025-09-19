@@ -177,3 +177,45 @@ Pasos:
 3) Añadir `@media print` con reglas de corte y colores.
 4) (Opcional) Cargar `globalData.*.json` para calcular deltas por subdimensión.
 5) Validar impresión en navegadores comunes (Chrome/Edge/Firefox) y ajustar cortes.
+
+---
+
+## Fase 12: Contrato individual y comparativos (referencia PRESEDENT_REPORT.md)
+
+Objetivo: alinear el JSON individual a un contrato estable con metadatos, normalización a 1–10, comparativos mínimos y brechas vs. meta.
+
+Contrato (inicial, incremental):
+- `schema_version`, `generated_at`, `provenance`.
+- `subject`: `{ name, email, role?, assessed_on }` (usar fecha de fila si existe; fallback `generated_at`).
+- `summary`: `{ current_value10, target10, gap10, level_label, collective_average10 }` por dimensión principal.
+- `comparisons.general`: `{ percentile }` (método PERCENTILE.INC sobre la cohorte completa).
+- Mantener `scores` por subdimensión (agregar también `value10`).
+
+Transformaciones de datos:
+- Normalizar todos los valores a escala 1–10 (multiplicador 2.5 desde 1–4) y conservar crudos 1–4 para trazabilidad.
+- Calcular promedios colectivos por dimensión con toda la cohorte (`collective_average10`).
+- Definir `targets` por dimensión en `config.js` (p. ej., 8.0/10) y calcular `gap10`.
+- Calcular percentil general por dimensión (comenzar por percentil global; segmentos después).
+
+Pasos:
+1) Extender generador individual para escribir metadatos y `value10` sin romper la UI.
+2) Calcular promedios colectivos por dimensión y añadir `collective_average10`.
+3) Añadir `targets` en `config.js` y calcular `gap10`.
+4) Calcular percentil general (PERCENTILE.INC) por dimensión.
+5) Actualizar página individual para mostrar resumen/comparativos.
+
+---
+
+## Fase 13: Narrativa determinista y plan de acción
+
+Objetivo: generar textos breves y un plan de acción mínimo sin IA, basados en reglas de negocio.
+
+Alcance:
+- Narrativa por dimensión: 2–3 frases según `level_label` y `gap10`.
+- Plan de acción: seleccionar 3–5 recomendaciones desde un catálogo según Top N brechas (subdimensiones con menor `value10`).
+
+Pasos:
+1) Definir catálogo estático de recomendaciones (por dimensión/subdimensión) en `config`.
+2) Implementar selector por reglas (prioridad: brecha alta x relevancia del rol si está disponible).
+3) Integrar en JSON individual (`action_plan`).
+4) Mostrar en UI una sección “Plan de acción” imprimible.

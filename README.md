@@ -111,6 +111,14 @@ Detalle individual:
 - `src/pages/empleados/[id].astro` carga `src/data/individual/{id}.json` y visualiza puntajes y abiertas.
 - El `id` proviene de la columna `#` del CSV (fallback a hash determinístico si no existe).
 
+Contrato y próximos incrementos (inspirado en PRESEDENT_REPORT.md):
+- Próximamente el JSON individual incluirá metadatos (`schema_version`, `generated_at`, `provenance`) y comparativos mínimos:
+  - Valores normalizados a 1–10 (conservar crudos 1–4 para trazabilidad).
+  - Promedio colectivo por dimensión (`collective_average10`).
+  - Metas por dimensión desde `config.js` y brecha (`gap10`).
+  - Percentil general por dimensión.
+  - Narrativa breve y `action_plan` por reglas deterministas.
+
 Privacidad y cacheo:
 - El sitio ya requiere auth; aun así, añade `<meta name="robots" content="noindex">` en la página.
 - Configura `Cache-Control: private, no-store` para el JSON de índice en el hosting si es factible.
