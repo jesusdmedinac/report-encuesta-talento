@@ -86,3 +86,11 @@ export const LIMITES_IA = {
 export const FEATURE_FLAGS = {
     enableOpenEndedPreanalysis: true,
 };
+
+// Metas/targets por dimensión en escala 1–10 (ajustables por cliente/sector)
+export const TARGETS_10 = {
+    madurezDigital: 8.0,
+    brechaDigital: 8.0,
+    usoInteligenciaArtificial: 8.0,
+    culturaOrganizacional: 8.0,
+};

@@ -1,6 +1,6 @@
 # Progreso de Implementación: Generador de Reportes
 <!-- progress:start -->
-Progreso: 74% (completadas 39 de 53)
+Progreso: 81% (completadas 44 de 54)
 <!-- progress:end -->
 
 
@@ -87,12 +87,13 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [ ] (Opcional) Delta vs. promedio global si se carga `globalData.*.json`.
 
 9.  **Contrato individual y comparativos (PRESEDENT_REPORT.md):**
-    -   [ ] Añadir metadatos al JSON individual: `schema_version`, `generated_at`, `provenance`, `subject.assessed_on`.
-    -   [ ] Normalizar a 1–10 en el generador y conservar crudos 1–4 para trazabilidad.
-    -   [ ] Calcular `collective_average10` por dimensión (cohorte completa).
-    -   [ ] Definir `targets` en `config.js` y computar `gap10`.
+    -   [x] Añadir metadatos al JSON individual: `schema_version`, `generated_at`, `provenance`, `subject.assessed_on`.
+    -   [x] Normalizar a 1–10 en el generador y conservar crudos 1–4 para trazabilidad.
+    -   [x] Calcular `collective_average10` por dimensión (cohorte completa).
+    -   [x] Definir `targets` en `config.js` y computar `gap10`.
     -   [ ] Calcular percentil general (PERCENTILE.INC) por dimensión.
-    -   [ ] Actualizar UI individual para mostrar resumen/comparativos (valor, meta, brecha, promedio colectivo, percentil).
+    -   [x] Actualizar UI individual para mostrar resumen (valor, meta, brecha, promedio colectivo).
+    -   [ ] Mostrar percentil en la UI individual.
 
 10. **Narrativa determinista y plan de acción:**
     -   [ ] Definir catálogo estático de recomendaciones por dimensión/subdimensión.

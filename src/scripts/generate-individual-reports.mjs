@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
-import { MAPPINGS_PATH } from './config.js';
+import { MAPPINGS_PATH, TARGETS_10 } from './config.js';
 import { loadJson } from './utils.js';
 import { parseCsvFile, performIndividualAnalysis } from './services/csv-processor.js';
 import { OPEN_ENDED_QUESTIONS } from './config.js';
@@ -72,6 +72,27 @@ async function main() {
 
     ensureDir(outDir);
 
+    // Pre-cálculo: promedios colectivos por dimensión (cohorte completa) en 1–10
+    const dims = ['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'];
+    const collectByDim = Object.fromEntries(dims.map(d => [d, []]));
+    for (let i = 0; i < rows.length; i++) {
+      const r = rows[i];
+      const ind = performIndividualAnalysis(r, mappings); // 1–4 por subdimensión
+      for (const d of dims) {
+        const subs = ind[d] || {};
+        const vals = Object.values(subs).filter(v => typeof v === 'number' && v > 0);
+        if (vals.length) {
+          const avg = vals.reduce((a,b)=>a+b,0)/vals.length; // 1–4
+          collectByDim[d].push(avg * 2.5); // a 1–10
+        }
+      }
+    }
+    const collectiveAvg10 = Object.fromEntries(dims.map(d => {
+      const arr = collectByDim[d];
+      const v = arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : 0;
+      return [d, +v.toFixed(2)];
+    }));
+
     let count = 0;
     for (let i = 0; i < rows.length; i++) {
       if (!isNaN(limit) && count >= limit) break;
@@ -86,21 +107,54 @@ async function main() {
       const nombreCompleto = [nombre, apellido].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
       const id = csvId || hashId(email, nombreCompleto || `row-${i}`);
 
-      // Análisis cuantitativo individual
+      // Análisis cuantitativo individual (1–4 por subdimensión)
       const scores = performIndividualAnalysis(row, mappings);
+      // Normalizados a 1–10 por subdimensión
+      const scores10 = {};
+      for (const dim of Object.keys(scores)) {
+        scores10[dim] = {};
+        for (const sub of Object.keys(scores[dim])) {
+          const v = Number(scores[dim][sub]) || 0;
+          scores10[dim][sub] = +(v * 2.5).toFixed(1);
+        }
+      }
+
+      // Resumen por dimensión (current10/target10/gap10/collectiveAverage10)
+      const summary = { dimensions: {} };
+      for (const d of dims) {
+        const subs = scores[d] || {};
+        const vals = Object.values(subs).filter(v => typeof v === 'number' && v > 0);
+        const rawAvg = vals.length ? (vals.reduce((a,b)=>a+b,0)/vals.length) : 0; // 1–4
+        const current10 = +(rawAvg * 2.5).toFixed(1);
+        const target10 = Number(TARGETS_10[d] ?? 8.0);
+        const gap10 = +(target10 - current10).toFixed(1);
+        const collective10 = Number(collectiveAvg10[d] || 0);
+        summary.dimensions[d] = {
+          current10,
+          target10,
+          gap10,
+          collectiveAverage10: collective10,
+        };
+      }
 
       // Abiertas del individuo (limpias/anonimizadas)
       const openEnded = cleanOpenEndedFromRow(row);
 
+      const nowIso = new Date().toISOString();
       const doc = {
+        schema_version: '1.0',
+        generated_at: nowIso,
+        provenance: { source: path.basename(csvPath), generator: 'generate-individual-reports.mjs' },
         header: {
           empresa,
-          generatedAt: new Date().toISOString(),
+          generatedAt: nowIso,
           schema: 'individual-1.0',
           id,
-          subject: { nombreCompleto, email },
+          subject: { nombreCompleto, email, assessed_on: nowIso },
         },
-        scores,
+        scores,   // 1–4 por subdimensión (trazabilidad)
+        scores10, // 1–10 por subdimensión (para visualización/contrato)
+        summary,  // por dimensión
         openEnded,
       };
 

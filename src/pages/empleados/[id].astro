@@ -132,6 +132,20 @@ function levelLabel10(v10) {
                 );
               })}
             </div>
+            {doc?.summary?.dimensions && (
+              <div style="margin-top:12px">
+                {Object.entries(doc.summary.dimensions).map(([dim, s]) => (
+                  <div class="row">
+                    <div class="name">{dim.replace(/([A-Z])/g,' $1').replace(/^./, s => s.toUpperCase())}</div>
+                    <div style="flex:1"></div>
+                    <div class="val" title="Valor actual">{s.current10}</div>
+                    <div class="val" title="Meta">/ {s.target10}</div>
+                    <div class="val" title="Brecha">(Δ {s.gap10})</div>
+                    <div class="val" title="Promedio cohorte">↔ {s.collectiveAverage10}</div>
+                  </div>
+                ))}
+              </div>
+            )}
           </section>
 
           <section class="card">
