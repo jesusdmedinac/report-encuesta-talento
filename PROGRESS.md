@@ -76,9 +76,10 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [ ] Añadir `noindex` y revisar headers de caché en hosting.
 
 8.  **Página Individual imprimible:**
-    -   [ ] Rediseñar `src/pages/empleados/[id].astro` con tiles, barras por subdimensión y secciones claras.
-    -   [ ] Añadir `@media print` (ocultar navegación, botón imprimir; `page-break-inside: avoid`).
-    -   [ ] Etiquetas de nivel (bajo/medio/alto) con colores aptos para impresión.
+    -   [x] Rediseñar `src/pages/empleados/[id].astro` con tiles, barras por subdimensión y secciones claras.
+    -   [x] Añadir `@media print` (ocultar navegación, botón imprimir; `page-break-inside: avoid`).
+    -   [x] Etiquetas de nivel (bajo/medio/alto) con colores aptos para impresión.
+    -   [x] Escala de visualización ajustada a 1–10 (x2.5) en tiles y barras.
     -   [ ] (Opcional) Delta vs. promedio global si se carga `globalData.*.json`.
 
 ---
