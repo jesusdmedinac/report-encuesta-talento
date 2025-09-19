@@ -102,6 +102,12 @@ Este documento registra el estado actual del plan de implementación, los pasos 
     -   [ ] Seleccionar acciones por reglas (top brechas) y agregar `action_plan` al JSON.
     -   [ ] Mostrar sección “Plan de acción” en la página individual.
 
+11. **Alineación visual con reporte global (baja prioridad):**
+    -   [ ] Reutilizar tokens de color y tipografía del global.
+    -   [ ] Unificar patrones de tarjetas y divisores.
+    -   [ ] Ajustar barras y badges al estilo global.
+    -   [ ] Verificación de impresión para consistencia.
+
 ---
 
 ## Pensamientos y Estrategia

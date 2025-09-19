@@ -219,3 +219,17 @@ Pasos:
 2) Implementar selector por reglas (prioridad: brecha alta x relevancia del rol si está disponible).
 3) Integrar en JSON individual (`action_plan`).
 4) Mostrar en UI una sección “Plan de acción” imprimible.
+
+---
+
+## Fase 14: Alineación visual con Reporte Global (baja prioridad)
+
+Objetivo: armonizar el diseño del reporte individual con la estética del reporte global.
+
+Alcance (cuando se priorice):
+- Reutilizar tokens de color, tipografía y espaciados del global.
+- Unificar patrones de tarjetas, encabezados y divisores.
+- Ajustar componentes (barras, badges) para que coincidan con estilos del global.
+- Revisión de impresión para consistencia visual.
+
+Nota: se pospone por no ser bloqueante; enfoque actual en cálculos, comparativos y acciones.
