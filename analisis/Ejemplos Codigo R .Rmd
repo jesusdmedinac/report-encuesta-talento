@@ -1,0 +1,292 @@
+---
+title: "Ejemplos Madurez Digital"
+author: "Gabriel Ortiz"
+date: "2025-09-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Recodificar D4_USAGE_3}
+
+# Nota: Esta columna la reinvertí, porque los valores daban una correlación negativa. Comparé con la escala Likert y tenía sentido la conversión
+library(dplyr)
+
+# Recodificación: 4→1, 3→2, 2→3, 1→4
+df <- df %>%
+  mutate(
+    D4_USAGE_3 = recode(D4_USAGE_3,
+                        `4` = 1,
+                        `3` = 2,
+                        `2` = 3,
+                        `1` = 4)
+  )
+
+```
+
+
+```{r PASO 1: Definir la Estructura de Dimensiones y Subdimensiones}
+
+# Definición de ítems por subdimensión
+subs <- list(
+  # D1 - Madurez Digital y Autonomía
+  D1_AdaptAprendizajeAutonomia = c("D1_ADAPT_1", "D1_ADAPT_2", "D1_ADAPT_3", "D1_SOLVING_1", "D1_SOLVING_2"),
+  D1_Proactividad = c("D1_PROACTIVITY_1", "D1_PROACTIVITY_2"),
+  
+  # D2 - Competencias Digitales Operativas
+  D2_Datos = c("D2_DATA_1", "D2_DATA_2", "D2_DATA_3"),
+  D2_Colaboracion = c("D2_COLLAB_1", "D2_COLLAB_2", "D3_SUPPORT_1"),
+  D2_Seguridad = c("D2_SECURITY_1", "D2_SECURITY_2", "D2_SECURITY_3", "D2_SECURITY_4"),
+  
+  # D3 - Cultura Tecnológica y Liderazgo
+  D3_LiderazgoClima = c("D3_LEADERSHIP_1", "D3_ENVIRONMENT_1", "D3_ENVIRONMENT_2", "D3_ENVIRONMENT_3"),
+  
+  # D4 - Adopción y Ética en IA
+  D4_UsoIA = c("D4_USAGE_1", "D4_USAGE_2", "D4_USAGE_3"),
+  D4_MentalidadEtica = c("D4_MINDSET_1", "D4_MINDSET_2", "D4_ETHICS_1")
+)
+
+# Definición de dimensiones (agrupando todas las subdimensiones)
+dims <- list(
+  D1 = unlist(subs[c("D1_AdaptAprendizajeAutonomia", "D1_Proactividad")], use.names = FALSE),
+  D2 = unlist(subs[c("D2_Datos", "D2_Colaboracion", "D2_Seguridad")], use.names = FALSE),
+  D3 = unlist(subs[c("D3_LiderazgoClima")], use.names = FALSE),
+  D4 = unlist(subs[c("D4_UsoIA", "D4_MentalidadEtica")], use.names = FALSE)
+)
+
+# Todos los ítems para el índice global
+items_global <- unlist(dims, use.names = FALSE) %>% unique()
+```
+
+
+```{r PASO 2: Funciones Auxiliares para convertir valores en escala 1-10}
+library(dplyr)
+
+# Función para convertir a numérico de forma segura
+to_num <- function(x) {
+  suppressWarnings(as.numeric(x))
+}
+
+# Función para calcular promedio por fila
+row_mean <- function(df_in, cols) {
+  # Seleccionar solo columnas que existen
+  cols_existentes <- intersect(cols, names(df_in))
+  
+  if (length(cols_existentes) == 0) {
+    return(rep(NA_real_, nrow(df_in)))
+  }
+  
+  df_in %>% 
+    select(all_of(cols_existentes)) %>% 
+    mutate(across(everything(), to_num)) %>%
+    as.matrix() %>% 
+    rowMeans(na.rm = TRUE)
+}
+
+# Función de transformación 1-4 → 1-10
+to_10 <- function(x) {
+  ifelse(is.finite(x) & x >= 1 & x <= 4, 
+         1 + ((x - 1) / 3) * 9, 
+         NA_real_)
+}
+```
+
+```{r PASO 3: Cálculo de Subdimensiones}
+
+# Función para calcular una subdimensión específica
+calcular_subdimension <- function(df, nombre_sub, items_sub) {
+  # Calcular promedio en escala 1-4
+  promedio_1_4 <- row_mean(df, items_sub)
+  
+  # Transformar a escala 1-10
+  promedio_1_10 <- to_10(promedio_1_4)
+  
+  return(promedio_1_10)
+}
+
+# Ejemplo de uso para una subdimensión:
+df$D1_Proactividad_10 <- calcular_subdimension(
+  df, 
+  "D1_Proactividad", 
+  c("D1_PROACTIVITY_1", "D1_PROACTIVITY_2")
+)
+
+# Calcular TODAS las subdimensiones automáticamente:
+for (nombre_sub in names(subs)) {
+  columna_resultado <- paste0(nombre_sub, "_10")
+  df[[columna_resultado]] <- calcular_subdimension(df, nombre_sub, subs[[nombre_sub]])
+  cat("Calculada:", columna_resultado, "\n")
+}
+
+```
+
+```{r PASO 4: Cálculo de Dimensiones Principales}
+
+# Función para calcular una dimensión específica
+calcular_dimension <- function(df, nombre_dim, items_dim) {
+  # Calcular promedio en escala 1-4
+  promedio_1_4 <- row_mean(df, items_dim)
+  
+  # Transformar a escala 1-10
+  promedio_1_10 <- to_10(promedio_1_4)
+  
+  return(promedio_1_10)
+}
+
+# Ejemplo de uso para una dimensión:
+df$Dim_D1_10 <- calcular_dimension(df, "D1", dims[["D1"]])
+
+# Calcular TODAS las dimensiones automáticamente:
+for (nombre_dim in names(dims)) {
+  columna_resultado <- paste0("Dim_", nombre_dim, "_10")
+  df[[columna_resultado]] <- calcular_dimension(df, nombre_dim, dims[[nombre_dim]])
+  cat("Calculada:", columna_resultado, "\n")
+}
+```
+
+```{r PASO 5: Cálculo del Índice Global}
+
+# Función para calcular el índice global
+calcular_indice_global <- function(df, todos_los_items) {
+  # Calcular promedio en escala 1-4
+  promedio_1_4 <- row_mean(df, todos_los_items)
+  
+  # Transformar a escala 1-10
+  indice_global_1_10 <- to_10(promedio_1_4)
+  
+  return(indice_global_1_10)
+}
+
+# Calcular índice global:
+df$Index_Global_10 <- calcular_indice_global(df, items_global)
+cat("Calculado: Index_Global_10\n")
+
+# NOTA: En este caso calculo índice global considerando todos los ítems. Sin embargo, si se desea poner en práctica los baremos cuantitativos (Puntaje Baremado en Excel) debería calcularse el Índice Global como promedio de las 4 dimensiones primarias.
+
+# Recomendación: Usar el puntaje obtenido con estas transformaciones y asignarles etiquetas según los Niveles de los baremos.
+```
+
+
+```{r PASO 6: Implementación Completa en Una Función }
+
+calcular_madurez_digital_completa <- function(df) {
+  library(dplyr)
+  
+  cat("=== CALCULANDO MADUREZ DIGITAL ===\n")
+  
+  # 1. Calcular subdimensiones
+  cat("\n1. Calculando subdimensiones:\n")
+  for (nombre_sub in names(subs)) {
+    columna_resultado <- paste0(nombre_sub, "_10")
+    df[[columna_resultado]] <- calcular_subdimension(df, nombre_sub, subs[[nombre_sub]])
+    cat("  ✓", columna_resultado, "\n")
+  }
+  
+  # 2. Calcular dimensiones principales
+  cat("\n2. Calculando dimensiones principales:\n")
+  for (nombre_dim in names(dims)) {
+    columna_resultado <- paste0("Dim_", nombre_dim, "_10")
+    df[[columna_resultado]] <- calcular_dimension(df, nombre_dim, dims[[nombre_dim]])
+    cat("  ✓", columna_resultado, "\n")
+  }
+  
+  # 3. Calcular índice global
+  cat("\n3. Calculando índice global:\n")
+  df$Index_Global_10 <- calcular_indice_global(df, items_global)
+  cat("  ✓ Index_Global_10\n")
+  
+  # 4. Crear dataset final con solo las puntuaciones calculadas
+  columnas_resultado <- c(
+    "Index_Global_10",
+    paste0("Dim_", names(dims), "_10"),
+    paste0(names(subs), "_10")
+  )
+  
+  scores_10 <- df %>% select(all_of(columnas_resultado))
+  
+  cat("\n=== CÁLCULO COMPLETADO ===\n")
+  cat("Columnas generadas:", length(columnas_resultado), "\n")
+  cat("Filas procesadas:", nrow(scores_10), "\n")
+  
+  return(scores_10)
+}
+
+# Usar la función:
+scores_10 <- calcular_madurez_digital_completa(df)
+
+```
+
+```{r PASO 7: Verificación y Validación}
+
+verificar_calculos <- function(scores_10) {
+  cat("=== VERIFICACIÓN DE CÁLCULOS ===\n")
+  
+  # Verificar rangos (deben estar entre 1-10)
+  for (col in names(scores_10)) {
+    valores <- scores_10[[col]][!is.na(scores_10[[col]])]
+    if (length(valores) > 0) {
+      rango_min <- min(valores)
+      rango_max <- max(valores)
+      cat(sprintf("%s: rango [%.2f - %.2f]\n", col, rango_min, rango_max))
+      
+      if (rango_min < 1 || rango_max > 10) {
+        cat("  ⚠️  ADVERTENCIA:", col, "fuera del rango esperado 1-10\n")
+      }
+    }
+  }
+  
+  # Verificar que el índice global sea coherente
+  indice_promedio <- mean(scores_10$Index_Global_10, na.rm = TRUE)
+  cat(sprintf("\nÍndice Global promedio: %.2f\n", indice_promedio))
+  
+  # Mostrar resumen estadístico
+  cat("\n=== RESUMEN ESTADÍSTICO ===\n")
+  print(summary(scores_10))
+  
+  return(TRUE)
+}
+
+# Verificar:
+verificar_calculos(scores_10)
+```
+
+
+```{r Código de ejemplo para los gráficos}
+# ================== BOXPLOT SIMPLE - SOLO ÍNDICE GLOBAL SEGÚN ROL ==================
+library(ggplot2)
+library(dplyr)
+library(stringr)
+
+# Preparar datos
+dat <- scores_10 %>%
+  select(Index_Global_10) %>%
+  bind_cols(df %>% select(Rol_categoria)) %>%
+  filter(!is.na(Index_Global_10), !is.na(Rol_categoria)) %>%
+  mutate(
+    Rol_cat_short = str_trim(sub("^\\s*([^:]+):.*$", "\\1", Rol_categoria)), # Solo en caso de categorías muy largas como esta. No aplica a Género o Nivel educativo
+    Rol_cat_short = factor(Rol_cat_short)
+  )
+
+# Gráfico
+ggplot(dat, aes(x = reorder(Rol_cat_short, Index_Global_10, median), 
+                y = Index_Global_10, 
+                fill = Rol_cat_short)) +
+  geom_boxplot(alpha = 0.85, width = 0.6, outlier.alpha = 0.35) +
+  stat_summary(fun = mean, geom = "point", shape = 21, size = 3,
+               fill = "white", color = "black", stroke = 0.6) +
+  scale_y_continuous(limits = c(0, 10)) +
+  labs(
+    title = "Madurez Digital por Rol",
+    x = NULL, 
+    y = "Índice Global"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 12, hjust = 1)
+  ) +
+  coord_flip()  # Horizontal para mejor lectura
+```
+
