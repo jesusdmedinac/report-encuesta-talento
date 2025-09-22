@@ -1,26 +1,25 @@
 {
   "version": "2025-09-22",
-  "status": "generated",
+  "status": "from-md",
   "source": {
-    "file": "analisis/Baremos Madurez Digital SEP25.xlsx",
-    "sheet": "sheet1",
-    "notes": "Rangos en escala 1–10; derivados de la hoja. Requiere conversión automatizada para consolidar todos los cortes."
+    "file": "analisis/baremos.md",
+    "format": "markdown"
   },
   "general": {
     "madurezDigital": [
       {
         "nivel": "Inicial",
         "desde": 0,
-        "hasta": 4.8
+        "hasta": 5.2
       },
       {
         "nivel": "En desarrollo",
-        "desde": 4.81,
-        "hasta": 6.5
+        "desde": 5.21,
+        "hasta": 7.8
       },
       {
         "nivel": "Avanzado",
-        "desde": 6.51,
+        "desde": 7.81,
         "hasta": 10
       }
     ],
@@ -28,16 +27,16 @@
       {
         "nivel": "Inicial",
         "desde": 0,
-        "hasta": 5.8
+        "hasta": 6.1
       },
       {
         "nivel": "En desarrollo",
-        "desde": 5.81,
-        "hasta": 6.7
+        "desde": 6.11,
+        "hasta": 7.9
       },
       {
         "nivel": "Avanzado",
-        "desde": 6.71,
+        "desde": 7.91,
         "hasta": 10
       }
     ],
@@ -45,16 +44,16 @@
       {
         "nivel": "Inicial",
         "desde": 0,
-        "hasta": 4
+        "hasta": 4.75
       },
       {
         "nivel": "En desarrollo",
-        "desde": 4.01,
-        "hasta": 6.2
+        "desde": 4.76,
+        "hasta": 7.7
       },
       {
         "nivel": "Avanzado",
-        "desde": 6.21,
+        "desde": 7.71,
         "hasta": 10
       }
     ],
@@ -62,39 +61,181 @@
       {
         "nivel": "Inicial",
         "desde": 0,
-        "hasta": 4.5
+        "hasta": 5
       },
       {
         "nivel": "En desarrollo",
-        "desde": 4.51,
-        "hasta": 6.5
+        "desde": 5.01,
+        "hasta": 8
       },
       {
         "nivel": "Avanzado",
-        "desde": 6.51,
+        "desde": 8.01,
         "hasta": 10
       }
     ]
   },
   "roles": {
     "D1": {
-      "comercial_operaciones_liderazgo_rrhh": [],
-      "tecnico_producto_mandos_medios": [],
-      "otro": []
+      "comercial_operaciones_liderazgo_rrhh": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 5.5
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 5.51,
+          "hasta": 8.1
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 8.11,
+          "hasta": 10
+        }
+      ],
+      "tecnico_producto_mandos_medios": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 5.7
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 5.71,
+          "hasta": 8.3
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 8.31,
+          "hasta": 10
+        }
+      ],
+      "otro": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 4.7
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 4.71,
+          "hasta": 7.3
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 7.31,
+          "hasta": 10
+        }
+      ]
     },
     "D4": {
-      "tecnico_soporte_mandos_liderazgo": [],
-      "comercial_operaciones_otros": []
+      "comercial_operaciones_otros": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 4.6
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 4.61,
+          "hasta": 7.6
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 7.61,
+          "hasta": 10
+        }
+      ],
+      "tecnico_soporte_mandos_liderazgo": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 5.5
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 5.51,
+          "hasta": 8.5
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 8.51,
+          "hasta": 10
+        }
+      ]
     }
   },
   "educacion": {
     "D4": {
-      "secundaria": [],
-      "tecnico_tecnologico": [],
-      "universitaria": {
-        "inherit": "general.usoInteligenciaArtificial"
-      },
-      "posgrado": []
+      "secundaria": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 4.2
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 4.21,
+          "hasta": 7.2
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 7.21,
+          "hasta": 10
+        }
+      ],
+      "tecnico_tecnologico": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 4.5
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 4.51,
+          "hasta": 7.5
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 7.51,
+          "hasta": 10
+        }
+      ],
+      "universitaria": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 5
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 5.01,
+          "hasta": 8
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 8.01,
+          "hasta": 10
+        }
+      ],
+      "posgrado": [
+        {
+          "nivel": "Inicial",
+          "desde": 0,
+          "hasta": 5.8
+        },
+        {
+          "nivel": "En desarrollo",
+          "desde": 5.81,
+          "hasta": 8.8
+        },
+        {
+          "nivel": "Avanzado",
+          "desde": 8.81,
+          "hasta": 10
+        }
+      ]
     }
   },
   "targetMethod": "advanced_min"

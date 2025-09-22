@@ -24,7 +24,7 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 ## Baremos y Referencias de Sector (plan)
 - Objetivo: reemplazar referencias arbitrarias por parámetros derivados del análisis y baremos.
 - Artefactos propuestos (estáticos, versionados):
-  - `src/scripts/baremos.json`: cortes por dimensión (D1–D4) para población general, y variantes por rol/educación cuando aplique (origen: `analisis/Baremos Madurez Digital SEP25.xlsx`).
+  - `src/scripts/baremos.json`: cortes por dimensión (D1–D4) para población general, y variantes por rol/educación cuando aplique (origen preferido: `analisis/baremos.md`).
   - `src/scripts/sector_reference.json`: promedio(s) de la muestra de referencia (benchmark) y metadatos de procedencia.
 - Integración prevista en el reporte global:
   - `brechaDigital.puntuacionEmpresa`: sin cambios (promedio de D1–D4 en 1–10).
@@ -50,7 +50,7 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `./commit-all.sh` para comitear cambios locales con tests (ver opciones en el script)
 
 ### Scripts útiles
-- `npm run build-baremos`: convierte `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (incluye versión/fuente). Nota: hoy llena los cortes generales; la extracción segmentada por rol/educación depende del layout del XLSX y puede requerir ajustes.
+- `npm run build-baremos-md`: convierte `analisis/baremos.md` a `src/scripts/baremos.json` (incluye versión/fuente). Preferir este flujo para versionado claro y fácil edición.
 - `npm run set-sector-reference`: generar/actualizar `src/scripts/sector_reference.json` con medias (global/por dimensión) y metadatos.
 
 ### Flujo de commits sugeridos

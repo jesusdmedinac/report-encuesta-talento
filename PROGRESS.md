@@ -118,7 +118,7 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 -   [x] Integrar en global: `puntuacionPromedioSector` (benchmark) y `puntuacionMetaSector` (derivada, con fallback).
 -   [x] Integrar en individual: `level_label` por dimensión (baremo general).
 -   [x] Tests de límites “Desde/Hasta” y coherencia con ejemplos.
--   [x] Script `build-baremos` implementado (XLSX → JSON). Extrae cortes generales; segmentados requerirán refinar el parser según layout.
+-   [x] Baremos desde Markdown: `build-baremos-md` (MD → JSON) implementado. Extracción desde XLSX descartada para favorecer trazabilidad y edición directa.
 
 14. **UI individual consume level_label**
 
