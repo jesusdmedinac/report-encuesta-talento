@@ -51,6 +51,19 @@ function levelLabel10(v10) {
   return { text: 'Alto', cls: 'lvl-high' };
 }
 
+function levelFromSummary(s, fallbackValue) {
+  const lbl = s?.level_label;
+  if (lbl && typeof lbl === 'string') {
+    const L = lbl.toLowerCase();
+    if (L.includes('avanz')) return { text: lbl, cls: 'lvl-high' };
+    if (L.includes('desarrollo')) return { text: lbl, cls: 'lvl-mid' };
+    if (L.includes('inicial')) return { text: lbl, cls: 'lvl-low' };
+    // Si viene otro texto, mostrarlo con clase media por defecto
+    return { text: lbl, cls: 'lvl-mid' };
+  }
+  return levelLabel10(fallbackValue);
+}
+
 const dimsOrder = ['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'];
 const dimLabels = {
   madurezDigital: 'Madurez Digital',
@@ -134,7 +147,7 @@ const dimLabels = {
               {dimsOrder.map(dim => {
                 const tile = tiles.find(t => t.key === dim) || { value: 0 };
                 const s = doc?.summary?.dimensions?.[dim] || { current10: tile.value, target10: 8.0, gap10: 0, collectiveAverage10: 0, percentile: 0 };
-                const lvl = levelLabel10(s.current10 ?? tile.value);
+                const lvl = levelFromSummary(s, s.current10 ?? tile.value);
                 const label = dimLabels[dim] || dim;
                 const over = Number(((s.current10 ?? tile.value) - s.target10).toFixed(1));
                 const overSign = over >= 0 ? '+' : '';

@@ -119,6 +119,10 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 -   [x] Integrar en individual: `level_label` por dimensión (baremo general).
 -   [ ] Tests de límites “Desde/Hasta” y coherencia con ejemplos.
 
+14. **UI individual consume level_label**
+
+-   [x] Ajustar `src/pages/empleados/[id].astro` para usar `doc.summary.dimensions[dim].level_label` cuando exista, con fallback al cálculo local.
+
 13. **Metadatos del análisis y dataset canónico**
 
 -   [ ] Añadir `header.analysis` opcional con `omega`, `sampleSize`, `baremos.version`, `reference.source`.
