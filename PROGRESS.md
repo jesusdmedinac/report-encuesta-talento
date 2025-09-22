@@ -117,7 +117,7 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 -   [x] Helper `assignLevel(dim, score10)` (fase 1: baremo general) y `computeSectorTargets({ method })` (`p90` o `advanced_min`).
 -   [x] Integrar en global: `puntuacionPromedioSector` (benchmark) y `puntuacionMetaSector` (derivada, con fallback).
 -   [x] Integrar en individual: `level_label` por dimensión (baremo general).
--   [ ] Tests de límites “Desde/Hasta” y coherencia con ejemplos.
+ -   [x] Tests de límites “Desde/Hasta” y coherencia con ejemplos.
 
 14. **UI individual consume level_label**
 
