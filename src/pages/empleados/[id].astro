@@ -70,7 +70,25 @@ const dimLabels = {
   brechaDigital: 'Competencias Digitales',
   usoInteligenciaArtificial: 'Uso de IA',
   culturaOrganizacional: 'Cultura Digital',
-};
+  adaptabilidad: 'Adaptabilidad',
+  resolucionDeProblemas: 'Resolución de Problemas',
+  proactividadDigital: 'Proactividad Digital',
+  analisisDeDatos: 'Análisis de Datos',
+  alfabetizacionDeDatos: 'Alfabetización de Datos',
+  colaboracionDigital: 'Colaboración Digital',
+  ciberseguridad: 'Ciberseguridad',
+  frecuenciaDeUso: 'Frecuencia de Uso',
+  habilidadDeUso: 'Habilidad de Uso',
+  nivelDeAdopcion: 'Nivel de Adopción',
+  percepcionDeRiesgo: 'Percepción de Riesgo',
+  eticaYVerificacion: 'Ética y Verificación',
+  liderazgoYVision: 'Liderazgo y Visión',
+  ambienteDeAprendizaje: 'Ambiente de Aprendizaje',
+  apoyoOrganizacional: 'Apoyo Organizacional',
+  experimentacion: 'Experimentación',
+  reconocimiento: 'Reconocimiento',
+  interesEnAprendizaje: 'Interés en Aprendizaje'
+}
 ---
 <!doctype html>
 <html lang="es">
@@ -179,7 +197,7 @@ const dimLabels = {
                     const v10 = +(Number(v) * 2.5).toFixed(1);
                     return (
                     <div class="row">
-                      <div class="name">{k}</div>
+                      <div class="name">{dimLabels[k]}</div>
                       <div class="bar" style="flex:1"><i style={`width:${Math.min(100,(v10/10)*100)}%`}></i></div>
                       <div class="val">{v10}</div>
                     </div>
