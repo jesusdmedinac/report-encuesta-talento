@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:10.784Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:10.784Z",
+    "schema": "individual-1.0",
+    "id": "4ms5wrdtr7b4suoz0rj4ms5wrdtg6mrp",
+    "subject": {
+      "nombreCompleto": "Cinthya Mosquera Quinde",
+      "email": "cmosquera@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:10.784Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 3.33,
+      "resolucionDeProblemas": 4,
+      "proactividadDigital": 4
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 2.5,
+      "alfabetizacionDeDatos": 4,
+      "colaboracionDigital": 3,
+      "ciberseguridad": 3
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 4,
+      "ambienteDeAprendizaje": 3,
+      "apoyoOrganizacional": 4,
+      "experimentacion": 4,
+      "reconocimiento": 3
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 3,
+      "habilidadDeUso": 3,
+      "nivelDeAdopcion": 2,
+      "percepcionDeRiesgo": 2,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 4
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 1,
+      "cloudComputing": 3,
+      "mejoraDeInfraestructura": 2,
+      "metodologiasDeDesarrollo": 2,
+      "usoDeIAEnDesarrollo": 2,
+      "scripting": 1,
+      "basesDeDatos": 1,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 8.3,
+      "resolucionDeProblemas": 10,
+      "proactividadDigital": 10
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 6.3,
+      "alfabetizacionDeDatos": 10,
+      "colaboracionDigital": 7.5,
+      "ciberseguridad": 7.5
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 10,
+      "ambienteDeAprendizaje": 7.5,
+      "apoyoOrganizacional": 10,
+      "experimentacion": 10,
+      "reconocimiento": 7.5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 7.5,
+      "habilidadDeUso": 7.5,
+      "nivelDeAdopcion": 5,
+      "percepcionDeRiesgo": 5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 10
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 2.5,
+      "cloudComputing": 7.5,
+      "mejoraDeInfraestructura": 5,
+      "metodologiasDeDesarrollo": 5,
+      "usoDeIAEnDesarrollo": 5,
+      "scripting": 2.5,
+      "basesDeDatos": 2.5,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 9.4,
+        "target10": 8,
+        "gap10": -1.4,
+        "collectiveAverage10": 7.62,
+        "percentile": 93,
+        "level_label": "Avanzado"
+      },
+      "brechaDigital": {
+        "current10": 7.8,
+        "target10": 8,
+        "gap10": 0.2,
+        "collectiveAverage10": 7.8,
+        "percentile": 49,
+        "level_label": "En desarrollo"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 7.5,
+        "target10": 8,
+        "gap10": 0.5,
+        "collectiveAverage10": 6.99,
+        "percentile": 72,
+        "level_label": "En desarrollo"
+      },
+      "culturaOrganizacional": {
+        "current10": 9,
+        "target10": 8,
+        "gap10": -1,
+        "collectiveAverage10": 7.59,
+        "percentile": 84,
+        "level_label": "Avanzado"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Como asistente de tecnologia he fortalecido mis habilidades con el uso de nuevas herramientas, resolviendo problemas presentados con usuarios, y adaptandome a los diferentes cambios que se han presentado esto, en conjunto con mis conocimientos como asistente de call center para brindarle al usuario final soluciones agiles y eficientes."
+    ],
+    "D2_OPEN": [
+      "Antes de la implementacion de una nueva herramienta, considero que se deberia capacitar un poco mas sobre las actuales, funciones nuevas, o atajos de trabajo nuevos. Una vez especializados o teniendo mas conocimiento sobre lo actual, se puede implementar algo nuevo que vaya de la mano con lo ya trabajado"
+    ],
+    "D3_OPEN": [
+      "Las capacitaciones participativas son esenciales. No solo un curso de un tema especifico, sino algo mas profundo que incluya verdaderamente el uso y manejo de una herramienta para todos los colaboradores en sus respectivas areas"
+    ],
+    "D4_OPEN": [
+      "Puede implementarse como un apoyo ante una situacion operativa en la que un usuario no conozca como ejecutar una actividad de su rol. Como una base de conocimiento. Sin embargo, debido al tipo de atencion que proporcionamos como area representaria un gran avance si se incluye de manera adecuada dentro de la gestion e ingreso de tickets por los colaboradores"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · brechaDigital: gap 0.2.",
+    "iniciativas": [
+      {
+        "id": "IA-01",
+        "titulo": "Pilotos de IA con casos de alto valor",
+        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "areaEnfoque": "Innovación Aplicada",
+        "objetivosClave": [
+          "Selección de casos",
+          "Pilotos ejecutados",
+          "Lecciones y escalamiento"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Pilotos con ROI positivo",
+            "valorObjetivo": ">= 2"
+          }
+        ],
+        "responsableSugerido": "TI / Negocio",
+        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "objetivosClave": [
+          "Plantillas de prompts",
+          "Checklist de verificación",
+          "Casos prácticos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% asistentes certificados",
+            "valorObjetivo": ">= 70%"
+          }
+        ],
+        "responsableSugerido": "L&D / Legal",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CD-01",
+        "titulo": "Programa de upskilling en competencias clave",
+        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
+        "areaEnfoque": "Talento y Formación",
+        "objetivosClave": [
+          "Módulos de competencias priorizadas",
+          "Evaluaciones antes/después",
+          "Mentoría ligera"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% de finalización",
+            "valorObjetivo": ">= 75%"
+          },
+          {
+            "metrica": "+puntos en post-test",
+            "valorObjetivo": "+1.0 (escala 1–10)"
+          }
+        ],
+        "responsableSugerido": "L&D / HR",
+        "plazoEstimado": "8-10 semanas",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "objetivosClave": [
+          "Guías por herramienta",
+          "Repositorio accesible",
+          "Sesiones de difusión"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Guías publicadas",
+            "valorObjetivo": ">= 5"
+          }
+        ],
+        "responsableSugerido": "Ops / Champions",
+        "plazoEstimado": "3-4 semanas",
+        "prioridad": "Media"
+      }
+    ]
+  }
+}

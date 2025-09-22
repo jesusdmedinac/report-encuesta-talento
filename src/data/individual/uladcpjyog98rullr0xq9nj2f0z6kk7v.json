@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:08.027Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:08.027Z",
+    "schema": "individual-1.0",
+    "id": "uladcpjyog98rullr0xq9nj2f0z6kk7v",
+    "subject": {
+      "nombreCompleto": "Fiorella Galarza Murillo",
+      "email": "fiorellagalarzamurillo@gmail.com",
+      "assessed_on": "2025-09-22T15:35:08.027Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 3,
+      "resolucionDeProblemas": 4,
+      "proactividadDigital": 4
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 3,
+      "alfabetizacionDeDatos": 2,
+      "colaboracionDigital": 3,
+      "ciberseguridad": 3.25
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 3,
+      "ambienteDeAprendizaje": 2,
+      "apoyoOrganizacional": 2,
+      "experimentacion": 2,
+      "reconocimiento": 3
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 3,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 2,
+      "percepcionDeRiesgo": 1,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 3
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 2,
+      "cloudComputing": 1,
+      "mejoraDeInfraestructura": 2,
+      "metodologiasDeDesarrollo": 2,
+      "usoDeIAEnDesarrollo": 2,
+      "scripting": 2,
+      "basesDeDatos": 2,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 7.5,
+      "resolucionDeProblemas": 10,
+      "proactividadDigital": 10
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 7.5,
+      "alfabetizacionDeDatos": 5,
+      "colaboracionDigital": 7.5,
+      "ciberseguridad": 8.1
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 7.5,
+      "ambienteDeAprendizaje": 5,
+      "apoyoOrganizacional": 5,
+      "experimentacion": 5,
+      "reconocimiento": 7.5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 7.5,
+      "habilidadDeUso": 10,
+      "nivelDeAdopcion": 5,
+      "percepcionDeRiesgo": 2.5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 7.5
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 5,
+      "cloudComputing": 2.5,
+      "mejoraDeInfraestructura": 5,
+      "metodologiasDeDesarrollo": 5,
+      "usoDeIAEnDesarrollo": 5,
+      "scripting": 5,
+      "basesDeDatos": 5,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 9.2,
+        "target10": 8,
+        "gap10": -1.2,
+        "collectiveAverage10": 7.62,
+        "percentile": 90,
+        "level_label": "Avanzado"
+      },
+      "brechaDigital": {
+        "current10": 7,
+        "target10": 8,
+        "gap10": 1,
+        "collectiveAverage10": 7.8,
+        "percentile": 20,
+        "level_label": "En desarrollo"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 7.1,
+        "target10": 8,
+        "gap10": 0.9,
+        "collectiveAverage10": 6.99,
+        "percentile": 60,
+        "level_label": "En desarrollo"
+      },
+      "culturaOrganizacional": {
+        "current10": 6,
+        "target10": 8,
+        "gap10": 2,
+        "collectiveAverage10": 7.59,
+        "percentile": 11,
+        "level_label": "En desarrollo"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "innovador"
+    ],
+    "D2_OPEN": [
+      "mas capacitaciones para estar alineados con los demas disenadores"
+    ],
+    "D3_OPEN": [
+      "el de alguna forma mantener actualizado el conocimiento general del coe, que haya mas comunicacion"
+    ],
+    "D4_OPEN": [
+      "me gustaria que optimice tareas tediosas"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · brechaDigital: gap 1.",
+    "iniciativas": [
+      {
+        "id": "CU-01",
+        "titulo": "Ciclos de experimentación y reconocimiento",
+        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "areaEnfoque": "Cultura y Cambio",
+        "objetivosClave": [
+          "Rituales de demo",
+          "Reconocimientos mensuales",
+          "Repositorio de aprendizajes"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Equipos participando",
+            "valorObjetivo": ">= 5"
+          }
+        ],
+        "responsableSugerido": "Change / Líderes",
+        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CU-02",
+        "titulo": "Programa de liderazgo digital",
+        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
+        "areaEnfoque": "Liderazgo",
+        "objetivosClave": [
+          "Sesiones de liderazgo",
+          "Compromisos visibles",
+          "Cascada de objetivos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% líderes entrenados",
+            "valorObjetivo": ">= 80%"
+          }
+        ],
+        "responsableSugerido": "HR / Dirección",
+        "plazoEstimado": "6-8 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "CD-01",
+        "titulo": "Programa de upskilling en competencias clave",
+        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
+        "areaEnfoque": "Talento y Formación",
+        "objetivosClave": [
+          "Módulos de competencias priorizadas",
+          "Evaluaciones antes/después",
+          "Mentoría ligera"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% de finalización",
+            "valorObjetivo": ">= 75%"
+          },
+          {
+            "metrica": "+puntos en post-test",
+            "valorObjetivo": "+1.0 (escala 1–10)"
+          }
+        ],
+        "responsableSugerido": "L&D / HR",
+        "plazoEstimado": "8-10 semanas",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "objetivosClave": [
+          "Guías por herramienta",
+          "Repositorio accesible",
+          "Sesiones de difusión"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Guías publicadas",
+            "valorObjetivo": ">= 5"
+          }
+        ],
+        "responsableSugerido": "Ops / Champions",
+        "plazoEstimado": "3-4 semanas",
+        "prioridad": "Media"
+      }
+    ]
+  }
+}

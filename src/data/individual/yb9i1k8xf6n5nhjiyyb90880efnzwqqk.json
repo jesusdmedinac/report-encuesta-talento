@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:08.030Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:08.030Z",
+    "schema": "individual-1.0",
+    "id": "yb9i1k8xf6n5nhjiyyb90880efnzwqqk",
+    "subject": {
+      "nombreCompleto": "Luis Alberto Reyes Carrion",
+      "email": "lreyes@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:08.030Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 3.33,
+      "resolucionDeProblemas": 3,
+      "proactividadDigital": 3
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 3,
+      "alfabetizacionDeDatos": 3,
+      "colaboracionDigital": 3,
+      "ciberseguridad": 3.25
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 4,
+      "ambienteDeAprendizaje": 3,
+      "apoyoOrganizacional": 4,
+      "experimentacion": 3,
+      "reconocimiento": 4
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 3,
+      "habilidadDeUso": 3,
+      "nivelDeAdopcion": 2,
+      "percepcionDeRiesgo": 2,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 3
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 8.3,
+      "resolucionDeProblemas": 7.5,
+      "proactividadDigital": 7.5
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 7.5,
+      "alfabetizacionDeDatos": 7.5,
+      "colaboracionDigital": 7.5,
+      "ciberseguridad": 8.1
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 10,
+      "ambienteDeAprendizaje": 7.5,
+      "apoyoOrganizacional": 10,
+      "experimentacion": 7.5,
+      "reconocimiento": 10
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 7.5,
+      "habilidadDeUso": 7.5,
+      "nivelDeAdopcion": 5,
+      "percepcionDeRiesgo": 5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 7.5
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 7.8,
+        "target10": 8,
+        "gap10": 0.2,
+        "collectiveAverage10": 7.62,
+        "percentile": 57,
+        "level_label": "En desarrollo"
+      },
+      "brechaDigital": {
+        "current10": 7.7,
+        "target10": 8,
+        "gap10": 0.3,
+        "collectiveAverage10": 7.8,
+        "percentile": 49,
+        "level_label": "En desarrollo"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 7.1,
+        "target10": 8,
+        "gap10": 0.9,
+        "collectiveAverage10": 6.99,
+        "percentile": 60,
+        "level_label": "En desarrollo"
+      },
+      "culturaOrganizacional": {
+        "current10": 9,
+        "target10": 8,
+        "gap10": -1,
+        "collectiveAverage10": 7.59,
+        "percentile": 84,
+        "level_label": "Avanzado"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprendizaje constante para un mundo cambiante todos los dias!"
+    ],
+    "D2_OPEN": [
+      "Actualmente uso la herramiente Fortitoken, que es lo mas seguro y confiable. Antes usaba SMS para que me llegue el codigo de validacion de inicio de sesion pero a veces fallaba, el mensaje no llegaba y demoraba en ingresar al sistema"
+    ],
+    "D3_OPEN": [
+      "Capacitaciones online de programas de programacion, diseno grafico. Acceso a cursos externos de GOOGLE, MICROSOFT, Python, o similares que se crea convenientes para la aceleracion de la cultura digital y para nuestro enriquecimiento en el aprendizaje y evolucion tecnologica."
+    ],
+    "D4_OPEN": [
+      "Me preocupa mas que el avance de la IA, que va de la mano con el avance de creacion de robots (ya practicamente llegando a la similitud fisica humana) desplace a los humanos en otras plazas de trabajo que generalmente las realiza los latinos o puestos que son como atencion al cliente en hoteles (en la recepcion), meseros, etc. Esas plazas de trabajo que demandan mas a personas que se estan iniciando en el mundo laboral y empiece a encarecer donde trabajar a las nuevas generaciones, y por que no decir a las generaciones que ya estan pasados de los 45 anos. Expectativa seria, que en un mundo que se esta evolucionando demasiado rapido con la IA y avance tecnologico, se pueda tener mejor medicina, cura al Cancer (tengo a mi mami con cancer terminal) y que los costos para la atencion e intervencion medica, empiecen a ser mas accesibles. Tener una mayor exceptiva de vida para todos y con el avance tecnologico se creen nuevas carreras universitarias y por ende nuevas plazas de trabajo para las nuevas generaciones!"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9 · brechaDigital: gap 0.3.",
+    "iniciativas": [
+      {
+        "id": "IA-01",
+        "titulo": "Pilotos de IA con casos de alto valor",
+        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "areaEnfoque": "Innovación Aplicada",
+        "objetivosClave": [
+          "Selección de casos",
+          "Pilotos ejecutados",
+          "Lecciones y escalamiento"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Pilotos con ROI positivo",
+            "valorObjetivo": ">= 2"
+          }
+        ],
+        "responsableSugerido": "TI / Negocio",
+        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "objetivosClave": [
+          "Plantillas de prompts",
+          "Checklist de verificación",
+          "Casos prácticos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% asistentes certificados",
+            "valorObjetivo": ">= 70%"
+          }
+        ],
+        "responsableSugerido": "L&D / Legal",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CD-01",
+        "titulo": "Programa de upskilling en competencias clave",
+        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
+        "areaEnfoque": "Talento y Formación",
+        "objetivosClave": [
+          "Módulos de competencias priorizadas",
+          "Evaluaciones antes/después",
+          "Mentoría ligera"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% de finalización",
+            "valorObjetivo": ">= 75%"
+          },
+          {
+            "metrica": "+puntos en post-test",
+            "valorObjetivo": "+1.0 (escala 1–10)"
+          }
+        ],
+        "responsableSugerido": "L&D / HR",
+        "plazoEstimado": "8-10 semanas",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "objetivosClave": [
+          "Guías por herramienta",
+          "Repositorio accesible",
+          "Sesiones de difusión"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Guías publicadas",
+            "valorObjetivo": ">= 5"
+          }
+        ],
+        "responsableSugerido": "Ops / Champions",
+        "plazoEstimado": "3-4 semanas",
+        "prioridad": "Media"
+      }
+    ]
+  }
+}

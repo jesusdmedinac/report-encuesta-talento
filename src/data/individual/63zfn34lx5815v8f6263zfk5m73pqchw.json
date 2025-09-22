@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:06.523Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:06.523Z",
+    "schema": "individual-1.0",
+    "id": "63zfn34lx5815v8f6263zfk5m73pqchw",
+    "subject": {
+      "nombreCompleto": "OLGA CONDE",
+      "email": "oconde@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:06.523Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 2.67,
+      "resolucionDeProblemas": 3,
+      "proactividadDigital": 2.5
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 3,
+      "alfabetizacionDeDatos": 3,
+      "colaboracionDigital": 2,
+      "ciberseguridad": 2
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 3,
+      "ambienteDeAprendizaje": 2,
+      "apoyoOrganizacional": 2,
+      "experimentacion": 3,
+      "reconocimiento": 2
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 2,
+      "habilidadDeUso": 1,
+      "nivelDeAdopcion": 2,
+      "percepcionDeRiesgo": 2,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 3
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 6.7,
+      "resolucionDeProblemas": 7.5,
+      "proactividadDigital": 6.3
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 7.5,
+      "alfabetizacionDeDatos": 7.5,
+      "colaboracionDigital": 5,
+      "ciberseguridad": 5
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 7.5,
+      "ambienteDeAprendizaje": 5,
+      "apoyoOrganizacional": 5,
+      "experimentacion": 7.5,
+      "reconocimiento": 5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 5,
+      "habilidadDeUso": 2.5,
+      "nivelDeAdopcion": 5,
+      "percepcionDeRiesgo": 5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 7.5
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 6.8,
+        "target10": 8,
+        "gap10": 1.2,
+        "collectiveAverage10": 7.62,
+        "percentile": 24,
+        "level_label": "En desarrollo"
+      },
+      "brechaDigital": {
+        "current10": 6.3,
+        "target10": 8,
+        "gap10": 1.7,
+        "collectiveAverage10": 7.8,
+        "percentile": 7,
+        "level_label": "En desarrollo"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 5.8,
+        "target10": 8,
+        "gap10": 2.2,
+        "collectiveAverage10": 6.99,
+        "percentile": 6,
+        "level_label": "En desarrollo"
+      },
+      "culturaOrganizacional": {
+        "current10": 6,
+        "target10": 8,
+        "gap10": 2,
+        "collectiveAverage10": 7.59,
+        "percentile": 11,
+        "level_label": "En desarrollo"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital ha sido progresivo y principalmente guiado por las necesidades que surgen en la atencion de requerimientos, resolucion de incidencias y la gestion de la carga de trabajo. A medida que se presentan nuevos desafios, he ido adquiriendo conocimientos y habilidades practicas que me permiten cumplir con los tiempos de atencion establecidos y ofrecer un servicio mas eficiente y de mayor calidad. Este proceso continuo tambien ha facilitado la identificacion de errores y fallas en los sistemas o procesos, lo cual resulta clave para su correccion oportuna y mejora continua. Sin embargo, considero que una capacitacion mas detallada y estructurada me permitiria optimizar aun mas los procesos bajo mi responsabilidad, mejorar el desempeno y contribuir de manera mas directa a los objetivos del equipo."
+    ],
+    "D2_OPEN": [
+      "Actualmente solo tengo acceso a excell medio, se requiere mas acceso a nuevos programas que permitan mejorar mi labor"
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es ofrecer capacitaciones mas especificas y adaptadas a las funciones de cada area. Esto no solo permitiria que los colaboradores comprendan mejor las herramientas digitales disponibles, sino que tambien facilitaria la optimizacion de procesos, la reduccion de errores y una atencion mas eficiente. Ademas, fomentar espacios para compartir buenas practicas digitales y promover una cultura de mejora continua ayudaria a fortalecer el uso estrategico de la tecnologia en el dia a dia."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol es que se convierta en una herramienta que apoye la eficiencia operativa, permitiendo automatizar tareas repetitivas, detectar errores de manera preventiva y optimizar los procesos bajo mi responsabilidad. Creo que bien aplicada, la IA puede mejorar significativamente la calidad del servicio que brindamos. Sin embargo, una de mis principales preocupaciones es que su implementacion se haga sin una capacitacion adecuada, lo que podria generar confusion o una dependencia excesiva, en lugar de potenciar nuestras capacidades. Considero clave que la adopcion de IA venga acompanada de formacion y una integracion gradual, que permita aprovechar sus beneficios sin perder el conocimiento humano que es fundamental para una correcta toma de decisiones pues somos una empresa de servicios , somos personas trabajando para brindar una experiencia memorable a nuestros clientes generando lazos de lealtad y confianza."
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · culturaOrganizacional: gap 2.",
+    "iniciativas": [
+      {
+        "id": "IA-01",
+        "titulo": "Pilotos de IA con casos de alto valor",
+        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "areaEnfoque": "Innovación Aplicada",
+        "objetivosClave": [
+          "Selección de casos",
+          "Pilotos ejecutados",
+          "Lecciones y escalamiento"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Pilotos con ROI positivo",
+            "valorObjetivo": ">= 2"
+          }
+        ],
+        "responsableSugerido": "TI / Negocio",
+        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "objetivosClave": [
+          "Plantillas de prompts",
+          "Checklist de verificación",
+          "Casos prácticos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% asistentes certificados",
+            "valorObjetivo": ">= 70%"
+          }
+        ],
+        "responsableSugerido": "L&D / Legal",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CU-01",
+        "titulo": "Ciclos de experimentación y reconocimiento",
+        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "areaEnfoque": "Cultura y Cambio",
+        "objetivosClave": [
+          "Rituales de demo",
+          "Reconocimientos mensuales",
+          "Repositorio de aprendizajes"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Equipos participando",
+            "valorObjetivo": ">= 5"
+          }
+        ],
+        "responsableSugerido": "Change / Líderes",
+        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CU-02",
+        "titulo": "Programa de liderazgo digital",
+        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
+        "areaEnfoque": "Liderazgo",
+        "objetivosClave": [
+          "Sesiones de liderazgo",
+          "Compromisos visibles",
+          "Cascada de objetivos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% líderes entrenados",
+            "valorObjetivo": ">= 80%"
+          }
+        ],
+        "responsableSugerido": "HR / Dirección",
+        "plazoEstimado": "6-8 semanas",
+        "prioridad": "Alta"
+      }
+    ]
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:10.697Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:10.697Z",
+    "schema": "individual-1.0",
+    "id": "0wut1vzyl9il2rpe5040wut1v08rob5p",
+    "subject": {
+      "nombreCompleto": "GABRIEL CHAVEZ OCHOA",
+      "email": "gchavez@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:10.697Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 2.67,
+      "resolucionDeProblemas": 2.5,
+      "proactividadDigital": 3
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 4,
+      "alfabetizacionDeDatos": 4,
+      "colaboracionDigital": 4,
+      "ciberseguridad": 3.25
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 3,
+      "ambienteDeAprendizaje": 3,
+      "apoyoOrganizacional": 3,
+      "experimentacion": 2,
+      "reconocimiento": 4
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 1,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 3,
+      "percepcionDeRiesgo": 1,
+      "interesEnAprendizaje": 1,
+      "eticaYVerificacion": 1
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 6.7,
+      "resolucionDeProblemas": 6.3,
+      "proactividadDigital": 7.5
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 10,
+      "alfabetizacionDeDatos": 10,
+      "colaboracionDigital": 10,
+      "ciberseguridad": 8.1
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 7.5,
+      "ambienteDeAprendizaje": 7.5,
+      "apoyoOrganizacional": 7.5,
+      "experimentacion": 5,
+      "reconocimiento": 10
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 2.5,
+      "habilidadDeUso": 10,
+      "nivelDeAdopcion": 7.5,
+      "percepcionDeRiesgo": 2.5,
+      "interesEnAprendizaje": 2.5,
+      "eticaYVerificacion": 2.5
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 6.8,
+        "target10": 8,
+        "gap10": 1.2,
+        "collectiveAverage10": 7.62,
+        "percentile": 24,
+        "level_label": "En desarrollo"
+      },
+      "brechaDigital": {
+        "current10": 9.5,
+        "target10": 8,
+        "gap10": -1.5,
+        "collectiveAverage10": 7.8,
+        "percentile": 94,
+        "level_label": "Avanzado"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 4.6,
+        "target10": 8,
+        "gap10": 3.4,
+        "collectiveAverage10": 6.99,
+        "percentile": 1,
+        "level_label": "Inicial"
+      },
+      "culturaOrganizacional": {
+        "current10": 7.5,
+        "target10": 8,
+        "gap10": 0.5,
+        "collectiveAverage10": 7.59,
+        "percentile": 48,
+        "level_label": "En desarrollo"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Una experiencia innovadora, educativa y de progreso personal y profesional."
+    ],
+    "D2_OPEN": [
+      "Nuevas herramientas"
+    ],
+    "D3_OPEN": [
+      "Seguir realizando capacitaciones en las nuevas tecnologias."
+    ],
+    "D4_OPEN": [
+      "Debido a la informacion sensible no se maneja IA o programas no aprobados como tal."
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 3.4 · madurezDigital: gap 1.2.",
+    "iniciativas": [
+      {
+        "id": "IA-01",
+        "titulo": "Pilotos de IA con casos de alto valor",
+        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "areaEnfoque": "Innovación Aplicada",
+        "objetivosClave": [
+          "Selección de casos",
+          "Pilotos ejecutados",
+          "Lecciones y escalamiento"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Pilotos con ROI positivo",
+            "valorObjetivo": ">= 2"
+          }
+        ],
+        "responsableSugerido": "TI / Negocio",
+        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "objetivosClave": [
+          "Plantillas de prompts",
+          "Checklist de verificación",
+          "Casos prácticos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% asistentes certificados",
+            "valorObjetivo": ">= 70%"
+          }
+        ],
+        "responsableSugerido": "L&D / Legal",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Media"
+      },
+      {
+        "id": "MD-01",
+        "titulo": "Definir hoja de ruta de madurez digital",
+        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
+        "areaEnfoque": "Estrategia y Gobierno",
+        "objetivosClave": [
+          "Roadmap aprobado y comunicado",
+          "Prioridades Q1-Q2 definidas",
+          "KPIs de madurez acordados"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Roadmap publicado",
+            "valorObjetivo": "Antes de fin de mes"
+          },
+          {
+            "metrica": "% iniciativas con dueño",
+            "valorObjetivo": ">= 90%"
+          }
+        ],
+        "responsableSugerido": "PMO / Dirección de Transformación",
+        "plazoEstimado": "6-8 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Establecer gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "objetivosClave": [
+          "Inventario de datos críticos",
+          "Roles y responsables definidos",
+          "Políticas de calidad y acceso"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% dominios con owner",
+            "valorObjetivo": ">= 80%"
+          }
+        ],
+        "responsableSugerido": "Data Lead / TI",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Alta"
+      }
+    ]
+  }
+}

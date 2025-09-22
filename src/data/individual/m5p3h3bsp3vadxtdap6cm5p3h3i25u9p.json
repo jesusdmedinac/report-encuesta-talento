@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:07.807Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:07.807Z",
+    "schema": "individual-1.0",
+    "id": "m5p3h3bsp3vadxtdap6cm5p3h3i25u9p",
+    "subject": {
+      "nombreCompleto": "Kimberly Llano Zambrano",
+      "email": "kimberlyllano3k@gmail.com",
+      "assessed_on": "2025-09-22T15:35:07.807Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 3.33,
+      "resolucionDeProblemas": 1.5,
+      "proactividadDigital": 2.5
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 2,
+      "alfabetizacionDeDatos": 3,
+      "colaboracionDigital": 2.5,
+      "ciberseguridad": 3
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 2,
+      "ambienteDeAprendizaje": 2,
+      "apoyoOrganizacional": 3,
+      "experimentacion": 2,
+      "reconocimiento": 2
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 2,
+      "habilidadDeUso": 3,
+      "nivelDeAdopcion": 2,
+      "percepcionDeRiesgo": 1,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 3
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 8.3,
+      "resolucionDeProblemas": 3.8,
+      "proactividadDigital": 6.3
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 5,
+      "alfabetizacionDeDatos": 7.5,
+      "colaboracionDigital": 6.3,
+      "ciberseguridad": 7.5
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 5,
+      "ambienteDeAprendizaje": 5,
+      "apoyoOrganizacional": 7.5,
+      "experimentacion": 5,
+      "reconocimiento": 5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 5,
+      "habilidadDeUso": 7.5,
+      "nivelDeAdopcion": 5,
+      "percepcionDeRiesgo": 2.5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 7.5
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 6.1,
+        "target10": 8,
+        "gap10": 1.9,
+        "collectiveAverage10": 7.62,
+        "percentile": 10,
+        "level_label": "En desarrollo"
+      },
+      "brechaDigital": {
+        "current10": 6.6,
+        "target10": 8,
+        "gap10": 1.4,
+        "collectiveAverage10": 7.8,
+        "percentile": 12,
+        "level_label": "En desarrollo"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 6.3,
+        "target10": 8,
+        "gap10": 1.7,
+        "collectiveAverage10": 6.99,
+        "percentile": 24,
+        "level_label": "En desarrollo"
+      },
+      "culturaOrganizacional": {
+        "current10": 5.5,
+        "target10": 8,
+        "gap10": 2.5,
+        "collectiveAverage10": 7.59,
+        "percentile": 6,
+        "level_label": "En desarrollo"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Un escalon mas hacia el exito"
+    ],
+    "D2_OPEN": [
+      "Una actualizacion de procesos completa, codigos de recaudaciones, proceso en ventanillas. Una herramienta que permita realizar las entregas detalladas de efectivo de manera virtual, asi ahorramos papel y tiempo. La verificacion biometrica para retiros , acelera el proceso y produce mas confianza en el cliente. Un aplicativo que permita llenar el formulario de billetes falsos de manera digital."
+    ],
+    "D3_OPEN": [
+      "Incentivar a los colaboradores a traves de becas o beneficios por llegar a ciertas meta de adquirir nuevas habilidades con respaldo de pruebas , por su interes en acelerar la cultura digital."
+    ],
+    "D4_OPEN": [
+      "Que se utilice en procesos de verificacion, respaldos de pago"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · madurezDigital: gap 1.9.",
+    "iniciativas": [
+      {
+        "id": "CU-01",
+        "titulo": "Ciclos de experimentación y reconocimiento",
+        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "areaEnfoque": "Cultura y Cambio",
+        "objetivosClave": [
+          "Rituales de demo",
+          "Reconocimientos mensuales",
+          "Repositorio de aprendizajes"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Equipos participando",
+            "valorObjetivo": ">= 5"
+          }
+        ],
+        "responsableSugerido": "Change / Líderes",
+        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CU-02",
+        "titulo": "Programa de liderazgo digital",
+        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
+        "areaEnfoque": "Liderazgo",
+        "objetivosClave": [
+          "Sesiones de liderazgo",
+          "Compromisos visibles",
+          "Cascada de objetivos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% líderes entrenados",
+            "valorObjetivo": ">= 80%"
+          }
+        ],
+        "responsableSugerido": "HR / Dirección",
+        "plazoEstimado": "6-8 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "MD-01",
+        "titulo": "Definir hoja de ruta de madurez digital",
+        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
+        "areaEnfoque": "Estrategia y Gobierno",
+        "objetivosClave": [
+          "Roadmap aprobado y comunicado",
+          "Prioridades Q1-Q2 definidas",
+          "KPIs de madurez acordados"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Roadmap publicado",
+            "valorObjetivo": "Antes de fin de mes"
+          },
+          {
+            "metrica": "% iniciativas con dueño",
+            "valorObjetivo": ">= 90%"
+          }
+        ],
+        "responsableSugerido": "PMO / Dirección de Transformación",
+        "plazoEstimado": "6-8 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Establecer gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "objetivosClave": [
+          "Inventario de datos críticos",
+          "Roles y responsables definidos",
+          "Políticas de calidad y acceso"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% dominios con owner",
+            "valorObjetivo": ">= 80%"
+          }
+        ],
+        "responsableSugerido": "Data Lead / TI",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Alta"
+      }
+    ]
+  }
+}

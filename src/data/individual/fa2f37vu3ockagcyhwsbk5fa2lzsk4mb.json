@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:10.755Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:10.755Z",
+    "schema": "individual-1.0",
+    "id": "fa2f37vu3ockagcyhwsbk5fa2lzsk4mb",
+    "subject": {
+      "nombreCompleto": "Jennifer Navarro Carpio",
+      "email": "JNAVARRO@BANCOGUAYAQUIL.COM",
+      "assessed_on": "2025-09-22T15:35:10.755Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 2.33,
+      "resolucionDeProblemas": 3.5,
+      "proactividadDigital": 4
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 4,
+      "alfabetizacionDeDatos": 4,
+      "colaboracionDigital": 4,
+      "ciberseguridad": 3.25
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 3,
+      "ambienteDeAprendizaje": 2,
+      "apoyoOrganizacional": 4,
+      "experimentacion": 4,
+      "reconocimiento": 3
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 4,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 1,
+      "percepcionDeRiesgo": 3,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 4
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 3,
+      "monitoreoDeRendimiento": 4,
+      "liderazgoDeAdopcion": 2,
+      "optimizacionDeColaboracion": 4,
+      "usoDeIAEnGestion": 4
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 5.8,
+      "resolucionDeProblemas": 8.8,
+      "proactividadDigital": 10
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 10,
+      "alfabetizacionDeDatos": 10,
+      "colaboracionDigital": 10,
+      "ciberseguridad": 8.1
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 7.5,
+      "ambienteDeAprendizaje": 5,
+      "apoyoOrganizacional": 10,
+      "experimentacion": 10,
+      "reconocimiento": 7.5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 10,
+      "habilidadDeUso": 10,
+      "nivelDeAdopcion": 2.5,
+      "percepcionDeRiesgo": 7.5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 10
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 7.5,
+      "monitoreoDeRendimiento": 10,
+      "liderazgoDeAdopcion": 5,
+      "optimizacionDeColaboracion": 10,
+      "usoDeIAEnGestion": 10
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 8.2,
+        "target10": 8,
+        "gap10": -0.2,
+        "collectiveAverage10": 7.62,
+        "percentile": 69,
+        "level_label": "Avanzado"
+      },
+      "brechaDigital": {
+        "current10": 9.5,
+        "target10": 8,
+        "gap10": -1.5,
+        "collectiveAverage10": 7.8,
+        "percentile": 94,
+        "level_label": "Avanzado"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 8.3,
+        "target10": 8,
+        "gap10": -0.3,
+        "collectiveAverage10": 6.99,
+        "percentile": 94,
+        "level_label": "Avanzado"
+      },
+      "culturaOrganizacional": {
+        "current10": 8,
+        "target10": 8,
+        "gap10": 0,
+        "collectiveAverage10": 7.59,
+        "percentile": 63,
+        "level_label": "Avanzado"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Muchos conceptos se han profundizado"
+    ],
+    "D2_OPEN": [
+      "mas capacitaciones en nuevas tecnologias, el las nuevas cosas que se han publicado en relacion a la ingenieria de sistemas"
+    ],
+    "D3_OPEN": [
+      "Tener mas acercamiento o canales de comunicaciones mas directos con clientes que se encuentran en el extranjero y que no se pueden comunicar por la via telefonica normal y que no sea solo por correo"
+    ],
+    "D4_OPEN": [
+      "En que la IA le reste importancia al valor humano"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — .",
+    "iniciativas": []
+  }
+}

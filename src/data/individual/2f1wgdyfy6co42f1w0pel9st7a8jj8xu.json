@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:06.770Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:06.770Z",
+    "schema": "individual-1.0",
+    "id": "2f1wgdyfy6co42f1w0pel9st7a8jj8xu",
+    "subject": {
+      "nombreCompleto": "Joselyn Alvarado",
+      "email": "jalvarado1@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:06.770Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 2.33,
+      "resolucionDeProblemas": 2,
+      "proactividadDigital": 2.5
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 2,
+      "alfabetizacionDeDatos": 2,
+      "colaboracionDigital": 1.5,
+      "ciberseguridad": 3.25
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 2,
+      "ambienteDeAprendizaje": 1,
+      "apoyoOrganizacional": 1,
+      "experimentacion": 1,
+      "reconocimiento": 1
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 1,
+      "habilidadDeUso": 1,
+      "nivelDeAdopcion": 3,
+      "percepcionDeRiesgo": 4,
+      "interesEnAprendizaje": 1,
+      "eticaYVerificacion": 1
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 4,
+      "analiticaDeCliente": 1,
+      "comunicacionConClientes": 1,
+      "automatizacionDeMarketing": 1,
+      "usoDeIA": 1,
+      "usoDeSEO": 1,
+      "gestionDePaidMedia": 1
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 5.8,
+      "resolucionDeProblemas": 5,
+      "proactividadDigital": 6.3
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 5,
+      "alfabetizacionDeDatos": 5,
+      "colaboracionDigital": 3.8,
+      "ciberseguridad": 8.1
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 5,
+      "ambienteDeAprendizaje": 2.5,
+      "apoyoOrganizacional": 2.5,
+      "experimentacion": 2.5,
+      "reconocimiento": 2.5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 2.5,
+      "habilidadDeUso": 2.5,
+      "nivelDeAdopcion": 7.5,
+      "percepcionDeRiesgo": 10,
+      "interesEnAprendizaje": 2.5,
+      "eticaYVerificacion": 2.5
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 10,
+      "analiticaDeCliente": 2.5,
+      "comunicacionConClientes": 2.5,
+      "automatizacionDeMarketing": 2.5,
+      "usoDeIA": 2.5,
+      "usoDeSEO": 2.5,
+      "gestionDePaidMedia": 2.5
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 5.7,
+        "target10": 8,
+        "gap10": 2.3,
+        "collectiveAverage10": 7.62,
+        "percentile": 7,
+        "level_label": "En desarrollo"
+      },
+      "brechaDigital": {
+        "current10": 5.5,
+        "target10": 8,
+        "gap10": 2.5,
+        "collectiveAverage10": 7.8,
+        "percentile": 2,
+        "level_label": "Inicial"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 4.6,
+        "target10": 8,
+        "gap10": 3.4,
+        "collectiveAverage10": 6.99,
+        "percentile": 1,
+        "level_label": "Inicial"
+      },
+      "culturaOrganizacional": {
+        "current10": 3,
+        "target10": 8,
+        "gap10": 5,
+        "collectiveAverage10": 7.59,
+        "percentile": 0,
+        "level_label": "Inicial"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "negativo"
+    ],
+    "D2_OPEN": [
+      "una nueva herramienta"
+    ],
+    "D3_OPEN": [
+      "capacitandonos y ensenandonos a utilizar las nuevas herramientas"
+    ],
+    "D4_OPEN": [
+      "que sea un arma contra nosotros"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 5 · usoInteligenciaArtificial: gap 3.4.",
+    "iniciativas": [
+      {
+        "id": "CU-01",
+        "titulo": "Ciclos de experimentación y reconocimiento",
+        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "areaEnfoque": "Cultura y Cambio",
+        "objetivosClave": [
+          "Rituales de demo",
+          "Reconocimientos mensuales",
+          "Repositorio de aprendizajes"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Equipos participando",
+            "valorObjetivo": ">= 5"
+          }
+        ],
+        "responsableSugerido": "Change / Líderes",
+        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
+        "prioridad": "Media"
+      },
+      {
+        "id": "CU-02",
+        "titulo": "Programa de liderazgo digital",
+        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
+        "areaEnfoque": "Liderazgo",
+        "objetivosClave": [
+          "Sesiones de liderazgo",
+          "Compromisos visibles",
+          "Cascada de objetivos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% líderes entrenados",
+            "valorObjetivo": ">= 80%"
+          }
+        ],
+        "responsableSugerido": "HR / Dirección",
+        "plazoEstimado": "6-8 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-01",
+        "titulo": "Pilotos de IA con casos de alto valor",
+        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "areaEnfoque": "Innovación Aplicada",
+        "objetivosClave": [
+          "Selección de casos",
+          "Pilotos ejecutados",
+          "Lecciones y escalamiento"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Pilotos con ROI positivo",
+            "valorObjetivo": ">= 2"
+          }
+        ],
+        "responsableSugerido": "TI / Negocio",
+        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "objetivosClave": [
+          "Plantillas de prompts",
+          "Checklist de verificación",
+          "Casos prácticos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% asistentes certificados",
+            "valorObjetivo": ">= 70%"
+          }
+        ],
+        "responsableSugerido": "L&D / Legal",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Media"
+      }
+    ]
+  }
+}

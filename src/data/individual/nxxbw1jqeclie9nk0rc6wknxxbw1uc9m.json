@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:07.513Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:07.513Z",
+    "schema": "individual-1.0",
+    "id": "nxxbw1jqeclie9nk0rc6wknxxbw1uc9m",
+    "subject": {
+      "nombreCompleto": "Daniel Briones Falquez",
+      "email": "dbriones1@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:07.513Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 3.67,
+      "resolucionDeProblemas": 3.5,
+      "proactividadDigital": 3
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 3,
+      "alfabetizacionDeDatos": 4,
+      "colaboracionDigital": 3.5,
+      "ciberseguridad": 4
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 4,
+      "ambienteDeAprendizaje": 4,
+      "apoyoOrganizacional": 3,
+      "experimentacion": 3,
+      "reconocimiento": 3
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 4,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 1,
+      "percepcionDeRiesgo": 2,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 4
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 4,
+      "analiticaDeCliente": 4,
+      "comunicacionConClientes": 2,
+      "automatizacionDeMarketing": 3,
+      "usoDeIA": 4,
+      "usoDeSEO": 2,
+      "gestionDePaidMedia": 4
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 9.2,
+      "resolucionDeProblemas": 8.8,
+      "proactividadDigital": 7.5
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 7.5,
+      "alfabetizacionDeDatos": 10,
+      "colaboracionDigital": 8.8,
+      "ciberseguridad": 10
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 10,
+      "ambienteDeAprendizaje": 10,
+      "apoyoOrganizacional": 7.5,
+      "experimentacion": 7.5,
+      "reconocimiento": 7.5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 10,
+      "habilidadDeUso": 10,
+      "nivelDeAdopcion": 2.5,
+      "percepcionDeRiesgo": 5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 10
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 10,
+      "analiticaDeCliente": 10,
+      "comunicacionConClientes": 5,
+      "automatizacionDeMarketing": 7.5,
+      "usoDeIA": 10,
+      "usoDeSEO": 5,
+      "gestionDePaidMedia": 10
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 8.5,
+        "target10": 8,
+        "gap10": -0.5,
+        "collectiveAverage10": 7.62,
+        "percentile": 76,
+        "level_label": "Avanzado"
+      },
+      "brechaDigital": {
+        "current10": 9.1,
+        "target10": 8,
+        "gap10": -1.1,
+        "collectiveAverage10": 7.8,
+        "percentile": 89,
+        "level_label": "Avanzado"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 7.9,
+        "target10": 8,
+        "gap10": 0.1,
+        "collectiveAverage10": 6.99,
+        "percentile": 83,
+        "level_label": "En desarrollo"
+      },
+      "culturaOrganizacional": {
+        "current10": 8.5,
+        "target10": 8,
+        "gap10": -0.5,
+        "collectiveAverage10": 7.59,
+        "percentile": 75,
+        "level_label": "Avanzado"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Una avalancha de informacion que se transforma en conocimiento cada dia"
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta integral que agilite las transacciones para los empleados, tal cual se da esa prioridad en la app para los clientes externos. Asi mismo, que los activos tecnologicos que usamos en las agencias (computador completo) sean actualizados para que tengan la capacidad suficiente para manejar esas herramientas, sin ralentizar el trabajo del dia a dia."
+    ],
+    "D3_OPEN": [
+      "Lanzar una propuesta de actualizacion digital para los empleados basado en un programa de recompensas. Por ejemplo, quienes culminen un curso o grupo de cursos, podran acceder a una capacitacion mas completa con certificacion incluida, o una base de recompensas (un mes de suscripcion a una app de uso cotidiano como spotify). Esto puede incentivar el aprendizaje en personas que actualmente requieren motivacion para iniciar en el mundo digital."
+    ],
+    "D4_OPEN": [
+      "Que la experiencia al cliente llegue a un punto tan alto de digitalizacion, en el que se pierda el lado humano. Las nuevas generaciones, a pesar del avance tecnologico, requieren contacto humano en su relacion con las marcas."
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.1.",
+    "iniciativas": [
+      {
+        "id": "IA-01",
+        "titulo": "Pilotos de IA con casos de alto valor",
+        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "areaEnfoque": "Innovación Aplicada",
+        "objetivosClave": [
+          "Selección de casos",
+          "Pilotos ejecutados",
+          "Lecciones y escalamiento"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Pilotos con ROI positivo",
+            "valorObjetivo": ">= 2"
+          }
+        ],
+        "responsableSugerido": "TI / Negocio",
+        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "objetivosClave": [
+          "Plantillas de prompts",
+          "Checklist de verificación",
+          "Casos prácticos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% asistentes certificados",
+            "valorObjetivo": ">= 70%"
+          }
+        ],
+        "responsableSugerido": "L&D / Legal",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Media"
+      }
+    ]
+  }
+}

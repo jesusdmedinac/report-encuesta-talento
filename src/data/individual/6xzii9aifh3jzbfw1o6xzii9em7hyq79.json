@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:10.700Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:10.700Z",
+    "schema": "individual-1.0",
+    "id": "6xzii9aifh3jzbfw1o6xzii9em7hyq79",
+    "subject": {
+      "nombreCompleto": "carlos sanchez",
+      "email": "csanchez3@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:10.700Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 3.67,
+      "resolucionDeProblemas": 4,
+      "proactividadDigital": 4
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 3.5,
+      "alfabetizacionDeDatos": 3,
+      "colaboracionDigital": 2.5,
+      "ciberseguridad": 4
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 4,
+      "ambienteDeAprendizaje": 3,
+      "apoyoOrganizacional": 3,
+      "experimentacion": 3,
+      "reconocimiento": 3
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 4,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 1,
+      "percepcionDeRiesgo": 3,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 4
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 9.2,
+      "resolucionDeProblemas": 10,
+      "proactividadDigital": 10
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 8.8,
+      "alfabetizacionDeDatos": 7.5,
+      "colaboracionDigital": 6.3,
+      "ciberseguridad": 10
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 10,
+      "ambienteDeAprendizaje": 7.5,
+      "apoyoOrganizacional": 7.5,
+      "experimentacion": 7.5,
+      "reconocimiento": 7.5
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 10,
+      "habilidadDeUso": 10,
+      "nivelDeAdopcion": 2.5,
+      "percepcionDeRiesgo": 7.5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 10
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 9.7,
+        "target10": 8,
+        "gap10": -1.7,
+        "collectiveAverage10": 7.62,
+        "percentile": 96,
+        "level_label": "Avanzado"
+      },
+      "brechaDigital": {
+        "current10": 8.1,
+        "target10": 8,
+        "gap10": -0.1,
+        "collectiveAverage10": 7.8,
+        "percentile": 60,
+        "level_label": "Avanzado"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 8.3,
+        "target10": 8,
+        "gap10": -0.3,
+        "collectiveAverage10": 6.99,
+        "percentile": 94,
+        "level_label": "Avanzado"
+      },
+      "culturaOrganizacional": {
+        "current10": 8,
+        "target10": 8,
+        "gap10": 0,
+        "collectiveAverage10": 7.59,
+        "percentile": 63,
+        "level_label": "Avanzado"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "\"Cada nuevo avance tecnologico ha sido una puerta a mejorar la forma de aprender y trabajar.\""
+    ],
+    "D2_OPEN": [
+      "Considero que lo que mas me ayuda para la eficiencia es mas capacitacion a veces usamos una parte de las funciones por desconocimiento, con mas formacion nos permitira mejorar en el uso de la herramienta"
+    ],
+    "D3_OPEN": [
+      "Promover espacios de colaboracion digital para acelerar nuestra cultura fomentando una formacion continua y practica en herramientas digitales, con una mentalidad abierta al cambio, al implementar tecnologia; es fundamental que todos comprendan su valor, que esten comodos usandola y ver como mejora el trabajo diario."
+    ],
+    "D4_OPEN": [
+      "El desarrollo de la inteligencia artificial no me intimida; al contrario, la veo como una herramienta poderosa que utilizo para mejorar mi desempeno, como una extension de mi capacidad. Sin embargo, valoro profundamente el conocimiento adquirido a lo largo del tiempo, y me esfuerzo por conservar esa sabiduria practica. Mi expectativa es seguir aprovechando la IA como apoyo, pero tambien estar preparado para responder con autonomia si en algun momento la tecnologia falla. Mantener la habilidad de realizar tareas basicas por mi mismo es clave para garantizar la continuidad del trabajo y la eficiencia operativa"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — .",
+    "iniciativas": []
+  }
+}

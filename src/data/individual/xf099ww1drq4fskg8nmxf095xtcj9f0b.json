@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:14.758Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:14.758Z",
+    "schema": "individual-1.0",
+    "id": "xf099ww1drq4fskg8nmxf095xtcj9f0b",
+    "subject": {
+      "nombreCompleto": "Carmen Elvira Ruiz Alvear",
+      "email": "cruiz@bancoguayaquil.com",
+      "assessed_on": "2025-09-22T15:35:14.758Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 3.33,
+      "resolucionDeProblemas": 3.5,
+      "proactividadDigital": 4
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 4,
+      "alfabetizacionDeDatos": 4,
+      "colaboracionDigital": 3.5,
+      "ciberseguridad": 3
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 3,
+      "ambienteDeAprendizaje": 2,
+      "apoyoOrganizacional": 3,
+      "experimentacion": 4,
+      "reconocimiento": 4
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 4,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 2,
+      "percepcionDeRiesgo": 3,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 3
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 2,
+      "monitoreoDeRendimiento": 4,
+      "liderazgoDeAdopcion": 4,
+      "optimizacionDeColaboracion": 3,
+      "usoDeIAEnGestion": 3
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 8.3,
+      "resolucionDeProblemas": 8.8,
+      "proactividadDigital": 10
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 10,
+      "alfabetizacionDeDatos": 10,
+      "colaboracionDigital": 8.8,
+      "ciberseguridad": 7.5
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 7.5,
+      "ambienteDeAprendizaje": 5,
+      "apoyoOrganizacional": 7.5,
+      "experimentacion": 10,
+      "reconocimiento": 10
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 10,
+      "habilidadDeUso": 10,
+      "nivelDeAdopcion": 5,
+      "percepcionDeRiesgo": 7.5,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 7.5
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 5,
+      "monitoreoDeRendimiento": 10,
+      "liderazgoDeAdopcion": 10,
+      "optimizacionDeColaboracion": 7.5,
+      "usoDeIAEnGestion": 7.5
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 0,
+      "hojasDeCalculoAvanzadas": 0,
+      "plataformasDeGestion": 0,
+      "digitalizacionDeProcesos": 0,
+      "usoDeIA": 0
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 9,
+        "target10": 8,
+        "gap10": -1,
+        "collectiveAverage10": 7.62,
+        "percentile": 86,
+        "level_label": "Avanzado"
+      },
+      "brechaDigital": {
+        "current10": 9.1,
+        "target10": 8,
+        "gap10": -1.1,
+        "collectiveAverage10": 7.8,
+        "percentile": 89,
+        "level_label": "Avanzado"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 8.3,
+        "target10": 8,
+        "gap10": -0.3,
+        "collectiveAverage10": 6.99,
+        "percentile": 94,
+        "level_label": "Avanzado"
+      },
+      "culturaOrganizacional": {
+        "current10": 8,
+        "target10": 8,
+        "gap10": 0,
+        "collectiveAverage10": 7.59,
+        "percentile": 63,
+        "level_label": "Avanzado"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Conocimiento que se transforma en poder y que para mantenerlo hay que actualizarse constantemente."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales y tener acceso a descargar programas como apoyo. Esta restringido."
+    ],
+    "D3_OPEN": [
+      "Nosotros como lideres debemos fomentar la innovacion, promover en los equipos el uso de la tecnologia y evitar manualidades. Creando cultura de aprendizaje constante, incentivando la automatizacion de procesos que se identifican caducos. Adoptar metodologias agiles que promuevan experimentar, tener errores como parte del aprendizaje para asi llegar al objetivo sin temor."
+    ],
+    "D4_OPEN": [
+      "Que no se considere que siempre debe haber una revision ultima de un humano, pues el criterio programado de un sistema no reemplazara a lo que un humano puede discernir dependiendo de cada caso. Hablo especificamente de inversiones."
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — .",
+    "iniciativas": []
+  }
+}

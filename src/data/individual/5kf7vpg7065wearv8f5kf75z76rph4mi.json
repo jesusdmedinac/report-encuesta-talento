@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-09-22T15:35:14.450Z",
+  "provenance": {
+    "source": "respuestas-por-puntos.csv",
+    "generator": "generate-individual-reports.mjs"
+  },
+  "header": {
+    "empresa": "Banco de Guayaquil",
+    "generatedAt": "2025-09-22T15:35:14.450Z",
+    "schema": "individual-1.0",
+    "id": "5kf7vpg7065wearv8f5kf75z76rph4mi",
+    "subject": {
+      "nombreCompleto": "Johana Tufiño",
+      "email": "johanatufinio@hotmail.com",
+      "assessed_on": "2025-09-22T15:35:14.450Z"
+    }
+  },
+  "scores": {
+    "madurezDigital": {
+      "adaptabilidad": 4,
+      "resolucionDeProblemas": 2.5,
+      "proactividadDigital": 4
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 2.5,
+      "alfabetizacionDeDatos": 4,
+      "colaboracionDigital": 3,
+      "ciberseguridad": 4
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 4,
+      "ambienteDeAprendizaje": 4,
+      "apoyoOrganizacional": 4,
+      "experimentacion": 3,
+      "reconocimiento": 4
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 4,
+      "habilidadDeUso": 4,
+      "nivelDeAdopcion": 1,
+      "percepcionDeRiesgo": 4,
+      "interesEnAprendizaje": 4,
+      "eticaYVerificacion": 4
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 1,
+      "hojasDeCalculoAvanzadas": 3,
+      "plataformasDeGestion": 2,
+      "digitalizacionDeProcesos": 2,
+      "usoDeIA": 1
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "scores10": {
+    "madurezDigital": {
+      "adaptabilidad": 10,
+      "resolucionDeProblemas": 6.3,
+      "proactividadDigital": 10
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 6.3,
+      "alfabetizacionDeDatos": 10,
+      "colaboracionDigital": 7.5,
+      "ciberseguridad": 10
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 10,
+      "ambienteDeAprendizaje": 10,
+      "apoyoOrganizacional": 10,
+      "experimentacion": 7.5,
+      "reconocimiento": 10
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 10,
+      "habilidadDeUso": 10,
+      "nivelDeAdopcion": 2.5,
+      "percepcionDeRiesgo": 10,
+      "interesEnAprendizaje": 10,
+      "eticaYVerificacion": 10
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 0,
+      "exploracionTecnologica": 0,
+      "gestionDeRiesgo": 0,
+      "estrategiaTecnologica": 0
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 0,
+      "monitoreoDeRendimiento": 0,
+      "liderazgoDeAdopcion": 0,
+      "optimizacionDeColaboracion": 0,
+      "usoDeIAEnGestion": 0
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 0,
+      "analiticaDeCliente": 0,
+      "comunicacionConClientes": 0,
+      "automatizacionDeMarketing": 0,
+      "usoDeIA": 0,
+      "usoDeSEO": 0,
+      "gestionDePaidMedia": 0
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 2.5,
+      "hojasDeCalculoAvanzadas": 7.5,
+      "plataformasDeGestion": 5,
+      "digitalizacionDeProcesos": 5,
+      "usoDeIA": 2.5
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 0,
+      "cloudComputing": 0,
+      "mejoraDeInfraestructura": 0,
+      "metodologiasDeDesarrollo": 0,
+      "usoDeIAEnDesarrollo": 0,
+      "scripting": 0,
+      "basesDeDatos": 0,
+      "diseñoUI": 0
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": 0,
+      "reclutamientoDigital": 0,
+      "plataformasDeCapacitacion": 0,
+      "gestionDocumental": 0,
+      "usoDeIA": 0
+    }
+  },
+  "summary": {
+    "dimensions": {
+      "madurezDigital": {
+        "current10": 8.8,
+        "target10": 8,
+        "gap10": -0.8,
+        "collectiveAverage10": 7.62,
+        "percentile": 83,
+        "level_label": "Avanzado"
+      },
+      "brechaDigital": {
+        "current10": 8.4,
+        "target10": 8,
+        "gap10": -0.4,
+        "collectiveAverage10": 7.8,
+        "percentile": 71,
+        "level_label": "Avanzado"
+      },
+      "usoInteligenciaArtificial": {
+        "current10": 8.8,
+        "target10": 8,
+        "gap10": -0.8,
+        "collectiveAverage10": 6.99,
+        "percentile": 100,
+        "level_label": "Avanzado"
+      },
+      "culturaOrganizacional": {
+        "current10": 9.5,
+        "target10": 8,
+        "gap10": -1.5,
+        "collectiveAverage10": 7.59,
+        "percentile": 91,
+        "level_label": "Avanzado"
+      }
+    }
+  },
+  "openEnded": {
+    "D1_OPEN": [
+      "Muy productivo y util."
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta."
+    ],
+    "D3_OPEN": [
+      "Realizar los cursos de ruta digital con incentivos para que los colaboradores se motiven e implementen sus conocimientos."
+    ],
+    "D4_OPEN": [
+      "Mi mayor preocupacion dentro de mia rea de trabajo es que el banco entra en una etapa de digitalizacion con lo cual el cierre de agencias provoca la desvinculacion de personal; a pesar, de que es un beneficio para el banco pues amplia sus canales digitales, la incertidumbre que simbra en los colaboradores de agencias es muy grande."
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — .",
+    "iniciativas": []
+  }
+}
