@@ -1,5 +1,6 @@
 import { TEMPLATE_PATH, SCHEMA_VERSION, PROMPT_VERSION, META_SECTOR_SCORE, COLORS, IA_CHARTS } from '../config.js';
 import { loadJson, calculateAverage, scaleToTen, formatDimensionName } from '../utils.js';
+import { loadSectorReference, computeSectorTargets } from './baremos.js';
 
 // --- Funciones "Constructoras" por Sección ---
 
@@ -41,9 +42,16 @@ function buildResumenEjecutivo(qualitativeResults, averages) {
 
 function buildBrechaDigital(empresaNombre, overallAvg, qualitativeResults) {
     const brechaTexts = qualitativeResults.brechaDigital || {};
+    // Benchmark (promedio sector) desde referencia
+    const sectorRef = loadSectorReference();
+    const sectorMean = sectorRef && Number(sectorRef.globalMean10);
+    // Meta del sector derivada de baremos (fallback a constante si no disponible)
+    const targetInfo = computeSectorTargets({ method: 'advanced_min' });
+    const metaSector = (targetInfo && Number(targetInfo.global)) || META_SECTOR_SCORE;
     return {
         puntuacionEmpresa: parseFloat(scaleToTen(overallAvg).toFixed(1)),
-        puntuacionMetaSector: META_SECTOR_SCORE,
+        puntuacionPromedioSector: Number.isFinite(sectorMean) ? parseFloat(sectorMean.toFixed(2)) : undefined,
+        puntuacionMetaSector: parseFloat(metaSector.toFixed(2)),
         nombreEmpresa: empresaNombre,
         textoNivelActual: brechaTexts.textoNivelActual || "Análisis no disponible.",
         textoOportunidadParrafo: brechaTexts.textoOportunidadParrafo || "Análisis no disponible.",

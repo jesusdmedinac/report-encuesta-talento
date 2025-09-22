@@ -112,10 +112,10 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 12. **Baremos y referencias de sector**
 
--   [ ] Convertir `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (población general y variantes por rol/educación; con `version`/`source`).
--   [ ] Crear `src/scripts/sector_reference.json` con media(s) de la muestra de referencia y metadatos.
--   [ ] Helper `assignLevel(dim, score10)` (fase 1: baremo general) y `computeSectorTargets({ method })` (`p90` o `advanced_min`).
--   [ ] Integrar en global: `puntuacionPromedioSector` (benchmark) y `puntuacionMetaSector` (derivada, con fallback).
+-   [x] Convertir `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (población general y variantes por rol/educación; con `version`/`source`).
+-   [x] Crear `src/scripts/sector_reference.json` con media(s) de la muestra de referencia y metadatos.
+-   [x] Helper `assignLevel(dim, score10)` (fase 1: baremo general) y `computeSectorTargets({ method })` (`p90` o `advanced_min`).
+-   [x] Integrar en global: `puntuacionPromedioSector` (benchmark) y `puntuacionMetaSector` (derivada, con fallback).
 -   [ ] Integrar en individual: `level_label` por dimensión (baremo general).
 -   [ ] Tests de límites “Desde/Hasta” y coherencia con ejemplos.
 
