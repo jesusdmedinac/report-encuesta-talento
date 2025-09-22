@@ -1,0 +1,11 @@
+{
+  "version": "2025-09-21",
+  "source": {
+    "document": "analisis/ANALISIS.md",
+    "notes": "Media de la muestra de referencia del sector citada en el análisis (M Otros = 6.75)."
+  },
+  "globalMean10": 6.75,
+  "meansByDimension10": null,
+  "updatedAt": "2025-09-21T00:00:00.000Z"
+}
+

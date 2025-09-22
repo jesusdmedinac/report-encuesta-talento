@@ -1,0 +1,52 @@
+{
+  "version": "2025-09-21",
+  "status": "preliminary",
+  "source": {
+    "file": "analisis/Baremos Madurez Digital SEP25.xlsx",
+    "sheet": "sheet1",
+    "notes": "Rangos en escala 1–10; derivados de la hoja. Requiere conversión automatizada para consolidar todos los cortes."
+  },
+  "general": {
+    "madurezDigital": [
+      { "nivel": "Inicial", "desde": 0.0, "hasta": 4.8 },
+      { "nivel": "En desarrollo", "desde": 4.81, "hasta": 6.5 },
+      { "nivel": "Avanzado", "desde": 6.51, "hasta": 10.0 }
+    ],
+    "brechaDigital": [
+      { "nivel": "Inicial", "desde": 0.0, "hasta": 5.8 },
+      { "nivel": "En desarrollo", "desde": 5.81, "hasta": 6.7 },
+      { "nivel": "Avanzado", "desde": 6.71, "hasta": 10.0 }
+    ],
+    "culturaOrganizacional": [
+      { "nivel": "Inicial", "desde": 0.0, "hasta": 4.0 },
+      { "nivel": "En desarrollo", "desde": 4.01, "hasta": 6.2 },
+      { "nivel": "Avanzado", "desde": 6.21, "hasta": 10.0 }
+    ],
+    "usoInteligenciaArtificial": [
+      { "nivel": "Inicial", "desde": 0.0, "hasta": 4.5 },
+      { "nivel": "En desarrollo", "desde": 4.51, "hasta": 6.5 },
+      { "nivel": "Avanzado", "desde": 6.51, "hasta": 10.0 }
+    ]
+  },
+  "roles": {
+    "D1": {
+      "comercial_operaciones_liderazgo_rrhh": [],
+      "tecnico_producto_mandos_medios": [],
+      "otro": []
+    },
+    "D4": {
+      "tecnico_soporte_mandos_liderazgo": [],
+      "comercial_operaciones_otros": []
+    }
+  },
+  "educacion": {
+    "D4": {
+      "secundaria": [],
+      "tecnico_tecnologico": [],
+      "universitaria": { "inherit": "general.usoInteligenciaArtificial" },
+      "posgrado": []
+    }
+  },
+  "targetMethod": "advanced_min"
+}
+
