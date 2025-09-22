@@ -116,3 +116,29 @@ Para controlar tiempos y costos, el pre‑análisis cualitativo de preguntas abi
 4.  **Visualización:** componente `AnalisisCualitativo.astro` muestra temas, sentimiento y citas.
 
 Con este diseño, tendrás un sistema robusto, trazable y gobernable capaz de generar análisis profundos y personalizados para cualquier empresa, manteniendo la coherencia y la calidad del reporte final con tiempos de ejecución predecibles.
+
+---
+
+## Integración de Baremos y Referencias de Sector (Ampliación)
+
+Objetivo: anclar comparativas y metas del reporte a datos del análisis, evitando constantes arbitrarias.
+
+- Mapa de dimensiones (anclaje D1–D4 → sistema):
+  - D1 → `madurezDigital`, D2 → `brechaDigital` (Competencias), D3 → `culturaOrganizacional`, D4 → `usoInteligenciaArtificial`.
+- Baremos (población general y variantes por rol/educación): convertir `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (con `version` y `source`).
+- Referencia de sector: crear `src/scripts/sector_reference.json` con la media global/por dimensión de la “muestra de referencia” (benchmark) y su procedencia.
+- Cálculos en el reporte global:
+  - `brechaDigital.puntuacionEmpresa`: promedio de D1–D4 en 1–10 (sin cambios).
+  - `brechaDigital.puntuacionPromedioSector`: media de la referencia (p. ej., 6.75; por dimensión si está disponible).
+  - `brechaDigital.puntuacionMetaSector`: derivada de baremos. Métodos admitidos:
+    - `p90`: percentil 90 por dimensión; meta global = promedio D1–D4.
+    - `advanced_min`: límite inferior del nivel “Avanzado” por dimensión; meta global = promedio D1–D4.
+  - `META_SECTOR_SCORE` se conserva como fallback documentado.
+- Reporte individual:
+  - Añadir `level_label` por dimensión (baremo general).
+  - Mantener `summary.dimensions.*` y `percentile` general; segmentados (rol/educación) en fase posterior.
+
+Validación y pruebas:
+- Tests de bordes “Desde/Hasta” (incluyendo los +0.01 del XLSX) para la asignación de niveles.
+- Snapshot de `baremos.json` y coherencia con ejemplos del documento.
+- Verificación de que el cambio no rompe el esquema actual ni la UI.

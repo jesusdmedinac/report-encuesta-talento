@@ -233,3 +233,43 @@ Alcance (cuando se priorice):
 - Revisión de impresión para consistencia visual.
 
 Nota: se pospone por no ser bloqueante; enfoque actual en cálculos, comparativos y acciones.
+
+---
+
+## Fase 15: Baremos y Referencias de Sector
+
+Objetivo: sustituir la meta de sector fija por referencias derivadas del análisis, y etiquetar niveles por dimensión.
+
+Entregables:
+- `src/scripts/baremos.json` (derivado de `analisis/Baremos Madurez Digital SEP25.xlsx`) con cortes por dimensión para población general y variantes por rol/educación cuando existan. Incluir `version` y `source`.
+- `src/scripts/sector_reference.json` con `globalMean10` y opcional `meansByDimension10`, además de metadatos de procedencia.
+- Helper `assignLevel(dim, score10, { rol?, educacion? })` (baremo general en primera fase) y `computeSectorTargets({ method, baremos, reference })` (métodos: `p90` o `advanced_min`).
+
+Tareas:
+1) Conversión XLSX→JSON (baremos). Validar cortes “Desde/Hasta” y saltos `+0.01`.
+2) Definir formato y fuente de `sector_reference.json` (p. ej., media global 6.75; por dimensión si existe).
+3) Integrar en `report-builder.js`:
+   - `puntuacionPromedioSector` desde referencia.
+   - `puntuacionMetaSector` desde `computeSectorTargets` (con fallback a `META_SECTOR_SCORE`).
+4) Añadir `level_label` por dimensión en el JSON individual (usando baremo general).
+5) Documentar método elegido y procedencia en `AGENTS.md`/`PLAN.md`.
+
+Criterios de aceptación:
+- Reporte global muestra benchmark y meta derivada; sin cambios en `puntuacionEmpresa`.
+- Reporte individual incluye `level_label` por dimensión sin romper la UI.
+- Tests de niveles pasan para valores frontera.
+
+---
+
+## Fase 16: Enriquecimiento con Análisis (metadatos y comparativa)
+
+Objetivo: exponer en el JSON global metadatos técnicos y coherencia con el análisis.
+
+Tareas:
+1) Añadir `header.analysis` (opcional) con `sampleSize`, `psychometrics.omega.{D1..D4}`, `baremos.version`, `reference.source`.
+2) Documentar la discrepancia `2399 vs 2402` y fijar dataset canónico para `empleadosEvaluados`.
+3) (Opcional) Añadir medias por dimensión de referencia si están disponibles.
+
+Criterios de aceptación:
+- Metadatos presentes detrás de flag/prop opcional sin romper validación.
+- Documentación actualizada y coherente.

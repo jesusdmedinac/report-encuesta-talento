@@ -110,6 +110,22 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ---
 
+12. **Baremos y referencias de sector**
+
+-   [ ] Convertir `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (población general y variantes por rol/educación; con `version`/`source`).
+-   [ ] Crear `src/scripts/sector_reference.json` con media(s) de la muestra de referencia y metadatos.
+-   [ ] Helper `assignLevel(dim, score10)` (fase 1: baremo general) y `computeSectorTargets({ method })` (`p90` o `advanced_min`).
+-   [ ] Integrar en global: `puntuacionPromedioSector` (benchmark) y `puntuacionMetaSector` (derivada, con fallback).
+-   [ ] Integrar en individual: `level_label` por dimensión (baremo general).
+-   [ ] Tests de límites “Desde/Hasta” y coherencia con ejemplos.
+
+13. **Metadatos del análisis y dataset canónico**
+
+-   [ ] Añadir `header.analysis` opcional con `omega`, `sampleSize`, `baremos.version`, `reference.source`.
+-   [ ] Resolver discrepancia de N (2399 vs 2402) y fijar dataset para `empleadosEvaluados` y comparativas.
+
+---
+
 ## Pensamientos y Estrategia
 
 *   **Arquitectura Robusta:** Modular y extensible; SOLID/DRY aplicados.

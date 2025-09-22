@@ -21,6 +21,19 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - Validación con `ajv` + `ajv-formats` y esquemas en `src/scripts/schemas/`.
 - Reintentos exponenciales en llamadas a IA (configurables por env).
 
+## Baremos y Referencias de Sector (plan)
+- Objetivo: reemplazar referencias arbitrarias por parámetros derivados del análisis y baremos.
+- Artefactos propuestos (estáticos, versionados):
+  - `src/scripts/baremos.json`: cortes por dimensión (D1–D4) para población general, y variantes por rol/educación cuando aplique (origen: `analisis/Baremos Madurez Digital SEP25.xlsx`).
+  - `src/scripts/sector_reference.json`: promedio(s) de la muestra de referencia (benchmark) y metadatos de procedencia.
+- Integración prevista en el reporte global:
+  - `brechaDigital.puntuacionEmpresa`: sin cambios (promedio de D1–D4 en 1–10).
+  - `brechaDigital.puntuacionPromedioSector`: media de la muestra de referencia (p. ej., 6.75 global o por dimensión si existe).
+  - `brechaDigital.puntuacionMetaSector`: objetivo derivado de baremos (método configurable: `p90` o umbral mínimo de “Avanzado”). `META_SECTOR_SCORE` queda como fallback.
+- Integración prevista en el reporte individual:
+  - Añadir etiquetas de nivel por dimensión (`level_label`) usando el baremo general.
+  - Mantener percentil general actual; percentiles/etiquetas segmentadas por rol/educación en una fase posterior.
+
 ## Comandos Clave
 - Generación unificada (recomendado):
   - `./generate.sh --provider=gemini [--offline] [--refresh-open-ended] [flags_adicionales]`
@@ -35,6 +48,10 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `npm test`
   - `npm run dev` (visualización del reporte en `/gemini` o `/openai` si existen JSONs)
   - `./commit-all.sh` para comitear cambios locales con tests (ver opciones en el script)
+
+### Próximos scripts (propuestos)
+- `npm run build-baremos`: convertir `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (incluye versión/fuente).
+- `npm run set-sector-reference`: generar/actualizar `src/scripts/sector_reference.json` con medias (global/por dimensión) y metadatos.
 
 ## Flags y Variables
 - Flags de generación:
@@ -79,6 +96,9 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `AnalisisCualitativo` muestra badge “offline” si el caché lo indica.
 - Esquema: `header.generatedAt` valida con formato `date-time` (ajv-formats requerido).
 - Reintentos IA: automáticos ante 429/503/timeouts; ajustables por env.
+### Sector y metas
+- La “meta del sector” se calculará desde baremos o percentiles de referencia (método configurable: `p90` o umbral de "Avanzado"). El valor fijo `META_SECTOR_SCORE` queda como respaldo y deberá documentar su procedencia si se usa.
+- Añadir `puntuacionPromedioSector` (benchmark) al reporte global desde la muestra de referencia del análisis.
 ### Individual
 - Privacidad: no exponer PII; usar `employeeId` pseudónimo determinístico. El mapa `employeeId -> email` (si se requiere) debe guardarse en `./debug/.local-map.json` (gitignored).
 - Costos: por defecto `--offline`. Habilitar `--ai` solo para un subconjunto con `--ids`/`--limit`.
