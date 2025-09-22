@@ -116,7 +116,7 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 -   [x] Crear `src/scripts/sector_reference.json` con media(s) de la muestra de referencia y metadatos.
 -   [x] Helper `assignLevel(dim, score10)` (fase 1: baremo general) y `computeSectorTargets({ method })` (`p90` o `advanced_min`).
 -   [x] Integrar en global: `puntuacionPromedioSector` (benchmark) y `puntuacionMetaSector` (derivada, con fallback).
--   [ ] Integrar en individual: `level_label` por dimensión (baremo general).
+-   [x] Integrar en individual: `level_label` por dimensión (baremo general).
 -   [ ] Tests de límites “Desde/Hasta” y coherencia con ejemplos.
 
 13. **Metadatos del análisis y dataset canónico**

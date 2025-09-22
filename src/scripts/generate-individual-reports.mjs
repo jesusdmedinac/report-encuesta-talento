@@ -5,6 +5,7 @@ import { MAPPINGS_PATH, TARGETS_10 } from './config.js';
 import { loadJson } from './utils.js';
 import { parseCsvFile, performIndividualAnalysis } from './services/csv-processor.js';
 import { OPEN_ENDED_QUESTIONS } from './config.js';
+import { assignLevel } from './services/baremos.js';
 
 function getArg(key, def = null) {
   const v = process.argv.find(a => a.startsWith(key + '='));
@@ -148,6 +149,7 @@ async function main() {
           gap10,
           collectiveAverage10: collective10,
           percentile: pr,
+          level_label: assignLevel(d, current10) || null,
         };
       }
 

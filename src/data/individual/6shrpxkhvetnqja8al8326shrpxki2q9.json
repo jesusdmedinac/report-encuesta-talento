@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-19T03:43:10.128Z",
+  "generated_at": "2025-09-22T04:01:11.706Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-19T03:43:10.128Z",
+    "generatedAt": "2025-09-22T04:01:11.706Z",
     "schema": "individual-1.0",
     "id": "6shrpxkhvetnqja8al8326shrpxki2q9",
     "subject": {
       "nombreCompleto": "DANNY FABIANI CHICAIZA CASTRO",
       "email": "dchicaiza@bancoguayaquil.com",
-      "assessed_on": "2025-09-19T03:43:10.128Z"
+      "assessed_on": "2025-09-22T04:01:11.706Z"
     }
   },
   "scores": {
@@ -171,28 +171,32 @@
         "target10": 8,
         "gap10": -0.9,
         "collectiveAverage10": 7.62,
-        "percentile": 86
+        "percentile": 86,
+        "level_label": "Avanzado"
       },
       "brechaDigital": {
         "current10": 9.7,
         "target10": 8,
         "gap10": -1.7,
         "collectiveAverage10": 7.8,
-        "percentile": 97
+        "percentile": 97,
+        "level_label": "Avanzado"
       },
       "usoInteligenciaArtificial": {
         "current10": 7.1,
         "target10": 8,
         "gap10": 0.9,
         "collectiveAverage10": 6.99,
-        "percentile": 60
+        "percentile": 60,
+        "level_label": "Avanzado"
       },
       "culturaOrganizacional": {
         "current10": 8,
         "target10": 8,
         "gap10": 0,
         "collectiveAverage10": 7.59,
-        "percentile": 63
+        "percentile": 63,
+        "level_label": "Avanzado"
       }
     }
   },

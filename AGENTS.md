@@ -53,6 +53,9 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
 - `npm run build-baremos`: convertir `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (incluye versión/fuente).
 - `npm run set-sector-reference`: generar/actualizar `src/scripts/sector_reference.json` con medias (global/por dimensión) y metadatos.
 
+### Flujo de commits sugeridos
+- Tras completar cada paso significativo (p. ej., nueva función, integración, actualización de docs), el agente sugerirá un mensaje de commit conciso y descriptivo para facilitar el control de cambios y la trazabilidad. El usuario puede editar o usar el mensaje tal cual.
+
 ## Flags y Variables
 - Flags de generación:
   - `--offline`: omite todas las llamadas a IA; usa datos cuantitativos y caché existente.
