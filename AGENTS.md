@@ -49,8 +49,8 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `npm run dev` (visualización del reporte en `/gemini` o `/openai` si existen JSONs)
   - `./commit-all.sh` para comitear cambios locales con tests (ver opciones en el script)
 
-### Próximos scripts (propuestos)
-- `npm run build-baremos`: convertir `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (incluye versión/fuente).
+### Scripts útiles
+- `npm run build-baremos`: convierte `analisis/Baremos Madurez Digital SEP25.xlsx` a `src/scripts/baremos.json` (incluye versión/fuente). Nota: hoy llena los cortes generales; la extracción segmentada por rol/educación depende del layout del XLSX y puede requerir ajustes.
 - `npm run set-sector-reference`: generar/actualizar `src/scripts/sector_reference.json` con medias (global/por dimensión) y metadatos.
 
 ### Flujo de commits sugeridos

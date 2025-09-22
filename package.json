@@ -12,6 +12,7 @@
     "generate-open-ended": "node src/scripts/generate-open-ended.mjs",
     "generate-respuestas-index": "node src/scripts/generate-respuestas-index.mjs",
     "generate-individual": "node src/scripts/generate-individual-reports.mjs",
+    "build-baremos": "node src/scripts/build-baremos.mjs",
     "update-progress": "node src/scripts/update-progress.mjs",
     "test": "node --test"
   },
