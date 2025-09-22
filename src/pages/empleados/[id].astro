@@ -2,6 +2,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import "../../styles/global.css";
+import { mapScoreToBaremadoDecile } from "../../scripts/services/baremos.js";
 
 export async function getStaticPaths() {
   const dir = path.resolve(process.cwd(), 'src/data/individual');
@@ -122,8 +123,11 @@ const dimLabels = {
       .lvl-mid { background:#fef3c7; color:#78350f; }
       .lvl-high { background:#dcfce7; color:#14532d; }
 
-      .bar { background:#f1f5f9; border-radius: 999px; height: 10px; overflow: hidden; }
-      .bar > i { display:block; height:100%; background: linear-gradient(90deg, #60a5fa, #22c55e); }
+      .bar { position: relative; background:#f1f5f9; border-radius: 999px; height: 10px; overflow: hidden; }
+      .bar > i { position: relative; display:block; height:100%; background: linear-gradient(90deg, #60a5fa, #22c55e); z-index:1; }
+      /* Marcas de deciles 10–90% */
+      .bar .tick { position:absolute; top:0; bottom:0; width:1px; background: rgba(100,116,139,.35); z-index:2; }
+      .bar .tick:first-child { border-left: none; }
       .row { display:flex; align-items:center; justify-content: space-between; gap:12px; }
       .row + .row { margin-top: 8px; }
       .row .name { min-width: 180px; font-size:.92rem; color:#0f172a; }
@@ -177,7 +181,13 @@ const dimLabels = {
                       <div class="kpi-title">{label}</div>
                       <div class="kpi-val">{s.current10 ?? tile.value}<span class={`lvl ${lvl.cls}`}>{lvl.text}</span></div>
                     </div>
-                    <div class="bar" aria-hidden="true" style="margin-bottom:8px"><i style={`width: ${Math.min(100, ((s.current10 ?? tile.value)/10)*100)}%`}></i></div>
+                    <div class="bar" aria-hidden="true" style="margin-bottom:8px">
+                      {([10,20,30,40,50,60,70,80,90]).map(p => (<b class="tick" style={`left:${p}%`}></b>))}
+                      {(() => {
+                        const dec = mapScoreToBaremadoDecile(dim, (s.current10 ?? tile.value));
+                        return (<i style={`width: ${Math.min(100, dec)}%`}></i>);
+                      })()}
+                    </div>
                     <p class="narrative">
                       Estás en {s.current10 ?? tile.value}/10 en {label}; tu resultado está {overSign}{over} puntos {over >= 0 ? 'por encima' : 'por debajo'} de la meta ({s.target10}/10) y {relSign}{rel} {rel >= 0 ? 'sobre' : 'bajo'} el promedio del grupo ({s.collectiveAverage10}/10), ubicándote en el percentil {s.percentile} (mejor que el {s.percentile}% del grupo).
                     </p>
@@ -198,8 +208,15 @@ const dimLabels = {
                     return (
                     <div class="row">
                       <div class="name">{dimLabels[k]}</div>
-                      <div class="bar" style="flex:1"><i style={`width:${Math.min(100,(v10/10)*100)}%`}></i></div>
-                      <div class="val">{v10}</div>
+                      <div class="bar" style="flex:1">
+                        {([10,20,30,40,50,60,70,80,90]).map(p => (<b class="tick" style={`left:${p}%`}></b>))}
+                        {(() => {
+                          const dec = mapScoreToBaremadoDecile(dim, v10);
+                          return (<i style={`width:${Math.min(100, dec)}%`}></i>);
+                        })()}
+                      </div>
+                      {/* Format to 00.0 */}
+                      <div class="val">{v10.toPrecision(3)}</div>
                     </div>
                   );})}
                 </div>

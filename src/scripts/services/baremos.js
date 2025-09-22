@@ -68,3 +68,21 @@ export function computeSectorTargets({ method = 'advanced_min' } = {}) {
   return { method, perDimension: perDim, global };
 }
 
+export function mapScoreToBaremadoDecile(dimensionKey, score10, { scope = 'general' } = {}) {
+  const b = loadBaremos();
+  const deciles = b?.deciles?.[scope]?.[dimensionKey];
+  const s = Number(score10);
+  if (Array.isArray(deciles) && Number.isFinite(s)) {
+    for (const r of deciles) {
+      if (typeof r.desde === 'number' && typeof r.hasta === 'number') {
+        if (s >= r.desde && s <= r.hasta) return r.puntaje; // 10..100
+      }
+    }
+  }
+  if (Number.isFinite(s)) {
+    const clamped = Math.max(0, Math.min(10, s));
+    const d = Math.ceil(clamped); // 1..10
+    return Math.min(100, Math.max(10, d * 10));
+  }
+  return 0;
+}

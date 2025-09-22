@@ -75,6 +75,58 @@
       }
     ]
   },
+  "deciles": {
+    "general": {
+      "madurezDigital": [
+        { "puntaje": 10, "nivel": "Inicial", "desde": 0, "hasta": 4.8 },
+        { "puntaje": 20, "nivel": "Inicial", "desde": 4.81, "hasta": 5.2 },
+        { "puntaje": 30, "nivel": "En desarrollo", "desde": 5.21, "hasta": 6.1 },
+        { "puntaje": 40, "nivel": "En desarrollo", "desde": 6.11, "hasta": 6.5 },
+        { "puntaje": 50, "nivel": "En desarrollo", "desde": 6.51, "hasta": 7.0 },
+        { "puntaje": 60, "nivel": "En desarrollo", "desde": 7.01, "hasta": 7.4 },
+        { "puntaje": 70, "nivel": "En desarrollo", "desde": 7.41, "hasta": 7.8 },
+        { "puntaje": 80, "nivel": "Avanzado", "desde": 7.81, "hasta": 8.2 },
+        { "puntaje": 90, "nivel": "Avanzado", "desde": 8.21, "hasta": 9.1 },
+        { "puntaje": 100, "nivel": "Avanzado", "desde": 9.11, "hasta": 10 }
+      ],
+      "brechaDigital": [
+        { "puntaje": 10, "nivel": "Inicial", "desde": 0, "hasta": 5.8 },
+        { "puntaje": 20, "nivel": "Inicial", "desde": 5.81, "hasta": 6.1 },
+        { "puntaje": 30, "nivel": "En desarrollo", "desde": 6.11, "hasta": 6.4 },
+        { "puntaje": 40, "nivel": "En desarrollo", "desde": 6.41, "hasta": 6.7 },
+        { "puntaje": 50, "nivel": "En desarrollo", "desde": 6.71, "hasta": 7.1 },
+        { "puntaje": 60, "nivel": "En desarrollo", "desde": 7.11, "hasta": 7.5 },
+        { "puntaje": 70, "nivel": "En desarrollo", "desde": 7.51, "hasta": 7.9 },
+        { "puntaje": 80, "nivel": "Avanzado", "desde": 7.91, "hasta": 8.5 },
+        { "puntaje": 90, "nivel": "Avanzado", "desde": 8.51, "hasta": 8.8 },
+        { "puntaje": 100, "nivel": "Avanzado", "desde": 8.81, "hasta": 10 }
+      ],
+      "culturaOrganizacional": [
+        { "puntaje": 10, "nivel": "Inicial", "desde": 0, "hasta": 4 },
+        { "puntaje": 20, "nivel": "Inicial", "desde": 4.01, "hasta": 4.75 },
+        { "puntaje": 30, "nivel": "En desarrollo", "desde": 4.76, "hasta": 5.5 },
+        { "puntaje": 40, "nivel": "En desarrollo", "desde": 5.51, "hasta": 6.2 },
+        { "puntaje": 50, "nivel": "En desarrollo", "desde": 6.21, "hasta": 6.4 },
+        { "puntaje": 60, "nivel": "En desarrollo", "desde": 6.41, "hasta": 7 },
+        { "puntaje": 70, "nivel": "En desarrollo", "desde": 7.01, "hasta": 7.7 },
+        { "puntaje": 80, "nivel": "Avanzado", "desde": 7.71, "hasta": 8.5 },
+        { "puntaje": 90, "nivel": "Avanzado", "desde": 8.51, "hasta": 9.25 },
+        { "puntaje": 100, "nivel": "Avanzado", "desde": 9.26, "hasta": 10 }
+      ],
+      "usoInteligenciaArtificial": [
+        { "puntaje": 10, "nivel": "Inicial", "desde": 0, "hasta": 4.5 },
+        { "puntaje": 20, "nivel": "Inicial", "desde": 4.51, "hasta": 5 },
+        { "puntaje": 30, "nivel": "En desarrollo", "desde": 5.01, "hasta": 6 },
+        { "puntaje": 40, "nivel": "En desarrollo", "desde": 6.01, "hasta": 6.5 },
+        { "puntaje": 50, "nivel": "En desarrollo", "desde": 6.51, "hasta": 7.0 },
+        { "puntaje": 60, "nivel": "En desarrollo", "desde": 7.01, "hasta": 7.5 },
+        { "puntaje": 70, "nivel": "En desarrollo", "desde": 7.51, "hasta": 8 },
+        { "puntaje": 80, "nivel": "Avanzado", "desde": 8.01, "hasta": 8.5 },
+        { "puntaje": 90, "nivel": "Avanzado", "desde": 8.51, "hasta": 8.8 },
+        { "puntaje": 100, "nivel": "Avanzado", "desde": 8.81, "hasta": 10 }
+      ]
+    }
+  },
   "roles": {
     "D1": {
       "comercial_operaciones_liderazgo_rrhh": [

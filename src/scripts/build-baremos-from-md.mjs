@@ -31,11 +31,12 @@ function parseMarkdown(md) {
         if (!row || row.startsWith('###') || row.startsWith('##')) break;
         const parts = row.split('|').map(s => s.trim());
         if (parts.length >= 4) {
+          const puntaje = parseInt(parts[0], 10);
           const nivel = parts[1];
           const desde = parseFloat(parts[2]);
           const hasta = parseFloat(parts[3]);
           if (!Number.isNaN(desde) && !Number.isNaN(hasta)) {
-            rows.push({ nivel, desde, hasta });
+            rows.push({ puntaje, nivel, desde, hasta });
           }
         }
         j++;
@@ -110,15 +111,23 @@ async function main() {
       roles: { D1: {}, D4: {} },
       educacion: { D4: {} },
       targetMethod: 'advanced_min',
+      deciles: { general: {}, roles: { D1: {}, D4: {} }, educacion: { D4: {} } }
     };
 
     for (const b of blocks) {
       const pathArr = mapTitleToPath(b.title);
       if (!pathArr) continue;
       const comp = compressLevels(b.rows);
+      // Set compressed (3 niveles)
       let node = out;
       for (let i = 0; i < pathArr.length - 1; i++) node = node[pathArr[i]];
       node[pathArr[pathArr.length - 1]] = comp;
+      // Set deciles completos
+      let nodeDec = out.deciles;
+      for (let i = 0; i < pathArr.length - 1; i++) nodeDec = nodeDec[pathArr[i]];
+      nodeDec[pathArr[pathArr.length - 1]] = b.rows
+        .filter(r => Number.isFinite(r.puntaje))
+        .map(r => ({ puntaje: r.puntaje, nivel: r.nivel, desde: r.desde, hasta: r.hasta }));
     }
 
     fs.writeFileSync(OUT_JSON, JSON.stringify(out, null, 2), 'utf8');
@@ -130,4 +139,3 @@ async function main() {
 }
 
 await main();
-
