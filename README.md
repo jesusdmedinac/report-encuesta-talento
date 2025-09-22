@@ -71,14 +71,16 @@ npm run generate-individual -- \
   --ids=emp_01,emp_07,emp_42 \
   --offline
 
-# Generar todos (sin límite)
+# Generar todos (eleva el límite explícitamente)
 npm run generate-individual -- \
   --csv=./data/respuestas-por-puntos.csv \
-  --empresa="Skilt"
+  --empresa="Skilt" \
+  --limit=99999
 ```
 
 Notas operativas:
 - Identificador: por defecto se usa un `employeeId` determinístico (hash) derivado de un campo estable (p.ej. email). La salida nunca expone ese campo.
+- Límite por defecto: el generador procesa 1 reporte si no se indica `--limit`. Ajusta `--limit` o usa `--ids`.
 - Futuro: caché cualitativo por empleado: `src/data/ind-openEnded.<employeeId>.json` cuando se use IA.
 - Páginas Astro: se expondrán rutas separadas, p.ej. `/empleados/<employeeId>` y un índice `/empleados/` con los disponibles.
 

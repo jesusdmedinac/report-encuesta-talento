@@ -187,8 +187,8 @@ const dimLabels = {
             </div>
           </section>
 
-          <section class="card">
-            <h2>Dimensiones (escala 1–10)</h2>
+      <section class="card">
+        <h2>Dimensiones (escala 1–10)</h2>
             <div class="grid-2">
               {['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'].map(dim => (
                 <div>
@@ -205,7 +205,41 @@ const dimLabels = {
                 </div>
               ))}
             </div>
-          </section>
+      </section>
+
+      {doc.action_plan && doc.action_plan.iniciativas && (
+        <section class="card">
+          <h2>Plan de acción priorizado</h2>
+          {doc.action_plan.resumenGeneral && (<p class="narrative">{doc.action_plan.resumenGeneral}</p>)}
+          <div class="grid-2">
+            {(doc.action_plan.iniciativas || []).map(a => (
+              <div class="kpi-card">
+                <div class="kpi-head"><div class="kpi-title">{a.titulo}</div><span class="pill">{a.prioridad}</span></div>
+                <p class="narrative">{a.descripcion}</p>
+                <div class="row" style="margin:6px 0"><div class="name">Área:</div><div class="val">{a.areaEnfoque}</div></div>
+                {Array.isArray(a.objetivosClave) && a.objetivosClave.length > 0 && (
+                  <div style="margin:8px 0">
+                    <div class="name" style="margin-bottom:4px">Objetivos clave</div>
+                    <ul style="margin:0; padding-left:18px; color:#334155;">
+                      {a.objetivosClave.map(o => (<li>{o}</li>))}
+                    </ul>
+                  </div>
+                )}
+                {Array.isArray(a.metricasExito) && a.metricasExito.length > 0 && (
+                  <div style="margin:8px 0">
+                    <div class="name" style="margin-bottom:4px">Métricas de éxito</div>
+                    <ul style="margin:0; padding-left:18px; color:#334155;">
+                      {a.metricasExito.map(m => (<li><strong>{m.metrica}:</strong> {m.valorObjetivo}</li>))}
+                    </ul>
+                  </div>
+                )}
+                <div class="row" style="margin-top:6px"><div class="name">Responsable:</div><div class="val">{a.responsableSugerido}</div></div>
+                <div class="row"><div class="name">Plazo:</div><div class="val">{a.plazoEstimado}</div></div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
           <section class="card">
             <h2>Respuestas abiertas</h2>

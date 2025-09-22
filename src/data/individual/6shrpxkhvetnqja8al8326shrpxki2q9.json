@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T07:45:41.757Z",
+  "generated_at": "2025-09-22T08:04:37.133Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T07:45:41.757Z",
+    "generatedAt": "2025-09-22T08:04:37.133Z",
     "schema": "individual-1.0",
     "id": "6shrpxkhvetnqja8al8326shrpxki2q9",
     "subject": {
       "nombreCompleto": "DANNY FABIANI CHICAIZA CASTRO",
       "email": "dchicaiza@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T07:45:41.757Z"
+      "assessed_on": "2025-09-22T08:04:37.133Z"
     }
   },
   "scores": {
@@ -212,6 +212,51 @@
     ],
     "D4_OPEN": [
       "LA MAYOR EXPECTATIVA ES QUE NOS AYUDE A SER MAS EFICIENTES EN NUESTRO ROL"
+    ]
+  },
+  "action_plan": {
+    "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
+    "iniciativas": [
+      {
+        "id": "IA-01",
+        "titulo": "Pilotos de IA con casos de alto valor",
+        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "areaEnfoque": "Innovación Aplicada",
+        "objetivosClave": [
+          "Selección de casos",
+          "Pilotos ejecutados",
+          "Lecciones y escalamiento"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Pilotos con ROI positivo",
+            "valorObjetivo": ">= 2"
+          }
+        ],
+        "responsableSugerido": "TI / Negocio",
+        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Alta"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "objetivosClave": [
+          "Plantillas de prompts",
+          "Checklist de verificación",
+          "Casos prácticos"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "% asistentes certificados",
+            "valorObjetivo": ">= 70%"
+          }
+        ],
+        "responsableSugerido": "L&D / Legal",
+        "plazoEstimado": "4-6 semanas",
+        "prioridad": "Media"
+      }
     ]
   }
 }

@@ -80,8 +80,33 @@
         "type": "array",
         "items": { "type": "string" }
       }
+    },
+    "action_plan": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "resumenGeneral": { "type": "string" },
+        "iniciativas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "id": { "type": "string" },
+              "titulo": { "type": "string" },
+              "descripcion": { "type": "string" },
+              "areaEnfoque": { "type": "string" },
+              "objetivosClave": { "type": "array", "items": { "type": "string" } },
+              "metricasExito": { "type": "array", "items": { "type": "object", "properties": { "metrica": { "type": "string" }, "valorObjetivo": { "type": "string" } }, "required": ["metrica", "valorObjetivo"] } },
+              "responsableSugerido": { "type": "string" },
+              "plazoEstimado": { "type": "string" },
+              "prioridad": { "type": "string" }
+            },
+            "required": ["titulo"]
+          }
+        }
+      }
     }
   },
   "required": ["schema_version", "generated_at", "provenance", "header", "scores", "scores10", "summary", "openEnded"]
 }
-

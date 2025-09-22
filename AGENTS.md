@@ -42,6 +42,7 @@ Este documento orienta a cualquier agente de IA (o colaborador) para trabajar en
   - `npm run generate-open-ended -- --csv=./data/respuestas-por-puntos.csv --reportId=<ID> --provider=<gemini|openai> --model=<modelo> [--force]`
 - Reportes individuales (independiente del global):
   - `npm run generate-individual -- --csv=./data/respuestas-por-puntos.csv --empresa=<Empresa> [--ids=a,b] [--limit=N] [--provider=gemini|openai] [--model=<modelo>] [--ai] [--offline]`
+    - Nota: por defecto `--limit=1` para evitar generar toda la base. Aumenta `--limit` o usa `--ids` para ampliar.
 - Índice para listado de respuestas:
   - `npm run generate-respuestas-index -- --csv=./data/respuestas-por-puntos.csv --out=public/respuestas-index.json`
 - Desarrollo y pruebas:

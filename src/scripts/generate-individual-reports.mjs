@@ -57,7 +57,8 @@ async function main() {
     const csvPath = getArg('--csv', path.join(process.cwd(), 'data', 'respuestas-por-puntos.csv'));
     const empresa = getArg('--empresa', 'Empresa');
     const outDir = getArg('--outDir', path.join(process.cwd(), 'src', 'data', 'individual'));
-    const limit = parseInt(getArg('--limit', ''), 10);
+    // Límite por defecto a 1 para evitar generar toda la base accidentalmente
+    const limit = parseInt(getArg('--limit', '1'), 10);
     const idsArg = getArg('--ids', '');
     const idsSet = idsArg ? new Set(idsArg.split(',').map(s => String(s).trim()).filter(Boolean)) : null;
 
@@ -66,6 +67,9 @@ async function main() {
     console.log(`Leyendo CSV: ${csvPath}`);
     const rows = parseCsvFile(csvPath);
     console.log(`Filas leídas: ${rows.length}`);
+    if (!isNaN(limit)) {
+      console.log(`Límite de generación activo: ${limit} (ajusta con --limit o usa --ids)`);
+    }
 
     const mappings = loadJson(MAPPINGS_PATH);
 
@@ -91,7 +95,7 @@ async function main() {
         }
       }
     }
-    const collectiveAvg10 = Object.fromEntries(dims.map(d => {
+  const collectiveAvg10 = Object.fromEntries(dims.map(d => {
       const arr = collectByDim[d];
       const v = arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : 0;
       return [d, +v.toFixed(2)];
@@ -163,6 +167,31 @@ async function main() {
       // Abiertas del individuo (limpias/anonimizadas)
       const openEnded = cleanOpenEndedFromRow(row);
 
+      // Plan de acción: seleccionar iniciativas para las mayores brechas
+      function buildActionPlan() {
+        const catalogPath = path.join(process.cwd(), 'src', 'scripts', 'action_catalog.json');
+        const catalog = loadJson(catalogPath) || {};
+        // Ranking por gap (descendente)
+        const ranked = dims
+          .map(d => ({ dim: d, gap: summary.dimensions[d]?.gap10 ?? 0 }))
+          .filter(x => Number.isFinite(x.gap) && x.gap > 0.05)
+          .sort((a, b) => b.gap - a.gap);
+        const topDims = ranked.slice(0, 2).map(x => x.dim);
+        const iniciativas = [];
+        for (const d of topDims) {
+          const pool = Array.isArray(catalog[d]) ? catalog[d] : [];
+          const take = pool.slice(0, 2); // 2 por dimensión
+          for (const it of take) {
+            iniciativas.push({ ...it });
+          }
+        }
+        const resumenDims = topDims.map(d => `${d}: gap ${summary.dimensions[d]?.gap10}`).join(' · ');
+        return {
+          resumenGeneral: `Plan priorizado según brechas principales — ${resumenDims}.`,
+          iniciativas,
+        };
+      }
+
       const nowIso = new Date().toISOString();
       const doc = {
         schema_version: '1.0',
@@ -179,6 +208,7 @@ async function main() {
         scores10, // 1–10 por subdimensión (para visualización/contrato)
         summary,  // por dimensión
         openEnded,
+        action_plan: buildActionPlan(),
       };
 
       // Validar contra el esquema individual antes de escribir
