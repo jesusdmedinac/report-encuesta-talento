@@ -476,7 +476,8 @@
           }
         ],
         "resumenGeneral": "Temas recurrentes: constante, aprendizaje, digital, aprender, viaje.",
-        "metricaSentimiento": "neutral"
+        "metricaSentimiento": "neutral",
+        "pregunta": "Si pudieras describir tu viaje de aprendizaje digital en una frase, ¿cuál sería?"
       },
       "D2_OPEN": {
         "temas": [
@@ -552,7 +553,8 @@
           }
         ],
         "resumenGeneral": "Temas recurrentes: capacitacion, actuales, herramienta, nuevas, capacitaciones.",
-        "metricaSentimiento": "neutral"
+        "metricaSentimiento": "neutral",
+        "pregunta": "Pensando en las herramientas que usas a diario, ¿qué te ayudaría a ser más eficiente: una nueva herramienta, más capacitación en las actuales, o algo diferente?"
       },
       "D3_OPEN": {
         "temas": [
@@ -628,7 +630,8 @@
           }
         ],
         "resumenGeneral": "Temas recurrentes: digital, capacitacion, capacitaciones, digitales, nuevas.",
-        "metricaSentimiento": "neutral"
+        "metricaSentimiento": "neutral",
+        "pregunta": "Desde tu perspectiva, ¿qué es lo más importante que la empresa podría hacer para acelerar nuestra cultura digital?"
       },
       "D4_OPEN": {
         "temas": [
@@ -704,7 +707,8 @@
           }
         ],
         "resumenGeneral": "Temas recurrentes: expectativa, mayor, preocupacion, trabajo, procesos.",
-        "metricaSentimiento": "neutral"
+        "metricaSentimiento": "neutral",
+        "pregunta": "Pensando en el futuro, ¿cuál es tu mayor expectativa o preocupación sobre el uso de la Inteligencia Artificial en tu rol?"
       }
     },
     "resumenGeneral": "Temas recurrentes: constante, aprendizaje, digital, aprender, viaje, capacitacion, actuales, herramienta.",

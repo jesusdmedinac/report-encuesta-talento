@@ -33,7 +33,7 @@ function sentimentColor(s) {
     {Object.entries(data.preguntas || {}).map(([code, detalle]: any) => (
       <div class="pregunta-card">
         <header class="card-header">
-          <h3>{code}</h3>
+          <h3 style="color: white">{code}</h3>
           {detalle.metricaSentimiento && (
             <span class="badge" style={`background-color: ${sentimentColor(detalle.metricaSentimiento)}`}>{detalle.metricaSentimiento}</span>
           )}
@@ -78,7 +78,7 @@ function sentimentColor(s) {
   @media (min-width: 900px) { .preguntas-grid { grid-template-columns: 1fr 1fr; } }
 
   .pregunta-card { background: #fff; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,.06); padding: 1rem 1.25rem; }
-  .card-header { display:flex; align-items:center; justify-content: space-between; gap: .75rem; border-bottom: 1px solid #e2e8f0; padding-bottom: .5rem; margin-bottom: .75rem; }
+  .card-header { display:flex; align-items:center; justify-content: space-between; gap: .75rem; border-bottom: 1px solid #e2e8f0; padding: .5rem; margin-bottom: .75rem; }
   .card-header h3 { margin: 0; font-size: 1.05rem; color: #0f172a; }
   .badge { color: #fff; padding: .2rem .6rem; border-radius: 999px; font-size: .75rem; text-transform: capitalize; }
   .intro { color: #475569; margin: .5rem 0 1rem; }
