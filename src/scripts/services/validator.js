@@ -11,6 +11,9 @@ const __dirname = path.dirname(__filename);
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);
 
+// Cache de validadores compilados por nombre de esquema para evitar recompilaciones
+const compiledCache = new Map();
+
 /**
  * Valida un objeto de datos contra un esquema JSON especificado.
  * @param {object} data El objeto de datos a validar.
@@ -25,8 +28,12 @@ export function validateData(data, schemaName) {
     throw new Error(`El archivo de esquema no se encontró en: ${schemaPath}`);
   }
 
-  const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
-  const validate = ajv.compile(schema);
+  let validate = compiledCache.get(schemaName);
+  if (!validate) {
+    const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
+    validate = ajv.compile(schema);
+    compiledCache.set(schemaName, validate);
+  }
   const valid = validate(data);
 
   if (!valid) {

@@ -58,6 +58,8 @@ async function main() {
     const empresa = getArg('--empresa', 'Empresa');
     const outDir = getArg('--outDir', path.join(process.cwd(), 'src', 'data', 'individual'));
     const limit = parseInt(getArg('--limit', ''), 10);
+    const idsArg = getArg('--ids', '');
+    const idsSet = idsArg ? new Set(idsArg.split(',').map(s => String(s).trim()).filter(Boolean)) : null;
 
     if (!fs.existsSync(csvPath)) throw new Error(`CSV no encontrado: ${csvPath}`);
 
@@ -120,6 +122,10 @@ async function main() {
 
       const nombreCompleto = [nombre, apellido].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
       const id = csvId || hashId(email, nombreCompleto || `row-${i}`);
+
+      if (idsSet && !idsSet.has(id)) {
+        continue;
+      }
 
       // Análisis cuantitativo individual (1–4 por subdimensión)
       const scores = performIndividualAnalysis(row, mappings);
@@ -188,6 +194,9 @@ async function main() {
       count++;
     }
 
+    if (idsSet) {
+      console.log(`Filtro --ids activo (${idsSet.size} id(s)).`);
+    }
     console.log(`✅ Reportes individuales generados en ${outDir}. Total: ${count}`);
   } catch (err) {
     console.error(`❌ Error: ${err.message}`);
