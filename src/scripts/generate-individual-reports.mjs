@@ -6,6 +6,7 @@ import { loadJson } from './utils.js';
 import { parseCsvFile, performIndividualAnalysis } from './services/csv-processor.js';
 import { OPEN_ENDED_QUESTIONS } from './config.js';
 import { assignLevel } from './services/baremos.js';
+import { validateData } from './services/validator.js';
 
 function getArg(key, def = null) {
   const v = process.argv.find(a => a.startsWith(key + '='));
@@ -173,6 +174,14 @@ async function main() {
         summary,  // por dimensión
         openEnded,
       };
+
+      // Validar contra el esquema individual antes de escribir
+      try {
+        validateData(doc, 'individual');
+      } catch (ve) {
+        console.error(`\n❌ Documento individual inválido (id=${id}): ${ve.message}`);
+        continue;
+      }
 
       const outPath = path.join(outDir, `${id}.json`);
       fs.writeFileSync(outPath, JSON.stringify(doc, null, 2), 'utf8');

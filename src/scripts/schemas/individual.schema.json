@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/individual.schema.json",
+  "title": "IndividualReport",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "source": { "type": "string" },
+        "generator": { "type": "string" }
+      },
+      "required": ["source", "generator"]
+    },
+    "header": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "empresa": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "schema": { "type": "string" },
+        "id": { "type": "string" },
+        "subject": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "nombreCompleto": { "type": "string" },
+            "email": { "type": "string" },
+            "assessed_on": { "type": "string", "format": "date-time" }
+          },
+          "required": ["nombreCompleto", "assessed_on"]
+        }
+      },
+      "required": ["empresa", "generatedAt", "schema", "id", "subject"]
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "number" }
+      }
+    },
+    "scores10": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "number" }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dimensions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "current10": { "type": "number" },
+              "target10": { "type": "number" },
+              "gap10": { "type": "number" },
+              "collectiveAverage10": { "type": "number" },
+              "percentile": { "type": "number" },
+              "level_label": { "type": ["string", "null"] }
+            },
+            "required": ["current10", "target10", "gap10", "collectiveAverage10", "percentile"]
+          }
+        }
+      },
+      "required": ["dimensions"]
+    },
+    "openEnded": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  },
+  "required": ["schema_version", "generated_at", "provenance", "header", "scores", "scores10", "summary", "openEnded"]
+}
+
