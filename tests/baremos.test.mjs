@@ -5,15 +5,15 @@ import { assignLevel, computeSectorTargets } from '../src/scripts/services/barem
 import baremos from '../src/scripts/baremos.json' assert { type: 'json' };
 
 test('assignLevel usa baremo general para niveles por dimensión', () => {
-  // D2 (brechaDigital)
-  assert.equal(assignLevel('brechaDigital', 5.8), 'Inicial');
-  assert.equal(assignLevel('brechaDigital', 6.2), 'En desarrollo');
-  assert.equal(assignLevel('brechaDigital', 7.0), 'Avanzado');
+  // D2 (brechaDigital) con rangos comprimidos desde MD
+  assert.equal(assignLevel('brechaDigital', 6.1), 'Inicial');
+  assert.equal(assignLevel('brechaDigital', 6.5), 'En desarrollo');
+  assert.equal(assignLevel('brechaDigital', 8.0), 'Avanzado');
 
-  // D1 (madurezDigital) bordes
-  assert.equal(assignLevel('madurezDigital', 4.8), 'Inicial');
-  assert.equal(assignLevel('madurezDigital', 4.81), 'En desarrollo');
-  assert.equal(assignLevel('madurezDigital', 6.51), 'Avanzado');
+  // D1 (madurezDigital) bordes desde MD
+  assert.equal(assignLevel('madurezDigital', 5.2), 'Inicial');
+  assert.equal(assignLevel('madurezDigital', 5.21), 'En desarrollo');
+  assert.equal(assignLevel('madurezDigital', 7.81), 'Avanzado');
 });
 
 test('computeSectorTargets advanced_min refleja inicio de Avanzado por dimensión', () => {
@@ -30,4 +30,3 @@ test('computeSectorTargets advanced_min refleja inicio de Avanzado por dimensió
   assert.ok(Number.isFinite(t.global));
   assert.ok(t.global > 0 && t.global <= 10);
 });
-

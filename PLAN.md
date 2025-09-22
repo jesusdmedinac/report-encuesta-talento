@@ -142,3 +142,9 @@ Validación y pruebas:
 - Tests de bordes “Desde/Hasta” (incluyendo los +0.01 del XLSX) para la asignación de niveles.
 - Snapshot de `baremos.json` y coherencia con ejemplos del documento.
 - Verificación de que el cambio no rompe el esquema actual ni la UI.
+
+Fuente de baremos preferida:
+- Mantener `analisis/baremos.md` como fuente de verdad editable (MD → JSON con `npm run build-baremos-md`).
+
+Metadatos en header:
+- Incluir `header.analysis` con `sampleSize`, `baremos.version`/`source` y `reference.source` para trazabilidad.

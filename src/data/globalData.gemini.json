@@ -1,7 +1,7 @@
 {
   "header": {
     "empresa": "Banco de Guayaquil",
-    "fechaDiagnostico": "domingo, 21 de septiembre de 2025",
+    "fechaDiagnostico": "lunes, 22 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
     "empleadosEvaluados": "2402",
@@ -9,8 +9,24 @@
     "model": "gemini-2.5-flash",
     "schemaVersion": "1.0.0",
     "promptVersion": "1.0.0",
-    "generatedAt": "2025-09-22T01:37:51.880Z",
-    "generationMode": "online"
+    "generatedAt": "2025-09-22T06:52:42.746Z",
+    "generationMode": "online",
+    "analysis": {
+      "sampleSize": 2402,
+      "baremos": {
+        "version": "2025-09-22",
+        "source": {
+          "file": "analisis/baremos.md",
+          "format": "markdown"
+        }
+      },
+      "reference": {
+        "source": {
+          "document": "analisis/ANALISIS.md",
+          "notes": "Media de la muestra de referencia del sector citada en el análisis (M Otros = 6.75)."
+        }
+      }
+    }
   },
   "introduccion": {
     "titulo": "Introducción",
@@ -19,7 +35,7 @@
   "brechaDigital": {
     "puntuacionEmpresa": 7.5,
     "puntuacionPromedioSector": 6.75,
-    "puntuacionMetaSector": 6.48,
+    "puntuacionMetaSector": 7.86,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "En Etapa de Transformación",
     "textoOportunidadParrafo": "Con una puntuación promedio de 6.29 sobre 10, la empresa se encuentra en una etapa de transformación, lejos de la meta del sector de 9.38. Esta brecha de 3.09 puntos representa una significativa oportunidad para un crecimiento estratégico y una inversión focalizada en la digitalización, especialmente en áreas donde la puntuación es crítica o inexistente.",

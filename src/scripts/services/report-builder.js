@@ -1,6 +1,6 @@
 import { TEMPLATE_PATH, SCHEMA_VERSION, PROMPT_VERSION, META_SECTOR_SCORE, COLORS, IA_CHARTS } from '../config.js';
 import { loadJson, calculateAverage, scaleToTen, formatDimensionName } from '../utils.js';
-import { loadSectorReference, computeSectorTargets } from './baremos.js';
+import { loadSectorReference, computeSectorTargets, loadBaremos } from './baremos.js';
 
 // --- Funciones "Constructoras" por Sección ---
 
@@ -203,6 +203,16 @@ export function generateReportJson(analysisResults, qualitativeResults, totalRes
     averages.overallAvg = calculateAverage(Object.values(averages));
 
     template.header = buildHeader(empresaNombre, reportId, totalRespondents, provider, model, generationMode);
+    // Metadatos de análisis (provenance)
+    try {
+        const b = loadBaremos();
+        const ref = loadSectorReference();
+        template.header.analysis = {
+            sampleSize: Number(totalRespondents) || 0,
+            baremos: b ? { version: b.version, source: b.source } : undefined,
+            reference: ref ? { source: ref.source } : undefined,
+        };
+    } catch {}
     template.resumenEjecutivo = buildResumenEjecutivo(qualitativeResults, averages);
     template.introduccion.contenido = qualitativeResults.introduccion;
     template.brechaDigital = buildBrechaDigital(empresaNombre, averages.overallAvg, qualitativeResults);

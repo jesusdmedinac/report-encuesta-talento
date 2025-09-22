@@ -25,5 +25,10 @@ test('brechaDigital incluye benchmark y meta derivada', () => {
   const t = computeSectorTargets({ method: 'advanced_min' });
   const expected = Number(t.global?.toFixed(2));
   assert.equal(out.brechaDigital.puntuacionMetaSector, expected);
-});
 
+  // Metadatos de análisis en header
+  assert.ok(out.header.analysis);
+  assert.equal(out.header.analysis.sampleSize, 10);
+  assert.ok(out.header.analysis.baremos);
+  assert.ok(out.header.analysis.reference);
+});

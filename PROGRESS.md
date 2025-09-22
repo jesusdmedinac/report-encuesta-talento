@@ -126,7 +126,8 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 13. **Metadatos del análisis y dataset canónico**
 
--   [ ] Añadir `header.analysis` opcional con `omega`, `sampleSize`, `baremos.version`, `reference.source`.
+-   [x] Añadir `header.analysis` con `sampleSize`, `baremos.version`/`source`, `reference.source`.
+-   [ ] (Opcional) Incluir `psychometrics.omega` cuando esté disponible.
 -   [ ] Resolver discrepancia de N (2399 vs 2402) y fijar dataset para `empleadosEvaluados` y comparativas.
 
 ---

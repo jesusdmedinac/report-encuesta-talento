@@ -266,10 +266,11 @@ Criterios de aceptación:
 Objetivo: exponer en el JSON global metadatos técnicos y coherencia con el análisis.
 
 Tareas:
-1) Añadir `header.analysis` (opcional) con `sampleSize`, `psychometrics.omega.{D1..D4}`, `baremos.version`, `reference.source`.
-2) Documentar la discrepancia `2399 vs 2402` y fijar dataset canónico para `empleadosEvaluados`.
-3) (Opcional) Añadir medias por dimensión de referencia si están disponibles.
+1) Añadir `header.analysis` con `sampleSize`, `baremos.version`/`source`, `reference.source`.
+2) (Opcional) `psychometrics.omega.{D1..D4}` cuando esté disponible.
+3) Documentar la discrepancia `2399 vs 2402` y fijar dataset canónico para `empleadosEvaluados`.
+4) (Opcional) Añadir medias por dimensión de referencia si están disponibles.
 
 Criterios de aceptación:
-- Metadatos presentes detrás de flag/prop opcional sin romper validación.
+- Metadatos presentes en `header.analysis` sin romper validación.
 - Documentación actualizada y coherente.
