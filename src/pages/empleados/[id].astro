@@ -187,21 +187,19 @@ const dimLabels = {
                 const overSign = over >= 0 ? '+' : '';
                 const rel = Number(((s.current10 ?? tile.value) - s.collectiveAverage10).toFixed(1));
                 const relSign = rel >= 0 ? '+' : '';
+                const dec = mapScoreToBaremadoDecile(dim, (s.current10 ?? tile.value));
                 return (
                   <div class="kpi-card">
                     <div class="kpi-head">
                       <div class="kpi-title">{label}</div>
-                      <div class="kpi-val">{s.current10 ?? tile.value}<span class={`lvl ${lvl.cls}`}>{lvl.text}</span></div>
+                      <div class="kpi-val">{dec}<span class={`lvl ${lvl.cls}`}>{lvl.text}</span></div>
                     </div>
                     <div class="bar" aria-hidden="true" style="margin-bottom:8px">
                       {([10,20,30,40,50,60,70,80,90]).map(p => (<b class="tick" style={`left:${p}%`}></b>))}
-                      {(() => {
-                        const dec = mapScoreToBaremadoDecile(dim, (s.current10 ?? tile.value));
-                        return (<i style={`width: ${Math.min(100, dec)}%`}></i>);
-                      })()}
+                      <i style={`width: ${Math.min(100, dec)}%`}></i>
                     </div>
                     <p class="narrative">
-                      Estás en {s.current10 ?? tile.value}/10 en {label}; tu resultado está {overSign}{over} puntos {over >= 0 ? 'por encima' : 'por debajo'} de la meta ({s.target10}/10) y {relSign}{rel} {rel >= 0 ? 'sobre' : 'bajo'} el promedio del grupo ({s.collectiveAverage10}/10), ubicándote en el percentil {s.percentile} (mejor que el {s.percentile}% del grupo).
+                      Estás en {s.current10 ?? tile.value}/10 en {label}; tu resultado está {relSign}{rel} {rel >= 0 ? 'sobre' : 'bajo'} el promedio del grupo ({s.collectiveAverage10}/10), ubicándote en el percentil {s.percentile} (mejor que el {s.percentile}% del grupo).
                     </p>
                   </div>
                 );
@@ -210,25 +208,22 @@ const dimLabels = {
           </section>
 
       <section class="card">
-        <h2>Dimensiones (escala 1–10)</h2>
+        <h2>Dimensiones barométricas</h2>
             <div class="grid-2">
               {['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'].map(dim => (
                 <div>
                   <strong style="display:block; margin-bottom:6px; text-transform: capitalize;">{dim.replace(/([A-Z])/g,' $1').replace(/^./, s => s.toUpperCase())}</strong>
                   {(Object.entries(doc.scores?.[dim] || {})).map(([k,v]) => {
                     const v10 = +(Number(v) * 2.5).toFixed(1);
+                    const dec = mapScoreToBaremadoDecile(dim, v10);
                     return (
                     <div class="row">
                       <div class="name">{dimLabels[k]}</div>
                       <div class="bar" style="flex:1">
                         {([10,20,30,40,50,60,70,80,90]).map(p => (<b class="tick" style={`left:${p}%`}></b>))}
-                        {(() => {
-                          const dec = mapScoreToBaremadoDecile(dim, v10);
-                          return (<i style={`width:${Math.min(100, dec)}%`}></i>);
-                        })()}
+                        <i style={`width:${Math.min(100, dec)}%`}></i>
                       </div>
-                      {/* Format to 00.0 */}
-                      <div class="val">{v10.toPrecision(3)}</div>
+                      <div class="val">{dec}</div>
                     </div>
                   );})}
                 </div>
