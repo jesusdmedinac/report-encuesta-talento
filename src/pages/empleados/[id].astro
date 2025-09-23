@@ -3,6 +3,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import "../../styles/global.css";
 import { mapScoreToBaremadoDecile, selectBaremosScope, getDecilesForScope } from "../../scripts/services/baremos.js";
+import { OPEN_ENDED_QUESTIONS } from "../../scripts/config.js";
 
 export async function getStaticPaths() {
   const dir = path.resolve(process.cwd(), 'src/data/individual');
@@ -343,14 +344,22 @@ const dimLabels = {
       )}
 
           <section class="card">
-            <h2>Respuestas abiertas</h2>
+            <h2>Preguntas abiertas</h2>
             <div class="quotes">
-              {Object.entries(doc.openEnded || {}).map(([code, arr]) => (
-                <div>
-                  <div class="muted" style="margin-bottom:6px;">{code}</div>
-                  {(arr || []).map(t => (<blockquote>“{t}”</blockquote>))}
-                </div>
-              ))}
+              {Object.entries(doc.openEnded || {}).map(([code, arr]) => {
+                const question = OPEN_ENDED_QUESTIONS?.[code] || code;
+                const answers = Array.isArray(arr) ? arr : [];
+                return (
+                  <div>
+                    <div class="name" style="margin-bottom:6px">{question}</div>
+                    {answers.length === 0 ? (
+                      <div class="muted">Sin respuestas</div>
+                    ) : (
+                      answers.map(answer => (<blockquote>“{answer}”</blockquote>))
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </section>
 

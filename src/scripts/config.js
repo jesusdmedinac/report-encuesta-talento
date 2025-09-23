@@ -18,10 +18,10 @@ export const PII_COLUMNS = [
 
 // Mapeo de códigos de preguntas abiertas a su texto completo.
 export const OPEN_ENDED_QUESTIONS = {
-    'D1_OPEN': 'D1_OPEN: Si pudieras describir tu viaje de aprendizaje digital en una frase, ¿cuál sería?',
-    'D2_OPEN': 'D2_OPEN: Pensando en las herramientas que usas a diario, ¿qué te ayudaría a ser más eficiente: una nueva herramienta, más capacitación en las actuales, o algo diferente?',
-    'D3_OPEN': 'D3_OPEN: Desde tu perspectiva, ¿qué es lo más importante que la empresa podría hacer para acelerar nuestra cultura digital?',
-    'D4_OPEN': 'D4_OPEN: Pensando en el futuro, ¿cuál es tu mayor expectativa o preocupación sobre el uso de la Inteligencia Artificial en tu rol?'
+    'D1_OPEN': 'Si pudieras describir tu viaje de aprendizaje digital en una frase, ¿cuál sería?',
+    'D2_OPEN': 'Pensando en las herramientas que usas a diario, ¿qué te ayudaría a ser más eficiente: una nueva herramienta, más capacitación en las actuales, o algo diferente?',
+    'D3_OPEN': 'Desde tu perspectiva, ¿qué es lo más importante que la empresa podría hacer para acelerar nuestra cultura digital?',
+    'D4_OPEN': 'Pensando en el futuro, ¿cuál es tu mayor expectativa o preocupación sobre el uso de la Inteligencia Artificial en tu rol?'
 };
 
 // Agrupa todas las columnas que no contienen datos cuantitativos.
