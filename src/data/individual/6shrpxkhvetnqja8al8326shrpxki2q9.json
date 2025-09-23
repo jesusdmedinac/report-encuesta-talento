@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:10.862Z",
+  "generated_at": "2025-09-23T17:27:15.682Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:10.862Z",
+    "generatedAt": "2025-09-23T17:27:15.682Z",
     "schema": "individual-1.0",
     "id": "6shrpxkhvetnqja8al8326shrpxki2q9",
     "subject": {
       "nombreCompleto": "DANNY FABIANI CHICAIZA CASTRO",
       "email": "dchicaiza@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:10.862Z",
+      "assessed_on": "2025-09-23T17:27:15.682Z",
       "demographics": {
         "rol": "EJECUTIVO FINANCIERO",
         "area": "COMERCIAL",
@@ -218,7 +218,9 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "GERENTE",
+      "aspiracion_slug": "gerente"
     },
     "iniciativas": [
       {
@@ -238,6 +240,10 @@
           "pilotos",
           "productividad",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -272,6 +278,10 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -295,6 +305,10 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
@@ -316,6 +330,10 @@
         "tags": [
           "capacitacion",
           "analitica"
+        ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

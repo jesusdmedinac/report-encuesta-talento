@@ -100,6 +100,7 @@ export const ACTION_PLAN_WEIGHTS = {
     minGap: 0.05,
     roleBonus: 0.4,
     signalsBonus: 0.2,
+    aspirationBonus: 0.6,
     subsBonus: 0.3,
     impactHigh: 0.2,
     impactMedium: 0.1,

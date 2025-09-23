@@ -42,12 +42,32 @@ function roleGroupFromDemographics(demo = {}) {
   return rol.split(/\s+/)[0];
 }
 
-export function selectIndividualActionPlan(doc, catalog, { maxIniciativas = 4 } = {}) {
+function normalizeAspiration(input = '') {
+  const s = normalizeText(input);
+  if (!s) return '';
+  // Mapeo básico de aspiraciones → slugs
+  const map = [
+    { re: /(product\s*manager|pm|gesti(o|ó)n\s*de\s*producto)/, slug: 'gestion_producto' },
+    { re: /(lider|direct|manager|jefe)/, slug: 'liderazgo' },
+    { re: /(mando|supervisor)/, slug: 'mandos' },
+    { re: /(data|datos|analista\s*de\s*datos|ciencia\s*de\s*datos)/, slug: 'analitica_datos' },
+    { re: /(marketing|growth|producto\s*y\s*marketing)/, slug: 'marketing_digital' },
+    { re: /(tecnic|it|desarroll|devops|infra)/, slug: 'tecnico' },
+    { re: /(comercial|ventas|cliente)/, slug: 'comercial' },
+    { re: /(operaciones|finanzas|admin|procesos)/, slug: 'operaciones' },
+    { re: /(rrhh|talento|recursos\s*humanos)/, slug: 'rrhh' }
+  ];
+  for (const m of map) if (m.re.test(s)) return m.slug;
+  return s.replace(/\s+/g, '_');
+}
+
+export function selectIndividualActionPlan(doc, catalog, { maxIniciativas = 4, aspiracionProfesional = '' } = {}) {
   const dims = ['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'];
   const summary = doc?.summary?.dimensions || {};
   const demo = doc?.header?.subject?.demographics || {};
   const roleGroup = roleGroupFromDemographics(demo);
   const signals = extractSignalsFromOpenEnded(doc?.openEnded || {});
+  const aspirationSlug = normalizeAspiration(aspiracionProfesional);
   const scores10 = doc?.scores10 || {};
 
   function worstSubdimensionsFor(dim, topN = 2) {
@@ -75,6 +95,8 @@ export function selectIndividualActionPlan(doc, catalog, { maxIniciativas = 4 } 
     if (roleGroup && roles.some(r => roleGroup.includes(r))) s += ACTION_PLAN_WEIGHTS.roleBonus;
     const tags = Array.isArray(item.tags) ? item.tags.map(normalizeText) : [];
     if (signals.length && tags.some(t => signals.some(sig => t.includes(sig)))) s += ACTION_PLAN_WEIGHTS.signalsBonus;
+    const rutas = Array.isArray(item.rutaDeCarrera) ? item.rutaDeCarrera.map(normalizeText) : [];
+    if (aspirationSlug && rutas.some(r => r.includes(aspirationSlug))) s += (ACTION_PLAN_WEIGHTS.aspirationBonus || 0.6);
     // Afinar por subdimensiones: bonus si el ítem apunta a subdimensiones con peor score
     const worst = worstSubdimensionsFor(dim, 2);
     const targetSubs = Array.isArray(item.subdimensiones) ? item.subdimensiones.map(normalizeText) : [];
@@ -139,6 +161,26 @@ export function selectIndividualActionPlan(doc, catalog, { maxIniciativas = 4 } 
     }
   }
 
+  // Incluir matches por aspiración profesional de cualquier dimensión si quedan cupos
+  if (aspirationSlug && iniciativas.length < maxIniciativas) {
+    const allDims = Object.keys(catalog || {});
+    const pool = [];
+    for (const d of allDims) {
+      const arr = Array.isArray(catalog[d]) ? catalog[d] : [];
+      for (const it of arr) {
+        const rutas = Array.isArray(it.rutaDeCarrera) ? it.rutaDeCarrera.map(normalizeText) : [];
+        if (rutas.some(r => r.includes(aspirationSlug))) {
+          pool.push({ d, it, s: scoreItem(d, it) });
+        }
+      }
+    }
+    pool.sort((a,b)=>b.s-a.s);
+    for (const cand of pool.map(p => p.it)) {
+      if (iniciativas.length >= maxIniciativas) break;
+      if (!iniciativas.some(i => i.id === cand.id)) iniciativas.push({ ...cand });
+    }
+  }
+
   // Limitar total
   // Enriquecer KRs/KPIs con subdimensiones y targets cuando apliquen
   function enrich(items) {
@@ -181,7 +223,9 @@ export function selectIndividualActionPlan(doc, catalog, { maxIniciativas = 4 } 
     criterios: {
       top_gaps: ranked,
       role: roleGroup || null,
-      signals_from_open_ended: signals
+      signals_from_open_ended: signals,
+      aspiracionProfesional: aspiracionProfesional || null,
+      aspiracion_slug: aspirationSlug || null
     },
     iniciativas: limited
   };

@@ -16,6 +16,9 @@
         "procesos",
         "priorizacion"
       ],
+      "rutaDeCarrera": [
+        "liderazgo"
+      ],
       "type": "OKR",
       "subdimensiones": [
         "resolucionDeProblemas",
@@ -50,6 +53,9 @@
         "gobierno",
         "calidad"
       ],
+      "rutaDeCarrera": [
+        "analitica_datos"
+      ],
       "type": "KPI",
       "subdimensiones": [
         "alfabetizacionDeDatos"
@@ -70,6 +76,10 @@
         "capacitacion",
         "analitica"
       ],
+      "rutaDeCarrera": [
+        "mandos",
+        "tecnico"
+      ],
       "type": "KPI",
       "subdimensiones": [
         "resolucionDeProblemas"
@@ -89,6 +99,10 @@
       "tags": [
         "procesos",
         "experimentacion"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "operaciones"
       ],
       "type": "OKR",
       "subdimensiones": [
@@ -114,6 +128,10 @@
         "colaboracion",
         "seguridad"
       ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos"
+      ],
       "type": "OKR",
       "subdimensiones": [
         "colaboracionDigital",
@@ -136,6 +154,10 @@
         "colaboracion",
         "procesos"
       ],
+      "rutaDeCarrera": [
+        "operaciones",
+        "comercial"
+      ],
       "type": "KPI",
       "subdimensiones": [
         "colaboracionDigital"
@@ -154,6 +176,10 @@
       "tags": [
         "seguridad",
         "practicas"
+      ],
+      "rutaDeCarrera": [
+        "tecnico",
+        "operaciones"
       ],
       "type": "KPI",
       "subdimensiones": [
@@ -174,6 +200,11 @@
       "tags": [
         "colaboracion",
         "aprendizaje"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos",
+        "tecnico"
       ],
       "type": "OKR",
       "subdimensiones": [
@@ -200,6 +231,10 @@
         "productividad",
         "cliente"
       ],
+      "rutaDeCarrera": [
+        "gestion_producto",
+        "liderazgo"
+      ],
       "type": "OKR",
       "subdimensiones": [
         "nivelDeAdopcion",
@@ -223,6 +258,10 @@
         "etica",
         "prompt"
       ],
+      "rutaDeCarrera": [
+        "gestion_producto",
+        "comercial"
+      ],
       "type": "KPI",
       "subdimensiones": [
         "eticaYVerificacion",
@@ -244,6 +283,10 @@
         "repositorio",
         "prompt"
       ],
+      "rutaDeCarrera": [
+        "gestion_producto",
+        "comercial"
+      ],
       "type": "KPI",
       "subdimensiones": [
         "habilidadDeUso"
@@ -263,6 +306,9 @@
       "tags": [
         "adopcion",
         "gobierno"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo"
       ],
       "type": "OKR",
       "subdimensiones": [
@@ -298,6 +344,10 @@
         "experimentacion",
         "reconocimiento"
       ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos"
+      ],
       "type": "KPI",
       "subdimensiones": [
         "experimentacion",
@@ -317,6 +367,9 @@
       "tags": [
         "liderazgo",
         "objetivos"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo"
       ],
       "type": "OKR",
       "subdimensiones": [
@@ -345,6 +398,10 @@
         "comunidad",
         "aprendizaje"
       ],
+      "rutaDeCarrera": [
+        "mandos",
+        "tecnico"
+      ],
       "type": "KPI",
       "subdimensiones": [
         "ambienteDeAprendizaje"
@@ -364,6 +421,10 @@
       "tags": [
         "reconocimiento",
         "resultados"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos"
       ],
       "type": "OKR",
       "subdimensiones": [

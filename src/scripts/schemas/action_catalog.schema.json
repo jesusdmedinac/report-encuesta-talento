@@ -13,6 +13,7 @@
         "titulo": { "type": "string" },
         "descripcion": { "type": "string" },
         "areaEnfoque": { "type": "string" },
+        "rutaDeCarrera": { "type": "array", "items": { "type": "string" } },
         "objetivosClave": { "type": "array", "items": { "type": "string" } },
         "metricasExito": {
           "type": "array",

@@ -62,6 +62,7 @@ async function main() {
     const useAI = !!getArg('--ai', null); // re-redacción opcional
     const provider = getArg('--provider', process.env.PROVIDER || '');
     const model = getArg('--model', process.env.MODEL || '');
+    const defaultAsp = getArg('--aspiracion', '');
     // Límite por defecto a 1 para evitar generar toda la base accidentalmente
     const limit = parseInt(getArg('--limit', '1'), 10);
     const idsArg = getArg('--ids', '');
@@ -87,6 +88,7 @@ async function main() {
     const DEMO_ROL = 'DEMO_PROFESSIONAL: Menciona el rol que cumples en tu empresa:';
     const DEMO_GENERO = 'DEMO_PROFESSIONAL: Género:';
     const DEMO_EDAD = 'DEMO_PROFESSIONAL: Rango de Edad:';
+    const DEMO_ASP = 'DEMO_PROFESSIONAL: ¿Hacia qué posición, área o tipo de rol aspiras llegar en tu desarrollo profesional?';
 
     ensureDir(outDir);
 
@@ -188,6 +190,7 @@ async function main() {
       if (row[DEMO_EDU]) demographics.nivelEducativo = String(row[DEMO_EDU]).trim();
       if (row[DEMO_GENERO]) demographics.genero = String(row[DEMO_GENERO]).trim();
       if (row[DEMO_EDAD]) demographics.rangoEdad = String(row[DEMO_EDAD]).trim();
+      const aspiracionProfesional = String(row[DEMO_ASP] || defaultAsp || '').trim();
 
       let doc = {
         schema_version: '1.0',
@@ -204,7 +207,7 @@ async function main() {
         scores10, // 1–10 por subdimensión (para visualización/contrato)
         summary,  // por dimensión
         openEnded,
-        action_plan: withActions ? selectIndividualActionPlan({ header: { subject: { demographics } }, summary, openEnded, scores10 }, actionCatalog, { maxIniciativas: 4 }) : undefined,
+        action_plan: withActions ? selectIndividualActionPlan({ header: { subject: { demographics } }, summary, openEnded, scores10 }, actionCatalog, { maxIniciativas: 4, aspiracionProfesional }) : undefined,
      };
 
       // Re-redacción opcional con IA (sin cambiar estructura)

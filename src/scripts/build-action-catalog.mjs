@@ -16,7 +16,7 @@ function norm(s) {
 function parseTables(md) {
   // Estructura esperada (por sección):
   // ### <dimension>
-  // | id | titulo | descripcion | areaEnfoque | prioridad | plazo | rolesPreferidos | tags | type | subdimensiones |
+  // | id | titulo | descripcion | areaEnfoque | prioridad | plazo | rolesPreferidos | tags | rutaDeCarrera | type | subdimensiones |
   // | --- | --- | --- | --- | --- | --- | --- | --- |
   // | IA-01 | ... | ... | ... | Alta | 6-10 semanas | liderazgo, mandos | ia,pilotos |
   const lines = md.split(/\r?\n/);
@@ -49,6 +49,7 @@ function parseTables(md) {
       const colPlazo = idx('plazo');
       const colRoles = idx('rolespreferidos');
       const colTags = idx('tags');
+      const colRutaCarrera = idx('rutadecarrera');
       const colType = idx('type');
       const colSubs = idx('subdimensiones');
       const colObj = idx('objective');
@@ -71,6 +72,7 @@ function parseTables(md) {
           const plazo = val(colPlazo);
           const rolesPref = val(colRoles);
           const tags = val(colTags);
+          const rutaCarrera = val(colRutaCarrera);
           const type = val(colType);
           const subs = val(colSubs);
           const objective = val(colObj);
@@ -92,6 +94,7 @@ function parseTables(md) {
             plazoEstimado: plazo,
             rolesPreferidos: rolesPref ? rolesPref.split(',').map(s => s.trim()).filter(Boolean) : [],
             tags: tags ? tags.split(',').map(s => s.trim()).filter(Boolean) : [],
+            ...(rutaCarrera ? { rutaDeCarrera: rutaCarrera.split(',').map(s => s.trim()).filter(Boolean) } : {}),
             ...(type ? { type: type.trim().toUpperCase() } : {}),
             ...(subs ? { subdimensiones: subs.split(',').map(s => s.trim()).filter(Boolean) } : {}),
             ...(objective ? { objective } : {}),
