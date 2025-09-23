@@ -30,6 +30,21 @@ export function loadSectorReference() {
   return _cache.reference;
 }
 
+function getNodeByPath(obj, pathStr) {
+  if (!obj) return null;
+  if (!pathStr || pathStr === 'general') return obj?.general ?? null;
+  const parts = String(pathStr).split('.');
+  let node = obj;
+  for (const p of parts) {
+    if (node && Object.prototype.hasOwnProperty.call(node, p)) {
+      node = node[p];
+    } else {
+      return null;
+    }
+  }
+  return node;
+}
+
 export function assignLevel(dimensionKey, score10, opts = {}) {
   const b = loadBaremos();
   if (!b || !b.general) return null;
@@ -70,7 +85,8 @@ export function computeSectorTargets({ method = 'advanced_min' } = {}) {
 
 export function mapScoreToBaremadoDecile(dimensionKey, score10, { scope = 'general' } = {}) {
   const b = loadBaremos();
-  const deciles = b?.deciles?.[scope]?.[dimensionKey];
+  const scopeNode = getNodeByPath(b?.deciles, scope) || b?.deciles?.general;
+  const deciles = scopeNode?.[dimensionKey];
   const s = Number(score10);
   if (Array.isArray(deciles) && Number.isFinite(s)) {
     for (const r of deciles) {
@@ -85,4 +101,56 @@ export function mapScoreToBaremadoDecile(dimensionKey, score10, { scope = 'gener
     return Math.min(100, Math.max(10, d * 10));
   }
   return 0;
+}
+
+export function getDecilesForScope(dimensionKey, { scope = 'general' } = {}) {
+  const b = loadBaremos();
+  const scopeNode = getNodeByPath(b?.deciles, scope) || b?.deciles?.general;
+  const deciles = scopeNode?.[dimensionKey];
+  return Array.isArray(deciles) ? deciles : (b?.deciles?.general?.[dimensionKey] || []);
+}
+
+function normalizeText(s) {
+  return String(s || '')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
+}
+
+// Heurística inicial: derivar scope desde demographics para D1–D4
+export function selectBaremosScope({ subject } = {}, dimensionKey = 'madurezDigital') {
+  try {
+    const demo = subject?.demographics || {};
+    const rol = normalizeText(demo.rol || demo.role || '');
+    const edu = normalizeText(demo.nivelEducativo || demo.educacion || '');
+
+    if (dimensionKey === 'madurezDigital') {
+      // D1 roles
+      if (rol) {
+        if (/(tecnico|producto|mandos)/.test(rol)) return 'roles.D1.tecnico_producto_mandos_medios';
+        if (/(comercial|cliente|operaciones|finanzas|lider|rrhh|recursos humanos)/.test(rol)) return 'roles.D1.comercial_operaciones_liderazgo_rrhh';
+        return 'roles.D1.otro';
+      }
+      return 'general';
+    }
+
+    if (dimensionKey === 'usoInteligenciaArtificial') {
+      // Preferir rol D4; si no, usar educación D4
+      if (rol) {
+        if (/(tecnico|producto|soporte|mandos|lider)/.test(rol)) return 'roles.D4.tecnico_soporte_mandos_liderazgo';
+        if (/(comercial|cliente|operaciones|finanzas|otro)/.test(rol)) return 'roles.D4.comercial_operaciones_otros';
+      }
+      if (edu) {
+        if (/secundaria/.test(edu)) return 'educacion.D4.secundaria';
+        if (/(tecnico|tecnologico)/.test(edu)) return 'educacion.D4.tecnico_tecnologico';
+        if (/universitaria/.test(edu)) return 'educacion.D4.universitaria';
+        if (/posgrado/.test(edu)) return 'educacion.D4.posgrado';
+      }
+      return 'general';
+    }
+
+    // D2 y D3: por ahora no hay cortes segmentados → general
+    return 'general';
+  } catch {
+    return 'general';
+  }
 }

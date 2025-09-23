@@ -2,7 +2,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import "../../styles/global.css";
-import { mapScoreToBaremadoDecile } from "../../scripts/services/baremos.js";
+import { mapScoreToBaremadoDecile, selectBaremosScope, getDecilesForScope } from "../../scripts/services/baremos.js";
 
 export async function getStaticPaths() {
   const dir = path.resolve(process.cwd(), 'src/data/individual');
@@ -149,6 +149,12 @@ const dimLabels = {
       @media (max-width: 900px) { .quotes { grid-template-columns: 1fr; } }
       blockquote { font-style: italic; color:#334155; border-left:4px solid #e5e7eb; margin: 0; padding: 8px 12px; background:#f8fafc; border-radius: 8px; }
       .narrative { color:#334155; margin: 6px 0; }
+      .chips { display:flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+      .chip { background:#f1f5f9; color:#0f172a; border:1px solid #e2e8f0; padding: 2px 8px; border-radius: 999px; font-size: .75rem; }
+      .deciles-table { width:100%; border-collapse: collapse; font-size:.85rem; }
+      .deciles-table th, .deciles-table td { border:1px solid #e5e7eb; padding:6px 8px; text-align:left; }
+      .deciles-table th { background:#f8fafc; }
+      .row-hl { background:#f0f9ff; }
 
       @media print {
         .topbar .back, .topbar .btn { display:none; }
@@ -172,8 +178,20 @@ const dimLabels = {
               <h1>{doc.header?.subject?.nombreCompleto}</h1>
               {doc.header?.subject?.email && (<div class="muted">{doc.header.subject.email}</div>)}
               <div class="muted">{doc.header?.empresa} · <span class="pill">{new Date(doc.header?.generatedAt).toLocaleString('es-ES')}</span></div>
+              {(() => {
+                const demo = doc?.header?.subject?.demographics || {};
+                const labels = { rol: 'Rol', role: 'Rol', area: 'Área', nivelEducativo: 'Nivel educativo', educacion: 'Educación', antiguedad: 'Antigüedad', region: 'Región', sede: 'Sede', genero: 'Género' };
+                const keys = Object.keys(labels).filter(k => demo[k]);
+                return keys.length ? (
+                  <div class="chips">
+                    {keys.map(k => (<span class="chip"><strong>{labels[k]}:</strong>&nbsp;{demo[k]}</span>))}
+                  </div>
+                ) : null;
+              })()}
             </div>
           </header>
+
+          <blockquote>El presente informe muestra la descripción de la muestra, la confiabilidad de la escala y sus dimensiones mediante el coeficiente omega, los resultados generales y segmentados por variables sociodemográficas como género, edad, rol y nivel educativo, en función de las cuales se proponen baremos específicos por rol y nivel educativo.</blockquote>
 
           <section class="card">
             <h2>Resumen de KPIs (escala 1–10)</h2>
@@ -187,7 +205,8 @@ const dimLabels = {
                 const overSign = over >= 0 ? '+' : '';
                 const rel = Number(((s.current10 ?? tile.value) - s.collectiveAverage10).toFixed(1));
                 const relSign = rel >= 0 ? '+' : '';
-                const dec = mapScoreToBaremadoDecile(dim, (s.current10 ?? tile.value));
+                const scope = selectBaremosScope({ subject: doc?.header?.subject }, dim);
+                const dec = mapScoreToBaremadoDecile(dim, (s.current10 ?? tile.value), { scope });
                 return (
                   <div class="kpi-card">
                     <div class="kpi-head">
@@ -215,7 +234,8 @@ const dimLabels = {
                   <strong style="display:block; margin-bottom:6px; text-transform: capitalize;">{dim.replace(/([A-Z])/g,' $1').replace(/^./, s => s.toUpperCase())}</strong>
                   {(Object.entries(doc.scores?.[dim] || {})).map(([k,v]) => {
                     const v10 = +(Number(v) * 2.5).toFixed(1);
-                    const dec = mapScoreToBaremadoDecile(dim, v10);
+                    const scope = selectBaremosScope({ subject: doc?.header?.subject }, dim);
+                    const dec = mapScoreToBaremadoDecile(dim, v10, { scope });
                     return (
                     <div class="row">
                       <div class="name">{dimLabels[k]}</div>
@@ -229,6 +249,38 @@ const dimLabels = {
                 </div>
               ))}
             </div>
+      </section>
+
+      <section class="card">
+        <h2>Baremos del segmento</h2>
+        <div class="grid-2">
+          {dimsOrder.map(dim => {
+            const tile = tiles.find(t => t.key === dim) || { value: 0 };
+            const s = doc?.summary?.dimensions?.[dim] || { current10: tile.value };
+            const scope = selectBaremosScope({ subject: doc?.header?.subject }, dim);
+            const rows = getDecilesForScope(dim, { scope });
+            const sVal = Number(s.current10 ?? tile.value);
+            return (
+              <div>
+                <strong style="display:block; margin-bottom:6px;">{dimLabels[dim] || dim} · <span class="pill">{scope || 'general'}</span></strong>
+                <table class="deciles-table">
+                  <thead>
+                    <tr><th>Decil</th><th>Rango</th><th>Nivel</th></tr>
+                  </thead>
+                  <tbody>
+                    {rows.map(r => (
+                      <tr class={(typeof r.desde === 'number' && typeof r.hasta === 'number' && sVal >= r.desde && sVal <= r.hasta) ? 'row-hl' : ''}>
+                        <td>{r.puntaje}</td>
+                        <td>{r.desde}–{r.hasta}</td>
+                        <td>{r.nivel}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       {doc.action_plan && doc.action_plan.iniciativas && (
