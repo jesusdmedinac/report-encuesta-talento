@@ -297,6 +297,9 @@ const dimLabels = {
               {Array.isArray(doc.action_plan.criterios.signals_from_open_ended) && doc.action_plan.criterios.signals_from_open_ended.length > 0 && (
                 <span class="chip"><strong>Señales:</strong>&nbsp;{doc.action_plan.criterios.signals_from_open_ended.join(', ')}</span>
               )}
+              {doc.action_plan.criterios.aspiracionProfesional && (
+                <span class="chip"><strong>Aspiración:</strong>&nbsp;{doc.action_plan.criterios.aspiracionProfesional}</span>
+              )}
             </div>
           )}
           <div class="grid-2">

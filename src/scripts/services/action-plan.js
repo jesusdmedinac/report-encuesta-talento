@@ -89,6 +89,24 @@ export function selectIndividualActionPlan(doc, catalog, { maxIniciativas = 4, a
   const secondaryDim = ranked[1]?.dim;
   const iniciativas = [];
 
+  function buildCriteriaDescription() {
+    const parts = [];
+    const dimWeights = ACTION_DIM_WEIGHTS || {};
+    const w = ACTION_PLAN_WEIGHTS || {};
+    const gapsTxt = ranked.map(g => `${g.dim} (gap=${(g.gap ?? 0).toFixed(2)})`).join(', ');
+    parts.push(`Selección multifactorial con tope de ${maxIniciativas} iniciativas.`);
+    if (ranked.length) parts.push(`Prioridad por brecha (gap10) y peso por dimensión: ${gapsTxt}. Pesos: ${JSON.stringify(dimWeights)}.`);
+    if (roleGroup) parts.push(`Bono por afinidad de rol ('rolesPreferidos' incluye '${roleGroup}'): +${w.roleBonus ?? 0}.`);
+    if (signals.length) parts.push(`Bono por señales de abiertas (coincidencia 'tags' vs ${signals.join(', ')}): +${w.signalsBonus ?? 0}.`);
+    if (aspirationSlug) parts.push(`Bono por aspiración profesional ('rutaDeCarrera' incluye '${aspirationSlug}'): +${w.aspirationBonus ?? 0.6}.`);
+    parts.push(`Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +${w.subsBonus ?? 0}.`);
+    parts.push(`Heurística de impacto/esfuerzo: impacto alto (+${w.impactHigh ?? 0}), medio (+${w.impactMedium ?? 0}); esfuerzo alto (${w.effortHighPenalty ?? 0}), esfuerzo bajo (+${w.effortLowBonus ?? 0}).`);
+    parts.push(`Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+${w.kpiMinIncrement ?? 0.5}, target10).`);
+    if (aspirationSlug) parts.push(`Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='${aspirationSlug}').`);
+    parts.push(`Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.`);
+    return parts.join(' ');
+  }
+
   function scoreItem(dim, item) {
     let s = Number(summary[dim]?.gap10 || 0);
     const roles = Array.isArray(item.rolesPreferidos) ? item.rolesPreferidos.map(normalizeText) : [];
@@ -220,6 +238,7 @@ export function selectIndividualActionPlan(doc, catalog, { maxIniciativas = 4, a
   const resumenDims = [primaryDim, secondaryDim].filter(Boolean).map(d => `${d}: gap ${summary[d]?.gap10}`).join(' · ');
   const plan = {
     resumenGeneral: `Plan priorizado según brechas principales — ${resumenDims}.`,
+    criteriosDescripcion: buildCriteriaDescription(),
     criterios: {
       top_gaps: ranked,
       role: roleGroup || null,
