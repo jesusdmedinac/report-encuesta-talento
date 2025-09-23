@@ -274,3 +274,53 @@ Tareas:
 Criterios de aceptación:
 - Metadatos presentes en `header.analysis` sin romper validación.
 - Documentación actualizada y coherente.
+
+---
+
+## Fase 17: Baremos segmentados en la página individual + Header demográfico
+
+Objetivo: mostrar en `src/pages/empleados/[id].astro` una sección que refleje los baremos/deciles correspondientes al empleado según su rol y datos demográficos, y exponer todos los datos demográficos disponibles en el header del reporte individual, manteniendo privacidad.
+
+Alcance y supuestos:
+- Segmentos iniciales soportados por `baremos.json`: roles (D1, D4) y educación (D4). Se evaluarán otros (edad, región, seniority) cuando existan cortes y datos consistentes.
+- La UI debe usar deciles segmentados cuando apliquen; fallback al baremo general si el segmento no existe o falta el dato.
+- Los datos demográficos se agregan a `header.subject.demographics` y se muestran en el encabezado de la página individual (sin exponer PII adicional).
+
+Cambios en datos y helpers:
+1) csv-processor / generador individual
+   - Extraer y agregar a `header.subject.demographics` (cuando existan en el CSV): `rol`, `area`, `nivelEducativo`, `antiguedad`, `region/sede`, `genero`.
+   - Normalizar valores (lowercase sin acentos) y mantener también el label original para UI.
+   - Respetar privacidad: no persistir identificadores sensibles diferentes a los ya presentes (nombre/email) y mantener el mapa sensible en `./debug/.local-map.json`.
+
+2) `src/scripts/services/baremos.js`
+   - Añadir helper `selectBaremosScope({ subject })` que derive claves de segmento:
+     - Rol D1: mapea `subject.demographics.rol` a uno de `roles.D1.*` definidos en `baremos.json`.
+     - Rol/educación D4: idem para `roles.D4.*` y `educacion.D4.*` si aplica a la dimensión `usoInteligenciaArtificial`.
+     - Fallback: `general`.
+   - Extender `mapScoreToBaremadoDecile(dim, score10, { scope })` para aceptar rutas anidadas (p. ej., `roles.D1.comercial_operaciones_liderazgo_rrhh`).
+
+3) Contrato individual (incremental)
+   - Añadir opcional `header.subject.demographics` con campos normalizados y etiquetas.
+   - (Opcional) Añadir `summary.dimensions[dim].segment` con el `scope` efectivo usado para deciles.
+
+UI en `src/pages/empleados/[id].astro`:
+4) Header demográfico
+   - Mostrar chips/filas con: `rol`, `area`, `nivelEducativo`, `antiguedad`, `region/sede`, `genero` (si existen).
+   - Mantener nombre, email, empresa y fecha como hoy.
+
+5) Sección “Baremos del segmento”
+   - Para cada dimensión principal (D1–D4):
+     - Mostrar el `scope` seleccionado (p. ej., “Rol: Mandos medios (D1)”, “Educación: Universitaria (D4)”).
+     - Renderizar barra/tabla de deciles del segmento con un marcador en el decil del sujeto.
+     - Fallback visible: si no hay segmento, indicar “Población general”.
+
+6) Integración con las barras existentes
+   - Donde hoy se usa `mapScoreToBaremadoDecile(dim, v10)` utilizar el `scope` retornado por `selectBaremosScope()` para calcular el decil segmentado.
+
+Pruebas y validación:
+7) Tests unitarios para el mapeo de `scope` por rol/educación (valores frontera y fallbacks).
+8) Snapshot visual/manual: verificar que el header muestra solo campos presentes y que la sección de baremos refleja el segmento correcto.
+
+Notas de implementación:
+- Las claves de roles en `baremos.json` provienen de `analisis/baremos.md` y se documentan en `build-baremos-from-md.mjs`. Definir una función de normalización de rol del CSV → clave de baremo.
+- Evitar romper compatibilidad: si `demographics` no está presente, la UI debe ocultar la sección del header y usar `general` para deciles.

@@ -132,6 +132,20 @@ Este documento registra el estado actual del plan de implementación, los pasos 
 
 ---
 
+15. **Baremos segmentados por rol y demografía (individual)**
+
+-   [ ] Extender generador individual para incluir `header.subject.demographics` (rol, área, nivelEducativo, antigüedad, región/sede, género) con normalización y labels.
+-   [ ] Helper `selectBaremosScope({ subject })` para derivar el `scope` (roles D1/D4, educación D4; fallback general).
+-   [ ] Permitir `mapScoreToBaremadoDecile(dim, score10, { scope })` con rutas anidadas (ej. `roles.D1.tecnico_producto_mandos_medios`).
+-   [ ] Página individual: nueva sección “Baremos del segmento” con indicación de scope y barra/tabla de deciles segmentados por dimensión.
+-   [ ] Header: mostrar chips/filas con los datos demográficos disponibles.
+-   [ ] Tests de mapeo de scope y fallback; verificación manual de UI.
+
+Notas:
+-   Mantener privacidad; no agregar PII adicional. Fallback a `general` cuando falte el dato o el segmento no exista.
+
+---
+
 ## Pensamientos y Estrategia
 
 *   **Arquitectura Robusta:** Modular y extensible; SOLID/DRY aplicados.
