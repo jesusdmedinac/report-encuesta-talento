@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.131Z",
+  "generated_at": "2025-09-23T18:26:53.738Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.131Z",
+    "generatedAt": "2025-09-23T18:26:53.738Z",
     "schema": "individual-1.0",
     "id": "bmt27hfapr52d219hm3acr8bmt27hb7n",
     "subject": {
       "nombreCompleto": "Ana Soriano",
       "email": "asoriano1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.131Z",
+      "assessed_on": "2025-09-23T18:26:53.738Z",
       "demographics": {
         "rol": "Asistente de nómina y beneficios",
         "area": "Talento y Cultura",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 1.3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.30), madurezDigital (gap=1.20), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,42 +231,73 @@
         }
       ],
       "role": "asistente",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Aspiro a desarrollarme en el área de RRHH",
+      "aspiracion_slug": "tecnico"
     },
     "iniciativas": [
       {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "id": "IA-06",
+        "titulo": "Hackatón interno de IA",
+        "descripcion": "Participa en un hackatón de 1 día para resolver un caso de negocio con IA y presentar resultados.",
         "areaEnfoque": "Innovación Aplicada",
-        "prioridad": "Alta",
-        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Media",
+        "plazoEstimado": "2 semanas",
         "rolesPreferidos": [
           "tecnico",
-          "operaciones",
-          "liderazgo"
+          "gestion",
+          "comercial"
         ],
         "tags": [
           "ia",
-          "pilotos",
-          "productividad",
+          "experimentacion",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "gestion_producto"
         ],
         "type": "OKR",
         "subdimensiones": [
           "nivelDeAdopcion",
           "habilidadDeUso"
         ],
+        "objective": "Impulsar prototipos con foco en valor al cliente",
         "key_results": [
           {
-            "metric": "percepcionDeRiesgo",
-            "target": "8.0/10"
+            "metric": "nivelDeAdopcion",
+            "target": "+0.5"
           },
           {
             "metric": "habilidadDeUso",
-            "target": "8.0/10"
+            "target": "+0.5"
           }
         ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
       },
       {
         "id": "CD-02",
@@ -283,6 +315,10 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
@@ -291,12 +327,12 @@
         "target": "8.0/10"
       },
       {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "id": "CD-05",
+        "titulo": "Curso práctico de ciberseguridad laboral",
+        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
         "areaEnfoque": "Seguridad",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "prioridad": "Alta",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "todos"
         ],
@@ -304,36 +340,16 @@
           "seguridad",
           "practicas"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos",
+          "operaciones"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ciberseguridad"
         ],
         "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
-        ],
-        "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "percepcionDeRiesgo",
         "target": "8.0/10"
       }
     ]

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.083Z",
+  "generated_at": "2025-09-23T18:26:54.725Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.083Z",
+    "generatedAt": "2025-09-23T18:26:54.725Z",
     "schema": "individual-1.0",
     "id": "9x3y2zd9cyp149x3y9p192i98kgctc9p",
     "subject": {
       "nombreCompleto": "HENRRY LOPEZ MORA",
       "email": "hlopez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.083Z",
+      "assessed_on": "2025-09-23T18:26:54.725Z",
       "demographics": {
         "rol": "CAJERO EJECUTIVO",
         "area": "OPERACIONES",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2 · culturaOrganizacional: gap 1.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.00), culturaOrganizacional (gap=1.50), brechaDigital (gap=1.30), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "operaciones",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Jefatura en operaciones",
+      "aspiracion_slug": "operaciones"
     },
     "iniciativas": [
       {
@@ -247,6 +250,10 @@
         "tags": [
           "procesos",
           "experimentacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "operaciones"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -265,6 +272,32 @@
         ]
       },
       {
+        "id": "CU-08",
+        "titulo": "Serie de micro-retos de automatización",
+        "descripcion": "Retos quincenales para automatizar pequeñas tareas y compartir plantillas reutilizables.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "experimentacion",
+          "automatizacion"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion"
+        ],
+        "metric": "experimentacion",
+        "target": "8.0/10"
+      },
+      {
         "id": "CU-01",
         "titulo": "Ciclos de experimentación y reconocimiento",
         "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
@@ -278,6 +311,10 @@
         "tags": [
           "experimentacion",
           "reconocimiento"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -302,35 +339,15 @@
           "comunidad",
           "aprendizaje"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ambienteDeAprendizaje"
         ],
         "metric": "ambienteDeAprendizaje",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
-        ],
-        "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
         "target": "8.0/10"
       }
     ]

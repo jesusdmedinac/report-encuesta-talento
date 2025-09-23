@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.139Z",
+  "generated_at": "2025-09-23T18:26:53.750Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.139Z",
+    "generatedAt": "2025-09-23T18:26:53.750Z",
     "schema": "individual-1.0",
     "id": "vob2693tg6uh1aq7o4dgr0vob2693wf9",
     "subject": {
       "nombreCompleto": "Carlos ESPINOZA LLERENA",
       "email": "cespinoza3@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.139Z",
+      "assessed_on": "2025-09-23T18:26:53.750Z",
       "demographics": {
         "rol": "Process Engineer",
         "area": "PROYECTOS, PROCESOS Y GESTION DE RECURSOS",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 0.5 · usoInteligenciaArtificial: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=0.50), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'process'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_de_comercio_exterior_o_tesoreria'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_de_comercio_exterior_o_tesoreria'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "process",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "area de comercio exterior o tesorería",
+      "aspiracion_slug": "area_de_comercio_exterior_o_tesoreria"
     },
     "iniciativas": [
       {
@@ -240,6 +243,10 @@
           "capacitacion",
           "colaboracion",
           "seguridad"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -274,6 +281,10 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -297,6 +308,10 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
@@ -305,26 +320,30 @@
         "target": "8.0/10"
       },
       {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "operaciones",
-          "comercial"
+          "comercial",
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
+          "capacitacion",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "colaboracionDigital"
+          "habilidadDeUso"
         ],
-        "metric": "colaboraciondigital",
+        "metric": "habilidaddeuso",
         "target": "8.0/10"
       }
     ]

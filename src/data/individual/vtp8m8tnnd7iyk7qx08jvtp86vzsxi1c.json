@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.075Z",
+  "generated_at": "2025-09-23T18:26:53.662Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.075Z",
+    "generatedAt": "2025-09-23T18:26:53.662Z",
     "schema": "individual-1.0",
     "id": "vtp8m8tnnd7iyk7qx08jvtp86vzsxi1c",
     "subject": {
       "nombreCompleto": "Diego Ortega",
       "email": "dortega2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.075Z",
+      "assessed_on": "2025-09-23T18:26:53.662Z",
       "demographics": {
         "rol": "Virtualization Enginner SR",
         "area": "Tecnología",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 1.7.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.60). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'virtualization'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_o_una_vp'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_o_una_vp'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "virtualization",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Gerencia o una VP",
+      "aspiracion_slug": "gerencia_o_una_vp"
     },
     "iniciativas": [
       {
@@ -242,6 +245,9 @@
         "tags": [
           "liderazgo",
           "objetivos"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -270,6 +276,10 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
@@ -278,51 +288,56 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
         "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
-        ],
-        "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
-        "rolesPreferidos": [
-          "liderazgo",
+          "comercial",
+          "tecnico",
           "mandos"
         ],
         "tags": [
-          "experimentacion",
-          "reconocimiento"
+          "capacitacion",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
+          "habilidadDeUso"
         ],
-        "metric": "experimentacion",
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-08",
+        "titulo": "Librería de prompts por producto",
+        "descripcion": "Crear y versionar 10 prompts específicos de producto/segmento con ejemplos de input/output.",
+        "areaEnfoque": "Producto",
+        "prioridad": "Baja",
+        "plazoEstimado": "3 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "producto"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
         "target": "8.0/10"
       }
     ]

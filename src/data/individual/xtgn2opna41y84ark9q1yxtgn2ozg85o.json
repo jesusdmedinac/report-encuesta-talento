@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.080Z",
+  "generated_at": "2025-09-23T18:26:54.721Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.080Z",
+    "generatedAt": "2025-09-23T18:26:54.721Z",
     "schema": "individual-1.0",
     "id": "xtgn2opna41y84ark9q1yxtgn2ozg85o",
     "subject": {
       "nombreCompleto": "Juan Fernando Torres Alvarez",
       "email": "jtorres1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.080Z",
+      "assessed_on": "2025-09-23T18:26:54.721Z",
       "demographics": {
         "rol": "Contralor Financiero",
         "area": "Contraloría Financiera",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 0.7 · usoInteligenciaArtificial: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=0.70), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'contralor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vicepresidente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vicepresidente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "contralor",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Vicepresidente",
+      "aspiracion_slug": "vicepresidente"
     },
     "iniciativas": [
       {
@@ -240,6 +243,10 @@
           "capacitacion",
           "colaboracion",
           "seguridad"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -274,6 +281,38 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -297,32 +336,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "todos"
-        ],
-        "tags": [
-          "seguridad",
-          "practicas"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ciberseguridad"
-        ],
-        "metric": "ciberseguridad",
         "target": "8.0/10"
       }
     ]

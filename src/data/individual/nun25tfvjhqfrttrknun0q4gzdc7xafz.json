@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.597Z",
+  "generated_at": "2025-09-23T18:26:54.289Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.597Z",
+    "generatedAt": "2025-09-23T18:26:54.289Z",
     "schema": "individual-1.0",
     "id": "nun25tfvjhqfrttrknun0q4gzdc7xafz",
     "subject": {
       "nombreCompleto": "Miguel Alvarado",
       "email": "malvarado@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.597Z",
+      "assessed_on": "2025-09-23T18:26:54.289Z",
       "demographics": {
         "rol": "Financial copywriter",
         "area": "Comunicación corporativa",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · brechaDigital: gap 1.1.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), brechaDigital (gap=1.10), usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Gerencia o Líder de Unidad",
+      "aspiracion_slug": "liderazgo"
     },
     "iniciativas": [
       {
@@ -247,6 +250,9 @@
           "liderazgo",
           "objetivos"
         ],
+        "rutaDeCarrera": [
+          "liderazgo"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "liderazgoYVision"
@@ -258,6 +264,57 @@
             "target": "+1.0"
           }
         ]
+      },
+      {
+        "id": "CD-05",
+        "titulo": "Curso práctico de ciberseguridad laboral",
+        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Alta",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-08",
+        "titulo": "Clinics de dudas digitales",
+        "descripcion": "Espacios quincenales de 45 min para resolver casos reales y medir NPS de utilidad.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "aprendizaje",
+          "soporte"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
       },
       {
         "id": "CD-03",
@@ -273,56 +330,15 @@
           "seguridad",
           "practicas"
         ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "operaciones"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ciberseguridad"
         ],
         "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "colaboracionDigital"
-        ],
-        "metric": "colaboraciondigital",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "comunidad",
-          "aprendizaje"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ambienteDeAprendizaje"
-        ],
-        "metric": "ambienteDeAprendizaje",
         "target": "8.0/10"
       }
     ]

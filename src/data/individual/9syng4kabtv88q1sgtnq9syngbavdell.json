@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:10.943Z",
+  "generated_at": "2025-09-23T18:26:53.575Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:10.943Z",
+    "generatedAt": "2025-09-23T18:26:53.575Z",
     "schema": "individual-1.0",
     "id": "9syng4kabtv88q1sgtnq9syngbavdell",
     "subject": {
       "nombreCompleto": "Edy Reinoso",
       "email": "ereinoso@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:10.943Z",
+      "assessed_on": "2025-09-23T18:26:53.575Z",
       "demographics": {
         "rol": "Oficial de crédito",
         "area": "Comercial",
@@ -231,6 +231,10 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
@@ -253,49 +257,60 @@
           "gobierno",
           "calidad"
         ],
+        "rutaDeCarrera": [
+          "analitica_datos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
         ]
       },
       {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
         "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "todos"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "seguridad",
-          "practicas"
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ciberseguridad"
+          "alfabetizacionDeDatos"
         ]
       },
       {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "operaciones",
-          "comercial"
+          "mandos"
         ],
         "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "colaboracionDigital"
+          "proactividadDigital"
         ]
       }
     ]

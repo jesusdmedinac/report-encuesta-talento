@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.487Z",
+  "generated_at": "2025-09-23T18:26:54.160Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.487Z",
+    "generatedAt": "2025-09-23T18:26:54.160Z",
     "schema": "individual-1.0",
     "id": "ui58osazhcp2czui584rmwa80w5s3di6",
     "subject": {
       "nombreCompleto": "MARIO ANDRADE",
       "email": "MARIOALEJANDRO10@HOTMAIL.ES",
-      "assessed_on": "2025-09-23T16:06:11.487Z",
+      "assessed_on": "2025-09-23T18:26:54.160Z",
       "demographics": {
         "rol": "JEFE OPERATIVO",
         "area": "OPERACIONES",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.6 · madurezDigital: gap 1.3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), madurezDigital (gap=1.30), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'regional'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='regional'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "regional",
+      "aspiracion_slug": "regional"
     },
     "iniciativas": [
       {
@@ -250,6 +253,10 @@
           "pilotos",
           "productividad",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -284,6 +291,9 @@
           "gobierno",
           "calidad"
         ],
+        "rutaDeCarrera": [
+          "analitica_datos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
@@ -306,6 +316,10 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
@@ -314,25 +328,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "comercial",
-          "operaciones"
+          "operaciones",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
-          "prompt"
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "habilidadDeUso"
+          "proactividadDigital"
         ],
-        "metric": "habilidadDeUso",
+        "metric": "proactividaddigital",
         "target": "8.0/10"
       }
     ]

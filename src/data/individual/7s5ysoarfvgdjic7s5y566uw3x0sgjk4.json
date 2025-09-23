@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:10.937Z",
+  "generated_at": "2025-09-23T18:26:53.565Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:10.937Z",
+    "generatedAt": "2025-09-23T18:26:53.565Z",
     "schema": "individual-1.0",
     "id": "7s5ysoarfvgdjic7s5y566uw3x0sgjk4",
     "subject": {
       "nombreCompleto": "OLGA MARIA STOPPER CHEVEZ",
       "email": "ostopper@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:10.937Z",
+      "assessed_on": "2025-09-23T18:26:53.565Z",
       "demographics": {
         "rol": "JEFA DE AGENCIA",
         "area": "COMERCIAL- JEFA DE AGENCIA",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'jefa'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'subgerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='subgerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -218,7 +219,9 @@
         }
       ],
       "role": "jefa",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "SUBGERENTE",
+      "aspiracion_slug": "subgerente"
     },
     "iniciativas": [
       {
@@ -234,6 +237,9 @@
         "tags": [
           "liderazgo",
           "objetivos"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -262,6 +268,37 @@
           "comunidad",
           "aprendizaje"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-05",
+        "titulo": "Comunidades de práctica por rol",
+        "descripcion": "Lanzar una comunidad por rol (ventas, PM, soporte) con demos y retos mensuales.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico",
+          "comercial"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ambienteDeAprendizaje"
@@ -284,36 +321,16 @@
           "experimentacion",
           "reconocimiento"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "experimentacion",
           "reconocimiento"
         ],
         "metric": "experimentacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
-        ],
-        "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
         "target": "8.0/10"
       }
     ]

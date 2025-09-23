@@ -109,6 +109,102 @@
         "proactividadDigital",
         "resolucionDeProblemas"
       ]
+    },
+    {
+      "id": "MD-05",
+      "titulo": "Tomar curso corto de analítica aplicada",
+      "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+      "areaEnfoque": "Talento y Formación",
+      "prioridad": "Media",
+      "plazoEstimado": "3-4 semanas",
+      "rolesPreferidos": [
+        "tecnico",
+        "mandos"
+      ],
+      "tags": [
+        "capacitacion",
+        "datos"
+      ],
+      "rutaDeCarrera": [
+        "analitica_datos",
+        "tecnico"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "alfabetizacionDeDatos"
+      ]
+    },
+    {
+      "id": "MD-06",
+      "titulo": "Taller de mapeo de procesos (hands-on)",
+      "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+      "areaEnfoque": "Procesos y Calidad",
+      "prioridad": "Media",
+      "plazoEstimado": "2-3 semanas",
+      "rolesPreferidos": [
+        "operaciones",
+        "mandos"
+      ],
+      "tags": [
+        "procesos",
+        "eficiencia"
+      ],
+      "rutaDeCarrera": [
+        "operaciones",
+        "mandos"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "proactividadDigital"
+      ]
+    },
+    {
+      "id": "MD-07",
+      "titulo": "Shadowing de PM en discovery",
+      "descripcion": "Acompañar 2-3 sesiones de descubrimiento de producto y redactar un brief con hallazgos accionables.",
+      "areaEnfoque": "Producto",
+      "prioridad": "Baja",
+      "plazoEstimado": "2-3 semanas",
+      "rolesPreferidos": [
+        "comercial",
+        "tecnico"
+      ],
+      "tags": [
+        "cliente",
+        "discovery"
+      ],
+      "rutaDeCarrera": [
+        "gestion_producto",
+        "comercial"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "resolucionDeProblemas"
+      ]
+    },
+    {
+      "id": "MD-08",
+      "titulo": "Laboratorio de automatización sin código",
+      "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+      "areaEnfoque": "Innovación Operacional",
+      "prioridad": "Media",
+      "plazoEstimado": "2-4 semanas",
+      "rolesPreferidos": [
+        "operaciones",
+        "comercial"
+      ],
+      "tags": [
+        "automatizacion",
+        "productividad"
+      ],
+      "rutaDeCarrera": [
+        "operaciones",
+        "comercial"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "proactividadDigital"
+      ]
     }
   ],
   "brechaDigital": [
@@ -207,6 +303,101 @@
         "tecnico"
       ],
       "type": "OKR",
+      "subdimensiones": [
+        "colaboracionDigital"
+      ]
+    },
+    {
+      "id": "CD-05",
+      "titulo": "Curso práctico de ciberseguridad laboral",
+      "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
+      "areaEnfoque": "Seguridad",
+      "prioridad": "Alta",
+      "plazoEstimado": "2-3 semanas",
+      "rolesPreferidos": [
+        "todos"
+      ],
+      "tags": [
+        "seguridad",
+        "practicas"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos",
+        "operaciones"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "ciberseguridad"
+      ]
+    },
+    {
+      "id": "CD-06",
+      "titulo": "Taller de colaboración en suites actuales",
+      "descripcion": "Workshop hands-on para crear plantillas, permisos y tableros con la suite corporativa.",
+      "areaEnfoque": "Enablement",
+      "prioridad": "Media",
+      "plazoEstimado": "2 semanas",
+      "rolesPreferidos": [
+        "comercial",
+        "operaciones"
+      ],
+      "tags": [
+        "colaboracion",
+        "productividad"
+      ],
+      "rutaDeCarrera": [
+        "comercial",
+        "operaciones"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "colaboracionDigital"
+      ]
+    },
+    {
+      "id": "CD-07",
+      "titulo": "Guías de 1 página por rol",
+      "descripcion": "Crear 3 guías “cómo lo hago” específicas por rol con GIFs y ejemplos operativos.",
+      "areaEnfoque": "Enablement",
+      "prioridad": "Media",
+      "plazoEstimado": "3-4 semanas",
+      "rolesPreferidos": [
+        "rrhh",
+        "mandos"
+      ],
+      "tags": [
+        "guias",
+        "adopcion"
+      ],
+      "rutaDeCarrera": [
+        "rrhh",
+        "mandos"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "colaboracionDigital"
+      ]
+    },
+    {
+      "id": "CD-08",
+      "titulo": "Clinics de dudas digitales",
+      "descripcion": "Espacios quincenales de 45 min para resolver casos reales y medir NPS de utilidad.",
+      "areaEnfoque": "Talento y Formación",
+      "prioridad": "Baja",
+      "plazoEstimado": "6-8 semanas",
+      "rolesPreferidos": [
+        "todos"
+      ],
+      "tags": [
+        "aprendizaje",
+        "soporte"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos"
+      ],
+      "type": "KPI",
       "subdimensiones": [
         "colaboracionDigital"
       ]
@@ -326,6 +517,143 @@
           "target": "+1.0"
         }
       ]
+    },
+    {
+      "id": "IA-05",
+      "titulo": "Tomar curso por rol de Prompting",
+      "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+      "areaEnfoque": "Talento y Ética",
+      "prioridad": "Media",
+      "plazoEstimado": "2-3 semanas",
+      "rolesPreferidos": [
+        "comercial",
+        "tecnico",
+        "mandos"
+      ],
+      "tags": [
+        "capacitacion",
+        "prompt"
+      ],
+      "rutaDeCarrera": [
+        "gestion_producto",
+        "comercial"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "habilidadDeUso"
+      ]
+    },
+    {
+      "id": "IA-06",
+      "titulo": "Hackatón interno de IA",
+      "descripcion": "Participa en un hackatón de 1 día para resolver un caso de negocio con IA y presentar resultados.",
+      "areaEnfoque": "Innovación Aplicada",
+      "prioridad": "Media",
+      "plazoEstimado": "2 semanas",
+      "rolesPreferidos": [
+        "tecnico",
+        "gestion",
+        "comercial"
+      ],
+      "tags": [
+        "ia",
+        "experimentacion",
+        "cliente"
+      ],
+      "rutaDeCarrera": [
+        "tecnico",
+        "gestion_producto"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "nivelDeAdopcion",
+        "habilidadDeUso"
+      ],
+      "objective": "Impulsar prototipos con foco en valor al cliente",
+      "key_results": [
+        {
+          "metric": "nivelDeAdopcion",
+          "target": "+0.5"
+        },
+        {
+          "metric": "habilidadDeUso",
+          "target": "+0.5"
+        }
+      ]
+    },
+    {
+      "id": "IA-07",
+      "titulo": "Evaluación A/B de asistentes",
+      "descripcion": "Probar 2 asistentes IA en un proceso (ej. respuestas de soporte) y comparar métricas de tiempo/calidad.",
+      "areaEnfoque": "Enablement",
+      "prioridad": "Media",
+      "plazoEstimado": "3-4 semanas",
+      "rolesPreferidos": [
+        "operaciones",
+        "comercial"
+      ],
+      "tags": [
+        "experimento",
+        "calidad"
+      ],
+      "rutaDeCarrera": [
+        "operaciones",
+        "comercial"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "eticaYVerificacion"
+      ]
+    },
+    {
+      "id": "IA-08",
+      "titulo": "Librería de prompts por producto",
+      "descripcion": "Crear y versionar 10 prompts específicos de producto/segmento con ejemplos de input/output.",
+      "areaEnfoque": "Producto",
+      "prioridad": "Baja",
+      "plazoEstimado": "3 semanas",
+      "rolesPreferidos": [
+        "comercial",
+        "producto"
+      ],
+      "tags": [
+        "repositorio",
+        "prompt"
+      ],
+      "rutaDeCarrera": [
+        "gestion_producto",
+        "comercial"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "habilidadDeUso"
+      ]
+    },
+    {
+      "id": "IA-09",
+      "titulo": "Curso de verificación y sesgos",
+      "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+      "areaEnfoque": "Talento y Ética",
+      "prioridad": "Media",
+      "plazoEstimado": "2-3 semanas",
+      "rolesPreferidos": [
+        "rrhh",
+        "mandos",
+        "tecnico"
+      ],
+      "tags": [
+        "etica",
+        "verificacion"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "tecnico"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "eticaYVerificacion",
+        "percepcionDeRiesgo"
+      ]
     }
   ],
   "culturaOrganizacional": [
@@ -429,6 +757,103 @@
       "type": "OKR",
       "subdimensiones": [
         "reconocimiento"
+      ]
+    },
+    {
+      "id": "CU-05",
+      "titulo": "Comunidades de práctica por rol",
+      "descripcion": "Lanzar una comunidad por rol (ventas, PM, soporte) con demos y retos mensuales.",
+      "areaEnfoque": "Cultura y Cambio",
+      "prioridad": "Media",
+      "plazoEstimado": "8 semanas",
+      "rolesPreferidos": [
+        "mandos",
+        "tecnico",
+        "comercial"
+      ],
+      "tags": [
+        "comunidad",
+        "aprendizaje"
+      ],
+      "rutaDeCarrera": [
+        "gestion_producto",
+        "comercial"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "ambienteDeAprendizaje"
+      ]
+    },
+    {
+      "id": "CU-06",
+      "titulo": "Demo Day trimestral",
+      "descripcion": "Evento trimestral donde equipos presentan mejoras/herramientas implementadas con métricas de impacto.",
+      "areaEnfoque": "Cultura y Cambio",
+      "prioridad": "Media",
+      "plazoEstimado": "6-8 semanas",
+      "rolesPreferidos": [
+        "liderazgo",
+        "mandos"
+      ],
+      "tags": [
+        "reconocimiento",
+        "resultados"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "reconocimiento"
+      ]
+    },
+    {
+      "id": "CU-07",
+      "titulo": "Programa de mentores digitales",
+      "descripcion": "Entrenar 5 mentores internos para acompañar squads en adopción de prácticas digitales.",
+      "areaEnfoque": "Liderazgo",
+      "prioridad": "Alta",
+      "plazoEstimado": "8-10 semanas",
+      "rolesPreferidos": [
+        "liderazgo",
+        "mandos"
+      ],
+      "tags": [
+        "liderazgo",
+        "coaching"
+      ],
+      "rutaDeCarrera": [
+        "liderazgo",
+        "mandos"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "liderazgoYVision"
+      ]
+    },
+    {
+      "id": "CU-08",
+      "titulo": "Serie de micro-retos de automatización",
+      "descripcion": "Retos quincenales para automatizar pequeñas tareas y compartir plantillas reutilizables.",
+      "areaEnfoque": "Cultura y Cambio",
+      "prioridad": "Baja",
+      "plazoEstimado": "6-8 semanas",
+      "rolesPreferidos": [
+        "operaciones",
+        "comercial"
+      ],
+      "tags": [
+        "experimentacion",
+        "automatizacion"
+      ],
+      "rutaDeCarrera": [
+        "operaciones",
+        "comercial"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "experimentacion"
       ]
     }
   ]

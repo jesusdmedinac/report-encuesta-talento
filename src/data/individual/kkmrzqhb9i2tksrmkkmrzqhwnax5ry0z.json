@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.216Z",
+  "generated_at": "2025-09-23T18:26:53.839Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.216Z",
+    "generatedAt": "2025-09-23T18:26:53.839Z",
     "schema": "individual-1.0",
     "id": "kkmrzqhb9i2tksrmkkmrzqhwnax5ry0z",
     "subject": {
       "nombreCompleto": "KATHERINE LEON",
       "email": "kleon@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.216Z",
+      "assessed_on": "2025-09-23T18:26:53.839Z",
       "demographics": {
         "rol": "OFICIAL SENIOR",
         "area": "MICROFINANZAS",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2 · usoInteligenciaArtificial: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.00), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mantenerme_en_mi_cargo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mantenerme_en_mi_cargo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Mantenerme en mi cargo",
+      "aspiracion_slug": "mantenerme_en_mi_cargo"
     },
     "iniciativas": [
       {
@@ -244,6 +247,9 @@
           "roadmap",
           "procesos",
           "priorizacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -279,6 +285,38 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -302,33 +340,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-03",
-        "titulo": "Taller de resolución de problemas complejos",
-        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "capacitacion",
-          "analitica"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "resolucionDeProblemas"
-        ],
-        "metric": "resolucionDeProblemas",
         "target": "8.0/10"
       }
     ]

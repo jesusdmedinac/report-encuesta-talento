@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.543Z",
+  "generated_at": "2025-09-23T18:26:54.225Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.543Z",
+    "generatedAt": "2025-09-23T18:26:54.225Z",
     "schema": "individual-1.0",
     "id": "odxznyl679kzvqft50vodxznyla8hc8f",
     "subject": {
       "nombreCompleto": "Stefania bustamante",
       "email": "mbustamante2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.543Z",
+      "assessed_on": "2025-09-23T18:26:54.225Z",
       "demographics": {
         "rol": "Relacionista pública",
         "area": "Marketing",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.9 · usoInteligenciaArtificial: gap 0.9.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.70), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'relacionista'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "relacionista",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Gerencia",
+      "aspiracion_slug": "gerencia"
     },
     "iniciativas": [
       {
@@ -248,6 +251,9 @@
           "roadmap",
           "procesos",
           "priorizacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -283,6 +289,38 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -306,35 +344,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
-        ],
-        "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
         "target": "8.0/10"
       }
     ]

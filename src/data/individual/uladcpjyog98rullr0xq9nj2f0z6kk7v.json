@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.788Z",
+  "generated_at": "2025-09-23T18:26:54.490Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.788Z",
+    "generatedAt": "2025-09-23T18:26:54.490Z",
     "schema": "individual-1.0",
     "id": "uladcpjyog98rullr0xq9nj2f0z6kk7v",
     "subject": {
       "nombreCompleto": "Fiorella Galarza Murillo",
       "email": "fiorellagalarzamurillo@gmail.com",
-      "assessed_on": "2025-09-23T16:06:11.788Z",
+      "assessed_on": "2025-09-23T18:26:54.490Z",
       "demographics": {
         "rol": "UX designer",
         "area": "Coe de diseño (cleo)",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · brechaDigital: gap 1.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), brechaDigital (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ux'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'dtl_de_una_tribu'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='dtl_de_una_tribu'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "ux",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Dtl de una tribu",
+      "aspiracion_slug": "dtl_de_una_tribu"
     },
     "iniciativas": [
       {
@@ -242,6 +245,9 @@
         "tags": [
           "liderazgo",
           "objetivos"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -271,6 +277,10 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
@@ -292,6 +302,10 @@
           "seguridad",
           "practicas"
         ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "operaciones"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ciberseguridad"
@@ -300,25 +314,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
+        "id": "CD-05",
+        "titulo": "Curso práctico de ciberseguridad laboral",
+        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Alta",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "mandos",
-          "tecnico"
+          "todos"
         ],
         "tags": [
-          "comunidad",
-          "aprendizaje"
+          "seguridad",
+          "practicas"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos",
+          "operaciones"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ambienteDeAprendizaje"
+          "ciberseguridad"
         ],
-        "metric": "ambienteDeAprendizaje",
+        "metric": "ciberseguridad",
         "target": "8.0/10"
       }
     ]

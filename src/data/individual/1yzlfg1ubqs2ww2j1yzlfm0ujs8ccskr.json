@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.338Z",
+  "generated_at": "2025-09-23T18:26:55.015Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.338Z",
+    "generatedAt": "2025-09-23T18:26:55.015Z",
     "schema": "individual-1.0",
     "id": "1yzlfg1ubqs2ww2j1yzlfm0ujs8ccskr",
     "subject": {
       "nombreCompleto": "DANIA VANESSA MARCILLO SUASTEGUI",
       "email": "DMARCILLO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T16:06:12.338Z",
+      "assessed_on": "2025-09-23T18:26:55.015Z",
       "demographics": {
         "rol": "EJECUTIVO PREFERENTE",
         "area": "SEGMENTOS Y CANALES",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.9.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutivo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'subgerente_de_segmentos_y_canales'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='subgerente_de_segmentos_y_canales'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -218,7 +219,9 @@
         }
       ],
       "role": "ejecutivo",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "SUBGERENTE DE SEGMENTOS Y CANALES",
+      "aspiracion_slug": "subgerente_de_segmentos_y_canales"
     },
     "iniciativas": [
       {
@@ -236,6 +239,9 @@
           "roadmap",
           "procesos",
           "priorizacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -269,6 +275,10 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
@@ -293,6 +303,9 @@
           "gobierno",
           "calidad"
         ],
+        "rutaDeCarrera": [
+          "analitica_datos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
@@ -301,26 +314,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
         "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "operaciones",
-          "comercial"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "colaboracionDigital"
+          "alfabetizacionDeDatos"
         ],
-        "metric": "colaboraciondigital",
+        "metric": "alfabetizaciondedatos",
         "target": "8.0/10"
       }
     ]

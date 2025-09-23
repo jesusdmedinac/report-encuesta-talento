@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.101Z",
+  "generated_at": "2025-09-23T18:26:54.745Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.101Z",
+    "generatedAt": "2025-09-23T18:26:54.745Z",
     "schema": "individual-1.0",
     "id": "l18fsl9pdneoacx9il18fyatgnr0ct9w",
     "subject": {
       "nombreCompleto": "Johanna Armijos Priori",
       "email": "jarmijos@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.101Z",
+      "assessed_on": "2025-09-23T18:26:54.745Z",
       "demographics": {
         "rol": "coordinadora",
         "area": "normalizacion de cartera",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 3 · madurezDigital: gap 2.7.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=3.00), madurezDigital (gap=2.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'coordinadora'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "coordinadora",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "gerente",
+      "aspiracion_slug": "gerente"
     },
     "iniciativas": [
       {
@@ -239,6 +242,9 @@
         "tags": [
           "adopcion",
           "gobierno"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -272,6 +278,10 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
@@ -280,52 +290,55 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "liderazgo",
           "operaciones",
-          "tecnico"
+          "mandos"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "alfabetizacionDeDatos"
+          "proactividadDigital"
         ],
-        "metric": "alfabetizaciondedatos",
+        "metric": "proactividaddigital",
         "target": "8.0/10"
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "2-4 semanas",
         "rolesPreferidos": [
-          "rrhh",
-          "mandos",
+          "operaciones",
           "comercial"
         ],
         "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
+          "proactividadDigital"
         ],
-        "metric": "percepcionDeRiesgo",
+        "metric": "proactividaddigital",
         "target": "8.0/10"
       }
     ]

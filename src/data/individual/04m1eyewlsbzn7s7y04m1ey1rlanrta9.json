@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.287Z",
+  "generated_at": "2025-09-23T18:26:54.941Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.287Z",
+    "generatedAt": "2025-09-23T18:26:54.941Z",
     "schema": "individual-1.0",
     "id": "04m1eyewlsbzn7s7y04m1ey1rlanrta9",
     "subject": {
       "nombreCompleto": "Jessica Vera Bermudez",
       "email": "jvera1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.287Z",
+      "assessed_on": "2025-09-23T18:26:54.941Z",
       "demographics": {
         "rol": "Business Intelligence Data Analyst",
         "area": "COE Analítica",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.1.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'business'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "business",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Cualquier posición que involucre explorar oportunidades de crecimiento del negocio y mejoras de la experiencia del usuario, basadas en datos en datos internos y externos.",
+      "aspiracion_slug": "analitica_datos"
     },
     "iniciativas": [
       {
@@ -238,6 +241,9 @@
         "tags": [
           "liderazgo",
           "objetivos"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -268,6 +274,38 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -291,33 +329,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "comunidad",
-          "aprendizaje"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ambienteDeAprendizaje"
-        ],
-        "metric": "ambienteDeAprendizaje",
         "target": "8.0/10"
       }
     ]

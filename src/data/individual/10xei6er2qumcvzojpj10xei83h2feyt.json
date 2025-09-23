@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.471Z",
+  "generated_at": "2025-09-23T18:26:54.141Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.471Z",
+    "generatedAt": "2025-09-23T18:26:54.141Z",
     "schema": "individual-1.0",
     "id": "10xei6er2qumcvzojpj10xei83h2feyt",
     "subject": {
       "nombreCompleto": "Javier Galarza",
       "email": "galarzaflorencio0@gmail.com",
-      "assessed_on": "2025-09-23T16:06:11.471Z",
+      "assessed_on": "2025-09-23T18:26:54.141Z",
       "demographics": {
         "rol": "cajero financiero",
         "area": "operaciones",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · brechaDigital: gap 1.4.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.40), madurezDigital (gap=1.30), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_agencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_agencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "gerente de agencia",
+      "aspiracion_slug": "gerente_de_agencia"
     },
     "iniciativas": [
       {
@@ -247,6 +250,9 @@
         "tags": [
           "adopcion",
           "gobierno"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -281,6 +287,10 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
@@ -289,49 +299,54 @@
         "target": "8.0/10"
       },
       {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
+        "id": "CD-06",
+        "titulo": "Taller de colaboración en suites actuales",
+        "descripcion": "Workshop hands-on para crear plantillas, permisos y tableros con la suite corporativa.",
+        "areaEnfoque": "Enablement",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "colaboracion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "comercial",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-08",
+        "titulo": "Clinics de dudas digitales",
+        "descripcion": "Espacios quincenales de 45 min para resolver casos reales y medir NPS de utilidad.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
         "rolesPreferidos": [
           "todos"
         ],
         "tags": [
-          "seguridad",
-          "practicas"
+          "aprendizaje",
+          "soporte"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ciberseguridad"
+          "colaboracionDigital"
         ],
-        "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
-        ],
-        "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "percepcionDeRiesgo",
+        "metric": "colaboraciondigital",
         "target": "8.0/10"
       }
     ]

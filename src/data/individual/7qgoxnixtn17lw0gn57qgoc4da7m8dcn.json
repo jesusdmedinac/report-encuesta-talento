@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.767Z",
+  "generated_at": "2025-09-23T18:26:54.470Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.767Z",
+    "generatedAt": "2025-09-23T18:26:54.470Z",
     "schema": "individual-1.0",
     "id": "7qgoxnixtn17lw0gn57qgoc4da7m8dcn",
     "subject": {
       "nombreCompleto": "Rafaella Aguayo",
       "email": "raguayo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.767Z",
+      "assessed_on": "2025-09-23T18:26:54.470Z",
       "demographics": {
         "rol": "SOPORTE CONTRACARGOS",
         "area": "TRIBU MEDIOS DE PAGO",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.6 · madurezDigital: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), madurezDigital (gap=0.50), culturaOrganizacional (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'siempre_busco_superarme_y_aprender_mas_cosas'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='siempre_busco_superarme_y_aprender_mas_cosas'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "SIEMPRE BUSCO SUPERARME Y APRENDER MAS COSAS",
+      "aspiracion_slug": "siempre_busco_superarme_y_aprender_mas_cosas"
     },
     "iniciativas": [
       {
@@ -250,6 +253,10 @@
           "pilotos",
           "productividad",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -282,6 +289,10 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
@@ -306,6 +317,9 @@
           "gobierno",
           "calidad"
         ],
+        "rutaDeCarrera": [
+          "analitica_datos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
@@ -314,28 +328,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
           "capacitacion",
-          "etica",
-          "prompt"
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
+          "alfabetizacionDeDatos"
         ],
-        "metric": "percepcionDeRiesgo",
+        "metric": "alfabetizaciondedatos",
         "target": "8.0/10"
       }
     ]

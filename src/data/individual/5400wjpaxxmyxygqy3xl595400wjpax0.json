@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.611Z",
+  "generated_at": "2025-09-23T18:26:54.302Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.611Z",
+    "generatedAt": "2025-09-23T18:26:54.302Z",
     "schema": "individual-1.0",
     "id": "5400wjpaxxmyxygqy3xl595400wjpax0",
     "subject": {
       "nombreCompleto": "luis azu izquieta",
       "email": "luis200902@hotmail.es",
-      "assessed_on": "2025-09-23T16:06:11.611Z",
+      "assessed_on": "2025-09-23T18:26:54.302Z",
       "demographics": {
         "rol": "cajero",
         "area": "operaciones",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 2.2 · usoInteligenciaArtificial: gap 1.3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=2.20), usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.80), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Gerencia",
+      "aspiracion_slug": "gerencia"
     },
     "iniciativas": [
       {
@@ -248,6 +251,10 @@
           "capacitacion",
           "colaboracion",
           "seguridad"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -282,6 +289,38 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -305,34 +344,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "colaboracionDigital"
-        ],
-        "metric": "colaboraciondigital",
         "target": "8.0/10"
       }
     ]

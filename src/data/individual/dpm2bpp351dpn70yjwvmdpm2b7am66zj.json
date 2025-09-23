@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.627Z",
+  "generated_at": "2025-09-23T18:26:54.320Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.627Z",
+    "generatedAt": "2025-09-23T18:26:54.320Z",
     "schema": "individual-1.0",
     "id": "dpm2bpp351dpn70yjwvmdpm2b7am66zj",
     "subject": {
       "nombreCompleto": "Nayeli Zambrano",
       "email": "EZAMBRANO3@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T16:06:11.627Z",
+      "assessed_on": "2025-09-23T18:26:54.320Z",
       "demographics": {
         "rol": "cajera financiera",
         "area": "0",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 3.6 · culturaOrganizacional: gap 3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=3.60), culturaOrganizacional (gap=3.00), madurezDigital (gap=2.60), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'quiero_llegar_aprender_y_seguir_estudiando_para_asi_surgir_y_crecer_en_el_banco'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='quiero_llegar_aprender_y_seguir_estudiando_para_asi_surgir_y_crecer_en_el_banco'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "cajera",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "quiero llegar aprender y seguir estudiando para asi surgir y crecer en el banco",
+      "aspiracion_slug": "quiero_llegar_aprender_y_seguir_estudiando_para_asi_surgir_y_crecer_en_el_banco"
     },
     "iniciativas": [
       {
@@ -248,6 +251,10 @@
           "capacitacion",
           "colaboracion",
           "seguridad"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -280,6 +287,37 @@
           "comunidad",
           "aprendizaje"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-05",
+        "titulo": "Comunidades de práctica por rol",
+        "descripcion": "Lanzar una comunidad por rol (ventas, PM, soporte) con demos y retos mensuales.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico",
+          "comercial"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ambienteDeAprendizaje"
@@ -302,35 +340,16 @@
           "experimentacion",
           "reconocimiento"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "experimentacion",
           "reconocimiento"
         ],
         "metric": "experimentacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "colaboracionDigital"
-        ],
-        "metric": "colaboracionDigital",
         "target": "8.0/10"
       }
     ]

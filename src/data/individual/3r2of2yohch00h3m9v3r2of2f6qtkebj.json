@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.313Z",
+  "generated_at": "2025-09-23T18:26:53.952Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.313Z",
+    "generatedAt": "2025-09-23T18:26:53.952Z",
     "schema": "individual-1.0",
     "id": "3r2of2yohch00h3m9v3r2of2f6qtkebj",
     "subject": {
       "nombreCompleto": "Rafael Trujillo Villacis",
       "email": "rtrujillo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.313Z",
+      "assessed_on": "2025-09-23T18:26:53.952Z",
       "demographics": {
         "rol": "Key Account Manager",
         "area": "Banca Empresas",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · madurezDigital: gap 1.7.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=1.70), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vicepresidencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vicepresidencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Vicepresidencia",
+      "aspiracion_slug": "vicepresidencia"
     },
     "iniciativas": [
       {
@@ -246,6 +249,9 @@
         "tags": [
           "liderazgo",
           "objetivos"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -276,6 +282,9 @@
           "gobierno",
           "calidad"
         ],
+        "rutaDeCarrera": [
+          "analitica_datos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
@@ -298,6 +307,10 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
@@ -306,26 +319,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
         "prioridad": "Media",
-        "plazoEstimado": "3 meses",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "liderazgo",
+          "operaciones",
           "mandos"
         ],
         "tags": [
-          "experimentacion",
-          "reconocimiento"
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
+          "proactividadDigital"
         ],
-        "metric": "experimentacion",
+        "metric": "proactividaddigital",
         "target": "8.0/10"
       }
     ]

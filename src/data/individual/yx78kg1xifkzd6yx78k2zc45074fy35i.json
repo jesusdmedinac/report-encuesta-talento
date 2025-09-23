@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.393Z",
+  "generated_at": "2025-09-23T18:26:54.046Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.393Z",
+    "generatedAt": "2025-09-23T18:26:54.046Z",
     "schema": "individual-1.0",
     "id": "yx78kg1xifkzd6yx78k2zc45074fy35i",
     "subject": {
       "nombreCompleto": "LENIN ACOSTA",
       "email": "LACOSTA2@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T16:06:11.393Z",
+      "assessed_on": "2025-09-23T18:26:54.046Z",
       "demographics": {
         "rol": "OFICIAL TECNOLOGIA",
         "area": "TECNOLOGIA",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 4 · usoInteligenciaArtificial: gap 3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=4.00), usoInteligenciaArtificial (gap=3.00), madurezDigital (gap=2.00), brechaDigital (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,32 +231,42 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "SUPERVISOR TECNICO",
+      "aspiracion_slug": "mandos"
     },
     "iniciativas": [
       {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "prioridad": "Alta",
-        "plazoEstimado": "6-8 semanas",
+        "id": "CU-04",
+        "titulo": "Reconocimiento a iniciativas de mejora",
+        "descripcion": "Mecanismo trimestral de reconocimiento a iniciativas con resultado medible.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "12 semanas",
         "rolesPreferidos": [
-          "liderazgo"
+          "liderazgo",
+          "mandos"
         ],
         "tags": [
+          "reconocimiento",
+          "resultados"
+        ],
+        "rutaDeCarrera": [
           "liderazgo",
-          "objetivos"
+          "mandos"
         ],
         "type": "OKR",
         "subdimensiones": [
-          "liderazgoYVision"
+          "reconocimiento"
         ],
-        "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
         "key_results": [
           {
-            "metric": "liderazgoYVision",
-            "target": "+1.0"
+            "metric": "ambienteDeAprendizaje",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "apoyoOrganizacional",
+            "target": "8.0/10"
           }
         ]
       },
@@ -276,6 +287,10 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -285,47 +300,57 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "id": "IA-07",
+        "titulo": "Evaluación A/B de asistentes",
+        "descripcion": "Probar 2 asistentes IA en un proceso (ej. respuestas de soporte) y comparar métricas de tiempo/calidad.",
         "areaEnfoque": "Enablement",
         "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "comercial",
-          "operaciones"
+          "operaciones",
+          "comercial"
         ],
         "tags": [
-          "repositorio",
-          "prompt"
+          "experimento",
+          "calidad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "habilidadDeUso"
+          "eticaYVerificacion"
         ],
-        "metric": "habilidaddeuso",
+        "metric": "eticayverificacion",
         "target": "8.0/10"
       },
       {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
+          "rrhh",
           "mandos",
           "tecnico"
         ],
         "tags": [
-          "comunidad",
-          "aprendizaje"
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ambienteDeAprendizaje"
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
         ],
-        "metric": "ambienteDeAprendizaje",
+        "metric": "eticayverificacion",
         "target": "8.0/10"
       }
     ]

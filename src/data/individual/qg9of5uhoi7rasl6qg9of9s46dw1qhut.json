@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.475Z",
+  "generated_at": "2025-09-23T18:26:54.145Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.475Z",
+    "generatedAt": "2025-09-23T18:26:54.145Z",
     "schema": "individual-1.0",
     "id": "qg9of5uhoi7rasl6qg9of9s46dw1qhut",
     "subject": {
       "nombreCompleto": "ADRIAN ORTEGA",
       "email": "aortega1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.475Z",
+      "assessed_on": "2025-09-23T18:26:54.145Z",
       "demographics": {
         "rol": "BANCO DEL BARRIO",
         "area": "Banco del barrio",
@@ -217,6 +217,54 @@
     },
     "iniciativas": [
       {
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "mandos"
+        ],
+        "tags": [
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
+        "prioridad": "Media",
+        "plazoEstimado": "2-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
         "id": "MD-03",
         "titulo": "Taller de resolución de problemas complejos",
         "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
@@ -230,6 +278,10 @@
         "tags": [
           "capacitacion",
           "analitica"
+        ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -253,49 +305,12 @@
           "gobierno",
           "calidad"
         ],
+        "rutaDeCarrera": [
+          "analitica_datos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
-        ]
-      },
-      {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "colaboracionDigital"
-        ]
-      },
-      {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "todos"
-        ],
-        "tags": [
-          "seguridad",
-          "practicas"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ciberseguridad"
         ]
       }
     ]

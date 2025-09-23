@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.518Z",
+  "generated_at": "2025-09-23T18:26:54.194Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.518Z",
+    "generatedAt": "2025-09-23T18:26:54.194Z",
     "schema": "individual-1.0",
     "id": "jf5efyu1resmbfjjf5efygzpx7ru2mts",
     "subject": {
       "nombreCompleto": "Kamila Romero Jaramillo",
       "email": "kromero1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.518Z",
+      "assessed_on": "2025-09-23T18:26:54.194Z",
       "demographics": {
         "rol": "Guía de agencia",
         "area": "Segmentos y canales",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 1.7 · usoInteligenciaArtificial: gap 1.3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=1.70), usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'guia'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,29 +227,34 @@
         }
       ],
       "role": "guia",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Al área de auditoría",
+      "aspiracion_slug": "tecnico"
     },
     "iniciativas": [
       {
-        "id": "CD-01",
-        "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración y seguridad; con evaluación inicial y final.",
+        "id": "CD-04",
+        "titulo": "Mentoring entre pares",
+        "descripcion": "Pareo mensual para práctica dirigida de competencias digitales con retos cortos.",
         "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "8-10 semanas",
+        "prioridad": "Baja",
+        "plazoEstimado": "8 semanas",
         "rolesPreferidos": [
-          "rrhh",
-          "mandos"
+          "mandos",
+          "tecnico"
         ],
         "tags": [
-          "capacitacion",
           "colaboracion",
-          "seguridad"
+          "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos",
+          "tecnico"
         ],
         "type": "OKR",
         "subdimensiones": [
-          "colaboracionDigital",
-          "ciberseguridad"
+          "colaboracionDigital"
         ],
         "key_results": [
           {
@@ -260,6 +266,34 @@
             "target": "8.0/10"
           }
         ]
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
@@ -277,6 +311,10 @@
           "capacitacion",
           "etica",
           "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -301,34 +339,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "colaboracionDigital"
-        ],
-        "metric": "colaboracionDigital",
         "target": "8.0/10"
       }
     ]

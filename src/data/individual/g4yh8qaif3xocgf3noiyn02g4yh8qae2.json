@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.917Z",
+  "generated_at": "2025-09-23T18:26:54.590Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.917Z",
+    "generatedAt": "2025-09-23T18:26:54.590Z",
     "schema": "individual-1.0",
     "id": "g4yh8qaif3xocgf3noiyn02g4yh8qae2",
     "subject": {
       "nombreCompleto": "PRISCLA FILIAN ANASTACIO",
       "email": "pfilian@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.917Z",
+      "assessed_on": "2025-09-23T18:26:54.590Z",
       "demographics": {
         "rol": "JEFE DE AGENCIA",
         "area": "SEGMENTOS Y CANALES",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 1.3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'subgerente_zonal'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='subgerente_zonal'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Subgerente zonal",
+      "aspiracion_slug": "subgerente_zonal"
     },
     "iniciativas": [
       {
@@ -243,6 +246,10 @@
         "tags": [
           "reconocimiento",
           "resultados"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -276,6 +283,10 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -299,6 +310,10 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
@@ -307,26 +322,30 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3 meses",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "liderazgo",
+          "comercial",
+          "tecnico",
           "mandos"
         ],
         "tags": [
-          "experimentacion",
-          "reconocimiento"
+          "capacitacion",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
+          "habilidadDeUso"
         ],
-        "metric": "reconocimiento",
+        "metric": "habilidaddeuso",
         "target": "8.0/10"
       }
     ]

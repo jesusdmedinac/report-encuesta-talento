@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.927Z",
+  "generated_at": "2025-09-23T18:26:54.599Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.927Z",
+    "generatedAt": "2025-09-23T18:26:54.599Z",
     "schema": "individual-1.0",
     "id": "12zy8vcuu4co4u5iu12zy8882ael6tx0",
     "subject": {
       "nombreCompleto": "Karen Mabel Arévalo Aguilar",
       "email": "karenec98@yahoo.com",
-      "assessed_on": "2025-09-23T16:06:11.927Z",
+      "assessed_on": "2025-09-23T18:26:54.599Z",
       "demographics": {
         "rol": "Asesor de crédito",
         "area": "Microcredito",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -218,7 +219,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Gerente",
+      "aspiracion_slug": "gerente"
     },
     "iniciativas": [
       {
@@ -239,6 +242,10 @@
           "productividad",
           "cliente"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "nivelDeAdopcion",
@@ -254,6 +261,61 @@
             "target": "8.0/10"
           }
         ]
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "tecnico",
+          "mandos"
+        ],
+        "tags": [
+          "capacitacion",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
@@ -272,56 +334,16 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
           "percepcionDeRiesgo"
         ],
         "metric": "percepcionDeRiesgo",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "comercial",
-          "operaciones"
-        ],
-        "tags": [
-          "repositorio",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "habilidadDeUso"
-        ],
-        "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-03",
-        "titulo": "Taller de resolución de problemas complejos",
-        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "capacitacion",
-          "analitica"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "resolucionDeProblemas"
-        ],
-        "metric": "resoluciondeproblemas",
         "target": "8.0/10"
       }
     ]

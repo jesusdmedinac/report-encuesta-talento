@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.622Z",
+  "generated_at": "2025-09-23T18:26:54.314Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.622Z",
+    "generatedAt": "2025-09-23T18:26:54.314Z",
     "schema": "individual-1.0",
     "id": "xg43mvxu1afp724ch21kxg43mun7kmh7",
     "subject": {
       "nombreCompleto": "yo el mismo",
       "email": "",
-      "assessed_on": "2025-09-23T16:06:11.622Z",
+      "assessed_on": "2025-09-23T18:26:54.314Z",
       "demographics": {
         "rol": "Lider de Desarrollo",
         "area": "TEC",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=3.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'ya_lo_logre'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='ya_lo_logre'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -218,7 +219,9 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Ya lo logré",
+      "aspiracion_slug": "ya_lo_logre"
     },
     "iniciativas": [
       {
@@ -235,6 +238,9 @@
         "tags": [
           "adopcion",
           "gobierno"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -270,6 +276,38 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -293,35 +331,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
-        ],
-        "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
         "target": "8.0/10"
       }
     ]

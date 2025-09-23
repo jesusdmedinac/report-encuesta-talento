@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:10.889Z",
+  "generated_at": "2025-09-23T18:26:53.510Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:10.889Z",
+    "generatedAt": "2025-09-23T18:26:53.510Z",
     "schema": "individual-1.0",
     "id": "7x75ozkzof52kx38287x756s8ypv2k3z",
     "subject": {
       "nombreCompleto": "Luis Vega",
       "email": "lvega@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:10.889Z",
+      "assessed_on": "2025-09-23T18:26:53.510Z",
       "demographics": {
         "rol": "Gestor",
         "area": "Banco del barrio",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · brechaDigital: gap 1.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.00), madurezDigital (gap=0.90), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'supervisar'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='supervisar'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Supervisar",
+      "aspiracion_slug": "supervisar"
     },
     "iniciativas": [
       {
@@ -250,6 +253,10 @@
           "pilotos",
           "productividad",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -281,6 +288,36 @@
           "seguridad",
           "practicas"
         ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-05",
+        "titulo": "Curso práctico de ciberseguridad laboral",
+        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Alta",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos",
+          "operaciones"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ciberseguridad"
@@ -304,36 +341,15 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
         ],
         "metric": "colaboraciondigital",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
-        ],
-        "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "eticayverificacion",
         "target": "8.0/10"
       }
     ]

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.063Z",
+  "generated_at": "2025-09-23T18:26:54.705Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.063Z",
+    "generatedAt": "2025-09-23T18:26:54.705Z",
     "schema": "individual-1.0",
     "id": "jqiiuplqg2hs44q550eubr7jqiiupls8",
     "subject": {
       "nombreCompleto": "Fernando Tabares",
       "email": "ftabares@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.063Z",
+      "assessed_on": "2025-09-23T18:26:54.705Z",
       "demographics": {
         "rol": "Oficial de sistemas",
         "area": "Ism",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · brechaDigital: gap 1.3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), brechaDigital (gap=1.30), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Me gustaría formar parte del área administrativa",
+      "aspiracion_slug": "operaciones"
     },
     "iniciativas": [
       {
@@ -246,6 +249,9 @@
         "tags": [
           "liderazgo",
           "objetivos"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -275,6 +281,36 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-06",
+        "titulo": "Taller de colaboración en suites actuales",
+        "descripcion": "Workshop hands-on para crear plantillas, permisos y tableros con la suite corporativa.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "2 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "colaboracion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "comercial",
+          "operaciones"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
@@ -296,33 +332,15 @@
           "seguridad",
           "practicas"
         ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "operaciones"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ciberseguridad"
         ],
         "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "comunidad",
-          "aprendizaje"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ambienteDeAprendizaje"
-        ],
-        "metric": "ambienteDeAprendizaje",
         "target": "8.0/10"
       }
     ]

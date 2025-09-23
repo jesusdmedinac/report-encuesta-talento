@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.378Z",
+  "generated_at": "2025-09-23T18:26:54.029Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.378Z",
+    "generatedAt": "2025-09-23T18:26:54.029Z",
     "schema": "individual-1.0",
     "id": "fijv2o0td5x2k4c60fijvrwh9iutun3l",
     "subject": {
       "nombreCompleto": "genesis castillo",
       "email": "gcastillo201298@gmail.com",
-      "assessed_on": "2025-09-23T16:06:11.378Z",
+      "assessed_on": "2025-09-23T18:26:54.029Z",
       "demographics": {
         "rol": "cajero",
         "area": "operaciones",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 1.4 · madurezDigital: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=1.40), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "asistente en operaciones",
+      "aspiracion_slug": "operaciones"
     },
     "iniciativas": [
       {
@@ -241,6 +244,10 @@
           "colaboracion",
           "seguridad"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "colaboracionDigital",
@@ -258,6 +265,58 @@
         ]
       },
       {
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "mandos"
+        ],
+        "tags": [
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ],
+        "metric": "proactividaddigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
+        "prioridad": "Media",
+        "plazoEstimado": "2-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ],
+        "metric": "proactividaddigital",
+        "target": "8.0/10"
+      },
+      {
         "id": "MD-03",
         "titulo": "Taller de resolución de problemas complejos",
         "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
@@ -272,58 +331,15 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
         ],
         "metric": "resoluciondeproblemas",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
-        ],
-        "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "colaboracionDigital"
-        ],
-        "metric": "colaboracionDigital",
         "target": "8.0/10"
       }
     ]

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.671Z",
+  "generated_at": "2025-09-23T18:26:54.365Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.671Z",
+    "generatedAt": "2025-09-23T18:26:54.365Z",
     "schema": "individual-1.0",
     "id": "gdclf1zdmh2n9mzn7u3ungdclfnuymfy",
     "subject": {
       "nombreCompleto": "ADOLFO DE JESUS LEON HERRERA",
       "email": "aleon@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.671Z",
+      "assessed_on": "2025-09-23T18:26:54.365Z",
       "demographics": {
         "rol": "ANALISTA CONTABLE",
         "area": "CONTABILIDAD",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.9.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "operaciones",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "LIDER CONTABLE O FINANCIERO",
+      "aspiracion_slug": "liderazgo"
     },
     "iniciativas": [
       {
@@ -239,6 +242,9 @@
           "liderazgo",
           "objetivos"
         ],
+        "rutaDeCarrera": [
+          "liderazgo"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "liderazgoYVision"
@@ -250,6 +256,34 @@
             "target": "+1.0"
           }
         ]
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
       },
       {
         "id": "IA-03",
@@ -266,6 +300,10 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
@@ -274,51 +312,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "IA-07",
+        "titulo": "Evaluación A/B de asistentes",
+        "descripcion": "Probar 2 asistentes IA en un proceso (ej. respuestas de soporte) y comparar métricas de tiempo/calidad.",
+        "areaEnfoque": "Enablement",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "rrhh",
-          "mandos",
+          "operaciones",
           "comercial"
         ],
         "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
+          "experimento",
+          "calidad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
+          "eticaYVerificacion"
         ],
         "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
-        "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
-        ],
-        "tags": [
-          "experimentacion",
-          "reconocimiento"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
-        ],
-        "metric": "experimentacion",
         "target": "8.0/10"
       }
     ]

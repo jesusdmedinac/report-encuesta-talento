@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.100Z",
+  "generated_at": "2025-09-23T18:26:54.745Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.100Z",
+    "generatedAt": "2025-09-23T18:26:54.745Z",
     "schema": "individual-1.0",
     "id": "2iaoqfguveez15qs88c2iaoqmpdon9d3",
     "subject": {
       "nombreCompleto": "Pablo Aguilera Chavarria",
       "email": "paguilera@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.100Z",
+      "assessed_on": "2025-09-23T18:26:54.745Z",
       "demographics": {
         "rol": "Facilitador Agile",
         "area": "Productos e Innovación",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 1.3.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.30), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,34 +231,99 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Hacia una posición de Mando Medio",
+      "aspiracion_slug": "mandos"
     },
     "iniciativas": [
       {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
+        "id": "CU-07",
+        "titulo": "Programa de mentores digitales",
+        "descripcion": "Entrenar 5 mentores internos para acompañar squads en adopción de prácticas digitales.",
         "areaEnfoque": "Liderazgo",
         "prioridad": "Alta",
-        "plazoEstimado": "6-8 semanas",
+        "plazoEstimado": "8-10 semanas",
         "rolesPreferidos": [
-          "liderazgo"
+          "liderazgo",
+          "mandos"
         ],
         "tags": [
           "liderazgo",
-          "objetivos"
+          "coaching"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
         ],
         "type": "OKR",
         "subdimensiones": [
           "liderazgoYVision"
         ],
-        "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
         "key_results": [
           {
             "metric": "liderazgoYVision",
-            "target": "+1.0"
+            "target": "8.0/10"
+          },
+          {
+            "metric": "ambienteDeAprendizaje",
+            "target": "8.0/10"
           }
         ]
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "tecnico",
+          "mandos"
+        ],
+        "tags": [
+          "capacitacion",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
@@ -276,56 +342,16 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
           "percepcionDeRiesgo"
         ],
         "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "comercial",
-          "operaciones"
-        ],
-        "tags": [
-          "repositorio",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "habilidadDeUso"
-        ],
-        "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "comunidad",
-          "aprendizaje"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ambienteDeAprendizaje"
-        ],
-        "metric": "ambienteDeAprendizaje",
         "target": "8.0/10"
       }
     ]

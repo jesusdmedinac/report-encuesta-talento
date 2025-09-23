@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.227Z",
+  "generated_at": "2025-09-23T18:26:53.849Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.227Z",
+    "generatedAt": "2025-09-23T18:26:53.849Z",
     "schema": "individual-1.0",
     "id": "5ij954hpcfqelfotqrx6i5ij95422tte",
     "subject": {
       "nombreCompleto": "HECTOR FERNANDO ARREAGA CRESPO",
       "email": "harreaga@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.227Z",
+      "assessed_on": "2025-09-23T18:26:53.849Z",
       "demographics": {
         "rol": "GESTOR DE MICROCREDITO",
         "area": "GESTOR DE MICROCREDITO",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · culturaOrganizacional: gap 1.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,40 +223,46 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "OCUPAR UN CARGO GERENCIAL Y POTENCIAR EL PRODUCTO AL AREA DE MICROCREDITO",
+      "aspiracion_slug": "tecnico"
     },
     "iniciativas": [
       {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "id": "IA-06",
+        "titulo": "Hackatón interno de IA",
+        "descripcion": "Participa en un hackatón de 1 día para resolver un caso de negocio con IA y presentar resultados.",
         "areaEnfoque": "Innovación Aplicada",
-        "prioridad": "Alta",
-        "plazoEstimado": "6-10 semanas",
+        "prioridad": "Media",
+        "plazoEstimado": "2 semanas",
         "rolesPreferidos": [
           "tecnico",
-          "operaciones",
-          "liderazgo"
+          "gestion",
+          "comercial"
         ],
         "tags": [
           "ia",
-          "pilotos",
-          "productividad",
+          "experimentacion",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "gestion_producto"
         ],
         "type": "OKR",
         "subdimensiones": [
           "nivelDeAdopcion",
           "habilidadDeUso"
         ],
+        "objective": "Impulsar prototipos con foco en valor al cliente",
         "key_results": [
           {
-            "metric": "percepcionDeRiesgo",
-            "target": "8.0/10"
+            "metric": "nivelDeAdopcion",
+            "target": "+0.5"
           },
           {
-            "metric": "nivelDeAdopcion",
-            "target": "8.0/10"
+            "metric": "habilidadDeUso",
+            "target": "+0.5"
           }
         ]
       },
@@ -273,6 +280,37 @@
         "tags": [
           "comunidad",
           "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambientedeaprendizaje",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-05",
+        "titulo": "Comunidades de práctica por rol",
+        "descripcion": "Lanzar una comunidad por rol (ventas, PM, soporte) con demos y retos mensuales.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico",
+          "comercial"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -296,37 +334,16 @@
           "experimentacion",
           "reconocimiento"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "experimentacion",
           "reconocimiento"
         ],
         "metric": "experimentacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
-        ],
-        "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "percepcionDeRiesgo",
         "target": "8.0/10"
       }
     ]

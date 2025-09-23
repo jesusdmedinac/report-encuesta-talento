@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.093Z",
+  "generated_at": "2025-09-23T18:26:54.737Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.093Z",
+    "generatedAt": "2025-09-23T18:26:54.737Z",
     "schema": "individual-1.0",
     "id": "7rs8ok1pr5bqcic49ond7rswv2lqwe5g",
     "subject": {
       "nombreCompleto": "Lilibeth Mena",
       "email": "lmena@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.093Z",
+      "assessed_on": "2025-09-23T18:26:54.737Z",
       "demographics": {
         "rol": "Cajero financiero",
         "area": "Red y sucursales",
@@ -217,6 +217,54 @@
     },
     "iniciativas": [
       {
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "mandos"
+        ],
+        "tags": [
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
+        "prioridad": "Media",
+        "plazoEstimado": "2-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
         "id": "MD-02",
         "titulo": "Gobernanza de datos mínima viable",
         "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
@@ -232,6 +280,9 @@
           "datos",
           "gobierno",
           "calidad"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -253,49 +304,13 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
-        ]
-      },
-      {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "colaboracionDigital"
-        ]
-      },
-      {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "todos"
-        ],
-        "tags": [
-          "seguridad",
-          "practicas"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ciberseguridad"
         ]
       }
     ]

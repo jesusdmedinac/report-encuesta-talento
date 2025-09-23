@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.299Z",
+  "generated_at": "2025-09-23T18:26:53.936Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.299Z",
+    "generatedAt": "2025-09-23T18:26:53.936Z",
     "schema": "individual-1.0",
     "id": "e32cuauvq5hosztre32cudp4bkude406",
     "subject": {
       "nombreCompleto": "victor valdez",
       "email": "vvaldez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.299Z",
+      "assessed_on": "2025-09-23T18:26:53.936Z",
       "demographics": {
         "rol": "asistente senior -",
         "area": "operaciones",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.4 · usoInteligenciaArtificial: gap 2.2.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.40), usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'oficia_senior'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='oficia_senior'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "asistente",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "oficia senior",
+      "aspiracion_slug": "oficia_senior"
     },
     "iniciativas": [
       {
@@ -244,6 +247,9 @@
           "roadmap",
           "procesos",
           "priorizacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -279,6 +285,10 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -288,47 +298,57 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "id": "IA-07",
+        "titulo": "Evaluación A/B de asistentes",
+        "descripcion": "Probar 2 asistentes IA en un proceso (ej. respuestas de soporte) y comparar métricas de tiempo/calidad.",
         "areaEnfoque": "Enablement",
         "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "comercial",
-          "operaciones"
+          "operaciones",
+          "comercial"
         ],
         "tags": [
-          "repositorio",
-          "prompt"
+          "experimento",
+          "calidad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "habilidadDeUso"
+          "eticaYVerificacion"
         ],
-        "metric": "habilidaddeuso",
+        "metric": "eticayverificacion",
         "target": "8.0/10"
       },
       {
-        "id": "MD-03",
-        "titulo": "Taller de resolución de problemas complejos",
-        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
-        "areaEnfoque": "Talento y Formación",
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
+          "rrhh",
           "mandos",
           "tecnico"
         ],
         "tags": [
-          "capacitacion",
-          "analitica"
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "resolucionDeProblemas"
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
         ],
-        "metric": "resolucionDeProblemas",
+        "metric": "eticayverificacion",
         "target": "8.0/10"
       }
     ]

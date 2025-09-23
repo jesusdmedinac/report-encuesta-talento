@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.127Z",
+  "generated_at": "2025-09-23T18:26:53.733Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.127Z",
+    "generatedAt": "2025-09-23T18:26:53.733Z",
     "schema": "individual-1.0",
     "id": "d5uosq4cefbml5ykv41d5uosqyy7n5dt",
     "subject": {
       "nombreCompleto": "Jorge Fuentes alvarado",
       "email": "jfuentes1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.127Z",
+      "assessed_on": "2025-09-23T18:26:53.733Z",
       "demographics": {
         "rol": "Supervisor de Microcrédito",
         "area": "Microcrédito",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · madurezDigital: gap 0.8.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), madurezDigital (gap=0.80), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'mandos'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "mandos",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Gerencia",
+      "aspiracion_slug": "gerencia"
     },
     "iniciativas": [
       {
@@ -243,6 +246,9 @@
         "tags": [
           "adopcion",
           "gobierno"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -276,6 +282,10 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
@@ -284,21 +294,23 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -308,28 +320,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
+          "operaciones",
+          "mandos"
         ],
         "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
+          "proactividadDigital"
         ],
-        "metric": "eticayverificacion",
+        "metric": "proactividaddigital",
         "target": "8.0/10"
       }
     ]

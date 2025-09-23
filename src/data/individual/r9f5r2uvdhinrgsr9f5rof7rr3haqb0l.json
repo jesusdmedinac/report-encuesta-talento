@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.318Z",
+  "generated_at": "2025-09-23T18:26:54.988Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.318Z",
+    "generatedAt": "2025-09-23T18:26:54.988Z",
     "schema": "individual-1.0",
     "id": "r9f5r2uvdhinrgsr9f5rof7rr3haqb0l",
     "subject": {
       "nombreCompleto": "KRYSTELL CAROLINA CAICEDO",
       "email": "KCAICEDO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T16:06:12.318Z",
+      "assessed_on": "2025-09-23T18:26:54.988Z",
       "demographics": {
         "rol": "ANALISTA",
         "area": "Cumplimiento",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analista'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "analista",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Me interesa crecer en posiciones donde pueda combinar habilidades de comunicación y negociación, liderar equipos comerciales y contribuir al crecimiento de la empresa, mientras sigo aprendiendo y desarrollándome profesionalmente.",
+      "aspiracion_slug": "liderazgo"
     },
     "iniciativas": [
       {
@@ -247,6 +250,9 @@
           "liderazgo",
           "objetivos"
         ],
+        "rutaDeCarrera": [
+          "liderazgo"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "liderazgoYVision"
@@ -258,6 +264,34 @@
             "target": "+1.0"
           }
         ]
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
@@ -275,6 +309,10 @@
           "capacitacion",
           "etica",
           "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -299,33 +337,15 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "comunidad",
-          "aprendizaje"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ambienteDeAprendizaje"
-        ],
-        "metric": "ambienteDeAprendizaje",
         "target": "8.0/10"
       }
     ]

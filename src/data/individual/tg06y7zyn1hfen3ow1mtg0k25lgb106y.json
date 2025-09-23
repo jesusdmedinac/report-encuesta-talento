@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.579Z",
+  "generated_at": "2025-09-23T18:26:54.269Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.579Z",
+    "generatedAt": "2025-09-23T18:26:54.269Z",
     "schema": "individual-1.0",
     "id": "tg06y7zyn1hfen3ow1mtg0k25lgb106y",
     "subject": {
       "nombreCompleto": "Haily Celina Carrillo Puma",
       "email": "hailypuma15@gmail.com",
-      "assessed_on": "2025-09-23T16:06:11.579Z",
+      "assessed_on": "2025-09-23T18:26:54.269Z",
       "demographics": {
         "rol": "Cajera financiera",
         "area": "Operativo",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · brechaDigital: gap 0.8.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), brechaDigital (gap=0.80), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'admistrativo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='admistrativo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "cajera",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Admistrativo",
+      "aspiracion_slug": "admistrativo"
     },
     "iniciativas": [
       {
@@ -242,6 +245,9 @@
         "tags": [
           "liderazgo",
           "objetivos"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -271,6 +277,10 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
@@ -292,6 +302,10 @@
           "seguridad",
           "practicas"
         ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "operaciones"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ciberseguridad"
@@ -300,26 +314,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
+        "id": "CD-05",
+        "titulo": "Curso práctico de ciberseguridad laboral",
+        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Alta",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
+          "todos"
         ],
         "tags": [
-          "experimentacion",
-          "reconocimiento"
+          "seguridad",
+          "practicas"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos",
+          "operaciones"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
+          "ciberseguridad"
         ],
-        "metric": "experimentacion",
+        "metric": "ciberseguridad",
         "target": "8.0/10"
       }
     ]

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.943Z",
+  "generated_at": "2025-09-23T18:26:54.614Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.943Z",
+    "generatedAt": "2025-09-23T18:26:54.614Z",
     "schema": "individual-1.0",
     "id": "i272wb6w0wdn4orlmwn5i272w3irnz7j",
     "subject": {
       "nombreCompleto": "Byron Moran Moncayo",
       "email": "bmoran@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.943Z",
+      "assessed_on": "2025-09-23T18:26:54.614Z",
       "demographics": {
         "rol": "encargado de los sistemas de climatizacion/ purificadores de agua/ neveras/ bombas de agua",
         "area": "administracion",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · culturaOrganizacional: gap 1.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=1.50), brechaDigital (gap=1.40), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'encargado'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'senior'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='senior'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "encargado",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "SENIOR",
+      "aspiracion_slug": "senior"
     },
     "iniciativas": [
       {
@@ -250,6 +253,10 @@
           "pilotos",
           "productividad",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -282,6 +289,10 @@
           "experimentacion",
           "reconocimiento"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "experimentacion",
@@ -305,6 +316,10 @@
           "comunidad",
           "aprendizaje"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ambienteDeAprendizaje"
@@ -313,28 +328,30 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "CU-05",
+        "titulo": "Comunidades de práctica por rol",
+        "descripcion": "Lanzar una comunidad por rol (ventas, PM, soporte) con demos y retos mensuales.",
+        "areaEnfoque": "Cultura y Cambio",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "8 semanas",
         "rolesPreferidos": [
-          "rrhh",
           "mandos",
+          "tecnico",
           "comercial"
         ],
         "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
+          "comunidad",
+          "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
+          "ambienteDeAprendizaje"
         ],
-        "metric": "eticaYVerificacion",
+        "metric": "ambienteDeAprendizaje",
         "target": "8.0/10"
       }
     ]

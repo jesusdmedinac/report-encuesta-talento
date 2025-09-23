@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.754Z",
+  "generated_at": "2025-09-23T18:26:54.455Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.754Z",
+    "generatedAt": "2025-09-23T18:26:54.455Z",
     "schema": "individual-1.0",
     "id": "bf7zyt5mlbl20uhopbf7z55vmqjbfsvj",
     "subject": {
       "nombreCompleto": "SCARLEY GARCIA VILLENA",
       "email": "sgarcia@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.754Z",
+      "assessed_on": "2025-09-23T18:26:54.455Z",
       "demographics": {
         "rol": "GESTOR",
         "area": "NEGOCIOS ESPECIALIZADOS",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 3 · usoInteligenciaArtificial: gap 1.7.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=3.00), usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.40), madurezDigital (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "ME GUSTARIA POSICIONARME EN UN AREA CREATIVA QUE PUEDA APORTAR IDEAS PARA EL DESARROLLO DEL NEGOCIO COMO EL AREA DE MARTKETING",
+      "aspiracion_slug": "tecnico"
     },
     "iniciativas": [
       {
@@ -247,6 +250,9 @@
           "liderazgo",
           "objetivos"
         ],
+        "rutaDeCarrera": [
+          "liderazgo"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "liderazgoYVision"
@@ -258,6 +264,34 @@
             "target": "+1.0"
           }
         ]
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
       },
       {
         "id": "IA-03",
@@ -274,6 +308,10 @@
           "repositorio",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "habilidadDeUso"
@@ -282,50 +320,30 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
         "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
+          "comercial",
+          "tecnico",
+          "mandos"
         ],
         "tags": [
           "capacitacion",
-          "etica",
           "prompt"
         ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "comunidad",
-          "aprendizaje"
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ambienteDeAprendizaje"
+          "habilidadDeUso"
         ],
-        "metric": "ambienteDeAprendizaje",
+        "metric": "habilidaddeuso",
         "target": "8.0/10"
       }
     ]

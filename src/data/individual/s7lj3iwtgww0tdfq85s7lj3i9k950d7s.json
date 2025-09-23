@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.759Z",
+  "generated_at": "2025-09-23T18:26:54.461Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.759Z",
+    "generatedAt": "2025-09-23T18:26:54.461Z",
     "schema": "individual-1.0",
     "id": "s7lj3iwtgww0tdfq85s7lj3i9k950d7s",
     "subject": {
       "nombreCompleto": "YAZMIN TACO",
       "email": "ytaco@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.759Z",
+      "assessed_on": "2025-09-23T18:26:54.461Z",
       "demographics": {
         "rol": "GESTOR NEGOCIOS ESPECIALIZADOS",
         "area": "CASA FACIL",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · culturaOrganizacional: gap 1.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), culturaOrganizacional (gap=1.50), brechaDigital (gap=1.30), madurezDigital (gap=1.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "GERENTE",
+      "aspiracion_slug": "gerente"
     },
     "iniciativas": [
       {
@@ -250,6 +253,10 @@
           "pilotos",
           "productividad",
           "cliente"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -282,6 +289,37 @@
           "comunidad",
           "aprendizaje"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-05",
+        "titulo": "Comunidades de práctica por rol",
+        "descripcion": "Lanzar una comunidad por rol (ventas, PM, soporte) con demos y retos mensuales.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico",
+          "comercial"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ambienteDeAprendizaje"
@@ -304,34 +342,16 @@
           "experimentacion",
           "reconocimiento"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "experimentacion",
           "reconocimiento"
         ],
         "metric": "experimentacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "comercial",
-          "operaciones"
-        ],
-        "tags": [
-          "repositorio",
-          "prompt"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "habilidadDeUso"
-        ],
-        "metric": "habilidadDeUso",
         "target": "8.0/10"
       }
     ]

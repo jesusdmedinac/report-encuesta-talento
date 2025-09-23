@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.171Z",
+  "generated_at": "2025-09-23T18:26:54.818Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.171Z",
+    "generatedAt": "2025-09-23T18:26:54.818Z",
     "schema": "individual-1.0",
     "id": "o61rcw7lj334j6eef9ckoo61rcw7ljc7",
     "subject": {
       "nombreCompleto": "Azucena Quiroga",
       "email": "aquiroga@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.171Z",
+      "assessed_on": "2025-09-23T18:26:54.818Z",
       "demographics": {
         "rol": "Ejecutivo de Empresas",
         "area": "Comercial Pymes",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.9.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.60). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -226,7 +227,9 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Líder de un Equipo",
+      "aspiracion_slug": "liderazgo"
     },
     "iniciativas": [
       {
@@ -244,6 +247,10 @@
           "reconocimiento",
           "resultados"
         ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "reconocimiento"
@@ -258,6 +265,34 @@
             "target": "8.0/10"
           }
         ]
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
@@ -276,6 +311,10 @@
           "etica",
           "prompt"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion",
@@ -285,48 +324,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "id": "IA-07",
+        "titulo": "Evaluación A/B de asistentes",
+        "descripcion": "Probar 2 asistentes IA en un proceso (ej. respuestas de soporte) y comparar métricas de tiempo/calidad.",
         "areaEnfoque": "Enablement",
         "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "comercial",
-          "operaciones"
+          "operaciones",
+          "comercial"
         ],
         "tags": [
-          "repositorio",
-          "prompt"
+          "experimento",
+          "calidad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "habilidadDeUso"
+          "eticaYVerificacion"
         ],
-        "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
-        "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
-        ],
-        "tags": [
-          "experimentacion",
-          "reconocimiento"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
-        ],
-        "metric": "reconocimiento",
+        "metric": "eticayverificacion",
         "target": "8.0/10"
       }
     ]

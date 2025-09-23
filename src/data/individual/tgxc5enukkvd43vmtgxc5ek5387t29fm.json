@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.728Z",
+  "generated_at": "2025-09-23T18:26:54.430Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.728Z",
+    "generatedAt": "2025-09-23T18:26:54.430Z",
     "schema": "individual-1.0",
     "id": "tgxc5enukkvd43vmtgxc5ek5387t29fm",
     "subject": {
       "nombreCompleto": "Diana Castillo Beltran",
       "email": "DCASTILLO1@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T16:06:11.728Z",
+      "assessed_on": "2025-09-23T18:26:54.430Z",
       "demographics": {
         "rol": "asesor comercial",
         "area": "Red de sucursales y agencias",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · brechaDigital: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), brechaDigital (gap=0.50), usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -230,7 +231,9 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Mi aspiración es inclinarme por el area de analisis financiero de personas y empresas para otorgar creditos",
+      "aspiracion_slug": "tecnico"
     },
     "iniciativas": [
       {
@@ -247,6 +250,9 @@
           "liderazgo",
           "objetivos"
         ],
+        "rutaDeCarrera": [
+          "liderazgo"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "liderazgoYVision"
@@ -258,6 +264,31 @@
             "target": "+1.0"
           }
         ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "rutaDeCarrera": [
+          "tecnico",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
       },
       {
         "id": "CD-02",
@@ -275,6 +306,10 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
@@ -283,46 +318,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
+        "id": "CD-06",
+        "titulo": "Taller de colaboración en suites actuales",
+        "descripcion": "Workshop hands-on para crear plantillas, permisos y tableros con la suite corporativa.",
+        "areaEnfoque": "Enablement",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2 semanas",
         "rolesPreferidos": [
-          "todos"
+          "comercial",
+          "operaciones"
         ],
         "tags": [
-          "seguridad",
-          "practicas"
+          "colaboracion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "comercial",
+          "operaciones"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ciberseguridad"
+          "colaboracionDigital"
         ],
-        "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CU-03",
-        "titulo": "Comunidades de práctica",
-        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
-        "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "8 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "comunidad",
-          "aprendizaje"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ambienteDeAprendizaje"
-        ],
-        "metric": "ambienteDeAprendizaje",
+        "metric": "colaboraciondigital",
         "target": "8.0/10"
       }
     ]

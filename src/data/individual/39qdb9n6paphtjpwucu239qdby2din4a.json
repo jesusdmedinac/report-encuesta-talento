@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.315Z",
+  "generated_at": "2025-09-23T18:26:54.975Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.315Z",
+    "generatedAt": "2025-09-23T18:26:54.975Z",
     "schema": "individual-1.0",
     "id": "39qdb9n6paphtjpwucu239qdby2din4a",
     "subject": {
       "nombreCompleto": "nelson andrade",
       "email": "nandrade2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.315Z",
+      "assessed_on": "2025-09-23T18:26:54.975Z",
       "demographics": {
         "rol": "analista",
         "area": "marketing",
@@ -217,6 +217,30 @@
     },
     "iniciativas": [
       {
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
+        "prioridad": "Media",
+        "plazoEstimado": "2-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
         "id": "MD-03",
         "titulo": "Taller de resolución de problemas complejos",
         "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
@@ -230,6 +254,10 @@
         "tags": [
           "capacitacion",
           "analitica"
+        ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -253,49 +281,36 @@
           "gobierno",
           "calidad"
         ],
+        "rutaDeCarrera": [
+          "analitica_datos"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
         ]
       },
       {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
         "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "operaciones",
-          "comercial"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "colaboracionDigital"
-        ]
-      },
-      {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "todos"
-        ],
-        "tags": [
-          "seguridad",
-          "practicas"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ciberseguridad"
+          "alfabetizacionDeDatos"
         ]
       }
     ]

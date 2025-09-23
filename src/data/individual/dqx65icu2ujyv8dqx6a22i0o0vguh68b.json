@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:12.074Z",
+  "generated_at": "2025-09-23T18:26:54.716Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:12.074Z",
+    "generatedAt": "2025-09-23T18:26:54.716Z",
     "schema": "individual-1.0",
     "id": "dqx65icu2ujyv8dqx6a22i0o0vguh68b",
     "subject": {
       "nombreCompleto": "Stalyn Ramirez Jaime",
       "email": "sramirez2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:12.074Z",
+      "assessed_on": "2025-09-23T18:26:54.716Z",
       "demographics": {
         "rol": "Productivity Application Lead",
         "area": "Enterprise Solutions",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'comercial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='comercial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Inteligencia comercial y customer experience",
+      "aspiracion_slug": "comercial"
     },
     "iniciativas": [
       {
@@ -243,6 +246,10 @@
           "productividad",
           "cliente"
         ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "liderazgo"
+        ],
         "type": "OKR",
         "subdimensiones": [
           "nivelDeAdopcion",
@@ -260,6 +267,33 @@
         ]
       },
       {
+        "id": "CU-05",
+        "titulo": "Comunidades de práctica por rol",
+        "descripcion": "Lanzar una comunidad por rol (ventas, PM, soporte) con demos y retos mensuales.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico",
+          "comercial"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
+      },
+      {
         "id": "CU-03",
         "titulo": "Comunidades de práctica",
         "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
@@ -274,6 +308,10 @@
           "comunidad",
           "aprendizaje"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "ambienteDeAprendizaje"
@@ -282,52 +320,30 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "id": "CU-08",
+        "titulo": "Serie de micro-retos de automatización",
+        "descripcion": "Retos quincenales para automatizar pequeñas tareas y compartir plantillas reutilizables.",
         "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
-        ],
-        "tags": [
-          "experimentacion",
-          "reconocimiento"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
-        ],
-        "metric": "experimentacion",
-        "target": "10.5/10"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
+          "operaciones",
           "comercial"
         ],
         "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
+          "experimentacion",
+          "automatizacion"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
+          "experimentacion"
         ],
-        "metric": "percepcionDeRiesgo",
-        "target": "8.0/10"
+        "metric": "experimentacion",
+        "target": "10.5/10"
       }
     ]
   }

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.717Z",
+  "generated_at": "2025-09-23T18:26:54.417Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.717Z",
+    "generatedAt": "2025-09-23T18:26:54.417Z",
     "schema": "individual-1.0",
     "id": "6srt1mi2hqihvvuwhvmlhu3v6srt1m94",
     "subject": {
       "nombreCompleto": "Sebastian Campoverde",
       "email": "jcampoverde2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.717Z",
+      "assessed_on": "2025-09-23T18:26:54.417Z",
       "demographics": {
         "rol": "Cajero financiero",
         "area": "Machala",
@@ -210,6 +210,7 @@
   "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2 · brechaDigital: gap 1.4.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.00), brechaDigital (gap=1.40). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -222,7 +223,9 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [],
+      "aspiracionProfesional": "Supervisor de caja",
+      "aspiracion_slug": "mandos"
     },
     "iniciativas": [
       {
@@ -240,6 +243,9 @@
           "roadmap",
           "procesos",
           "priorizacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
@@ -259,6 +265,57 @@
         ]
       },
       {
+        "id": "CD-08",
+        "titulo": "Clinics de dudas digitales",
+        "descripcion": "Espacios quincenales de 45 min para resolver casos reales y medir NPS de utilidad.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "aprendizaje",
+          "soporte"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-05",
+        "titulo": "Curso práctico de ciberseguridad laboral",
+        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Alta",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "mandos",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
+      },
+      {
         "id": "CD-02",
         "titulo": "Guías operativas de buenas prácticas digitales",
         "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
@@ -274,54 +331,15 @@
           "colaboracion",
           "procesos"
         ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "colaboracionDigital"
         ],
         "metric": "colaboraciondigital",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "todos"
-        ],
-        "tags": [
-          "seguridad",
-          "practicas"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ciberseguridad"
-        ],
-        "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-03",
-        "titulo": "Taller de resolución de problemas complejos",
-        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "capacitacion",
-          "analitica"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "resolucionDeProblemas"
-        ],
-        "metric": "resolucionDeProblemas",
         "target": "8.0/10"
       }
     ]

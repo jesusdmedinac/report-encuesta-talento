@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T16:06:11.638Z",
+  "generated_at": "2025-09-23T18:26:54.333Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T16:06:11.638Z",
+    "generatedAt": "2025-09-23T18:26:54.333Z",
     "schema": "individual-1.0",
     "id": "289vmzc619f0qnqv0289vrzpps9hmzbd",
     "subject": {
       "nombreCompleto": "Allan Romero",
       "email": "aromero@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T16:06:11.638Z",
+      "assessed_on": "2025-09-23T18:26:54.333Z",
       "demographics": {
         "rol": "Pasante de Banca empresas y cadena de valor",
         "area": "Banca Empresas",
@@ -231,27 +231,33 @@
           "capacitacion",
           "analitica"
         ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
         ]
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [
@@ -259,43 +265,51 @@
         ]
       },
       {
-        "id": "CD-03",
-        "titulo": "Clínica de ciberseguridad aplicada",
-        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
-        "areaEnfoque": "Seguridad",
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "todos"
+          "operaciones",
+          "mandos"
         ],
         "tags": [
-          "seguridad",
-          "practicas"
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ciberseguridad"
+          "proactividadDigital"
         ]
       },
       {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-4 semanas",
         "rolesPreferidos": [
           "operaciones",
           "comercial"
         ],
         "tags": [
-          "guias",
-          "colaboracion",
-          "procesos"
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "colaboracionDigital"
+          "proactividadDigital"
         ]
       }
     ]
