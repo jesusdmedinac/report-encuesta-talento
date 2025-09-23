@@ -3,74 +3,182 @@
     {
       "id": "MD-01",
       "titulo": "Definir hoja de ruta de madurez digital",
-      "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
+      "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
       "areaEnfoque": "Estrategia y Gobierno",
-      "objetivosClave": [
-        "Roadmap aprobado y comunicado",
-        "Prioridades Q1-Q2 definidas",
-        "KPIs de madurez acordados"
-      ],
-      "metricasExito": [
-        { "metrica": "Roadmap publicado", "valorObjetivo": "Antes de fin de mes" },
-        { "metrica": "% iniciativas con dueño", "valorObjetivo": ">= 90%" }
-      ],
-      "responsableSugerido": "PMO / Dirección de Transformación",
+      "prioridad": "Alta",
       "plazoEstimado": "6-8 semanas",
-      "prioridad": "Alta"
+      "rolesPreferidos": [
+        "liderazgo",
+        "mandos"
+      ],
+      "tags": [
+        "roadmap",
+        "procesos",
+        "priorizacion"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "resolucionDeProblemas",
+        "proactividadDigital"
+      ],
+      "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
+      "key_results": [
+        {
+          "metric": "resolucionDeProblemas",
+          "target": "+1.0"
+        },
+        {
+          "metric": "proactividadDigital",
+          "target": "+1.0"
+        }
+      ]
     },
     {
       "id": "MD-02",
-      "titulo": "Establecer gobernanza de datos mínima viable",
-      "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
+      "titulo": "Gobernanza de datos mínima viable",
+      "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
       "areaEnfoque": "Datos y Gobierno",
-      "objetivosClave": [
-        "Inventario de datos críticos",
-        "Roles y responsables definidos",
-        "Políticas de calidad y acceso"
-      ],
-      "metricasExito": [
-        { "metrica": "% dominios con owner", "valorObjetivo": ">= 80%" }
-      ],
-      "responsableSugerido": "Data Lead / TI",
+      "prioridad": "Alta",
       "plazoEstimado": "4-6 semanas",
-      "prioridad": "Alta"
+      "rolesPreferidos": [
+        "liderazgo",
+        "operaciones",
+        "tecnico"
+      ],
+      "tags": [
+        "datos",
+        "gobierno",
+        "calidad"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "alfabetizacionDeDatos"
+      ]
+    },
+    {
+      "id": "MD-03",
+      "titulo": "Taller de resolución de problemas complejos",
+      "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+      "areaEnfoque": "Talento y Formación",
+      "prioridad": "Media",
+      "plazoEstimado": "4-6 semanas",
+      "rolesPreferidos": [
+        "mandos",
+        "tecnico"
+      ],
+      "tags": [
+        "capacitacion",
+        "analitica"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "resolucionDeProblemas"
+      ]
+    },
+    {
+      "id": "MD-04",
+      "titulo": "Célula de mejora continua",
+      "descripcion": "Crear una célula multidisciplinaria para iterar mejoras y medir impacto por sprint.",
+      "areaEnfoque": "Estrategia y Gobierno",
+      "prioridad": "Media",
+      "plazoEstimado": "8-12 semanas",
+      "rolesPreferidos": [
+        "liderazgo",
+        "operaciones"
+      ],
+      "tags": [
+        "procesos",
+        "experimentacion"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "proactividadDigital",
+        "resolucionDeProblemas"
+      ]
     }
   ],
   "brechaDigital": [
     {
       "id": "CD-01",
       "titulo": "Programa de upskilling en competencias clave",
-      "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
+      "descripcion": "Formación práctica en adaptabilidad, colaboración y seguridad; con evaluación inicial y final.",
       "areaEnfoque": "Talento y Formación",
-      "objetivosClave": [
-        "Módulos de competencias priorizadas",
-        "Evaluaciones antes/después",
-        "Mentoría ligera"
-      ],
-      "metricasExito": [
-        { "metrica": "% de finalización", "valorObjetivo": ">= 75%" },
-        { "metrica": "+puntos en post-test", "valorObjetivo": "+1.0 (escala 1–10)" }
-      ],
-      "responsableSugerido": "L&D / HR",
+      "prioridad": "Media",
       "plazoEstimado": "8-10 semanas",
-      "prioridad": "Media"
+      "rolesPreferidos": [
+        "rrhh",
+        "mandos"
+      ],
+      "tags": [
+        "capacitacion",
+        "colaboracion",
+        "seguridad"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "colaboracionDigital",
+        "ciberseguridad"
+      ]
     },
     {
       "id": "CD-02",
       "titulo": "Guías operativas de buenas prácticas digitales",
-      "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+      "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
       "areaEnfoque": "Enablement",
-      "objetivosClave": [
-        "Guías por herramienta",
-        "Repositorio accesible",
-        "Sesiones de difusión"
-      ],
-      "metricasExito": [
-        { "metrica": "Guías publicadas", "valorObjetivo": ">= 5" }
-      ],
-      "responsableSugerido": "Ops / Champions",
+      "prioridad": "Media",
       "plazoEstimado": "3-4 semanas",
-      "prioridad": "Media"
+      "rolesPreferidos": [
+        "operaciones",
+        "comercial"
+      ],
+      "tags": [
+        "guias",
+        "colaboracion",
+        "procesos"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "colaboracionDigital"
+      ]
+    },
+    {
+      "id": "CD-03",
+      "titulo": "Clínica de ciberseguridad aplicada",
+      "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+      "areaEnfoque": "Seguridad",
+      "prioridad": "Media",
+      "plazoEstimado": "3-4 semanas",
+      "rolesPreferidos": [
+        "todos"
+      ],
+      "tags": [
+        "seguridad",
+        "practicas"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "ciberseguridad"
+      ]
+    },
+    {
+      "id": "CD-04",
+      "titulo": "Mentoring entre pares",
+      "descripcion": "Pareo mensual para práctica dirigida de competencias digitales con retos cortos.",
+      "areaEnfoque": "Talento y Formación",
+      "prioridad": "Baja",
+      "plazoEstimado": "8 semanas",
+      "rolesPreferidos": [
+        "mandos",
+        "tecnico"
+      ],
+      "tags": [
+        "colaboracion",
+        "aprendizaje"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "colaboracionDigital"
+      ]
     }
   ],
   "usoInteligenciaArtificial": [
@@ -79,71 +187,188 @@
       "titulo": "Pilotos de IA con casos de alto valor",
       "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
       "areaEnfoque": "Innovación Aplicada",
-      "objetivosClave": [
-        "Selección de casos",
-        "Pilotos ejecutados",
-        "Lecciones y escalamiento"
-      ],
-      "metricasExito": [
-        { "metrica": "Pilotos con ROI positivo", "valorObjetivo": ">= 2" }
-      ],
-      "responsableSugerido": "TI / Negocio",
+      "prioridad": "Alta",
       "plazoEstimado": "6-10 semanas",
-      "prioridad": "Alta"
+      "rolesPreferidos": [
+        "tecnico",
+        "operaciones",
+        "liderazgo"
+      ],
+      "tags": [
+        "ia",
+        "pilotos",
+        "productividad",
+        "cliente"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "nivelDeAdopcion",
+        "habilidadDeUso"
+      ]
     },
     {
       "id": "IA-02",
       "titulo": "Capacitación en prompt engineering y ética",
-      "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+      "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
       "areaEnfoque": "Talento y Ética",
-      "objetivosClave": [
-        "Plantillas de prompts",
-        "Checklist de verificación",
-        "Casos prácticos"
-      ],
-      "metricasExito": [
-        { "metrica": "% asistentes certificados", "valorObjetivo": ">= 70%" }
-      ],
-      "responsableSugerido": "L&D / Legal",
+      "prioridad": "Media",
       "plazoEstimado": "4-6 semanas",
-      "prioridad": "Media"
+      "rolesPreferidos": [
+        "rrhh",
+        "mandos",
+        "comercial"
+      ],
+      "tags": [
+        "capacitacion",
+        "etica",
+        "prompt"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "eticaYVerificacion",
+        "percepcionDeRiesgo"
+      ]
+    },
+    {
+      "id": "IA-03",
+      "titulo": "Biblioteca de casos y prompts reutilizables",
+      "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+      "areaEnfoque": "Enablement",
+      "prioridad": "Media",
+      "plazoEstimado": "3-4 semanas",
+      "rolesPreferidos": [
+        "comercial",
+        "operaciones"
+      ],
+      "tags": [
+        "repositorio",
+        "prompt"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "habilidadDeUso"
+      ]
+    },
+    {
+      "id": "IA-04",
+      "titulo": "Programa de adopción controlada",
+      "descripcion": "Roadmap de adopción con pilotos escalonados, criterios de calidad y seguimiento de riesgos.",
+      "areaEnfoque": "Innovación Aplicada",
+      "prioridad": "Alta",
+      "plazoEstimado": "8-12 semanas",
+      "rolesPreferidos": [
+        "liderazgo",
+        "mandos"
+      ],
+      "tags": [
+        "adopcion",
+        "gobierno"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "nivelDeAdopcion",
+        "percepcionDeRiesgo"
+      ],
+      "objective": "Elevar adopción con control de calidad y gestión de riesgos",
+      "key_results": [
+        {
+          "metric": "nivelDeAdopcion",
+          "target": "+1.0"
+        },
+        {
+          "metric": "percepcionDeRiesgo",
+          "target": "+1.0"
+        }
+      ]
     }
   ],
   "culturaOrganizacional": [
     {
       "id": "CU-01",
       "titulo": "Ciclos de experimentación y reconocimiento",
-      "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+      "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
       "areaEnfoque": "Cultura y Cambio",
-      "objetivosClave": [
-        "Rituales de demo",
-        "Reconocimientos mensuales",
-        "Repositorio de aprendizajes"
+      "prioridad": "Media",
+      "plazoEstimado": "3 meses",
+      "rolesPreferidos": [
+        "liderazgo",
+        "mandos"
       ],
-      "metricasExito": [
-        { "metrica": "Equipos participando", "valorObjetivo": ">= 5" }
+      "tags": [
+        "experimentacion",
+        "reconocimiento"
       ],
-      "responsableSugerido": "Change / Líderes",
-      "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-      "prioridad": "Media"
+      "type": "KPI",
+      "subdimensiones": [
+        "experimentacion",
+        "reconocimiento"
+      ]
     },
     {
       "id": "CU-02",
       "titulo": "Programa de liderazgo digital",
       "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
       "areaEnfoque": "Liderazgo",
-      "objetivosClave": [
-        "Sesiones de liderazgo",
-        "Compromisos visibles",
-        "Cascada de objetivos"
-      ],
-      "metricasExito": [
-        { "metrica": "% líderes entrenados", "valorObjetivo": ">= 80%" }
-      ],
-      "responsableSugerido": "HR / Dirección",
+      "prioridad": "Alta",
       "plazoEstimado": "6-8 semanas",
-      "prioridad": "Alta"
+      "rolesPreferidos": [
+        "liderazgo"
+      ],
+      "tags": [
+        "liderazgo",
+        "objetivos"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "liderazgoYVision"
+      ],
+      "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
+      "key_results": [
+        {
+          "metric": "liderazgoYVision",
+          "target": "+1.0"
+        }
+      ]
+    },
+    {
+      "id": "CU-03",
+      "titulo": "Comunidades de práctica",
+      "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+      "areaEnfoque": "Cultura y Cambio",
+      "prioridad": "Media",
+      "plazoEstimado": "8 semanas",
+      "rolesPreferidos": [
+        "mandos",
+        "tecnico"
+      ],
+      "tags": [
+        "comunidad",
+        "aprendizaje"
+      ],
+      "type": "KPI",
+      "subdimensiones": [
+        "ambienteDeAprendizaje"
+      ]
+    },
+    {
+      "id": "CU-04",
+      "titulo": "Reconocimiento a iniciativas de mejora",
+      "descripcion": "Mecanismo trimestral de reconocimiento a iniciativas con resultado medible.",
+      "areaEnfoque": "Cultura y Cambio",
+      "prioridad": "Media",
+      "plazoEstimado": "12 semanas",
+      "rolesPreferidos": [
+        "liderazgo",
+        "mandos"
+      ],
+      "tags": [
+        "reconocimiento",
+        "resultados"
+      ],
+      "type": "OKR",
+      "subdimensiones": [
+        "reconocimiento"
+      ]
     }
   ]
 }
-

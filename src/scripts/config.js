@@ -94,3 +94,24 @@ export const TARGETS_10 = {
     usoInteligenciaArtificial: 8.0,
     culturaOrganizacional: 8.0,
 };
+
+// Pesos/umbrales del plan de acción individual (selector determinista)
+export const ACTION_PLAN_WEIGHTS = {
+    minGap: 0.05,
+    roleBonus: 0.4,
+    signalsBonus: 0.2,
+    subsBonus: 0.3,
+    impactHigh: 0.2,
+    impactMedium: 0.1,
+    effortHighPenalty: -0.2,
+    effortLowBonus: 0.1,
+    kpiMinIncrement: 0.5,
+};
+
+// Peso relativo por dimensión para priorización (>= 1 favorece, < 1 de-prioriza)
+export const ACTION_DIM_WEIGHTS = {
+    madurezDigital: 1.0,
+    brechaDigital: 1.0,
+    usoInteligenciaArtificial: 1.2,
+    culturaOrganizacional: 0.9,
+};

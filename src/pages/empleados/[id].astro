@@ -287,10 +287,21 @@ const dimLabels = {
         <section class="card">
           <h2>Plan de acción priorizado</h2>
           {doc.action_plan.resumenGeneral && (<p class="narrative">{doc.action_plan.resumenGeneral}</p>)}
+          {doc.action_plan.criterios && (
+            <div class="chips" style="margin-bottom:8px">
+              {Array.isArray(doc.action_plan.criterios.top_gaps) && doc.action_plan.criterios.top_gaps.length > 0 && (
+                <span class="chip"><strong>Top brechas:</strong>&nbsp;{doc.action_plan.criterios.top_gaps.map(g => `${g.dim} (${g.gap})`).join(', ')}</span>
+              )}
+              {doc.action_plan.criterios.role && (<span class="chip"><strong>Rol:</strong>&nbsp;{doc.action_plan.criterios.role}</span>)}
+              {Array.isArray(doc.action_plan.criterios.signals_from_open_ended) && doc.action_plan.criterios.signals_from_open_ended.length > 0 && (
+                <span class="chip"><strong>Señales:</strong>&nbsp;{doc.action_plan.criterios.signals_from_open_ended.join(', ')}</span>
+              )}
+            </div>
+          )}
           <div class="grid-2">
             {(doc.action_plan.iniciativas || []).map(a => (
               <div class="kpi-card">
-                <div class="kpi-head"><div class="kpi-title">{a.titulo}</div><span class="pill">{a.prioridad}</span></div>
+                <div class="kpi-head"><div class="kpi-title">{a.titulo}</div><div style="display:flex; gap:6px; align-items:center;"><span class="pill">{a.prioridad}</span>{a.type && (<span class="pill">{a.type}</span>)}</div></div>
                 <p class="narrative">{a.descripcion}</p>
                 <div class="row" style="margin:6px 0"><div class="name">Área:</div><div class="val">{a.areaEnfoque}</div></div>
                 {Array.isArray(a.objetivosClave) && a.objetivosClave.length > 0 && (
@@ -307,6 +318,20 @@ const dimLabels = {
                     <ul style="margin:0; padding-left:18px; color:#334155;">
                       {a.metricasExito.map(m => (<li><strong>{m.metrica}:</strong> {m.valorObjetivo}</li>))}
                     </ul>
+                  </div>
+                )}
+                {Array.isArray(a.key_results) && a.key_results.length > 0 && (
+                  <div style="margin:8px 0">
+                    <div class="name" style="margin-bottom:4px">Resultados clave (KR)</div>
+                    <ul style="margin:0; padding-left:18px; color:#334155;">
+                      {a.key_results.map(kr => (<li><strong>{kr.metric}:</strong> {kr.target}{kr.plazo ? ` · ${kr.plazo}` : ''}</li>))}
+                    </ul>
+                  </div>
+                )}
+                {a.metric && a.target && (
+                  <div style="margin:8px 0">
+                    <div class="name" style="margin-bottom:4px">KPI</div>
+                    <div class="val"><strong>{a.metric}:</strong> {a.target}{a.cadencia ? ` · ${a.cadencia}` : ''}</div>
                   </div>
                 )}
                 <div class="row" style="margin-top:6px"><div class="name">Responsable:</div><div class="val">{a.responsableSugerido}</div></div>

@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "action_catalog.schema.json",
+  "type": "object",
+  "description": "Catálogo de acciones por dimensión con soporte para plantillas OKR/KPI.",
+  "additionalProperties": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": ["id", "titulo", "descripcion", "areaEnfoque"],
+      "properties": {
+        "id": { "type": "string" },
+        "titulo": { "type": "string" },
+        "descripcion": { "type": "string" },
+        "areaEnfoque": { "type": "string" },
+        "objetivosClave": { "type": "array", "items": { "type": "string" } },
+        "metricasExito": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["metrica", "valorObjetivo"],
+            "properties": {
+              "metrica": { "type": "string" },
+              "valorObjetivo": { "type": ["string", "number"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "responsableSugerido": { "type": "string" },
+        "plazoEstimado": { "type": "string" },
+        "prioridad": { "type": "string" },
+
+        "type": { "type": "string", "enum": ["OKR", "KPI"], "nullable": true },
+        "objective": { "type": "string" },
+        "key_results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["metric", "target"],
+            "properties": {
+              "metric": { "type": "string" },
+              "target": { "type": ["string", "number"] },
+              "plazo": { "type": "string" },
+              "cadencia": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "metric": { "type": "string" },
+        "target": { "type": ["string", "number"] },
+        "cadencia": { "type": "string" },
+
+        "rolesPreferidos": { "type": "array", "items": { "type": "string" } },
+        "subdimensiones": { "type": "array", "items": { "type": "string" } },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "esfuerzo": { "type": "string" },
+        "impacto": { "type": "string" },
+        "prerequisitos": { "type": "array", "items": { "type": "string" } },
+        "dependencias": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    }
+  }
+}

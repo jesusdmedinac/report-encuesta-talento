@@ -31,3 +31,7 @@ Este documento se centra en el estado actual y próximos pasos. El historial det
 - Poblar `header.subject.demographics` desde CSV en generador individual.
 - Refinar `selectBaremosScope` con mapeos definitivos.
 
+6) Plan de acción individual OKR/KPI
+- Crear `analisis/action_catalog.md` y builder MD→JSON con validación ajv.
+- Implementar `selectIndividualActionPlan` (reglas deterministas + señales de abiertas/rol).
+- Integrar en generador (`--actions`, `--ai`) y ajustar UI para OKR/KPI.

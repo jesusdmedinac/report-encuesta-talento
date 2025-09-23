@@ -6,6 +6,7 @@ import { loadJson } from './utils.js';
 import { parseCsvFile, performIndividualAnalysis } from './services/csv-processor.js';
 import { OPEN_ENDED_QUESTIONS } from './config.js';
 import { assignLevel } from './services/baremos.js';
+import { selectIndividualActionPlan, loadActionCatalog, maybeRewriteActionPlan } from './services/action-plan.js';
 import { validateData } from './services/validator.js';
 
 function getArg(key, def = null) {
@@ -57,6 +58,10 @@ async function main() {
     const csvPath = getArg('--csv', path.join(process.cwd(), 'data', 'respuestas-por-puntos.csv'));
     const empresa = getArg('--empresa', 'Empresa');
     const outDir = getArg('--outDir', path.join(process.cwd(), 'src', 'data', 'individual'));
+    const withActions = getArg('--no-actions', null) === null; // por defecto true, --no-actions para desactivar
+    const useAI = !!getArg('--ai', null); // re-redacción opcional
+    const provider = getArg('--provider', process.env.PROVIDER || '');
+    const model = getArg('--model', process.env.MODEL || '');
     // Límite por defecto a 1 para evitar generar toda la base accidentalmente
     const limit = parseInt(getArg('--limit', '1'), 10);
     const idsArg = getArg('--ids', '');
@@ -77,6 +82,11 @@ async function main() {
     const NAME_COL = 'DEMO_CONTACT: Nombre';
     const LAST_COL = 'DEMO_CONTACT: Apellido';
     const EMAIL_COL = 'DEMO_CONTACT: Email';
+    const DEMO_AREA = 'DEMO_PROFESSIONAL: Departamento:';
+    const DEMO_EDU = 'DEMO_PROFESSIONAL: Nivel de estudios:';
+    const DEMO_ROL = 'DEMO_PROFESSIONAL: Menciona el rol que cumples en tu empresa:';
+    const DEMO_GENERO = 'DEMO_PROFESSIONAL: Género:';
+    const DEMO_EDAD = 'DEMO_PROFESSIONAL: Rango de Edad:';
 
     ensureDir(outDir);
 
@@ -167,33 +177,19 @@ async function main() {
       // Abiertas del individuo (limpias/anonimizadas)
       const openEnded = cleanOpenEndedFromRow(row);
 
-      // Plan de acción: seleccionar iniciativas para las mayores brechas
-      function buildActionPlan() {
-        const catalogPath = path.join(process.cwd(), 'src', 'scripts', 'action_catalog.json');
-        const catalog = loadJson(catalogPath) || {};
-        // Ranking por gap (descendente)
-        const ranked = dims
-          .map(d => ({ dim: d, gap: summary.dimensions[d]?.gap10 ?? 0 }))
-          .filter(x => Number.isFinite(x.gap) && x.gap > 0.05)
-          .sort((a, b) => b.gap - a.gap);
-        const topDims = ranked.slice(0, 2).map(x => x.dim);
-        const iniciativas = [];
-        for (const d of topDims) {
-          const pool = Array.isArray(catalog[d]) ? catalog[d] : [];
-          const take = pool.slice(0, 2); // 2 por dimensión
-          for (const it of take) {
-            iniciativas.push({ ...it });
-          }
-        }
-        const resumenDims = topDims.map(d => `${d}: gap ${summary.dimensions[d]?.gap10}`).join(' · ');
-        return {
-          resumenGeneral: `Plan priorizado según brechas principales — ${resumenDims}.`,
-          iniciativas,
-        };
-      }
+      // Plan de acción: determinista con catálogo y señales
+      const actionCatalog = withActions ? loadActionCatalog() : null;
 
       const nowIso = new Date().toISOString();
-      const doc = {
+      // Demográficos
+      const demographics = {};
+      if (row[DEMO_ROL]) demographics.rol = String(row[DEMO_ROL]).trim();
+      if (row[DEMO_AREA]) demographics.area = String(row[DEMO_AREA]).trim();
+      if (row[DEMO_EDU]) demographics.nivelEducativo = String(row[DEMO_EDU]).trim();
+      if (row[DEMO_GENERO]) demographics.genero = String(row[DEMO_GENERO]).trim();
+      if (row[DEMO_EDAD]) demographics.rangoEdad = String(row[DEMO_EDAD]).trim();
+
+      let doc = {
         schema_version: '1.0',
         generated_at: nowIso,
         provenance: { source: path.basename(csvPath), generator: 'generate-individual-reports.mjs' },
@@ -202,14 +198,19 @@ async function main() {
           generatedAt: nowIso,
           schema: 'individual-1.0',
           id,
-          subject: { nombreCompleto, email, assessed_on: nowIso },
+          subject: { nombreCompleto, email, assessed_on: nowIso, ...(Object.keys(demographics).length ? { demographics } : {}) },
         },
         scores,   // 1–4 por subdimensión (trazabilidad)
         scores10, // 1–10 por subdimensión (para visualización/contrato)
         summary,  // por dimensión
         openEnded,
-        action_plan: buildActionPlan(),
-      };
+        action_plan: withActions ? selectIndividualActionPlan({ header: { subject: { demographics } }, summary, openEnded, scores10 }, actionCatalog, { maxIniciativas: 4 }) : undefined,
+     };
+
+      // Re-redacción opcional con IA (sin cambiar estructura)
+      if (useAI && withActions && doc.action_plan) {
+        doc = { ...doc, action_plan: await maybeRewriteActionPlan(doc.action_plan, doc, { provider, model }) };
+      }
 
       // Validar contra el esquema individual antes de escribir
       try {

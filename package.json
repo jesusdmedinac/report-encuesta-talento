@@ -13,6 +13,7 @@
     "generate-respuestas-index": "node src/scripts/generate-respuestas-index.mjs",
     "generate-individual": "node src/scripts/generate-individual-reports.mjs",
     "build-baremos-md": "node src/scripts/build-baremos-from-md.mjs",
+    "build-action-catalog": "node src/scripts/build-action-catalog.mjs",
     "update-progress": "node src/scripts/update-progress.mjs",
     "test": "node --test"
   },
