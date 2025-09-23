@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.912Z",
+  "generated_at": "2025-09-23T16:06:11.676Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.912Z",
+    "generatedAt": "2025-09-23T16:06:11.676Z",
     "schema": "individual-1.0",
     "id": "c4pzz48gt2vcvesc4pzzmda41as219z0",
     "subject": {
       "nombreCompleto": "Estefania Martinez",
       "email": "maite.herrrero@prosegur.com",
-      "assessed_on": "2025-09-22T15:35:07.912Z"
+      "assessed_on": "2025-09-23T16:06:11.676Z",
+      "demographics": {
+        "rol": "Negociadora de Compras",
+        "area": "Administración",
+        "nivelEducativo": "Maestría / Especialización (Posgrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,62 +207,122 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Este aprendizaje digital me permitio ver que la transformacion no esta solo en la tecnologia, si no en como elegimos aplicarla para mejorar cada dia"
-    ],
-    "D2_OPEN": [
-      "Nueva herramienta: SAP Ariba /Coupa/ Oracle Procurement."
-    ],
-    "D3_OPEN": [
-      "Fomentar una cultura de colaboracion digital Embajadores digitales en cada area: personas que dominen nuevas herramientas, fomenten y acompanen a sus companeros en su uso."
-    ],
-    "D4_OPEN": [
-      "En mi rol tiene un potencial enorme, como expectativa que me libere de lo operativo optimizando procesos, no solo que ahorre tiempo si no que convierta a compras en una area analitica, proactiva y mas estrategica."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        }
+      ],
+      "role": "negociadora",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "percepcionDeRiesgo",
+            "target": "8.0/10"
+          }
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
+        "target": "8.0/10"
       }
     ]
   }

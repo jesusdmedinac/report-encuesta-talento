@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:08.014Z",
+  "generated_at": "2025-09-23T16:06:11.776Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:08.014Z",
+    "generatedAt": "2025-09-23T16:06:11.776Z",
     "schema": "individual-1.0",
     "id": "k3hnh6t8at8n6top4jv2jk3hnh61i0p3",
     "subject": {
       "nombreCompleto": "Alison Albarracin",
       "email": "aalbarracin@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:08.014Z"
+      "assessed_on": "2025-09-23T16:06:11.776Z",
+      "demographics": {
+        "rol": "Ux-writer",
+        "area": "Tribu Customer Care",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,102 +207,122 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Un camino de exploracion constante, donde cada clic abre una nueva oportunidad para aprender, mejorar y avanzar profesionalmente."
-    ],
-    "D2_OPEN": [
-      "Un poco de ambas, mayor capacitaciones en las actuales nos ayudara a mejorar procesos, y la implementacion de nuevas herramientas siempre nos ayudara a crear propuestas mas actualizadas al entorno digital."
-    ],
-    "D3_OPEN": [
-      "Comprometernos un poco mas con el uso de estas herramientas y brindarles a todos las licencias y permisos necesarios para que puedan explotar este recurso como se debe. Ejmp: Figma"
-    ],
-    "D4_OPEN": [
-      "Sinceramente no me preocupa, siento que la Ai es una herramienta poderosa que nos complementa y nos ayuda a elevar el nivel de nuestras propuestas y a su vez en ocasiones \"alucina\" por ende, no es una fuente 100% confiable para suplir un rol totalmente."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.7
+        }
+      ],
+      "role": "tecnico",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
       {
         "id": "CU-02",
         "titulo": "Programa de liderazgo digital",
         "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
         "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "HR / Dirección",
+        "prioridad": "Alta",
         "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
-        "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
+        "rolesPreferidos": [
+          "liderazgo"
         ],
-        "metricasExito": [
+        "tags": [
+          "liderazgo",
+          "objetivos"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "liderazgoYVision"
+        ],
+        "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
+        "key_results": [
           {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
+            "metric": "liderazgoYVision",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       }
     ]
   }

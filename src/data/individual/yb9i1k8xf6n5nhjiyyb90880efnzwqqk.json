@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:08.030Z",
+  "generated_at": "2025-09-23T16:06:11.790Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:08.030Z",
+    "generatedAt": "2025-09-23T16:06:11.790Z",
     "schema": "individual-1.0",
     "id": "yb9i1k8xf6n5nhjiyyb90880efnzwqqk",
     "subject": {
       "nombreCompleto": "Luis Alberto Reyes Carrion",
       "email": "lreyes@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:08.030Z"
+      "assessed_on": "2025-09-23T16:06:11.790Z",
+      "demographics": {
+        "rol": "Resolución de casos CRM de establecimientos a nivel nacional.",
+        "area": "PRODUCTOS E INNOVACIÓN -Tribu Comercios-",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Masculino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,130 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Aprendizaje constante para un mundo cambiante todos los dias!"
-    ],
-    "D2_OPEN": [
-      "Actualmente uso la herramiente Fortitoken, que es lo mas seguro y confiable. Antes usaba SMS para que me llegue el codigo de validacion de inicio de sesion pero a veces fallaba, el mensaje no llegaba y demoraba en ingresar al sistema"
-    ],
-    "D3_OPEN": [
-      "Capacitaciones online de programas de programacion, diseno grafico. Acceso a cursos externos de GOOGLE, MICROSOFT, Python, o similares que se crea convenientes para la aceleracion de la cultura digital y para nuestro enriquecimiento en el aprendizaje y evolucion tecnologica."
-    ],
-    "D4_OPEN": [
-      "Me preocupa mas que el avance de la IA, que va de la mano con el avance de creacion de robots (ya practicamente llegando a la similitud fisica humana) desplace a los humanos en otras plazas de trabajo que generalmente las realiza los latinos o puestos que son como atencion al cliente en hoteles (en la recepcion), meseros, etc. Esas plazas de trabajo que demandan mas a personas que se estan iniciando en el mundo laboral y empiece a encarecer donde trabajar a las nuevas generaciones, y por que no decir a las generaciones que ya estan pasados de los 45 anos. Expectativa seria, que en un mundo que se esta evolucionando demasiado rapido con la IA y avance tecnologico, se pueda tener mejor medicina, cura al Cancer (tengo a mi mami con cancer terminal) y que los costos para la atencion e intervencion medica, empiecen a ser mas accesibles. Tener una mayor exceptiva de vida para todos y con el avance tecnologico se creen nuevas carreras universitarias y por ende nuevas plazas de trabajo para las nuevas generaciones!"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9 · brechaDigital: gap 0.3.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.3
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.2
+        }
+      ],
+      "role": "resolucion",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
         ],
-        "metricasExito": [
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
           {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
-      },
-      {
-        "id": "CD-01",
-        "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
-        "areaEnfoque": "Talento y Formación",
-        "objetivosClave": [
-          "Módulos de competencias priorizadas",
-          "Evaluaciones antes/después",
-          "Mentoría ligera"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% de finalización",
-            "valorObjetivo": ">= 75%"
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
           },
           {
-            "metrica": "+puntos en post-test",
-            "valorObjetivo": "+1.0 (escala 1–10)"
+            "metric": "percepcionDeRiesgo",
+            "target": "8.0/10"
           }
-        ],
-        "responsableSugerido": "L&D / HR",
-        "plazoEstimado": "8-10 semanas",
-        "prioridad": "Media"
+        ]
       },
       {
         "id": "CD-02",
         "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
         "areaEnfoque": "Enablement",
-        "objetivosClave": [
-          "Guías por herramienta",
-          "Repositorio accesible",
-          "Sesiones de difusión"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Guías publicadas",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Ops / Champions",
+        "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
       }
     ]
   }

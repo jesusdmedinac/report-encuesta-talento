@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:14.483Z",
+  "generated_at": "2025-09-23T16:06:12.280Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:14.483Z",
+    "generatedAt": "2025-09-23T16:06:12.280Z",
     "schema": "individual-1.0",
     "id": "w0br6k6vhl5p2jj5w0bvq8ni7xsxhmpr",
     "subject": {
       "nombreCompleto": "Edison Valencia",
       "email": "evalencia@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:14.483Z"
+      "assessed_on": "2025-09-23T16:06:12.280Z",
+      "demographics": {
+        "rol": "OFICIAL COMERCIAL TARJETAS DE CREDITO BUSINESS EMISION",
+        "area": "Medios de pago",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Masculino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,62 +207,122 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Un camino de constante evolucion, donde cada clic me acerco mas al conocimiento y a nuevas oportunidades."
-    ],
-    "D2_OPEN": [
-      "Mas capacitacion en las herramientas actuales, para aprovechar todo su potencial y optimizar mi tiempo y resultados."
-    ],
-    "D3_OPEN": [
-      "Lo mas importante seria fomentar una cultura de aprendizaje continuo, brindando espacios y tiempo para la capacitacion, asi como promover el uso colaborativo de herramientas digitales en todos los niveles de la organizacion."
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa es que la Inteligencia Artificial me permita automatizar tareas repetitivas y tomar decisiones mas informadas basadas en datos, optimizando asi mi productividad, pero siempre manteniendo un equilibrio entre la tecnologia y el juicio profesional."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.5
+        }
+      ],
+      "role": "tecnico",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "percepcionDeRiesgo",
+            "target": "8.0/10"
+          }
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
+        "target": "8.0/10"
       }
     ]
   }

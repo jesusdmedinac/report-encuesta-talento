@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:10.511Z",
+  "generated_at": "2025-09-23T16:06:11.874Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:10.511Z",
+    "generatedAt": "2025-09-23T16:06:11.874Z",
     "schema": "individual-1.0",
     "id": "d7vsfdh1wdnl2aud7vsydkio2qis0pmk",
     "subject": {
       "nombreCompleto": "Kenny Javier Caputi",
       "email": "kjavier@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:10.511Z"
+      "assessed_on": "2025-09-23T16:06:11.874Z",
+      "demographics": {
+        "rol": "Verificar la razonabilidad de los avalúos presentados por los peritos y gestionar el ciclo de vida de nuestras garantías.",
+        "area": "Financiamiento",
+        "nivelEducativo": "Maestría / Especialización (Posgrado)",
+        "genero": "Masculino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,130 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Es un camino constante que abre las puertas del conocimiento."
-    ],
-    "D2_OPEN": [
-      "Ya nos encontramos en el proceso de pruebas de una plataforma de gestion de avaluos que nos permitira ser mas eficientes en el control de tiempos."
-    ],
-    "D3_OPEN": [
-      "Lo mas importante seria alinear a las personas con una vision clara y comun del cambio digital, asegurando que todos comprendan por que es necesario, como les beneficia y que papel tienen en el."
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa seria que me ayude a automatizar tareas repetitivas y de bajo valor, liberando mas tiempo para el analisis, la toma de decisiones estrategicas y la creatividad."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 0.7.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 1.7
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.7
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.5
+        }
+      ],
+      "role": "tecnico",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
         ],
-        "metricasExito": [
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
           {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
-      },
-      {
-        "id": "CD-01",
-        "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
-        "areaEnfoque": "Talento y Formación",
-        "objetivosClave": [
-          "Módulos de competencias priorizadas",
-          "Evaluaciones antes/después",
-          "Mentoría ligera"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% de finalización",
-            "valorObjetivo": ">= 75%"
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
           },
           {
-            "metrica": "+puntos en post-test",
-            "valorObjetivo": "+1.0 (escala 1–10)"
+            "metric": "percepcionDeRiesgo",
+            "target": "8.0/10"
           }
+        ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
         ],
-        "responsableSugerido": "L&D / HR",
-        "plazoEstimado": "8-10 semanas",
-        "prioridad": "Media"
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
       },
       {
         "id": "CD-02",
         "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
         "areaEnfoque": "Enablement",
-        "objetivosClave": [
-          "Guías por herramienta",
-          "Repositorio accesible",
-          "Sesiones de difusión"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Guías publicadas",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Ops / Champions",
+        "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
       }
     ]
   }

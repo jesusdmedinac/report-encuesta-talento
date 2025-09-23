@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.246Z",
+  "generated_at": "2025-09-23T16:06:11.293Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.246Z",
+    "generatedAt": "2025-09-23T16:06:11.293Z",
     "schema": "individual-1.0",
     "id": "hecm1rvji1bv4my48r49hecm1rv5qxmr",
     "subject": {
       "nombreCompleto": "Anabella Cuadros Centeno",
       "email": "acuadros@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:07.246Z"
+      "assessed_on": "2025-09-23T16:06:11.293Z",
+      "demographics": {
+        "rol": "Colaborar en la planificación y ejecución de los procesos de compra y contratación de bienes y servicios, garantizando la calidad, oportunidad y cumplimiento de las políticas institucionales, así como la alineación con las necesidades operativas.",
+        "area": "administración",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,103 +207,133 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Ha sido un camino de exploracion constante, donde cada herramienta digital que aprendo se convierte en una oportunidad para innovar y simplificar la manera en que trabajo y me conecto con los demas."
-    ],
-    "D2_OPEN": [
-      "Mas que una nueva herramienta, lo que me haria mas eficiente es profundizar en el uso avanzado de las que ya utilizo a diario, acompanado de capacitacion practica en data y analitica. Ademas, seria clave fortalecer las relaciones interpersonales y la capacidad de adaptacion del equipo, para que la tecnologia y las personas avancen al mismo ritmo."
-    ],
-    "D3_OPEN": [
-      "Lo mas importante seria impulsar una cultura digital que combine dos aspectos: primero, mayor capacitacion practica en las herramientas que ya tenemos para aprovecharlas al maximo; y segundo, fomentar la apertura al cambio y la colaboracion entre areas, para que la transformacion digital no dependa solo de la tecnologia, sino tambien de las personas que la usan."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.2 · culturaOrganizacional: gap 1.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "madurezDigital",
+          "gap": 1.2
+        },
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.3
+        }
+      ],
+      "role": "tecnico",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "MD-01",
         "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
+        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
         "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
+        "prioridad": "Alta",
+        "plazoEstimado": "6-8 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "roadmap",
+          "procesos",
+          "priorizacion"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "resolucionDeProblemas",
+          "proactividadDigital"
+        ],
+        "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
+        "key_results": [
           {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
+            "metric": "resolucionDeProblemas",
+            "target": "+1.0"
           },
           {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
+            "metric": "proactividadDigital",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
-        "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
+        "tags": [
+          "comunidad",
+          "aprendizaje"
         ],
-        "responsableSugerido": "Data Lead / TI",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       },
       {
         "id": "CU-01",
         "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
         ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "experimentacion",
+        "target": "8.0/10"
       },
       {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
         ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
       }
     ]
   }

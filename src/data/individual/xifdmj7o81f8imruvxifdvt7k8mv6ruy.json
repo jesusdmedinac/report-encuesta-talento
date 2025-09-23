@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:14.615Z",
+  "generated_at": "2025-09-23T16:06:12.292Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:14.615Z",
+    "generatedAt": "2025-09-23T16:06:12.292Z",
     "schema": "individual-1.0",
     "id": "xifdmj7o81f8imruvxifdvt7k8mv6ruy",
     "subject": {
       "nombreCompleto": "Jonathan Alejandro Tuasa Guerrero",
       "email": "jtuasa@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:14.615Z"
+      "assessed_on": "2025-09-23T16:06:12.292Z",
+      "demographics": {
+        "rol": "Gestor de Microcréditos",
+        "area": "Microcrédito",
+        "nivelEducativo": "Maestría / Especialización (Posgrado)",
+        "genero": "Masculino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,102 +207,122 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Adaptacion"
-    ],
-    "D2_OPEN": [
-      "Una nueva herramienta"
-    ],
-    "D3_OPEN": [
-      "Estimular la experimentacion"
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa es que se convierta en una herramienta agil para poder facilitar los procesos y evitar tramites engorrosos."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        }
+      ],
+      "role": "tecnico",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "id": "CU-04",
+        "titulo": "Reconocimiento a iniciativas de mejora",
+        "descripcion": "Mecanismo trimestral de reconocimiento a iniciativas con resultado medible.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "12 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "reconocimiento",
+          "resultados"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "reconocimiento"
+        ],
+        "key_results": [
           {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
-      {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
+            "metric": "ambienteDeAprendizaje",
+            "target": "8.0/10"
+          },
           {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
+            "metric": "reconocimiento",
+            "target": "8.0/10"
           }
-        ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
-        "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       }
     ]
   }

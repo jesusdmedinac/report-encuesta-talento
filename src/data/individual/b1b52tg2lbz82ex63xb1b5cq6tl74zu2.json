@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:14.456Z",
+  "generated_at": "2025-09-23T16:06:12.277Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:14.456Z",
+    "generatedAt": "2025-09-23T16:06:12.277Z",
     "schema": "individual-1.0",
     "id": "b1b52tg2lbz82ex63xb1b5cq6tl74zu2",
     "subject": {
       "nombreCompleto": "Daniela Luque",
       "email": "dluque@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:14.456Z"
+      "assessed_on": "2025-09-23T16:06:12.277Z",
+      "demographics": {
+        "rol": "Analista",
+        "area": "Customer care",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,62 +207,122 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Ha sido un camino constante de adaptacion y evolucion, donde cada herramienta digital aprendida me ha permitido entender mejor al cliente y responder con mayor agilidad y precision."
-    ],
-    "D2_OPEN": [
-      "Creo que lo que mas me ayudaria a ser mas eficiente es recibir mas capacitacion en las herramientas que ya utilizamos. Muchas veces las plataformas tienen funcionalidades avanzadas que no aprovechamos del todo por falta de conocimiento. Profundizar en su uso me permitiria optimizar tiempos, resolver casos con mayor rapidez y brindar una atencion mas personalizada. Tambien valoro mucho el intercambio de buenas practicas entre companeros, porque a veces pequenos trucos o atajos pueden marcar una gran diferencia en el dia a dia."
-    ],
-    "D3_OPEN": [
-      "Desde mi experiencia, lo mas importante que la institucion podria hacer para acelerar nuestra cultura digital es fomentar una mentalidad de mejora continua y capacitacion constante en tecnologia. No se trata solo de implementar nuevas herramientas, sino de asegurarse de que todos sepamos usarlas correctamente y entendamos como pueden ayudarnos a trabajar mejor. Ademas, seria clave promover espacios de colaboracion entre areas, donde podamos compartir aprendizajes, identificar procesos que se pueden digitalizar y pensar juntos en soluciones centradas en el cliente"
-    ],
-    "D4_OPEN": [
-      "Expectativa: que nos permita optimizar la atencion al cliente mediante respuestas mas rapidas, precisas y personalizadas. Preocupacion: el uso excesivo de IA pueda reducir el contacto humano esencial en la atencion, lo que podria afectar la empatia y la conexion con los clientes."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 1.3
+        }
+      ],
+      "role": "analista",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "percepcionDeRiesgo",
+            "target": "8.0/10"
+          }
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
+        "target": "8.0/10"
       }
     ]
   }

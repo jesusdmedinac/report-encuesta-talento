@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:14.055Z",
+  "generated_at": "2025-09-23T16:06:12.270Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:14.055Z",
+    "generatedAt": "2025-09-23T16:06:12.270Z",
     "schema": "individual-1.0",
     "id": "kbopudufl9b5zapq1ykbopujdnvam63u",
     "subject": {
       "nombreCompleto": "Zeuz Aron Alban Mindiola",
       "email": "albanzeuz@gmail.com",
-      "assessed_on": "2025-09-22T15:35:14.055Z"
+      "assessed_on": "2025-09-23T16:06:12.270Z",
+      "demographics": {
+        "rol": "CAJA UNIVERSAL",
+        "area": "353037 OPERATIVOS RED",
+        "nivelEducativo": "Técnico / Tecnológico",
+        "genero": "Masculino",
+        "rangoEdad": "Menos de 25"
+      }
     }
   },
   "scores": {
@@ -200,22 +207,97 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Mi viaje de aprendizaje digital ha sido una constante evolucion, donde cada desafio me ha permitido crecer y adaptarme en un mundo cada vez mas conectado."
-    ],
-    "D2_OPEN": [
-      "Una mayor capacitacion en las herramientas actuales me ayudaria a ser mas eficiente, ya que muchas veces no aprovecho todo su potencial por desconocimiento de sus funciones avanzadas."
-    ],
-    "D3_OPEN": [
-      "lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es fomentar una capacitacion continua y practica en herramientas digitales, acompanada de una comunicacion clara sobre los beneficios y objetivos del cambio digital, para que todos los colaboradores se sientan parte del proceso y adopten las nuevas tecnologias con confianza."
-    ],
-    "D4_OPEN": [
-      "mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol como cajero es que me ayude a agilizar procesos, reducir errores y brindar un mejor servicio al cliente. Sin embargo, tambien tengo la preocupacion de que la automatizacion excesiva pueda reducir la interaccion humana y afectar la estabilidad laboral en el sector."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
-    "resumenGeneral": "Plan priorizado según brechas principales — .",
-    "iniciativas": []
+    "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
+    "criterios": {
+      "top_gaps": [],
+      "role": "caja",
+      "signals_from_open_ended": []
+    },
+    "iniciativas": [
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ]
+      }
+    ]
   }
 }

@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:11.799Z",
+  "generated_at": "2025-09-23T16:06:12.151Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:11.799Z",
+    "generatedAt": "2025-09-23T16:06:12.151Z",
     "schema": "individual-1.0",
     "id": "pn7yaiu5ze2t5wwo2b8agrd4pn7yaiue",
     "subject": {
       "nombreCompleto": "EVELYN DEL ROCIO vasquez",
       "email": "EVASQUEZ1@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-22T15:35:11.799Z"
+      "assessed_on": "2025-09-23T16:06:12.151Z",
+      "demographics": {
+        "rol": "JEFE DE AGENCIA",
+        "area": "COMERCIAL",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,122 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "busca siempre aprender algo nuevo te llevara al exito"
-    ],
-    "D2_OPEN": [
-      "capacitaciones presenciales"
-    ],
-    "D3_OPEN": [
-      "capacitar al personal y que usen las herrmaientas a diario"
-    ],
-    "D4_OPEN": [
-      "mayor expectativa es que nos ahorraria mucho tiempo"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · madurezDigital: gap 0.9.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 2
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.9
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        }
+      ],
+      "role": "liderazgo",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
       {
         "id": "CU-02",
         "titulo": "Programa de liderazgo digital",
         "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
         "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "HR / Dirección",
+        "prioridad": "Alta",
         "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "MD-01",
-        "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
-        "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
+        "rolesPreferidos": [
+          "liderazgo"
         ],
-        "metricasExito": [
+        "tags": [
+          "liderazgo",
+          "objetivos"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "liderazgoYVision"
+        ],
+        "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
+        "key_results": [
           {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
-          },
-          {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
+            "metric": "liderazgoYVision",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
         "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "Data Lead / TI",
+        "prioridad": "Alta",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-01",
+        "titulo": "Ciclos de experimentación y reconocimiento",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
+        ],
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "experimentacion",
+        "target": "8.0/10"
       }
     ]
   }

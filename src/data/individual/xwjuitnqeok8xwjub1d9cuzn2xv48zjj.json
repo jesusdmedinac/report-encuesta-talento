@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.707Z",
+  "generated_at": "2025-09-23T16:06:11.525Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.707Z",
+    "generatedAt": "2025-09-23T16:06:11.525Z",
     "schema": "individual-1.0",
     "id": "xwjuitnqeok8xwjub1d9cuzn2xv48zjj",
     "subject": {
       "nombreCompleto": "Edison Fabian Imbaquingo Cheza",
       "email": "eimbaquingo@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:07.707Z"
+      "assessed_on": "2025-09-23T16:06:11.525Z",
+      "demographics": {
+        "rol": "Operador de Consola",
+        "area": "Seguridad Integral",
+        "nivelEducativo": "Secundaria",
+        "genero": "Masculino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,132 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "El mundo de la actualizacion"
-    ],
-    "D2_OPEN": [
-      "Capacitacion en nuevas plataformas"
-    ],
-    "D3_OPEN": [
-      "Implementar charlas sobre las nuevas funciones digitales"
-    ],
-    "D4_OPEN": [
-      "Si no se la utiliza con precaucion podria afectar en mi rol de trabajo"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · madurezDigital: gap 0.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 1.7
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.5
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.3
+        }
+      ],
+      "role": "operador",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "percepcionDeRiesgo",
+            "target": "8.0/10"
+          }
+        ]
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
-      },
-      {
-        "id": "MD-01",
-        "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
-        "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
-          },
-          {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
-          }
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
         ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "Data Lead / TI",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
       }
     ]
   }

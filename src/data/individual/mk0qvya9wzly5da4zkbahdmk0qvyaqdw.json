@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:06.471Z",
+  "generated_at": "2025-09-23T16:06:11.110Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:06.471Z",
+    "generatedAt": "2025-09-23T16:06:11.110Z",
     "schema": "individual-1.0",
     "id": "mk0qvya9wzly5da4zkbahdmk0qvyaqdw",
     "subject": {
       "nombreCompleto": "OSCAR MARCELO GARCIA GARCIA",
       "email": "OGARCIA1@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-22T15:35:06.471Z"
+      "assessed_on": "2025-09-23T16:06:11.110Z",
+      "demographics": {
+        "rol": "EJECUTIVO FINANCIERO",
+        "area": "COMERCIAL",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Masculino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,131 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "COMODIDAD"
-    ],
-    "D2_OPEN": [
-      "CAPACITACION ACTUALIZADA EN LAS HERRAMIENTAS ACTUALES"
-    ],
-    "D3_OPEN": [
-      "CONSIDERO QUE LO QUE ACTUALMENTE ESTA EN LAS APLICACIONES DIGITALES DEL BANCO ES LO MAS ACTUALIZADO EN EL MERCADO."
-    ],
-    "D4_OPEN": [
-      "LA EXTINSION DE PERSONAS EN LOS DIFERENTES LUGARES DE TRABAJO."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.9 · usoInteligenciaArtificial: gap 0.9.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "madurezDigital",
+          "gap": 0.9
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.8
+        }
+      ],
+      "role": "comercial",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "MD-01",
         "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
+        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
         "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
+        "prioridad": "Alta",
+        "plazoEstimado": "6-8 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "roadmap",
+          "procesos",
+          "priorizacion"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "resolucionDeProblemas",
+          "proactividadDigital"
+        ],
+        "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
+        "key_results": [
           {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
+            "metric": "resolucionDeProblemas",
+            "target": "+1.0"
           },
           {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
+            "metric": "proactividadDigital",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
-        "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
+        "tags": [
+          "repositorio",
+          "prompt"
         ],
-        "responsableSugerido": "Data Lead / TI",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
-        "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
       }
     ]
   }

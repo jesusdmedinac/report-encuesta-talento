@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:06.523Z",
+  "generated_at": "2025-09-23T16:06:11.135Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:06.523Z",
+    "generatedAt": "2025-09-23T16:06:11.135Z",
     "schema": "individual-1.0",
     "id": "63zfn34lx5815v8f6263zfk5m73pqchw",
     "subject": {
       "nombreCompleto": "OLGA CONDE",
       "email": "oconde@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:06.523Z"
+      "assessed_on": "2025-09-23T16:06:11.135Z",
+      "demographics": {
+        "rol": "analista de requerimientos tarjetas",
+        "area": "Productos e Innovación",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "45-54"
+      }
     }
   },
   "scores": {
@@ -200,102 +207,132 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Mi viaje de aprendizaje digital ha sido progresivo y principalmente guiado por las necesidades que surgen en la atencion de requerimientos, resolucion de incidencias y la gestion de la carga de trabajo. A medida que se presentan nuevos desafios, he ido adquiriendo conocimientos y habilidades practicas que me permiten cumplir con los tiempos de atencion establecidos y ofrecer un servicio mas eficiente y de mayor calidad. Este proceso continuo tambien ha facilitado la identificacion de errores y fallas en los sistemas o procesos, lo cual resulta clave para su correccion oportuna y mejora continua. Sin embargo, considero que una capacitacion mas detallada y estructurada me permitiria optimizar aun mas los procesos bajo mi responsabilidad, mejorar el desempeno y contribuir de manera mas directa a los objetivos del equipo."
-    ],
-    "D2_OPEN": [
-      "Actualmente solo tengo acceso a excell medio, se requiere mas acceso a nuevos programas que permitan mejorar mi labor"
-    ],
-    "D3_OPEN": [
-      "Desde mi perspectiva, lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es ofrecer capacitaciones mas especificas y adaptadas a las funciones de cada area. Esto no solo permitiria que los colaboradores comprendan mejor las herramientas digitales disponibles, sino que tambien facilitaria la optimizacion de procesos, la reduccion de errores y una atencion mas eficiente. Ademas, fomentar espacios para compartir buenas practicas digitales y promover una cultura de mejora continua ayudaria a fortalecer el uso estrategico de la tecnologia en el dia a dia."
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol es que se convierta en una herramienta que apoye la eficiencia operativa, permitiendo automatizar tareas repetitivas, detectar errores de manera preventiva y optimizar los procesos bajo mi responsabilidad. Creo que bien aplicada, la IA puede mejorar significativamente la calidad del servicio que brindamos. Sin embargo, una de mis principales preocupaciones es que su implementacion se haga sin una capacitacion adecuada, lo que podria generar confusion o una dependencia excesiva, en lugar de potenciar nuestras capacidades. Considero clave que la adopcion de IA venga acompanada de formacion y una integracion gradual, que permita aprovechar sus beneficios sin perder el conocimiento humano que es fundamental para una correcta toma de decisiones pues somos una empresa de servicios , somos personas trabajando para brindar una experiencia memorable a nuestros clientes generando lazos de lealtad y confianza."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · culturaOrganizacional: gap 2.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 2.2
+        },
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 2
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 1.7
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 1.2
+        }
+      ],
+      "role": "analista",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "habilidadDeUso",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "frecuenciaDeUso",
+            "target": "8.0/10"
+          }
+        ]
       },
       {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
+        "tags": [
+          "comunidad",
+          "aprendizaje"
         ],
-        "responsableSugerido": "L&D / Legal",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       },
       {
         "id": "CU-01",
         "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
         ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "experimentacion",
+        "target": "8.0/10"
       },
       {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
+        "tags": [
+          "repositorio",
+          "prompt"
         ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidadDeUso",
+        "target": "8.0/10"
       }
     ]
   }

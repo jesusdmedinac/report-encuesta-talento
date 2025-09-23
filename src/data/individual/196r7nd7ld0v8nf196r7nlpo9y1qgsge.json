@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:08.017Z",
+  "generated_at": "2025-09-23T16:06:11.779Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:08.017Z",
+    "generatedAt": "2025-09-23T16:06:11.779Z",
     "schema": "individual-1.0",
     "id": "196r7nd7ld0v8nf196r7nlpo9y1qgsge",
     "subject": {
       "nombreCompleto": "Lorena Tostige Collahuazo",
       "email": "ltostige@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:08.017Z"
+      "assessed_on": "2025-09-23T16:06:11.779Z",
+      "demographics": {
+        "rol": "Oficial senior de medios de pago",
+        "area": "Medios de pago",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,115 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Un proceso continuo de actualizacion y optimizacion de habilidades para adaptarme a las demandas y oportunidades del entorno digital."
-    ],
-    "D2_OPEN": [
-      "Mas capacitacion en las actuales"
-    ],
-    "D3_OPEN": [
-      "Impulsar la adopcion digital mediante capacitacion continua, integracion de herramientas tecnologicas en los procesos diarios y liderazgo que promueva el cambio de forma activa y estrategica."
-    ],
-    "D4_OPEN": [
-      "Herramienta complementaria para optimizar procesos y analisis, manteniendo siempre la supervision humana."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · brechaDigital: gap 0.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.5
+        }
+      ],
+      "role": "oficial",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
       {
         "id": "CU-02",
         "titulo": "Programa de liderazgo digital",
         "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
         "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "HR / Dirección",
+        "prioridad": "Alta",
         "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "liderazgo"
+        ],
+        "tags": [
+          "liderazgo",
+          "objetivos"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "liderazgoYVision"
+        ],
+        "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
+        "key_results": [
+          {
+            "metric": "liderazgoYVision",
+            "target": "+1.0"
+          }
+        ]
       },
       {
-        "id": "CD-01",
-        "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
-        "areaEnfoque": "Talento y Formación",
-        "objetivosClave": [
-          "Módulos de competencias priorizadas",
-          "Evaluaciones antes/después",
-          "Mentoría ligera"
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% de finalización",
-            "valorObjetivo": ">= 75%"
-          },
-          {
-            "metrica": "+puntos en post-test",
-            "valorObjetivo": "+1.0 (escala 1–10)"
-          }
+        "tags": [
+          "seguridad",
+          "practicas"
         ],
-        "responsableSugerido": "L&D / HR",
-        "plazoEstimado": "8-10 semanas",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
       },
       {
         "id": "CD-02",
         "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
         "areaEnfoque": "Enablement",
-        "objetivosClave": [
-          "Guías por herramienta",
-          "Repositorio accesible",
-          "Sesiones de difusión"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Guías publicadas",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Ops / Champions",
+        "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       }
     ]
   }

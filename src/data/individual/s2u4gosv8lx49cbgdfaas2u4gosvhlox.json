@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.862Z",
+  "generated_at": "2025-09-23T16:06:11.628Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.862Z",
+    "generatedAt": "2025-09-23T16:06:11.628Z",
     "schema": "individual-1.0",
     "id": "s2u4gosv8lx49cbgdfaas2u4gosvhlox",
     "subject": {
       "nombreCompleto": "BRYAN ESTEVEZ BURGOS",
       "email": "bryanestevez2597@gmail.com",
-      "assessed_on": "2025-09-22T15:35:07.862Z"
+      "assessed_on": "2025-09-23T16:06:11.628Z",
+      "demographics": {
+        "rol": "Cajero Financiero",
+        "area": "Operaciones",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Masculino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,22 +207,97 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "El innovar y aprender cada dia es un reto que quiero cumplir en mi vida"
-    ],
-    "D2_OPEN": [
-      "Me sentiria mas comodo con una herramienta de inteligencia artificial para que me puede dar soporte en mis dudas"
-    ],
-    "D3_OPEN": [
-      "Talleres presenciales que nos ayuden a un buen manejo de las herramientas digitales"
-    ],
-    "D4_OPEN": [
-      "No me siento preocupado, por que siempre puede existir una nueva necesidad que se puede cubrir para brindar una mejor experiencia al cliente"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
-    "resumenGeneral": "Plan priorizado según brechas principales — .",
-    "iniciativas": []
+    "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
+    "criterios": {
+      "top_gaps": [],
+      "role": "cajero",
+      "signals_from_open_ended": []
+    },
+    "iniciativas": [
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ]
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ]
+      }
+    ]
   }
 }

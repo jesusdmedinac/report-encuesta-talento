@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:10.942Z",
+  "generated_at": "2025-09-23T16:06:12.114Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:10.942Z",
+    "generatedAt": "2025-09-23T16:06:12.114Z",
     "schema": "individual-1.0",
     "id": "1cib6y041kje0qjaxeh1cib07saxdx33",
     "subject": {
       "nombreCompleto": "Victor Federico Murillo Tabares",
       "email": "vmurillo@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:10.942Z"
+      "assessed_on": "2025-09-23T16:06:12.114Z",
+      "demographics": {
+        "rol": "Lider Técnico de Aplicaciones Cartera e Inversiones",
+        "area": "Sistemas",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Masculino",
+        "rangoEdad": "45-54"
+      }
     }
   },
   "scores": {
@@ -200,62 +207,122 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Comprometido en el aprendizaje de la IA"
-    ],
-    "D2_OPEN": [
-      "Capacitacitaciones en nuevas herramientas para entrar en el mundo de la agilidad e innovacion utilizando IA"
-    ],
-    "D3_OPEN": [
-      "Involucrar a todos a cambiar el mindset digital e impulsar habilidades y programas de agilidad e innovacion"
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa es mejor la productividad en mi trabajo al automatizar procesos, crear programas y servicios que sean escalables y generen una gran experiencia a los clientes"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 1.3
+        }
+      ],
+      "role": "liderazgo",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "id": "IA-04",
+        "titulo": "Programa de adopción controlada",
+        "descripcion": "Roadmap de adopción con pilotos escalonados, criterios de calidad y seguimiento de riesgos.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
+        "prioridad": "Alta",
+        "plazoEstimado": "8-12 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "adopcion",
+          "gobierno"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "percepcionDeRiesgo"
+        ],
+        "objective": "Elevar adopción con control de calidad y gestión de riesgos",
+        "key_results": [
           {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
+            "metric": "nivelDeAdopcion",
+            "target": "+1.0"
+          },
+          {
+            "metric": "percepcionDeRiesgo",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
       }
     ]
   }

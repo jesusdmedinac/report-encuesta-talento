@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.728Z",
+  "generated_at": "2025-09-23T16:06:11.534Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.728Z",
+    "generatedAt": "2025-09-23T16:06:11.534Z",
     "schema": "individual-1.0",
     "id": "brsd47kizkp15blo86brsd4k7p9nciuu",
     "subject": {
       "nombreCompleto": "Allisson Bazurto Herrera",
       "email": "abazurto1@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:07.728Z"
+      "assessed_on": "2025-09-23T16:06:11.534Z",
+      "demographics": {
+        "rol": "Ingreso de cifras financieras para solicitudes de crédito",
+        "area": "Productos e Innovación",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "Menos de 25"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,125 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "\"Si la vida te da limones, aprende a hacer limonada\", el camino esta lleno de oportunidades solo hay que saber aprovecharlas."
-    ],
-    "D2_OPEN": [
-      "Una nueva herramienta enfocada en extraer informacion de fuentes externas para automatizar la validacion de paginas (FGE, FJ, SRI, IESS) y agilizar la revision de los clientes"
-    ],
-    "D3_OPEN": [
-      "Brindar pequenas capacitaciones sobre como las mejoras tecnologicas implementadas en nuestro proceso nos ayuda a agilizar y liberar la carga laboral excesiva. Compartir los avances en los proyectos de automatizacion que influyen en nuestras funciones."
-    ],
-    "D4_OPEN": [
-      "Si la IA es una herramienta que puede usarse para mejorar mi rol, no tendria problema porque el objetivo es agilizar los procesos manuales que demandan mayor tiempo, con el fin de enfocar nuestro esfuerzo en funciones mas claves y de valor agregado"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 2.1 · culturaOrganizacional: gap 1.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "brechaDigital",
+          "gap": 2.1
+        },
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 1.3
+        }
+      ],
+      "role": "tecnico",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
-        "id": "CD-01",
-        "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
+        "id": "CD-04",
+        "titulo": "Mentoring entre pares",
+        "descripcion": "Pareo mensual para práctica dirigida de competencias digitales con retos cortos.",
         "areaEnfoque": "Talento y Formación",
-        "objetivosClave": [
-          "Módulos de competencias priorizadas",
-          "Evaluaciones antes/después",
-          "Mentoría ligera"
+        "prioridad": "Baja",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
         ],
-        "metricasExito": [
+        "tags": [
+          "colaboracion",
+          "aprendizaje"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "key_results": [
           {
-            "metrica": "% de finalización",
-            "valorObjetivo": ">= 75%"
+            "metric": "alfabetizacionDeDatos",
+            "target": "8.0/10"
           },
           {
-            "metrica": "+puntos en post-test",
-            "valorObjetivo": "+1.0 (escala 1–10)"
+            "metric": "colaboracionDigital",
+            "target": "8.0/10"
           }
-        ],
-        "responsableSugerido": "L&D / HR",
-        "plazoEstimado": "8-10 semanas",
-        "prioridad": "Media"
+        ]
       },
       {
-        "id": "CD-02",
-        "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
-        "areaEnfoque": "Enablement",
-        "objetivosClave": [
-          "Guías por herramienta",
-          "Repositorio accesible",
-          "Sesiones de difusión"
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Guías publicadas",
-            "valorObjetivo": ">= 5"
-          }
+        "tags": [
+          "comunidad",
+          "aprendizaje"
         ],
-        "responsableSugerido": "Ops / Champions",
-        "plazoEstimado": "3-4 semanas",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       },
       {
         "id": "CU-01",
         "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
         ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "experimentacion",
+        "target": "8.0/10"
       },
       {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
         ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboracionDigital",
+        "target": "8.0/10"
       }
     ]
   }

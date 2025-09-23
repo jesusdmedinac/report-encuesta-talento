@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:10.622Z",
+  "generated_at": "2025-09-23T16:06:11.958Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:10.622Z",
+    "generatedAt": "2025-09-23T16:06:11.958Z",
     "schema": "individual-1.0",
     "id": "58e2azsdo8dzd2iubjg58e2uctselv5x",
     "subject": {
       "nombreCompleto": "Gerardo Gudiño Riascos",
       "email": "ggudino@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:10.622Z"
+      "assessed_on": "2025-09-23T16:06:11.958Z",
+      "demographics": {
+        "rol": "Monitoreo de cuentas y canales digitales",
+        "area": "PREVENCION E INVESTIGACION",
+        "nivelEducativo": "Secundaria",
+        "genero": "Masculino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,22 +207,97 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "La evolucion digital acelera nuestro razonamiento"
-    ],
-    "D2_OPEN": [
-      "Creeria que para una mejor respuesta al aplicativo de monitoreo pienso a veces que se retrasa por el volumen de transito transaccional y para mejorar creeria que tiene que mejorar los equipos que ayuden a manejar este trafico transaccional con mayor fluidez"
-    ],
-    "D3_OPEN": [
-      "Es de felicitar la gestion que hace la empresa por siempre tenernos actualizados y para mejorar videos o consultas a expertos para ver si alguna idea se puede aplicar respetando las politicas de la empresa"
-    ],
-    "D4_OPEN": [
-      "Que la tipologias de fraude son cambiantes y no tan estaticas puede dejar pasar por alto algunos factores"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
-    "resumenGeneral": "Plan priorizado según brechas principales — .",
-    "iniciativas": []
+    "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
+    "criterios": {
+      "top_gaps": [],
+      "role": "tecnico",
+      "signals_from_open_ended": []
+    },
+    "iniciativas": [
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ]
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ]
+      }
+    ]
   }
 }

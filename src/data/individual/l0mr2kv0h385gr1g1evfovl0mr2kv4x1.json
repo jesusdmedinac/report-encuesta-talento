@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.865Z",
+  "generated_at": "2025-09-23T16:06:11.632Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.865Z",
+    "generatedAt": "2025-09-23T16:06:11.632Z",
     "schema": "individual-1.0",
     "id": "l0mr2kv0h385gr1g1evfovl0mr2kv4x1",
     "subject": {
       "nombreCompleto": "Aryanna Gonzalez Villamar",
       "email": "arya_gonzalez@hotmail.com",
-      "assessed_on": "2025-09-22T15:35:07.865Z"
+      "assessed_on": "2025-09-23T16:06:11.632Z",
+      "demographics": {
+        "rol": "cajero financiero",
+        "area": "operaciones",
+        "nivelEducativo": "Secundaria",
+        "genero": "Femenino",
+        "rangoEdad": "Menos de 25"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,124 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "mi viaje de aprendizaje digital ha sido un proceso constante de adaptacion y crecimiento, aprovechando la tecnologia para mejorar la eficiencia y ofrecer un servicio seguro y agil a los cliente"
-    ],
-    "D2_OPEN": [
-      "menos uso de papel y mas acceso digital en transacciones, mas interaccion entre los companeros del departamento"
-    ],
-    "D3_OPEN": [
-      "Lo mas importante para acelerar la cultura digital en la empresa es fomentar la capacitacion continua y el acompanamiento practico, asegurando que todos los colaboradores se sientan comodos y motivados para adoptar nuevas tecnologias, ademas de promover una comunicacion abierta que incentive la innovacion y la colaboracion"
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa es que la Inteligencia Artificial me ayude a agilizar procesos repetitivos, permitiendome dedicar mas tiempo a la atencion personalizada del cliente. Sin embargo, tambien me preocupa que la automatizacion pueda reducir la interaccion humana y que sea necesario adaptarse rapidamente a nuevas tecnologias para no quedarse atras"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 3 · brechaDigital: gap 1.4.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 3
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 1.4
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        }
+      ],
+      "role": "cajero",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "id": "CU-04",
+        "titulo": "Reconocimiento a iniciativas de mejora",
+        "descripcion": "Mecanismo trimestral de reconocimiento a iniciativas con resultado medible.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "12 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "reconocimiento",
+          "resultados"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "reconocimiento"
+        ],
+        "key_results": [
           {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
-      {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "CD-01",
-        "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
-        "areaEnfoque": "Talento y Formación",
-        "objetivosClave": [
-          "Módulos de competencias priorizadas",
-          "Evaluaciones antes/después",
-          "Mentoría ligera"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% de finalización",
-            "valorObjetivo": ">= 75%"
+            "metric": "ambienteDeAprendizaje",
+            "target": "8.0/10"
           },
           {
-            "metrica": "+puntos en post-test",
-            "valorObjetivo": "+1.0 (escala 1–10)"
+            "metric": "reconocimiento",
+            "target": "8.0/10"
           }
-        ],
-        "responsableSugerido": "L&D / HR",
-        "plazoEstimado": "8-10 semanas",
-        "prioridad": "Media"
+        ]
       },
       {
         "id": "CD-02",
         "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
         "areaEnfoque": "Enablement",
-        "objetivosClave": [
-          "Guías por herramienta",
-          "Repositorio accesible",
-          "Sesiones de difusión"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Guías publicadas",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Ops / Champions",
+        "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-01",
+        "titulo": "Ciclos de experimentación y reconocimiento",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
+        ],
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "reconocimiento",
+        "target": "8.0/10"
       }
     ]
   }

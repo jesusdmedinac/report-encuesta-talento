@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:06.778Z",
+  "generated_at": "2025-09-23T16:06:11.210Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:06.778Z",
+    "generatedAt": "2025-09-23T16:06:11.210Z",
     "schema": "individual-1.0",
     "id": "hinhh4u3s7wejt53yvu7hinkjzuxq8tp",
     "subject": {
       "nombreCompleto": "Omar Morocho Sandoval",
       "email": "omorocho@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:06.778Z"
+      "assessed_on": "2025-09-23T16:06:11.210Z",
+      "demographics": {
+        "rol": "cajero financiero",
+        "area": "operaciones",
+        "nivelEducativo": "Secundaria",
+        "genero": "Masculino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,62 +207,124 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "me siento emocionado y listo para el cambio"
-    ],
-    "D2_OPEN": [
-      "Simplificar ciertos documentos fisicos para agilizar los procesos, al igual que implemetar maquinas de autogestion en el area de servicio al cliente para solventar los miles de requerimientos que tenemos a diario como: movimientos, numeros de cuneta, saldos, y valores a pagar de TC de nuestros clientes, con un sistema de validacion de ESCANER DE ROSTRO y con su numero de cedula, esto nos ayudaria muchisimo en cuanto a temas de espera en filas de servicio al cliente y malas experiencias para nuestros clientes. Tomando en cuenta que tenemos de apoyo a nuestros guias (Attaches) en nuestras agencias para ayudar a nuestros clientes en lo mencionado anteriormente."
-    ],
-    "D3_OPEN": [
-      "impulsar el uso de nuestros canales digitales, facilitandonos muchas cosas y tenerlas a nuestro alcance son solo un clic :)"
-    ],
-    "D4_OPEN": [
-      "mi mayor preocupacion es que se llegue a dar un mal uso a esta herramineta generando danos a nuestra institucion y a quienes la conformamos."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.1.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.1
+        }
+      ],
+      "role": "cajero",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "percepcionDeRiesgo",
+            "target": "8.0/10"
+          }
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.4/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.4/10"
       }
     ]
   }

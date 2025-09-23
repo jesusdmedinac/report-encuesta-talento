@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:15.798Z",
+  "generated_at": "2025-09-23T16:06:12.346Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:15.798Z",
+    "generatedAt": "2025-09-23T16:06:12.346Z",
     "schema": "individual-1.0",
     "id": "7c6xgomcz3n32vx47c6xgo51v36wl8az",
     "subject": {
       "nombreCompleto": "MIGUEL BUSTAMANATE",
       "email": "mbustamante1@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:15.798Z"
+      "assessed_on": "2025-09-23T16:06:12.346Z",
+      "demographics": {
+        "rol": "ASESOR COMERCIAL",
+        "area": "RED DE SEGMENTOS Y CANALES",
+        "nivelEducativo": "Secundaria",
+        "genero": "Masculino",
+        "rangoEdad": "Menos de 25"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,133 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "BUSCO QUE SEA PROACTIVO Y ME AYUDE A SER MAS EFEICAZ EN LOS PROCESOS QUE REALIZAMOS TODOS LOS DIAS"
-    ],
-    "D2_OPEN": [
-      "mas capacitacion en herramientas de Excel, power bi"
-    ],
-    "D3_OPEN": [
-      "FOMENTAR MAS EL USO DE EL APP Y CANALES VIRTUALES, DAR ALGUN TIPO DE INCETIVO AL CLTE AL MOMENTO DE USAR LA APLICACION PARA DIFERENTES SERVICIOS"
-    ],
-    "D4_OPEN": [
-      "QUE HAGA TAREAS Y QUE BAJE LA CARGA LABORAL DE MI PUESTO Y ASI PODER DEDICAR EL TIEMPO A OTRAS ACTIVIADES QUE DEMANDEN MAS TIEMPO"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.6 · culturaOrganizacional: gap 1.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "madurezDigital",
+          "gap": 1.6
+        },
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 1.1
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.5
+        }
+      ],
+      "role": "comercial",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "MD-01",
         "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
+        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
         "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
+        "prioridad": "Alta",
+        "plazoEstimado": "6-8 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "roadmap",
+          "procesos",
+          "priorizacion"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "resolucionDeProblemas",
+          "proactividadDigital"
+        ],
+        "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
+        "key_results": [
           {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
+            "metric": "resolucionDeProblemas",
+            "target": "+1.0"
           },
           {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
+            "metric": "proactividadDigital",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "Data Lead / TI",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "CU-01",
         "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
         ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "reconocimiento",
+        "target": "8.0/10"
       },
       {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
+        "tags": [
+          "comunidad",
+          "aprendizaje"
         ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
       }
     ]
   }

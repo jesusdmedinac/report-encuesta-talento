@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.555Z",
+  "generated_at": "2025-09-23T16:06:11.458Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.555Z",
+    "generatedAt": "2025-09-23T16:06:11.458Z",
     "schema": "individual-1.0",
     "id": "hh8mt8e0vs391fv5hh8mteq6q58f2iih",
     "subject": {
       "nombreCompleto": "Joseline Santillan Pincay",
       "email": "jsantillan2@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:07.555Z"
+      "assessed_on": "2025-09-23T16:06:11.458Z",
+      "demographics": {
+        "rol": "Cajero Financiero",
+        "area": "Operaciones",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,128 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Una experiencia que me ha permitido expandir mis habilidades y pensamiento critico de forma eficiente, a traves de la automatizacion."
-    ],
-    "D2_OPEN": [
-      "Consideraria que la combinacion de capacitaciones y exploracion autonoma de las herramientas que nos proporcionan seria lo mas efectivo para maximizar nuestro potencial."
-    ],
-    "D3_OPEN": [
-      "Lo mas importante para acelerar la cultura digital seria la propagacion de informacion digital, a traves de talleres y capacitaciones constantes a todas las areas. Tambien seria clave promover el liderazgo digital que inspire y guie a todos hacia la innovacion constante"
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa es que la Inteligencia Artificial pueda agilizar las operaciones diarias, permitiendonos ofrecer un servicio mas rapido y preciso a los clientes. Sin embargo, mi preocupacion es que la IA no reemplace la atencion personalizada con el cliente que es fundamental en el rol de cajero financiero, especialmente en situaciones complejas donde la empatia y el juicio humano son clave."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.6 · madurezDigital: gap 0.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 2.6
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.5
+        }
+      ],
+      "role": "cajero",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "eticaYVerificacion",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "frecuenciaDeUso",
+            "target": "8.0/10"
+          }
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
-      },
-      {
-        "id": "MD-01",
-        "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
-        "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
-          },
-          {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
-          }
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
         ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "Data Lead / TI",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
+        "metric": "eticaYVerificacion",
+        "target": "8.0/10"
       }
     ]
   }

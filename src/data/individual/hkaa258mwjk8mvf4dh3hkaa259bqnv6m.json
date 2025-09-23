@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.647Z",
+  "generated_at": "2025-09-23T16:06:11.503Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.647Z",
+    "generatedAt": "2025-09-23T16:06:11.503Z",
     "schema": "individual-1.0",
     "id": "hkaa258mwjk8mvf4dh3hkaa259bqnv6m",
     "subject": {
       "nombreCompleto": "MAURO RAMIRO CACERES PINEDA",
       "email": "MCACERES@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-22T15:35:07.647Z"
+      "assessed_on": "2025-09-23T16:06:11.503Z",
+      "demographics": {
+        "rol": "Gestor Banco del Barrio",
+        "area": "Microfinanzas",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Masculino",
+        "rangoEdad": "45-54"
+      }
     }
   },
   "scores": {
@@ -200,102 +207,131 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Crecimiento personal y profesional"
-    ],
-    "D2_OPEN": [
-      "Tener en tiempo real la frecuencia de deposito de los sobregiros de mis clientes minimo sus ultimos 10 depositos"
-    ],
-    "D3_OPEN": [
-      "Crear un programa de pasantias internas hacia las areas donde existe un manejo importante de estas nuevas herramientas Ejemplo: Gestor Banco del Barrio pasantia 5 o mas sesiones al area de Marketing Digital Esto daria practica en la marcha Incentivaria nuevos aprendizajes Aceleraria la vision y aprendizaje digital Crearia nuevas expectativas de optar por nuevos cargos etc.etc"
-    ],
-    "D4_OPEN": [
-      "Gran expectativa por la evolucion de nuestro canal con las nuevas herramientas o aplicaciones que estan por venir. Imagino dar un click en el nombre de mi cliente y ahi enseguida se despliegue todo unificado: Foto del propietario y dependientes Fecha de cumpleanos Estadisticas de crecimiento o no del ultimo ano Frecuencia de visitas Rentabilidad promedio y su detalle del el ultimo ano Buzon de sugerencias directo y cuantas de estas se implementaron Frecuencia de depositos Requerimientos CRM solicitados y cuantos fueron solucionados Detalle si esta o no fraccionando depositos EN FIN ESO Y MUCHAS COSAS MAS"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.5
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.2
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.2
+        }
+      ],
+      "role": "gestor",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "id": "CU-04",
+        "titulo": "Reconocimiento a iniciativas de mejora",
+        "descripcion": "Mecanismo trimestral de reconocimiento a iniciativas con resultado medible.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "12 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "reconocimiento",
+          "resultados"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "reconocimiento"
+        ],
+        "key_results": [
           {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
-      {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
+            "metric": "reconocimiento",
+            "target": "8.0/10"
+          },
           {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
+            "metric": "ambienteDeAprendizaje",
+            "target": "8.0/10"
           }
-        ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
-        "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-01",
+        "titulo": "Ciclos de experimentación y reconocimiento",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
+        ],
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "reconocimiento",
+        "target": "8.0/10"
       }
     ]
   }

@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:10.693Z",
+  "generated_at": "2025-09-23T16:06:11.991Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:10.693Z",
+    "generatedAt": "2025-09-23T16:06:11.991Z",
     "schema": "individual-1.0",
     "id": "z0vl7p5h2w977l6npz0vl770n2jm4q7g",
     "subject": {
       "nombreCompleto": "Romina Mañay Delgado",
       "email": "amanay@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:10.693Z"
+      "assessed_on": "2025-09-23T16:06:11.991Z",
+      "demographics": {
+        "rol": "Oficial de Tesorería",
+        "area": "Tesorería",
+        "nivelEducativo": "Maestría / Especialización (Posgrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,102 +207,118 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "La transformacion digital de mi entorno me impulso a transformarme a mi misma, combinando mi interes por entender como funciona el negocio con una vision analitica basada en datos, que hoy me permite verlo, repensarlo y transformarlo."
-    ],
-    "D2_OPEN": [
-      "mas capacitacion en mi area respecto al negocio y a temas tecnicos de big data (sql, python, powerbi, la nube)"
-    ],
-    "D3_OPEN": [
-      "Desde mi experiencia, lo mas importante que la empresa podria hacer para acelerar la cultura digital es invertir en el desarrollo de perfiles hibridos: personas que ya conocen a fondo el negocio y tienen el potencial de incorporar habilidades analiticas y digitales. Muchas veces se asocia la transformacion solo con lo tecnologico, pero sin entender como funciona el negocio, los cambios no generan impacto real. Hay mucho talento interno con una vision operativa valiosa, que con la formacion adecuada en herramientas digitales, datos y automatizacion, puede convertirse en un puente real entre el negocio y la tecnologia. Apostar por ellos no solo acelera la adopcion, sino que crea una cultura digital mas integrada, sostenible y alineada con la realidad de la organizacion."
-    ],
-    "D4_OPEN": [
-      "Mas que una preocupacion, mi expectativa sobre el uso de la Inteligencia Artificial en mi rol es que podamos integrarla de manera responsable y estrategica. Si estamos preparados, con el conocimiento adecuado y entendemos como funciona, la IA es una herramienta muy potente que podemos configurar, adaptar y usar para potenciar nuestro trabajo. En las manos correctas, con criterio etico y entendimiento del negocio, la IA no reemplaza, sino que amplifica nuestro alcance. Mi foco esta en seguir aprendiendo para usarla con inteligencia, no solo tecnica, sino tambien humana."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.5.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.5
+        }
+      ],
+      "role": "oficial",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
       {
         "id": "CU-02",
         "titulo": "Programa de liderazgo digital",
         "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
         "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "HR / Dirección",
+        "prioridad": "Alta",
         "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
-        "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
+        "rolesPreferidos": [
+          "liderazgo"
         ],
-        "metricasExito": [
+        "tags": [
+          "liderazgo",
+          "objetivos"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "liderazgoYVision"
+        ],
+        "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
+        "key_results": [
           {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
+            "metric": "liderazgoYVision",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       }
     ]
   }

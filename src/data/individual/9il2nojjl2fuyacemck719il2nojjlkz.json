@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:10.937Z",
+  "generated_at": "2025-09-23T16:06:12.113Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:10.937Z",
+    "generatedAt": "2025-09-23T16:06:12.113Z",
     "schema": "individual-1.0",
     "id": "9il2nojjl2fuyacemck719il2nojjlkz",
     "subject": {
       "nombreCompleto": "Carolina Tituaña",
       "email": "ctituana@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:10.937Z"
+      "assessed_on": "2025-09-23T16:06:12.113Z",
+      "demographics": {
+        "rol": "Cajero financiero",
+        "area": "Operaciones",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,110 +207,130 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "El aprendizaje digital es una evolucion constante que me permite adquirir habilidades digitales para afrontar los retos del entorno laboral."
-    ],
-    "D2_OPEN": [
-      "Una combinacion de mas capacitacion y herramientas complemantarias seria lo ideal, ya que capacitarnos en funciones avanzadas de excel o software junto con el uso de herramientas para una gestion de tareas nos permite optimizar el tiempo y reducir errores."
-    ],
-    "D3_OPEN": [
-      "Lo mas importante seria impulsar una cultura de aprendizaje continuo brindando acceso a capacitaciones digitales practicas y fomentar el uso diario de herramientas tecnologicas en todas las areas."
-    ],
-    "D4_OPEN": [
-      "En un futuro espero que la IA se convierta en una herramienta que amente mi eficiencia, facilitando el analisis de datos y generando informes mas precisos en menos tiempo."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.1 · brechaDigital: gap 1.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "madurezDigital",
+          "gap": 1.1
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 1
+        },
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.5
+        }
+      ],
+      "role": "cajero",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "MD-01",
         "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
+        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
         "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
-          },
-          {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
-          }
-        ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
+        "prioridad": "Alta",
         "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "roadmap",
+          "procesos",
+          "priorizacion"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "resolucionDeProblemas",
+          "proactividadDigital"
+        ],
+        "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
+        "key_results": [
           {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "Data Lead / TI",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "CD-01",
-        "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
-        "areaEnfoque": "Talento y Formación",
-        "objetivosClave": [
-          "Módulos de competencias priorizadas",
-          "Evaluaciones antes/después",
-          "Mentoría ligera"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% de finalización",
-            "valorObjetivo": ">= 75%"
+            "metric": "resolucionDeProblemas",
+            "target": "+1.0"
           },
           {
-            "metrica": "+puntos en post-test",
-            "valorObjetivo": "+1.0 (escala 1–10)"
+            "metric": "proactividadDigital",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "L&D / HR",
-        "plazoEstimado": "8-10 semanas",
-        "prioridad": "Media"
+        ]
       },
       {
         "id": "CD-02",
         "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
         "areaEnfoque": "Enablement",
-        "objetivosClave": [
-          "Guías por herramienta",
-          "Repositorio accesible",
-          "Sesiones de difusión"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Guías publicadas",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Ops / Champions",
+        "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resolucionDeProblemas",
+        "target": "8.0/10"
       }
     ]
   }

@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:10.773Z",
+  "generated_at": "2025-09-23T16:06:12.068Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:10.773Z",
+    "generatedAt": "2025-09-23T16:06:12.068Z",
     "schema": "individual-1.0",
     "id": "iwtp18hv8v0uiwoj9ziiwtp1917ognd2",
     "subject": {
       "nombreCompleto": "RONALDO WIDER GUARDADO PINCAY",
       "email": "RGUARDADO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-22T15:35:10.773Z"
+      "assessed_on": "2025-09-23T16:06:12.068Z",
+      "demographics": {
+        "rol": "CAJERO FINANCIERO",
+        "area": "OPERACIONES",
+        "nivelEducativo": "Técnico / Tecnológico",
+        "genero": "Masculino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,106 +207,136 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Mi viaje de aprendizaje digital ha sido un proceso constante de adaptacion, curiosidad y crecimiento, que me ha permitido mejorar mis habilidades y estar a la vanguardia en un entorno cada vez mas tecnologico."
-    ],
-    "D2_OPEN": [
-      "Considero que una mayor capacitacion en las herramientas actuales me ayudaria a ser mas eficiente, ya que dominar al 100% sus funciones me permitiria optimizar procesos, reducir errores y brindar un mejor servicio al cliente."
-    ],
-    "D3_OPEN": [
-      "Desde mi perspectiva, lo mas importante que la empresa podria hacer para acelerar la cultura digital es fomentar una formacion continua y practica en herramientas digitales, ademas de impulsar una mentalidad de innovacion y apertura al cambio en todos los niveles del equipo."
-    ],
-    "D4_OPEN": [
-      "Mi mayor expectativa es que la Inteligencia Artificial me ayude a optimizar tareas repetitivas, permitiendome enfocarme mas en brindar un servicio personalizado y estrategico. Mi principal preocupacion seria que su implementacion no venga acompanada de la capacitacion adecuada, lo que podria generar brechas en el equipo o errores en el uso de estas herramientas."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · madurezDigital: gap 1.6.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 1.7
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 1.6
+        },
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.3
+        }
+      ],
+      "role": "cajero",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "IA-01",
         "titulo": "Pilotos de IA con casos de alto valor",
         "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
+        "prioridad": "Alta",
         "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        "rolesPreferidos": [
+          "tecnico",
+          "operaciones",
+          "liderazgo"
+        ],
+        "tags": [
+          "ia",
+          "pilotos",
+          "productividad",
+          "cliente"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "habilidadDeUso"
+        ],
+        "key_results": [
+          {
+            "metric": "nivelDeAdopcion",
+            "target": "8.0/10"
+          },
+          {
+            "metric": "frecuenciaDeUso",
+            "target": "8.0/10"
+          }
+        ]
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
-      },
-      {
-        "id": "MD-01",
-        "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros para evolucionar procesos, datos y tecnología.",
-        "areaEnfoque": "Estrategia y Gobierno",
-        "objetivosClave": [
-          "Roadmap aprobado y comunicado",
-          "Prioridades Q1-Q2 definidas",
-          "KPIs de madurez acordados"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Roadmap publicado",
-            "valorObjetivo": "Antes de fin de mes"
-          },
-          {
-            "metrica": "% iniciativas con dueño",
-            "valorObjetivo": ">= 90%"
-          }
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
         ],
-        "responsableSugerido": "PMO / Dirección de Transformación",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Establecer gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, roles (data owners) y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "objetivosClave": [
-          "Inventario de datos críticos",
-          "Roles y responsables definidos",
-          "Políticas de calidad y acceso"
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% dominios con owner",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "Data Lead / TI",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Alta"
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
       }
     ]
   }

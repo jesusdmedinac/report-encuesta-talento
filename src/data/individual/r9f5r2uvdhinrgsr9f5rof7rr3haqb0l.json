@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:15.692Z",
+  "generated_at": "2025-09-23T16:06:12.318Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:15.692Z",
+    "generatedAt": "2025-09-23T16:06:12.318Z",
     "schema": "individual-1.0",
     "id": "r9f5r2uvdhinrgsr9f5rof7rr3haqb0l",
     "subject": {
       "nombreCompleto": "KRYSTELL CAROLINA CAICEDO",
       "email": "KCAICEDO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-22T15:35:15.692Z"
+      "assessed_on": "2025-09-23T16:06:12.318Z",
+      "demographics": {
+        "rol": "ANALISTA",
+        "area": "Cumplimiento",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,102 +207,126 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "un proceso de adaptacion y descubrimiento, donde se me permite potenciar mis habilidades"
-    ],
-    "D2_OPEN": [
-      "pienso en una y deseo que la herramienta sea mas amigable y tenga rapidez al solicitar la informacion. las demas pueden mejorar su efectividad"
-    ],
-    "D3_OPEN": [
-      "Creo que lo mas importante es que la empresa nos apoye con capacitaciones faciles de entender, y que nos de herramientas digitales que realmente funcionen para el dia a dia. Tambien que haya buena comunicacion y que todos trabajemos juntos para que sea mas facil adaptarnos al cambio y sacar lo mejor de la tecnologia. Una opcion seria que nos brinden capacitaciones presenciales porque cuando son online y tenemos que hacer las tareas del trabajo al mismo tiempo, es dificil concentrarse al 100%. Si se separa un espacio exclusivo solo para la capacitacion, podemos aprovechar mejor el aprendizaje y sacar mas provecho de las herramientas digitales."
-    ],
-    "D4_OPEN": [
-      "Espero que la inteligencia artificial me ayude a dejar de hacer tareas repetitivas y poder dedicar mas tiempo a lo que realmente necesita atencion personal. Pero me preocupa que, si no se usa bien, termine reemplazando cosas que deberian hacer las personas, porque al final el toque humano es muy importante"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1.5
+        },
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 0.9
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.5
+        },
+        {
+          "dim": "brechaDigital",
+          "gap": 0.3
+        }
+      ],
+      "role": "analista",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
-      {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
-        "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
-      },
       {
         "id": "CU-02",
         "titulo": "Programa de liderazgo digital",
         "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
         "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
-        ],
-        "responsableSugerido": "HR / Dirección",
+        "prioridad": "Alta",
         "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
-        "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
+        "rolesPreferidos": [
+          "liderazgo"
         ],
-        "metricasExito": [
+        "tags": [
+          "liderazgo",
+          "objetivos"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "liderazgoYVision"
+        ],
+        "objective": "Consolidar liderazgo visible con métricas y cascada de objetivos",
+        "key_results": [
           {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
+            "metric": "liderazgoYVision",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
+        ]
       },
       {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
         "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
-          }
-        ],
-        "responsableSugerido": "L&D / Legal",
+        "prioridad": "Media",
         "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "comunidad",
+          "aprendizaje"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
       }
     ]
   }

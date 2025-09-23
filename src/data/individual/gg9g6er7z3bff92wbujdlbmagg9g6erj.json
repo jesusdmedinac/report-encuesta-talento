@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:05.969Z",
+  "generated_at": "2025-09-23T16:06:10.938Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:05.969Z",
+    "generatedAt": "2025-09-23T16:06:10.938Z",
     "schema": "individual-1.0",
     "id": "gg9g6er7z3bff92wbujdlbmagg9g6erj",
     "subject": {
       "nombreCompleto": "MARIA FERNANDA ECHEVERRIA PALMA",
       "email": "mecheverria1@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:05.969Z"
+      "assessed_on": "2025-09-23T16:06:10.938Z",
+      "demographics": {
+        "rol": "OFICIAL SENIOR",
+        "area": "MEDIOS DE PAGO",
+        "nivelEducativo": "Secundaria",
+        "genero": "Femenino",
+        "rangoEdad": "45-54"
+      }
     }
   },
   "scores": {
@@ -200,102 +207,129 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Un camino nuevo pero lleno de oportunidades para crecer y aprender"
-    ],
-    "D2_OPEN": [
-      "me gustaria mas capacitacion en la herramienta de Neo, tambien que se automaticen ciertos procesos que actualmente los hago de forma manual, para asi optimizar mi tiempo en mis responsabilidades diarias"
-    ],
-    "D3_OPEN": [
-      "Considero que es muy importante que nos capaciten continuamente ante los cambios y mejoras tecnologicas y digitales."
-    ],
-    "D4_OPEN": [
-      "Mi expectativa es que la IA nos permita potencializar las ofertas de TC de acuerdo a la necesidad de nuestros clientes. Mi preocupacion seria que se reemplace con una IA la supervision humana, perdiendose de esta manera la experiencia de una atencion personalizada como la tenemos en nuestro equipo y la calidez humana."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · culturaOrganizacional: gap 1.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "usoInteligenciaArtificial",
+          "gap": 1.7
+        },
+        {
+          "dim": "culturaOrganizacional",
+          "gap": 1
+        },
+        {
+          "dim": "madurezDigital",
+          "gap": 0.8
+        }
+      ],
+      "role": "oficial",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
-        "id": "IA-01",
-        "titulo": "Pilotos de IA con casos de alto valor",
-        "descripcion": "Identificar 2-3 casos de uso (productividad/cliente), ejecutar pilotos con control y medir ROI.",
+        "id": "IA-04",
+        "titulo": "Programa de adopción controlada",
+        "descripcion": "Roadmap de adopción con pilotos escalonados, criterios de calidad y seguimiento de riesgos.",
         "areaEnfoque": "Innovación Aplicada",
-        "objetivosClave": [
-          "Selección de casos",
-          "Pilotos ejecutados",
-          "Lecciones y escalamiento"
+        "prioridad": "Alta",
+        "plazoEstimado": "8-12 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "adopcion",
+          "gobierno"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "nivelDeAdopcion",
+          "percepcionDeRiesgo"
+        ],
+        "objective": "Elevar adopción con control de calidad y gestión de riesgos",
+        "key_results": [
           {
-            "metrica": "Pilotos con ROI positivo",
-            "valorObjetivo": ">= 2"
-          }
-        ],
-        "responsableSugerido": "TI / Negocio",
-        "plazoEstimado": "6-10 semanas",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres prácticos con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "objetivosClave": [
-          "Plantillas de prompts",
-          "Checklist de verificación",
-          "Casos prácticos"
-        ],
-        "metricasExito": [
+            "metric": "nivelDeAdopcion",
+            "target": "+1.0"
+          },
           {
-            "metrica": "% asistentes certificados",
-            "valorObjetivo": ">= 70%"
+            "metric": "percepcionDeRiesgo",
+            "target": "+1.0"
           }
-        ],
-        "responsableSugerido": "L&D / Legal",
-        "plazoEstimado": "4-6 semanas",
-        "prioridad": "Media"
+        ]
       },
       {
         "id": "CU-01",
         "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Instalar sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
         "areaEnfoque": "Cultura y Cambio",
-        "objetivosClave": [
-          "Rituales de demo",
-          "Reconocimientos mensuales",
-          "Repositorio de aprendizajes"
+        "prioridad": "Media",
+        "plazoEstimado": "3 meses",
+        "rolesPreferidos": [
+          "liderazgo",
+          "mandos"
         ],
-        "metricasExito": [
-          {
-            "metrica": "Equipos participando",
-            "valorObjetivo": ">= 5"
-          }
+        "tags": [
+          "experimentacion",
+          "reconocimiento"
         ],
-        "responsableSugerido": "Change / Líderes",
-        "plazoEstimado": "Continuo (primeros 3 meses de instalación)",
-        "prioridad": "Media"
+        "type": "KPI",
+        "subdimensiones": [
+          "experimentacion",
+          "reconocimiento"
+        ],
+        "metric": "reconocimiento",
+        "target": "8.0/10"
       },
       {
-        "id": "CU-02",
-        "titulo": "Programa de liderazgo digital",
-        "descripcion": "Formación a mandos sobre visión, métricas y comportamientos modelo para acelerar la cultura.",
-        "areaEnfoque": "Liderazgo",
-        "objetivosClave": [
-          "Sesiones de liderazgo",
-          "Compromisos visibles",
-          "Cascada de objetivos"
+        "id": "CU-03",
+        "titulo": "Comunidades de práctica",
+        "descripcion": "Foros quincenales por temática para compartir aprendizajes y demos rápidas.",
+        "areaEnfoque": "Cultura y Cambio",
+        "prioridad": "Media",
+        "plazoEstimado": "8 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
         ],
-        "metricasExito": [
-          {
-            "metrica": "% líderes entrenados",
-            "valorObjetivo": ">= 80%"
-          }
+        "tags": [
+          "comunidad",
+          "aprendizaje"
         ],
-        "responsableSugerido": "HR / Dirección",
-        "plazoEstimado": "6-8 semanas",
-        "prioridad": "Alta"
+        "type": "KPI",
+        "subdimensiones": [
+          "ambienteDeAprendizaje"
+        ],
+        "metric": "ambienteDeAprendizaje",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
       }
     ]
   }

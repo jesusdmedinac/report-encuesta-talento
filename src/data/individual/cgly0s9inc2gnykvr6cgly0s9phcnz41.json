@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.942Z",
+  "generated_at": "2025-09-23T16:06:11.708Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.942Z",
+    "generatedAt": "2025-09-23T16:06:11.708Z",
     "schema": "individual-1.0",
     "id": "cgly0s9inc2gnykvr6cgly0s9phcnz41",
     "subject": {
       "nombreCompleto": "Mariela Lisseth Feijoo Ruilova",
       "email": "mfeijoo@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:07.942Z"
+      "assessed_on": "2025-09-23T16:06:11.708Z",
+      "demographics": {
+        "rol": "Attache",
+        "area": "Asistente de segmentos y canales",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "25-34"
+      }
     }
   },
   "scores": {
@@ -200,66 +207,119 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Un camino de retos y descubrimientos que transforma mi forma de aprender"
-    ],
-    "D2_OPEN": [
-      "Si una mejor tablet con accesos para poder ayudar al cliente y un puesto pequeno de trabajo donde el cliente pueda visualizar nos y le genere mas confianza al acercarse a nosotros"
-    ],
-    "D3_OPEN": [
-      "Capacitacion constante y colaboracion entre equipos para ofrecer soluciones digitales rapidas y seguras"
-    ],
-    "D4_OPEN": [
-      "Espero que la inteligencia artificial sea una herramienta que potencie mi productividad y mejore la experiencia del cliente, pero me preocupa que su uso sustituya el trato humano y la empatia que caracteriza nuestro servicio"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 0.2.",
+    "criterios": {
+      "top_gaps": [
+        {
+          "dim": "brechaDigital",
+          "gap": 0.2
+        }
+      ],
+      "role": "attache",
+      "signals_from_open_ended": []
+    },
     "iniciativas": [
       {
         "id": "CD-01",
         "titulo": "Programa de upskilling en competencias clave",
-        "descripcion": "Formación práctica en adaptabilidad, colaboración digital y seguridad; con evaluación inicial y final.",
+        "descripcion": "Formación práctica en adaptabilidad, colaboración y seguridad; con evaluación inicial y final.",
         "areaEnfoque": "Talento y Formación",
-        "objetivosClave": [
-          "Módulos de competencias priorizadas",
-          "Evaluaciones antes/después",
-          "Mentoría ligera"
+        "prioridad": "Media",
+        "plazoEstimado": "8-10 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos"
         ],
-        "metricasExito": [
+        "tags": [
+          "capacitacion",
+          "colaboracion",
+          "seguridad"
+        ],
+        "type": "OKR",
+        "subdimensiones": [
+          "colaboracionDigital",
+          "ciberseguridad"
+        ],
+        "key_results": [
           {
-            "metrica": "% de finalización",
-            "valorObjetivo": ">= 75%"
+            "metric": "analisisDeDatos",
+            "target": "8.0/10"
           },
           {
-            "metrica": "+puntos en post-test",
-            "valorObjetivo": "+1.0 (escala 1–10)"
+            "metric": "alfabetizacionDeDatos",
+            "target": "8.0/10"
           }
-        ],
-        "responsableSugerido": "L&D / HR",
-        "plazoEstimado": "8-10 semanas",
-        "prioridad": "Media"
+        ]
       },
       {
         "id": "CD-02",
         "titulo": "Guías operativas de buenas prácticas digitales",
-        "descripcion": "Playbooks cortos sobre herramientas críticas (colaboración, datos, seguridad) con ejemplos del negocio.",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
         "areaEnfoque": "Enablement",
-        "objetivosClave": [
-          "Guías por herramienta",
-          "Repositorio accesible",
-          "Sesiones de difusión"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Guías publicadas",
-            "valorObjetivo": ">= 5"
-          }
-        ],
-        "responsableSugerido": "Ops / Champions",
+        "prioridad": "Media",
         "plazoEstimado": "3-4 semanas",
-        "prioridad": "Media"
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.3/10"
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ],
+        "metric": "ciberseguridad",
+        "target": "10.5/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizacionDeDatos",
+        "target": "8.0/10"
       }
     ]
   }

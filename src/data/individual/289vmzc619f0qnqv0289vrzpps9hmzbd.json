@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:07.872Z",
+  "generated_at": "2025-09-23T16:06:11.638Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:07.872Z",
+    "generatedAt": "2025-09-23T16:06:11.638Z",
     "schema": "individual-1.0",
     "id": "289vmzc619f0qnqv0289vrzpps9hmzbd",
     "subject": {
       "nombreCompleto": "Allan Romero",
       "email": "aromero@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:07.872Z"
+      "assessed_on": "2025-09-23T16:06:11.638Z",
+      "demographics": {
+        "rol": "Pasante de Banca empresas y cadena de valor",
+        "area": "Banca Empresas",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Masculino",
+        "rangoEdad": "Menos de 25"
+      }
     }
   },
   "scores": {
@@ -200,22 +207,97 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Fue un gran viaje, como pasante que esta a pocos dias de finalizar su estadia en el Banco, espero seguir aprendiendo muchas mas herramientas dentro de la organizacion de cara al futuro."
-    ],
-    "D2_OPEN": [
-      "Creeria que con implementar mejoras en las herramientas ya existentes seria suficiente para hacer los procesos mas eficientes."
-    ],
-    "D3_OPEN": [
-      "Que todo cambio que este proximo a realizarse, sea socializado previamente."
-    ],
-    "D4_OPEN": [
-      "Que el ser humano dependa demasiado de la IA para no solo en lo laboral, si no en los demas pilares de la vida."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
-    "resumenGeneral": "Plan priorizado según brechas principales — .",
-    "iniciativas": []
+    "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
+    "criterios": {
+      "top_gaps": [],
+      "role": "pasante",
+      "signals_from_open_ended": []
+    },
+    "iniciativas": [
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ]
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ]
+      }
+    ]
   }
 }

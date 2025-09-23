@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:10.755Z",
+  "generated_at": "2025-09-23T16:06:12.049Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:10.755Z",
+    "generatedAt": "2025-09-23T16:06:12.049Z",
     "schema": "individual-1.0",
     "id": "fa2f37vu3ockagcyhwsbk5fa2lzsk4mb",
     "subject": {
       "nombreCompleto": "Jennifer Navarro Carpio",
       "email": "JNAVARRO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-22T15:35:10.755Z"
+      "assessed_on": "2025-09-23T16:06:12.049Z",
+      "demographics": {
+        "rol": "DataOps Lead",
+        "area": "Tecnología",
+        "nivelEducativo": "Universitario (Pregrado)",
+        "genero": "Femenino",
+        "rangoEdad": "35-44"
+      }
     }
   },
   "scores": {
@@ -200,22 +207,97 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Muchos conceptos se han profundizado"
-    ],
-    "D2_OPEN": [
-      "mas capacitaciones en nuevas tecnologias, el las nuevas cosas que se han publicado en relacion a la ingenieria de sistemas"
-    ],
-    "D3_OPEN": [
-      "Tener mas acercamiento o canales de comunicaciones mas directos con clientes que se encuentran en el extranjero y que no se pueden comunicar por la via telefonica normal y que no sea solo por correo"
-    ],
-    "D4_OPEN": [
-      "En que la IA le reste importancia al valor humano"
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
-    "resumenGeneral": "Plan priorizado según brechas principales — .",
-    "iniciativas": []
+    "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
+    "criterios": {
+      "top_gaps": [],
+      "role": "dataops",
+      "signals_from_open_ended": []
+    },
+    "iniciativas": [
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ]
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ]
+      }
+    ]
   }
 }

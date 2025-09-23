@@ -1,19 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-22T15:35:14.758Z",
+  "generated_at": "2025-09-23T16:06:12.303Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-22T15:35:14.758Z",
+    "generatedAt": "2025-09-23T16:06:12.303Z",
     "schema": "individual-1.0",
     "id": "xf099ww1drq4fskg8nmxf095xtcj9f0b",
     "subject": {
       "nombreCompleto": "Carmen Elvira Ruiz Alvear",
       "email": "cruiz@bancoguayaquil.com",
-      "assessed_on": "2025-09-22T15:35:14.758Z"
+      "assessed_on": "2025-09-23T16:06:12.303Z",
+      "demographics": {
+        "rol": "SUPERVISORA DE INVERSIONES",
+        "area": "INVERSIONES",
+        "nivelEducativo": "Técnico / Tecnológico",
+        "genero": "Femenino",
+        "rangoEdad": "45-54"
+      }
     }
   },
   "scores": {
@@ -200,22 +207,97 @@
       }
     }
   },
-  "openEnded": {
-    "D1_OPEN": [
-      "Conocimiento que se transforma en poder y que para mantenerlo hay que actualizarse constantemente."
-    ],
-    "D2_OPEN": [
-      "Mas capacitacion en las actuales y tener acceso a descargar programas como apoyo. Esta restringido."
-    ],
-    "D3_OPEN": [
-      "Nosotros como lideres debemos fomentar la innovacion, promover en los equipos el uso de la tecnologia y evitar manualidades. Creando cultura de aprendizaje constante, incentivando la automatizacion de procesos que se identifican caducos. Adoptar metodologias agiles que promuevan experimentar, tener errores como parte del aprendizaje para asi llegar al objetivo sin temor."
-    ],
-    "D4_OPEN": [
-      "Que no se considere que siempre debe haber una revision ultima de un humano, pues el criterio programado de un sistema no reemplazara a lo que un humano puede discernir dependiendo de cada caso. Hablo especificamente de inversiones."
-    ]
-  },
+  "openEnded": {},
   "action_plan": {
-    "resumenGeneral": "Plan priorizado según brechas principales — .",
-    "iniciativas": []
+    "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
+    "criterios": {
+      "top_gaps": [],
+      "role": "mandos",
+      "signals_from_open_ended": []
+    },
+    "iniciativas": [
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
+        "id": "CD-02",
+        "titulo": "Guías operativas de buenas prácticas digitales",
+        "descripcion": "Playbooks cortos sobre herramientas críticas con ejemplos del negocio.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "guias",
+          "colaboracion",
+          "procesos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ]
+      },
+      {
+        "id": "CD-03",
+        "titulo": "Clínica de ciberseguridad aplicada",
+        "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
+        "areaEnfoque": "Seguridad",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "todos"
+        ],
+        "tags": [
+          "seguridad",
+          "practicas"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "ciberseguridad"
+        ]
+      }
+    ]
   }
 }
