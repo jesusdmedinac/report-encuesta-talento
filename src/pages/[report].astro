@@ -1,6 +1,7 @@
 ---
 import ReportLayout from '../layouts/ReportLayout.astro';
 import Header from '../components/Header.astro';
+import GlobalScore from '../components/GlobalScore.astro';
 import Introduccion from '../components/Introduccion.astro';
 import BrechaDigital from '../components/BrechaDigital.astro';
 import MadurezDigital from '../components/MadurezDigital.astro';
@@ -31,6 +32,7 @@ export async function getStaticPaths() {
 
 const { report } = Astro.params;
 const globalData = await import(`../data/globalData.${report}.json`);
+const globalAverageScore = globalData?.resumenEjecutivo?.puntuacionGeneral?.puntuacion ?? globalData?.madurezDigital?.puntuacionGeneral ?? null;
 
 
 ---
@@ -44,6 +46,11 @@ const globalData = await import(`../data/globalData.${report}.json`);
     provider={globalData.header.provider}
     model={globalData.header.model}
     generationMode={globalData.header.generationMode}
+  />
+
+  <GlobalScore
+    score={globalAverageScore}
+    description="Promedio general ponderado de las dimensiones evaluadas."
   />
 
   <div class="container">

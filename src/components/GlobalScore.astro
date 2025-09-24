@@ -1,0 +1,97 @@
+---
+const {
+  title = 'Puntuación Global',
+  score,
+  label,
+  description = 'Promedio general de todas las dimensiones evaluadas.'
+} = Astro.props;
+
+const formattedScore = typeof score === 'number'
+  ? score.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+  : score;
+---
+{score !== undefined && score !== null && (
+  <section class="container global-score">
+    <div class="score-content">
+      <div class="score-heading">
+        <h2>{title}</h2>
+        {label && <span class="score-badge">{label}</span>}
+      </div>
+      <div class="score-value">{formattedScore}</div>
+      {description && <p class="score-description">{description}</p>}
+    </div>
+  </section>
+)}
+
+<style>
+  .global-score {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    background: #f8fafc;
+    border-radius: 0.75rem;
+  }
+
+  .score-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .score-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .score-heading h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #0f172a;
+  }
+
+  .score-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: #e0f2fe;
+    color: #075985;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .score-value {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1;
+  }
+
+  .score-description {
+    margin: 0;
+    color: #475569;
+    font-size: 0.95rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media print {
+    .global-score {
+      background: none;
+      border-color: #cbd5f5;
+    }
+
+    .score-badge {
+      background: none;
+      border: 1px solid #075985;
+    }
+  }
+</style>
