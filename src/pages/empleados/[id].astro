@@ -252,38 +252,6 @@ const dimLabels = {
             </div>
       </section>
 
-      <section class="card">
-        <h2>Baremos del segmento</h2>
-        <div class="grid-2">
-          {dimsOrder.map(dim => {
-            const tile = tiles.find(t => t.key === dim) || { value: 0 };
-            const s = doc?.summary?.dimensions?.[dim] || { current10: tile.value };
-            const scope = selectBaremosScope({ subject: doc?.header?.subject }, dim);
-            const rows = getDecilesForScope(dim, { scope });
-            const sVal = Number(s.current10 ?? tile.value);
-            return (
-              <div>
-                <strong style="display:block; margin-bottom:6px;">{dimLabels[dim] || dim} · <span class="pill">{scope || 'general'}</span></strong>
-                <table class="deciles-table">
-                  <thead>
-                    <tr><th>Decil</th><th>Rango</th><th>Nivel</th></tr>
-                  </thead>
-                  <tbody>
-                    {rows.map(r => (
-                      <tr class={(typeof r.desde === 'number' && typeof r.hasta === 'number' && sVal >= r.desde && sVal <= r.hasta) ? 'row-hl' : ''}>
-                        <td>{r.puntaje}</td>
-                        <td>{r.desde}–{r.hasta}</td>
-                        <td>{r.nivel}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
       {doc.action_plan && doc.action_plan.iniciativas && (
         <section class="card">
           <h2>Plan de acción priorizado</h2>
