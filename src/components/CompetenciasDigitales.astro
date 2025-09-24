@@ -36,75 +36,28 @@ const {
     </div>
 </section>
 
-<script>
-    // Datos de competencias digitales basados en los resultados reales de Profermaco
-    const competencias = [
-        {
-            name: "Comunicación y Colaboración Digital",
-            score: 30,
-            color: "#3498db",
-            description: "Primera etapa de desarrollo en herramientas de comunicación digital, con oportunidades de crecimiento en videollamadas y espacios colaborativos."
-        },
-        {
-            name: "Pensamiento Crítico Digital",
-            score: 40,
-            color: "#2ecc71", 
-            description: "Fundamentos establecidos para analizar información digital, con potencial de desarrollo en evaluación de herramientas tecnológicas."
-        },
-        {
-            name: "Resiliencia y Flexibilidad Digital",
-            score: 38,
-            color: "#e74c3c",
-            description: "Capacidad inicial para mantener rendimiento ante cambios tecnológicos, con gran potencial de fortalecimiento gradual."
-        },
-        {
-            name: "Agilidad Digital",
-            score: 36,
-            color: "#f1c40f",
-            description: "Habilidades fundamentales para integrar procesos digitales, con oportunidades de desarrollo en velocidad de adaptación."
-        },
-        {
-            name: "Alfabetización Tecnológica",
-            score: 28,
-            color: "#9b59b6",
-            description: "Fundamentos en herramientas básicas como hojas de cálculo y almacenamiento en la nube, listos para profundizar."
-        },
-        {
-            name: "Resolución de Problemas Tecnológicos",
-            score: 30,
-            color: "#e67e22",
-            description: "Base establecida para identificar y resolver problemas tecnológicos comunes en el entorno farmacéutico."
-        },
-        {
-            name: "Ciberseguridad",
-            score: 28,
-            color: "#34495e",
-            description: "Conocimientos iniciales en seguridad digital y gestión de contraseñas, área importante para el sector farmacéutico."
-        },
-        {
-            name: "Creación de Contenido Digital",
-            score: 25,
-            color: "#16a085",
-            description: "Competencias iniciales en edición básica de contenido, perfectas para desarrollar material ferretero digital."
-        },
-        {
-            name: "Análisis de Datos",
-            score: 35,
-            color: "#c0392b",
-            description: "Fundamentos en interpretación de datos ferreteros, área estratégica con gran potencial de crecimiento."
-        },
-        {
-            name: "Marketing Digital",
-            score: 18,
-            color: "#8e44ad",
-            description: "Oportunidad excepcional para desarrollar competencias especializadas en marketing ferretero digital."
-        }
+<script define:vars={{datosGrafico}}>
+    const colors = [
+        "#3498db",
+        "#2ecc71", 
+        "#e74c3c",
+        "#f1c40f",
+        "#9b59b6",
+        "#e67e22",
+        "#34495e",
+        "#16a085",
+        "#c0392b",
+        "#8e44ad"
     ];
     
-    // Ordenar competencias por puntaje (de mayor a menor)
-    competencias.sort((a, b) => b.score - a.score);
+    const competencias = datosGrafico.map((competencia, index) => ({
+        ...competencia,
+        color: colors[index] || colors[colors.length - 1]
+    }));
     
-    // Configuración del gráfico radial
+    competencias
+      .sort((a, b) => b.score - a.score)
+    
     const svgWidth = 500;
     const svgHeight = 500;
     const centerX = svgWidth / 2;
@@ -113,7 +66,6 @@ const {
     
     const svg = document.getElementById('radial-chart');
     
-    // Crear grupos para los elementos
     const bgCirclesGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
     bgCirclesGroup.setAttribute("id", "background-circles");
     
@@ -224,7 +176,7 @@ const {
         segment.addEventListener('mouseover', function() {
             this.setAttribute('stroke-width', `${segmentWidth * 1.2}px`);
             const index = this.getAttribute('data-index');
-            const legendItem = document.querySelector(`.legend-item[data-index="${index}"]`) as HTMLElement;
+            const legendItem = document.querySelector(`.legend-item[data-index="${index}"]`);
             if (legendItem) {
                 legendItem.style.backgroundColor = '#f5f5f5';
             }
@@ -233,7 +185,7 @@ const {
         segment.addEventListener('mouseout', function() {
             this.setAttribute('stroke-width', `${segmentWidth}px`);
             const index = this.getAttribute('data-index');
-            const legendItem = document.querySelector(`.legend-item[data-index="${index}"]`) as HTMLElement;
+            const legendItem = document.querySelector(`.legend-item[data-index="${index}"]`);
             if (legendItem) {
                 legendItem.style.backgroundColor = '';
             }
@@ -242,7 +194,7 @@ const {
         if (legendItem) {
             legendItem.addEventListener('mouseover', function() {
                 const index = this.getAttribute('data-index');
-                const segment = document.querySelector(`.segment[data-index="${index}"]`) as HTMLElement;
+                const segment = document.querySelector(`.segment[data-index="${index}"]`);
                 if (segment) {
                     segment.setAttribute('stroke-width', `${segmentWidth * 1.2}px`);
                 }
@@ -250,7 +202,7 @@ const {
             
             legendItem.addEventListener('mouseout', function() {
                 const index = this.getAttribute('data-index');
-                const segment = document.querySelector(`.segment[data-index="${index}"]`) as HTMLElement;
+                const segment = document.querySelector(`.segment[data-index="${index}"]`);
                 if (segment) {
                     segment.setAttribute('stroke-width', `${segmentWidth}px`);
                 }
