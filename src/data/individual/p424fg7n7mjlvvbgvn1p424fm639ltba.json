@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.444Z",
+  "generated_at": "2025-09-24T01:46:30.228Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.444Z",
+    "generatedAt": "2025-09-24T01:46:30.228Z",
     "schema": "individual-1.0",
     "id": "p424fg7n7mjlvvbgvn1p424fm639ltba",
     "subject": {
       "nombreCompleto": "Denisse Avegno Reyes",
       "email": "davegno@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.444Z",
+      "assessed_on": "2025-09-24T01:46:30.228Z",
       "demographics": {
         "rol": "Especialista Financiero",
         "area": "COE Contraloría Financiera",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Conocimiento al maximo!"
+    ],
+    "D2_OPEN": [
+      "conocer mas herramientas y maximizar el conocimiento en las existentes"
+    ],
+    "D3_OPEN": [
+      "que tengamos mas capacitaciones de herramientas digitales y como aplicarlas al dia a dia"
+    ],
+    "D4_OPEN": [
+      "Mayor expectativa: que se pueda aplicar en las tareas o areas que necesitan un control diario o que se pueda explotar esta herramienta para encontrar fallas o poder hacer los procesos mas agiles."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 1.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'especialista'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'especialista'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "especialista",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Gerente",
       "aspiracion_slug": "gerente"
     },
@@ -262,18 +278,19 @@
         ]
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [
@@ -288,19 +305,18 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-05",
-        "titulo": "Tomar curso por rol de Prompting",
-        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
         "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
           "comercial",
-          "tecnico",
-          "mandos"
+          "operaciones"
         ],
         "tags": [
-          "capacitacion",
+          "repositorio",
           "prompt"
         ],
         "rutaDeCarrera": [

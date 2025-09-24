@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.247Z",
+  "generated_at": "2025-09-24T01:46:29.732Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.247Z",
+    "generatedAt": "2025-09-24T01:46:29.732Z",
     "schema": "individual-1.0",
     "id": "kqtzb6kobxa95orxtu24mkqtzbnsbp1n",
     "subject": {
       "nombreCompleto": "Juan Xavier Muñoz Romero",
       "email": "jmunoz2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.247Z",
+      "assessed_on": "2025-09-24T01:46:29.732Z",
       "demographics": {
         "rol": "Product Manager",
         "area": "Productos e Innovación",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Hambre de curiosidad y de abrirme a nuevas y mejores maneras de hacer las cosas"
+    ],
+    "D2_OPEN": [
+      "Mas herramientas nuevas, por ejemplo que tengamos integrado una IA que lleve el registro de los principales puntos tratados en cada reunion y que vaya mas alla, que recuerde hacer seguimiento de esto. Creo que Copilot no hace esto por ahora."
+    ],
+    "D3_OPEN": [
+      "Flexibilidad. Yo escucho mucho en la empresa “asi se hacen las cosas” y ese tipo de pensamiento hay que cambiarlo. Hay que flexibilizar el uso de nuevas tecnologias para que este cambio se empiece a dar. Y tambien promover la cultura para que la gente que tiene este pensamiento lo cambie."
+    ],
+    "D4_OPEN": [
+      "No tengo. Creo que la IA potencia lo que hacemos los humanos. Siempre se debe revisar lo que propone la IA generativa ya que la misma puede alucinar en la respuesta. Usada de manera apropiada nos ayuda a ser mas eficientes con los tiempos y lo que buscamos de cada sesion de trabajo o entregable."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · usoInteligenciaArtificial: gap 0.1.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'direccion_de_area'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='direccion_de_area'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

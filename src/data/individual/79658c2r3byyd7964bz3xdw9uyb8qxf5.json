@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.881Z",
+  "generated_at": "2025-09-24T01:46:28.780Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.881Z",
+    "generatedAt": "2025-09-24T01:46:28.780Z",
     "schema": "individual-1.0",
     "id": "79658c2r3byyd7964bz3xdw9uyb8qxf5",
     "subject": {
       "nombreCompleto": "Denisse Lorena Portilla Cazar",
       "email": "dportilla@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.881Z",
+      "assessed_on": "2025-09-24T01:46:28.780Z",
       "demographics": {
         "rol": "Gestor Microcrédito",
         "area": "Microcrédito",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "investigar sobre las nuevas herramientas implementadas para poder sacarle el mejor provecho"
+    ],
+    "D2_OPEN": [
+      "Mas accesos al sistema existente para poder brindar un mejor servicio al ciente"
+    ],
+    "D3_OPEN": [
+      "crear un sentido de pertenencia y fomentar una mentalidad abierta al cambio."
+    ],
+    "D4_OPEN": [
+      "El reemplazo de personas"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'asesor_financiero'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='asesor_financiero'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

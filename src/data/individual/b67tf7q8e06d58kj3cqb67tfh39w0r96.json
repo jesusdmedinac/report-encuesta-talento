@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.682Z",
+  "generated_at": "2025-09-24T01:46:28.353Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.682Z",
+    "generatedAt": "2025-09-24T01:46:28.353Z",
     "schema": "individual-1.0",
     "id": "b67tf7q8e06d58kj3cqb67tfh39w0r96",
     "subject": {
       "nombreCompleto": "Andrea Morocho Almeida",
       "email": "amorocho@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.682Z",
+      "assessed_on": "2025-09-24T01:46:28.353Z",
       "demographics": {
         "rol": "UX Researcher",
         "area": "Productos e Innovación",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un aprendizaje continuo para entender mejor a los clientes y mejorar su experiencia."
+    ],
+    "D2_OPEN": [
+      "Me vendria mejor profundizar en las herramientas que ya uso, complementado con guias practicas internas que aceleren mis procesos. Tambien seria valioso contar con acceso a plataformas actualizadas que ofrezcan cursos y certificaciones gratuitas para mantenernos en tendencia."
+    ],
+    "D3_OPEN": [
+      "Facilitar capacitaciones constantes y accesibles, con espacios para experimentar nuevas herramientas digitales en el dia a dia."
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es usar la IA como apoyo para simplificar tareas repetitivas, sin que reemplace la vision critica ni el criterio humano en investigacion."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ux'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_a_un_rol_integral_en_cx/ux,_donde_combine_investigacion,_estrategia_y_diseno_de_experiencias.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_a_un_rol_integral_en_cx/ux,_donde_combine_investigacion,_estrategia_y_diseno_de_experiencias.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ux'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_a_un_rol_integral_en_cx/ux,_donde_combine_investigacion,_estrategia_y_diseno_de_experiencias.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_a_un_rol_integral_en_cx/ux,_donde_combine_investigacion,_estrategia_y_diseno_de_experiencias.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,11 @@
         }
       ],
       "role": "ux",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Aspiro a un rol integral en CX/UX, donde combine investigación, estrategia y diseño de experiencias.",
       "aspiracion_slug": "aspiro_a_un_rol_integral_en_cx/ux,_donde_combine_investigacion,_estrategia_y_diseno_de_experiencias."
     },
@@ -320,18 +337,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

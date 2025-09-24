@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.420Z",
+  "generated_at": "2025-09-24T01:46:30.185Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.420Z",
+    "generatedAt": "2025-09-24T01:46:30.185Z",
     "schema": "individual-1.0",
     "id": "lwsx3juzsu71gdj7lwsx3jlbz1ks23wq",
     "subject": {
       "nombreCompleto": "Paolo BURBANO ROMERO",
       "email": "pburbano@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.420Z",
+      "assessed_on": "2025-09-24T01:46:30.185Z",
       "demographics": {
         "rol": "soporte de registro de firmas y control documentación",
         "area": "tribu everyday banking circulo de servicios(producto e innovación)",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "exitoso pero se puede dar mas"
+    ],
+    "D2_OPEN": [
+      "mayor velocidad en conectividad"
+    ],
+    "D3_OPEN": [
+      "dar charlas como las de educacion financiera a los usuarios"
+    ],
+    "D4_OPEN": [
+      "que verificacion y aprobacion de firmas se haga por un bot o comando de voz"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'banca_de_inclusion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='banca_de_inclusion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

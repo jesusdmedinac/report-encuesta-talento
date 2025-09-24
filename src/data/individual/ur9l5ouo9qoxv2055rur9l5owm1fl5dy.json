@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.528Z",
+  "generated_at": "2025-09-24T01:46:27.984Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.528Z",
+    "generatedAt": "2025-09-24T01:46:27.984Z",
     "schema": "individual-1.0",
     "id": "ur9l5ouo9qoxv2055rur9l5owm1fl5dy",
     "subject": {
       "nombreCompleto": "Alexa Bravo",
       "email": "abravo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.528Z",
+      "assessed_on": "2025-09-24T01:46:27.984Z",
       "demographics": {
         "rol": "Auditor Financiero",
         "area": "Auditoría Interna",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Bootcamp digital de auditoria"
+    ],
+    "D2_OPEN": [
+      "Capacitaciones enfocadas"
+    ],
+    "D3_OPEN": [
+      "Bootcamps obligatorios entre areas para agilizar la cultura digital"
+    ],
+    "D4_OPEN": [
+      "Analisis optimo de datos, documentacion de papeles de trabajo y automatizacion de tareas"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,11 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos"
+      ],
       "aspiracionProfesional": "Líder de Auditoría Interna",
       "aspiracion_slug": "liderazgo"
     },

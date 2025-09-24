@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.828Z",
+  "generated_at": "2025-09-24T01:46:31.193Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.828Z",
+    "generatedAt": "2025-09-24T01:46:31.193Z",
     "schema": "individual-1.0",
     "id": "k2a3mr7ae7iqm231usk2a3mrlwhz2hao",
     "subject": {
       "nombreCompleto": "EDWIN RICARDO SALAZAR FONSECA",
       "email": "edwin.salazar223@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.828Z",
+      "assessed_on": "2025-09-24T01:46:31.193Z",
       "demographics": {
         "rol": "Comercialización de productos",
         "area": "Comercial",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Tecnologico"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "Deberia innovar en las oficinas con la tecnologia que se desea implementar"
+    ],
+    "D4_OPEN": [
+      "Creo que la IA facilitara algunas actividades y permitira tomar mejores decisiones"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "innov"
+      ],
       "aspiracionProfesional": "Gerente",
       "aspiracion_slug": "gerente"
     },

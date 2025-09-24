@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.621Z",
+  "generated_at": "2025-09-24T01:46:30.655Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.621Z",
+    "generatedAt": "2025-09-24T01:46:30.655Z",
     "schema": "individual-1.0",
     "id": "f06q2wwm8f03d3pjuof06q2r75i5a8im",
     "subject": {
       "nombreCompleto": "Ketty Espinel Luzuriaga",
       "email": "kespinel@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.621Z",
+      "assessed_on": "2025-09-24T01:46:30.655Z",
       "demographics": {
         "rol": "Soy Líder Técnico del área de Administración",
         "area": "Administración",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Desafiante en positivo, te ensena caminos y nueva forma de resolver los problemas con herramientas cada vez mas amigables."
+    ],
+    "D2_OPEN": [
+      "Como arquitecta, tengo herramientas diferentes de las que maneja la gran mayoria de los colaboradores, me gustaria profundizar capaz en otras que me ayuden con la data pero vista desde lo que manejo, que es proyectos de infraestructura."
+    ],
+    "D3_OPEN": [
+      "Si bien es cierto el Banco nos brinda cursos a traves del Campus, pero hay herramientas que no pueden ser usadas por las restricciones que como entidad financiera debemos tener... capaz por ese lado, la posibilidad de tener esas herramientas en un ambiente controlado pero de uso abierto para los colaboradores."
+    ],
+    "D4_OPEN": [
+      "Creo que se puede obtener mucho provecho de la IA, se necesitan abrir los permisos para aprovechar mucho mas todos sus beneficios."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.1 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'en_algun_momento_a_una_gerencia,_pero_debo_prepararme_para_asumir_ese_rol.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='en_algun_momento_a_una_gerencia,_pero_debo_prepararme_para_asumir_ese_rol.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'en_algun_momento_a_una_gerencia,_pero_debo_prepararme_para_asumir_ese_rol.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='en_algun_momento_a_una_gerencia,_pero_debo_prepararme_para_asumir_ese_rol.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "colabor"
+      ],
       "aspiracionProfesional": "En algún momento a una gerencia, pero debo prepararme para asumir ese rol.",
       "aspiracion_slug": "en_algun_momento_a_una_gerencia,_pero_debo_prepararme_para_asumir_ese_rol."
     },

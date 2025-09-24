@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.675Z",
+  "generated_at": "2025-09-24T01:46:30.793Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.675Z",
+    "generatedAt": "2025-09-24T01:46:30.793Z",
     "schema": "individual-1.0",
     "id": "4v6s4dvkflaace99yv10374v6s4dvkxp",
     "subject": {
       "nombreCompleto": "Ericka Reyes",
       "email": "ereyes@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.675Z",
+      "assessed_on": "2025-09-24T01:46:30.793Z",
       "demographics": {
         "rol": "Subgerente de la división internacional",
         "area": "Tesoreria",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "subete a la ola de la innovacion y ponlos en practica."
+    ],
+    "D2_OPEN": [
+      "en mi caso, hace un ano cambiamos de plataforma y se necesita mas capacitacion para entender todo lo que ofrece esta nueva herramienta"
+    ],
+    "D3_OPEN": [
+      "Mantenernos informados como siempre de los cambios asi como de la capacitacion constante para poner en practica lo aprendido"
+    ],
+    "D4_OPEN": [
+      "mas que preocupacion lo veo como una oportunidad de mejora en nuestras actividades del dia a dia."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9 · madurezDigital: gap 0.8.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.80), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'subgerente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.80), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'subgerente'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "subgerente",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "innov"
+      ],
       "aspiracionProfesional": "Gerencia del área en la que me desenvuelvo y proporcionar la robustez y crecimiento en lo que desarrollamos dentro del banco",
       "aspiracion_slug": "tecnico"
     },

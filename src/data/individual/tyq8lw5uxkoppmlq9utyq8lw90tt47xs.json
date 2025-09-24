@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.684Z",
+  "generated_at": "2025-09-24T01:46:30.816Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.684Z",
+    "generatedAt": "2025-09-24T01:46:30.816Z",
     "schema": "individual-1.0",
     "id": "tyq8lw5uxkoppmlq9utyq8lw90tt47xs",
     "subject": {
       "nombreCompleto": "KATHERINE PESANTEZ MACIAS",
       "email": "kpesantez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.684Z",
+      "assessed_on": "2025-09-24T01:46:30.816Z",
       "demographics": {
         "rol": "Soy soporte Administrativo Técnico",
         "area": "Administración",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Evolucion constante"
+    ],
+    "D2_OPEN": [
+      "Mas capacitaciones generales a los usuarios."
+    ],
+    "D3_OPEN": [
+      "Lo mas importante que la empresa BG podria hacer para acelerar nuestra cultura digital, es seguir fomentando con capacitaciones continua y accesible para todos los colaboradores, promoviendo el uso de herramientas digitales y nuevas tecnologias en el dia a dia. Ademas, es clave poder seguir incentivando a una mentalidad abierta al cambio, donde se valore la innovacion y la colaboracion, creando espacios para el aprendizaje, la experimentacion y el intercambio de ideas."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa respecto al uso de la inteligencia artificial en mi rol es que pueda facilitar y automatizar tareas repetitivas, permitiendome enfocarme en actividades que requieren mayor analisis y toma de decisiones, mejorando asi la eficiencia y la calidad del trabajo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,12 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "innov"
+      ],
       "aspiracionProfesional": "En mi desarrollo profesional, aspiro a crecer hacia un rol más estratégico y especializado dentro del área del Banco podría ser igual en Administración o en otra que pueda contribuir para optimización de los procedimientos internos, apoyar en la toma de decisiones y tener un rol más estratégico dentro de cualquier equipo de trabajo.",
       "aspiracion_slug": "tecnico"
     },

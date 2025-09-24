@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.832Z",
+  "generated_at": "2025-09-24T01:46:31.206Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.832Z",
+    "generatedAt": "2025-09-24T01:46:31.206Z",
     "schema": "individual-1.0",
     "id": "6zqkkot5keys9v2yttr6zqkko61amxt5",
     "subject": {
       "nombreCompleto": "Oscar Maya Ramírez",
       "email": "oscarmaya9@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.832Z",
+      "assessed_on": "2025-09-24T01:46:31.206Z",
       "demographics": {
         "rol": "Cajero Financiero",
         "area": "Área Operativa",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Escalabilidad"
+    ],
+    "D2_OPEN": [
+      "Tener acceso en mi area a mas herramientas de validacion, y mas capacitacion en herramientas nuevas."
+    ],
+    "D3_OPEN": [
+      "Eliminar todo el papel posible, sobre todo en los depositos en ventanilla o al menos minimizarlo paulatinamente. Eso daria un plus en la atencion, haciendo los procesos de los clientes mas agiles y sencillos."
+    ],
+    "D4_OPEN": [
+      "Creo que la IA ha venido para quedarse y resolver muchas problematicas, a un bajo costo de errores. Podria desplazar muchos roles entre ellos los roles operativos. Aun asi creeria que la mano humana no dejaria de ser indispensable por ahora."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · brechaDigital: gap 0.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Área Técnica, Mantenimiento Atm´s",
       "aspiracion_slug": "tecnico"
     },

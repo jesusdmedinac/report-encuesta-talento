@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.570Z",
+  "generated_at": "2025-09-24T01:46:30.520Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.570Z",
+    "generatedAt": "2025-09-24T01:46:30.520Z",
     "schema": "individual-1.0",
     "id": "a72xgcak71batd7a72xsaqc9g053tv96",
     "subject": {
       "nombreCompleto": "Juan Ugalde Monsalve",
       "email": "jugalde@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.570Z",
+      "assessed_on": "2025-09-24T01:46:30.520Z",
       "demographics": {
         "rol": "Gestor Banco del Barrio",
         "area": "Banco del Barrio",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Considero que seria ilustrativo y productivo"
+    ],
+    "D2_OPEN": [
+      "Considero que seria muy util mas capacitacion en analisis de datos con herramientas como POWER BI"
+    ],
+    "D3_OPEN": [
+      "Considero que las capacitaciones constantes en nuevas tecnologias para poder implementarlas en el dia a dia seria lo optimo."
+    ],
+    "D4_OPEN": [
+      "Mi mayor preocupacion es que con el uso de la IA se pueda prescindir de mis servicios, que el factor humano se remplace y se cierren puestos de trabajo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · madurezDigital: gap 1.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=1.70), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=1.70), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos"
+      ],
       "aspiracionProfesional": "Deseo llegar a trabajar en el área comercial de tarjetas de crédito.",
       "aspiracion_slug": "tecnico"
     },

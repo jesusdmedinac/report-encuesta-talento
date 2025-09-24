@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.661Z",
+  "generated_at": "2025-09-24T01:46:30.750Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.661Z",
+    "generatedAt": "2025-09-24T01:46:30.750Z",
     "schema": "individual-1.0",
     "id": "qoulljkou0qu4nuqoull9e4m0nnuv6ve",
     "subject": {
       "nombreCompleto": "sofia aguirre",
       "email": "saguirre@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.661Z",
+      "assessed_on": "2025-09-24T01:46:30.750Z",
       "demographics": {
         "rol": "Responsable por mantener la calidad, eficiencia y satisfacción en el soporte operativo de los productos y servicios corporativos y empresariales.",
         "area": "Cadena de Valor",
@@ -207,10 +207,21 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INTERESANTE, NOS AYUDA AGILITAR NUESTRO TRABAJO"
+    ],
+    "D2_OPEN": [],
+    "D3_OPEN": [
+      "SEGUIR CAPACITANDO A LOS COLABORADORES"
+    ],
+    "D4_OPEN": [
+      "LA INTELIGENCIA ARTIFICIAL NOS AYUDA A OPTIMIZAR NUESTRO TRABAJO"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · madurezDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), madurezDigital (gap=0.50), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'oficial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='oficial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), madurezDigital (gap=0.50), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'oficial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='oficial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +242,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor"
+      ],
       "aspiracionProfesional": "OFICIAL",
       "aspiracion_slug": "oficial"
     },
@@ -301,6 +315,32 @@
         "target": "8.0/10"
       },
       {
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "tecnico",
+          "mandos"
+        ],
+        "tags": [
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
+      },
+      {
         "id": "MD-02",
         "titulo": "Gobernanza de datos mínima viable",
         "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
@@ -319,32 +359,6 @@
         ],
         "rutaDeCarrera": [
           "analitica_datos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-05",
-        "titulo": "Tomar curso corto de analítica aplicada",
-        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "tecnico",
-          "mandos"
-        ],
-        "tags": [
-          "capacitacion",
-          "datos"
-        ],
-        "rutaDeCarrera": [
-          "analitica_datos",
-          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

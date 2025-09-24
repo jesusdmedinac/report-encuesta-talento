@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.628Z",
+  "generated_at": "2025-09-24T01:46:30.671Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.628Z",
+    "generatedAt": "2025-09-24T01:46:30.671Z",
     "schema": "individual-1.0",
     "id": "09bsl38ias62btcm1009bsl34joo347q",
     "subject": {
       "nombreCompleto": "LISSETTE LOPEZ",
       "email": "llopez1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.628Z",
+      "assessed_on": "2025-09-24T01:46:30.671Z",
       "demographics": {
         "rol": "MONITOREADOR DE SEGURIDAD DE COMERCIOS",
         "area": "seguridad medios de pago",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Formarse digitalmente ya no es una opcion es esencial para seguir siendo competitivo, quien no aprende digitalmente se desconecta del futuro profesional"
+    ],
+    "D2_OPEN": [
+      "mas que herramienta o capacitacion pienso que lo que ayudaria es una mejor organizacion de los flujos de trabajo y mayor colaboracion entre equipos"
+    ],
+    "D3_OPEN": [
+      "asegurar que todas las personas sin importar su rol o area tengan acceso equitativo a las herramientas digitales necesarias"
+    ],
+    "D4_OPEN": [
+      "espero que la IA se convierta en una extension de mis capacidades no en un remplazo"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor"
+      ],
       "aspiracionProfesional": "al àrea administrativa",
       "aspiracion_slug": "operaciones"
     },
@@ -291,32 +307,6 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-07",
-        "titulo": "Evaluación A/B de asistentes",
-        "descripcion": "Probar 2 asistentes IA en un proceso (ej. respuestas de soporte) y comparar métricas de tiempo/calidad.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "experimento",
-          "calidad"
-        ],
-        "rutaDeCarrera": [
-          "operaciones",
-          "comercial"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion"
-        ],
-        "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
         "id": "IA-05",
         "titulo": "Tomar curso por rol de Prompting",
         "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
@@ -341,6 +331,32 @@
           "habilidadDeUso"
         ],
         "metric": "habilidaddeuso",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-07",
+        "titulo": "Evaluación A/B de asistentes",
+        "descripcion": "Probar 2 asistentes IA en un proceso (ej. respuestas de soporte) y comparar métricas de tiempo/calidad.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "experimento",
+          "calidad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion"
+        ],
+        "metric": "eticayverificacion",
         "target": "8.0/10"
       }
     ]

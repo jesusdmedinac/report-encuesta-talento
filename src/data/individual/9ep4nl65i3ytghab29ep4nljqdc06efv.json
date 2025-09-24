@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.934Z",
+  "generated_at": "2025-09-24T01:46:28.920Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.934Z",
+    "generatedAt": "2025-09-24T01:46:28.920Z",
     "schema": "individual-1.0",
     "id": "9ep4nl65i3ytghab29ep4nljqdc06efv",
     "subject": {
       "nombreCompleto": "PATRICIA ALEXANDRA HIDROBO BENAVIDES",
       "email": "paty.cs@outlook.com",
-      "assessed_on": "2025-09-23T18:26:53.934Z",
+      "assessed_on": "2025-09-24T01:46:28.920Z",
       "demographics": {
         "rol": "ASESOR COMERCIAL",
         "area": "COMERCIAL",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EXPERIENCIA"
+    ],
+    "D2_OPEN": [
+      "MAS CAPACITACION EN ALS ACTUALES"
+    ],
+    "D3_OPEN": [
+      "CAPACITAR"
+    ],
+    "D4_OPEN": [
+      "DESPLAZAMIENTO DE PUESTO POR IMPLEMENTACION DE LA IA"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.60), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.60), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "JEFE DE AGENCIA",
       "aspiracion_slug": "liderazgo"
     },
@@ -271,34 +286,6 @@
         ]
       },
       {
-        "id": "IA-09",
-        "titulo": "Curso de verificación y sesgos",
-        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "etica",
-          "verificacion"
-        ],
-        "rutaDeCarrera": [
-          "liderazgo",
-          "tecnico"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
         "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
@@ -318,6 +305,34 @@
         "rutaDeCarrera": [
           "gestion_producto",
           "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.148Z",
+  "generated_at": "2025-09-24T01:46:29.470Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.148Z",
+    "generatedAt": "2025-09-24T01:46:29.470Z",
     "schema": "individual-1.0",
     "id": "c62bqmso21ke4s4kc62m2sybcaw4wh5s",
     "subject": {
       "nombreCompleto": "maria jose stay flores",
       "email": "mstay@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.148Z",
+      "assessed_on": "2025-09-24T01:46:29.470Z",
       "demographics": {
         "rol": "cajero financiero",
         "area": "operaciones",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "siempre es buneo aprender"
+    ],
+    "D2_OPEN": [
+      "d"
+    ],
+    "D3_OPEN": [
+      "c"
+    ],
+    "D4_OPEN": [
+      "QUIERO SEGUIR APRENDIENDO MAS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {

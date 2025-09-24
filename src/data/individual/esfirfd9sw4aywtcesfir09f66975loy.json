@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.345Z",
+  "generated_at": "2025-09-24T01:46:29.984Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.345Z",
+    "generatedAt": "2025-09-24T01:46:29.984Z",
     "schema": "individual-1.0",
     "id": "esfirfd9sw4aywtcesfir09f66975loy",
     "subject": {
       "nombreCompleto": "jimmy astudillo",
       "email": "jastudillo2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.345Z",
+      "assessed_on": "2025-09-24T01:46:29.984Z",
       "demographics": {
         "rol": "CAJERO FINANCIERO",
         "area": "operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INOVACION"
+    ],
+    "D2_OPEN": [
+      "capacitaciones de IA"
+    ],
+    "D3_OPEN": [
+      "capacitar correctamente a sus empleados"
+    ],
+    "D4_OPEN": [
+      "agilitar procesos"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · brechaDigital: gap 1.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), brechaDigital (gap=1.90), usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_o_subgerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_o_subgerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), brechaDigital (gap=1.90), usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_o_subgerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_o_subgerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "GERENCIA O SUBGERENCIA",
       "aspiracion_slug": "gerencia_o_subgerencia"
     },

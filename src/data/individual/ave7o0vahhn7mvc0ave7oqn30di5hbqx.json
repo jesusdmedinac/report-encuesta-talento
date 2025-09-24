@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.341Z",
+  "generated_at": "2025-09-24T01:46:29.975Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.341Z",
+    "generatedAt": "2025-09-24T01:46:29.975Z",
     "schema": "individual-1.0",
     "id": "ave7o0vahhn7mvc0ave7oqn30di5hbqx",
     "subject": {
       "nombreCompleto": "Karen Castro",
       "email": "karencita-castro@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.341Z",
+      "assessed_on": "2025-09-24T01:46:29.975Z",
       "demographics": {
         "rol": "Cajero financiero",
         "area": "Operaciones",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Enfoque de crecimiento personal"
+    ],
+    "D2_OPEN": [
+      "Que el sistema sea mas eficaz para asi tener un mejor desempeno en el trabajo"
+    ],
+    "D3_OPEN": [
+      "Implementar curso de actualizacion para asi familiarizarse con el nuevo producto"
+    ],
+    "D4_OPEN": [
+      "Que dejemos de ser menos sociales por el uso de esta herramientas"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · brechaDigital: gap 1.1.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10), madurezDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

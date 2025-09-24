@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.989Z",
+  "generated_at": "2025-09-24T01:46:31.489Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.989Z",
+    "generatedAt": "2025-09-24T01:46:31.489Z",
     "schema": "individual-1.0",
     "id": "uoqe4b7cire8ixbbuoq06bkb0pz6fwmk",
     "subject": {
       "nombreCompleto": "juan matamoros",
       "email": "jmatamoros@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.989Z",
+      "assessed_on": "2025-09-24T01:46:31.489Z",
       "demographics": {
         "rol": "CAJERO FINANCIERO",
         "area": "OPERACIONES-CAJERO FINANCIERO",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "transformacion digital"
+    ],
+    "D2_OPEN": [
+      "aplicativos usados en el area de caja , amigables con el usuario."
+    ],
+    "D3_OPEN": [
+      "familiarizar y ensenar a clientes que no esten actualizados con la tecnologia , para que usen los canales digitales del bg. lo cual ayudara que el trafico transaccional digital aumente"
+    ],
+    "D4_OPEN": [
+      "El implemento de cajas automatizadas las cuales no necesitan personas para realizar un cobro o un pago"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.3 · brechaDigital: gap 1.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.30), brechaDigital (gap=1.10), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'prevencion_de_fraudes'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='prevencion_de_fraudes'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.30), brechaDigital (gap=1.10), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'prevencion_de_fraudes'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='prevencion_de_fraudes'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "cliente"
+      ],
       "aspiracionProfesional": "PREVENCION DE FRAUDES",
       "aspiracion_slug": "prevencion_de_fraudes"
     },

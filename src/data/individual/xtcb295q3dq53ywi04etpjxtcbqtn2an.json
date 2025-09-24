@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.102Z",
+  "generated_at": "2025-09-24T01:46:29.353Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.102Z",
+    "generatedAt": "2025-09-24T01:46:29.353Z",
     "schema": "individual-1.0",
     "id": "xtcb295q3dq53ywi04etpjxtcbqtn2an",
     "subject": {
       "nombreCompleto": "Henry Quimí Loza",
       "email": "jquimi@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.102Z",
+      "assessed_on": "2025-09-24T01:46:29.353Z",
       "demographics": {
         "rol": "Coordinador de Estrategias de Seguridad Integral",
         "area": "Seguridad Integral",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Adopcion e integracion a la toma de decisiones basadas en las nuevas tendencias digitales"
+    ],
+    "D2_OPEN": [
+      "Las 3 opciones son habiles para lograr el objetivo herramientas, capacitacion y equipo que apoye en la revision."
+    ],
+    "D3_OPEN": [
+      "Mantener la estrategia del banco enfocada a las nuevas tendencias digitales y la cultura magenta que enfoca estos comportamiento."
+    ],
+    "D4_OPEN": [
+      "Que colabore en la efectividad de analisis y generacion de resultados mas optimos."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · madurezDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'coordinador'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'a_la_gerencia_de_un_area_que_tome_decisiones_basadas_en_machine_learning_o_inteligencia_artificial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='a_la_gerencia_de_un_area_que_tome_decisiones_basadas_en_machine_learning_o_inteligencia_artificial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'coordinador'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'a_la_gerencia_de_un_area_que_tome_decisiones_basadas_en_machine_learning_o_inteligencia_artificial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='a_la_gerencia_de_un_area_que_tome_decisiones_basadas_en_machine_learning_o_inteligencia_artificial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "coordinador",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor"
+      ],
       "aspiracionProfesional": "A la Gerencia de un área que tome decisiones basadas en machine learning o inteligencia artificial",
       "aspiracion_slug": "a_la_gerencia_de_un_area_que_tome_decisiones_basadas_en_machine_learning_o_inteligencia_artificial"
     },
@@ -293,6 +309,32 @@
         "target": "8.0/10"
       },
       {
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "tecnico",
+          "mandos"
+        ],
+        "tags": [
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
+      },
+      {
         "id": "MD-02",
         "titulo": "Gobernanza de datos mínima viable",
         "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
@@ -311,32 +353,6 @@
         ],
         "rutaDeCarrera": [
           "analitica_datos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
-        "target": "8.0/10"
-      },
-      {
-        "id": "MD-05",
-        "titulo": "Tomar curso corto de analítica aplicada",
-        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "tecnico",
-          "mandos"
-        ],
-        "tags": [
-          "capacitacion",
-          "datos"
-        ],
-        "rutaDeCarrera": [
-          "analitica_datos",
-          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.425Z",
+  "generated_at": "2025-09-24T01:46:30.193Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.425Z",
+    "generatedAt": "2025-09-24T01:46:30.193Z",
     "schema": "individual-1.0",
     "id": "zbzmrvsbdjcxe9ezbzmrv9ll9y2khwel",
     "subject": {
       "nombreCompleto": "Cristina Orbe",
       "email": "corbe@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.425Z",
+      "assessed_on": "2025-09-24T01:46:30.193Z",
       "demographics": {
         "rol": "Lider",
         "area": "Banca Empresas",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Una experiencia emocionante y desafiante, que me impulsa a salir de mi zona de confort y a reinventarme con nuevas herramientas, metodologias y formas de pensar"
+    ],
+    "D2_OPEN": [
+      "Ademas de mayor capacitacion para conocer funciones avanzadas o atajos porque muchas veces usamos solo una parte; tambien explorar nuevas herramientas y seria interesante contar con espacios de colaboracion y soluciones digitales mas integradas o automatizadas"
+    ],
+    "D3_OPEN": [
+      "Generar espacios de capacitacion practica, compartir buenas practicas entre equipos"
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es que IA me apoye a optimizar tareas operativas, analizar datos comerciales con mayor rapidez"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · madurezDigital: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,12 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos",
+        "colabor"
+      ],
       "aspiracionProfesional": "Posiciones dentro de áreas estratégicas, marketing e innovación, donde pueda aportar a la transformación",
       "aspiracion_slug": "marketing_digital"
     },
@@ -289,32 +307,6 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-06",
-        "titulo": "Taller de mapeo de procesos (hands-on)",
-        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
-        "areaEnfoque": "Procesos y Calidad",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "mandos"
-        ],
-        "tags": [
-          "procesos",
-          "eficiencia"
-        ],
-        "rutaDeCarrera": [
-          "operaciones",
-          "mandos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "proactividadDigital"
-        ],
-        "metric": "proactividaddigital",
-        "target": "8.0/10"
-      },
-      {
         "id": "MD-08",
         "titulo": "Laboratorio de automatización sin código",
         "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
@@ -332,6 +324,32 @@
         "rutaDeCarrera": [
           "operaciones",
           "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ],
+        "metric": "proactividaddigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "mandos"
+        ],
+        "tags": [
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [

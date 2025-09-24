@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.075Z",
+  "generated_at": "2025-09-24T01:46:29.286Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.075Z",
+    "generatedAt": "2025-09-24T01:46:29.286Z",
     "schema": "individual-1.0",
     "id": "ejiyvxrqsv0lvxi7fejiyvxni5wdtogt",
     "subject": {
       "nombreCompleto": "Marla Dayana Sanchez Villarreal",
       "email": "msanchez8@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.075Z",
+      "assessed_on": "2025-09-24T01:46:29.286Z",
       "demographics": {
         "rol": "EJECUTIVO FINANCIERO",
         "area": "SEGMENTOS Y CANALES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INNOVACION"
+    ],
+    "D2_OPEN": [
+      "ALGO DIFERENTE"
+    ],
+    "D3_OPEN": [
+      "CAPACITACION CON NUEVAS HERRAMIENTAS"
+    ],
+    "D4_OPEN": [
+      "REDUCCION DE PROCESOS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 3 · madurezDigital: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=3.00), madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutivo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=3.00), madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutivo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "ejecutivo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "DIGITAL",
       "aspiracion_slug": "tecnico"
     },
@@ -323,30 +340,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "liderazgo",
           "operaciones",
-          "tecnico"
+          "mandos"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "procesos",
+          "eficiencia"
         ],
         "rutaDeCarrera": [
-          "analitica_datos"
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "alfabetizacionDeDatos"
+          "proactividadDigital"
         ],
-        "metric": "alfabetizaciondedatos",
+        "metric": "proactividaddigital",
         "target": "8.0/10"
       }
     ]

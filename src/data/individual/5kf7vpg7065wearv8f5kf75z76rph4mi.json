@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.929Z",
+  "generated_at": "2025-09-24T01:46:31.398Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.929Z",
+    "generatedAt": "2025-09-24T01:46:31.398Z",
     "schema": "individual-1.0",
     "id": "5kf7vpg7065wearv8f5kf75z76rph4mi",
     "subject": {
       "nombreCompleto": "Johana Tufiño",
       "email": "johanatufinio@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.929Z",
+      "assessed_on": "2025-09-24T01:46:31.398Z",
       "demographics": {
         "rol": "Cajera Financiera",
         "area": "Operaciones",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Muy productivo y util."
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta."
+    ],
+    "D3_OPEN": [
+      "Realizar los cursos de ruta digital con incentivos para que los colaboradores se motiven e implementen sus conocimientos."
+    ],
+    "D4_OPEN": [
+      "Mi mayor preocupacion dentro de mia rea de trabajo es que el banco entra en una etapa de digitalizacion con lo cual el cierre de agencias provoca la desvinculacion de personal; a pesar, de que es un beneficio para el banco pues amplia sus canales digitales, la incertidumbre que simbra en los colaboradores de agencias es muy grande."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajera",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "colabor"
+      ]
     },
     "iniciativas": [
       {

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.814Z",
+  "generated_at": "2025-09-24T01:46:28.639Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.814Z",
+    "generatedAt": "2025-09-24T01:46:28.639Z",
     "schema": "individual-1.0",
     "id": "s3mabwjl6lc0s3mabmhwr5moi9tr8abm",
     "subject": {
       "nombreCompleto": "Johana Tufiño Romero",
       "email": "jtufino@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.814Z",
+      "assessed_on": "2025-09-24T01:46:28.639Z",
       "demographics": {
         "rol": "Cajera Financiera",
         "area": "Operaciones",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Muy productivo."
+    ],
+    "D2_OPEN": [
+      "Nuevas herramientas."
+    ],
+    "D3_OPEN": [
+      "Realizar cursos mas didacticos y encuestas con premios que motiven a los colaboradores."
+    ],
+    "D4_OPEN": [
+      "Mi mayor preocupacion es que estamos en un proceso de transformacion en el cual todo se va reduciendo asi la carga operativa, como en este caso el cierre paulatino de agencias."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajera",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "colabor",
+        "proceso"
+      ]
     },
     "iniciativas": [
       {
@@ -265,6 +281,30 @@
         ]
       },
       {
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "mandos"
+        ],
+        "tags": [
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
         "id": "MD-02",
         "titulo": "Gobernanza de datos mínima viable",
         "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
@@ -287,30 +327,6 @@
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
-        ]
-      },
-      {
-        "id": "MD-06",
-        "titulo": "Taller de mapeo de procesos (hands-on)",
-        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
-        "areaEnfoque": "Procesos y Calidad",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "mandos"
-        ],
-        "tags": [
-          "procesos",
-          "eficiencia"
-        ],
-        "rutaDeCarrera": [
-          "operaciones",
-          "mandos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "proactividadDigital"
         ]
       }
     ]

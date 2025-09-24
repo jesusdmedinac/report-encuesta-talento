@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.107Z",
+  "generated_at": "2025-09-24T01:46:29.361Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.107Z",
+    "generatedAt": "2025-09-24T01:46:29.361Z",
     "schema": "individual-1.0",
     "id": "v84oqaqqus35alqcx5v84oqafg93hikq",
     "subject": {
       "nombreCompleto": "Lilian Zambrano Vera",
       "email": "lzambrano1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.107Z",
+      "assessed_on": "2025-09-24T01:46:29.361Z",
       "demographics": {
         "rol": "Pasante",
         "area": "Banca Empresa y cadena de valores",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un constante aprendizaje y cada dia descubro algo innovador que me permite educarme continuamente"
+    ],
+    "D2_OPEN": [
+      "Con el anexo, el procesamiento sera mas rapido, lo que permitira ser mas eficientes con el cliente y atender mejor sus requerimientos. Una opcion alternativa seria crear una pagina donde el cliente pueda subir el anexo directamente. Una vez que este sea revisado, el sistema enviaria una notificacion automatica para informarles que el proceso ha sido completado, manteniendolos asi al tanto del estado de su solicitud."
+    ],
+    "D3_OPEN": [
+      "Empezar a crear nuevos servicios donde ya no sea necesario llevar tantos procesos y que se implemente lo digital."
+    ],
+    "D4_OPEN": [
+      "La IA podria ser mi soporte en temas puntuales, como correccion de correo, manual de alguna pagina, preguntas de los clientes."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · madurezDigital: gap 0.4.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), madurezDigital (gap=0.40), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pasante'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), madurezDigital (gap=0.40), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pasante'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,11 @@
         }
       ],
       "role": "pasante",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Ejecutivo de Finanzas Internacionales",
       "aspiracion_slug": "operaciones"
     },

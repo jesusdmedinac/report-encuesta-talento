@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.499Z",
+  "generated_at": "2025-09-24T01:46:30.331Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.499Z",
+    "generatedAt": "2025-09-24T01:46:30.331Z",
     "schema": "individual-1.0",
     "id": "9g8osts55w9gvkd9w16y2dykpy6vkd9w",
     "subject": {
       "nombreCompleto": "Daisy Cristina Reyes Mejia",
       "email": "dreyes1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.499Z",
+      "assessed_on": "2025-09-24T01:46:30.331Z",
       "demographics": {
         "rol": "Atencíon al cliente y derivación a los canales digitales",
         "area": "Guia de Agencia",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "“Un camino de descubrimiento constante, donde cada clic abre una nueva puerta al conocimiento.”"
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta ya que permite agilizar los procesos"
+    ],
+    "D3_OPEN": [
+      "Implementar nuevas herramientas digitales que permitan hacer mas agiles los procesos en la atencion a los clientes."
+    ],
+    "D4_OPEN": [
+      "No tengo preocupacion porque la Inteligencia Artificial no tiene la misma empatia que tiene un ser humano para la atencion al cliente."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "cliente",
+        "proceso"
+      ]
     },
     "iniciativas": [
       {

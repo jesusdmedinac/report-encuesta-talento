@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.782Z",
+  "generated_at": "2025-09-24T01:46:28.579Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.782Z",
+    "generatedAt": "2025-09-24T01:46:28.579Z",
     "schema": "individual-1.0",
     "id": "rp1vyckbiu0isrp1d96smaiaep2hdz10",
     "subject": {
       "nombreCompleto": "HENRY MANUEL IZQUIERDO BORJA",
       "email": "HIZQUIERDO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:53.782Z",
+      "assessed_on": "2025-09-24T01:46:28.579Z",
       "demographics": {
         "rol": "GESTOR DE MICROCREDITO",
         "area": "BANCA INCLUSION",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "DESCUBRIMIENTO"
+    ],
+    "D2_OPEN": [
+      "MAS VELOCIDAD Y CAPACIDAD DE LA TABLETA QUE ES DONDE HAGO MI MAYOR TRABAJO"
+    ],
+    "D3_OPEN": [
+      "SEGUIR ENSENANDO SOBRE TECONOLOGIA"
+    ],
+    "D4_OPEN": [
+      "QUE DEJE SIN TRABAJO A MILES DE PERSONAS Y NO TENGAMOS A DONDE IR."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.5 · culturaOrganizacional: gap 0.5.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

@@ -37,12 +37,36 @@ function anonymizeText(t) {
 
 function cleanOpenEndedFromRow(row) {
   const out = {};
-  for (const key of Object.keys(OPEN_ENDED_QUESTIONS)) {
-    const col = OPEN_ENDED_QUESTIONS[key];
-    const v = row[col];
+  const headers = Object.keys(row || {});
+  // Normalización robusta para comparar encabezados con o sin prefijo (ej. "D1_OPEN: ")
+  const normHeader = (s) => normalize(String(s || '')).toLowerCase().replace(/\s+/g, ' ');
+  const findHeaderForQuestion = (questionText) => {
+    const nQ = normHeader(questionText);
+    // 1) match exact
+    let h = headers.find(k => normHeader(k) === nQ);
+    if (h) return h;
+    // 2) header que contenga el texto (para casos con prefijo tipo "D1_OPEN: ")
+    h = headers.find(k => normHeader(k).includes(nQ));
+    if (h) return h;
+    // 3) header después de quitar prefijo antes de ':'
+    h = headers.find(k => {
+      const parts = String(k).split(':');
+      if (parts.length < 2) return false;
+      const tail = parts.slice(1).join(':');
+      return normHeader(tail).includes(nQ);
+    });
+    return h || null;
+  };
+
+  for (const code of Object.keys(OPEN_ENDED_QUESTIONS)) {
+    const label = OPEN_ENDED_QUESTIONS[code];
+    const headerKey = findHeaderForQuestion(label);
+    const v = headerKey ? row[headerKey] : '';
     if (v && String(v).trim()) {
       const norm = normalize(v).replace(/\s+/g, ' ');
-      out[key] = [anonymizeText(norm)];
+      out[code] = [anonymizeText(norm)];
+    } else {
+      out[code] = [];
     }
   }
   return out;

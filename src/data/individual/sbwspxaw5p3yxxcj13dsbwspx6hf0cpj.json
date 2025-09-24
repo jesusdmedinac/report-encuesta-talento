@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.520Z",
+  "generated_at": "2025-09-24T01:46:30.384Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.520Z",
+    "generatedAt": "2025-09-24T01:46:30.384Z",
     "schema": "individual-1.0",
     "id": "sbwspxaw5p3yxxcj13dsbwspx6hf0cpj",
     "subject": {
       "nombreCompleto": "Katherine Martillo Pilay",
       "email": "KMARTILLO1@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.520Z",
+      "assessed_on": "2025-09-24T01:46:30.384Z",
       "demographics": {
         "rol": "MARKETING COORDINATOR",
         "area": "MARKETING",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EFECTIVO"
+    ],
+    "D2_OPEN": [
+      "UNA NUEVA HERRAMIENTA QUE PUEDA SER USADA EN UN PROCESADOR DE MAYOR AGILIDAD, PORQUE ALGUNAS VECES LA HERRAMIENTA FALLA POR CAPACIDAD"
+    ],
+    "D3_OPEN": [
+      "PODER TENER ACCESO A CHAT GPT O HERRAMIENTAS DE INTELIGENCIA ARTIFICIAL. QUE CONTENGA LAS RESTRICCIONES PARA CUIDAR LA INFORMACION DEL BA"
+    ],
+    "D4_OPEN": [
+      "EN ESTE MOMENTO LO QUE ME PREOCUPA ES LA EXPOSICION DE LA INFORMACION CON LOS DATOS QUE DAMOS. EN EL FUTURO SIENTO QUE LOS PUESTOS DE TRABAJO MIGRARAN Y QUE SERIA VALIOSO TENER RECURSOS QUE SEPAN ENTENDER LA IA DESDE DIFERENTES FRENTES."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "comercial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "datos"
+      ]
     },
     "iniciativas": [
       {

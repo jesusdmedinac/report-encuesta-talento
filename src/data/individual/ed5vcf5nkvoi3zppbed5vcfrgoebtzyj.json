@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.504Z",
+  "generated_at": "2025-09-24T01:46:30.343Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.504Z",
+    "generatedAt": "2025-09-24T01:46:30.343Z",
     "schema": "individual-1.0",
     "id": "ed5vcf5nkvoi3zppbed5vcfrgoebtzyj",
     "subject": {
       "nombreCompleto": "CINTHIA LOAYZA GALARZA",
       "email": "cloayza@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.504Z",
+      "assessed_on": "2025-09-24T01:46:30.343Z",
       "demographics": {
         "rol": "Asesor Comercial",
         "area": "SEGMENTOS Y CANALES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje de adaptacion y evolucion, donde cada interaccion me ensena a comprender mejor las necesidades y deseos, aprendiendo a comunicarme de manera mas natural y eficaz"
+    ],
+    "D2_OPEN": [
+      "Para ser mas eficiente me gustaria que todo se encuentre en una pagina y no tener que ingresar a algunas paginas puesto que esto nos puede tardar, adicional en el CRM hay casos que se necesitan procesos adicionales que a veces desconocemos hasta que el analista a cargo nos indica y seria conveniente que al generar el caso notifique como una alerta la informacion adicional que se necesita para que el requerimiento no tarde mas de lo esperado."
+    ],
+    "D3_OPEN": [
+      "Construir un entorno donde la digitalizacion sea vista como una oportunidad, no como una amenaza, y donde cada miembro del equipo pueda contribuir al proceso de transformacion."
+    ],
+    "D4_OPEN": [
+      "Una de las expectativas es su capacidad para hacer los servicios financieros mas accesibles, eficientes y personalizados. Por ejemplo, la IA puede ayudar a predecir patrones financieros y ofrecer recomendaciones mas precisas para cada cliente; la IA podria ser vulnerable a ataques ciberneticos o mal uso de datos sensibles."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · brechaDigital: gap 0.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), brechaDigital (gap=0.20), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'jefa_de_agencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='jefa_de_agencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), brechaDigital (gap=0.20), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'jefa_de_agencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='jefa_de_agencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,11 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Jefa de Agencia",
       "aspiracion_slug": "jefa_de_agencia"
     },

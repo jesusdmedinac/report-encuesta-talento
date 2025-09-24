@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.961Z",
+  "generated_at": "2025-09-24T01:46:31.457Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.961Z",
+    "generatedAt": "2025-09-24T01:46:31.457Z",
     "schema": "individual-1.0",
     "id": "xf099ww1drq4fskg8nmxf095xtcj9f0b",
     "subject": {
       "nombreCompleto": "Carmen Elvira Ruiz Alvear",
       "email": "cruiz@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.961Z",
+      "assessed_on": "2025-09-24T01:46:31.457Z",
       "demographics": {
         "rol": "SUPERVISORA DE INVERSIONES",
         "area": "INVERSIONES",
@@ -207,13 +207,31 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Conocimiento que se transforma en poder y que para mantenerlo hay que actualizarse constantemente."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales y tener acceso a descargar programas como apoyo. Esta restringido."
+    ],
+    "D3_OPEN": [
+      "Nosotros como lideres debemos fomentar la innovacion, promover en los equipos el uso de la tecnologia y evitar manualidades. Creando cultura de aprendizaje constante, incentivando la automatizacion de procesos que se identifican caducos. Adoptar metodologias agiles que promuevan experimentar, tener errores como parte del aprendizaje para asi llegar al objetivo sin temor."
+    ],
+    "D4_OPEN": [
+      "Que no se considere que siempre debe haber una revision ultima de un humano, pues el criterio programado de un sistema no reemplazara a lo que un humano puede discernir dependiendo de cada caso. Hablo especificamente de inversiones."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "mandos",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "proceso",
+        "innov"
+      ]
     },
     "iniciativas": [
       {

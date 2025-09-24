@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.570Z",
+  "generated_at": "2025-09-24T01:46:28.080Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.570Z",
+    "generatedAt": "2025-09-24T01:46:28.080Z",
     "schema": "individual-1.0",
     "id": "dz5rch9kxznls8d2cq1dz5rchb427l86",
     "subject": {
       "nombreCompleto": "Carlos Loor Barragán",
       "email": "cloor1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.570Z",
+      "assessed_on": "2025-09-24T01:46:28.080Z",
       "demographics": {
         "rol": "Business data analyst",
         "area": "Tribu de analítica",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "La busqueda de automatizacion de tareas al mas alto nivel"
+    ],
+    "D2_OPEN": [
+      "Una herramienta que permita ver informacion y contexto de los dashboards y un ligero repotenciamiento al OGA para que muestre el contexto de las tablas"
+    ],
+    "D3_OPEN": [
+      "Mejorar la comprension de la escala de trabajo que conlleva un progreso y tambien el alcance de los mismos"
+    ],
+    "D4_OPEN": [
+      "mi mayor expectativa es que se la pueda contextualizar para que ayude en la limpieza y preprocesamiento de datos y de esta manera ahorrar gran parte del trabajo que en realidad no representa ninguna colaboracion para el negocio"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · madurezDigital: gap 0.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'business'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'business'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, datos, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "business",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "datos",
+        "colabor"
+      ],
       "aspiracionProfesional": "Data Scientist",
       "aspiracion_slug": "analitica_datos"
     },

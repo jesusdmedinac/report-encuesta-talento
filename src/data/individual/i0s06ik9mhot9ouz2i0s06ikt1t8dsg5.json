@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.027Z",
+  "generated_at": "2025-09-24T01:46:29.158Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.027Z",
+    "generatedAt": "2025-09-24T01:46:29.158Z",
     "schema": "individual-1.0",
     "id": "i0s06ik9mhot9ouz2i0s06ikt1t8dsg5",
     "subject": {
       "nombreCompleto": "DANIELA ROMERO",
       "email": "DROMERO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.027Z",
+      "assessed_on": "2025-09-24T01:46:29.158Z",
       "demographics": {
         "rol": "Servicio personalizado a clientes de una cartera selecta, desarrollando y fidelizandolos.",
         "area": "COMERCIAL",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Abierta a nuevas posibilidades, el mundo cambia, tu con el"
+    ],
+    "D2_OPEN": [
+      "El poder sincronizar los informes con todas las personas del equipo en tiempo real."
+    ],
+    "D3_OPEN": [
+      "Focus group en la cual todos participemos, aportemos con valor con ideas, para sentirnos participes"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que reduzca el tema operativo el cual nos resta tiempo para poder estar presente calidamente con los clientes asignados a cada portafolio"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · madurezDigital: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Jefe de Area, dirección de equipos",
       "aspiracion_slug": "liderazgo"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.010Z",
+  "generated_at": "2025-09-24T01:46:29.111Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.010Z",
+    "generatedAt": "2025-09-24T01:46:29.111Z",
     "schema": "individual-1.0",
     "id": "dissjappbt1h5ecsvhvdisxq2eelpi36",
     "subject": {
       "nombreCompleto": "janeth franco ruiz",
       "email": "jfranco1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.010Z",
+      "assessed_on": "2025-09-24T01:46:29.111Z",
       "demographics": {
         "rol": "SOPORTE DE INVERSIONES-PRODUCTOS E INNOVACIÓN",
         "area": "PRODUCTOS E INNOVACIÓN",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital ha sido un proceso constante de descubrimiento, donde cada nuevo reto me ha ayudado a usar la tecnologia para trabajar mejor y adaptarme con confianza a los cambios"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las herramientas actuales. Nueva herramienta para automatizar tareas. Mejor integracion entre herramientas. Soporte tecnico mas rapido."
+    ],
+    "D3_OPEN": [
+      "Espero que la Inteligencia Artificial me ayude a hacer mas rapido lo que se repite y a tomar decisiones mas acertadas. Pero me preocupa que, si no se usa con cuidado, pueda reemplazar el toque humano o causar errores sin que nos demos cuenta."
+    ],
+    "D4_OPEN": [
+      "Espero que la Inteligencia Artificial me ayude a simplificar tareas y tomar mejores decisiones, aunque me preocupa que pueda perderse el criterio humano si no se usa con equilibrio"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.5 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.00), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.00), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Aspirar a un rol de liderazgo en Inversiones y Tesorería, liderando equipos y proyectos que optimicen el portafolio y fomenten la innovación financiera",
       "aspiracion_slug": "liderazgo"
     },

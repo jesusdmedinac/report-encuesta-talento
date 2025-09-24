@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.563Z",
+  "generated_at": "2025-09-24T01:46:30.500Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.563Z",
+    "generatedAt": "2025-09-24T01:46:30.500Z",
     "schema": "individual-1.0",
     "id": "90uek6xp1f6gwlryey2m90uek6laudla",
     "subject": {
       "nombreCompleto": "Maria Fernanda Mejia Gaibor",
       "email": "mafermejia1992@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.563Z",
+      "assessed_on": "2025-09-24T01:46:30.500Z",
       "demographics": {
         "rol": "Oficial medios de pago",
         "area": "Medios de pago",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi progreso ha sido notable desde que comence este viaje digital"
+    ],
+    "D2_OPEN": [
+      "Pienso que excel ha sido muy importante"
+    ],
+    "D3_OPEN": [
+      "Fomentar mas capacitaciones practicas y continuas en herramientas digitales, junto con la implementacion de procesos agiles que faciliten la adopcion y el uso diario de estas tecnologias en todas las areas."
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es que la Inteligencia Artificial me ayude a optimizar tareas repetitivas y a obtener analisis mas rapidos y precisos, liberando tiempo para enfocarme en labores estrategicas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.50), madurezDigital (gap=0.40). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.50), madurezDigital (gap=0.40). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Marketing",
       "aspiracion_slug": "marketing_digital"
     },

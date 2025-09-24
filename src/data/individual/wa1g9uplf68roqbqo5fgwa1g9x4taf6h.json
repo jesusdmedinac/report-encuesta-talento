@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.041Z",
+  "generated_at": "2025-09-24T01:46:29.194Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.041Z",
+    "generatedAt": "2025-09-24T01:46:29.194Z",
     "schema": "individual-1.0",
     "id": "wa1g9uplf68roqbqo5fgwa1g9x4taf6h",
     "subject": {
       "nombreCompleto": "MARIA ANDREA DURAN LOPEZ",
       "email": "mduran@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.041Z",
+      "assessed_on": "2025-09-24T01:46:29.194Z",
       "demographics": {
         "rol": "TALENT PARTNER",
         "area": "TALENTO Y CULTURA",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "UN CAMINO DE DESCUBRIMIENTO CONSTANTE QUE ME IMPULSA A CRECER Y ADAPTARME AL FUTURO"
+    ],
+    "D2_OPEN": [
+      "MAS CAPACITACION EN LAS ACTUALES"
+    ],
+    "D3_OPEN": [
+      "FACILITAR EL ACCESO A HERRAMIENTAS TECNOLOGICAS Y ACOMPANARLAS CON SOPORTE CERCANO PARA ASEGURAR SU ADOPCION"
+    ],
+    "D4_OPEN": [
+      "MI MAYO EXPECTATIVA ES QUE LA IA SE CONVIERTA EN UNA HERRAMIENTA QUE POTENCIE MI PRODUCTIVIDAD AL OPTIMIZAR PROCESOS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 1.4 · madurezDigital: gap 1.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=1.40), madurezDigital (gap=1.10), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'talent'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vicepresidencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vicepresidencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=1.40), madurezDigital (gap=1.10), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'talent'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vicepresidencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vicepresidencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "talent",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "VICEPRESIDENCIA",
       "aspiracion_slug": "vicepresidencia"
     },

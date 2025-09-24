@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.667Z",
+  "generated_at": "2025-09-24T01:46:30.769Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.667Z",
+    "generatedAt": "2025-09-24T01:46:30.769Z",
     "schema": "individual-1.0",
     "id": "kkqi04yxezb92wozzickkqi0dmneuu8d",
     "subject": {
       "nombreCompleto": "Wimper Gomez",
       "email": "wgomez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.667Z",
+      "assessed_on": "2025-09-24T01:46:30.769Z",
       "demographics": {
         "rol": "Analista de contabilidad",
         "area": "Contraloria Financiera",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Debemos modernizarnos sin dejar de ser utiles"
+    ],
+    "D2_OPEN": [
+      "mas en las actuales"
+    ],
+    "D3_OPEN": [
+      "dar cursos especializados en cada area"
+    ],
+    "D4_OPEN": [
+      "no existen mayores preocupaciones ya que siempre se necesitara del analisis humano"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.1.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analista'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.846Z",
+  "generated_at": "2025-09-24T01:46:31.234Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.846Z",
+    "generatedAt": "2025-09-24T01:46:31.234Z",
     "schema": "individual-1.0",
     "id": "m43w0pdtqz6ilrcbkujom43w0pfe0lu4",
     "subject": {
       "nombreCompleto": "Pierina Guevara",
       "email": "pguevara1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.846Z",
+      "assessed_on": "2025-09-24T01:46:31.234Z",
       "demographics": {
         "rol": "Cajera Financiera",
         "area": "Operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Enriquecedor"
+    ],
+    "D2_OPEN": [
+      "Las capacitaciones constantes son de mucha ayuda para ser mas eficientes"
+    ],
+    "D3_OPEN": [
+      "Tomar en cuenta la opinion de los que trabajan directamente con los clientes y escuchamos sus reclamos."
+    ],
+    "D4_OPEN": [
+      "Para el area operativa es un poco complicado ser reemplazable por la IA, ya que no es posible que empresas con mucho efectivo y monedas seria un poco complejo y para adultos mayores que manejen la tecnologia al 100%"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50), madurezDigital (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50), madurezDigital (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "cajera",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente"
+      ],
       "aspiracionProfesional": "Desería prepararme lo mejor posible para poder llegar a las areas administrativas de la institucion y para esto quisiera culminar mi carrera universitaria, junto con esto ir agarrado de la mano con la experiencia que adquiero trabajando en Banco Guayaquil.",
       "aspiracion_slug": "tecnico"
     },

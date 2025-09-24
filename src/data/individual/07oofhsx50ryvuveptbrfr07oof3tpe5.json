@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.715Z",
+  "generated_at": "2025-09-24T01:46:30.907Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.715Z",
+    "generatedAt": "2025-09-24T01:46:30.907Z",
     "schema": "individual-1.0",
     "id": "07oofhsx50ryvuveptbrfr07oof3tpe5",
     "subject": {
       "nombreCompleto": "Silvia Ocaña Villacreses",
       "email": "socana@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.715Z",
+      "assessed_on": "2025-09-24T01:46:30.907Z",
       "demographics": {
         "rol": "Gestor Riesgo Portafolio",
         "area": "Riesgo Portafolio",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Proyecto en construccion"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion sobre Power BI, y una nueva capacitacion como R, ya sea capacitacion interna o tener la facilidad de pagar un programa en una institucion de educacion continua."
+    ],
+    "D3_OPEN": [
+      "Solicitar conocimientos minimos en Excel para que los informes sean utiles para las areas que los necesita. Realizar reuniones breves entre clientes internos para saber como se puede mejorar, que reportes se pueden automatizar, para que entre todos conozcamos para que utilizamos la informacion que nos brindan diaria o mensualmente."
+    ],
+    "D4_OPEN": [
+      "Mi preocupacion es desconocer hasta que punto la IA pueda reemplazar mi rol actualmente."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 3 · brechaDigital: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=3.00), brechaDigital (gap=1.30), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_a_un_ascenso_profesional_en_el_area_de_seguridad_integral,_compliance_o_riesgo_integral.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_a_un_ascenso_profesional_en_el_area_de_seguridad_integral,_compliance_o_riesgo_integral.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=3.00), brechaDigital (gap=1.30), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_a_un_ascenso_profesional_en_el_area_de_seguridad_integral,_compliance_o_riesgo_integral.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_a_un_ascenso_profesional_en_el_area_de_seguridad_integral,_compliance_o_riesgo_integral.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "cliente"
+      ],
       "aspiracionProfesional": "Aspiro a un ascenso profesional en el área de Seguridad Integral, Compliance o Riesgo Integral.",
       "aspiracion_slug": "aspiro_a_un_ascenso_profesional_en_el_area_de_seguridad_integral,_compliance_o_riesgo_integral."
     },

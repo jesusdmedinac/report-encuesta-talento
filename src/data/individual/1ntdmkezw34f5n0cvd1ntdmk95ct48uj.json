@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.809Z",
+  "generated_at": "2025-09-24T01:46:28.631Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.809Z",
+    "generatedAt": "2025-09-24T01:46:28.631Z",
     "schema": "individual-1.0",
     "id": "1ntdmkezw34f5n0cvd1ntdmk95ct48uj",
     "subject": {
       "nombreCompleto": "Synei Jaramillo",
       "email": "sjaramillo@bancoguyaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.809Z",
+      "assessed_on": "2025-09-24T01:46:28.631Z",
       "demographics": {
         "rol": "Guía de Agencia",
         "area": "operaciones",
@@ -207,10 +207,21 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Autoeducarse"
+    ],
+    "D2_OPEN": [],
+    "D3_OPEN": [
+      "Implementando talleres de esta manera nos permitira auto educarnos"
+    ],
+    "D4_OPEN": [
+      "La inteligencia artificial nos facilita informacion exacta de tema que no tenemos conocimiento. La preocupacion de a IA en mi rol es no tener el contacto con el cliente de tercera y no poder brindarle la informacion directa sin que ellos deben tener un aplicativo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · madurezDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.50), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'guia'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.50), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'guia'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +238,9 @@
         }
       ],
       "role": "guia",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Área de Talento Humano",
       "aspiracion_slug": "rrhh"
     },

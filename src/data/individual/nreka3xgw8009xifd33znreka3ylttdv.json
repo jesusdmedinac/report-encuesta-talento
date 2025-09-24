@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.985Z",
+  "generated_at": "2025-09-24T01:46:29.050Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.985Z",
+    "generatedAt": "2025-09-24T01:46:29.050Z",
     "schema": "individual-1.0",
     "id": "nreka3xgw8009xifd33znreka3ylttdv",
     "subject": {
       "nombreCompleto": "Xavier Freire Cedeño",
       "email": "xfreire@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.985Z",
+      "assessed_on": "2025-09-24T01:46:29.050Z",
       "demographics": {
         "rol": "People Analytics Specialist",
         "area": "Tribu Banca Personas",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "un proceso de exploracion constante, con mucha creatividad, curiosidad e imaginacion"
+    ],
+    "D2_OPEN": [
+      "nuevas herramientas y accesos porque son limitados"
+    ],
+    "D3_OPEN": [
+      "concientizar en la importancia de la cultura digital"
+    ],
+    "D4_OPEN": [
+      "se use sin profundizar en los sesgos o alucinaciones de la ia"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'people'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'people'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,9 @@
         }
       ],
       "role": "people",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "proceso"
+      ],
       "aspiracionProfesional": "Lider de equipos",
       "aspiracion_slug": "liderazgo"
     },

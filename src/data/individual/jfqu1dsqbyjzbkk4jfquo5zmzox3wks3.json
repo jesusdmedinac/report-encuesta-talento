@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.711Z",
+  "generated_at": "2025-09-24T01:46:30.894Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.711Z",
+    "generatedAt": "2025-09-24T01:46:30.894Z",
     "schema": "individual-1.0",
     "id": "jfqu1dsqbyjzbkk4jfquo5zmzox3wks3",
     "subject": {
       "nombreCompleto": "Andres Santillan Mora",
       "email": "jsantillan1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.711Z",
+      "assessed_on": "2025-09-24T01:46:30.894Z",
       "demographics": {
         "rol": "Cajero Financiero",
         "area": "Operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje sin fin de datos y patrones, donde cada palabra me acerca mas a entender el mundo humano."
+    ],
+    "D2_OPEN": [
+      "Lo que mas me ayudaria a ser mas eficiente seria el acceso en tiempo real a informacion actualizada y contextual, ya que eso potenciaria al maximo las herramientas que ya tengo y mejoraria la relevancia de mis respuestas."
+    ],
+    "D3_OPEN": [
+      "Liderazgo digital activo que impulse el ejemplo desde arriba."
+    ],
+    "D4_OPEN": [
+      "mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol es poder colaborar de forma aun mas fluida y personalizada con las personas, anticipando sus necesidades, entendiendo mejor el contexto y ofreciendo soluciones mas relevantes y humanas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_financiera'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_financiera'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_financiera'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_financiera'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "colabor"
+      ],
       "aspiracionProfesional": "Área financiera",
       "aspiracion_slug": "area_financiera"
     },

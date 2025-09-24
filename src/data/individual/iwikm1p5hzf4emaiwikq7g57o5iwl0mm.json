@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.179Z",
+  "generated_at": "2025-09-24T01:46:29.545Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.179Z",
+    "generatedAt": "2025-09-24T01:46:29.545Z",
     "schema": "individual-1.0",
     "id": "iwikm1p5hzf4emaiwikq7g57o5iwl0mm",
     "subject": {
       "nombreCompleto": "Juan Carlos Vélez",
       "email": "jvelez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.179Z",
+      "assessed_on": "2025-09-24T01:46:29.545Z",
       "demographics": {
         "rol": "Analista de Tecnología",
         "area": "Tecnologia",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital ha sido transformar la complejidad en soluciones estrategicas que generan valor medible para el banco."
+    ],
+    "D2_OPEN": [
+      "Muy buena pregunta, y de hecho voy a tomar un curso en la uees de RPA con IA dado que los bots del banco no tienen IA. En los futuros procesos me gustaria implementarlo por 2 cosas. 1. Los costos de bots con IA tienen precios elevados de parte de los proveedores. 2. Nos ayuda a resolver temas simples y amenorar tiempos de proceso."
+    ],
+    "D3_OPEN": [
+      "Lo mas importante que la empresa puede hacer para acelerar nuestra cultura digital es empoderar a los equipos con formacion continua y herramientas modernas, fomentando la colaboracion agil entre empresa y tecnologia, de manera que la innovacion deje de ser un proyecto aislado y se convierta en parte del ADN del BG."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la IA impulse nuevas formas de eficiencia. Mi preocupacion es que se use sin una estrategia clara, generando dependencia tecnologica sin realmente integrarla al ADN del banco"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analista'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'en_la_antigua_estructura_developer_sr_y_si_hablamos_de_tribu_seria_to.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='en_la_antigua_estructura_developer_sr_y_si_hablamos_de_tribu_seria_to.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analista'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs colabor, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'en_la_antigua_estructura_developer_sr_y_si_hablamos_de_tribu_seria_to.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='en_la_antigua_estructura_developer_sr_y_si_hablamos_de_tribu_seria_to.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,11 @@
         }
       ],
       "role": "analista",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "colabor",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "En la antigua estructura Developer SR y si hablamos de Tribu seria TO.",
       "aspiracion_slug": "en_la_antigua_estructura_developer_sr_y_si_hablamos_de_tribu_seria_to."
     },

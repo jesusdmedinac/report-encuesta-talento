@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.936Z",
+  "generated_at": "2025-09-24T01:46:28.927Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.936Z",
+    "generatedAt": "2025-09-24T01:46:28.927Z",
     "schema": "individual-1.0",
     "id": "ze2r8t6ahsx24sfqmze2r8tpnfhujo08",
     "subject": {
       "nombreCompleto": "Andrea Sandoval",
       "email": "asandoval@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.936Z",
+      "assessed_on": "2025-09-24T01:46:28.927Z",
       "demographics": {
         "rol": "Customer Care Manager",
         "area": "Customer Care",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprendizaje continuo con mucha oportunidad de desarrollo"
+    ],
+    "D2_OPEN": [
+      "Plataformas de AI para automatizar procesos diarios."
+    ],
+    "D3_OPEN": [
+      "Talleres practicos de ciertas herramientas para automatizar tareas manuales. Use Cases reales"
+    ],
+    "D4_OPEN": [
+      "Que me permita identificar procesos rotos"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=0.90), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "proceso"
+      ],
       "aspiracionProfesional": "Product Manager de áreas de Productos Bancarios o Martech",
       "aspiracion_slug": "gestion_producto"
     },

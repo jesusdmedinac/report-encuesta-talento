@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.599Z",
+  "generated_at": "2025-09-24T01:46:28.141Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.599Z",
+    "generatedAt": "2025-09-24T01:46:28.141Z",
     "schema": "individual-1.0",
     "id": "okuhv8zp4svvqr4fygokuhvr02hqzn1b",
     "subject": {
       "nombreCompleto": "JOSE MIGUEL CRESPO ALVEAR",
       "email": "JCRESPO1@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:53.599Z",
+      "assessed_on": "2025-09-24T01:46:28.141Z",
       "demographics": {
         "rol": "ASESOR COMERCIAL",
         "area": "COMERCIAL",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "ha sido un camino de retos y descubrimientos que me impulsa a seguir aprendiendo cada dia"
+    ],
+    "D2_OPEN": [
+      "algo diferente"
+    ],
+    "D3_OPEN": [
+      "seguirnos innovando constantemente mendiante programas actualizados y plataforma ia"
+    ],
+    "D4_OPEN": [
+      "que en un futuro ia sea remplazo para nuestras funciones"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "comercial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "innov"
+      ]
     },
     "iniciativas": [
       {

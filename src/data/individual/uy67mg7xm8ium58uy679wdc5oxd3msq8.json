@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.583Z",
+  "generated_at": "2025-09-24T01:46:30.553Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.583Z",
+    "generatedAt": "2025-09-24T01:46:30.553Z",
     "schema": "individual-1.0",
     "id": "uy67mg7xm8ium58uy679wdc5oxd3msq8",
     "subject": {
       "nombreCompleto": "Gabriela Nathaly Condo Ortiz",
       "email": "gcondo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.583Z",
+      "assessed_on": "2025-09-24T01:46:30.553Z",
       "demographics": {
         "rol": "COMMERCIAL BUSINESS SUPPORT",
         "area": "BANCA EMPRESAS",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INNOVACION"
+    ],
+    "D2_OPEN": [
+      "MAS CAPACITACIONES PARA APROVECHAR LAS ACTUALES Y NUEVAS ERRAMIENTAS QUE AGILITEN PROCESOS"
+    ],
+    "D3_OPEN": [
+      "SOLICITAR REPORTES UTILIZANDO LAS HERRAMIENTAS"
+    ],
+    "D4_OPEN": [
+      "MI MAYO EXPECTATIVA ES QUE FRENTE A UNA INQUIETUD DE PROCESOS INTERNOS EN EL BG PODAMOS CONSULTAR Y NOS DETALLE PROCESOS Y PERSONAS ENCARGAS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · brechaDigital: gap 0.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), brechaDigital (gap=0.70), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'commercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'comercial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='comercial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), brechaDigital (gap=0.70), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'commercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'comercial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='comercial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,11 @@
         }
       ],
       "role": "commercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "KAM EN EL AREA COMERCIAL O GERENTE DE RIESGOS",
       "aspiracion_slug": "comercial"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.362Z",
+  "generated_at": "2025-09-24T01:46:30.031Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.362Z",
+    "generatedAt": "2025-09-24T01:46:30.031Z",
     "schema": "individual-1.0",
     "id": "7ntt35ffir0bk68b5wua3j7nttizbckl",
     "subject": {
       "nombreCompleto": "César Párraga",
       "email": "cparraga@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.362Z",
+      "assessed_on": "2025-09-24T01:46:30.031Z",
       "demographics": {
         "rol": "Asistente de Operaciones",
         "area": "Operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Vive cada momento digital...y haz que tu futuro trascienda hoy!"
+    ],
+    "D2_OPEN": [
+      "Podria ayudar un gestor de documentos que minimize el tiempo de busqueda de documentos y respuesta a requerimientos con ayuda de IA. Se podria ampliar el rango de aprendizaje y profundizar en la capacitacion de las herramientas actuales y en auge con IA, generando mas valor a la eficiencia de los procesos. Plataformas de comunicacion y gestion de procesos integrando IA, en donde se pueda verificar y visualizar en tiempo real el desarrollo de un evento, requerimiento y proceso, ademas de la(s) persona(s) responsables involucradas en cada etapa de la resolucion de cada evento. Podria"
+    ],
+    "D3_OPEN": [
+      "Tener en cuenta el poder crear rutas de aprendizaje mas formales con campos de accion mas profundos en lo digital ( Ej. Centro de Formacion Continua BG); teniendo un talento mas comprometido, eficiente y mejor equipado. Se deberia examinar constantemente la adaptabilidad de estos cambios en todas la areas del banco; haciendo que este cambio digital se viva y sea parte de cada uno de nosotros. (Ej. Chaingers Digitales)"
+    ],
+    "D4_OPEN": [
+      "La mayor expectativa podria centrarse en el aumento de la productividad, disminuyendo las tareas repetitivas, mejorando la eficiencia operativa ademas de una comunicacion interna y externa mas fluida; y un aprendizaje continuo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "operaciones",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Desarrollador de Software, Ciencia de Datos e Inteligencia Artificial.",
       "aspiracion_slug": "analitica_datos"
     },
@@ -256,6 +272,35 @@
             "target": "+1.0"
           }
         ]
+      },
+      {
+        "id": "IA-02",
+        "titulo": "Capacitación en prompt engineering y ética",
+        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "comercial"
+        ],
+        "tags": [
+          "capacitacion",
+          "etica",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
       },
       {
         "id": "IA-03",
@@ -305,35 +350,6 @@
         "type": "KPI",
         "subdimensiones": [
           "eticaYVerificacion"
-        ],
-        "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-02",
-        "titulo": "Capacitación en prompt engineering y ética",
-        "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "comercial"
-        ],
-        "tags": [
-          "capacitacion",
-          "etica",
-          "prompt"
-        ],
-        "rutaDeCarrera": [
-          "gestion_producto",
-          "comercial"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
         ],
         "metric": "eticayverificacion",
         "target": "8.0/10"

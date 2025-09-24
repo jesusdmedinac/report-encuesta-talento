@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.021Z",
+  "generated_at": "2025-09-24T01:46:29.141Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.021Z",
+    "generatedAt": "2025-09-24T01:46:29.141Z",
     "schema": "individual-1.0",
     "id": "4x7fq5fxpx01c61t414x7fxncjffze09",
     "subject": {
       "nombreCompleto": "KENNY ROSERO",
       "email": "KROSERO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.021Z",
+      "assessed_on": "2025-09-24T01:46:29.141Z",
       "demographics": {
         "rol": "GESTOR NEGOCIOS ESPECIALIZADOS",
         "area": "AUTOFACIL",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "excelente, nos ayuda a automatizar procesos manuales"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "capacitaciones presenciales con talleres"
+    ],
+    "D4_OPEN": [
+      "que generen un sistema en el cual poniendo cedula del cliente indique si esta o no aprobado y hasta que monto podria aplicar un cliente"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.9 · brechaDigital: gap 1.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.90), brechaDigital (gap=1.70), usoInteligenciaArtificial (gap=1.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_de_contabilidad'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_de_contabilidad'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.90), brechaDigital (gap=1.70), usoInteligenciaArtificial (gap=1.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_de_contabilidad'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_de_contabilidad'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,12 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "GERENCIA DE CONTABILIDAD",
       "aspiracion_slug": "gerencia_de_contabilidad"
     },

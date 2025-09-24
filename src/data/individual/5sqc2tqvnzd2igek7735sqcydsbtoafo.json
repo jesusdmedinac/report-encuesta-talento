@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.008Z",
+  "generated_at": "2025-09-24T01:46:29.107Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.008Z",
+    "generatedAt": "2025-09-24T01:46:29.107Z",
     "schema": "individual-1.0",
     "id": "5sqc2tqvnzd2igek7735sqcydsbtoafo",
     "subject": {
       "nombreCompleto": "Jose Alberto Heredia Diaz",
       "email": "jheredia@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.008Z",
+      "assessed_on": "2025-09-24T01:46:29.107Z",
       "demographics": {
         "rol": "Martech Engineer",
         "area": "Investigación y Desarrollo",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Desarrollo profesional constante"
+    ],
+    "D2_OPEN": [
+      "Herramientas que permitan automatizar procesos de marketing digital y que se de induccion a las areas tradicionales del banco"
+    ],
+    "D3_OPEN": [
+      "Dar a conocer los beneficios de las herramientas digitales para evitar puntos de friccion"
+    ],
+    "D4_OPEN": [
+      "Espero que podamos llegar a un punto donde la IA genera automatizaciones medianteflujos de trabajos mas dinamicos que genere el usuario para hacer comunicaciones mas efectivas en el entorno digital"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'martech'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'lead_de_equipo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='lead_de_equipo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'martech'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'lead_de_equipo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='lead_de_equipo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "martech",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "proceso"
+      ],
       "aspiracionProfesional": "Lead de equipo",
       "aspiracion_slug": "lead_de_equipo"
     },

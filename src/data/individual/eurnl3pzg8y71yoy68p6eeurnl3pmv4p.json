@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.096Z",
+  "generated_at": "2025-09-24T01:46:29.338Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.096Z",
+    "generatedAt": "2025-09-24T01:46:29.338Z",
     "schema": "individual-1.0",
     "id": "eurnl3pzg8y71yoy68p6eeurnl3pmv4p",
     "subject": {
       "nombreCompleto": "Jack Zambrano Vera",
       "email": "jzambrano5@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.096Z",
+      "assessed_on": "2025-09-24T01:46:29.338Z",
       "demographics": {
         "rol": "Oficial Senior Riesgo Macroeconómico",
         "area": "Riesgos financieros",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Automatizar lo aburrido"
+    ],
+    "D2_OPEN": [
+      "Que los permisos internos a servicios/aplicaciones se gestionen mas rapido"
+    ],
+    "D3_OPEN": [
+      "Continuar hablando de las habilidades digitales como algo normal en todos los trabajadores, no como algo exclusivo de sistemas / computacion / desarrollo"
+    ],
+    "D4_OPEN": [
+      "Mis preocupaciones van por el lado de privacidad, siento que las empresas estan yendo mas alla de lo etico para entrenar a sus modelos. Por ejemplo, se utilizan datos de artistas que no necesariamente consintieron que su arte sea usada para entrenar. Lo mismo pasa con codigo, hay programadores que reportan que la IA puede reproducir codigos de sus repositorios privados de Github, por lo que realmente no son privados."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, datos): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "datos"
+      ],
       "aspiracionProfesional": "Líder de análisis económico",
       "aspiracion_slug": "liderazgo"
     },

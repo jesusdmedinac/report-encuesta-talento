@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.137Z",
+  "generated_at": "2025-09-24T01:46:29.435Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.137Z",
+    "generatedAt": "2025-09-24T01:46:29.435Z",
     "schema": "individual-1.0",
     "id": "2926calvtgk0729wdgdvckyhpzapwdgj",
     "subject": {
       "nombreCompleto": "Jonathan Ronquillo Villavicencio",
       "email": "jronquillo1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.137Z",
+      "assessed_on": "2025-09-24T01:46:29.435Z",
       "demographics": {
         "rol": "Oficial Senior (Dentro de mis roles se encuentra una optimización y efectivización de la cámara de compensación)",
         "area": "Operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "El mundo y nivel de informacion y tecnologia que vivimos hoy en dia se presta para capacitarnos constantemente"
+    ],
+    "D2_OPEN": [
+      "Considero que la capacitacion constante llevada de la mano a la practica es la mejor escuela para aprender"
+    ],
+    "D3_OPEN": [
+      "Educar, Fomentar y motivar a que sus colaboradores sigan preparandose mediante cursos y certificaciones constantes, que haya dentro del banco cada cierto tiempo certificaciones, cursos, diplomados en cuanto a la cultura digital. Esto nos permitira ganar mas cancha en el campo digital"
+    ],
+    "D4_OPEN": [
+      "Lo veo como una ayuda para seguir mejorando y expandiendo los conocimientos, mas que encontrarlo como una amenaza lo veo como una herramienta"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.9 · brechaDigital: gap 0.8.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.90), brechaDigital (gap=0.80), usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.90), brechaDigital (gap=0.80), usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor"
+      ],
       "aspiracionProfesional": "Gerente de Talento y Cultura",
       "aspiracion_slug": "rrhh"
     },

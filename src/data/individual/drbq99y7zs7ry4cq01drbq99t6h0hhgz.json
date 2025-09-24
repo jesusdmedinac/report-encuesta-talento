@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.638Z",
+  "generated_at": "2025-09-24T01:46:30.696Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.638Z",
+    "generatedAt": "2025-09-24T01:46:30.696Z",
     "schema": "individual-1.0",
     "id": "drbq99y7zs7ry4cq01drbq99t6h0hhgz",
     "subject": {
       "nombreCompleto": "Luis Pinduisaca",
       "email": "cumbaya35@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.638Z",
+      "assessed_on": "2025-09-24T01:46:30.696Z",
       "demographics": {
         "rol": "doy apoyo logistico en todas las areas y de las agencias, que lo soliciten, superviso la correcta limpieza del edificio, apoyo administrativo (mensajeria / tramites ) a realizar en las dependencias publicas con las que tenga obligaciones el banco",
         "area": "administracion",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "aprendiendo"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "ensenarnos cada dia mas"
+    ],
+    "D4_OPEN": [
+      "me preocupa que la IA, me deje sin trabajo"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 2.1 · culturaOrganizacional: gap 2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=2.10), culturaOrganizacional (gap=2.00), madurezDigital (gap=1.90), usoInteligenciaArtificial (gap=1.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=2.10), culturaOrganizacional (gap=2.00), madurezDigital (gap=1.90), usoInteligenciaArtificial (gap=1.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "pertenecer al equipo de administracion",
       "aspiracion_slug": "operaciones"
     },

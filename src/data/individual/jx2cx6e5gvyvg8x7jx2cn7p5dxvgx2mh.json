@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.065Z",
+  "generated_at": "2025-09-24T01:46:29.258Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.065Z",
+    "generatedAt": "2025-09-24T01:46:29.258Z",
     "schema": "individual-1.0",
     "id": "jx2cx6e5gvyvg8x7jx2cn7p5dxvgx2mh",
     "subject": {
       "nombreCompleto": "Michelle Bonilla Anastacio",
       "email": "mitshelle15@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.065Z",
+      "assessed_on": "2025-09-24T01:46:29.258Z",
       "demographics": {
         "rol": "Digital Content",
         "area": "Marketing",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un camino de constante evolucion donde la creatividad se une con la data para conectar con las personas."
+    ],
+    "D2_OPEN": [
+      "Creo que un mix entre capacitacion constante y la implementacion de herramientas mas colaborativas (como Notion o Monday para flujos de contenido) potenciaria mucho mas mi productividad."
+    ],
+    "D3_OPEN": [
+      "Invertir en capacitacion continua, no solo tecnica, sino tambien en pensamiento digital: entender al cliente, adaptarse al cambio y aprovechar los datos para crear valor."
+    ],
+    "D4_OPEN": [
+      "spero que la inteligencia artificial me permita ser mas agil en la generacion de contenido creativo y personalizado a escala, manteniendo siempre el control humano para asegurar calidad, sensibilidad cultural y coherencia con la voz de marca. Mi mayor preocupacion es que, con el tiempo, se pierda el criterio estrategico y creativo si se depende demasiado de lo automatizado, sin invertir en el criterio humano detras de las decisiones de contenido."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.6 · madurezDigital: gap 1.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), madurezDigital (gap=1.20), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), madurezDigital (gap=1.20), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos, colabor, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,13 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos",
+        "colabor",
+        "cliente"
+      ],
       "aspiracionProfesional": "lider",
       "aspiracion_slug": "liderazgo"
     },

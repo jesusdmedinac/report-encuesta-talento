@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.615Z",
+  "generated_at": "2025-09-24T01:46:30.640Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.615Z",
+    "generatedAt": "2025-09-24T01:46:30.640Z",
     "schema": "individual-1.0",
     "id": "fml5920tkueyqfml519fqa7k95l1yprx",
     "subject": {
       "nombreCompleto": "Joaquín Eduardo Cevallos Galvis",
       "email": "jcevallos3@banguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.615Z",
+      "assessed_on": "2025-09-24T01:46:30.640Z",
       "demographics": {
         "rol": "Guía de agencia",
         "area": "Segmentos y canales",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Emocionante"
+    ],
+    "D2_OPEN": [
+      "Una red de wifi que funcione bien para todos los dispositivos sin restricciones"
+    ],
+    "D3_OPEN": [
+      "Siempre estar receptivo a las ideas de innovacion tecnologica por parte de las personas que estamos en el dia a dia con los clientes"
+    ],
+    "D4_OPEN": [
+      "Que se automatice por completo mi rol y el de mis companeros y que ya no exista trabajo para nosotros"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "guia",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "cliente",
+        "innov"
+      ]
     },
     "iniciativas": [
       {

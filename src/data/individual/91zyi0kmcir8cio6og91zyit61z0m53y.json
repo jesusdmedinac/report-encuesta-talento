@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.051Z",
+  "generated_at": "2025-09-24T01:46:29.220Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.051Z",
+    "generatedAt": "2025-09-24T01:46:29.220Z",
     "schema": "individual-1.0",
     "id": "91zyi0kmcir8cio6og91zyit61z0m53y",
     "subject": {
       "nombreCompleto": "JOY MAGALLANES GUALE",
       "email": "jmagallanes1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.051Z",
+      "assessed_on": "2025-09-24T01:46:29.220Z",
       "demographics": {
         "rol": "ASISTENTE",
         "area": "OPERACIONES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "AVANCE CON SUPERVISION PARA EVITAR ERRORES.."
+    ],
+    "D2_OPEN": [
+      "NO SOLO MAS CAPACITACION, SINO GESTIONAR MEJORAS EN LOS SISTEMAS QUE TENEMOS."
+    ],
+    "D3_OPEN": [
+      "EVALUAR BIEN LOS PROCESOS A AUTOMATIZAR, PORQUE NO TODO ES SIMPLEMENTE IMPLEMENTAR Y MEJORAR, SE TRATA DE EVALUAR MINUCISAMENTE"
+    ],
+    "D4_OPEN": [
+      "MI MAYOR EXPECTATIVA ES AUTOMATIZAR Y DIGIALIZAR TODO TIPO DE DOCUMENTO YA SEAN CONTRATOS O INDIFERENTE SEA EL DOCUMENTO Y REDUCIR NO SOLO INVENTARIO SINO COSTOS ELEVADOS POR INVENTARIOS MES A MES."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.30), madurezDigital (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.30), madurezDigital (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "asistente",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "LIDERAZGO: DIRECTOR DE ÁREA",
       "aspiracion_slug": "liderazgo"
     },

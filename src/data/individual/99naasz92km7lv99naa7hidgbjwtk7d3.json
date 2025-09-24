@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.487Z",
+  "generated_at": "2025-09-24T01:46:30.308Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.487Z",
+    "generatedAt": "2025-09-24T01:46:30.308Z",
     "schema": "individual-1.0",
     "id": "99naasz92km7lv99naa7hidgbjwtk7d3",
     "subject": {
       "nombreCompleto": "Luis Alvarado",
       "email": "lalvarado@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.487Z",
+      "assessed_on": "2025-09-24T01:46:30.308Z",
       "demographics": {
         "rol": "Asistente de Presidencia",
         "area": "Presidencia Ejecutiva",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Virtual"
+    ],
+    "D2_OPEN": [
+      "Algo diferente"
+    ],
+    "D3_OPEN": [
+      "Aumatizar pedidos de los altos ejecutivos"
+    ],
+    "D4_OPEN": [
+      "Ninguna"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 4.7 · madurezDigital: gap 1.2.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=4.70), madurezDigital (gap=1.20), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'seguir_en_atencion_a_presidencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='seguir_en_atencion_a_presidencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

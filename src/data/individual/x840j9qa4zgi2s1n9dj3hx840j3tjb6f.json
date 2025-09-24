@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.571Z",
+  "generated_at": "2025-09-24T01:46:30.523Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.571Z",
+    "generatedAt": "2025-09-24T01:46:30.523Z",
     "schema": "individual-1.0",
     "id": "x840j9qa4zgi2s1n9dj3hx840j3tjb6f",
     "subject": {
       "nombreCompleto": "Juan Montiel",
       "email": "jmontiel@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.571Z",
+      "assessed_on": "2025-09-24T01:46:30.523Z",
       "demographics": {
         "rol": "Arquitecto de Soluciones",
         "area": "Arquitectura Empresarial",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "De descubrimiento y encanto por la tecnologia"
+    ],
+    "D2_OPEN": [
+      "Nuevas herramientas"
+    ],
+    "D3_OPEN": [
+      "Sobre todo impulsa el uso de IA pero sin dejar de lado como funcionan las cosas"
+    ],
+    "D4_OPEN": [
+      "En mi rol que es de tecnologia, lo cual programa los sistemas, solo un poco preocupado. Sin embargo es algo que no se puede detener y hay que aprovecharlo de la mejor manera"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · brechaDigital: gap 1.3.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), brechaDigital (gap=1.30), madurezDigital (gap=0.50), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

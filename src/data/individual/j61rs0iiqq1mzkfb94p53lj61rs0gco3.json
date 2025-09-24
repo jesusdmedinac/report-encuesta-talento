@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.212Z",
+  "generated_at": "2025-09-24T01:46:29.636Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.212Z",
+    "generatedAt": "2025-09-24T01:46:29.636Z",
     "schema": "individual-1.0",
     "id": "j61rs0iiqq1mzkfb94p53lj61rs0gco3",
     "subject": {
       "nombreCompleto": "JOSE LUIS Wandemberg Karolys",
       "email": "jwandember@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.212Z",
+      "assessed_on": "2025-09-24T01:46:29.636Z",
       "demographics": {
         "rol": "Soy Jefe Departamental en la Región Norte, responsable de coordinar y supervisar las operaciones del departamento, garantizar el cumplimiento de objetivos y liderar al equipo",
         "area": "OPERACIONES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Una constante evolucion de habilidades y conocimientos adaptandome a nuevas tecnologias para potenciar mi desempeno profesional"
+    ],
+    "D2_OPEN": [
+      "incorporar una nueva herramienta adaptada a nuestras necesidades facilitaria la automatizacion de tareas repetitivas y optimizaria la gestion de proyectos en el departamento."
+    ],
+    "D3_OPEN": [
+      "Lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es fomentar una capacitacion continua y practica en nuevas tecnologias, asi como promover un ambiente abierto al cambio y la innovacion, donde todos los colaboradores se sientan motivados a adoptar y aprovechar las herramientas digitales."
+    ],
+    "D4_OPEN": [
+      "Reduccion de puestos de trabajo en el area"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.6 · brechaDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.60), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.60), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,12 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "innov"
+      ],
       "aspiracionProfesional": "Ser Sub-Gerente en el área de operaciones.",
       "aspiracion_slug": "operaciones"
     },
@@ -299,6 +317,32 @@
         "target": "8.0/10"
       },
       {
+        "id": "CD-06",
+        "titulo": "Taller de colaboración en suites actuales",
+        "descripcion": "Workshop hands-on para crear plantillas, permisos y tableros con la suite corporativa.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "2 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "colaboracion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "comercial",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
         "id": "CD-03",
         "titulo": "Clínica de ciberseguridad aplicada",
         "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
@@ -314,32 +358,6 @@
         ],
         "rutaDeCarrera": [
           "tecnico",
-          "operaciones"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ciberseguridad"
-        ],
-        "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-05",
-        "titulo": "Curso práctico de ciberseguridad laboral",
-        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Alta",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "todos"
-        ],
-        "tags": [
-          "seguridad",
-          "practicas"
-        ],
-        "rutaDeCarrera": [
-          "liderazgo",
-          "mandos",
           "operaciones"
         ],
         "type": "KPI",

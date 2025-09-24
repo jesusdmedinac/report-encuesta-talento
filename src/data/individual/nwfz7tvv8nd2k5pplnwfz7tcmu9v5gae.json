@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.880Z",
+  "generated_at": "2025-09-24T01:46:28.776Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.880Z",
+    "generatedAt": "2025-09-24T01:46:28.776Z",
     "schema": "individual-1.0",
     "id": "nwfz7tvv8nd2k5pplnwfz7tcmu9v5gae",
     "subject": {
       "nombreCompleto": "CARLOS CANALES",
       "email": "ccanales@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.880Z",
+      "assessed_on": "2025-09-24T01:46:28.776Z",
       "demographics": {
         "rol": "GESTOR MICROCREDITO",
         "area": "MICRO CREDITO",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EXCELENTE"
+    ],
+    "D2_OPEN": [
+      "SON BUELAS HERRAMIENTAS CAPACITACIONES"
+    ],
+    "D3_OPEN": [
+      "MEJORAR LOS EQUIPOS INFORMATICOS Y CELULARES"
+    ],
+    "D4_OPEN": [
+      "LA MAYOR EXPECTATIVA ES QUE SE AJUSTE A NUESTRA ACTIVIDADES DIARIAS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.9 · usoInteligenciaArtificial: gap 1.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.90), usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'supervicion_de_micro'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='supervicion_de_micro'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.90), usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'supervicion_de_micro'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='supervicion_de_micro'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "SUPERVICION DE MICRO",
       "aspiracion_slug": "supervicion_de_micro"
     },

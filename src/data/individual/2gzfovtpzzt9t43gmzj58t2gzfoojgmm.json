@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.704Z",
+  "generated_at": "2025-09-24T01:46:30.875Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.704Z",
+    "generatedAt": "2025-09-24T01:46:30.875Z",
     "schema": "individual-1.0",
     "id": "2gzfovtpzzt9t43gmzj58t2gzfoojgmm",
     "subject": {
       "nombreCompleto": "Fulton Solorzano",
       "email": "Fsolorzano@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.704Z",
+      "assessed_on": "2025-09-24T01:46:30.875Z",
       "demographics": {
         "rol": "Conductor",
         "area": "Administracion",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "moldeable"
+    ],
+    "D2_OPEN": [
+      "hojas de rutas digitales (Tablet)"
+    ],
+    "D3_OPEN": [
+      "siempre estan actualizando los programas"
+    ],
+    "D4_OPEN": [
+      "mejoras"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · madurezDigital: gap 1.9.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), madurezDigital (gap=1.90), brechaDigital (gap=1.60). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'conductor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'superacion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='superacion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

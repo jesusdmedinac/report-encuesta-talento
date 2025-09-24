@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.926Z",
+  "generated_at": "2025-09-24T01:46:31.391Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.926Z",
+    "generatedAt": "2025-09-24T01:46:31.391Z",
     "schema": "individual-1.0",
     "id": "6gu0rpkrwhw09dbo06gujlm0czs9e36y",
     "subject": {
       "nombreCompleto": "Betania Elizabeth Guerra Guanga",
       "email": "bguerra@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.926Z",
+      "assessed_on": "2025-09-24T01:46:31.391Z",
       "demographics": {
         "rol": "Asistente Senio Sostenibilidad y Asuntos Corporativos",
         "area": "Sostenibilidad y Asuntos Corporativos",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Transformacion"
+    ],
+    "D2_OPEN": [
+      "Talvez tener la misma informacion en DECEVALE y HOST."
+    ],
+    "D3_OPEN": [
+      "Mayor capacitacion y practica reales de como ejecutar en los procesos y actividades que realizamos diariamente."
+    ],
+    "D4_OPEN": [
+      "Por el momento no tengo preocupacion, siento que la Inteligencia humana nunca podra ser reemplazada por la IA, al contrario es una herramienta en crecimiento y de mucha ayuda para optimizar el trabajo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.7 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.70), usoInteligenciaArtificial (gap=1.30), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.70), usoInteligenciaArtificial (gap=1.30), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "asistente",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Quisiera especializarme en roles de mayor liderazgo y que con mi trabajo pueda generar un impacto positivo en el Banco. Me encantaría trabajar en el área de Empatía Bancaria para poder conocer de cerca a nuestros grupos de interés y ayudar con la gestión para que Banco Guayaquil sea el #1. También me gustaría trabajar en el área de marketing.",
       "aspiracion_slug": "liderazgo"
     },
@@ -326,18 +342,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

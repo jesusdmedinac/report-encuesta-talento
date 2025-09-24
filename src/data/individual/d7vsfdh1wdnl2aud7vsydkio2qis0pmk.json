@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.560Z",
+  "generated_at": "2025-09-24T01:46:30.491Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.560Z",
+    "generatedAt": "2025-09-24T01:46:30.491Z",
     "schema": "individual-1.0",
     "id": "d7vsfdh1wdnl2aud7vsydkio2qis0pmk",
     "subject": {
       "nombreCompleto": "Kenny Javier Caputi",
       "email": "kjavier@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.560Z",
+      "assessed_on": "2025-09-24T01:46:30.491Z",
       "demographics": {
         "rol": "Verificar la razonabilidad de los avalúos presentados por los peritos y gestionar el ciclo de vida de nuestras garantías.",
         "area": "Financiamiento",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Es un camino constante que abre las puertas del conocimiento."
+    ],
+    "D2_OPEN": [
+      "Ya nos encontramos en el proceso de pruebas de una plataforma de gestion de avaluos que nos permitira ser mas eficientes en el control de tiempos."
+    ],
+    "D3_OPEN": [
+      "Lo mas importante seria alinear a las personas con una vision clara y comun del cambio digital, asegurando que todos comprendan por que es necesario, como les beneficia y que papel tienen en el."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa seria que me ayude a automatizar tareas repetitivas y de bajo valor, liberando mas tiempo para el analisis, la toma de decisiones estrategicas y la creatividad."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 0.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.70), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.70), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "proceso"
+      ],
       "aspiracionProfesional": "Quisiera poder colaborar con el área de administración en la gestión de proyectos relacionados con la construcción de nuevas agencias, así como en el seguimiento y coordinación de labores de mantenimiento y demás actividades afines.",
       "aspiracion_slug": "operaciones"
     },

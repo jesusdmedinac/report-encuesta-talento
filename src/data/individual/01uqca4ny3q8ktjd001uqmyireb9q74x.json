@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.253Z",
+  "generated_at": "2025-09-24T01:46:29.747Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.253Z",
+    "generatedAt": "2025-09-24T01:46:29.747Z",
     "schema": "individual-1.0",
     "id": "01uqca4ny3q8ktjd001uqmyireb9q74x",
     "subject": {
       "nombreCompleto": "Kevin Villarreal",
       "email": "kvillarreal1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.253Z",
+      "assessed_on": "2025-09-24T01:46:29.747Z",
       "demographics": {
         "rol": "Cajero ejecutivo",
         "area": "Operativo",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Constante aprendizaje"
+    ],
+    "D2_OPEN": [
+      "Considero que Excel es una herramienta fundamental y muy util en todas las areas y seria bueno capacitacion para acceder a funciones avanzadas"
+    ],
+    "D3_OPEN": [
+      "Que se busque la aplicacion de nuevas tecnicas de manera integral en todas las areas"
+    ],
+    "D4_OPEN": [
+      "Considero que la IA puede aportar de manera significativa en muchos aspectos incluso gestion de riesgos , puede ayudar a identificar transacciones sospechosas evitando fraudes y lavado de activos, tambien puede automatizar la atencion al cliente con gestion de reclamos y solicitud de productos."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,11 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "cliente"
+      ],
       "aspiracionProfesional": "Jefe de agencia",
       "aspiracion_slug": "liderazgo"
     },
@@ -319,18 +336,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

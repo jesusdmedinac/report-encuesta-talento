@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.480Z",
+  "generated_at": "2025-09-24T01:46:30.295Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.480Z",
+    "generatedAt": "2025-09-24T01:46:30.295Z",
     "schema": "individual-1.0",
     "id": "8265qjn9vel8o7w9c8b8265qjwee8h66",
     "subject": {
       "nombreCompleto": "VALENTINA DONOSO VERA",
       "email": "vdonoso@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.480Z",
+      "assessed_on": "2025-09-24T01:46:30.295Z",
       "demographics": {
         "rol": "Multimedia Graphic Designer",
         "area": "Marketing",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Tengo facilidad de entender los programas"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales, a menos que una nueva sea indispensable o realmente util. No nos sirve armarnos de miles de herramientas que sabemos usar a medias."
+    ],
+    "D3_OPEN": [
+      "Dejarnos probar los programa y herramientas por un tiempo limitado para ver si funcionan e implementarlos en su totalidad."
+    ],
+    "D4_OPEN": [
+      "Mi unica preocupacion es que la gente realmente lo considera su nuevo cerebro o quieren dejar de pensar y confian demasiado en la IA. Hasta para usar IA tienes que ser inteligente. La IA es un apoyo, no es un esclavo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 1.7 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=1.70), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'multimedia'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=1.70), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'multimedia'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "multimedia",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "Director de Arte, o algún puesto que me genere mejores ingresos ;)",
       "aspiracion_slug": "liderazgo"
     },

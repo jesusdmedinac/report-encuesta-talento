@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.316Z",
+  "generated_at": "2025-09-24T01:46:29.917Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.316Z",
+    "generatedAt": "2025-09-24T01:46:29.917Z",
     "schema": "individual-1.0",
     "id": "qonwojha6b5qulkv2payqonwojm06amk",
     "subject": {
       "nombreCompleto": "Maria Alexandra Lahuasi Cantuña",
       "email": "alexandralahuasi@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.316Z",
+      "assessed_on": "2025-09-24T01:46:29.917Z",
       "demographics": {
         "rol": "CAJERO FINANCIERO",
         "area": "OPERACIONES",
@@ -207,7 +207,14 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "la nueva era Banco Guayaquil"
+    ],
+    "D2_OPEN": [],
+    "D3_OPEN": [],
+    "D4_OPEN": []
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9 · brechaDigital: gap 0.8.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'cajero_ejectivo_o_asistente_en_alguna_area_que_este_acorde_a_mis_conocimientos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='cajero_ejectivo_o_asistente_en_alguna_area_que_este_acorde_a_mis_conocimientos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.864Z",
+  "generated_at": "2025-09-24T01:46:28.744Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.864Z",
+    "generatedAt": "2025-09-24T01:46:28.744Z",
     "schema": "individual-1.0",
     "id": "p38iu7xo2dyrpdicyxo5wp38iuetkvxp",
     "subject": {
       "nombreCompleto": "Michael Reyes",
       "email": "mreyes@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.864Z",
+      "assessed_on": "2025-09-24T01:46:28.744Z",
       "demographics": {
         "rol": "Product Analyst",
         "area": "Tribu Business Banking",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "reto"
+    ],
+    "D2_OPEN": [
+      "Capacitaciones, curso que me permitan potenciar mis conocimientos. De Heap o Hubspot por ejemplo."
+    ],
+    "D3_OPEN": [
+      "creo que se podria mejorar, el proceso de que antes de empezar a masificar una solucion tecnologica, sea debidamente probada y analizada, antes de implementarla. Es decir, no porque a un equipo le sirva, nos va a servir a todos."
+    ],
+    "D4_OPEN": [
+      "expectativa: que se logre potenciar nuestros conocimientos, y que la IA sea una herramienta eficaz. Preocupacion: Que seamos reemplazados por una IA"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · brechaDigital: gap 0.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), brechaDigital (gap=0.20), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'product'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), brechaDigital (gap=0.20), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'product'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "product",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "PM-Gerente",
       "aspiracion_slug": "gestion_producto"
     },

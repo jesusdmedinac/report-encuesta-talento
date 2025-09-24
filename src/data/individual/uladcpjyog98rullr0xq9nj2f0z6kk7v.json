@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.490Z",
+  "generated_at": "2025-09-24T01:46:30.315Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.490Z",
+    "generatedAt": "2025-09-24T01:46:30.315Z",
     "schema": "individual-1.0",
     "id": "uladcpjyog98rullr0xq9nj2f0z6kk7v",
     "subject": {
       "nombreCompleto": "Fiorella Galarza Murillo",
       "email": "fiorellagalarzamurillo@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.490Z",
+      "assessed_on": "2025-09-24T01:46:30.315Z",
       "demographics": {
         "rol": "UX designer",
         "area": "Coe de diseño (cleo)",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "innovador"
+    ],
+    "D2_OPEN": [
+      "mas capacitaciones para estar alineados con los demas disenadores"
+    ],
+    "D3_OPEN": [
+      "el de alguna forma mantener actualizado el conocimiento general del coe, que haya mas comunicacion"
+    ],
+    "D4_OPEN": [
+      "me gustaria que optimice tareas tediosas"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · brechaDigital: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), brechaDigital (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ux'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'dtl_de_una_tribu'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='dtl_de_una_tribu'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), brechaDigital (gap=1.00), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ux'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'dtl_de_una_tribu'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='dtl_de_una_tribu'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "ux",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "innov"
+      ],
       "aspiracionProfesional": "Dtl de una tribu",
       "aspiracion_slug": "dtl_de_una_tribu"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.084Z",
+  "generated_at": "2025-09-24T01:46:29.311Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.084Z",
+    "generatedAt": "2025-09-24T01:46:29.311Z",
     "schema": "individual-1.0",
     "id": "kfacqy06kqyjgwg2qzlmnkfacqy08vut",
     "subject": {
       "nombreCompleto": "Leopoldo Roberto Del Salto Blum",
       "email": "ldelsalto@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.084Z",
+      "assessed_on": "2025-09-24T01:46:29.311Z",
       "demographics": {
         "rol": "Talent Generalist",
         "area": "Talento y Cultura",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "No dejes para manana lo que puedes automatizar hoy. No te ahogues en el mar de la operatividad."
+    ],
+    "D2_OPEN": [
+      "Mas conocimiento en herramientas de automatizacion como Power Automate. Posibilidad de poder hacer automatizaciones de reportes personalizados en Evolution. Aplicacion para generar los roles de pago de peiGo. Capacitacion sobre los reportes de ausencias en Oracle. Intranet para Contigo Soluciones donde podamos cargar informacion sobre beneficios y se reduzca el numero de consultas."
+    ],
+    "D3_OPEN": [
+      "Chatbot de talento y cultura con toda la informacion sobre beneficios, codigo de trabajo, fechas de pago, calculos de pago de vacaciones, balances de vacaciones."
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es que tiene el alcance de automatizar infinidad de cosas. Desde formulas en excel, hasta priorizacion de correos y demas. Mi preocupacion al usarla es que informacion le puedo compartir y cual no. Porque nunca le comparto nombres de colaboradores con sus cargos y funciones, pero no se si podria."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'talent'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'talent'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "talent",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor"
+      ],
       "aspiracionProfesional": "Sky is the limit. Recursos Humanos, Analisis de Datos, Finanzas.",
       "aspiracion_slug": "analitica_datos"
     },

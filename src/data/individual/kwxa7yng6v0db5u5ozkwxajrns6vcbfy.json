@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.953Z",
+  "generated_at": "2025-09-24T01:46:28.965Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.953Z",
+    "generatedAt": "2025-09-24T01:46:28.965Z",
     "schema": "individual-1.0",
     "id": "kwxa7yng6v0db5u5ozkwxajrns6vcbfy",
     "subject": {
       "nombreCompleto": "ESTEFANIA RODRIGUEZ SALAZAR",
       "email": "erodriguez2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.953Z",
+      "assessed_on": "2025-09-24T01:46:28.965Z",
       "demographics": {
         "rol": "Especialista de Compras",
         "area": "Compras - Administración",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "ha sido un proceso constante de adaptacion, pensamiento disruptivo sobre como se estan haciendo hoy las cosas y como agilizar mis procesos para alinearme a esta cultura de transformacion"
+    ],
+    "D2_OPEN": [
+      "Nivel avanzado en herramientas actuales, mejoras de forma y fondo en la forma que se llevan mis procesos para lograr mayor eficiencia en tiempo y asi dedicar mas tiempo a proyectos de mayor valor que a temas operativos"
+    ],
+    "D3_OPEN": [
+      "Acompanamiento practico en el uso de herramientas digitales aplicables a tu trabajo, un poco de presion en el cambio de cultura y cambiar la mentalidad de antes en como se hacian los procesos"
+    ],
+    "D4_OPEN": [
+      "Lo mas importante actualmente es automatizar tareas repetitivas ya que manejo una amplia base de datos q debo revisar y analizar y estas nuevas herramientas me pueden a ayudar a canalizar esta informacion de una forma mas rapida para el control de consumos y comportamiento de los usuarios."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · madurezDigital: gap 0.4.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.40), brechaDigital (gap=0.30), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.40), brechaDigital (gap=0.30), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, datos, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "operaciones",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "datos",
+        "proceso"
+      ],
       "aspiracionProfesional": "Aspiro crecer dentro de la organización en un rol de liderazgo en el que pueda crecer profesionalmente y participar de proyectos estratégicos",
       "aspiracion_slug": "liderazgo"
     },

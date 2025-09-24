@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.753Z",
+  "generated_at": "2025-09-24T01:46:31.004Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.753Z",
+    "generatedAt": "2025-09-24T01:46:31.004Z",
     "schema": "individual-1.0",
     "id": "ihzaiifjqkjj5r05l28ihzaiifnu5hw9",
     "subject": {
       "nombreCompleto": "Christian Santiago Peñaherrera Castro",
       "email": "cpenaherrera@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.753Z",
+      "assessed_on": "2025-09-24T01:46:31.004Z",
       "demographics": {
         "rol": "Ejecutivo empresarial",
         "area": "Banca Pyme",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "La tecnologia se actualiza dia a dia, por que la personas que la utilizan no?"
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta que me permita perfilar de forma mas agil y precisa a los clientes."
+    ],
+    "D3_OPEN": [
+      "automatizar procesos operativos extensos"
+    ],
+    "D4_OPEN": [
+      "Me preocupa que las necesidades de clientes que no manejan estas herramientas no puedan llegar a ser atendidos con agilidad y calidad."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.1 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutivo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_/_jefatura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_/_jefatura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutivo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_/_jefatura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_/_jefatura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "ejecutivo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Gerencia / Jefatura",
       "aspiracion_slug": "gerencia_/_jefatura"
     },
@@ -326,28 +343,27 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "id": "CU-08",
+        "titulo": "Serie de micro-retos de automatización",
+        "descripcion": "Retos quincenales para automatizar pequeñas tareas y compartir plantillas reutilizables.",
         "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
+          "operaciones",
+          "comercial"
         ],
         "tags": [
           "experimentacion",
-          "reconocimiento"
+          "automatizacion"
         ],
         "rutaDeCarrera": [
-          "liderazgo",
-          "mandos"
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
+          "experimentacion"
         ],
         "metric": "experimentacion",
         "target": "8.0/10"

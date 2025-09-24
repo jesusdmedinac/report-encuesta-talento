@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.312Z",
+  "generated_at": "2025-09-24T01:46:29.904Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.312Z",
+    "generatedAt": "2025-09-24T01:46:29.904Z",
     "schema": "individual-1.0",
     "id": "vjc0jxzpjqgpbfvjc0xvl311gr6fxq8t",
     "subject": {
       "nombreCompleto": "Oswaldo Alejandro Borja Goyes",
       "email": "oborja@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.312Z",
+      "assessed_on": "2025-09-24T01:46:29.904Z",
       "demographics": {
         "rol": "Oficial de Sostenibilidad y Asuntos Corporativos",
         "area": "Sostenibilidad y Asuntos Corporativos",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un camino emocionante lleno de descubrimientos."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las herramientas actuales"
+    ],
+    "D3_OPEN": [
+      "Identificar brechas por area y adaptar a las necesidades puntuales, en base a prioridades y progresivamente."
+    ],
+    "D4_OPEN": [
+      "En el ambito de sostenibilidad, la IA se alimenta por las tendencias, que de ser el caso que se automatice completamente llevarian a una empresa al greenwashing, mi rol no deberia, por etica, ser reemplazado, ya que hay varias implicaciones involucradas en este tema, que requieren de un equipo humano que lo lidere y aplique."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'responsable_de_cambio_climatico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='responsable_de_cambio_climatico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, etica): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'responsable_de_cambio_climatico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='responsable_de_cambio_climatico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "etica"
+      ],
       "aspiracionProfesional": "Responsable de Cambio Climático",
       "aspiracion_slug": "responsable_de_cambio_climatico"
     },

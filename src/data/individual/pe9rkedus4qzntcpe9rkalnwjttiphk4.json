@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.500Z",
+  "generated_at": "2025-09-24T01:46:30.335Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.500Z",
+    "generatedAt": "2025-09-24T01:46:30.335Z",
     "schema": "individual-1.0",
     "id": "pe9rkedus4qzntcpe9rkalnwjttiphk4",
     "subject": {
       "nombreCompleto": "JORGE ALARCON ARAUJO",
       "email": "JALARCON2@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.500Z",
+      "assessed_on": "2025-09-24T01:46:30.335Z",
       "demographics": {
         "rol": "REVISION Y CONTESTACION DE RECLAMOS INGRESADOS A TRAVES DE LA SUPERINTENDENCIA DE BANCOS Y DEFENSOR DEL CLIENTE, ELABORACION DE ESTRUCTURA R60",
         "area": "SAUF",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EN RELACION A LA DIGITALIZACION Y PROGRAMAS NO ESTOY MUY FAMILIARIZADO; SIN EMBARGO, HE APRENDIDO RAPIDO A USAR LAS HERRAMIENTAS Y PROGRAMAS QUE TENGO QUE USAR DIARIAMENTE PARA CUMPLIR CON MIS FUNCIONES EN EL PUESTO DE TRABAJO"
+    ],
+    "D2_OPEN": [
+      "MAS CAPACITACION EN NUEVAS HERRAMIENTAS PARA TENER UN PANORAMA AMPLIO Y MAS POSIBILIDADES DE REVISIONES Y MEJORAR MIS TAREAS DIARIAS"
+    ],
+    "D3_OPEN": [
+      "POR AHORA VA EN BUEN CAMINO, PERO CREO QUE A LOS COLABORADORES DE PUESTOS NO TAN ALTOS DEBERIAN BRINDAR MAS CURSOS PRESENCIALES O VIRTUALES Y QUE SEA ALGO OBLIGATORIO PARA QUE HAYA MAS COMPROMISO"
+    ],
+    "D4_OPEN": [
+      "MI EXPECTATIVA ES QUE AYUDARIA MUCHO EN TENER RESPUESTAS MAS SOLVENTES Y AHORRA TIEMPO LA PREOCUPACION ES QUE LA IA REEMPLACE PUESTOS DE TRABAJO"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 3.8 · usoInteligenciaArtificial: gap 2.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=3.80), usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.40), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=3.80), usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.40), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor"
+      ],
       "aspiracionProfesional": "LIDERAR UN AREA EN EL CUAL SE REVISE LOS RECLAMOS DE TODOS LOS CLIENTES PARA DISMINUIR LOS MISMOS Y QUE EL CLIENTE TENGA UNA MEJOR EXPERIENCIA",
       "aspiracion_slug": "liderazgo"
     },
@@ -273,34 +289,6 @@
         ]
       },
       {
-        "id": "IA-09",
-        "titulo": "Curso de verificación y sesgos",
-        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "etica",
-          "verificacion"
-        ],
-        "rutaDeCarrera": [
-          "liderazgo",
-          "tecnico"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "eticayverificacion",
-        "target": "8.0/10"
-      },
-      {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
         "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
@@ -320,6 +308,34 @@
         "rutaDeCarrera": [
           "gestion_producto",
           "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

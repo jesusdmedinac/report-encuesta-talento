@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.234Z",
+  "generated_at": "2025-09-24T01:46:29.690Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.234Z",
+    "generatedAt": "2025-09-24T01:46:29.690Z",
     "schema": "individual-1.0",
     "id": "j6a4yvpdmtnolpnehpj6a4du048dia3o",
     "subject": {
       "nombreCompleto": "Ariel Aguilar Aguilar Cacao",
       "email": "aaguilar1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.234Z",
+      "assessed_on": "2025-09-24T01:46:29.690Z",
       "demographics": {
         "rol": "Cajero Financiero",
         "area": "Operativa",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "La tecnologia esta en constante evolucion, y debemos mantenernos un paso adelante para liderar en este mundo digital"
+    ],
+    "D2_OPEN": [
+      "Puede ser una nueva herramienta o un nuevo programa."
+    ],
+    "D3_OPEN": [
+      "Siempre estar en lo mas actualizado con lo nuevo que salga para dar una buena atencion ."
+    ],
+    "D4_OPEN": [
+      "Que no sea usado de manera correcta en un futuro."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.3 · brechaDigital: gap 1.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), brechaDigital (gap=1.00), usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

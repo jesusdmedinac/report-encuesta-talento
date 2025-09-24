@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.891Z",
+  "generated_at": "2025-09-24T01:46:28.807Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.891Z",
+    "generatedAt": "2025-09-24T01:46:28.807Z",
     "schema": "individual-1.0",
     "id": "9jhk4opf83ri87wx8h9jhk3prhznthr2",
     "subject": {
       "nombreCompleto": "MARIA GABRIELA TERAN ARIAS",
       "email": "mteran1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.891Z",
+      "assessed_on": "2025-09-24T01:46:28.807Z",
       "demographics": {
         "rol": "EJECUTIVO DE PRODUCTOS Y SERVICIOS",
         "area": "BANCA EMPRESAS Y CADENA DE VALOR",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "siento que he aprendido mucho y con los cambios que ha implementado el banco sigo aprendiendo cada dia"
+    ],
+    "D2_OPEN": [
+      "todas las herramientas que nos da el banco son excelentes y nos ayudan en nuestro trabajo diario"
+    ],
+    "D3_OPEN": [
+      "el banco siempre esta a la vanguardia digital y con innovacion en sistemas y plataformas que agilitan nuestra actividad diaria, siempre tenemos cursos y nos capacitan"
+    ],
+    "D4_OPEN": [
+      "es una buena herramienta si sabemos utilizar para casos puntuales nos puede ayudar, sin embargo puede estar acabando con la creatividad y el ingenio de las personas para hacer el trabajo, no creo que pueda ser reemplazado el trabajo de una persona"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.6 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'me_encanta_lo_que_hago_y_quisiera_seguir_trabajando_en_la_banca_corporativa_y_empresarial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='me_encanta_lo_que_hago_y_quisiera_seguir_trabajando_en_la_banca_corporativa_y_empresarial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'me_encanta_lo_que_hago_y_quisiera_seguir_trabajando_en_la_banca_corporativa_y_empresarial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='me_encanta_lo_que_hago_y_quisiera_seguir_trabajando_en_la_banca_corporativa_y_empresarial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "innov"
+      ],
       "aspiracionProfesional": "me encanta lo que hago y quisiera seguir trabajando en la banca corporativa y empresarial",
       "aspiracion_slug": "me_encanta_lo_que_hago_y_quisiera_seguir_trabajando_en_la_banca_corporativa_y_empresarial"
     },

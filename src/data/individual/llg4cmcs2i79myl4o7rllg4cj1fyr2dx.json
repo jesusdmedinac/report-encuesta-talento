@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.290Z",
+  "generated_at": "2025-09-24T01:46:29.845Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.290Z",
+    "generatedAt": "2025-09-24T01:46:29.845Z",
     "schema": "individual-1.0",
     "id": "llg4cmcs2i79myl4o7rllg4cj1fyr2dx",
     "subject": {
       "nombreCompleto": "Eleana Espinosa Feijoo",
       "email": "eespinoza1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.290Z",
+      "assessed_on": "2025-09-24T01:46:29.845Z",
       "demographics": {
         "rol": "Jefe de Agencia",
         "area": "Comercial Ag. Plaza Grande",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "el conocimiento de abre puertas"
+    ],
+    "D2_OPEN": [
+      "Una herramienta mas eficiente seria que podamo acceder a la informacion del cliente en una sola vista, cuentas, tarjetas, polizas y no mantener varios programas y pestanas para cada producto de igual manera cuando un cliente requiere corte de cuenta que se pueda emitir un solo documento hasta con un periodo de 1 ano o 6 meses que es lo mas comun que solicitan y no generar mes a mes ya que toma mas tiempo"
+    ],
+    "D3_OPEN": [
+      "Seria importante que puedan revisar las dolencias que tenemos en las agencias, ya que no es lo mismo estar en el back que en el front con el cliente y atender los requierimientos y el tiempo que lleva cada atencion."
+    ],
+    "D4_OPEN": [
+      "En lo personal seria el uso de la AI para la autoatencion del cliente y por ello se de los cierres de agencias"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10), madurezDigital (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_zonal'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_zonal'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10), madurezDigital (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia_zonal'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia_zonal'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Gerencia Zonal",
       "aspiracion_slug": "gerencia_zonal"
     },

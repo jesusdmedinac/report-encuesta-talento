@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.114Z",
+  "generated_at": "2025-09-24T01:46:29.379Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.114Z",
+    "generatedAt": "2025-09-24T01:46:29.379Z",
     "schema": "individual-1.0",
     "id": "v9sv0qno8bzlo4sql97y9v9sv0qhwl16",
     "subject": {
       "nombreCompleto": "Alice Mera",
       "email": "alicemeraalava67@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.114Z",
+      "assessed_on": "2025-09-24T01:46:29.379Z",
       "demographics": {
         "rol": "Cajero financiero",
         "area": "Operaciones",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprender y entender"
+    ],
+    "D2_OPEN": [
+      "Una herramienta que corrobore la identidad de las personas extranjeras por que aveces no permite"
+    ],
+    "D3_OPEN": [
+      "Innovar con nuevos productos"
+    ],
+    "D4_OPEN": [
+      "Que nos pueda ayudar mas no reemplazar"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "innov"
+      ]
     },
     "iniciativas": [
       {

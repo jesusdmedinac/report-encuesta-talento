@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.952Z",
+  "generated_at": "2025-09-24T01:46:31.441Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.952Z",
+    "generatedAt": "2025-09-24T01:46:31.441Z",
     "schema": "individual-1.0",
     "id": "d0qzdwg3r0kkt8szdd0qzdseb31k1akg",
     "subject": {
       "nombreCompleto": "Verónica Escobar Pulley",
       "email": "vescobar@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.952Z",
+      "assessed_on": "2025-09-24T01:46:31.441Z",
       "demographics": {
         "rol": "Oficial de recuperación",
         "area": "Riesgo Integral",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprender formulas en excel"
+    ],
+    "D2_OPEN": [
+      "Power BI - Software de gestion de Riesgos."
+    ],
+    "D3_OPEN": [
+      "Fomentar una mentalidad de innovacion desde todos los niveles del banco permitira que la transformacion digital no solo sea tecnologica, sino tambien cultural."
+    ],
+    "D4_OPEN": [
+      "Es que permita automatizar tareas repetitivas y procesar grandes volumenes de datos de forma mas rapida y precisa."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.6 · usoInteligenciaArtificial: gap 0.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.60), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_riesgo_integral'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_riesgo_integral'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.60), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, datos, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_riesgo_integral'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_riesgo_integral'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "datos",
+        "innov"
+      ],
       "aspiracionProfesional": "Gerente de Riesgo Integral",
       "aspiracion_slug": "gerente_de_riesgo_integral"
     },

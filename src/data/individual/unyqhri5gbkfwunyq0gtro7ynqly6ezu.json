@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.756Z",
+  "generated_at": "2025-09-24T01:46:31.013Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.756Z",
+    "generatedAt": "2025-09-24T01:46:31.013Z",
     "schema": "individual-1.0",
     "id": "unyqhri5gbkfwunyq0gtro7ynqly6ezu",
     "subject": {
       "nombreCompleto": "Juan José Peñaherrera Romero",
       "email": "jpenaherrera@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.756Z",
+      "assessed_on": "2025-09-24T01:46:31.013Z",
       "demographics": {
         "rol": "Product Analyst - Tribu Seguros",
         "area": "Tribu Seguros",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje de aprendizaje continuo donde combino tecnologia y estrategia para crear soluciones que generen valor real."
+    ],
+    "D2_OPEN": [
+      "Creo que un mayor aprovechamiento de las herramientas actuales, complementado con capacitacion practica enfocada en casos reales del banco, me haria mas eficiente en el corto plazo, por ejemplo reforzar uso de NEO, bigbang, pantalla negra, power BI, SQL, figma, desarrollo web (front y back) etc. A mediano y largo plazo, mantener la inclusion de nuevas herramientas de analisis y automatizacion estaria buenisimo, asi mismo acompanado de capacitacion continua"
+    ],
+    "D3_OPEN": [
+      "Creo que para acelerar la cultura digital es clave combinar capacitacion continua con espacios para experimentar. Programas cortos y practicos sobre herramientas y metodologias digitales, aplicados a casos reales del banco, ayudarian a que mas colaboradores conecten con la transformacion. Ademas, fomentar la colaboracion entre areas y compartir historias de exito internas impulsaria el cambio cultural"
+    ],
+    "D4_OPEN": [
+      "mi expectativa es contar con la IA como un aliado, asi mismo verificar sus respuestas y que se convierta en una herramienta etica y confiable en el cual podamos colaborar juntos para generar valor eficientemente"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'product'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'product'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, etica): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,12 @@
         }
       ],
       "role": "product",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "etica"
+      ],
       "aspiracionProfesional": "En mi desarrollo profesional aspiro a crecer en el área de productos, avanzando de forma progresiva hacia roles como Product Manager, Digital Product Manager o Business Analyst Senior o afines. Mi objetivo a largo plazo es llegar a una posición de liderazgo como jefatura, gerencia o incluso un VP, donde pueda influir en la estrategia de productos y liderar equipos multidisciplinarios. Me motiva generar impacto tangible en el negocio, desarrollando soluciones que fortalezcan la propuesta de valor del banco y la experiencia de los clientes.",
       "aspiracion_slug": "gestion_producto"
     },
@@ -287,18 +305,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [
@@ -313,19 +332,18 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-05",
-        "titulo": "Tomar curso por rol de Prompting",
-        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
         "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
           "comercial",
-          "tecnico",
-          "mandos"
+          "operaciones"
         ],
         "tags": [
-          "capacitacion",
+          "repositorio",
           "prompt"
         ],
         "rutaDeCarrera": [

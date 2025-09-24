@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.817Z",
+  "generated_at": "2025-09-24T01:46:28.645Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.817Z",
+    "generatedAt": "2025-09-24T01:46:28.645Z",
     "schema": "individual-1.0",
     "id": "5fad6yk8varuk8hk5fad7na91o2etyxx",
     "subject": {
       "nombreCompleto": "LETICIA MARIA QUIJIJE CRUZ",
       "email": "lquijije1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.817Z",
+      "assessed_on": "2025-09-24T01:46:28.645Z",
       "demographics": {
         "rol": "ASESORAR Y DIRECCIONAR AL CLIENTE QUE SE PRESENTA EN AGENCIA PARA SU ATENCION DE CUALQUIER NOVEDAD QUE MANTENGA",
         "area": "ASESORA COMERCIAL",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EL CAMINO MAS PRACTICO ES APRENDER"
+    ],
+    "D2_OPEN": [
+      "MAS CAPACITACION"
+    ],
+    "D3_OPEN": [
+      "LOS COMENTARIOS QUE HE ESCUCHADO POR LOS CLIENTES, ES QUE LA APP ES MUY ADAPTABLE YA QUE NO TIENE MUCHAS COMPLICACIONES, ES FACIL DE USARLA, ES BIEN PRACTICA"
+    ],
+    "D4_OPEN": [
+      "yo pienso en expetactiva que la IA sea un consultor mas rapido con informacion especialmente con requerimientos en crm, ya que es lo que a veces se ingresa mal y el cliente espera un determinado tiempo para una respuesta,"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'escalar_a_una_area_distinta_a_la_que_actualmente_me_encuentro_para_adquirir_mas_conocimientos,_llegaria_hasta_una_jefatura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='escalar_a_una_area_distinta_a_la_que_actualmente_me_encuentro_para_adquirir_mas_conocimientos,_llegaria_hasta_una_jefatura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'escalar_a_una_area_distinta_a_la_que_actualmente_me_encuentro_para_adquirir_mas_conocimientos,_llegaria_hasta_una_jefatura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='escalar_a_una_area_distinta_a_la_que_actualmente_me_encuentro_para_adquirir_mas_conocimientos,_llegaria_hasta_una_jefatura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente"
+      ],
       "aspiracionProfesional": "escalar a una área distinta a la que actualmente me encuentro para adquirir mas conocimientos, llegaria hasta una jefatura",
       "aspiracion_slug": "escalar_a_una_area_distinta_a_la_que_actualmente_me_encuentro_para_adquirir_mas_conocimientos,_llegaria_hasta_una_jefatura"
     },
@@ -292,18 +308,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [
@@ -318,19 +335,18 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-05",
-        "titulo": "Tomar curso por rol de Prompting",
-        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
-        "areaEnfoque": "Talento y Ética",
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
         "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
           "comercial",
-          "tecnico",
-          "mandos"
+          "operaciones"
         ],
         "tags": [
-          "capacitacion",
+          "repositorio",
           "prompt"
         ],
         "rutaDeCarrera": [

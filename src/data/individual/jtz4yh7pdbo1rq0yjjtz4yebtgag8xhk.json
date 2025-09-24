@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.239Z",
+  "generated_at": "2025-09-24T01:46:29.708Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.239Z",
+    "generatedAt": "2025-09-24T01:46:29.708Z",
     "schema": "individual-1.0",
     "id": "jtz4yh7pdbo1rq0yjjtz4yebtgag8xhk",
     "subject": {
       "nombreCompleto": "Diego Iturralde",
       "email": "diturralde@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.239Z",
+      "assessed_on": "2025-09-24T01:46:29.708Z",
       "demographics": {
         "rol": "Cajero Financiero",
         "area": "Operaciones",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "versatil"
+    ],
+    "D2_OPEN": [
+      "Clases virtuales(no pre grabadas) en la que pudieras aprender todo lo que te ofrece el paquete de power bi, word, exel power point y acces"
+    ],
+    "D3_OPEN": [
+      "Comenzar a fomentar el uso de app de banco guayaquil"
+    ],
+    "D4_OPEN": [
+      "No tengo ninguna preocupacion"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · culturaOrganizacional: gap 1.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.80), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

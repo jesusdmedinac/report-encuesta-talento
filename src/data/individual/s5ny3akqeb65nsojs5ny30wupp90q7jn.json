@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.808Z",
+  "generated_at": "2025-09-24T01:46:28.628Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.808Z",
+    "generatedAt": "2025-09-24T01:46:28.628Z",
     "schema": "individual-1.0",
     "id": "s5ny3akqeb65nsojs5ny30wupp90q7jn",
     "subject": {
       "nombreCompleto": "Cecilia Sinche Morante",
       "email": "csinche@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.808Z",
+      "assessed_on": "2025-09-24T01:46:28.628Z",
       "demographics": {
         "rol": "Ingeniero de procesos",
         "area": "Ingeniero de procesos",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un camino lleno de retos que se convirtieron en oportunidades para crecer."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales: porque muchas veces las herramientas ya cuentan con funcionalidades potentes, pero no siempre se conocen o se aplican de la mejor manera."
+    ],
+    "D3_OPEN": [
+      "Desde la perspectiva de Procesos, lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es generar una estrategia integral que combine tres elementos: capacitacion continua, adopcion tecnologica y simplificacion de procesos"
+    ],
+    "D4_OPEN": [
+      "Pensando en el futuro, mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol es contar con un aliado que me permita automatizar analisis, detectar ineficiencias y proponer mejoras en tiempo real; mi mayor preocupacion es que, sin una correcta gobernanza y etica en su uso, la IA pueda generar decisiones poco transparentes o que desplacen el criterio humano en aspectos donde se requiere juicio y contexto."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 3 · brechaDigital: gap 0.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=3.00), brechaDigital (gap=0.70), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ingeniero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'jefatura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='jefatura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=3.00), brechaDigital (gap=0.70), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ingeniero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, etica, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'jefatura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='jefatura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,12 @@
         }
       ],
       "role": "ingeniero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "etica",
+        "proceso"
+      ],
       "aspiracionProfesional": "Jefatura",
       "aspiracion_slug": "jefatura"
     },

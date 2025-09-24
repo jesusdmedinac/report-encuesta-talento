@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.531Z",
+  "generated_at": "2025-09-24T01:46:27.989Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.531Z",
+    "generatedAt": "2025-09-24T01:46:27.989Z",
     "schema": "individual-1.0",
     "id": "xj8ykfrj6ow1qcdxj8yzaeny9rhn7rqa",
     "subject": {
       "nombreCompleto": "MARIA LUCRECIA SALAZAR RAMOS",
       "email": "msalazar@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.531Z",
+      "assessed_on": "2025-09-24T01:46:27.989Z",
       "demographics": {
         "rol": "Risk Partner",
         "area": "Riesgo Regulatorio",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Oportunidad de crear valor"
+    ],
+    "D2_OPEN": [
+      "La capacitacion es importante y estar actualizada , tambien enfoque en casos a la banca para poder implementar . Tambien considero importante mejorar procesos ya que a veces no es solo la herramienta si no la forma de trabajar de las personas."
+    ],
+    "D3_OPEN": [
+      "Usos de herramienta digitales, el lider debe tener competencias digitales para que el equipo se alinee, capacitacion constante, mejoras en los procesos y tambien el cambio de mindset."
+    ],
+    "D4_OPEN": [
+      "Que la IA fortalezca la deteccion temprana y predictiva de riesgos. Ademas que puede ayudar en diferentes ambitos a procesos del banco. Por ejemplo en mi rol de Risk Patner implementaria IA para tener un asistente virtual de consultas de politicas. Mi preocupacion seria un poco mas orientada al respecto de la seguridad de la informacion ya que las politicas es algo sensible y debe haber suficiente seguridades en la utilizacion."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'risk'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'risk'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, segurid, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,11 @@
         }
       ],
       "role": "risk",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "segurid",
+        "proceso"
+      ],
       "aspiracionProfesional": "Rol de Líder-Gerente- para poder seguir aportando estratégicamente.",
       "aspiracion_slug": "liderazgo"
     },
@@ -320,18 +337,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

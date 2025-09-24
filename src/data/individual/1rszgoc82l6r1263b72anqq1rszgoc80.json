@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.413Z",
+  "generated_at": "2025-09-24T01:46:30.172Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.413Z",
+    "generatedAt": "2025-09-24T01:46:30.172Z",
     "schema": "individual-1.0",
     "id": "1rszgoc82l6r1263b72anqq1rszgoc80",
     "subject": {
       "nombreCompleto": "ANA PAULA CORREA WIESNER",
       "email": "acorrea@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.413Z",
+      "assessed_on": "2025-09-24T01:46:30.172Z",
       "demographics": {
         "rol": "REDACTORA",
         "area": "MARKETING",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "PROGRESIVAMENTE ME HE ADAPTADO A LAS NUEVAS TECNOLOGIAS, ME HA RESULTADO FACIL MI FASE DE APRENDIZAJE Y USO DE LAS MISMAS"
+    ],
+    "D2_OPEN": [
+      "CAPACITACIONES PARA TODOS ESTAR ALINEADOS CON LAS MISMAS PLATAFORMAS QUE SE IMPLEMENTAN EN LA EMPRESA Y LUEGO CONSIDERAR AGREGAR NUEVAS HERRAMIENTAS QUE FACILITEN LOS PROCESOS"
+    ],
+    "D3_OPEN": [
+      "Lo mas importante es alinear a los lideres con una vision clara y accesible, empoderar a los equipos con herramientas simples y formacion constante, y visibilizar logros que inspiren el cambio. Se trata de conectar lo digital con lo humano, impulsar la colaboracion entre areas y facilitar experiencias internas agiles, simples y centradas en el usuario."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la inteligencia artificial se convierta en una aliada estrategica que potencie la creatividad, la eficiencia y la toma de decisiones en tiempo real, liberandonos de tareas repetitivas para enfocarnos en lo verdaderamente humano: crear, empatizar e innovar. Mi mayor preocupacion, en cambio, es que se dependa de ella sin criterio, perdiendo el pensamiento critico, la conexion con las personas y el juicio profesional que define el valor de nuestro rol. El reto esta en usarla con conciencia y proposito."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 2.2 · madurezDigital: gap 1.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=2.20), madurezDigital (gap=1.70), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'redactora'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=2.20), madurezDigital (gap=1.70), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'redactora'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,12 @@
         }
       ],
       "role": "redactora",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "LIDER DE COMUNICACIÓN",
       "aspiracion_slug": "liderazgo"
     },

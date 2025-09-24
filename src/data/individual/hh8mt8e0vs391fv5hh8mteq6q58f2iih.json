@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.126Z",
+  "generated_at": "2025-09-24T01:46:29.407Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.126Z",
+    "generatedAt": "2025-09-24T01:46:29.407Z",
     "schema": "individual-1.0",
     "id": "hh8mt8e0vs391fv5hh8mteq6q58f2iih",
     "subject": {
       "nombreCompleto": "Joseline Santillan Pincay",
       "email": "jsantillan2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.126Z",
+      "assessed_on": "2025-09-24T01:46:29.407Z",
       "demographics": {
         "rol": "Cajero Financiero",
         "area": "Operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Una experiencia que me ha permitido expandir mis habilidades y pensamiento critico de forma eficiente, a traves de la automatizacion."
+    ],
+    "D2_OPEN": [
+      "Consideraria que la combinacion de capacitaciones y exploracion autonoma de las herramientas que nos proporcionan seria lo mas efectivo para maximizar nuestro potencial."
+    ],
+    "D3_OPEN": [
+      "Lo mas importante para acelerar la cultura digital seria la propagacion de informacion digital, a traves de talleres y capacitaciones constantes a todas las areas. Tambien seria clave promover el liderazgo digital que inspire y guie a todos hacia la innovacion constante"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la Inteligencia Artificial pueda agilizar las operaciones diarias, permitiendonos ofrecer un servicio mas rapido y preciso a los clientes. Sin embargo, mi preocupacion es que la IA no reemplace la atencion personalizada con el cliente que es fundamental en el rol de cajero financiero, especialmente en situaciones complejas donde la empatia y el juicio humano son clave."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.6 · madurezDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, cliente, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,12 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "cliente",
+        "innov"
+      ],
       "aspiracionProfesional": "Área de Auditoría Interna",
       "aspiracion_slug": "tecnico"
     },
@@ -319,23 +337,23 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-06",
-        "titulo": "Taller de mapeo de procesos (hands-on)",
-        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
-        "areaEnfoque": "Procesos y Calidad",
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
         "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
+        "plazoEstimado": "2-4 semanas",
         "rolesPreferidos": [
           "operaciones",
-          "mandos"
+          "comercial"
         ],
         "tags": [
-          "procesos",
-          "eficiencia"
+          "automatizacion",
+          "productividad"
         ],
         "rutaDeCarrera": [
           "operaciones",
-          "mandos"
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [

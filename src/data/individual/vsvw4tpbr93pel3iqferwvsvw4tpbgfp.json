@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.875Z",
+  "generated_at": "2025-09-24T01:46:31.301Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.875Z",
+    "generatedAt": "2025-09-24T01:46:31.301Z",
     "schema": "individual-1.0",
     "id": "vsvw4tpbr93pel3iqferwvsvw4tpbgfp",
     "subject": {
       "nombreCompleto": "SARAI SUAREZ MENDIETA",
       "email": "SSUAREZ@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.875Z",
+      "assessed_on": "2025-09-24T01:46:31.301Z",
       "demographics": {
         "rol": "GESTOR DE RIESGO DE PORTAFOLIO",
         "area": "RIESGO INTEGRAL",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INNOVACION"
+    ],
+    "D2_OPEN": [
+      "RECORDATORIOS"
+    ],
+    "D3_OPEN": [
+      "RECIBIR TODAS LAS IDEAS Y SEGUN LAS ESTADISTICAS IMPLEMENTAR NUEVOS AVANCES"
+    ],
+    "D4_OPEN": [
+      "ACERTADA"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "gestor",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "innov"
+      ]
     },
     "iniciativas": [
       {

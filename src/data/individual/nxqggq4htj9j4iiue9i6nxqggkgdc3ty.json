@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.801Z",
+  "generated_at": "2025-09-24T01:46:31.130Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.801Z",
+    "generatedAt": "2025-09-24T01:46:31.130Z",
     "schema": "individual-1.0",
     "id": "nxqggq4htj9j4iiue9i6nxqggkgdc3ty",
     "subject": {
       "nombreCompleto": "ALLAN CARDENAS",
       "email": "acardenas@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.801Z",
+      "assessed_on": "2025-09-24T01:46:31.130Z",
       "demographics": {
         "rol": "SOPORTE CONTRACARGOS MASTERCARD",
         "area": "TRIBU SOPORTES E INNOVACION",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Si no te arriesgas y no te caes no sabras cual fue el esfuerzo para conseguir lo que has obtenido"
+    ],
+    "D2_OPEN": [
+      "poder que el sistema realice las devoluciones automaticamente a los clientes y asi estarlos haciendo manualmente"
+    ],
+    "D3_OPEN": [
+      "seguir mejorando la parte tecnologica haciendole conocer a nuestros clientes que somos cercanos sencillos y transparentes"
+    ],
+    "D4_OPEN": [
+      "De que se pueda agilizar la mayor parte de los procesos siempre y cuando haya un analisis humano de los resultados"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.6 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "supervisor",
       "aspiracion_slug": "mandos"
     },

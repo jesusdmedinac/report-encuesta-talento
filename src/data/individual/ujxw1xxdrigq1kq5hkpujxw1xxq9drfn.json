@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.786Z",
+  "generated_at": "2025-09-24T01:46:31.090Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.786Z",
+    "generatedAt": "2025-09-24T01:46:31.090Z",
     "schema": "individual-1.0",
     "id": "ujxw1xxdrigq1kq5hkpujxw1xxq9drfn",
     "subject": {
       "nombreCompleto": "Yenicela Ramirez",
       "email": "aramirez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.786Z",
+      "assessed_on": "2025-09-24T01:46:31.090Z",
       "demographics": {
         "rol": "Jefe de Agencia",
         "area": "sucursales y agencias",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "\"Un camino de exploracion y conocimiento constante a solo un clic\""
+    ],
+    "D2_OPEN": [
+      "Que podamos visualizar mas opciones en una sola herramienta"
+    ],
+    "D3_OPEN": [
+      "Agilitar las tareas operativas, para tener respuestas oportunas y podernos enfocar en temas comerciales"
+    ],
+    "D4_OPEN": [
+      "Expectativa que la IA me ayude a ser mas eficiente y tener tiempo para temas mas humanos con los clientes y companeros de trabajo y mi preocupacion seria la privacidad de los datos y la perdida de criterio humano y no ser empaticos con los clientes."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'subgerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='subgerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'subgerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='subgerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "cliente"
+      ],
       "aspiracionProfesional": "Subgerente",
       "aspiracion_slug": "subgerente"
     },

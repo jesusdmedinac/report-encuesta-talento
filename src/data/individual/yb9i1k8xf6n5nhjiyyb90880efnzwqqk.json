@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.492Z",
+  "generated_at": "2025-09-24T01:46:30.320Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.492Z",
+    "generatedAt": "2025-09-24T01:46:30.320Z",
     "schema": "individual-1.0",
     "id": "yb9i1k8xf6n5nhjiyyb90880efnzwqqk",
     "subject": {
       "nombreCompleto": "Luis Alberto Reyes Carrion",
       "email": "lreyes@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.492Z",
+      "assessed_on": "2025-09-24T01:46:30.320Z",
       "demographics": {
         "rol": "Resolución de casos CRM de establecimientos a nivel nacional.",
         "area": "PRODUCTOS E INNOVACIÓN -Tribu Comercios-",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprendizaje constante para un mundo cambiante todos los dias!"
+    ],
+    "D2_OPEN": [
+      "Actualmente uso la herramiente Fortitoken, que es lo mas seguro y confiable. Antes usaba SMS para que me llegue el codigo de validacion de inicio de sesion pero a veces fallaba, el mensaje no llegaba y demoraba en ingresar al sistema"
+    ],
+    "D3_OPEN": [
+      "Capacitaciones online de programas de programacion, diseno grafico. Acceso a cursos externos de GOOGLE, MICROSOFT, Python, o similares que se crea convenientes para la aceleracion de la cultura digital y para nuestro enriquecimiento en el aprendizaje y evolucion tecnologica."
+    ],
+    "D4_OPEN": [
+      "Me preocupa mas que el avance de la IA, que va de la mano con el avance de creacion de robots (ya practicamente llegando a la similitud fisica humana) desplace a los humanos en otras plazas de trabajo que generalmente las realiza los latinos o puestos que son como atencion al cliente en hoteles (en la recepcion), meseros, etc. Esas plazas de trabajo que demandan mas a personas que se estan iniciando en el mundo laboral y empiece a encarecer donde trabajar a las nuevas generaciones, y por que no decir a las generaciones que ya estan pasados de los 45 anos. Expectativa seria, que en un mundo que se esta evolucionando demasiado rapido con la IA y avance tecnologico, se pueda tener mejor medicina, cura al Cancer (tengo a mi mami con cancer terminal) y que los costos para la atencion e intervencion medica, empiecen a ser mas accesibles. Tener una mayor exceptiva de vida para todos y con el avance tecnologico se creen nuevas carreras universitarias y por ende nuevas plazas de trabajo para las nuevas generaciones!"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9 · brechaDigital: gap 0.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.30), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'resolucion'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'comercial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='comercial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.30), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'resolucion'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'comercial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='comercial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "resolucion",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente"
+      ],
       "aspiracionProfesional": "Me gusta la parte de diseño gráfico, también crear app y el diseño de la misma para dar mayor facilidad a los clientes en sus consultas o servicios que deseen.",
       "aspiracion_slug": "comercial"
     },

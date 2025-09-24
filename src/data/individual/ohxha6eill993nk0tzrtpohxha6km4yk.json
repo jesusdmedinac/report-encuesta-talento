@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.789Z",
+  "generated_at": "2025-09-24T01:46:31.098Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.789Z",
+    "generatedAt": "2025-09-24T01:46:31.098Z",
     "schema": "individual-1.0",
     "id": "ohxha6eill993nk0tzrtpohxha6km4yk",
     "subject": {
       "nombreCompleto": "JORGE ALEJANDRO TORRES SANCHEZ",
       "email": "jtorres3@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.789Z",
+      "assessed_on": "2025-09-24T01:46:31.098Z",
       "demographics": {
         "rol": "COMMERCIAL BUSINESS SUPPORT",
         "area": "COMERCIAL BUSINESS SUPPORT",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Soy autodidacta y trato de mantenerme al dia buscando informacion de herramientas que se actualizan diariamente para tratar de aplicarlas en mi trabajo y vida personal."
+    ],
+    "D2_OPEN": [
+      "Evitar la utilizacion de papeles fisicos podria ayudar a mi labor diaria."
+    ],
+    "D3_OPEN": [
+      "Ensenarnos en los puestos de trabajo como aplicar las nuevas tecnologias"
+    ],
+    "D4_OPEN": [
+      "Seria importante tener una mayor ayuda que pueda hacer ciertas tareas que no requieren mayor analisis."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · brechaDigital: gap 1.1.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), brechaDigital (gap=1.10), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'commercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

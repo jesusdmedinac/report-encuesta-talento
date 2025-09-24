@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.786Z",
+  "generated_at": "2025-09-24T01:46:31.088Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.786Z",
+    "generatedAt": "2025-09-24T01:46:31.088Z",
     "schema": "individual-1.0",
     "id": "c4kwsvs7y9oczuc4ktc642u75z4e6p5q",
     "subject": {
       "nombreCompleto": "Jordy Zambrano Galarza",
       "email": "jzambrano4@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.786Z",
+      "assessed_on": "2025-09-24T01:46:31.088Z",
       "demographics": {
         "rol": "Analista",
         "area": "Riesgo Integral",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "No siempre la primera busqueda sera la respuesta a lo que necesitas."
+    ],
+    "D2_OPEN": [
+      "Considero que el no poder acceder a herramientas \"basicas\" facilmente como Python, SQL, R Server, entre otros; el no contar con la informacion necesaria, nos limita a poder tener la informacion de manera rapida para la toma de decisiones. Y no solo deberiamos quedarnos en el aprendizaje de herramientas, considero que los cursos de liderazgo o metodologias agiles entre otros, no deberian estar limitados a solo Supervisores en adelante, porq de un operativo, asesor, gestor, analista, sale un lider de igual forma y estas capacitaciones podrian ayudar a continuar formando o puliendo estos lideres del manana."
+    ],
+    "D3_OPEN": [
+      "El que TODOS seamos considerados para lograr consultar los datos y no solo un area o un circulo de personas, que se permita el uso de herramientas IA que nos ayudan a mejorar o automatizar tareas y no solo quienes se encuentran en departamentos especificos."
+    ],
+    "D4_OPEN": [
+      "La unica preocupacion es que limiten el uso de la misma y forzando el trabajo manual con el poco desarrollo de esta."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analista'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analista'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,11 @@
         }
       ],
       "role": "analista",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos"
+      ],
       "aspiracionProfesional": "Liderar un equipo de analistas.",
       "aspiracion_slug": "liderazgo"
     },
@@ -319,18 +336,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

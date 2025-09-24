@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.649Z",
+  "generated_at": "2025-09-24T01:46:30.720Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.649Z",
+    "generatedAt": "2025-09-24T01:46:30.720Z",
     "schema": "individual-1.0",
     "id": "i51n4u0tle97ghwtfbgi51n4u0tos68j",
     "subject": {
       "nombreCompleto": "jose valverde",
       "email": "jose7vp@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.649Z",
+      "assessed_on": "2025-09-24T01:46:30.720Z",
       "demographics": {
         "rol": "Attache",
         "area": "segmentos y canales",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Buena"
+    ],
+    "D2_OPEN": [
+      "mas que una nueva herramienta seria el poder tener ciertos accesos para agilizar la atencion"
+    ],
+    "D3_OPEN": [
+      "Vamos por buen camino, en base a mi experiencia ya depende mas de los clientes, pero quizas algo mas de publicidad interactiva"
+    ],
+    "D4_OPEN": [
+      "mi preocupacion es que no es exacta la Ia, por ello mi expectativa esta en que se mejore o a su vez siempre corroborar la informacion, para mi la IA es un apoyo mas no una herramienta totalmente confiable"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.9 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.90), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'attache'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.90), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'attache'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "attache",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Me gustaria un area administrativa, o es riesgo integral, o a su vez talento y cultura ya que me gusta organizar y estar al tanto y pendiente de eventos y dar ideas que ayuden en ellos",
       "aspiracion_slug": "operaciones"
     },

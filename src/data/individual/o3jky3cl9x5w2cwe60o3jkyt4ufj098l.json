@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.685Z",
+  "generated_at": "2025-09-24T01:46:30.819Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.685Z",
+    "generatedAt": "2025-09-24T01:46:30.819Z",
     "schema": "individual-1.0",
     "id": "o3jky3cl9x5w2cwe60o3jkyt4ufj098l",
     "subject": {
       "nombreCompleto": "Cesar Garzon",
       "email": "cgarzon@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.685Z",
+      "assessed_on": "2025-09-24T01:46:30.819Z",
       "demographics": {
         "rol": "Supervisor de Operaciones de Tarjetas de Crédito",
         "area": "Tribu Medios de Pago",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Una evolucion digital fundamentada en el analisis, la retroalimentacion y la mejora continua"
+    ],
+    "D2_OPEN": [
+      "Podria ser algo diferente que permita conocer la eficiencia en el trabajo"
+    ],
+    "D3_OPEN": [
+      "Impulsar una mentalidad digital en todos los niveles, promoviendo la capacitacion, la colaboracion interdepartamental y la toma de decisiones basada en datos"
+    ],
+    "D4_OPEN": [
+      "Espero que la inteligencia artificial me ayude a ser mas eficiente y tomar mejores decisiones, pero me preocupa que si no se usa con cuidado, pueda afectar la parte humana y generar errores"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'mandos'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_medios_de_pago,_tribu_de_medios_de_pago_o_afinidades_a_temas_de_tarjetas'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_medios_de_pago,_tribu_de_medios_de_pago_o_afinidades_a_temas_de_tarjetas'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'mandos'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_medios_de_pago,_tribu_de_medios_de_pago_o_afinidades_a_temas_de_tarjetas'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_medios_de_pago,_tribu_de_medios_de_pago_o_afinidades_a_temas_de_tarjetas'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "mandos",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "colabor"
+      ],
       "aspiracionProfesional": "Gerente de Medios de Pago, Tribu de Medios de Pago o afinidades a Temas de Tarjetas",
       "aspiracion_slug": "gerente_de_medios_de_pago,_tribu_de_medios_de_pago_o_afinidades_a_temas_de_tarjetas"
     },

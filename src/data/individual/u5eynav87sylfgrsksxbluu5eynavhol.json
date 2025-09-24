@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.161Z",
+  "generated_at": "2025-09-24T01:46:29.500Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.161Z",
+    "generatedAt": "2025-09-24T01:46:29.500Z",
     "schema": "individual-1.0",
     "id": "u5eynav87sylfgrsksxbluu5eynavhol",
     "subject": {
       "nombreCompleto": "JAMES KASHAMA WONG NOBOA",
       "email": "JWONG@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.161Z",
+      "assessed_on": "2025-09-24T01:46:29.500Z",
       "demographics": {
         "rol": "CAJERO EJECUTIVO",
         "area": "OPERACIONES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje constante de transformacion impulsado por la curiosidad, guiado por datos y construido sobre cada conversacion"
+    ],
+    "D2_OPEN": [
+      "Para ser mas eficiente, me ayudaria una combinacion de capacitacion avanzada en Power BI (como DAX y modelado de datos) y automatizacion de tareas repetitivas en Excel mediante Power Query o VBA."
+    ],
+    "D3_OPEN": [
+      "capacitaciones de nuevas herramientas para un trabajo mas agil y seguro"
+    ],
+    "D4_OPEN": [
+      "que la informacion sea repetitiva"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'contraloria'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='contraloria'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'contraloria'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='contraloria'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,11 @@
         }
       ],
       "role": "operaciones",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos"
+      ],
       "aspiracionProfesional": "CONTRALORIA",
       "aspiracion_slug": "contraloria"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.529Z",
+  "generated_at": "2025-09-24T01:46:30.410Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.529Z",
+    "generatedAt": "2025-09-24T01:46:30.410Z",
     "schema": "individual-1.0",
     "id": "9opbylnkmezgjlq29wc77ly9opbylnkk",
     "subject": {
       "nombreCompleto": "LUIGIA TERREROS LARREA",
       "email": "lterreros@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.529Z",
+      "assessed_on": "2025-09-24T01:46:30.410Z",
       "demographics": {
         "rol": "OFICIAL SENIOR/ SOPORTE TRANSFERENCIAS",
         "area": "SOPORTE TRANSFERENCIAS ( SWIFT)",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "\"Ha sido un camino de descubrimiento constante, adaptandome a nuevas herramientas y tecnologias para crecer personal y profesionalmente.\""
+    ],
+    "D2_OPEN": [
+      "\"Mas capacitacion en las herramientas que ya utilizo seria de gran ayuda, ya que muchas veces no aprovecho todas sus funciones por desconocimiento. Esto me permitiria ser mas eficiente y resolver tareas con mayor rapidez y precision.\""
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, lo mas importante que la empresa podria hacer para acelerar la cultura digital es fomentar una mentalidad de aprendizaje continuo, ofreciendo espacios de formacion accesibles y practicos, y promoviendo el uso activo de herramientas digitales en todos los niveles. Ademas, seria clave que los lideres den el ejemplo adoptando estas practicas y motivando a sus equipos a innovar."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la Inteligencia Artificial me permita automatizar tareas repetitivas y optimizar procesos, para poder enfocarme en actividades mas estrategicas y creativas. Sin embargo, tambien me preocupa la necesidad de mantenerme actualizado constantemente para no quedarme atras en un entorno que evoluciona tan rapido"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.1 · usoInteligenciaArtificial: gap 0.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.10), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.10), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,12 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "\"Aspiro a desarrollarme profesionalmente en un rol que me permita asumir mayores responsabilidades estratégicas, ya sea en liderazgo de proyectos, coordinación de equipos o especialización técnica en mi área. Me interesa seguir creciendo en una posición donde pueda aportar valor, seguir aprendiendo constantemente y tener un impacto positivo en los resultados de la organización.\"",
       "aspiracion_slug": "liderazgo"
     },

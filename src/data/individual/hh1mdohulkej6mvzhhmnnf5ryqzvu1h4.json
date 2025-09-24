@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.640Z",
+  "generated_at": "2025-09-24T01:46:30.701Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.640Z",
+    "generatedAt": "2025-09-24T01:46:30.701Z",
     "schema": "individual-1.0",
     "id": "hh1mdohulkej6mvzhhmnnf5ryqzvu1h4",
     "subject": {
       "nombreCompleto": "JONATHAN BRICIO",
       "email": "JBRICIO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.640Z",
+      "assessed_on": "2025-09-24T01:46:30.701Z",
       "demographics": {
         "rol": "SOPORTE DE CLIMATIZACION",
         "area": "ADMINISTRACION",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "CAMINANDO HACIA EL FUTURO."
+    ],
+    "D2_OPEN": [
+      "Considero que lo que me ayudaria a ser mas eficiente es recibir mas capacitacion en las herramientas actuales. Muchas veces usamos solo una parte de sus funciones por desconocimiento, y una formacion mas profunda permitiria aprovechar todo su potencial. Ademas, una mejor comprension de las herramientas que ya estan integradas en nuestro flujo de trabajo Ahorraria tiempo de respuestas"
+    ],
+    "D3_OPEN": [
+      "podria ser implementar puntos de autoatencion validando las seguridades de cada caso bajo previa socializacion"
+    ],
+    "D4_OPEN": [
+      "QUE FACILITE EL DIA A DIA EN CADA PUESTO PERMITIENDO DESARROLLARNOS EN FUNCION A LO AVANCES TECNOLOGICOS, EL AVANCE AL FUTURO ES INEVITABLE, HAY QUE ADAPTARNOS Y SIEMPRE SE NECESITARA MANO DE OBRA DE SUPERVISION"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.3 · brechaDigital: gap 1.7.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.30), brechaDigital (gap=1.70), culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.30), brechaDigital (gap=1.70), culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, segurid): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "segurid"
+      ],
       "aspiracionProfesional": "LOS CARGOS AL ACTUALIZARSE EN EL AREA, RESPECTO A MI JEFATURA, ES SIMILAR, PERO SERIA SUPERVISOR DE MI AREA",
       "aspiracion_slug": "mandos"
     },

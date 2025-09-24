@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.511Z",
+  "generated_at": "2025-09-24T01:46:30.359Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.511Z",
+    "generatedAt": "2025-09-24T01:46:30.359Z",
     "schema": "individual-1.0",
     "id": "dyswmr9scfn3kg45ykdyswm1155w3p43",
     "subject": {
       "nombreCompleto": "Daniel Palacios",
       "email": "dpalacios@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.511Z",
+      "assessed_on": "2025-09-24T01:46:30.359Z",
       "demographics": {
         "rol": "Oficial senior banca de inclusión",
         "area": "Banco del Barrio",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Descubriendo un nuevo mundo"
+    ],
+    "D2_OPEN": [
+      "Creo que para ser mas eficiente y potenciar los resultados de la red, seria clave evolucionar hacia herramientas que integren datos y analitica predictiva. Por ejemplo, un dasboard que no solo muestre transacciones actuales, sino que tambien identifique patrones de comportamiento de corresponsales y anticipe riesgos de inactividad o caida de transacciones, para poder tomar decisiones al momento de visitar a los clientes. Esto, combinado con capacitaciones puntuales para dominar estas tecnologias, nos permitiria pasar de una gestion reactiva a una gestion estrategica, donde podamos actuar antes de que los problemas ocurran y aprovechar mejor las oportunidades de crecimiento."
+    ],
+    "D3_OPEN": [
+      "Para acelerar nuestra cultura digital, lo mas importante seria impulsar una adopcion tecnologica que no solo se centre en tener los conocimientos necesarios para el desarrollo de nuestras actividades, sino en integrarlas en nuestra forma de trabajar y que ayude a nuestra toma de decisiones."
+    ],
+    "D4_OPEN": [
+      "Espero que la IA nos ayude a anticipar riesgos y oportunidades en la red de corresponsales; mi unica preocupacion es que la adopcion y capacitacion no avancen tan rapido como la tecnologia."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=1.00), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'el_siguiente_paso_seria_una_gerencia_o_subgerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='el_siguiente_paso_seria_una_gerencia_o_subgerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=1.00), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'el_siguiente_paso_seria_una_gerencia_o_subgerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='el_siguiente_paso_seria_una_gerencia_o_subgerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,11 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "cliente"
+      ],
       "aspiracionProfesional": "El siguiente paso sería una Gerencia o Subgerencia",
       "aspiracion_slug": "el_siguiente_paso_seria_una_gerencia_o_subgerencia"
     },

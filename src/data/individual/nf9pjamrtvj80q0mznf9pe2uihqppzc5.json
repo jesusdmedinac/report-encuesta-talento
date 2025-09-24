@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.659Z",
+  "generated_at": "2025-09-24T01:46:30.747Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.659Z",
+    "generatedAt": "2025-09-24T01:46:30.747Z",
     "schema": "individual-1.0",
     "id": "nf9pjamrtvj80q0mznf9pe2uihqppzc5",
     "subject": {
       "nombreCompleto": "ELI GABRIEL MONSERRATE ROMERO",
       "email": "elga64@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.659Z",
+      "assessed_on": "2025-09-24T01:46:30.747Z",
       "demographics": {
         "rol": "GESTOR DE MICROCRÉDITO",
         "area": "MICROCRÉDITO",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Ya que todos vivimos en una simulacion, deberiamos aprovecharla al maximo"
+    ],
+    "D2_OPEN": [
+      "Priorizar actividades"
+    ],
+    "D3_OPEN": [
+      "Mayor capacitacion practica"
+    ],
+    "D4_OPEN": [
+      "Alejarse de la parte humana"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit"
+      ]
     },
     "iniciativas": [
       {

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.321Z",
+  "generated_at": "2025-09-24T01:46:29.928Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.321Z",
+    "generatedAt": "2025-09-24T01:46:29.928Z",
     "schema": "individual-1.0",
     "id": "s2u4gosv8lx49cbgdfaas2u4gosvhlox",
     "subject": {
       "nombreCompleto": "BRYAN ESTEVEZ BURGOS",
       "email": "bryanestevez2597@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.321Z",
+      "assessed_on": "2025-09-24T01:46:29.928Z",
       "demographics": {
         "rol": "Cajero Financiero",
         "area": "Operaciones",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "El innovar y aprender cada dia es un reto que quiero cumplir en mi vida"
+    ],
+    "D2_OPEN": [
+      "Me sentiria mas comodo con una herramienta de inteligencia artificial para que me puede dar soporte en mis dudas"
+    ],
+    "D3_OPEN": [
+      "Talleres presenciales que nos ayuden a un buen manejo de las herramientas digitales"
+    ],
+    "D4_OPEN": [
+      "No me siento preocupado, por que siempre puede existir una nueva necesidad que se puede cubrir para brindar una mejor experiencia al cliente"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "cliente",
+        "innov"
+      ]
     },
     "iniciativas": [
       {

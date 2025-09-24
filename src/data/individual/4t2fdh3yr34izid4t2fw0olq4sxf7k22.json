@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.097Z",
+  "generated_at": "2025-09-24T01:46:29.342Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.097Z",
+    "generatedAt": "2025-09-24T01:46:29.342Z",
     "schema": "individual-1.0",
     "id": "4t2fdh3yr34izid4t2fw0olq4sxf7k22",
     "subject": {
       "nombreCompleto": "Santiago Arteaga Gonzalez",
       "email": "sarteaga@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.097Z",
+      "assessed_on": "2025-09-24T01:46:29.342Z",
       "demographics": {
         "rol": "Delivery DevOps Engineer",
         "area": "Tecnología",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital ha sido un puente constante entre desarrollo y operaciones, impulsado por el compromiso de liderar con vision tecnica, colaboracion y responsabilidad transversal."
+    ],
+    "D2_OPEN": [
+      "Mas que una nueva herramienta, creo que una capacitacion mas profunda en las actuales combinada con espacios de colaboracion entre desarrollo y operaciones me permitiria potenciar su uso, alinear mejor los equipos y liderar con mayor impacto tecnico y estrategico."
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es fomentar una mayor integracion entre los equipos de desarrollo y operaciones, promoviendo practicas DevOps, automatizacion y espacios de co-creacion que impulsen tanto la innovacion como la responsabilidad compartida sobre el ciclo de vida de las soluciones."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol es que se convierta en una aliada estrategica para optimizar procesos, anticipar problemas y mejorar la toma de decisiones tecnicas. Mi principal preocupacion es asegurar un uso responsable, etico y bien comprendido de estas tecnologias. Por eso, estoy interesado en seguir una especializacion en Inteligencia Artificial en la Universidad San Francisco, con el objetivo de fortalecer mis capacidades tecnicas y aportar con mayor valor desde un enfoque transversal entre desarrollo y operaciones."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'technical_owner'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='technical_owner'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'technical_owner'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='technical_owner'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,13 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Technical Owner",
       "aspiracion_slug": "technical_owner"
     },

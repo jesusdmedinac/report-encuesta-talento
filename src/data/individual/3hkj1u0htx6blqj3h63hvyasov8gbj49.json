@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.204Z",
+  "generated_at": "2025-09-24T01:46:29.614Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.204Z",
+    "generatedAt": "2025-09-24T01:46:29.614Z",
     "schema": "individual-1.0",
     "id": "3hkj1u0htx6blqj3h63hvyasov8gbj49",
     "subject": {
       "nombreCompleto": "ERICKA PAMELA SEMINARIO MATUTE",
       "email": "eseminario@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.204Z",
+      "assessed_on": "2025-09-24T01:46:29.614Z",
       "demographics": {
         "rol": "Supervisor de Crédito MC y HD",
         "area": "Circulo de Servicios de Crédito",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Adaptarme rapidamente a nuevas herramientas y plataformas para impulsar la innovacion en mi trabajo."
+    ],
+    "D2_OPEN": [
+      "En funcion de mejorar la eficiencia operativa, propongo fortalecer y optimizar las herramientas actuales Neo, Host y Bot. Incorporar funcionalidades como la asignacion automatica de productos y niveles de revision. Ademas, seria conveniente evaluar la implementacion de soluciones basadas en inteligencia artificial para mejorar la eficiencia en la revision de procesos, especialmente aquellos que requieren analisis o de gran volumen."
+    ],
+    "D3_OPEN": [
+      "Considero que lo mas importante es la mentalidad de adaptacion y el aprendizaje continuo."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la inteligencia artificial nos ayude a mejorar los procesos y optimizarlos."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'mandos'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'mandos'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "mandos",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Busco proyectarme hacia una posición que me permita liderar de manera integral el área de crédito abarcando supervisión, gestión de riesgo y desarrollo de estrategias que fortalezcan la rentabilidad y satisfacción del cliente.",
       "aspiracion_slug": "liderazgo"
     },

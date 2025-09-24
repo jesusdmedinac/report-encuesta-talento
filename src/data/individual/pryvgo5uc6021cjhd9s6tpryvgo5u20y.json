@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.304Z",
+  "generated_at": "2025-09-24T01:46:29.883Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.304Z",
+    "generatedAt": "2025-09-24T01:46:29.883Z",
     "schema": "individual-1.0",
     "id": "pryvgo5uc6021cjhd9s6tpryvgo5u20y",
     "subject": {
       "nombreCompleto": "Elsa Pineda Bazurto",
       "email": "epineda@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.304Z",
+      "assessed_on": "2025-09-24T01:46:29.883Z",
       "demographics": {
         "rol": "Cajero Financiero",
         "area": "Operativo",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprendizaje constante y nuevas experiencias"
+    ],
+    "D2_OPEN": [
+      "Mas capacitaciones que contribuyan a mejorar la eficiencia en la gestion operativa, adicionando al mismo tiempo una nueva herramienta que complemente estos conocimientos para que tambien resulten sencillos para cliente."
+    ],
+    "D3_OPEN": [
+      "Hacerse estudios de nuevos medios tecnologicos para mejorar la eficiencia de los procesos tanto para los colaboradores como para el usuario."
+    ],
+    "D4_OPEN": [
+      "En su mayoria son expectativas, porque la inteligencia artificial si bien en cierto punto puede llegar a reemplazar ciertas actividades, tambien es una oportunidad para mejorar y agilizar la gestion diaria sin olvidar el valor humano."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · madurezDigital: gap 1.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=1.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_legal'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_legal'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=1.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_legal'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_legal'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,12 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Área Legal",
       "aspiracion_slug": "area_legal"
     },

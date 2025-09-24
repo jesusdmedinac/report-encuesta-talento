@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.755Z",
+  "generated_at": "2025-09-24T01:46:28.510Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.755Z",
+    "generatedAt": "2025-09-24T01:46:28.510Z",
     "schema": "individual-1.0",
     "id": "cr6656izmueo3ygnxq4cr665z9wrhgoj",
     "subject": {
       "nombreCompleto": "Betty Cango",
       "email": "bcango@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.755Z",
+      "assessed_on": "2025-09-24T01:46:28.510Z",
       "demographics": {
         "rol": "TALENT ANALYST ESTRUCTURA",
         "area": "Talento y Cultura",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un aprendizaje sin fin, que me impulsa a reinventarme y a ver la tecnologia como un socio estrategico en cada desafio."
+    ],
+    "D2_OPEN": [
+      "Capacitarme en las actuales."
+    ],
+    "D3_OPEN": [
+      "Impulsar una mentalidad digital en todos los niveles, asegurando que cada colaborador entienda como la tecnologia puede potenciar su rol y aportar valor al cliente."
+    ],
+    "D4_OPEN": [
+      "Pensando en el futuro, mi mayor expectativa es que la IA se convierta en una aliada estrategica que me ayude a optimizar procesos, agilizar la toma de decisiones y liberar tiempo para enfocarme en tareas de mayor valor humano, como la innovacion y el acompanamiento a las personas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'talent'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'talent_specialist_estructura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='talent_specialist_estructura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'talent'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor, cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'talent_specialist_estructura'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='talent_specialist_estructura'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,13 @@
         }
       ],
       "role": "talent",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor",
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "TALENT SPECIALIST ESTRUCTURA",
       "aspiracion_slug": "talent_specialist_estructura"
     },
@@ -298,6 +317,32 @@
         "target": "8.0/10"
       },
       {
+        "id": "CD-06",
+        "titulo": "Taller de colaboración en suites actuales",
+        "descripcion": "Workshop hands-on para crear plantillas, permisos y tableros con la suite corporativa.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "2 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "colaboracion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "comercial",
+          "operaciones"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "colaboracionDigital"
+        ],
+        "metric": "colaboraciondigital",
+        "target": "8.0/10"
+      },
+      {
         "id": "CD-03",
         "titulo": "Clínica de ciberseguridad aplicada",
         "descripcion": "Laboratorios guiados sobre phishing, gestión de contraseñas y protección de datos.",
@@ -313,32 +358,6 @@
         ],
         "rutaDeCarrera": [
           "tecnico",
-          "operaciones"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "ciberseguridad"
-        ],
-        "metric": "ciberseguridad",
-        "target": "8.0/10"
-      },
-      {
-        "id": "CD-05",
-        "titulo": "Curso práctico de ciberseguridad laboral",
-        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Alta",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "todos"
-        ],
-        "tags": [
-          "seguridad",
-          "practicas"
-        ],
-        "rutaDeCarrera": [
-          "liderazgo",
-          "mandos",
           "operaciones"
         ],
         "type": "KPI",

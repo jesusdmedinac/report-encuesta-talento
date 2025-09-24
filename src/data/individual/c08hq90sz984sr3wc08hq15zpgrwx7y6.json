@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.324Z",
+  "generated_at": "2025-09-24T01:46:29.934Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.324Z",
+    "generatedAt": "2025-09-24T01:46:29.934Z",
     "schema": "individual-1.0",
     "id": "c08hq90sz984sr3wc08hq15zpgrwx7y6",
     "subject": {
       "nombreCompleto": "Clara Velarde",
       "email": "cvelarde@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.324Z",
+      "assessed_on": "2025-09-24T01:46:29.934Z",
       "demographics": {
         "rol": "Guía de agencia",
         "area": "Atacjw",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Cada paso en mi aprendizaje 😃 Digital me acerca a ser mas agil eficiente y preparada para retos del futuro"
+    ],
+    "D2_OPEN": [
+      "Considero que una mayor capacitacion en las herramientas actuales me permiten aprovechar al maximo sus funciones y optimizar mis tareas mis tareas diarias contribuyendo a una atencion mas agil y efectiva"
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva la mas importante para acelerar nuestra cultura digital es impulsar programas de capacitacion continua y practica acompanados de espacios para compartir buenas practicas entre colaboradores de modo que todos adaptemos tecnologia como parte natural de nuestro trabajo diario"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es la inteligencia artificial nos ayude a optimizar procesos y personalizar la atencion al cliente permitiendonos dedicar mas tiempo a tareas de alto valor humano mi principal preocupacion es asegura que su implementacion se haga con la debida etica y proteccion de los datos de nuestros clientes"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.3 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'guia'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'guia'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos, colabor, etica, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,14 @@
         }
       ],
       "role": "guia",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "colabor",
+        "etica",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Aspiro a crecer profesionalmente hacia un rol en el área de tecnologías dónde pueda aprender y aportar en la mejora de proceso digitales",
       "aspiracion_slug": "tecnico"
     },
@@ -330,18 +350,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

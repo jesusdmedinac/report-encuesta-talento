@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.325Z",
+  "generated_at": "2025-09-24T01:46:29.937Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.325Z",
+    "generatedAt": "2025-09-24T01:46:29.937Z",
     "schema": "individual-1.0",
     "id": "zg3kdxr3gqinf1ov2tkykzzg3kdxr39a",
     "subject": {
       "nombreCompleto": "Emely Verdesoto",
       "email": "Emyverdesoto@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.325Z",
+      "assessed_on": "2025-09-24T01:46:29.937Z",
       "demographics": {
         "rol": "Cajera financiera",
         "area": "Operaciones",
@@ -207,13 +207,32 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital ha sido un proceso constante de adaptacion, curiosidad y crecimiento, aprovechando cada oportunidad para dominar nuevas tecnologias y mejorar mis habilidades."
+    ],
+    "D2_OPEN": [
+      "Considero que una combinacion de mas capacitacion en las herramientas actuales y la incorporacion de nuevas herramientas adaptadas a nuestras necesidades me ayudaria a ser mas eficiente. La capacitacion me permite aprovechar al maximo los recursos disponibles, mientras que nuevas herramientas pueden optimizar procesos y facilitar el trabajo diario."
+    ],
+    "D3_OPEN": [
+      "Lo mas importante para acelerar la cultura digital en la empresa es fomentar la capacitacion continua y el acompanamiento en el uso de nuevas tecnologias, asi como promover una mentalidad abierta al cambio y la innovacion entre todos los colaboradores. Esto crea un ambiente donde la adopcion digital se vuelve parte natural del trabajo diario."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la inteligencia artificial pueda optimizar procesos y facilitar tareas repetitivas, permitiendome enfocarme en actividades mas estrategicas y creativas. Sin embargo, tambien me preocupa que su implementacion pueda generar desafios en la adaptacion y el manejo etico de los datos, por lo que considero fundamental un uso responsable y una capacitacion adecuada."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajera",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "colabor",
+        "proceso",
+        "innov"
+      ]
     },
     "iniciativas": [
       {

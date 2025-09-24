@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.836Z",
+  "generated_at": "2025-09-24T01:46:31.216Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.836Z",
+    "generatedAt": "2025-09-24T01:46:31.216Z",
     "schema": "individual-1.0",
     "id": "cbsauie7hjrfy34ozcbsaupv0edv72jh",
     "subject": {
       "nombreCompleto": "Paola Cabezas",
       "email": "wendy_cabezas92@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.836Z",
+      "assessed_on": "2025-09-24T01:46:31.216Z",
       "demographics": {
         "rol": "Cajera ejecutiva",
         "area": "operaciones",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INTERESANTE"
+    ],
+    "D2_OPEN": [
+      "UN SISTEMA DE CAJAS QUE SEA CON ACUMULADOR Y QUE TENGA OPCION PARA DIGUITAR LOS BILLETES QUE ENTRAN Y SALEN DE CAJAS."
+    ],
+    "D3_OPEN": [
+      "IMPLEMENTACION DE OTRO PROGRAMA PARA CAJAS"
+    ],
+    "D4_OPEN": [
+      "PREOCUPACION QUE EN EL FUTURO NO EXISTA LOS MISMOS TRABAJOS COMO EL QUE ESTOY Y NO PUEDA HABER ESA COMUNICACION EFICAZ ENTRE LOS SERES HUMANOS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

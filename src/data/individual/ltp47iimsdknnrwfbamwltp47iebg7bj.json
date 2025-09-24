@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.483Z",
+  "generated_at": "2025-09-24T01:46:30.301Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.483Z",
+    "generatedAt": "2025-09-24T01:46:30.301Z",
     "schema": "individual-1.0",
     "id": "ltp47iimsdknnrwfbamwltp47iebg7bj",
     "subject": {
       "nombreCompleto": "ANA BELEN PATIÑO CEVALLOS",
       "email": "apatino@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.483Z",
+      "assessed_on": "2025-09-24T01:46:30.301Z",
       "demographics": {
         "rol": "ASESOR COMERCIAL",
         "area": "COMERCIAL",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EL MUNDO DIGITAL NOS MOTIVA A AUTOAPRENDER EN EL DIA A DIA."
+    ],
+    "D2_OPEN": [
+      "AL MOMENTO EL BANCO SE ENCUENTRA AL DIA EN EL AREA TECNOLOGICA LO QUE NOS AYUDA EN NUESTRO A DIA Y ASI DAR UNA ATENCION OPORTUNA Y AGIL"
+    ],
+    "D3_OPEN": [
+      "CUANDO EL SISTEMA ESTE CON INCONVENIENTES QUE EL SOORTE Y SOLUCION SE DEN DE MANERA INMEDIATA"
+    ],
+    "D4_OPEN": [
+      "QUE EN UN FUTURO LA INTELIGENCIA ARTIFICIAL REEMPLACE A CIERTAS AREAS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_segmentos_y_canales'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_segmentos_y_canales'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

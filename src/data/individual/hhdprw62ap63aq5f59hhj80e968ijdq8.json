@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.781Z",
+  "generated_at": "2025-09-24T01:46:28.576Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.781Z",
+    "generatedAt": "2025-09-24T01:46:28.576Z",
     "schema": "individual-1.0",
     "id": "hhdprw62ap63aq5f59hhj80e968ijdq8",
     "subject": {
       "nombreCompleto": "Cristhian Eduardo Agila Pereira",
       "email": "Cagila@bancoguayaqui.com",
-      "assessed_on": "2025-09-23T18:26:53.781Z",
+      "assessed_on": "2025-09-24T01:46:28.576Z",
       "demographics": {
         "rol": "Inspecciones de locales,cobranza y venta de créditos",
         "area": "Microcreditos",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Superacion"
+    ],
+    "D2_OPEN": [
+      "APRENDIZAJE"
+    ],
+    "D3_OPEN": [
+      "Realizar mas cursos para tener mas conocimiento"
+    ],
+    "D4_OPEN": [
+      "Seguir creciendo como persona"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {

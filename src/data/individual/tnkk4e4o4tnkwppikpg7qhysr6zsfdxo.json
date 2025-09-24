@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.576Z",
+  "generated_at": "2025-09-24T01:46:30.537Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.576Z",
+    "generatedAt": "2025-09-24T01:46:30.537Z",
     "schema": "individual-1.0",
     "id": "tnkk4e4o4tnkwppikpg7qhysr6zsfdxo",
     "subject": {
       "nombreCompleto": "Pedro Senatore Ramos De Santis",
       "email": "pramos@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.576Z",
+      "assessed_on": "2025-09-24T01:46:30.537Z",
       "demographics": {
         "rol": "Models Validator",
         "area": "Analítica",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "De la investigacion academica a la aplicacion practica de Ciencia de Datos en el sector financiero, donde cada modelo validado construye confianza en las decisiones que impulsan el futuro de la Banca"
+    ],
+    "D2_OPEN": [
+      "Basandome en mi contexto especifico, requiero capacitacion en Databricks"
+    ],
+    "D3_OPEN": [
+      "Lo mas importante es crear un Digital Mindset desde el liderazgo: implementar un data-driven leadership real, fomentar equipos integrados de trabajo, crear un ambiente de \"seguridad psicologica\" para la innovacion (no tener miedo de hablar o desafiar procesos), invertir en fluencia digital ejecutiva (que todos los lideres que toman decisiones sepan de tecnologia)"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa sobre IA en model validation es poder automatizar las tareas repetitivas de validacion tecnica - como calculos de PSI, generacion de reportes de calibracion, y deteccion automatica de drift - para enfocar mi tiempo en analisis de juicio profesional y interpretacion de negocio. Mi mayor preocupacion es la sobre-dependencia en herramientas de IA sin entender los fundamentos estadisticos. Como validador independiente, mi valor esta en ejercer criterio experto y desafiar constructivamente los modelos."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'models'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'models'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos, segurid, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,14 @@
         }
       ],
       "role": "models",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos",
+        "segurid",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Mando Medio",
       "aspiracion_slug": "mandos"
     },
@@ -320,18 +340,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.950Z",
+  "generated_at": "2025-09-24T01:46:31.438Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.950Z",
+    "generatedAt": "2025-09-24T01:46:31.438Z",
     "schema": "individual-1.0",
     "id": "02hv83a0e4xdajk002hv83e0bep9tezr",
     "subject": {
       "nombreCompleto": "DARWIN JESUS GUZMAN CHAVEZ",
       "email": "dguzman@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.950Z",
+      "assessed_on": "2025-09-24T01:46:31.438Z",
       "demographics": {
         "rol": "JEFE OPERATIVO",
         "area": "OPERACIONES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "\"Mi viaje de aprendizaje digital ha sido constante, autodidacta y guiado por la curiosidad; cada reto ha sido una oportunidad para investigar, adaptarme y dominar herramientas digitales, convirtiendo cada necesidad en una puerta hacia el crecimiento profesional.\""
+    ],
+    "D2_OPEN": [
+      "Considero que una mayor capacitacion en las herramientas actuales me ayudarian a ser mas eficiente, ya que muchas veces no aprovechamos todo el potencial por desconocimiento. Sin embargo, tambien estoy abierto a explorar nuevas herramientas que optimicen procesos y mejoren la productividad."
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, considero que lo mas importante para acelerar nuestra cultura digital es establecer una estrategia integral que combine capacitacion continua en competencias digitales, adopcion agil de tecnologias y un liderazgo que impulse activamente la transformacion. Ademas, es fundamental promover un entorno colaborativo, donde innovacion y el aprendizaje sean parte del dia a dia, permitiendo que todos los niveles de la organizacion se alineen con los objetivos digitales del negocio."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la IA nos permita optimizar procesos, mejorar la toma de decisiones y ofrecer un servicio mas agil y personalizado a nuestros clientes. Sin embargo, tambien reconozco la importancia de mantener un factor humano, especificamente en areas que requieran juicio, etica y empatia, para asegurar que la tecnologia se utilice de manera responsable y efectiva."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor, etica, cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,14 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor",
+        "etica",
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Aspiro a desarrollarme profesionalmente en un rol que me permita integrar mi formación en marketing con mi experiencia en operaciones, aportando una visión estratégica y enfocada en la mejora continua. Me interesa crecer hacia posiciones de liderazgo donde pueda generar impacto, optimizar procesos y contribuir al logro de objetivos comerciales y organizacionales.",
       "aspiracion_slug": "liderazgo"
     },
@@ -320,18 +340,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

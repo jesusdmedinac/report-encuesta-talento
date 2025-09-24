@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.671Z",
+  "generated_at": "2025-09-24T01:46:30.781Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.671Z",
+    "generatedAt": "2025-09-24T01:46:30.781Z",
     "schema": "individual-1.0",
     "id": "70zbtrjf88hyxeyjip70zbqrmxfzvv3c",
     "subject": {
       "nombreCompleto": "WALTER MORALES",
       "email": "wmorales@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.671Z",
+      "assessed_on": "2025-09-24T01:46:30.781Z",
       "demographics": {
         "rol": "GESTOR",
         "area": "MI",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "FANTASTICO"
+    ],
+    "D2_OPEN": [
+      "MAS CAPACITACION"
+    ],
+    "D3_OPEN": [
+      "IMPLEMENTARLAS"
+    ],
+    "D4_OPEN": [
+      "FIDELIZAR AL CLIENTE"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "gestor",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente"
+      ]
     },
     "iniciativas": [
       {
@@ -241,6 +257,30 @@
         ]
       },
       {
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "tecnico",
+          "mandos"
+        ],
+        "tags": [
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
         "id": "MD-02",
         "titulo": "Gobernanza de datos mínima viable",
         "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
@@ -259,30 +299,6 @@
         ],
         "rutaDeCarrera": [
           "analitica_datos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ]
-      },
-      {
-        "id": "MD-05",
-        "titulo": "Tomar curso corto de analítica aplicada",
-        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "tecnico",
-          "mandos"
-        ],
-        "tags": [
-          "capacitacion",
-          "datos"
-        ],
-        "rutaDeCarrera": [
-          "analitica_datos",
-          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

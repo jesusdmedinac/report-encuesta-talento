@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.078Z",
+  "generated_at": "2025-09-24T01:46:29.295Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.078Z",
+    "generatedAt": "2025-09-24T01:46:29.295Z",
     "schema": "individual-1.0",
     "id": "kvrby56h13qzfmofnp7kvrb8efbwi0l8",
     "subject": {
       "nombreCompleto": "JORGE LUIS FIERRO LOPEZ",
       "email": "jfierro@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.078Z",
+      "assessed_on": "2025-09-24T01:46:29.295Z",
       "demographics": {
         "rol": "Customer Care Analyst",
         "area": "Customer Care",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un camino de descubrimiento continuo que me impulsa a adaptarme y crecer con las nuevas tendencias."
+    ],
+    "D2_OPEN": [
+      "Mas alla de herramientas o capacitacion, considero que la eficiencia tambien se podria mejorar mediante la automatizacion de ciertos procesos repetitivos o la optimizacion de flujos de trabajo existentes, de manera que podamos concentrarnos en tareas de mayor valor para el cliente."
+    ],
+    "D3_OPEN": [
+      "Seria en que la adopcion sea acompanada de procesos claros que permitan a todos los colaboradores integrarlas en su dia a dia. Ademas, es clave incentivar la mentalidad de experimentacion y mejora continua, donde se valore el uso de datos para tomar decisiones rapidas y basadas en evidencia."
+    ],
+    "D4_OPEN": [
+      "Como expectativa es que la Inteligencia Artificial nos permita optimizar procesos repetitivos y en cuanto a preocupacion es que su implementacion sea responsable, complementando nuestro trabajo y que se cuiden aspectos como la privacidad de los datos y la transparencia en los resultados."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · madurezDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=0.50), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'customer'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=0.50), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'customer'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos, colabor, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,14 @@
         }
       ],
       "role": "customer",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos",
+        "colabor",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Lider de alguna Tribu",
       "aspiracion_slug": "liderazgo"
     },

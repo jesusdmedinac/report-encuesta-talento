@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.174Z",
+  "generated_at": "2025-09-24T01:46:29.532Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.174Z",
+    "generatedAt": "2025-09-24T01:46:29.532Z",
     "schema": "individual-1.0",
     "id": "63a3tfcg9zey4pfs63a37fothr5y466q",
     "subject": {
       "nombreCompleto": "jessica yagual",
       "email": "jyagual@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.174Z",
+      "assessed_on": "2025-09-24T01:46:29.532Z",
       "demographics": {
         "rol": "CAJERO EJECUTIVO",
         "area": "operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "cada dia hay algo nuevo por aprender"
+    ],
+    "D2_OPEN": [
+      "las tarjetas de credito no llegan a tiempo seria bueno analizar con los courier y lo mismo con los cheques devueltos"
+    ],
+    "D3_OPEN": [
+      "continuar con las capacitaciones"
+    ],
+    "D4_OPEN": [
+      "la expectativa es que sea util para nuestro trabajo"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.4 · usoInteligenciaArtificial: gap 2.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.40), usoInteligenciaArtificial (gap=2.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tengo_22_anos_en_el_bg_llegar_a_mi_jubilacion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tengo_22_anos_en_el_bg_llegar_a_mi_jubilacion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.40), usoInteligenciaArtificial (gap=2.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tengo_22_anos_en_el_bg_llegar_a_mi_jubilacion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tengo_22_anos_en_el_bg_llegar_a_mi_jubilacion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,9 @@
         }
       ],
       "role": "operaciones",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "tengo 22 años en el bg llegar a mi jubilacion",
       "aspiracion_slug": "tengo_22_anos_en_el_bg_llegar_a_mi_jubilacion"
     },
@@ -290,32 +305,6 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "comercial",
-          "operaciones"
-        ],
-        "tags": [
-          "repositorio",
-          "prompt"
-        ],
-        "rutaDeCarrera": [
-          "gestion_producto",
-          "comercial"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "habilidadDeUso"
-        ],
-        "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
         "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
@@ -342,6 +331,32 @@
           "percepcionDeRiesgo"
         ],
         "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-03",
+        "titulo": "Biblioteca de casos y prompts reutilizables",
+        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "operaciones"
+        ],
+        "tags": [
+          "repositorio",
+          "prompt"
+        ],
+        "rutaDeCarrera": [
+          "gestion_producto",
+          "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "habilidadDeUso"
+        ],
+        "metric": "habilidaddeuso",
         "target": "8.0/10"
       }
     ]

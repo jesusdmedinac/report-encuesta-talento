@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.332Z",
+  "generated_at": "2025-09-24T01:46:29.955Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.332Z",
+    "generatedAt": "2025-09-24T01:46:29.955Z",
     "schema": "individual-1.0",
     "id": "sjevuvmkcbejq5mf633t7sjevuvaafxw",
     "subject": {
       "nombreCompleto": "Jenniffer Elizalde",
       "email": "su.elizalde@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.332Z",
+      "assessed_on": "2025-09-24T01:46:29.955Z",
       "demographics": {
         "rol": "ejecutivo financiero",
         "area": "comercial",
@@ -207,39 +207,30 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "fantastica"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion en la s actuales"
+    ],
+    "D3_OPEN": [
+      "considero que vamos en buen camino"
+    ],
+    "D4_OPEN": [
+      "preocupacion que me reemplace y expectativa que sea un aliado para continuar trabajando"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "comercial",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit"
+      ]
     },
     "iniciativas": [
-      {
-        "id": "MD-08",
-        "titulo": "Laboratorio de automatización sin código",
-        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
-        "areaEnfoque": "Innovación Operacional",
-        "prioridad": "Media",
-        "plazoEstimado": "2-4 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "comercial"
-        ],
-        "tags": [
-          "automatizacion",
-          "productividad"
-        ],
-        "rutaDeCarrera": [
-          "operaciones",
-          "comercial"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "proactividadDigital"
-        ]
-      },
       {
         "id": "MD-03",
         "titulo": "Taller de resolución de problemas complejos",
@@ -265,28 +256,27 @@
         ]
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
+        "prioridad": "Media",
+        "plazoEstimado": "2-4 semanas",
         "rolesPreferidos": [
-          "liderazgo",
           "operaciones",
-          "tecnico"
+          "comercial"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "automatizacion",
+          "productividad"
         ],
         "rutaDeCarrera": [
-          "analitica_datos"
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "alfabetizacionDeDatos"
+          "proactividadDigital"
         ]
       },
       {
@@ -307,6 +297,31 @@
         "rutaDeCarrera": [
           "analitica_datos",
           "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos"
         ],
         "type": "KPI",
         "subdimensiones": [

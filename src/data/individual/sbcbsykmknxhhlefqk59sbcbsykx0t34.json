@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.353Z",
+  "generated_at": "2025-09-24T01:46:30.007Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.353Z",
+    "generatedAt": "2025-09-24T01:46:30.007Z",
     "schema": "individual-1.0",
     "id": "sbcbsykmknxhhlefqk59sbcbsykx0t34",
     "subject": {
       "nombreCompleto": "kevin sanchez pilco",
       "email": "ksanchez4@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.353Z",
+      "assessed_on": "2025-09-24T01:46:30.007Z",
       "demographics": {
         "rol": "cajero finaciero",
         "area": "operativa",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "experiencia"
+    ],
+    "D2_OPEN": [
+      "innovar"
+    ],
+    "D3_OPEN": [
+      "responsabilidad"
+    ],
+    "D4_OPEN": [
+      "revolucion"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "innov"
+      ]
     },
     "iniciativas": [
       {

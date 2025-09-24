@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.575Z",
+  "generated_at": "2025-09-24T01:46:28.093Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.575Z",
+    "generatedAt": "2025-09-24T01:46:28.093Z",
     "schema": "individual-1.0",
     "id": "9syng4kabtv88q1sgtnq9syngbavdell",
     "subject": {
       "nombreCompleto": "Edy Reinoso",
       "email": "ereinoso@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.575Z",
+      "assessed_on": "2025-09-24T01:46:28.093Z",
       "demographics": {
         "rol": "Oficial de crédito",
         "area": "Comercial",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Avanzando hacia nuevos retos"
+    ],
+    "D2_OPEN": [
+      "Mas informacion de datos"
+    ],
+    "D3_OPEN": [
+      "Promover e incentivar"
+    ],
+    "D4_OPEN": [
+      "Que sirva para poder generar soluciones a mis clientes enfocadas a su realidad de negocio"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "tecnico",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "datos",
+        "cliente"
+      ]
     },
     "iniciativas": [
       {

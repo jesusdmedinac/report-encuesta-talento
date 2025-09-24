@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.252Z",
+  "generated_at": "2025-09-24T01:46:29.744Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.252Z",
+    "generatedAt": "2025-09-24T01:46:29.744Z",
     "schema": "individual-1.0",
     "id": "7rhuovcykba554cna7rhuo3trjecnh8z",
     "subject": {
       "nombreCompleto": "MARCEL NAVARRETE",
       "email": "marcel_navarrete1704@outlook.com",
-      "assessed_on": "2025-09-23T18:26:54.252Z",
+      "assessed_on": "2025-09-24T01:46:29.744Z",
       "demographics": {
         "rol": "CAJERO FINANCIERO",
         "area": "OPERACIONES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "COMO ANILLO AL DEDO"
+    ],
+    "D2_OPEN": [
+      "EMPEZAR POR ENSENARNOS A USAR LA HERRAMIENTAS NECESARIAS EN NUESTRO TRABAJO, LUEGO DE ESO SON BIENVENIDAS HERRAMIENTAS ADICONALES QUE FACILITEN NUESTRAS LABORES"
+    ],
+    "D3_OPEN": [
+      "INFORMAR, CAPACITAR E IMPLEMENTAR"
+    ],
+    "D4_OPEN": [
+      "ESPERO LA MEJORA CONSTANTE EN EL ESCANEO Y RELLENADO DE TEXTO, MISMA MEJORA QUE DISMUNIRA ERRORES DE TIPEO HUMANO"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · madurezDigital: gap 1.6.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=1.60), brechaDigital (gap=1.60), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=1.60), brechaDigital (gap=1.60), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "SEGURIDAD O ASCENDER EN LA LINEA DE OPERACIONES DONDE ME ECUENTRO",
       "aspiracion_slug": "operaciones"
     },

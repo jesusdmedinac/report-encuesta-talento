@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.595Z",
+  "generated_at": "2025-09-24T01:46:28.131Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.595Z",
+    "generatedAt": "2025-09-24T01:46:28.131Z",
     "schema": "individual-1.0",
     "id": "eqo68omevkawm4weqolsa8q6uloosz8e",
     "subject": {
       "nombreCompleto": "Gabriela Elissette Delgado Vinces",
       "email": "gdelgado@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.595Z",
+      "assessed_on": "2025-09-24T01:46:28.131Z",
       "demographics": {
         "rol": "Oficial de Banca Empresarial",
         "area": "banca empresarial",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Fase basica con lo que manejo actualmente"
+    ],
+    "D2_OPEN": [
+      "herramientas mas amigables pueda ver informacion a la mano"
+    ],
+    "D3_OPEN": [
+      "automatizar procesos el banco lo esta haciendo pero creo que hay areas que se estan quedando y con esto poder tener agilidad para respuesta a nuestros clientes"
+    ],
+    "D4_OPEN": [
+      "no siento que en las funciones que manejo actualmente en el banco la IA sea de preocupacion por que al estar en el area comercial la relacion con el cliente es mas personal, conocer sus necesidades y proyectos y con esto poder analizar como lograr atender al cliente."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 3 · madurezDigital: gap 2.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=3.00), madurezDigital (gap=2.30), brechaDigital (gap=1.90), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=3.00), madurezDigital (gap=2.30), brechaDigital (gap=1.90), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "mandos medios y gerente",
       "aspiracion_slug": "mandos"
     },

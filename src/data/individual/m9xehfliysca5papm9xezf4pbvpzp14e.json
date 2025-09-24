@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.565Z",
+  "generated_at": "2025-09-24T01:46:28.068Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.565Z",
+    "generatedAt": "2025-09-24T01:46:28.068Z",
     "schema": "individual-1.0",
     "id": "m9xehfliysca5papm9xezf4pbvpzp14e",
     "subject": {
       "nombreCompleto": "Diego Javier Reyes Medranda",
       "email": "dreyes2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.565Z",
+      "assessed_on": "2025-09-24T01:46:28.068Z",
       "demographics": {
         "rol": "Business Data Analyst",
         "area": "Tribu de Data y Analítica",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Constancia, perseverancia e innovacion"
+    ],
+    "D2_OPEN": [
+      "Capacitaciones en las diferentes herramientas de analisis que usa la Tribu. Por ejemplo Power Bi e inclusive profundizar aun mas el uso de SSMS con SQL para optimizar procesos"
+    ],
+    "D3_OPEN": [
+      "Conocer las necesidades de cada area para poder enfocar los esfuerzos en implementar las tecnologias como una via para optimizar procesos y facilitar sus actividades diarias"
+    ],
+    "D4_OPEN": [
+      "Me preocupa que nos volvamos muy dependientes de su uso a tal punto que consideremos las respuestas de los diversos modelos como \"verdades absolutas\" y perdamos esa costumbre de cuestionarnos de manera critica los datos o problemas que estemos analizando"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.3 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'business'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'business'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,12 @@
         }
       ],
       "role": "business",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Me gustaría poder alcanzar un rol Senior Data Analyst, en donde pueda desempeñar mi rol de analista de datos de manera más avanzada respaldado de un conocimiento y experiencia más profundos",
       "aspiracion_slug": "analitica_datos"
     },
@@ -326,18 +344,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.094Z",
+  "generated_at": "2025-09-24T01:46:29.334Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.094Z",
+    "generatedAt": "2025-09-24T01:46:29.334Z",
     "schema": "individual-1.0",
     "id": "ewc9bse2ht7fjyokdhej5ewc9bcwo7yo",
     "subject": {
       "nombreCompleto": "Paul Chacha",
       "email": "pchacha@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.094Z",
+      "assessed_on": "2025-09-24T01:46:29.334Z",
       "demographics": {
         "rol": "Pasante",
         "area": "Riesgo Integral",
@@ -207,13 +207,30 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Autodidacta"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "Incentivar al aprendisaje"
+    ],
+    "D4_OPEN": [
+      "Automatizar muchos procesos"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "pasante",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "proceso"
+      ]
     },
     "iniciativas": [
       {
@@ -238,31 +255,6 @@
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
-        ]
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
-        ],
-        "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
-        ],
-        "rutaDeCarrera": [
-          "analitica_datos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
         ]
       },
       {
@@ -307,6 +299,30 @@
         "rutaDeCarrera": [
           "operaciones",
           "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
+        "prioridad": "Media",
+        "plazoEstimado": "2-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [

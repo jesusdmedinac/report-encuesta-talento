@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.908Z",
+  "generated_at": "2025-09-24T01:46:31.358Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.908Z",
+    "generatedAt": "2025-09-24T01:46:31.358Z",
     "schema": "individual-1.0",
     "id": "ez90qgfdn21uvz94yez90izri65ortz3",
     "subject": {
       "nombreCompleto": "Jaime Játiva Vásconez",
       "email": "jjativa@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.908Z",
+      "assessed_on": "2025-09-24T01:46:31.358Z",
       "demographics": {
         "rol": "Developer - Analista",
         "area": "Tribu Comercios",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "La vida es un constante aprendizaje"
+    ],
+    "D2_OPEN": [
+      "Un mix de ambas, no siempre tenemos la oportunidad de sacarle el mayor provecho a las herramientas que tenemos a disposicion, a veces porque la operacion de nuestro trabajo no lo requiere, pero otras veces pudiera ser que no tenemos el cocimiento para hacerlo"
+    ],
+    "D3_OPEN": [
+      "Talleres y charlas con casos de uso de como en nuestras actividades cotidianas podemos hacer uso de la tecnologia"
+    ],
+    "D4_OPEN": [
+      "Preocupacion de momento no tengo, entiendo que la IA como una herramienta que puede potenciar mi rol, como expectativa tengo poder hacer mejor uso de la IA, profundizar en el conocimiento de su funcionamiento a fin de obtener mejores resultados de mis solicitudes."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.5.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'to_-_ingeniero_de_ia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='to_-_ingeniero_de_ia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

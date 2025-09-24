@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.333Z",
+  "generated_at": "2025-09-24T01:46:29.956Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.333Z",
+    "generatedAt": "2025-09-24T01:46:29.956Z",
     "schema": "individual-1.0",
     "id": "289vmzc619f0qnqv0289vrzpps9hmzbd",
     "subject": {
       "nombreCompleto": "Allan Romero",
       "email": "aromero@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.333Z",
+      "assessed_on": "2025-09-24T01:46:29.956Z",
       "demographics": {
         "rol": "Pasante de Banca empresas y cadena de valor",
         "area": "Banca Empresas",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Fue un gran viaje, como pasante que esta a pocos dias de finalizar su estadia en el Banco, espero seguir aprendiendo muchas mas herramientas dentro de la organizacion de cara al futuro."
+    ],
+    "D2_OPEN": [
+      "Creeria que con implementar mejoras en las herramientas ya existentes seria suficiente para hacer los procesos mas eficientes."
+    ],
+    "D3_OPEN": [
+      "Que todo cambio que este proximo a realizarse, sea socializado previamente."
+    ],
+    "D4_OPEN": [
+      "Que el ser humano dependa demasiado de la IA para no solo en lo laboral, si no en los demas pilares de la vida."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "pasante",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "proceso"
+      ]
     },
     "iniciativas": [
       {

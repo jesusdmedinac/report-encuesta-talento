@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.797Z",
+  "generated_at": "2025-09-24T01:46:31.118Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.797Z",
+    "generatedAt": "2025-09-24T01:46:31.118Z",
     "schema": "individual-1.0",
     "id": "5fpoeail6p187erm5fpoeaiu8mfql05e",
     "subject": {
       "nombreCompleto": "delfina anabell raura ubidia",
       "email": "anabellubidiar@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.797Z",
+      "assessed_on": "2025-09-24T01:46:31.118Z",
       "demographics": {
         "rol": "jefe de agencia",
         "area": "sucursales y agencias",
@@ -207,15 +207,54 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "aprendizaje en tiempo record"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion"
+    ],
+    "D3_OPEN": [
+      "talleres"
+    ],
+    "D4_OPEN": [
+      "ninguna me gusta"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "liderazgo",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit"
+      ]
     },
     "iniciativas": [
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ]
+      },
       {
         "id": "MD-02",
         "titulo": "Gobernanza de datos mínima viable",
@@ -239,30 +278,6 @@
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
-        ]
-      },
-      {
-        "id": "MD-03",
-        "titulo": "Taller de resolución de problemas complejos",
-        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "capacitacion",
-          "analitica"
-        ],
-        "rutaDeCarrera": [
-          "mandos",
-          "tecnico"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "resolucionDeProblemas"
         ]
       },
       {

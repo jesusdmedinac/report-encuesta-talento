@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:55.006Z",
+  "generated_at": "2025-09-24T01:46:31.518Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:55.006Z",
+    "generatedAt": "2025-09-24T01:46:31.518Z",
     "schema": "individual-1.0",
     "id": "tt6chjsee0necolqoauyntt6c3djbahh",
     "subject": {
       "nombreCompleto": "FERNANDA BUITRON RECALDE",
       "email": "mbuitron1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:55.006Z",
+      "assessed_on": "2025-09-24T01:46:31.518Z",
       "demographics": {
         "rol": "GESTOR",
         "area": "CASA FACIL",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Cada reto y obstaculo que se vaya dando, me permite encontrar una mejor version de mi."
+    ],
+    "D2_OPEN": [
+      "Pues pienso, que al menos en mi area si es necesario implementar un software o alguna herramienta practica sencilla que ejecute rapido el requerimiento, porque ese es el principal problema a veces; generar herramientas engorrosas que no apoyan al avance si no que lo frenan."
+    ],
+    "D3_OPEN": [
+      "Pienso que deberian designar oficiales que vayan a cada area, que conozcan el producto y la forma en que se ejecuta, para que puedan optimizar el servicio primero con el cliente interno y despues con el externo."
+    ],
+    "D4_OPEN": [
+      "La verdad, pienso que un trabajo bien echo es muy importante, tambien creo que con la IA se facilitaria mucho ciertos ambitos de nuestra area, pero pienso de igual forma que si es importante que una persona o varias le den continuidad, revision etc. Porque siempre va a necesitar ese control al detalle. No me siento incomoda porque se que ese es el futuro de muchas empresas, solo deben analizar la mejor forma de adecuarla al trabajo del dia dia."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'financiera_o_tesoreria'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='financiera_o_tesoreria'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'financiera_o_tesoreria'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='financiera_o_tesoreria'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,9 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "FINANCIERA O TESORERIA",
       "aspiracion_slug": "financiera_o_tesoreria"
     },

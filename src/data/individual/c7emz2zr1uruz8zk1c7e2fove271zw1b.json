@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.981Z",
+  "generated_at": "2025-09-24T01:46:29.039Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.981Z",
+    "generatedAt": "2025-09-24T01:46:29.039Z",
     "schema": "individual-1.0",
     "id": "c7emz2zr1uruz8zk1c7e2fove271zw1b",
     "subject": {
       "nombreCompleto": "Katherine Guarderas",
       "email": "kguarderas@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.981Z",
+      "assessed_on": "2025-09-24T01:46:29.039Z",
       "demographics": {
         "rol": "Implementación de Procesos de Sistemática Comercial en Dynamics",
         "area": "Procesos Comerciales y Servicios",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "No importa el camino, disfrutemos del paisaje"
+    ],
+    "D2_OPEN": [
+      "todas las opciones son validas"
+    ],
+    "D3_OPEN": [
+      "cuidar e incentivar la gestion de cambio"
+    ],
+    "D4_OPEN": [
+      "La IA puede tener sesgos o generar errores si no se entrena y supervisa correctamente"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.2 · usoInteligenciaArtificial: gap 0.9.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.20), usoInteligenciaArtificial (gap=0.90), culturaOrganizacional (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

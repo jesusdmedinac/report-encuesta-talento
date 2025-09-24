@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.306Z",
+  "generated_at": "2025-09-24T01:46:29.890Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.306Z",
+    "generatedAt": "2025-09-24T01:46:29.890Z",
     "schema": "individual-1.0",
     "id": "13gnqjtmd5qkh9d13gn4zndhgxbdl27c",
     "subject": {
       "nombreCompleto": "Marcia Ochoa",
       "email": "MOCHOA@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.306Z",
+      "assessed_on": "2025-09-24T01:46:29.890Z",
       "demographics": {
         "rol": "Product Analyst",
         "area": "Productos e Innovación",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Cambian las herramientas, pero no mis ganas de aprender: investigo, consulto y continuo"
+    ],
+    "D2_OPEN": [
+      "capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "cursos constantes"
+    ],
+    "D4_OPEN": [
+      "Expectativa: automatizar lo repetitivo (limpieza, reportes, resumenes) para enfocarme en descubrimiento y estrategia."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · madurezDigital: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), madurezDigital (gap=1.30), brechaDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'product'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), madurezDigital (gap=1.30), brechaDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'product'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "product",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit"
+      ],
       "aspiracionProfesional": "como PM",
       "aspiracion_slug": "gestion_producto"
     },
@@ -297,32 +313,6 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-06",
-        "titulo": "Taller de mapeo de procesos (hands-on)",
-        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
-        "areaEnfoque": "Procesos y Calidad",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "mandos"
-        ],
-        "tags": [
-          "procesos",
-          "eficiencia"
-        ],
-        "rutaDeCarrera": [
-          "operaciones",
-          "mandos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "proactividadDigital"
-        ],
-        "metric": "proactividaddigital",
-        "target": "8.0/10"
-      },
-      {
         "id": "MD-08",
         "titulo": "Laboratorio de automatización sin código",
         "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
@@ -340,6 +330,32 @@
         "rutaDeCarrera": [
           "operaciones",
           "comercial"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ],
+        "metric": "proactividaddigital",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "mandos"
+        ],
+        "tags": [
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
         ],
         "type": "KPI",
         "subdimensiones": [

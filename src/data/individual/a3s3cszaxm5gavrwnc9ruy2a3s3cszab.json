@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.769Z",
+  "generated_at": "2025-09-24T01:46:31.045Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.769Z",
+    "generatedAt": "2025-09-24T01:46:31.045Z",
     "schema": "individual-1.0",
     "id": "a3s3cszaxm5gavrwnc9ruy2a3s3cszab",
     "subject": {
       "nombreCompleto": "GENESIS GUADALUPE ALTAMIRANO GUIJARRO",
       "email": "galtamirano@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.769Z",
+      "assessed_on": "2025-09-24T01:46:31.045Z",
       "demographics": {
         "rol": "ASISTENTE",
         "area": "CAMARA COMPENSACION",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "TRANSFORMACION DIGITAL AVANZADA"
+    ],
+    "D2_OPEN": [
+      "YA NO DEBERIA EXISTIR REVISION MANUAL, DEBERIA SER DE MANERA AUTOMATICA LA VISUALIZACION DE CHEQUES TRANSFERIDO PARA UN MEJOR ENFOQUE AL SERVICIO QUE SE LE OFRECE AL CLIENTE Y DE LA MISMA MANERA TENER UNA IMPRESORA QUE DETECTE EL TIPO DE PAPEL O ALERTA PARA LOS CHEQUES ALTERADOS."
+    ],
+    "D3_OPEN": [
+      "Deposito digital usar mas cajeros o en las ventanillas ya no se recepten papeletas, que en las agencias en las pantallas hablen sobre como realizar un deposito, retiro o pago"
+    ],
+    "D4_OPEN": [
+      "El uso de IA es algo que con el tiempo reemplazara muchas cosas que hace una persona, sin embargo esto no lo cubriria por completo. Seria genial que ya no haya revision de cheques manual en Camara, que sea totalmente de manera automatica y que se tenga una tecnologia avanzada con la impresoras que pueda detectar alteraciones o el material de papel"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.6 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.80), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'oficial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='oficial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.80), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'oficial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='oficial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "asistente",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "OFICIAL",
       "aspiracion_slug": "oficial"
     },

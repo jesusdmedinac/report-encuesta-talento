@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.635Z",
+  "generated_at": "2025-09-24T01:46:28.220Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.635Z",
+    "generatedAt": "2025-09-24T01:46:28.220Z",
     "schema": "individual-1.0",
     "id": "3uokmxxiya7l501gy63uokmxhl2fyejg",
     "subject": {
       "nombreCompleto": "Marcelo David Anchundia Vélez",
       "email": "manchundia@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.635Z",
+      "assessed_on": "2025-09-24T01:46:28.220Z",
       "demographics": {
         "rol": "Asistente de Cajeros Automáticos Manabí",
         "area": "Operaciones",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Queda mucho por aprender y dominar las nuevas tecnologias y proyectos a futuro."
+    ],
+    "D2_OPEN": [
+      "Mas seminarios tecnicos vinculados a nuestra area"
+    ],
+    "D3_OPEN": [
+      "El seguimiento individual para proyectar el cambio"
+    ],
+    "D4_OPEN": [
+      "En mi caso es poco probable que la ia pueda realizar un trabajo de examinar hardware o condiciones de un cajero, sin si quiera estar presente y poder ejercer fuerza fisica para lidiar con algun problema presentado en un cajero, apagado forzosos, verificacion de conexiones electricas, cambios de rollos de papel, limpiezas de lectora por vandalismo, no son cosas que pueda hacer la ia."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

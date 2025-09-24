@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.867Z",
+  "generated_at": "2025-09-24T01:46:31.284Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.867Z",
+    "generatedAt": "2025-09-24T01:46:31.284Z",
     "schema": "individual-1.0",
     "id": "z6gz9e94ae3pjw8ludz6gz9eqxsgwxxv",
     "subject": {
       "nombreCompleto": "LUIS Mena Morales",
       "email": "lmena1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.867Z",
+      "assessed_on": "2025-09-24T01:46:31.284Z",
       "demographics": {
         "rol": "Ejecutivo Financiero",
         "area": "Segmentos y canales",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Exponencial"
+    ],
+    "D2_OPEN": [
+      "Existen muchos procesos de documentacion que son manualmente ingresados en el sistema. Incluso varios documentos se tienen que llenar varias veces con la misma informacion. Tener un documento generico que cubra la gran mayoria de servicios y seguros ayudaria mucho en el dia a dia. Podemos utilizar IA para que la documentacion pueda ser generada de forma mas eficiente y sin errores humanos. El enfoque comercial , se detiene con la operatividad que se puede ser mejorada , sin afectar el nivel de riesgo o incumplir politicas internas. De igual manera, pienso que utilizando un sistema de categorizacion como K means con 2 variables como ingresos y lealtad , pueden hacer al equipo ejecutor mucho mas eficiente."
+    ],
+    "D3_OPEN": [
+      "Promocionar el self-service hacia los clientes. Menos personas en las agencias, significa mas casos resueltos en casa. Con esto el equipo se puede especializar en casos mas complejos que requieran un expertice mayor."
+    ],
+    "D4_OPEN": [
+      "La mayor expectativa es poder dejar los procesos operativos atras y pensar en nuevas maneras de crear esa cercania y fidelidad con el cliente. La mayor preocupacion seria el tema de seguridad de informacion."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutivo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_llegar_a_una_subgerencia_.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_llegar_a_una_subgerencia_.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutivo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs segurid, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_llegar_a_una_subgerencia_.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_llegar_a_una_subgerencia_.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "ejecutivo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "segurid",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Aspiro llegar a una subgerencia .",
       "aspiracion_slug": "aspiro_llegar_a_una_subgerencia_."
     },

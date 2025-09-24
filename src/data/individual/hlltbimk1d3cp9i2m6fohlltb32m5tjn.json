@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.547Z",
+  "generated_at": "2025-09-24T01:46:30.457Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.547Z",
+    "generatedAt": "2025-09-24T01:46:30.457Z",
     "schema": "individual-1.0",
     "id": "hlltbimk1d3cp9i2m6fohlltb32m5tjn",
     "subject": {
       "nombreCompleto": "Xiomara Valenzuela",
       "email": "xvalenzuela@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.547Z",
+      "assessed_on": "2025-09-24T01:46:30.457Z",
       "demographics": {
         "rol": "Lideres CDS",
         "area": "Transformación",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "transformando paradigmas mentales"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion /actualizacion en las actuales y quizas explorar nuevas herramientas que muestren informacion mas dinamica"
+    ],
+    "D3_OPEN": [
+      "la empresa podria gestionar escuelas de aprendizaje continuo donde coloque video, tutoriales, etc.. de como utilizar herramientas tecnologicas que usan otros departamentos, tribus o equipos, he visto algunas plataformas que usan algunos squads para gestionar y monitorear los procesos de las cuales me gustaria conocer como utilizarlas para ver en que podrian servir a mi dia a dia, quizas esta muy segmentado que el uso de ciertas plataformas es de un equipo o rol especifico sin embargo considero que todos podriamos aprender. en lo personal me he inscrito particularmente a cursos de IA y otras plataformas para entender y aplicar conocimiento sin embargo esto demanda de una inversion particular."
+    ],
+    "D4_OPEN": [
+      "mi expectativa es verme con todo ese conocimiento integral de las mas relevantes IA que me ayuden a dinamizar mi dia a dia, en la gestion de equipos (personas) sobre todo, no me preocupa el uso de la IA, esta es muy valiosa para gestiones laborales y profesionales sin embargo es importante saber que seguimos siendo personas las que estamos detras de toda mejora, proyecto, anhelo de superacion y vision de una empresa y esta gestion de equipos y seres humanos reales en un tanto complejo reemplazar con IA, es ahi donde deseo abordar con expertiz y conocimiento"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · brechaDigital: gap 1.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10), madurezDigital (gap=0.80), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.10), madurezDigital (gap=0.80), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Gestionador y habilitador de equipos ágiles en entornos dinámicos",
       "aspiracion_slug": "tecnico"
     },

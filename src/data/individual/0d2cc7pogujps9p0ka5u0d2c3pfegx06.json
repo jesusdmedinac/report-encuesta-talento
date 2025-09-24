@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.983Z",
+  "generated_at": "2025-09-24T01:46:29.045Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.983Z",
+    "generatedAt": "2025-09-24T01:46:29.045Z",
     "schema": "individual-1.0",
     "id": "0d2cc7pogujps9p0ka5u0d2c3pfegx06",
     "subject": {
       "nombreCompleto": "ana vargas",
       "email": "AVARGAS@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:53.983Z",
+      "assessed_on": "2025-09-24T01:46:29.045Z",
       "demographics": {
         "rol": "Subgerente comercial",
         "area": "Negocios especializados",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje constante de curiosidad y adaptacion, donde cada interaccion es una oportunidad para crecer y conectar mejor"
+    ],
+    "D2_OPEN": [
+      "Una herramienta nueva que automatice tareas repetitivas (toma de proyecciones) junto con capacitacion para aprovechar al maximo las herramientas actuales."
+    ],
+    "D3_OPEN": [
+      "Creo que lo mas importante que la empresa podria hacer para acelerar la cultura digital es crear un ambiente donde todos se sientan comodos probando cosas nuevas, aprendiendo sin miedo a equivocarse y compartiendo ideas abiertamente. Cuando la gente siente que tiene apoyo y confianza, se anima mucho mas a sumarse al cambio."
+    ],
+    "D4_OPEN": [
+      "Que la Inteligencia Artificial te ayude a entender mejor a tus clientes, personalizar ofertas y cerrar ventas mas rapido. Pero tambien puede haber cierta preocupacion sobre perder el toque humano o que la tecnologia reemplace algunas interacciones clave."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.5 · culturaOrganizacional: gap 1.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente"
+      ],
       "aspiracionProfesional": "Gerente",
       "aspiracion_slug": "gerente"
     },

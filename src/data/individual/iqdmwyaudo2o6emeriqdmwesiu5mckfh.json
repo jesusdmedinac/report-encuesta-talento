@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.848Z",
+  "generated_at": "2025-09-24T01:46:28.717Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.848Z",
+    "generatedAt": "2025-09-24T01:46:28.717Z",
     "schema": "individual-1.0",
     "id": "iqdmwyaudo2o6emeriqdmwesiu5mckfh",
     "subject": {
       "nombreCompleto": "JUAN ALFREDO YUPA YUPA",
       "email": "jyupa@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.848Z",
+      "assessed_on": "2025-09-24T01:46:28.717Z",
       "demographics": {
         "rol": "SOY ANALISTA DE SEGURIDAD DE BANCA DIGITAL Y CUENTAS",
         "area": "SEGURIDAD INTEGRAL",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Es un viaje interminable. ¿Por que? Porque es necesario que constantemente estemos empapados de las mejoras practicas para el desarrollo de las funciones encomendadas. En ese sentido, esto es una tarea que debemos hacer todos los dias."
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta."
+    ],
+    "D3_OPEN": [
+      "Seguir motivando a los colaboradores a integrarse en los objetivos de la cultura digital."
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es que sea tan eficiente que logre optimizar mucho mas nuestros tiempos de trabajo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'customer_care'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='customer_care'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'customer_care'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='customer_care'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "colabor"
+      ],
       "aspiracionProfesional": "CUSTOMER CARE",
       "aspiracion_slug": "customer_care"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.039Z",
+  "generated_at": "2025-09-24T01:46:29.188Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.039Z",
+    "generatedAt": "2025-09-24T01:46:29.188Z",
     "schema": "individual-1.0",
     "id": "3p1542iyishqqhq3p15hgt8rzn7lz7o8",
     "subject": {
       "nombreCompleto": "MARIO MARURI",
       "email": "MMARURI1@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.039Z",
+      "assessed_on": "2025-09-24T01:46:29.188Z",
       "demographics": {
         "rol": "ANALISTA DE TARJETAS DE CREDITO",
         "area": "PRODUCTOS E INNOVACION",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un camino personal y dinamico de conocimientos"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "Estan muy bien las cursos y talleres que la empresa nos indica en el campus para aprendizaje"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que sirva como un asistente inteligente que automatice tareas que sean talvez tediosas o repetitivas, la idea es que la IA no reemplace, sino que la potencie las habilidades de la persona"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "Aspiro a un rol donde pueda aplicar y expandir mis conocimientos, que se pueda optimizar los procesos para que no se presente algun error operativo, en esencia el desarrollo profesional debe de ser una mejora continua de las capacidades para servir mejor a los clientes internos y externos",
       "aspiracion_slug": "tecnico"
     },

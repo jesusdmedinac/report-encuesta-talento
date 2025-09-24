@@ -38,19 +38,39 @@ function processSurveyData(rows) {
     const openEndedDataRaw = {};
     Object.keys(OPEN_ENDED_QUESTIONS).forEach(key => openEndedDataRaw[key] = []);
 
+    // Utilidades de normalización para localizar columnas de abiertas con prefijos
+    const normalize = (t) => String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+    const norm = (t) => normalize(t).toLowerCase().replace(/\s+/g, ' ');
+    const headerKeys = rows.length ? Object.keys(rows[0]) : [];
+    const findHeaderForQuestion = (questionText) => {
+        const needle = norm(questionText);
+        let h = headerKeys.find(k => norm(k) === needle);
+        if (h) return h;
+        h = headerKeys.find(k => norm(k).includes(needle));
+        if (h) return h;
+        h = headerKeys.find(k => {
+            const parts = String(k).split(':');
+            if (parts.length < 2) return false;
+            const tail = parts.slice(1).join(':');
+            return norm(tail).includes(needle);
+        });
+        return h || null;
+    };
+
     for (const row of rows) {
         const quantRow = {};
         for (const key in row) {
             const trimmedKey = key.trim();
             if (!ALL_NON_QUANTITATIVE_COLUMNS.includes(trimmedKey)) {
                 quantRow[trimmedKey] = row[key];
-            } else {
-                for (const open_key in OPEN_ENDED_QUESTIONS) {
-                    if (OPEN_ENDED_QUESTIONS[open_key] === trimmedKey && row[key]) {
-                        openEndedDataRaw[open_key].push(String(row[key]));
-                    }
-                }
             }
+        }
+        // Extraer abiertas por mapping robusto
+        for (const open_key in OPEN_ENDED_QUESTIONS) {
+            const label = OPEN_ENDED_QUESTIONS[open_key];
+            const header = findHeaderForQuestion(label);
+            const val = header ? row[header] : '';
+            if (val && String(val).trim()) openEndedDataRaw[open_key].push(String(val));
         }
         quantitativeData.push(quantRow);
     }

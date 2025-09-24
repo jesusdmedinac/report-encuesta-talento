@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.790Z",
+  "generated_at": "2025-09-24T01:46:28.598Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.790Z",
+    "generatedAt": "2025-09-24T01:46:28.598Z",
     "schema": "individual-1.0",
     "id": "2btsraei1xxbccg8uaa422btsraeint7",
     "subject": {
       "nombreCompleto": "katherine intriago",
       "email": "rintriago@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.790Z",
+      "assessed_on": "2025-09-24T01:46:28.598Z",
       "demographics": {
         "rol": "asesor comercial",
         "area": "comercial",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi aprendizaje digital ha sido como un camino lleno de descubrimientos, donde cada dia aprendo algo nuevo que me ayuda a manejar mejor la tecnologia y a crecer profesionalmente."
+    ],
+    "D2_OPEN": [
+      "tener un solo programa donde nos permita visualizar con el # de la cc todos los productos del cliente, sin necesidad de estar buscandolo en todos los comandos"
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es fomentar la capacitacion constante y accesible para todos los colaboradores, acompanada de una comunicacion abierta que promueva el uso de nuevas tecnologias y el intercambio de ideas. Ademas, incentivar una mentalidad de innovacion y adaptacion al cambio ayudara a que la transformacion digital sea mas rapida y efectiva."
+    ],
+    "D4_OPEN": [
+      "i bien la Inteligencia Artificial puede mejorar la eficiencia, me preocupa que una dependencia excesiva pueda reducir el contacto humano y la empatia, aspectos fundamentales para mantener relaciones solidas con los clientes."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.2 · brechaDigital: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.30), madurezDigital (gap=1.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'soporte_de_inversiones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='soporte_de_inversiones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.30), madurezDigital (gap=1.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor, cliente, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'soporte_de_inversiones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='soporte_de_inversiones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,12 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor",
+        "cliente",
+        "innov"
+      ],
       "aspiracionProfesional": "soporte de inversiones",
       "aspiracion_slug": "soporte_de_inversiones"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.218Z",
+  "generated_at": "2025-09-24T01:46:29.653Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.218Z",
+    "generatedAt": "2025-09-24T01:46:29.653Z",
     "schema": "individual-1.0",
     "id": "dg5afdspc0lu5c5sz8dg5af5uw9sm8dh",
     "subject": {
       "nombreCompleto": "MARIA JOSE CAZAR CUJILAN",
       "email": "mcazar@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.218Z",
+      "assessed_on": "2025-09-24T01:46:29.653Z",
       "demographics": {
         "rol": "cajero financiero",
         "area": "operativo",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "CONSTANCIA"
+    ],
+    "D2_OPEN": [
+      "EL SISTEMA DE DIGITALIZACION ES DEMASIADO LENTO E INTERMITENTE"
+    ],
+    "D3_OPEN": [
+      "LOS CLIENTES DESCONOCEN EL USO DE LA APP"
+    ],
+    "D4_OPEN": [
+      "Se puede disminuir la necesidad de personal pero no en su totalidad, hay tareas que son dificiles de ser autonomas. Los clientes debrian ser en completamente tecnologicos para no necesitar ventanillas para realizar sus transacciones.}"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "cliente"
+      ]
     },
     "iniciativas": [
       {

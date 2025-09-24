@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.760Z",
+  "generated_at": "2025-09-24T01:46:31.023Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.760Z",
+    "generatedAt": "2025-09-24T01:46:31.023Z",
     "schema": "individual-1.0",
     "id": "9il2nojjl2fuyacemck719il2nojjlkz",
     "subject": {
       "nombreCompleto": "Carolina Tituaña",
       "email": "ctituana@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.760Z",
+      "assessed_on": "2025-09-24T01:46:31.023Z",
       "demographics": {
         "rol": "Cajero financiero",
         "area": "Operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "El aprendizaje digital es una evolucion constante que me permite adquirir habilidades digitales para afrontar los retos del entorno laboral."
+    ],
+    "D2_OPEN": [
+      "Una combinacion de mas capacitacion y herramientas complemantarias seria lo ideal, ya que capacitarnos en funciones avanzadas de excel o software junto con el uso de herramientas para una gestion de tareas nos permite optimizar el tiempo y reducir errores."
+    ],
+    "D3_OPEN": [
+      "Lo mas importante seria impulsar una cultura de aprendizaje continuo brindando acceso a capacitaciones digitales practicas y fomentar el uso diario de herramientas tecnologicas en todas las areas."
+    ],
+    "D4_OPEN": [
+      "En un futuro espero que la IA se convierta en una herramienta que amente mi eficiencia, facilitando el analisis de datos y generando informes mas precisos en menos tiempo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.1 · brechaDigital: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), brechaDigital (gap=1.00), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), brechaDigital (gap=1.00), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos"
+      ],
       "aspiracionProfesional": "Mi objetivo es seguir creciendo en la empresa, desarrollando mis habilidades adquiridas en los años de universidad tanto tecnicas y de liderazgo. En un futuro me gustaria asumir un rol con mayor responsabilidad en el area de auditoria, ir avanzando hacia una posicion estrategica que me permita constribuir a la toma de decisiones y fortalecer los procesos de control interno y cumplimiento de la empresa.",
       "aspiracion_slug": "liderazgo"
     },

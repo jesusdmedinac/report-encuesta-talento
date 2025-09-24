@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.711Z",
+  "generated_at": "2025-09-24T01:46:28.414Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.711Z",
+    "generatedAt": "2025-09-24T01:46:28.414Z",
     "schema": "individual-1.0",
     "id": "6ds0sx6ki67cj6rlf6ds0dr67qgj0txu",
     "subject": {
       "nombreCompleto": "Cristina Mendieta",
       "email": "cmendieta@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.711Z",
+      "assessed_on": "2025-09-24T01:46:28.414Z",
       "demographics": {
         "rol": "ANALISTA DE CREDITO CONSUMO-PRODUCTOS E INNOVACIÓN",
         "area": "Tribu de Financiamiento - ANALISTA DE CREDITO CONSUMO-PRODUCTOS E INNOVACIÓN",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "El aprendizaje digital no tiene edad, cada herramienta es una oportunidad para avanzar."
+    ],
+    "D2_OPEN": [
+      "que la informacion del cliente sea presentada en una sola herramienta de consulta, de esta manera podriamos obtener un analisis mas rapido"
+    ],
+    "D3_OPEN": [
+      "acompanamiento constante y accesible para que todos podamos incorporar las herramientas digitales en nuestro dia a dia de forma natural"
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es que la IA sea una aliada para agilizar el analisis de informacion y mejorar la toma de decisiones, mi principal preocupacion es que al implementarla pueda dejar de lado el criterio humano, considero que sigue siendo clave en la evaluacion responsable de credito."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.1 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mi_aspiracion_es_continuar_creciendo_en_esta_area,_fortaleciendo_mis_capacidades_y_aportando_mas_valor_al_equipo_y_a_la_organizacion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mi_aspiracion_es_continuar_creciendo_en_esta_area,_fortaleciendo_mis_capacidades_y_aportando_mas_valor_al_equipo_y_a_la_organizacion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.10), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mi_aspiracion_es_continuar_creciendo_en_esta_area,_fortaleciendo_mis_capacidades_y_aportando_mas_valor_al_equipo_y_a_la_organizacion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mi_aspiracion_es_continuar_creciendo_en_esta_area,_fortaleciendo_mis_capacidades_y_aportando_mas_valor_al_equipo_y_a_la_organizacion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Mi aspiración es continuar creciendo en esta área, fortaleciendo mis capacidades y aportando más valor al equipo y a la organización",
       "aspiracion_slug": "mi_aspiracion_es_continuar_creciendo_en_esta_area,_fortaleciendo_mis_capacidades_y_aportando_mas_valor_al_equipo_y_a_la_organizacion"
     },

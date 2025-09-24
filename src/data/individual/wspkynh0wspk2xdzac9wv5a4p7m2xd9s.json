@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.394Z",
+  "generated_at": "2025-09-24T01:46:30.139Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.394Z",
+    "generatedAt": "2025-09-24T01:46:30.139Z",
     "schema": "individual-1.0",
     "id": "wspkynh0wspk2xdzac9wv5a4p7m2xd9s",
     "subject": {
       "nombreCompleto": "Iván Apunte",
       "email": "iapunte@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.394Z",
+      "assessed_on": "2025-09-24T01:46:30.139Z",
       "demographics": {
         "rol": "oficial senior",
         "area": "operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un recorrido infinito de datos y experiencias compartidas, aprendiendo de cada interaccion para ser mas util cada dia"
+    ],
+    "D2_OPEN": [
+      "tener cursos presenciales de plataformas digitales"
+    ],
+    "D3_OPEN": [
+      "fomentar una mentalidad de aprendizaje continuo"
+    ],
+    "D4_OPEN": [
+      "Pensando en el futuro, mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol es poder ser una herramienta aun mas personalizada, etica y colaborativa, que potencie las capacidades humanas sin reemplazarlas"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, colabor, etica): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,11 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "colabor",
+        "etica"
+      ],
       "aspiracionProfesional": "gerencia",
       "aspiracion_slug": "gerencia"
     },
@@ -292,6 +309,34 @@
         "target": "8.0/10"
       },
       {
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "rrhh",
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "eticayverificacion",
+        "target": "8.0/10"
+      },
+      {
         "id": "IA-03",
         "titulo": "Biblioteca de casos y prompts reutilizables",
         "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
@@ -304,33 +349,6 @@
         ],
         "tags": [
           "repositorio",
-          "prompt"
-        ],
-        "rutaDeCarrera": [
-          "gestion_producto",
-          "comercial"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "habilidadDeUso"
-        ],
-        "metric": "habilidaddeuso",
-        "target": "8.0/10"
-      },
-      {
-        "id": "IA-05",
-        "titulo": "Tomar curso por rol de Prompting",
-        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "comercial",
-          "tecnico",
-          "mandos"
-        ],
-        "tags": [
-          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

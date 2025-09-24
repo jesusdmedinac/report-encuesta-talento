@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.177Z",
+  "generated_at": "2025-09-24T01:46:29.540Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.177Z",
+    "generatedAt": "2025-09-24T01:46:29.540Z",
     "schema": "individual-1.0",
     "id": "hkaa258mwjk8mvf4dh3hkaa259bqnv6m",
     "subject": {
       "nombreCompleto": "MAURO RAMIRO CACERES PINEDA",
       "email": "MCACERES@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.177Z",
+      "assessed_on": "2025-09-24T01:46:29.540Z",
       "demographics": {
         "rol": "Gestor Banco del Barrio",
         "area": "Microfinanzas",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Crecimiento personal y profesional"
+    ],
+    "D2_OPEN": [
+      "Tener en tiempo real la frecuencia de deposito de los sobregiros de mis clientes minimo sus ultimos 10 depositos"
+    ],
+    "D3_OPEN": [
+      "Crear un programa de pasantias internas hacia las areas donde existe un manejo importante de estas nuevas herramientas Ejemplo: Gestor Banco del Barrio pasantia 5 o mas sesiones al area de Marketing Digital Esto daria practica en la marcha Incentivaria nuevos aprendizajes Aceleraria la vision y aprendizaje digital Crearia nuevas expectativas de optar por nuevos cargos etc.etc"
+    ],
+    "D4_OPEN": [
+      "Gran expectativa por la evolucion de nuestro canal con las nuevas herramientas o aplicaciones que estan por venir. Imagino dar un click en el nombre de mi cliente y ahi enseguida se despliegue todo unificado: Foto del propietario y dependientes Fecha de cumpleanos Estadisticas de crecimiento o no del ultimo ano Frecuencia de visitas Rentabilidad promedio y su detalle del el ultimo ano Buzon de sugerencias directo y cuantas de estas se implementaron Frecuencia de depositos Requerimientos CRM solicitados y cuantos fueron solucionados Detalle si esta o no fraccionando depositos EN FIN ESO Y MUCHAS COSAS MAS"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.20), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.20), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Área Marketing Digital \nSupervisión Banco del Barrio \nEducación Financiera",
       "aspiracion_slug": "marketing_digital"
     },

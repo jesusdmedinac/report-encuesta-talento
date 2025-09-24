@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.808Z",
+  "generated_at": "2025-09-24T01:46:31.146Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.808Z",
+    "generatedAt": "2025-09-24T01:46:31.146Z",
     "schema": "individual-1.0",
     "id": "20wyzif5bkfr9lc3r1320wyzighzioqs",
     "subject": {
       "nombreCompleto": "Andrea Maldonado",
       "email": "amaldonado@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.808Z",
+      "assessed_on": "2025-09-24T01:46:31.146Z",
       "demographics": {
         "rol": "marketig",
         "area": "marketing",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "estoy segura que hay una mejor forma de hacer esto."
+    ],
+    "D2_OPEN": [
+      "mas capacitacion en las actuales y que todo el equipo tenga la misma capacitacion."
+    ],
+    "D3_OPEN": [
+      "Democratizar los datos y alinear el mindset digital a lo largo de toda la organizacion, con ejemplos de conductas puntuales y especificas."
+    ],
+    "D4_OPEN": [
+      "expectativa sobre como podemos hacer mejores contenidos y aprender de ese proceso."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · madurezDigital: gap 0.8.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), madurezDigital (gap=0.80), brechaDigital (gap=0.80), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'marketig'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'direccion_de_mkt_o_de_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='direccion_de_mkt_o_de_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), madurezDigital (gap=0.80), brechaDigital (gap=0.80), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'marketig'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'direccion_de_mkt_o_de_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='direccion_de_mkt_o_de_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "marketig",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "proceso"
+      ],
       "aspiracionProfesional": "Dirección de mkt o de producto",
       "aspiracion_slug": "direccion_de_mkt_o_de_producto"
     },

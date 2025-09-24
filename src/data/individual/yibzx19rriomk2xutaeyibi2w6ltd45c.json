@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.034Z",
+  "generated_at": "2025-09-24T01:46:29.175Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.034Z",
+    "generatedAt": "2025-09-24T01:46:29.175Z",
     "schema": "individual-1.0",
     "id": "yibzx19rriomk2xutaeyibi2w6ltd45c",
     "subject": {
       "nombreCompleto": "Jimmy Pineda Gomez",
       "email": "jpineda@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.034Z",
+      "assessed_on": "2025-09-24T01:46:29.175Z",
       "demographics": {
         "rol": "DIGITAL MEDIA PLANNER",
         "area": "Marketing",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Siempre es bueno estar en constante actualizacion de conocimientos y nuevos aprendizajes. La innovacion y el aprendizaje es la clave del exito."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en los dashboards actuales y ayuda en la gestion de nuevos dashboards para productos en los cuales aun no tenemos toda la visibilidad necesaria. Adicional una capacitacion en la etapa de Monetizacion del cliente para retencion de los mismos."
+    ],
+    "D3_OPEN": [
+      "Impartir cursos de nuevas herramientas digitales para mejorar los procesos, optimizar y automatizar el trabajo de los colaboradores en caso de ser necesario."
+    ],
+    "D4_OPEN": [
+      "Expectativa, que nos ayude a automatizar procesos que aun son manuales en el 2025. Preocupacion, que le demos tanta informacion que comience a generar errores por que a veces como seres humanos en ocasiones podemos indicar una informacion o regla, pero luego del tiempo, esta instruccion puede cambiar a nivel negocio."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,14 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Actualmente aspiro a llegar a ser Growth Lead en Segmentos o Lead en Marketing, sin embargo, dentro de 5 años me gustaría estar en un cargo de Gerencia.",
       "aspiracion_slug": "marketing_digital"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.758Z",
+  "generated_at": "2025-09-24T01:46:28.518Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.758Z",
+    "generatedAt": "2025-09-24T01:46:28.518Z",
     "schema": "individual-1.0",
     "id": "ezsfp2rje66buvl5lfxp9ezsfp2rrgv1",
     "subject": {
       "nombreCompleto": "mylene navarrete",
       "email": "MNAVARRETE@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:53.758Z",
+      "assessed_on": "2025-09-24T01:46:28.518Z",
       "demographics": {
         "rol": "asesor comercial",
         "area": "comercial",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "aca depende al cargo tenemos los programas activos y actulaizados no es necesario buscar alternativas por que tenemos el area de sistemas que nos envia los cambio de procesos que son faciles para ejecutar, ahota ver tutoriales de los programas del bco en google imposible ya que son herramientas no publicas para poder yo hacer algo tecnologico adicional a mi cargo, todo se debe de reportar a las areas correspondientes para su aprobacion antes de ejecutar cualquier accion"
+    ],
+    "D2_OPEN": [
+      "como les explico depende al cargo nos dan capacitaciones para ingresar a cada herramienta"
+    ],
+    "D3_OPEN": [
+      "que los equipos que se mantienen en agencias son antiguos si creo que deberian invertir en equipos dentro de todo el bco,"
+    ],
+    "D4_OPEN": [
+      "depende de los casos que se vayan a ingresar"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 1.6.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.60), madurezDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=1.60), madurezDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "rrhh",
       "aspiracion_slug": "rrhh"
     },

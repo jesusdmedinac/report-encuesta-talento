@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.093Z",
+  "generated_at": "2025-09-24T01:46:29.333Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.093Z",
+    "generatedAt": "2025-09-24T01:46:29.333Z",
     "schema": "individual-1.0",
     "id": "7lcselx1ql714788t337lcselxoea6rl",
     "subject": {
       "nombreCompleto": "LAURA CHAVEZ GOMEZ",
       "email": "lchavez2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.093Z",
+      "assessed_on": "2025-09-24T01:46:29.333Z",
       "demographics": {
         "rol": "OFICIAL CUMPLIMIENOT NORMATIVO",
         "area": "RIESGO INTEGRAL",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "CONTINUO CAMBIANTE E INNOVADOR"
+    ],
+    "D2_OPEN": [
+      "ALCO COMO CANVAS QUE SEA SEGURO PARA LA ELABORACION DE PRESENTACIONES DINAMICAS"
+    ],
+    "D3_OPEN": [
+      "ACOMPANAMIENTO"
+    ],
+    "D4_OPEN": [
+      "SOLO QUE SEA SEGURO"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.5 · brechaDigital: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), brechaDigital (gap=1.30), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tengo_un_ano_y_medio_en_esta_posicion_aun_no_lo_he_evaluado_totalmente._sin_embargo_me_interesan_posiciones_de_organizacion_y_logistica_de_eventos_varios'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tengo_un_ano_y_medio_en_esta_posicion_aun_no_lo_he_evaluado_totalmente._sin_embargo_me_interesan_posiciones_de_organizacion_y_logistica_de_eventos_varios'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), brechaDigital (gap=1.30), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tengo_un_ano_y_medio_en_esta_posicion_aun_no_lo_he_evaluado_totalmente._sin_embargo_me_interesan_posiciones_de_organizacion_y_logistica_de_eventos_varios'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tengo_un_ano_y_medio_en_esta_posicion_aun_no_lo_he_evaluado_totalmente._sin_embargo_me_interesan_posiciones_de_organizacion_y_logistica_de_eventos_varios'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "innov"
+      ],
       "aspiracionProfesional": "TENGO UN AÑO Y MEDIO EN ESTA POSICION AUN NO LO HE EVALUADO TOTALMENTE. SIN EMBARGO ME INTERESAN POSICIONES DE ORGANIZACIÓN Y LOGISTICA DE EVENTOS VARIOS",
       "aspiracion_slug": "tengo_un_ano_y_medio_en_esta_posicion_aun_no_lo_he_evaluado_totalmente._sin_embargo_me_interesan_posiciones_de_organizacion_y_logistica_de_eventos_varios"
     },

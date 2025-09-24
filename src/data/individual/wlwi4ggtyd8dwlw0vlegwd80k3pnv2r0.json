@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.242Z",
+  "generated_at": "2025-09-24T01:46:29.718Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.242Z",
+    "generatedAt": "2025-09-24T01:46:29.718Z",
     "schema": "individual-1.0",
     "id": "wlwi4ggtyd8dwlw0vlegwd80k3pnv2r0",
     "subject": {
       "nombreCompleto": "LISBETH SOLANGE VERA BAZARAN",
       "email": "LVERA1@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.242Z",
+      "assessed_on": "2025-09-24T01:46:29.718Z",
       "demographics": {
         "rol": "CAJERO FINANCIERO",
         "area": "OPERACIONES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EFICIENCIA EN LOS PROCESOS"
+    ],
+    "D2_OPEN": [
+      "UNA NUEVA HERRAMIENTA UNA MAQUINA QUE PERMITA AL CLIENTE DESDE LA VENTANILLA QUE SE LO ESTA ATENTIENDO ESCRIBA CEDULA O NUMERO DE CUENTA Y SE AUTOMATICEN LOS DATOS YA NO MAS USO DE PAPELETA Y QUE EL CLIENTE TENGA LA RESPONSABILIDAD DE LO QUE ESTA PONIENDO O HACIENDO EN ESA HERRAMIENTA Y ALGO QUE BENEFICIE AL CLIENTE INCLUSO LOS DE LA TERCERA EDAD QUE SON QUIENES MAS QUIEREN PROCESOS AUTOMATIZADOS"
+    ],
+    "D3_OPEN": [
+      "EDUCAR O PROPORCIONAR INFORMACION EN AUSPICIOS A LOS CLIENTES PARA QUE SE MANTENGAN INFORMADOS DEL CAMBIO DESDE ANTES QUE INGRESE AL BANCO REDES SOCIALES CANALES TELEVISIVOS PAUSAS COMERCIALES"
+    ],
+    "D4_OPEN": [
+      "en mi rol de cajero creo que el uso de la tecnologia e innovacion serviria de apoyo, respaldo de que las personas que necesiten esos servicios sean los mismos que lo realicen y nosotros verificar la informacion dar el ok a lo que el cliente necesita"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 3.9 · usoInteligenciaArtificial: gap 2.6.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=3.90), usoInteligenciaArtificial (gap=2.60), culturaOrganizacional (gap=1.50), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'comercial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='comercial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=3.90), usoInteligenciaArtificial (gap=2.60), culturaOrganizacional (gap=1.50), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, datos, cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'comercial'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='comercial'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,13 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "datos",
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "COMERCIAL CLIENTE O SOPORTE INTENRO",
       "aspiracion_slug": "comercial"
     },

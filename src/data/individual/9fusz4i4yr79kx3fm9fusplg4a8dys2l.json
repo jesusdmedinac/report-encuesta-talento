@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.488Z",
+  "generated_at": "2025-09-24T01:46:30.312Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.488Z",
+    "generatedAt": "2025-09-24T01:46:30.312Z",
     "schema": "individual-1.0",
     "id": "9fusz4i4yr79kx3fm9fusplg4a8dys2l",
     "subject": {
       "nombreCompleto": "MARIA FERNANDA BUITRON RECALDE",
       "email": "mbuitron1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.488Z",
+      "assessed_on": "2025-09-24T01:46:30.312Z",
       "demographics": {
         "rol": "Gestor de Credito",
         "area": "casa facil",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Innovador"
+    ],
+    "D2_OPEN": [
+      "Optimizar los recursos en plataforma de BG para hacer todo en un solo sitio"
+    ],
+    "D3_OPEN": [
+      "Enfocarse mucho mas en las necesidades de cada area, tal vez delegar a una persona o dos para que puedan vivir lo que los funcionarios vivimos frente a los clientes y mejorar los sistemas"
+    ],
+    "D4_OPEN": [
+      "Expectativa: poder aprender a utilizar de mejor forma la IA para resolver de forma integra y facil las solicitudes de nuestros clientes"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · madurezDigital: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'financiero_o_tesoreria'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='financiero_o_tesoreria'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'financiero_o_tesoreria'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='financiero_o_tesoreria'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "innov"
+      ],
       "aspiracionProfesional": "Financiero o Tesoreria",
       "aspiracion_slug": "financiero_o_tesoreria"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.698Z",
+  "generated_at": "2025-09-24T01:46:30.857Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.698Z",
+    "generatedAt": "2025-09-24T01:46:30.857Z",
     "schema": "individual-1.0",
     "id": "fa2f37vu3ockagcyhwsbk5fa2lzsk4mb",
     "subject": {
       "nombreCompleto": "Jennifer Navarro Carpio",
       "email": "JNAVARRO@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.698Z",
+      "assessed_on": "2025-09-24T01:46:30.857Z",
       "demographics": {
         "rol": "DataOps Lead",
         "area": "Tecnología",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Muchos conceptos se han profundizado"
+    ],
+    "D2_OPEN": [
+      "mas capacitaciones en nuevas tecnologias, el las nuevas cosas que se han publicado en relacion a la ingenieria de sistemas"
+    ],
+    "D3_OPEN": [
+      "Tener mas acercamiento o canales de comunicaciones mas directos con clientes que se encuentran en el extranjero y que no se pueden comunicar por la via telefonica normal y que no sea solo por correo"
+    ],
+    "D4_OPEN": [
+      "En que la IA le reste importancia al valor humano"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "dataops",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente"
+      ]
     },
     "iniciativas": [
       {
@@ -241,6 +257,30 @@
         ]
       },
       {
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
+        "rolesPreferidos": [
+          "tecnico",
+          "mandos"
+        ],
+        "tags": [
+          "capacitacion",
+          "datos"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ]
+      },
+      {
         "id": "MD-02",
         "titulo": "Gobernanza de datos mínima viable",
         "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
@@ -259,30 +299,6 @@
         ],
         "rutaDeCarrera": [
           "analitica_datos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ]
-      },
-      {
-        "id": "MD-05",
-        "titulo": "Tomar curso corto de analítica aplicada",
-        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "tecnico",
-          "mandos"
-        ],
-        "tags": [
-          "capacitacion",
-          "datos"
-        ],
-        "rutaDeCarrera": [
-          "analitica_datos",
-          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

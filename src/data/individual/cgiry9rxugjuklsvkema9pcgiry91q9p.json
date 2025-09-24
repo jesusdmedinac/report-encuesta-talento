@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.538Z",
+  "generated_at": "2025-09-24T01:46:28.009Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.538Z",
+    "generatedAt": "2025-09-24T01:46:28.009Z",
     "schema": "individual-1.0",
     "id": "cgiry9rxugjuklsvkema9pcgiry91q9p",
     "subject": {
       "nombreCompleto": "Silvia Susana Espinar Hasing",
       "email": "sespinar@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.538Z",
+      "assessed_on": "2025-09-24T01:46:28.009Z",
       "demographics": {
         "rol": "Oficial Senior Secretaría Corporativa",
         "area": "Legal",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Considero encontrarme en constante mejora digital, busco la automatizacion en la mayor parte de mis tareas, del mismo modo lo ofrezco a mi equipo de trabajo"
+    ],
+    "D2_OPEN": [
+      "Me gustaria una herramienta o la facilidad para lograr consolidar en un solo archivo de presentacion, todos los archivos que recibimos de diferentes formatos"
+    ],
+    "D3_OPEN": [
+      "Que la transformacion digital no se vea como un “tema de sistemas”, sino como una forma de trabajo que mejora eficiencia, seguridad y cumplimiento. Esto implica que los lideres den ejemplo usando lo digital en reuniones, aprobaciones y toma de decisiones."
+    ],
+    "D4_OPEN": [
+      "Podria disminuir mucho el trabajo operativo, pero existen criterios y campos que siempre necesitaran la intervencion humana"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, segurid): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "oficial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "segurid"
+      ],
       "aspiracionProfesional": "Aspiro a especializar y mejorar el área en el que estoy, que tenga el peso estratégico en la gestión de la gobernanza corporativa de alto nivel, dejar buena impresión en los miembros que conforman nuestro directorio y comités, el área no ha evolucionado desde sus inicios",
       "aspiracion_slug": "liderazgo"
     },

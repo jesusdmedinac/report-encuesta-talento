@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.608Z",
+  "generated_at": "2025-09-24T01:46:30.622Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.608Z",
+    "generatedAt": "2025-09-24T01:46:30.622Z",
     "schema": "individual-1.0",
     "id": "b0kzj61oa3vz3v8b0kzgjw5oo8rd79av",
     "subject": {
       "nombreCompleto": "Kevin Coronel Cedeño",
       "email": "kcoronel@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.608Z",
+      "assessed_on": "2025-09-24T01:46:30.622Z",
       "demographics": {
         "rol": "Soporte de Crédito",
         "area": "Productos e Innovación",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Siempre hay algo por aprender todos los dias"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion con las herramientas actuales"
+    ],
+    "D3_OPEN": [
+      "Impulsar, motivar por medio de cursos, noticias para que el porcentaje de la poblacion que se mantiene al margen de la era digital pueda sentirse mas comoda y con mas confianza."
+    ],
+    "D4_OPEN": [
+      "Que muchos procesos manuales, se puedan reducir/eliminar, para asi poner mas atencion en lo que el rol humano puede hacer, y entregar trabajos y productos de mucha mayor calidad en funcion a las necesidades del negocio."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analista_de_productos_dentro_de_la_tribu_de_financiamiento'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analista_de_productos_dentro_de_la_tribu_de_financiamiento'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analista_de_productos_dentro_de_la_tribu_de_financiamiento'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analista_de_productos_dentro_de_la_tribu_de_financiamiento'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Analista de productos dentro de la tribu de financiamiento",
       "aspiracion_slug": "analista_de_productos_dentro_de_la_tribu_de_financiamiento"
     },

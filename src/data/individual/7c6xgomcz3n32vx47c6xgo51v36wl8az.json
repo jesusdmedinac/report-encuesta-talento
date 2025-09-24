@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:55.023Z",
+  "generated_at": "2025-09-24T01:46:31.553Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:55.023Z",
+    "generatedAt": "2025-09-24T01:46:31.553Z",
     "schema": "individual-1.0",
     "id": "7c6xgomcz3n32vx47c6xgo51v36wl8az",
     "subject": {
       "nombreCompleto": "MIGUEL BUSTAMANATE",
       "email": "mbustamante1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:55.023Z",
+      "assessed_on": "2025-09-24T01:46:31.553Z",
       "demographics": {
         "rol": "ASESOR COMERCIAL",
         "area": "RED DE SEGMENTOS Y CANALES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "BUSCO QUE SEA PROACTIVO Y ME AYUDE A SER MAS EFEICAZ EN LOS PROCESOS QUE REALIZAMOS TODOS LOS DIAS"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion en herramientas de Excel, power bi"
+    ],
+    "D3_OPEN": [
+      "FOMENTAR MAS EL USO DE EL APP Y CANALES VIRTUALES, DAR ALGUN TIPO DE INCETIVO AL CLTE AL MOMENTO DE USAR LA APLICACION PARA DIFERENTES SERVICIOS"
+    ],
+    "D4_OPEN": [
+      "QUE HAGA TAREAS Y QUE BAJE LA CARGA LABORAL DE MI PUESTO Y ASI PODER DEDICAR EL TIEMPO A OTRAS ACTIVIADES QUE DEMANDEN MAS TIEMPO"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.6 · culturaOrganizacional: gap 1.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), culturaOrganizacional (gap=1.50), brechaDigital (gap=1.10), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), culturaOrganizacional (gap=1.50), brechaDigital (gap=1.10), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,42 +244,47 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "RECURSOS HUMANOS AREA DE SELECCION Y EVENTOS , NOMINA, TALENT PARTNER",
       "aspiracion_slug": "rrhh"
     },
     "iniciativas": [
       {
-        "id": "MD-07",
-        "titulo": "Shadowing de PM en discovery",
-        "descripcion": "Acompañar 2-3 sesiones de descubrimiento de producto y redactar un brief con hallazgos accionables.",
-        "areaEnfoque": "Producto",
-        "prioridad": "Baja",
-        "plazoEstimado": "2-3 semanas",
+        "id": "MD-01",
+        "titulo": "Definir hoja de ruta de madurez digital",
+        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
+        "areaEnfoque": "Estrategia y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "6-8 semanas",
         "rolesPreferidos": [
-          "comercial",
-          "tecnico"
+          "liderazgo",
+          "mandos"
         ],
         "tags": [
-          "cliente",
-          "discovery"
+          "roadmap",
+          "procesos",
+          "priorizacion"
         ],
         "rutaDeCarrera": [
-          "gestion_producto",
-          "comercial"
+          "liderazgo"
         ],
         "type": "OKR",
         "subdimensiones": [
-          "resolucionDeProblemas"
+          "resolucionDeProblemas",
+          "proactividadDigital"
         ],
+        "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
         "key_results": [
           {
-            "metric": "proactividadDigital",
-            "target": "8.0/10"
+            "metric": "resolucionDeProblemas",
+            "target": "+1.0"
           },
           {
-            "metric": "adaptabilidad",
-            "target": "8.0/10"
+            "metric": "proactividadDigital",
+            "target": "+1.0"
           }
         ]
       },

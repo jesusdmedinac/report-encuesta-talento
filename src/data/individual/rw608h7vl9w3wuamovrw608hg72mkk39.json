@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.600Z",
+  "generated_at": "2025-09-24T01:46:30.601Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.600Z",
+    "generatedAt": "2025-09-24T01:46:30.601Z",
     "schema": "individual-1.0",
     "id": "rw608h7vl9w3wuamovrw608hg72mkk39",
     "subject": {
       "nombreCompleto": "María Cristina Castro",
       "email": "mcastro3@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.600Z",
+      "assessed_on": "2025-09-24T01:46:30.601Z",
       "demographics": {
         "rol": "Líder de tribu",
         "area": "Customer Care",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Adaptacion al cambio"
+    ],
+    "D2_OPEN": [
+      "Me siento bien con las herramientas, mas bien es la velocidad con la que podemos tener informacion confiable"
+    ],
+    "D3_OPEN": [
+      "Vivir a traves de los datos los crecimientos que la tecnologia nos da, y lo que perderiamos si no la tenemos; como les ahorramos tiempo para las cosas que verdaderamente importan"
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es poder reducir de trabajo y carga operativa para incrementar la solucion a nuestros clientes en el Primer contacto sin preocuparme que la informacion no sea desactualizado"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.3 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vp'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vp'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vp'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vp'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "cliente"
+      ],
       "aspiracionProfesional": "VP",
       "aspiracion_slug": "vp"
     },

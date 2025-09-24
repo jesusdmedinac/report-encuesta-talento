@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.585Z",
+  "generated_at": "2025-09-24T01:46:30.559Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.585Z",
+    "generatedAt": "2025-09-24T01:46:30.559Z",
     "schema": "individual-1.0",
     "id": "mc0yq5k0gsbetps0x96kmc0yq06291r0",
     "subject": {
       "nombreCompleto": "Lourdes Alava Franco",
       "email": "luli291092@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.585Z",
+      "assessed_on": "2025-09-24T01:46:30.559Z",
       "demographics": {
         "rol": "VIRTUALIZATION ENGINEER",
         "area": "COMPUTING & CONTAINER PLATFORM",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Una montana rusa de eventos de donde siempre se obtiene un conocimiento adicional"
+    ],
+    "D2_OPEN": [
+      "Mejorar el uso de las herramientas con las que ya contamos, saber como utilizarlas al 100%"
+    ],
+    "D3_OPEN": [
+      "Lo mas importante es que el liderazgo impulse con el ejemplo, redisene procesos para que lo digital sea lo mas natural y fomente una cultura de aprendizaje y experimentacion continua, reconociendo a quienes adopten y difundan estas practicas."
+    ],
+    "D4_OPEN": [
+      "Espero que la IA me ayude a automatizar tareas repetitivas y de monitoreo para poder dedicar mas tiempo a disenar y optimizar los entornos. Me preocupa que lleguemos a depender tanto de ella que se pierda el criterio tecnico para resolver problemas criticos de forma manual."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · brechaDigital: gap 0.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'virtualization'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'technical_lead'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='technical_lead'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'virtualization'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'technical_lead'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='technical_lead'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "virtualization",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "proceso"
+      ],
       "aspiracionProfesional": "Technical Lead",
       "aspiracion_slug": "technical_lead"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.387Z",
+  "generated_at": "2025-09-24T01:46:30.126Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.387Z",
+    "generatedAt": "2025-09-24T01:46:30.126Z",
     "schema": "individual-1.0",
     "id": "iid5g1zn6mroghxoiid5g1is13xeek48",
     "subject": {
       "nombreCompleto": "ALEX LOYOLA SARMIENTO",
       "email": "alex1222_@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.387Z",
+      "assessed_on": "2025-09-24T01:46:30.126Z",
       "demographics": {
         "rol": "CAJERO FINANCIERO",
         "area": "OPERATIVO",
@@ -207,13 +207,30 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INNOVACION"
+    ],
+    "D2_OPEN": [
+      "UNA NUEVA HERRAMIENTA"
+    ],
+    "D3_OPEN": [
+      "CONTINUAR CON LOS PROCESOS DE FORMACION Y CAPACITACION CONTINUA"
+    ],
+    "D4_OPEN": [
+      "FALTA DE PENSAMIENTO CRITICO"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit",
+        "proceso",
+        "innov"
+      ]
     },
     "iniciativas": [
       {
@@ -289,24 +306,23 @@
         ]
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "capacitacion",
+          "datos"
         ],
         "rutaDeCarrera": [
-          "analitica_datos"
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

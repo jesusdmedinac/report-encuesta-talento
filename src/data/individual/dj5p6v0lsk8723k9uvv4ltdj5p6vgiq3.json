@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.737Z",
+  "generated_at": "2025-09-24T01:46:30.965Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.737Z",
+    "generatedAt": "2025-09-24T01:46:30.965Z",
     "schema": "individual-1.0",
     "id": "dj5p6v0lsk8723k9uvv4ltdj5p6vgiq3",
     "subject": {
       "nombreCompleto": "Neil Nuñez Montiel",
       "email": "nnunez1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.737Z",
+      "assessed_on": "2025-09-24T01:46:30.965Z",
       "demographics": {
         "rol": "TTL Nexus",
         "area": "Tecnología",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "aprendizaje continuo"
+    ],
+    "D2_OPEN": [
+      "permitir la exploracion de nuevas herramientas y quitar tantos bloqueos"
+    ],
+    "D3_OPEN": [
+      "quitar tantas barreras para usar nuevas herramientas, sericios y plataformas"
+    ],
+    "D4_OPEN": [
+      "acelerar el trabajo"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 1.3.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.50), madurezDigital (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ttl'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.901Z",
+  "generated_at": "2025-09-24T01:46:31.342Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.901Z",
+    "generatedAt": "2025-09-24T01:46:31.342Z",
     "schema": "individual-1.0",
     "id": "v4gk0jnv5qfygolfnpwwqv4gk0qy6ovi",
     "subject": {
       "nombreCompleto": "Julio Cesar Vivas Molina",
       "email": "jvivas@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.901Z",
+      "assessed_on": "2025-09-24T01:46:31.342Z",
       "demographics": {
         "rol": "Pasante de desarrollo",
         "area": "Tecnologia",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Ha sido una evolucion progresiva en las areas de software, datos e inteligencia artificial orientado al dominio de herramientas tecnologicas para construir soluciones basadas en informacion."
+    ],
+    "D2_OPEN": [
+      "Nuevas herramientas adaptadas a aumentar la productividad usando editores de codigo basados en ia como windsurf y cursor."
+    ],
+    "D3_OPEN": [
+      "Uso de herramientas modernas basadas en inteligencia artificial y automatizacion, capacitar continuamente al personal en tecnologias emergentes y promover una mentalidad de innovacion para experimentar nuevas soluciones."
+    ],
+    "D4_OPEN": [
+      "La mayor expectativa es que me pueda ayudar a automatizar tareas repetitivas, mejorar la calidad del codigo y acelerar el desarrollo de soluciones basadas en datos. La mayor preocupacion seria la dependencia excesiva de la ia sin validacion humana."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,12 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos",
+        "innov"
+      ],
       "aspiracionProfesional": "Hacia un rol de liderazgo técnico, como arquitecto de software, technical owner o líder de desarrollo, aunque también aspiro a relacionarme en áreas relacionadas a datos e inteligencia artificial",
       "aspiracion_slug": "liderazgo"
     },

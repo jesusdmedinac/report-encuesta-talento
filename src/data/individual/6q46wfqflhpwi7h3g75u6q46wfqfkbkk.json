@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.859Z",
+  "generated_at": "2025-09-24T01:46:31.265Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.859Z",
+    "generatedAt": "2025-09-24T01:46:31.265Z",
     "schema": "individual-1.0",
     "id": "6q46wfqflhpwi7h3g75u6q46wfqfkbkk",
     "subject": {
       "nombreCompleto": "Joel De La Rosa Zambrano",
       "email": "jdelarosa@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.859Z",
+      "assessed_on": "2025-09-24T01:46:31.265Z",
       "demographics": {
         "rol": "Asistente CAU",
         "area": "Tecnologia",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Cotidiano"
+    ],
+    "D2_OPEN": [
+      "Estaria bien explorar si existe algun otro proveedor de VDI's en Azure o algo parecido para buscar mejoras los usuarios suelen quejarse por los errores en correo, teams y demas aplicativos."
+    ],
+    "D3_OPEN": [
+      "En promedio podria decir que los usuarios si cuentan con una cultura digital prometedora al estar expuestos a sistemas constantemente es comun que se acostumbren a tratar con lo digital."
+    ],
+    "D4_OPEN": [
+      "Creo que es una tecnologia interesante que ahorra mucho tiempo. Expectativa: que pueda ser incorporada en atencion al cliente hasta cierto punto en llamadas. Estaria interesante hacer algun tipo de levantamiento de informacion con un experimento a ver la tasa de exito/satisfaccion. Preocupacion, ninguna creo que abrira muchas puertas si se trabaja en el campo tecnologico el adaptarse es una cualidad no negociable."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'dentro_del_banco_a_mediano_plazo_oficial_senior_u_oficial_son_roles_a_los_que_aspiro._a_largo_plazo_me_gustaria_ser_vp_pero_me_gusta_mas_la_idea_de_tener_mi_propia_empresa_o_ambas.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='dentro_del_banco_a_mediano_plazo_oficial_senior_u_oficial_son_roles_a_los_que_aspiro._a_largo_plazo_me_gustaria_ser_vp_pero_me_gusta_mas_la_idea_de_tener_mi_propia_empresa_o_ambas.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'dentro_del_banco_a_mediano_plazo_oficial_senior_u_oficial_son_roles_a_los_que_aspiro._a_largo_plazo_me_gustaria_ser_vp_pero_me_gusta_mas_la_idea_de_tener_mi_propia_empresa_o_ambas.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='dentro_del_banco_a_mediano_plazo_oficial_senior_u_oficial_son_roles_a_los_que_aspiro._a_largo_plazo_me_gustaria_ser_vp_pero_me_gusta_mas_la_idea_de_tener_mi_propia_empresa_o_ambas.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,9 @@
         }
       ],
       "role": "asistente",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Dentro del banco a mediano plazo Oficial Senior u Oficial  son roles a los que aspiro. \nA largo plazo me gustaría ser VP pero me gusta mas la idea de tener mi propia empresa o ambas.",
       "aspiracion_slug": "dentro_del_banco_a_mediano_plazo_oficial_senior_u_oficial_son_roles_a_los_que_aspiro._a_largo_plazo_me_gustaria_ser_vp_pero_me_gusta_mas_la_idea_de_tener_mi_propia_empresa_o_ambas."
     },

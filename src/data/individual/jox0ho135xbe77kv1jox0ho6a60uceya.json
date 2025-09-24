@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.264Z",
+  "generated_at": "2025-09-24T01:46:29.770Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.264Z",
+    "generatedAt": "2025-09-24T01:46:29.770Z",
     "schema": "individual-1.0",
     "id": "jox0ho135xbe77kv1jox0ho6a60uceya",
     "subject": {
       "nombreCompleto": "Kristye Apraez",
       "email": "kapraez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.264Z",
+      "assessed_on": "2025-09-24T01:46:29.770Z",
       "demographics": {
         "rol": "asesor digital",
         "area": "customer care",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "experiencia, adaptacion a nuevas metodologias de trabajo."
+    ],
+    "D2_OPEN": [
+      "todas son validas. como trata de procesos nuevos, recibir informacion antes de cambios o implementacion de nuevas funcionalidades para conocimiento e informacion al cliente"
+    ],
+    "D3_OPEN": [
+      "aprendizaje continuo, mas capacitacion, tutoriales"
+    ],
+    "D4_OPEN": [
+      "Automatizacion de tareas repetitivas/manuales."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.70), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tribu,_business_banking,_al_area_de_onboarding_y_contratacion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tribu,_business_banking,_al_area_de_onboarding_y_contratacion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.70), madurezDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tribu,_business_banking,_al_area_de_onboarding_y_contratacion'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tribu,_business_banking,_al_area_de_onboarding_y_contratacion'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,12 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "TRIBU, business banking,  al área de onboarding y contratación",
       "aspiracion_slug": "tribu,_business_banking,_al_area_de_onboarding_y_contratacion"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.937Z",
+  "generated_at": "2025-09-24T01:46:31.411Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.937Z",
+    "generatedAt": "2025-09-24T01:46:31.411Z",
     "schema": "individual-1.0",
     "id": "glni5354toyon509iglni5k0cre74l5w",
     "subject": {
       "nombreCompleto": "Cristian David Chimbo Tamami",
       "email": "cchimbo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.937Z",
+      "assessed_on": "2025-09-24T01:46:31.411Z",
       "demographics": {
         "rol": "Soporte Climatización",
         "area": "Mantenimiento General",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "EMOCIONANTE Y SATISFACTORIO"
+    ],
+    "D2_OPEN": [
+      "Acceso a las herramientas de IA como Claude para integracion de Servidores MCP que permitan automatizar tareas repetitivas."
+    ],
+    "D3_OPEN": [
+      "Dar a conocer los proyectos tecnologicos en los cuales trabaja e incentivas a los colaboradores a buscar nuevas soluciones en su espacio de trabajo."
+    ],
+    "D4_OPEN": [
+      "Que todas las tareas repetitivas sean automatizadas por agentes de IA con la finalidad que los colaboradores nos dediquemos al analisis de los resultados, toma de decisiones y ejecucion de los trabajos, a la par seguir innovando en la implementacion de nuevos procesos y estrategias que permitan impulsar el crecimiento del banco."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_de_tecnologia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_de_tecnologia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, colabor, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_de_tecnologia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_de_tecnologia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,12 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "colabor",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Área de Tecnología",
       "aspiracion_slug": "area_de_tecnologia"
     },
@@ -307,28 +325,27 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "id": "CU-08",
+        "titulo": "Serie de micro-retos de automatización",
+        "descripcion": "Retos quincenales para automatizar pequeñas tareas y compartir plantillas reutilizables.",
         "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
+          "operaciones",
+          "comercial"
         ],
         "tags": [
           "experimentacion",
-          "reconocimiento"
+          "automatizacion"
         ],
         "rutaDeCarrera": [
-          "liderazgo",
-          "mandos"
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
+          "experimentacion"
         ],
         "metric": "experimentacion",
         "target": "8.0/10"

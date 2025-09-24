@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.923Z",
+  "generated_at": "2025-09-24T01:46:28.889Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.923Z",
+    "generatedAt": "2025-09-24T01:46:28.889Z",
     "schema": "individual-1.0",
     "id": "5ldeou63gvi87d95lder2s0079x8je22",
     "subject": {
       "nombreCompleto": "ERICKA PAMELA SEMINARIO MATUTE",
       "email": "eseminario@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.923Z",
+      "assessed_on": "2025-09-24T01:46:28.889Z",
       "demographics": {
         "rol": "Supervisor de crédito HD y MC",
         "area": "Circulo de Servicios de Crédito.",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Me adapto con rapidez a nuevas herramientas digitales."
+    ],
+    "D2_OPEN": [
+      "Me ayudaria a ser mas eficiente crear o mejorar el sistema actual para asi buscar la mejora en los procesos."
+    ],
+    "D3_OPEN": [
+      "Considero lo mas importante es la adaptacion y el aprendizaje continuo."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la IA nos apoye en la toma de decisiones con analisis mas rapidos mejorando la deteccion del riesgo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.6 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.60), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'mandos'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.60), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'mandos'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,9 @@
         }
       ],
       "role": "mandos",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "proceso"
+      ],
       "aspiracionProfesional": "Busco proyectarme hacia posiciones que combine la gestión y estrategia en los créditos de consumo, desarrollando mis habilidades que me permitan optimizar procesos a aportar mejoras.",
       "aspiracion_slug": "tecnico"
     },

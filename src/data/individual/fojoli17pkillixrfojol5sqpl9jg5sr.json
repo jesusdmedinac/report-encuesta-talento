@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.839Z",
+  "generated_at": "2025-09-24T01:46:28.696Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.839Z",
+    "generatedAt": "2025-09-24T01:46:28.696Z",
     "schema": "individual-1.0",
     "id": "fojoli17pkillixrfojol5sqpl9jg5sr",
     "subject": {
       "nombreCompleto": "RUBEN ALEJANDRO BERMEO BURBANO",
       "email": "rbermeo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.839Z",
+      "assessed_on": "2025-09-24T01:46:28.696Z",
       "demographics": {
         "rol": "Analyst",
         "area": "Tribu Segmentos Personas",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Ha sido un proceso constante de adaptacion y curiosidad, donde cada herramienta digital que aprendo me abre nuevas formas de trabajar mas agil y mejor en mi dia a dia"
+    ],
+    "D2_OPEN": [
+      "Creo que lo que mas me ayudaria es tener mas capacitacion en las herramientas que ya uso, para aprovechar todo su potencial y automatizar procesos que hoy hago de forma manual"
+    ],
+    "D3_OPEN": [
+      "Considero que lo mas importante es seguir fortaleciendo la capacitacion practica en herramientas digitales y fomentar espacios donde podamos compartir buenas practicas entre equipos; eso haria que la cultura digital se adopte mas rapido en el dia a dia"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la IA me ayude a automatizar tareas repetitivas para dedicar mas tiempo al analisis estrategico; mi preocupacion es que, sin una buena capacitacion, se use de forma limitada y no logremos aprovechar todo su potencial."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analyst'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analyst'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "analyst",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "proceso"
+      ],
       "aspiracionProfesional": "Me gustaría crecer hacia un rol de manager en el que pueda combinar la parte estratégica y analítica, liderar proyectos y aportar en la toma de decisiones para alcanzar los objetivos del área.",
       "aspiracion_slug": "liderazgo"
     },
@@ -315,18 +332,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

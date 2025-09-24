@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.876Z",
+  "generated_at": "2025-09-24T01:46:28.768Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.876Z",
+    "generatedAt": "2025-09-24T01:46:28.768Z",
     "schema": "individual-1.0",
     "id": "5gn0wiu0i04w7xmu3nds8s5gn0wi1nbu",
     "subject": {
       "nombreCompleto": "LOURDES Zeas",
       "email": "lzeas@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.876Z",
+      "assessed_on": "2025-09-24T01:46:28.768Z",
       "demographics": {
         "rol": "Atención de mejoras e incidencias de Peigo",
         "area": "Medios de Pago",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprender, adaptarme y mejorar constantemente para crear soluciones cada vez mas efectivas."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las herramientas actuales y nuevas"
+    ],
+    "D3_OPEN": [
+      "Fomentar una mentalidad digital en todos los niveles, impulsando la capacitacion continua con talleres o cursos presenciales, la colaboracion entre areas y la toma de decisiones basada en datos."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la Inteligencia Artificial potencie la eficiencia y creatividad, liberandome de tareas operativas que demandan mucho tiempo, para enfocarme en decisiones estrategicas. Mi preocupacion es asegurar que el uso de IA sea etico, transparente y que nos complemente en nuestras tareas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.4 · culturaOrganizacional: gap 1.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.40), culturaOrganizacional (gap=1.50), brechaDigital (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'atencion'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.40), culturaOrganizacional (gap=1.50), brechaDigital (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'atencion'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,11 @@
         }
       ],
       "role": "atencion",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "colabor"
+      ],
       "aspiracionProfesional": "Product Manager ya sea en el equipo de trabajo actual u otro equipo",
       "aspiracion_slug": "gestion_producto"
     },

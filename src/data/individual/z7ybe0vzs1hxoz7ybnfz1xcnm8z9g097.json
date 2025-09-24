@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.763Z",
+  "generated_at": "2025-09-24T01:46:28.528Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.763Z",
+    "generatedAt": "2025-09-24T01:46:28.528Z",
     "schema": "individual-1.0",
     "id": "z7ybe0vzs1hxoz7ybnfz1xcnm8z9g097",
     "subject": {
       "nombreCompleto": "Jorge Castillo",
       "email": "jcastillo2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.763Z",
+      "assessed_on": "2025-09-24T01:46:28.528Z",
       "demographics": {
         "rol": "Auxiliar",
         "area": "Talento y cultura",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital ha sido un camino de descubrimiento, donde cada herramienta y experiencia me acerca no solo a ser mejor profesional, sino tambien a apoyar con mas corazon y eficacia a las personas que me rodean en su dia a dia"
+    ],
+    "D2_OPEN": [
+      "Me ayudaria tener la posibilidad de usar las aplicaciones de Microsoft en vez de usar en la web"
+    ],
+    "D3_OPEN": [
+      "Acelerar nuestra cultura digital no es solo implementar nuevas herramientas, sino lograr que cada colaborador se sienta parte del cambio, brindandonos confianza, formacion y apoyo para crecer juntos en este camino"
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es que la IA me ayude a simplificar tareas repetitivas para dedicar mas tiempo a lo que realmente importa: las personas. Mi preocupacion es que, si no se acompana de capacitacion, pueda sentirse como un reemplazo en lugar de una herramienta que potencie nuestro trabajo"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.5 · brechaDigital: gap 1.4.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), brechaDigital (gap=1.40), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'auxiliar'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.50), brechaDigital (gap=1.40), usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'auxiliar'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "auxiliar",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor"
+      ],
       "aspiracionProfesional": "Analista administrativo",
       "aspiracion_slug": "operaciones"
     },

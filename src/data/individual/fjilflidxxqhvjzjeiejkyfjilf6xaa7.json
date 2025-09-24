@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.627Z",
+  "generated_at": "2025-09-24T01:46:28.209Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.627Z",
+    "generatedAt": "2025-09-24T01:46:28.209Z",
     "schema": "individual-1.0",
     "id": "fjilflidxxqhvjzjeiejkyfjilf6xaa7",
     "subject": {
       "nombreCompleto": "ALLISON NICOLLE CORDERO SAGBAY",
       "email": "acordero@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.627Z",
+      "assessed_on": "2025-09-24T01:46:28.209Z",
       "demographics": {
         "rol": "asesor comercial",
         "area": "tribu segmentos y canales",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "mi viaje de aprendizaje digital ha sido un proceso de adaptacion en el cual me ha gustado mucho que seamos un banco que siempre tratamos de brindar oportunidades a los clientes y la cercania con ellos por la transparencia que se maneja el banco, me impulsa a crecer e innovar y asi buscar soluciones financieras digitales de vanguardia. Sin duda como lo ha manejado el banco de la manos de todos los que estan en gerencia primera fila, nos han podido guiar a todos."
+    ],
+    "D2_OPEN": [
+      "Capacitacion en herramientas actuales me permitiria aprovechar todo su potencial y ser mas eficiente en mis procesos a diarios y nuevas soluciones digitales con la IA para seguir brindando una mejor experiencia"
+    ],
+    "D3_OPEN": [
+      "Lo importante seria fortalecer con las herramientas digitales que manejan y fuera muy bueno fomentar espacios con diferentes areas del banco para poder participar todos y que cada colaborador se sienta activo en este proceso de la transformacion digital que lleva el banco y asi a los que estan en contacto con el cliente puedan dar asesoria con los clientes y asi podamos contribuir a acelerar la cultura digital del banco"
+    ],
+    "D4_OPEN": [
+      "Mi expectativa con la inteligencia artificial es que potencia mis habilidades y productividad en cualquier area que este en el banco y pueda mejorar la experiencia del cliente siempre cuidado que la tecnologia complemente en nuestras areas y no reemplace la atencion humana, la cuales tenemos varios segmentos en el banco y gente mayor se les complica"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor, cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,13 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor",
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "una área vinculada a la banca digital  y experiencia al cliente en la proyección de ideas innovación ya que en mi área como estoy con cercanía al cliente puedo conocer las necesidades y lo que les molesta  siempre orientada al liderazgo y especialización, me gusta el área comercial pero me gustaría estar en otro campo.",
       "aspiracion_slug": "liderazgo"
     },
@@ -263,34 +282,6 @@
         ]
       },
       {
-        "id": "IA-09",
-        "titulo": "Curso de verificación y sesgos",
-        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
-        "areaEnfoque": "Talento y Ética",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "rrhh",
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "etica",
-          "verificacion"
-        ],
-        "rutaDeCarrera": [
-          "liderazgo",
-          "tecnico"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "eticaYVerificacion",
-          "percepcionDeRiesgo"
-        ],
-        "metric": "percepcionDeRiesgo",
-        "target": "8.0/10"
-      },
-      {
         "id": "IA-02",
         "titulo": "Capacitación en prompt engineering y ética",
         "descripcion": "Talleres con plantillas de prompts, criterios de verificación y pautas de uso responsable.",
@@ -320,18 +311,47 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-09",
+        "titulo": "Curso de verificación y sesgos",
+        "descripcion": "Completar curso con checklist de verificación, sesgos comunes y límites de uso por caso.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "comercial",
-          "operaciones"
+          "rrhh",
+          "mandos",
+          "tecnico"
         ],
         "tags": [
-          "repositorio",
+          "etica",
+          "verificacion"
+        ],
+        "rutaDeCarrera": [
+          "liderazgo",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "eticaYVerificacion",
+          "percepcionDeRiesgo"
+        ],
+        "metric": "percepcionDeRiesgo",
+        "target": "8.0/10"
+      },
+      {
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "comercial",
+          "tecnico",
+          "mandos"
+        ],
+        "tags": [
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

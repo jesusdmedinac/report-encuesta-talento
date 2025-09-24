@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.917Z",
+  "generated_at": "2025-09-24T01:46:31.375Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.917Z",
+    "generatedAt": "2025-09-24T01:46:31.375Z",
     "schema": "individual-1.0",
     "id": "6bel53bizm2t06spmnj8e6bel53b444b",
     "subject": {
       "nombreCompleto": "Pamela Rodriguez Jaramillo",
       "email": "prodriguez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.917Z",
+      "assessed_on": "2025-09-24T01:46:31.375Z",
       "demographics": {
         "rol": "Gestor banco del barrio",
         "area": "banca de inclusión",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "investigacion tecnologica"
+    ],
+    "D2_OPEN": [
+      "podria ser una nueva herramienta que ayude el ingreso y devolucion de equipos con un codigo que se lea una vez que se entrega al cliente es decir al momento que se entrega el equipo se reciba inmediatamente en el inventario y si se retira viceversa para ahorrar tiempo en la gestion manual que sea directamente en el campo y solo se reunen los equipos y se envia el fisico a bodega o se los envia de inmediato al regresar a la agencia."
+    ],
+    "D3_OPEN": [
+      "aplicar la tecnologia a diario sin limitantes siempre buscando nuevas formas de mejorar los procesos."
+    ],
+    "D4_OPEN": [
+      "mejoraria mucho los procesos actuales no me preocupa creo que la IA sin el razonamiento Humano no funciona adecuadamente, pero es de ayuda a mejorar habilidades que reduciria los tiempos que se toma actualmente para realizar actividades en la empresa"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'ejecutivo_financiero'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='ejecutivo_financiero'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'ejecutivo_financiero'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='ejecutivo_financiero'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Ejecutivo financiero",
       "aspiracion_slug": "ejecutivo_financiero"
     },

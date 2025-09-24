@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.942Z",
+  "generated_at": "2025-09-24T01:46:31.422Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.942Z",
+    "generatedAt": "2025-09-24T01:46:31.422Z",
     "schema": "individual-1.0",
     "id": "n4am5qk7gjfj0p3jn4am5cb0tq76kq7v",
     "subject": {
       "nombreCompleto": "Gabriel Alexander Mateo Ibañez",
       "email": "gmateo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.942Z",
+      "assessed_on": "2025-09-24T01:46:31.422Z",
       "demographics": {
         "rol": "Asistente",
         "area": "Centro de Atención al usuario (CAU)",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un camino de constante evolucion, donde cada reto digital se convirtio en una oportunidad para crecer y ayudar a otros a hacerlo tambien"
+    ],
+    "D2_OPEN": [
+      "Plataforma con inteligencia artificial , es decir como soporte conecta pero medianamente vamos llenando un ticket , este ya sepa para quein va dirigido o que solucion se pueda implementar"
+    ],
+    "D3_OPEN": [
+      "Hacer una induccion manual y digital de todos los aplicativos y posibles fallos que se puedan presentar en estas."
+    ],
+    "D4_OPEN": [
+      "Que si mas bien la ia es una herramienta, la podemos implementar en varias tareas administrativas con los colaboradores de una empresa, es decir un asistente virtual."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestor_documental_o_asistente_tecnologico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestor_documental_o_asistente_tecnologico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestor_documental_o_asistente_tecnologico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestor_documental_o_asistente_tecnologico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,9 @@
         }
       ],
       "role": "asistente",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "colabor"
+      ],
       "aspiracionProfesional": "Gestor documental o asistente tecnológico",
       "aspiracion_slug": "gestor_documental_o_asistente_tecnologico"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.662Z",
+  "generated_at": "2025-09-24T01:46:30.756Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.662Z",
+    "generatedAt": "2025-09-24T01:46:30.756Z",
     "schema": "individual-1.0",
     "id": "54zyx1phbj1no8xo33m80i54zyx1nn78",
     "subject": {
       "nombreCompleto": "MELANIE MILAGRO MORAN TORRES",
       "email": "mmoran4@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.662Z",
+      "assessed_on": "2025-09-24T01:46:30.756Z",
       "demographics": {
         "rol": "EJECUTIVA FINANCIERA",
         "area": "COMERCIAL / EJECUTIVA FINANCIERA",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "ha sido una aventura constante de descubrimiento y adaptacion, donde cada interaccion me impulsa a crecer y comprender mejor el mundo conectado. El mundo digital es muy importante para crecer profesional y personalmente"
+    ],
+    "D2_OPEN": [
+      "La capacitacion me ayudaria a aprovechar al maximo las funcionalidades que ya tenemos, mientras que nuevas herramientas podrian automatizar procesos y reducir tiempos, mejorando el servicio al cliente y la gestion interna."
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, lo mas importante que Banco Guayaquil podria hacer para acelerar nuestra cultura digital es fomentar una capacitacion continua y practica para todos los colaboradores, combinada con un liderazgo que impulse el uso de tecnologias digitales en el dia a dia. Ademas, promover un ambiente abierto al cambio y la innovacion, donde se valore la experimentacion y el aprendizaje, facilitaria la adopcion rapida y efectiva de nuevas herramientas y procesos digitales"
+    ],
+    "D4_OPEN": [
+      "Optimizar procesos"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 2.6 · culturaOrganizacional: gap 2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), culturaOrganizacional (gap=2.00), madurezDigital (gap=1.70), brechaDigital (gap=1.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutiva'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=2.60), culturaOrganizacional (gap=2.00), madurezDigital (gap=1.70), brechaDigital (gap=1.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'ejecutiva'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,14 @@
         }
       ],
       "role": "ejecutiva",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Jefe de agencia /  Subgerente zonal / Gerente",
       "aspiracion_slug": "liderazgo"
     },

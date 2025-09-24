@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:55.017Z",
+  "generated_at": "2025-09-24T01:46:31.539Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:55.017Z",
+    "generatedAt": "2025-09-24T01:46:31.539Z",
     "schema": "individual-1.0",
     "id": "5l2a2kz9zrcyx4suqo2a5l2a2t172ns0",
     "subject": {
       "nombreCompleto": "Bryan Solis",
       "email": "bsolis@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:55.017Z",
+      "assessed_on": "2025-09-24T01:46:31.539Z",
       "demographics": {
         "rol": "Cyber Offense Engineer",
         "area": "Control de Cambios SI",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Autodidacta"
+    ],
+    "D2_OPEN": [
+      "Capacitacion y talleres"
+    ],
+    "D3_OPEN": [
+      "investigacion y nuevas tendencias"
+    ],
+    "D4_OPEN": [
+      "Creacion automatizada de noticias falsas como imagenes o videos"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cyber'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cyber'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "cyber",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit"
+      ],
       "aspiracionProfesional": "Gerente de ciberseguridad - Presidente tecnico",
       "aspiracion_slug": "tecnico"
     },
@@ -320,28 +336,27 @@
         "target": "8.0/10"
       },
       {
-        "id": "CU-01",
-        "titulo": "Ciclos de experimentación y reconocimiento",
-        "descripcion": "Sprints mensuales de experimentación con vitrinas de reconocimiento a aprendizajes y resultados.",
+        "id": "CU-08",
+        "titulo": "Serie de micro-retos de automatización",
+        "descripcion": "Retos quincenales para automatizar pequeñas tareas y compartir plantillas reutilizables.",
         "areaEnfoque": "Cultura y Cambio",
-        "prioridad": "Media",
-        "plazoEstimado": "3 meses",
+        "prioridad": "Baja",
+        "plazoEstimado": "6-8 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
+          "operaciones",
+          "comercial"
         ],
         "tags": [
           "experimentacion",
-          "reconocimiento"
+          "automatizacion"
         ],
         "rutaDeCarrera": [
-          "liderazgo",
-          "mandos"
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "experimentacion",
-          "reconocimiento"
+          "experimentacion"
         ],
         "metric": "experimentacion",
         "target": "8.0/10"

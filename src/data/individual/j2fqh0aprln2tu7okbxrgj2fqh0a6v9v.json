@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.125Z",
+  "generated_at": "2025-09-24T01:46:29.405Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.125Z",
+    "generatedAt": "2025-09-24T01:46:29.405Z",
     "schema": "individual-1.0",
     "id": "j2fqh0aprln2tu7okbxrgj2fqh0a6v9v",
     "subject": {
       "nombreCompleto": "DANIEL TORRES BALDA",
       "email": "DTORRES2@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.125Z",
+      "assessed_on": "2025-09-24T01:46:29.405Z",
       "demographics": {
         "rol": "CAJERO FINANSIERO",
         "area": "OPERACIONES",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "RAPIDO"
+    ],
+    "D2_OPEN": [
+      "ALGO DIFERENTE"
+    ],
+    "D3_OPEN": [
+      "TODO ESTA BIEN CON EL SISTEMA"
+    ],
+    "D4_OPEN": [
+      "UN PORCO PREOCUPADO"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · madurezDigital: gap 0.8.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=0.80), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'ing_en_sistemas'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='ing_en_sistemas'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

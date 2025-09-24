@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.770Z",
+  "generated_at": "2025-09-24T01:46:31.047Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.770Z",
+    "generatedAt": "2025-09-24T01:46:31.047Z",
     "schema": "individual-1.0",
     "id": "wr111f180r099w3okd3xiwr111fyd7i4",
     "subject": {
       "nombreCompleto": "Belén Pincay",
       "email": "mpincay1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.770Z",
+      "assessed_on": "2025-09-24T01:46:31.047Z",
       "demographics": {
         "rol": "Analista de Crédito Micro",
         "area": "Productos e Innovación",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Busqueda continua de acciones que agilicen los procesos en el dia a dia"
+    ],
+    "D2_OPEN": [
+      "Al iniciar la jornada en la Vdi, estan habiendo varios inconvenientes, webs que no cargan, Teams se cierra automaticamente y no carga por completo, y error en el mail. Me gustaria que esto se solvente para iniciar la jornada con mas rapidez, ya que debido a estos errores hay que ingresar varias veces y en esos intentos a veces ni siquiera permite ingresar debido a otro error por Vdi no disponibles. Otro punto podria ser que no se inhiba la computadora."
+    ],
+    "D3_OPEN": [
+      "Digitalizar, pero de una manera cercana las transacciones que los clientes continuan realizando en las cajas presenciales. algun metodo para que los clientes que continuan usando las cajas tengan mayor entendimiento de como usar los medios digitales para sus transacciones."
+    ],
+    "D4_OPEN": [
+      "Me gustaria que nos ayude a ser mas agiles y tener mayor conocimiento en pro del Banco, pero que no nos haga prescindibles."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Supervisora de área",
       "aspiracion_slug": "mandos"
     },

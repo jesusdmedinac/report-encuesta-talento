@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.255Z",
+  "generated_at": "2025-09-24T01:46:29.750Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.255Z",
+    "generatedAt": "2025-09-24T01:46:29.750Z",
     "schema": "individual-1.0",
     "id": "u804sxk9rc7kar97su804cudcgjizzv9",
     "subject": {
       "nombreCompleto": "José Paúl Mendoza Villegas",
       "email": "jmendoza3@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.255Z",
+      "assessed_on": "2025-09-24T01:46:29.750Z",
       "demographics": {
         "rol": "Subgerente Legal de Productos Financieros Digitales y Fintech",
         "area": "Legal",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprendizaje autonomo"
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta de IA que permita tener una revision mas profunda."
+    ],
+    "D3_OPEN": [
+      "Asignar un recurso o asesor tecnico que entienda las necesidades del Area y ayude a mejorar procesos"
+    ],
+    "D4_OPEN": [
+      "Espero que pueda ayudar a solventar problemas legales en menor tiempo, generando una base de confianza"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_legal_operations,_vicepresidente_legal_o_general_counsel.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_legal_operations,_vicepresidente_legal_o_general_counsel.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), usoInteligenciaArtificial (gap=0.50), madurezDigital (gap=0.10). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_legal_operations,_vicepresidente_legal_o_general_counsel.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_legal_operations,_vicepresidente_legal_o_general_counsel.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "proceso"
+      ],
       "aspiracionProfesional": "Gerente de Legal Operations, Vicepresidente Legal o General Counsel.",
       "aspiracion_slug": "gerente_de_legal_operations,_vicepresidente_legal_o_general_counsel."
     },

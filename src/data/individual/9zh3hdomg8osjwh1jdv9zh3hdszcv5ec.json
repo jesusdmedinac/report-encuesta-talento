@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.566Z",
+  "generated_at": "2025-09-24T01:46:30.509Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.566Z",
+    "generatedAt": "2025-09-24T01:46:30.509Z",
     "schema": "individual-1.0",
     "id": "9zh3hdomg8osjwh1jdv9zh3hdszcv5ec",
     "subject": {
       "nombreCompleto": "Xavier Rosales",
       "email": "xrosales@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.566Z",
+      "assessed_on": "2025-09-24T01:46:30.509Z",
       "demographics": {
         "rol": "Segment Manager",
         "area": "Tribu Segmento Empresas",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Apredizaje permanente"
+    ],
+    "D2_OPEN": [
+      "Acceso a un SQL para autoatender necesidades de informacion de una solo fuente"
+    ],
+    "D3_OPEN": [
+      "Promover verdaderas tecnicas y procesos de agilidad y manejar equipos realmente multidisciplinarios ya que llamar un equipo tribu no significa que trabaja con metodos realmente agiles o que no siga en silos verticales."
+    ],
+    "D4_OPEN": [
+      "Para asuntos superficiales y triviales puedes alivianar la carga operativa pero para usos de analisis o pensamiento critico he identificado veces que da informacion erroneo y la validacion y correccion de esa informacion aumenta la carga operativa."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.40). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.40). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "proceso"
+      ],
       "aspiracionProfesional": "Director",
       "aspiracion_slug": "liderazgo"
     },

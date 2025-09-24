@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.561Z",
+  "generated_at": "2025-09-24T01:46:30.493Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.561Z",
+    "generatedAt": "2025-09-24T01:46:30.493Z",
     "schema": "individual-1.0",
     "id": "d8htzvfltk8en8q2tkrmcd8htz1t9ey4",
     "subject": {
       "nombreCompleto": "GALO LLERENA MERELO",
       "email": "Gllerena1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.561Z",
+      "assessed_on": "2025-09-24T01:46:30.493Z",
       "demographics": {
         "rol": "SOY GESTOR DE BANCO DEL BARRIO",
         "area": "BANCO DEL BARRIO",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Aprendiendo digitalmente, aprendiendo constantemente"
+    ],
+    "D2_OPEN": [
+      "Poder tener las mismas aplicaciones del pc en el telefono"
+    ],
+    "D3_OPEN": [
+      "dar mas informacion directa en el celular ya que es algo que hoy manejamos y tenemos a diario"
+    ],
+    "D4_OPEN": [
+      "la atencion que brinda atravez de medios digitales pudiendo quitar fuentes de trabajo"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {

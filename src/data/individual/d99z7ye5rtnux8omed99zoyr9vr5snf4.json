@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.354Z",
+  "generated_at": "2025-09-24T01:46:30.011Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.354Z",
+    "generatedAt": "2025-09-24T01:46:30.011Z",
     "schema": "individual-1.0",
     "id": "d99z7ye5rtnux8omed99zoyr9vr5snf4",
     "subject": {
       "nombreCompleto": "Daniela Palacios",
       "email": "danielapalaciosca@outlook.es",
-      "assessed_on": "2025-09-23T18:26:54.354Z",
+      "assessed_on": "2025-09-24T01:46:30.011Z",
       "demographics": {
         "rol": "Cajera",
         "area": "Operaciones",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "excepencional"
+    ],
+    "D2_OPEN": [
+      "Mejorar los aparatos electronicos, es decir actualizandos ya que son lentos"
+    ],
+    "D3_OPEN": [
+      "Mejorar sus aparatos tecnologicos"
+    ],
+    "D4_OPEN": [
+      "mi preocupacion en la actualidad de mi cargo es que destituyan a los cajeros financieros por el avance en la teconologia"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 0.7.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'rrhh'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='rrhh'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

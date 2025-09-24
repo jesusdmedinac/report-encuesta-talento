@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.762Z",
+  "generated_at": "2025-09-24T01:46:28.526Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.762Z",
+    "generatedAt": "2025-09-24T01:46:28.526Z",
     "schema": "individual-1.0",
     "id": "nk2tu6o0sfpswwbfnk2tu6ogpelod67k",
     "subject": {
       "nombreCompleto": "Williams Eduardo Choez Rodriguez",
       "email": "wchoez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.762Z",
+      "assessed_on": "2025-09-24T01:46:28.526Z",
       "demographics": {
         "rol": "ASESOR TECNICO DIGITAL",
         "area": "CUSTOMER CARE",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Obtener conocimiento a nivel bancario"
+    ],
+    "D2_OPEN": [
+      "soporte conecta"
+    ],
+    "D3_OPEN": [
+      "Para acelerar la cultura digital considero clave implementar programas de capacitacion en metodologias agiles, seguridad digital y uso de herramientas colaborativas, integrados a los procesos de negocio. Adicionalmente, la adopcion de plataformas con mayor automatizacion y el fortalecimiento de la comunicacion sobre beneficios digitales permitiran una adopcion mas natural y sostenible en toda la organizacion."
+    ],
+    "D4_OPEN": [
+      "Visualizo la Inteligencia Artificial como un aliado estrategico que nos permitira evolucionar hacia un rol mas consultivo, innovador y enfocado en crear valor agregado para nuestros clientes. Mi preocupacion es que la adopcion no avance a la misma velocidad en todos los equipos, lo que podria generar brechas internas en la cultura digital."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.5 · brechaDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.50), brechaDigital (gap=0.50), usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.50), brechaDigital (gap=0.50), usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, segurid, colabor, cliente, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,15 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "segurid",
+        "colabor",
+        "cliente",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "IT",
       "aspiracion_slug": "tecnico"
     },

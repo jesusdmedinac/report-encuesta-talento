@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.713Z",
+  "generated_at": "2025-09-24T01:46:30.900Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.713Z",
+    "generatedAt": "2025-09-24T01:46:30.900Z",
     "schema": "individual-1.0",
     "id": "tr4piimhs7imdvg5n2s9v0tr4piimhs9",
     "subject": {
       "nombreCompleto": "STEVEN SEBASTIAN SUASNAVAS MERINO",
       "email": "suasnavassteven@gmail.com",
-      "assessed_on": "2025-09-23T18:26:54.713Z",
+      "assessed_on": "2025-09-24T01:46:30.900Z",
       "demographics": {
         "rol": "ASISTENTE OPERATIVO",
         "area": "OPERACIONES",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital me ha equipado con nuevas habilidades y herramientas para optimizar mi trabajo y adaptarme a la evolucion tecnologica del sector bancario."
+    ],
+    "D2_OPEN": [
+      "MAS CAPICITACIONES EN LAS ACTULAES HERRAMIENTAS"
+    ],
+    "D3_OPEN": [
+      "Comunicacion clara y transparente, Informar sobre los beneficios, objetivos y avances digitales para generar confianza y compromiso."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa sera poder realizar mis trabajos de manera mas rapida, sin tanto problema y a su vez eficiente"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · madurezDigital: gap 1.5.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), madurezDigital (gap=1.50), brechaDigital (gap=1.10), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'asistente'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'marketing_digital'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='marketing_digital'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

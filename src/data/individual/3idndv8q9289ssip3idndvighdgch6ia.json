@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.448Z",
+  "generated_at": "2025-09-24T01:46:30.236Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.448Z",
+    "generatedAt": "2025-09-24T01:46:30.236Z",
     "schema": "individual-1.0",
     "id": "3idndv8q9289ssip3idndvighdgch6ia",
     "subject": {
       "nombreCompleto": "CRISTHIAN RONQUILLO",
       "email": "cronquillo@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.448Z",
+      "assessed_on": "2025-09-24T01:46:30.236Z",
       "demographics": {
         "rol": "OFICIAL SENIOR",
         "area": "BANCA DE INCLUSION",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "una emocionante odisea de descubrimiento y adaptacion, expandiendo constantemente mis horizontes de conocimiento y habilidades"
+    ],
+    "D2_OPEN": [
+      "nuevas herramientas"
+    ],
+    "D3_OPEN": [
+      "tutorias para el uso de herramientas tecnologicas"
+    ],
+    "D4_OPEN": [
+      "muy poca"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 3.5 · madurezDigital: gap 1.3.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=3.50), madurezDigital (gap=1.30), brechaDigital (gap=1.30), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'oficial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'sub_gerencia'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='sub_gerencia'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

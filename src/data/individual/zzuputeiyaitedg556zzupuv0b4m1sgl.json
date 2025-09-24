@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.038Z",
+  "generated_at": "2025-09-24T01:46:29.187Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.038Z",
+    "generatedAt": "2025-09-24T01:46:29.187Z",
     "schema": "individual-1.0",
     "id": "zzuputeiyaitedg556zzupuv0b4m1sgl",
     "subject": {
       "nombreCompleto": "David Ramirez Zoller",
       "email": "DRAMIREZ@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.038Z",
+      "assessed_on": "2025-09-24T01:46:29.187Z",
       "demographics": {
         "rol": "soporte ism instalaciones",
         "area": "Tecnologia",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "me encanta"
+    ],
+    "D2_OPEN": [
+      "nueva herramientas"
+    ],
+    "D3_OPEN": [
+      "inclusion de nuevas herramientas y procedimientos"
+    ],
+    "D4_OPEN": [
+      "conocer nuevo procedimientos y formas de acelerar de dar resultados asertivos con los usuarios"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · brechaDigital: gap 0.7.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=0.70). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'oficial_senior,_subgerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='oficial_senior,_subgerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

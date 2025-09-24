@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.590Z",
+  "generated_at": "2025-09-24T01:46:30.576Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.590Z",
+    "generatedAt": "2025-09-24T01:46:30.576Z",
     "schema": "individual-1.0",
     "id": "i47gmowdvq3arqokh7di47gmdgf7gyfs",
     "subject": {
       "nombreCompleto": "Luis Ñauta Sánchez",
       "email": "lnauta@bancoguayquil.com",
-      "assessed_on": "2025-09-23T18:26:54.590Z",
+      "assessed_on": "2025-09-24T01:46:30.576Z",
       "demographics": {
         "rol": "Operador de cajeros automáticos",
         "area": "Operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Una experiencia de adaptacion continua, que me ha ensenado a mantenerme abierto a nuevas herramientas y cambios."
+    ],
+    "D2_OPEN": [
+      "Capacitacion sencilla y personalizada sobre el manejo de las herramientas que uso dia a dia."
+    ],
+    "D3_OPEN": [
+      "Brindar acompanamiento y soporte continuo para que el uso de las herramientas digitales sea mas facil y eficiente para todo el personal."
+    ],
+    "D4_OPEN": [
+      "Mi expectativa es que la Inteligencia Artificial se convierta en una herramienta que simplifique y agilice mis tareas diarias, mejorando la eficiencia y reduciendo los errores operativos."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.7 · brechaDigital: gap 1.6.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.70), brechaDigital (gap=1.60), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operador'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.70), brechaDigital (gap=1.60), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operador'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "operador",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "Seguir contribuyendo con mi experiencia para garantizar la operatividad y seguridad en los procesos hasta finalizar mi etapa laboral.",
       "aspiracion_slug": "operaciones"
     },

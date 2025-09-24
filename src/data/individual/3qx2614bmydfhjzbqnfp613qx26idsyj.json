@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.897Z",
+  "generated_at": "2025-09-24T01:46:28.824Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.897Z",
+    "generatedAt": "2025-09-24T01:46:28.824Z",
     "schema": "individual-1.0",
     "id": "3qx2614bmydfhjzbqnfp613qx26idsyj",
     "subject": {
       "nombreCompleto": "Patricio Filella Lok",
       "email": "pfilella@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.897Z",
+      "assessed_on": "2025-09-24T01:46:28.824Z",
       "demographics": {
         "rol": "Growth Lead Segmento Preferente",
         "area": "Segmentos",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Todo se puede aprender en linea"
+    ],
+    "D2_OPEN": [
+      "Un gestor AI entrenado con data historica de lo que hacen/han hecho otras Tribus (iniciativas, research, hallazgos, resultados, experimentos, reviews, etc) y la nuestra, para poder enterarnos de forma rapida por medio de preguntas, sin necesidad de buscar un stakeholder."
+    ],
+    "D3_OPEN": [
+      "Impartir 1 on 1 con personas de cada area, reconociendo oportunidades de mejora para cada persona con diferentes herramientas digitales que pueden facilitarle el trabajo y hacer seguimiento un tiempo corto. Las personas no conocen funcionalidades cuando se las capacita de forma general."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la IA entienda lo suficiente de lo que le he estado prompteando, para no tener que dar mucho contexto en nuevos prompts, que se convierta cada vez mas en mi asistente y que pueda generar incluso presentaciones con data del banco, sin necesidad de tener que buscar data uno mismo."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'growth'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'growth'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, prompt): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "growth",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "prompt"
+      ],
       "aspiracionProfesional": "VP o Gerente/ Líder de Tribu",
       "aspiracion_slug": "liderazgo"
     },

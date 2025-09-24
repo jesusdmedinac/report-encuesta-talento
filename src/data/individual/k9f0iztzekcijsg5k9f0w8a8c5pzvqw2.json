@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.959Z",
+  "generated_at": "2025-09-24T01:46:31.454Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.959Z",
+    "generatedAt": "2025-09-24T01:46:31.454Z",
     "schema": "individual-1.0",
     "id": "k9f0iztzekcijsg5k9f0w8a8c5pzvqw2",
     "subject": {
       "nombreCompleto": "Claudio Zambrano Orozco",
       "email": "czambrano1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.959Z",
+      "assessed_on": "2025-09-24T01:46:31.454Z",
       "demographics": {
         "rol": "Coordinador de Gestión de Seguridad Física",
         "area": "Seguridad Integral",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Una evolucion constante hacia la integracion de la inteligencia artificial y las metodologias digitales en la seguridad fisica y la gestion, fusionando tecnologia avanzada con un profundo entendimiento tactico y estrategico."
+    ],
+    "D2_OPEN": [
+      "Culminar de Implementar las herramientas de innovacion que estamos trabajando."
+    ],
+    "D3_OPEN": [
+      "Promover la colaboracion interdepartamental utilizando plataformas tecnologicas que permitan compartir conocimiento y mejorar la comunicacion entre equipos. Incentivar la experimentacion y la innovacion dentro de un marco de seguridad, donde se valore el uso de nuevas tecnologias para mejorar procesos, y donde los errores sean vistos como oportunidades de aprendizaje."
+    ],
+    "D4_OPEN": [
+      "Mi espectativa: optimizar la toma de decisiones con etica y responsabilidad y mejorar la eficiencia operativa, especialmente en areas como la seguridad fisica y la gestion integral a traves de integrar IA para analizar datos, generar alertas inteligentes y proporcionar una respuesta mas rapida y precisa a incidentes de seguridad."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'coordinador'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_en_seguridad_tecnologica_(sf)'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_en_seguridad_tecnologica_(sf)'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'coordinador'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, segurid, colabor, etica, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_en_seguridad_tecnologica_(sf)'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_en_seguridad_tecnologica_(sf)'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,14 @@
         }
       ],
       "role": "coordinador",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "segurid",
+        "colabor",
+        "etica",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Gerente en Seguridad Tecnológica (SF)",
       "aspiracion_slug": "gerente_en_seguridad_tecnologica_(sf)"
     },

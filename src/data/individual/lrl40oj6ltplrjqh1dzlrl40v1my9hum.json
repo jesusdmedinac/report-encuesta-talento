@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.646Z",
+  "generated_at": "2025-09-24T01:46:28.245Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.646Z",
+    "generatedAt": "2025-09-24T01:46:28.245Z",
     "schema": "individual-1.0",
     "id": "lrl40oj6ltplrjqh1dzlrl40v1my9hum",
     "subject": {
       "nombreCompleto": "melanie liseth vivar medina",
       "email": "MVIVAR@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:53.646Z",
+      "assessed_on": "2025-09-24T01:46:28.245Z",
       "demographics": {
         "rol": "asesor comercial",
         "area": "canales y segmentos",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "experiencia"
+    ],
+    "D2_OPEN": [
+      "en programas"
+    ],
+    "D3_OPEN": [
+      "mejorar los procesadores de la computadora"
+    ],
+    "D4_OPEN": [
+      "que nos remplacen con robots"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {

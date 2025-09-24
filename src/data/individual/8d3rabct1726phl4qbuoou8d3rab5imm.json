@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.622Z",
+  "generated_at": "2025-09-24T01:46:30.658Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.622Z",
+    "generatedAt": "2025-09-24T01:46:30.658Z",
     "schema": "individual-1.0",
     "id": "8d3rabct1726phl4qbuoou8d3rab5imm",
     "subject": {
       "nombreCompleto": "Geovanny Avilés",
       "email": "gaviles@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.622Z",
+      "assessed_on": "2025-09-24T01:46:30.658Z",
       "demographics": {
         "rol": "Especialista de Gobierno de Datos y Analítica",
         "area": "Tribu Banca Personas",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Emocionante"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "Seguir aportando conocimientos a traves de cursos"
+    ],
+    "D4_OPEN": [
+      "Que las empresas dejen de pensar en el recurso humano"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · madurezDigital: gap 1.6.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=1.60), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=1.60), culturaOrganizacional (gap=1.00), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit"
+      ],
       "aspiracionProfesional": "Lider de manejo adecuado de datos enfocado en la Gobernanza",
       "aspiracion_slug": "liderazgo"
     },
@@ -273,33 +288,6 @@
             "target": "8.0/10"
           }
         ]
-      },
-      {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
-        ],
-        "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
-        ],
-        "rutaDeCarrera": [
-          "analitica_datos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ],
-        "metric": "alfabetizaciondedatos",
-        "target": "8.0/10"
       },
       {
         "id": "MD-03",
@@ -345,6 +333,33 @@
         "rutaDeCarrera": [
           "analitica_datos",
           "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "alfabetizacionDeDatos"
+        ],
+        "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-02",
+        "titulo": "Gobernanza de datos mínima viable",
+        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
+        "areaEnfoque": "Datos y Gobierno",
+        "prioridad": "Alta",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "liderazgo",
+          "operaciones",
+          "tecnico"
+        ],
+        "tags": [
+          "datos",
+          "gobierno",
+          "calidad"
+        ],
+        "rutaDeCarrera": [
+          "analitica_datos"
         ],
         "type": "KPI",
         "subdimensiones": [

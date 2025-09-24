@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.360Z",
+  "generated_at": "2025-09-24T01:46:30.026Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.360Z",
+    "generatedAt": "2025-09-24T01:46:30.026Z",
     "schema": "individual-1.0",
     "id": "j8r9exmrl6a2j8rrc2atytgaixam973s",
     "subject": {
       "nombreCompleto": "Juan Duran",
       "email": "JDURAN@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.360Z",
+      "assessed_on": "2025-09-24T01:46:30.026Z",
       "demographics": {
         "rol": "gestor",
         "area": "Microcredito",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "siempre a la par con los cambios"
+    ],
+    "D2_OPEN": [
+      "podria ser una herramienta, que al ingresar la cedula del cliente me indique si tiene juicios, si esta en listas negativas, si tiene antecedentes penales, que con una sola revision ya reporte todo"
+    ],
+    "D3_OPEN": [
+      "seguir capacitando y comunicando sobre opciones, atajos y beneficios de nuestra cultura digital"
+    ],
+    "D4_OPEN": [
+      "preocupacion porque ya no seamos necesarios y expectativa porque mejore la calidad de nuestro trabajo"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.6 · brechaDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), brechaDigital (gap=0.50), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.60), brechaDigital (gap=0.50), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'mandos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='mandos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,44 +240,45 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "cliente"
+      ],
       "aspiracionProfesional": "supervisor",
       "aspiracion_slug": "mandos"
     },
     "iniciativas": [
       {
-        "id": "MD-01",
-        "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
-        "areaEnfoque": "Estrategia y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "6-8 semanas",
+        "id": "MD-07",
+        "titulo": "Shadowing de PM en discovery",
+        "descripcion": "Acompañar 2-3 sesiones de descubrimiento de producto y redactar un brief con hallazgos accionables.",
+        "areaEnfoque": "Producto",
+        "prioridad": "Baja",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
+          "comercial",
+          "tecnico"
         ],
         "tags": [
-          "roadmap",
-          "procesos",
-          "priorizacion"
+          "cliente",
+          "discovery"
         ],
         "rutaDeCarrera": [
-          "liderazgo"
+          "gestion_producto",
+          "comercial"
         ],
         "type": "OKR",
         "subdimensiones": [
-          "resolucionDeProblemas",
-          "proactividadDigital"
+          "resolucionDeProblemas"
         ],
-        "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
         "key_results": [
           {
             "metric": "resolucionDeProblemas",
-            "target": "+1.0"
+            "target": "8.0/10"
           },
           {
             "metric": "proactividadDigital",
-            "target": "+1.0"
+            "target": "8.0/10"
           }
         ]
       },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.993Z",
+  "generated_at": "2025-09-24T01:46:31.497Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.993Z",
+    "generatedAt": "2025-09-24T01:46:31.497Z",
     "schema": "individual-1.0",
     "id": "youh7peypi8x7jnfxyouh7p4s7s9lx1h",
     "subject": {
       "nombreCompleto": "Kenneth Alexis Sánchez Valeriano",
       "email": "ksanchez1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.993Z",
+      "assessed_on": "2025-09-24T01:46:31.497Z",
       "demographics": {
         "rol": "SOPORTE ATENCION AL USUARIO",
         "area": "TRIBU BANCA PERSONAS",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje constante de curiosidad impulsado por datos, desafios y descubrimientos que nunca terminan"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las herramientas actuales, especialmente en sus funciones avanzadas,"
+    ],
+    "D3_OPEN": [
+      "Fomentar una mentalidad digital en todos los niveles"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la Inteligencia Artificial me ayude a automatizar tareas repetitivas para enfocarme en el analisis estrategico y la toma de decisiones; mi mayor preocupacion es que su mal uso o falta de preparacion pueda reemplazar el criterio humano en decisiones criticas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos"
+      ],
       "aspiracionProfesional": "Data Scientist (Científico de Datos) - Data Analyst (Analista de Datos)  - Business Intelligence Analyst (Analista BI) - Financial Analyst (Analista Financiero)",
       "aspiracion_slug": "analitica_datos"
     },

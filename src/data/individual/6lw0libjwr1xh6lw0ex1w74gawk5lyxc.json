@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.591Z",
+  "generated_at": "2025-09-24T01:46:30.578Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.591Z",
+    "generatedAt": "2025-09-24T01:46:30.578Z",
     "schema": "individual-1.0",
     "id": "6lw0libjwr1xh6lw0ex1w74gawk5lyxc",
     "subject": {
       "nombreCompleto": "CECIL MARIUXI MAZON JARA",
       "email": "cmazon@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.591Z",
+      "assessed_on": "2025-09-24T01:46:30.578Z",
       "demographics": {
         "rol": "ANALISTA",
         "area": "CONSUMO PRODUCTOS E INNOVACION",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "SIEMPRE ES FASCINANTE APRENDE ALGO NUEVO QUE AGILITE UNA ACCION"
+    ],
+    "D2_OPEN": [
+      "UNA NUEVA HERRAMIENTA"
+    ],
+    "D3_OPEN": [
+      "CUBRIR LA TOTALIDAD DE AREAS Y LO ESTA HACIENDO A MEDIDA QUE AVANZA EN EL TIEMPO"
+    ],
+    "D4_OPEN": [
+      "AHORA PIENSO QUE LA UTILIZAMOS POCO EN MI AREA Y CONSIDERO QUE LA PODRIAMOS UTILIZAR EN UN ASPECTO EN ESPECIAL QUE YA SE HA MENCIONADO EN EL AREA"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — brechaDigital: gap 1.3 · madurezDigital: gap 0.9.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: brechaDigital (gap=1.30), madurezDigital (gap=0.90), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'analista'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_gestion_para_incentivar_y_generar_innovacion_en_los_productos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_gestion_para_incentivar_y_generar_innovacion_en_los_productos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

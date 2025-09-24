@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.991Z",
+  "generated_at": "2025-09-24T01:46:29.065Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.991Z",
+    "generatedAt": "2025-09-24T01:46:29.065Z",
     "schema": "individual-1.0",
     "id": "p66errlgk56xp6qoqp66err60sbqkhqf",
     "subject": {
       "nombreCompleto": "Jennyfer Dennys Torres Carriel",
       "email": "jtorres4@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:53.991Z",
+      "assessed_on": "2025-09-24T01:46:29.065Z",
       "demographics": {
         "rol": "TECHNICAL DATAOPS",
         "area": "DATA TECHOLOGY",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Cada dia en el que puedo dedicar un poco de tiempo a aprender algo nuevo, es un dia aprovechado al maximo."
+    ],
+    "D2_OPEN": [
+      "Me ayudaria muchisimo una herramienta centralizada para el registro de tareas. Como DataOps, debo reportar al area de analitica y al area de Data Techology tareas en formatos diferentes, lo que ocasiona trabajo repetitivo y por lo tanto es tiempo que no uso para hacer mis actividades."
+    ],
+    "D3_OPEN": [
+      "He evidenciado que en ciertas areas aun dependen del excel basico para poder hacer uso de los datos, seria buen que todas las personas que manejan cantidades importantes de datos como financiero o tributacion obtengan la habilidad a traves de capacitaciones de manejar datos en una base de datos, un curso especializado en queries."
+    ],
+    "D4_OPEN": [
+      "Considero que el uso de la IA en mi rol actualmente es complicado, no veo a la IA como amenaza sino como un punto de apoyo. La utilizo mayormente para la resolucion de errores. Mi expectativa es que en algun momento puede escribir un prompt pueda determinar las mayores falencias nuestros jobs y asi identificar oportunidades de mejora."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'technical'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_llegar_a_una_posicion_que_signifique_un_reto_y_me_ayude_en_mi_crecimiento_profesional,_considero_que_soy_una_profesional_capaz_de_adaptarme_al_rol_que_tome,_asegurandome_cumplir_e_incluso_superar_las_expectativas_de_mi_cargo,_siempre_procurando_colaborar_y_expresar_mi_opinion_cuando_considero_pertinente.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_llegar_a_una_posicion_que_signifique_un_reto_y_me_ayude_en_mi_crecimiento_profesional,_considero_que_soy_una_profesional_capaz_de_adaptarme_al_rol_que_tome,_asegurandome_cumplir_e_incluso_superar_las_expectativas_de_mi_cargo,_siempre_procurando_colaborar_y_expresar_mi_opinion_cuando_considero_pertinente.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'technical'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, datos, prompt): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_llegar_a_una_posicion_que_signifique_un_reto_y_me_ayude_en_mi_crecimiento_profesional,_considero_que_soy_una_profesional_capaz_de_adaptarme_al_rol_que_tome,_asegurandome_cumplir_e_incluso_superar_las_expectativas_de_mi_cargo,_siempre_procurando_colaborar_y_expresar_mi_opinion_cuando_considero_pertinente.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_llegar_a_una_posicion_que_signifique_un_reto_y_me_ayude_en_mi_crecimiento_profesional,_considero_que_soy_una_profesional_capaz_de_adaptarme_al_rol_que_tome,_asegurandome_cumplir_e_incluso_superar_las_expectativas_de_mi_cargo,_siempre_procurando_colaborar_y_expresar_mi_opinion_cuando_considero_pertinente.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,11 @@
         }
       ],
       "role": "technical",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "datos",
+        "prompt"
+      ],
       "aspiracionProfesional": "Aspiro llegar a una posición que signifique un reto y me ayude en mi crecimiento profesional, considero que soy una profesional capaz de adaptarme al rol que tome, asegurándome cumplir e incluso superar las expectativas de mi cargo, siempre procurando colaborar y expresar mi opinión cuando considero pertinente.",
       "aspiracion_slug": "aspiro_llegar_a_una_posicion_que_signifique_un_reto_y_me_ayude_en_mi_crecimiento_profesional,_considero_que_soy_una_profesional_capaz_de_adaptarme_al_rol_que_tome,_asegurandome_cumplir_e_incluso_superar_las_expectativas_de_mi_cargo,_siempre_procurando_colaborar_y_expresar_mi_opinion_cuando_considero_pertinente."
     },

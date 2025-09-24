@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.574Z",
+  "generated_at": "2025-09-24T01:46:28.090Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.574Z",
+    "generatedAt": "2025-09-24T01:46:28.090Z",
     "schema": "individual-1.0",
     "id": "975znbuwcw2s9ucze975zn3emtwza9gl",
     "subject": {
       "nombreCompleto": "CAROLINA LUNA MORA",
       "email": "CLUNA@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:53.574Z",
+      "assessed_on": "2025-09-24T01:46:28.090Z",
       "demographics": {
         "rol": "ATENCION DE REQUERIMIENTOS DE CRM COMERCIOS",
         "area": "CIRULO DE SERVICIOS",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "CADA CAMBIO DIGITAL ES UNA OPORTUNIDAD PARA APRENDER Y CRECER PROFESIONALMENTE EN MI TRABAJO Y TAMBIEN EN MI VIDA DIARIA."
+    ],
+    "D2_OPEN": [
+      "ME AYUDARIA MAS CAPACITACION EN LAS HERRAMIENTAS ACTUALES Power B, GenAI for Business, SQL, GenAI for Sales"
+    ],
+    "D3_OPEN": [
+      "CONSIDERO QUE LO MAS IMPORTANTE SERIA FORTALECER LA CAPACITACION CONTINUA EN LAS HERRAMIENTAS DIGITALES ACTUALES Y OFRECER ESPACIOS PRACTICOS PARA APRENDER Y COMPARTIR BUENAS PRACTICAS. ADEMAS, INCLUIR PROGRAMAS DE APREDIZAJE DE IDIOMAS, COMO INGLES, Y EL ACCESO A ESTUDIOS DE POSGRADO O MAESTRIAS PERMITIRIA QUE LOS COLABORADORES ESTEN MEJOR PREPARADOS PARA ENFRENTAR LOS RETOS SE LA TRANSFORMACION DIGITAL. ESTAS ACCIONES NO SOLO ACELERARIAN LA ADOPCION TECNOLOGICA, CINO QUE TAMBIEN IMPULSARIAN NUESTRO DESARROLLO PROFESIONAL Y EL CRECIMIENTO DEL BANCO."
+    ],
+    "D4_OPEN": [
+      "MI MAYOR EXPECTATIVA ES QUE LA INTELIGENCIA ARTIFICIAL ME AYUDE A OPTIMIZAR MIS TAREAS, PREOCUPACION ES NO CONTAR CON LA CAPACITACION SUFICIENTE PARA APROVECHAR ESTAS HERRAMIENTAS AL MAXIMO, POR ESO ME GUATARIA QUE EL BANCO ESTE IMPULSANDO PROGRAMAS DE FORMACION Y ACTUALIZACION DEN LA IA PARA USARLA DE FORMA ETICA, SEGURA Y PRODUCTIVA."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'atencion'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'atencion'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, colabor, etica): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,11 @@
         }
       ],
       "role": "atencion",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "colabor",
+        "etica"
+      ],
       "aspiracionProfesional": "EN EL CIRCULO DE SERVICIOS DE LA TRIBU, SOPORTE ADMINISTRACION COMERCIOS-PRODUCTOS E INNOVACIÓN / LIDER DE CIRCULO DE SERVICIOS",
       "aspiracion_slug": "liderazgo"
     },

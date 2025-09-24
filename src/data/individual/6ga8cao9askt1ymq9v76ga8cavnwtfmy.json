@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.926Z",
+  "generated_at": "2025-09-24T01:46:31.393Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.926Z",
+    "generatedAt": "2025-09-24T01:46:31.393Z",
     "schema": "individual-1.0",
     "id": "6ga8cao9askt1ymq9v76ga8cavnwtfmy",
     "subject": {
       "nombreCompleto": "REYNALDO ALEJANDRO FERNANDEZ LUCERO",
       "email": "reyalex95@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.926Z",
+      "assessed_on": "2025-09-24T01:46:31.393Z",
       "demographics": {
         "rol": "CAJERO EJECUTIVO",
         "area": "OPERACIONES - SUCURSALES Y AGENCIAS",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Ha sido un camino de evolucion constante, donde cada paso me ha acercado a entender mejor como la tecnologia puede transformar mi trabajo y aportar valor al banco."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las herramientas actuales. Muchas veces las funcionalidades no se aprovechan al maximo por desconocimiento, y con una mejor formacion podriamos optimizar tareas, reducir tiempos y mejorar la calidad del servicio. Ademas, convendria una actualizacion de estas herramientas, incorporando mas funcionalidades que respondan a las necesidades actuales del equipo, permitiendo automatizar procesos repetitivos y facilitar la toma de decisiones en tiempo real y acceder a mas soportes y recursos de forma agil y oportuna."
+    ],
+    "D3_OPEN": [
+      "Fomentar una cultura de aprendizaje continuo y apertura al cambio, promoviendo la capacitacion constante en competencias digitales y facilitando la comunicacion y colaboracion entre areas para que la innovacion fluya de manera natural."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la Inteligencia Artificial me permita automatizar tareas repetitivas y tomar decisiones mas informadas y rapidas. Sin embargo, me preocupa que su implementacion no este acompanada de la capacitacion adecuada o de un control etico claro, lo que podria generar errores o perdida de calidad en el servicio"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'operaciones'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,13 @@
         }
       ],
       "role": "operaciones",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Aspiro a crecer dentro del banco en un rol relacionado con análisis de datos o transformación digital, donde pueda contribuir a la optimización de procesos, la toma de decisiones basada en información y el impulso de la innovación tecnológica para mejorar la experiencia del cliente y la eficiencia operativa.",
       "aspiracion_slug": "analitica_datos"
     },

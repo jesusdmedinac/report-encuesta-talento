@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.836Z",
+  "generated_at": "2025-09-24T01:46:31.215Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.836Z",
+    "generatedAt": "2025-09-24T01:46:31.215Z",
     "schema": "individual-1.0",
     "id": "du1upixafypsmhursbqy8pddu1upixa5",
     "subject": {
       "nombreCompleto": "Omar Morocho Sandoval",
       "email": "omarmorocho@outlook.com",
-      "assessed_on": "2025-09-23T18:26:54.836Z",
+      "assessed_on": "2025-09-24T01:46:31.215Z",
       "demographics": {
         "rol": "cajero financiero",
         "area": "operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "me siento listo para el cambio"
+    ],
+    "D2_OPEN": [
+      "el surpimir ciertos documentos fisicos para una atencion mas rapida al cliente, implementando un sistema de validacion de firma digital y de scaneo de rostro."
+    ],
+    "D3_OPEN": [
+      "promover el uso de las herramientas digitales, implementando cambios en los procesos"
+    ],
+    "D4_OPEN": [
+      "mi mayor preocupacion es que se llegue a dar un mal uso a esta herramienta y nos cause consecuencias negativas, y mi mayor espectativa es que nos vayamos adaptando y evolicionando de la mano con la tecnologia y sacrle el mejor provecho."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · brechaDigital: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.00), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analista_financiero'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analista_financiero'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), brechaDigital (gap=1.00), culturaOrganizacional (gap=1.00). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analista_financiero'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analista_financiero'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "analista financiero",
       "aspiracion_slug": "analista_financiero"
     },

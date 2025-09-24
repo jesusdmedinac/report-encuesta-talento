@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.145Z",
+  "generated_at": "2025-09-24T01:46:29.462Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.145Z",
+    "generatedAt": "2025-09-24T01:46:29.462Z",
     "schema": "individual-1.0",
     "id": "qg9of5uhoi7rasl6qg9of9s46dw1qhut",
     "subject": {
       "nombreCompleto": "ADRIAN ORTEGA",
       "email": "aortega1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.145Z",
+      "assessed_on": "2025-09-24T01:46:29.462Z",
       "demographics": {
         "rol": "BANCO DEL BARRIO",
         "area": "Banco del barrio",
@@ -207,7 +207,14 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [],
+    "D2_OPEN": [],
+    "D3_OPEN": [
+      "Que el banco siga implementado herramientas actualizadas"
+    ],
+    "D4_OPEN": []
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.802Z",
+  "generated_at": "2025-09-24T01:46:31.132Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.802Z",
+    "generatedAt": "2025-09-24T01:46:31.132Z",
     "schema": "individual-1.0",
     "id": "s4a9ucet3z5sigvpr4s4a9ugjgdvsef0",
     "subject": {
       "nombreCompleto": "PATRICIA ELIZABETH SANTILLAN LARA",
       "email": "psantillan@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.802Z",
+      "assessed_on": "2025-09-24T01:46:31.132Z",
       "demographics": {
         "rol": "CAJERA EJECUTIVA",
         "area": "OPERACIONES",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "NAVEGAR EN UN OCEANO INFINITO DE CONOCIMIENTO, DESCUBRIENDO ISLAS DE INFORMACION Y CONEXIONES"
+    ],
+    "D2_OPEN": [
+      "AGILIDAD EN PROCESAMIENTO DE CHEQUES DEVUELTOS PARA FACILIDAD DE ENTREGA A CLIENTES, APLICATIVO QUE MANTENGA UN MEJOR CONTROL EN ENTREGA DE TARJETAS DE CREDITO PARA COMODIDAD DE CLIENTE"
+    ],
+    "D3_OPEN": [
+      "Implementar tecnologias que sean faciles de usar, que realmente agreguen valor y que se adapten a las necesidades diarias de los empleados"
+    ],
+    "D4_OPEN": [
+      "COMO MAYOR EXPECTATIVA QUE SE APRENDA A TRABAJAR DE LA MANO Y COMO PREOCUPACION QUE EL CARGO DONDE ME DESEMPENO AL UTILIZAR LA IA SE VUELVA OBSOLETA"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajera'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'operaciones'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='operaciones'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,9 @@
         }
       ],
       "role": "cajera",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "OFICIAL SENIOR OPERACIONES",
       "aspiracion_slug": "operaciones"
     },

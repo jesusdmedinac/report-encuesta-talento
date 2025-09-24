@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.864Z",
+  "generated_at": "2025-09-24T01:46:28.745Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.864Z",
+    "generatedAt": "2025-09-24T01:46:28.745Z",
     "schema": "individual-1.0",
     "id": "gs20iaezuiizyyhb53gs20iaamjebhqr",
     "subject": {
       "nombreCompleto": "WASHINGTON FERNANDO CASQUETE MATUTE",
       "email": "wcasquete@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.864Z",
+      "assessed_on": "2025-09-24T01:46:28.745Z",
       "demographics": {
         "rol": "SOPORTE DE CREDITO-VALIDACION DE DATOS",
         "area": "PRODUCTOS E INNOVACION",
@@ -207,7 +207,20 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "INTERESANTE"
+    ],
+    "D2_OPEN": [
+      "ALGO DIFERENTE"
+    ],
+    "D3_OPEN": [
+      "ESTA BIEN ENCAMINADA"
+    ],
+    "D4_OPEN": [
+      "QUE SEA UNA AYUDA"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 0.8.",
     "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'no_tengo_definido'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='no_tengo_definido'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",

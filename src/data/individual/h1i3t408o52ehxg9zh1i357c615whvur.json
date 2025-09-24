@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.124Z",
+  "generated_at": "2025-09-24T01:46:29.403Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.124Z",
+    "generatedAt": "2025-09-24T01:46:29.403Z",
     "schema": "individual-1.0",
     "id": "h1i3t408o52ehxg9zh1i357c615whvur",
     "subject": {
       "nombreCompleto": "Daniela Yianella Anzules Ayala",
       "email": "daniela_anz_93@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.124Z",
+      "assessed_on": "2025-09-24T01:46:29.403Z",
       "demographics": {
         "rol": "Cajero financiero",
         "area": "operaciones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Mi viaje de aprendizaje digital ha sido un camino de descubrimiento constante, superando retos y ampliando mis horizontes dia a dia"
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las herramientas actuales, como Excel y Word, me ayudaria a ser mas eficiente,Aunque las uso a diario, se que tienen muchas funciones avanzadas que podrian facilitar mi trabajo, automatizar tareas repetitivas y mejorar la presentacion de la informacion si aprendiera a utilizarlas mejor.\""
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, lo mas importante que la empresa podria hacer para acelerar nuestra cultura digital es fomentar una capacitacion continua y practica en herramientas digitales, ademas de promover una mentalidad abierta al cambio, donde se valoren la innovacion, la colaboracion y la experimentacion con nuevas tecnologias"
+    ],
+    "D4_OPEN": [
+      "Pensando en el futuro, mi mayor expectativa sobre el uso de la Inteligencia Artificial en mi rol es que se convierta en una herramienta poderosa para aumentar la eficiencia, mejorar la toma de decisiones y liberar tiempo para tareas mas estrategicas o creativas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · brechaDigital: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), brechaDigital (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,12 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "innov"
+      ],
       "aspiracionProfesional": "Aspiro a crecer hacia una posición en el área de análisis financiero o gestión, donde pueda aplicar mis conocimientos y experiencia en atención al cliente y operaciones financieras, desarrollando habilidades más estratégicas y aportando a la toma de decisiones dentro de la organización",
       "aspiracion_slug": "tecnico"
     },
@@ -319,29 +337,29 @@
         "target": "8.0/10"
       },
       {
-        "id": "CD-05",
-        "titulo": "Curso práctico de ciberseguridad laboral",
-        "descripcion": "Completar un curso con simulaciones de phishing y checklist de higiene digital para el equipo.",
-        "areaEnfoque": "Seguridad",
-        "prioridad": "Alta",
-        "plazoEstimado": "2-3 semanas",
+        "id": "CD-06",
+        "titulo": "Taller de colaboración en suites actuales",
+        "descripcion": "Workshop hands-on para crear plantillas, permisos y tableros con la suite corporativa.",
+        "areaEnfoque": "Enablement",
+        "prioridad": "Media",
+        "plazoEstimado": "2 semanas",
         "rolesPreferidos": [
-          "todos"
+          "comercial",
+          "operaciones"
         ],
         "tags": [
-          "seguridad",
-          "practicas"
+          "colaboracion",
+          "productividad"
         ],
         "rutaDeCarrera": [
-          "liderazgo",
-          "mandos",
+          "comercial",
           "operaciones"
         ],
         "type": "KPI",
         "subdimensiones": [
-          "ciberseguridad"
+          "colaboracionDigital"
         ],
-        "metric": "ciberseguridad",
+        "metric": "colaboraciondigital",
         "target": "8.0/10"
       }
     ]

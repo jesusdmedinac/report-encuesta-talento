@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:55.019Z",
+  "generated_at": "2025-09-24T01:46:31.543Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:55.019Z",
+    "generatedAt": "2025-09-24T01:46:31.543Z",
     "schema": "individual-1.0",
     "id": "utagzuglajv2hgv0cwhutagz58i3vnbc",
     "subject": {
       "nombreCompleto": "JOSE JULIAN",
       "email": "jpoveda@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:55.019Z",
+      "assessed_on": "2025-09-24T01:46:31.543Z",
       "demographics": {
         "rol": "PASANTE",
         "area": "ISM",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Seguimos avanzando y creciendo."
+    ],
+    "D2_OPEN": [
+      "Creeria que como las apps que se usan estan en constante cambio por el momento no hay inconvenientes."
+    ],
+    "D3_OPEN": [
+      "Ir culturizandonos con nuevos metodos para agilizar las actividades, por ejemplo, existen constantes cambios a nivel de seguridad, de encriptaciones y siempre existen cambios, vamos por buen camino"
+    ],
+    "D4_OPEN": [
+      "Mi rol es mas trabajo fisico por lo que no me preocupa mucho el uso de IA"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · culturaOrganizacional: gap 1.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=1.50), madurezDigital (gap=1.30), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pasante'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_poder_llegar_a_oficial_senior_o_subgerente.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_poder_llegar_a_oficial_senior_o_subgerente.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), culturaOrganizacional (gap=1.50), madurezDigital (gap=1.30), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pasante'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs segurid): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_poder_llegar_a_oficial_senior_o_subgerente.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_poder_llegar_a_oficial_senior_o_subgerente.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,9 @@
         }
       ],
       "role": "pasante",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "segurid"
+      ],
       "aspiracionProfesional": "Aspiro poder llegar a OFICIAL SENIOR o SUBGERENTE.",
       "aspiracion_slug": "aspiro_poder_llegar_a_oficial_senior_o_subgerente."
     },

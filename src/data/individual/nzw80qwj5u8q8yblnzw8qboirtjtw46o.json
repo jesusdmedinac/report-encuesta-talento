@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.790Z",
+  "generated_at": "2025-09-24T01:46:31.101Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.790Z",
+    "generatedAt": "2025-09-24T01:46:31.101Z",
     "schema": "individual-1.0",
     "id": "nzw80qwj5u8q8yblnzw8qboirtjtw46o",
     "subject": {
       "nombreCompleto": "Glenda Moran",
       "email": "gcedeno1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.790Z",
+      "assessed_on": "2025-09-24T01:46:31.101Z",
       "demographics": {
         "rol": "Lider Circulo de Servicios",
         "area": "Tribu de Seguros",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "De novato digital a mejorar procesos con soluciones simples."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las herramientas actuales (Power BI, Power Automate, CRM) para aprender a crear plantillas y flujos automatizados junto con integraciones mas fluidas entre sistemas que reduzcan tareas manuales y garanticen la calidad de los datos."
+    ],
+    "D3_OPEN": [
+      "Que la alta direccion lidere con el ejemplo, ofrezca capacitacion practica, cree embajadores digitales en cada area, establezca metricas de adopcion y reconozca logros para consolidar nuestra cultura digital."
+    ],
+    "D4_OPEN": [
+      "Espero que la IA se convierta en una herramienta estrategica para mejorar la experiencia del cliente, agilizar procesos operativos y facilitar la toma de decisiones basada en datos, que nos permita anticiparnos a las necesidades de los asegurados, ofreciendo soluciones mas rapidas y personalizadas. Sin embargo, me preocupa que la automatizacion excesiva pueda deshumanizar el servicio, afectando la cercania y empatia que son fundamentales en el acompanamiento de nuestros clientes en momentos criticos."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · usoInteligenciaArtificial: gap 2.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.70), madurezDigital (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=2.20), brechaDigital (gap=1.70), madurezDigital (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'liderazgo'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, datos, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,13 @@
         }
       ],
       "role": "liderazgo",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "datos",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Liderazgo",
       "aspiracion_slug": "liderazgo"
     },
@@ -323,18 +342,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

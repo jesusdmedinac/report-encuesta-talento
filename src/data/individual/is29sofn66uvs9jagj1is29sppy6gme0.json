@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.051Z",
+  "generated_at": "2025-09-24T01:46:29.218Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.051Z",
+    "generatedAt": "2025-09-24T01:46:29.218Z",
     "schema": "individual-1.0",
     "id": "is29sofn66uvs9jagj1is29sppy6gme0",
     "subject": {
       "nombreCompleto": "Nancy Alexandra Montes de Oca Ponce",
       "email": "NMONTESDEOCA@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.051Z",
+      "assessed_on": "2025-09-24T01:46:29.218Z",
       "demographics": {
         "rol": "Executive Business Developer",
         "area": "Banca de Empresas",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Es una experiencia transformadora que me ha permitido adaptarme y ser mas flexible."
+    ],
+    "D2_OPEN": [
+      "Mas herramientas que permitan profundizar y agilizar la atencion de los clientes"
+    ],
+    "D3_OPEN": [
+      "Alinear al equipo hacia un cambio de mentalidad agil, buscando la innovacion continua"
+    ],
+    "D4_OPEN": [
+      "Que haga cierre negocios de forma mas agil"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 2.2 · culturaOrganizacional: gap 1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.20), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_regional_vicepresidente_banca_empresas'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_regional_vicepresidente_banca_empresas'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=2.20), culturaOrganizacional (gap=1.00), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_regional_vicepresidente_banca_empresas'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_regional_vicepresidente_banca_empresas'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "innov"
+      ],
       "aspiracionProfesional": "Gerente Regional  Vicepresidente Banca Empresas",
       "aspiracion_slug": "gerente_regional_vicepresidente_banca_empresas"
     },

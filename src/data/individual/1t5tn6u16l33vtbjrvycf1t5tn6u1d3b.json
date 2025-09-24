@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.787Z",
+  "generated_at": "2025-09-24T01:46:31.093Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.787Z",
+    "generatedAt": "2025-09-24T01:46:31.093Z",
     "schema": "individual-1.0",
     "id": "1t5tn6u16l33vtbjrvycf1t5tn6u1d3b",
     "subject": {
       "nombreCompleto": "Alvaro David Mero Salazar",
       "email": "amero1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.787Z",
+      "assessed_on": "2025-09-24T01:46:31.093Z",
       "demographics": {
         "rol": "DEVELOPER SR",
         "area": "Tecnología",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Estoy muy pegado en mi maestria de inteligencia artificial lo cual es muy emocionante sumergirse en esta nueva tendencia, de hecho tengo suscripciones propias en Claude, Udemy, Youtube, etc Si pudiera describirlo en una solo palabra seria \"es ahora o nunca\""
+    ],
+    "D2_OPEN": [
+      "Por ahora tengo suscripciones en las que estoy muy comodo estudiando por cuenta propia"
+    ],
+    "D3_OPEN": [
+      "Cultura de automatizacion"
+    ],
+    "D4_OPEN": [
+      "Nada preocupado de hecho quiero concursar en Kaggle para tener mas experiencia"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,9 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz"
+      ],
       "aspiracionProfesional": "Cursando Maestría en Inteligencia Artificial, aspiro a ser Ingeniero en Inteligencia Artificial y Científico de datos en aprendizaje supervisado y no supervisado",
       "aspiracion_slug": "analitica_datos"
     },

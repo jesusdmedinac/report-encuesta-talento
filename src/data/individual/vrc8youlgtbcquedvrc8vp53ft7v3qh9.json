@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.899Z",
+  "generated_at": "2025-09-24T01:46:31.338Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.899Z",
+    "generatedAt": "2025-09-24T01:46:31.338Z",
     "schema": "individual-1.0",
     "id": "vrc8youlgtbcquedvrc8vp53ft7v3qh9",
     "subject": {
       "nombreCompleto": "virginia villacis",
       "email": "virgy_vr@hotmail.com",
-      "assessed_on": "2025-09-23T18:26:54.899Z",
+      "assessed_on": "2025-09-24T01:46:31.338Z",
       "demographics": {
         "rol": "cajero financiero",
         "area": "Área Operativo",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "desarrollo profesional y personal."
+    ],
+    "D2_OPEN": [
+      "algo diferente como un equipo que tenga herramientas para que el cliente pueda realizar sus depositos de forma personal en ventanilla."
+    ],
+    "D3_OPEN": [
+      "Un microfono que le aparezca al cliente para que por medio de comando de voz pueda indicar la informacion hacia el depositante o de la transaccion de retiro sin necesidad de llenar papeleta."
+    ],
+    "D4_OPEN": [
+      "Realmente no me siento preocupado, porque las empresas o instituciones siempre van a necesitar de los humanos ya que somos los que generamos emociones, respeto y empatia desde un puesto de trabajo lo que la Inteligencia Artificial no lo tiene, y si me gustaria implementarlo desde mi puesto de trabajo como complemento para evitar el cero errores."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.3 · madurezDigital: gap 1.1.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=1.10), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=1.10), brechaDigital (gap=0.80). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,9 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Deseo escalar a Cajero Señor y después a  Jefe de Agencia en base a mi maestría que estoy por terminar de Finanzas con mención en gestión bancaria.",
       "aspiracion_slug": "liderazgo"
     },

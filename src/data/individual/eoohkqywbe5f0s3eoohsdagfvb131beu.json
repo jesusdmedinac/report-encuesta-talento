@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.608Z",
+  "generated_at": "2025-09-24T01:46:30.620Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.608Z",
+    "generatedAt": "2025-09-24T01:46:30.620Z",
     "schema": "individual-1.0",
     "id": "eoohkqywbe5f0s3eoohsdagfvb131beu",
     "subject": {
       "nombreCompleto": "Kerly Liliana Arias Morán",
       "email": "karias@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.608Z",
+      "assessed_on": "2025-09-24T01:46:30.620Z",
       "demographics": {
         "rol": "Soporte de inversiones",
         "area": "Inversiones",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Habilidad para adaptarse a la transformacion"
+    ],
+    "D2_OPEN": [
+      "Una nueva herramienta o mejorar las actuales ya que algunas no arrojan la informacion de manera exacta y es ahi donde uno interviene extrayendo los datos necesarios y aumentando el tiempo de respuesta en el requerimiento solicitado"
+    ],
+    "D3_OPEN": [
+      "Manteniendo informado a los colaboradores sobre todo con los nuevos aplicativos que podriamos usar o implementar en nuestro trabajo diario."
+    ],
+    "D4_OPEN": [
+      "Considero que la IA no es una razon para preocuparse mas bien es una opcion para poder trabajar con un plus adicional ya que de todas maneras el rol humano siempre debe estar presente para corregir modelos ya que el ser humano siempre tiene otra perspectiva de ver las situaciones."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 1.7 · madurezDigital: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=0.90), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_llegar_a_un_rol_superior_en_el_area_que_sea_ligada_a_productos_del_banco_ya_que_mantengo_conocimiento_de_aquello.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_llegar_a_un_rol_superior_en_el_area_que_sea_ligada_a_productos_del_banco_ya_que_mantengo_conocimiento_de_aquello.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=1.70), madurezDigital (gap=0.90), brechaDigital (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'tecnico'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'aspiro_llegar_a_un_rol_superior_en_el_area_que_sea_ligada_a_productos_del_banco_ya_que_mantengo_conocimiento_de_aquello.'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='aspiro_llegar_a_un_rol_superior_en_el_area_que_sea_ligada_a_productos_del_banco_ya_que_mantengo_conocimiento_de_aquello.'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "tecnico",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "colabor"
+      ],
       "aspiracionProfesional": "Aspiro llegar a un rol superior en el área que sea ligada a productos del banco ya que mantengo conocimiento de aquello.",
       "aspiracion_slug": "aspiro_llegar_a_un_rol_superior_en_el_area_que_sea_ligada_a_productos_del_banco_ya_que_mantengo_conocimiento_de_aquello."
     },
@@ -302,32 +318,6 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-03",
-        "titulo": "Taller de resolución de problemas complejos",
-        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "4-6 semanas",
-        "rolesPreferidos": [
-          "mandos",
-          "tecnico"
-        ],
-        "tags": [
-          "capacitacion",
-          "analitica"
-        ],
-        "rutaDeCarrera": [
-          "mandos",
-          "tecnico"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "resolucionDeProblemas"
-        ],
-        "metric": "resoluciondeproblemas",
-        "target": "8.0/10"
-      },
-      {
         "id": "MD-05",
         "titulo": "Tomar curso corto de analítica aplicada",
         "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
@@ -351,6 +341,32 @@
           "alfabetizacionDeDatos"
         ],
         "metric": "alfabetizaciondedatos",
+        "target": "8.0/10"
+      },
+      {
+        "id": "MD-03",
+        "titulo": "Taller de resolución de problemas complejos",
+        "descripcion": "Sesiones prácticas para aplicar técnicas de diagnóstico y solución estructurada a casos reales del negocio.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "4-6 semanas",
+        "rolesPreferidos": [
+          "mandos",
+          "tecnico"
+        ],
+        "tags": [
+          "capacitacion",
+          "analitica"
+        ],
+        "rutaDeCarrera": [
+          "mandos",
+          "tecnico"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "resolucionDeProblemas"
+        ],
+        "metric": "resoluciondeproblemas",
         "target": "8.0/10"
       }
     ]

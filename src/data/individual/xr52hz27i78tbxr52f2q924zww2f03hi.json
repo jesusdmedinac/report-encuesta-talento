@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.423Z",
+  "generated_at": "2025-09-24T01:46:30.191Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.423Z",
+    "generatedAt": "2025-09-24T01:46:30.191Z",
     "schema": "individual-1.0",
     "id": "xr52hz27i78tbxr52f2q924zww2f03hi",
     "subject": {
       "nombreCompleto": "Heidy Martinez Olivo",
       "email": "hmartinez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.423Z",
+      "assessed_on": "2025-09-24T01:46:30.191Z",
       "demographics": {
         "rol": "Guia",
         "area": "Comercial",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Transformacion"
+    ],
+    "D2_OPEN": [
+      "Acceso a mas procesos"
+    ],
+    "D3_OPEN": [
+      "Implementacion de IA"
+    ],
+    "D4_OPEN": [
+      "Reemplazo laboral"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "guia",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "proceso"
+      ]
     },
     "iniciativas": [
       {
@@ -238,6 +253,30 @@
         "type": "KPI",
         "subdimensiones": [
           "resolucionDeProblemas"
+        ]
+      },
+      {
+        "id": "MD-06",
+        "titulo": "Taller de mapeo de procesos (hands-on)",
+        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
+        "areaEnfoque": "Procesos y Calidad",
+        "prioridad": "Media",
+        "plazoEstimado": "2-3 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "mandos"
+        ],
+        "tags": [
+          "procesos",
+          "eficiencia"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
         ]
       },
       {
@@ -287,30 +326,6 @@
         "type": "KPI",
         "subdimensiones": [
           "alfabetizacionDeDatos"
-        ]
-      },
-      {
-        "id": "MD-06",
-        "titulo": "Taller de mapeo de procesos (hands-on)",
-        "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
-        "areaEnfoque": "Procesos y Calidad",
-        "prioridad": "Media",
-        "plazoEstimado": "2-3 semanas",
-        "rolesPreferidos": [
-          "operaciones",
-          "mandos"
-        ],
-        "tags": [
-          "procesos",
-          "eficiencia"
-        ],
-        "rutaDeCarrera": [
-          "operaciones",
-          "mandos"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "proactividadDigital"
         ]
       }
     ]

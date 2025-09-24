@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.487Z",
+  "generated_at": "2025-09-24T01:46:30.309Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.487Z",
+    "generatedAt": "2025-09-24T01:46:30.309Z",
     "schema": "individual-1.0",
     "id": "iq5pxh9hm90t5ziq5pxhuwyz28y6z931",
     "subject": {
       "nombreCompleto": "RAQUEL VARGAS",
       "email": "rvargas1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.487Z",
+      "assessed_on": "2025-09-24T01:46:30.309Z",
       "demographics": {
         "rol": "Data Scientist",
         "area": "Tribu Data & Analytics",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Constante"
+    ],
+    "D2_OPEN": [
+      "Herramientas de colaboracion y versionamiento de codigo"
+    ],
+    "D3_OPEN": [
+      "Comunicarlo en los videos de Conectados"
+    ],
+    "D4_OPEN": [
+      "Me preocupa que la gente no entienda bien como funcionan los modelos generativos de lenguaje, creo que la gente piensa que son \"magicos\" y nunca se equivocan, cuando en realidad no es asi. Creo que el verdadero poder de estas herramientas esta en utilizarlas para potenciar los trabajos y no para sustituir personas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'data'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'data'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'analitica_datos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='analitica_datos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,9 @@
         }
       ],
       "role": "data",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "colabor"
+      ],
       "aspiracionProfesional": "Chief Data Officer",
       "aspiracion_slug": "analitica_datos"
     },

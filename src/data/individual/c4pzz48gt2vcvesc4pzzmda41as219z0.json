@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.372Z",
+  "generated_at": "2025-09-24T01:46:30.058Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.372Z",
+    "generatedAt": "2025-09-24T01:46:30.058Z",
     "schema": "individual-1.0",
     "id": "c4pzz48gt2vcvesc4pzzmda41as219z0",
     "subject": {
       "nombreCompleto": "Estefania Martinez",
       "email": "maite.herrrero@prosegur.com",
-      "assessed_on": "2025-09-23T18:26:54.372Z",
+      "assessed_on": "2025-09-24T01:46:30.058Z",
       "demographics": {
         "rol": "Negociadora de Compras",
         "area": "Administración",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Este aprendizaje digital me permitio ver que la transformacion no esta solo en la tecnologia, si no en como elegimos aplicarla para mejorar cada dia"
+    ],
+    "D2_OPEN": [
+      "Nueva herramienta: SAP Ariba /Coupa/ Oracle Procurement."
+    ],
+    "D3_OPEN": [
+      "Fomentar una cultura de colaboracion digital Embajadores digitales en cada area: personas que dominen nuevas herramientas, fomenten y acompanen a sus companeros en su uso."
+    ],
+    "D4_OPEN": [
+      "En mi rol tiene un potencial enorme, como expectativa que me libere de lo operativo optimizando procesos, no solo que ahorre tiempo si no que convierta a compras en una area analitica, proactiva y mas estrategica."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'negociadora'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'negociadora'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs colabor, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "negociadora",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "colabor",
+        "proceso"
+      ],
       "aspiracionProfesional": "Me encantaría desempeñarme en las siguientes posiciones de Líder de Compras o Business  Partner de Compras, Líder de proyectos transversales, Gerencia media en Administración, Gestión de Talento/Desarrollo Organizacional.",
       "aspiracion_slug": "liderazgo"
     },

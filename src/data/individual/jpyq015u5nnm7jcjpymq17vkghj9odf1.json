@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.806Z",
+  "generated_at": "2025-09-24T01:46:31.142Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.806Z",
+    "generatedAt": "2025-09-24T01:46:31.142Z",
     "schema": "individual-1.0",
     "id": "jpyq015u5nnm7jcjpymq17vkghj9odf1",
     "subject": {
       "nombreCompleto": "Josselin Cruz Cabrera",
       "email": "jcruz3@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.806Z",
+      "assessed_on": "2025-09-24T01:46:31.142Z",
       "demographics": {
         "rol": "Pasos a producción.",
         "area": "Tecnología",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "\"Un viaje constante de curiosidad y adaptacion, donde cada desafio digital es una oportunidad para crecer y transformar ideas en soluciones innovadoras\"."
+    ],
+    "D2_OPEN": [
+      "\"Creo que una combinacion de mas capacitacion en las herramientas actuales junto con la incorporacion de nuevas tecnologias especificas para automatizar tareas repetitivas me ayudaria a ser mas eficiente. La capacitacion me permitiria aprovechar al maximo las funcionalidades existentes, mientras que nuevas herramientas podrian optimizar procesos y ahorrar tiempo.\""
+    ],
+    "D3_OPEN": [
+      "\"Fomentar una mentalidad abierta al cambio, brindar capacitacion constante y facilitar el acceso a herramientas tecnologicas modernas para impulsar la colaboracion y adopcion digital.\""
+    ],
+    "D4_OPEN": [
+      "\"Espero que la IA potencie mi productividad al automatizar tareas y mejorar la toma de decisiones, siempre complementando el trabajo humano.\""
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9 · brechaDigital: gap 0.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pasos'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90), brechaDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pasos'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, colabor, proceso, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gestion_producto'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gestion_producto'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,13 @@
         }
       ],
       "role": "pasos",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "colabor",
+        "proceso",
+        "innov"
+      ],
       "aspiracionProfesional": "Product Owner o Líder de Producto o PMO",
       "aspiracion_slug": "gestion_producto"
     },

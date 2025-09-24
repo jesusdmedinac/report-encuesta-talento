@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.389Z",
+  "generated_at": "2025-09-24T01:46:30.130Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.389Z",
+    "generatedAt": "2025-09-24T01:46:30.130Z",
     "schema": "individual-1.0",
     "id": "8maaizkcjpabp8uwx58maaint9cp57em",
     "subject": {
       "nombreCompleto": "EUGENIA QUISHPE",
       "email": "equishpe@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.389Z",
+      "assessed_on": "2025-09-24T01:46:30.130Z",
       "demographics": {
         "rol": "Cajero ejecutivo",
         "area": "OPERATIVO",
@@ -207,13 +207,28 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "transformacion y cambios"
+    ],
+    "D2_OPEN": [
+      "mas capacitacion en las actuales"
+    ],
+    "D3_OPEN": [
+      "capacitarnos"
+    ],
+    "D4_OPEN": [
+      "la baja de personal"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "cajero",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "capacit"
+      ]
     },
     "iniciativas": [
       {
@@ -289,24 +304,23 @@
         ]
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "capacitacion",
+          "datos"
         ],
         "rutaDeCarrera": [
-          "analitica_datos"
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

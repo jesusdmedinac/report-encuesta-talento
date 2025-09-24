@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.923Z",
+  "generated_at": "2025-09-24T01:46:31.386Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.923Z",
+    "generatedAt": "2025-09-24T01:46:31.386Z",
     "schema": "individual-1.0",
     "id": "f7iv8tpzahcxme09f7iv8xemp5kuzyqv",
     "subject": {
       "nombreCompleto": "RICARDO Gómez Peralta",
       "email": "rgomez@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.923Z",
+      "assessed_on": "2025-09-24T01:46:31.386Z",
       "demographics": {
         "rol": "SECOPS ENGINEER",
         "area": "INFRAESTRUCTURA",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Ha sido una evolucion constante donde he estado tanto en puestos completamente operativos como de estrategia y liderazgo, siempre he buscado la forma de optimizar tiempos y de que los activos de la organizacion esten protegidos."
+    ],
+    "D2_OPEN": [
+      "Mas capacitacion en las actuales, cursos de formacion especializados."
+    ],
+    "D3_OPEN": [
+      "Empoderar a los equipos mediante capacitacion continua o motivar dicha capacitacion."
+    ],
+    "D4_OPEN": [
+      "En mi caso puntual espero que facilite la deteccion de amenazas de forma proactiva, que ayude a reducir el ruido en el monitoreo y alertas. En cuanto a preocupacion, es que los ataques se vuelvan mas sofisticados y se amplifiquen al hallar vulnerabilidades mas rapido. Por ello busco mantenerme actualizado y capacitarme para intentar estar al dia en temas de ciberseguridad."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'secops'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'secops'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs capacit, segurid): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'liderazgo'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='liderazgo'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -219,7 +232,10 @@
         }
       ],
       "role": "secops",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "capacit",
+        "segurid"
+      ],
       "aspiracionProfesional": "Me interesa participar en la definición de estándares de seguridad a nivel organizacional, liderar iniciativas de automatización, y contribuir al desarrollo de una cultura de seguridad desde la planificación hasta la operación.\nTambién me gustaría evolucionar hacia un rol de liderazgo técnico como Red Team Lead, donde pueda coordinar y ejecutar simulaciones avanzadas de ataque, contribuir al fortalecimiento de las defensas del banco y anticipar amenazas reales. Me interesa especializarme en técnicas ofensivas, emulación de APTs y adversary simulation, combinando esa perspectiva con mis conocimientos actuales en ingeniería de ciberseguridad.",
       "aspiracion_slug": "liderazgo"
     },
@@ -320,18 +336,19 @@
         "target": "8.0/10"
       },
       {
-        "id": "IA-03",
-        "titulo": "Biblioteca de casos y prompts reutilizables",
-        "descripcion": "Repositorio curado de casos de uso y prompts por rol/proceso, con ejemplos verificados.",
-        "areaEnfoque": "Enablement",
+        "id": "IA-05",
+        "titulo": "Tomar curso por rol de Prompting",
+        "descripcion": "Curso práctico por rol (ventas, soporte, PM) con entregables y evaluación de calidad de prompts.",
+        "areaEnfoque": "Talento y Ética",
         "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
           "comercial",
-          "operaciones"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "repositorio",
+          "capacitacion",
           "prompt"
         ],
         "rutaDeCarrera": [

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.657Z",
+  "generated_at": "2025-09-24T01:46:30.741Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.657Z",
+    "generatedAt": "2025-09-24T01:46:30.741Z",
     "schema": "individual-1.0",
     "id": "hs7gca8lgggtj86p0u1lhs7gca8kuyh9",
     "subject": {
       "nombreCompleto": "DIANA MEJÍA",
       "email": "dmejia@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.657Z",
+      "assessed_on": "2025-09-24T01:46:30.741Z",
       "demographics": {
         "rol": "PM",
         "area": "TRIBU FINANCIAMIENTO",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "\"Mi viaje de aprendizaje digital no ha sido facil, pero gracias al conocimiento adquirido a lo largo de los anos y a la experiencia de participar en proyectos estrategicos y medulares, hoy enfrento los desafios con serenidad y confianza.\""
+    ],
+    "D2_OPEN": [
+      "Tener data en tiempo real disponible"
+    ],
+    "D3_OPEN": [
+      "Fomentar una cultura de colaboracion y apertura al cambio / Comunicar una vision clara de transformacion digital / Medir, adaptar y celebrar avances digitales"
+    ],
+    "D4_OPEN": [
+      "mi mayor expectativa sobre el uso de la IA es su potencial para ayudarnos a tomar decisiones mas rapidas y basadas en datos (cuidando el sesgo), optimizar la personalizacion de productos, y anticipar necesidades del usuario con mayor precision."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — usoInteligenciaArtificial: gap 0.5 · culturaOrganizacional: gap 0.5.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pm'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vp'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vp'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: usoInteligenciaArtificial (gap=0.50), culturaOrganizacional (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'pm'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, colabor): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'vp'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='vp'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,10 @@
         }
       ],
       "role": "pm",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "colabor"
+      ],
       "aspiracionProfesional": "VP",
       "aspiracion_slug": "vp"
     },

@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.794Z",
+  "generated_at": "2025-09-24T01:46:31.111Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.794Z",
+    "generatedAt": "2025-09-24T01:46:31.111Z",
     "schema": "individual-1.0",
     "id": "689xqj4l5tkslpm7xdcgp689xqeqhe8r",
     "subject": {
       "nombreCompleto": "Isabel Alvarez",
       "email": "malvarez1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.794Z",
+      "assessed_on": "2025-09-24T01:46:31.111Z",
       "demographics": {
         "rol": "Consultora de seguros",
         "area": "Comercial",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Cuando pasas de los CDs a iTunes, de la presencialidad a una app, de buscar en Google a hablar con una inteligencia artificial, no solo evolucionas: transformas tu forma de vivir, de trabajar y te adaptas al mundo que tus hijos ya estan explorando con naturalidad."
+    ],
+    "D2_OPEN": [
+      "CRM u otro sistema nos permite visualizar las oportunidades de ventas de seguros, empaquetada con productos financieros. Ej. a este cliente coloca la TC con %descuento en el seguro xxxx. Ej2 este cliente tiene el 50% cupo utilizado en sus 2 TC colocale desgravamen, Ej 3 Este cliente tiene vivienda avaluada en $150k colocale casa segura vip."
+    ],
+    "D3_OPEN": [
+      "Embajadores digitales que tomen los procesos mas importantes cada area o tribu y apliquen mejoras usando la tecnologia, asi se permea el beneficio y se continua aplicando en los demas procesos."
+    ],
+    "D4_OPEN": [
+      "IA debe facilitarnos cruces de bases de datos, encontrar informacion de nuestros sistemas y consolidarla en segundos, para nosotros analizarla y tomar decisiones, debe permitirnos guardar un historial de lo que nos resulto como accion tactica y sugerirnos o no volver a lanzarla, controlar la cantidad de anuncios o emails que comunicamos y sugerirnos que comunicarle al cliente considerando su comportamiento financiero o de proteccion en seguros."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1.5 · usoInteligenciaArtificial: gap 0.9.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'consultora'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_seguros'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_seguros'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.50), usoInteligenciaArtificial (gap=0.90). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'consultora'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs datos, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_seguros'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_seguros'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,7 +236,11 @@
         }
       ],
       "role": "consultora",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "datos",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Gerente de Seguros",
       "aspiracion_slug": "gerente_de_seguros"
     },

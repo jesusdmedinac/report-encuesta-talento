@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.230Z",
+  "generated_at": "2025-09-24T01:46:29.686Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.230Z",
+    "generatedAt": "2025-09-24T01:46:29.686Z",
     "schema": "individual-1.0",
     "id": "49xwye03nud94p53m4e449xwygm9ihxh",
     "subject": {
       "nombreCompleto": "ROLAND JOEL MONTEALEGRE LOZANO",
       "email": "RJOEL_MONTEALEGRE_LOZANO_1997@HOTMAIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.230Z",
+      "assessed_on": "2025-09-24T01:46:29.686Z",
       "demographics": {
         "rol": "CAJERO FINANCIERO",
         "area": "OPERATIVO",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un aprendizaje comodo, interactivo y divertido."
+    ],
+    "D2_OPEN": [
+      "Que las herramientas que ya tenemos funcionen de manera optima todo el tiempo, sobre todo un cpu mas rapido."
+    ],
+    "D3_OPEN": [
+      "Impulsar las investigaciones a nivel internacional sobre las herramientas innovadoras que se han implementado en paises mas desarrollados, luego hacer un analisis y encuestas sobre que reaccion e impactos tendrian en las diferentes areas y como punto final, pruebas piloto para definir la implementacion de nuevas ideas, software o herramientas."
+    ],
+    "D4_OPEN": [
+      "Como expectativa que la inteligencia artificial nos ayude a reducir tiempos de analisis o investigacion sobre clientes potenciales o no potenciales, analisis de inversiones a futuro y mediano plazo, clientes o empresas en central de riesgo, que por medio de una herramienta la ia nos ayude a recopilar toda la informacion mas relevante sobre un cliente incluso de sus nexos con empresas."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 1 · madurezDigital: gap 0.6.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.60), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_empresarial,_advance_empresas_-_avanti'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_empresarial,_advance_empresas_-_avanti'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=1.00), madurezDigital (gap=0.60), usoInteligenciaArtificial (gap=0.50), brechaDigital (gap=0.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'cajero'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente, innov): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'area_empresarial,_advance_empresas_-_avanti'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='area_empresarial,_advance_empresas_-_avanti'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -231,7 +244,10 @@
         }
       ],
       "role": "cajero",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente",
+        "innov"
+      ],
       "aspiracionProfesional": "Área Empresarial, Advance Empresas - Avanti",
       "aspiracion_slug": "area_empresarial,_advance_empresas_-_avanti"
     },

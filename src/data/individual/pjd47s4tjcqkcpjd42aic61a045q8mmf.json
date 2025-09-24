@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.446Z",
+  "generated_at": "2025-09-24T01:46:30.231Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.446Z",
+    "generatedAt": "2025-09-24T01:46:30.231Z",
     "schema": "individual-1.0",
     "id": "pjd47s4tjcqkcpjd42aic61a045q8mmf",
     "subject": {
       "nombreCompleto": "Nicole Morán Paredes",
       "email": "nmoran2@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:54.446Z",
+      "assessed_on": "2025-09-24T01:46:30.231Z",
       "demographics": {
         "rol": "Brand Analyst",
         "area": "Marketing",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Transformacion - evolucion - cambio - agilidad"
+    ],
+    "D2_OPEN": [
+      "Creo que ninguna. Mi gran dolor es el internet que no es tan bueno en el trabajo."
+    ],
+    "D3_OPEN": [
+      "Creo que lo mas importante para que todos tengamos la misma vision es mantener una comunicacion constante sobre los cambios: conocer la razon de ser de cada uno y entender como, como colaboradores, aportamos a ese cambio. Siento que aun existe cierta incertidumbre sobre el proceso de transformacion y la cultura de agilidad que estamos impulsando. Por ejemplo, recientemente se realizo una reestructuracion de pisos y se sigue hablando de un cambio de transformacion, pero no me queda claro si se refieren unicamente al cambio de ubicacion o a algo mas."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa seria que se pueda disenar videos o fotos 100% reales, no fake como actualmente lo hace chatgpt. Seria mucho mas agil el proceso de elaboracion de piezas comunicacionales."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2.5 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'brand'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_gestion_de_contenidos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_gestion_de_contenidos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.50), usoInteligenciaArtificial (gap=1.30), madurezDigital (gap=0.20). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'brand'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs colabor, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente_de_gestion_de_contenidos'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente_de_gestion_de_contenidos'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,10 @@
         }
       ],
       "role": "brand",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "colabor",
+        "proceso"
+      ],
       "aspiracionProfesional": "Gerente de Gestión de Contenidos",
       "aspiracion_slug": "gerente_de_gestion_de_contenidos"
     },

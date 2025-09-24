@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:54.506Z",
+  "generated_at": "2025-09-24T01:46:30.349Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:54.506Z",
+    "generatedAt": "2025-09-24T01:46:30.349Z",
     "schema": "individual-1.0",
     "id": "evxpsoyjw77dcdpr9evx3y6rxck54whb",
     "subject": {
       "nombreCompleto": "Ana Maria Vargas",
       "email": "AVARGAS@BANCOGUAYAQUIL.COM",
-      "assessed_on": "2025-09-23T18:26:54.506Z",
+      "assessed_on": "2025-09-24T01:46:30.349Z",
       "demographics": {
         "rol": "Subgerente comercial",
         "area": "Negocios especializados",
@@ -207,10 +207,23 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje constante de curiosidad y mejora, guiado por millones de preguntas"
+    ],
+    "D2_OPEN": [
+      "Creo que una combinacion de mejor capacitacion en las herramientas actuales y pequenos ajustes en los procesos podria marcar una gran diferencia. Muchas veces ya tenemos las herramientas necesarias, pero no las aprovechamos al maximo. Tambien valoraria mucho contar con automatizaciones simples que reduzcan tareas repetitivas y me permitan enfocarme mas en la parte comercial"
+    ],
+    "D3_OPEN": [
+      "Desde mi perspectiva, lo mas importante seria fomentar una cultura de adopcion tecnologica practica y cercana, empezando por dar ejemplos concretos de como las herramientas digitales pueden ayudarnos a vender mas, gestionar mejor a los clientes o ahorrar tiempo. Tambien ayudaria que los lideres promuevan activamente su uso y que haya espacios breves y frecuentes de capacitacion aplicada, no solo teorica. Si todos vemos el beneficio directo en nuestro dia a dia, el cambio digital se acelera naturalmente y con accesibilidad a todos"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es que la Inteligencia Artificial me ayude a conocer mejor a los clientes, anticipar sus necesidades y ofrecerles soluciones mas personalizadas y oportunas. Si se usa bien, puede potenciar mucho nuestro trabajo comercial. Mi principal preocupacion es que se pierda el toque humano en la relacion con el cliente, que es clave en seguros. La IA debe ser una herramienta que potencie nuestra cercania, no que la reemplace."
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — culturaOrganizacional: gap 2 · madurezDigital: gap 1.2.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=1.20), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: culturaOrganizacional (gap=2.00), madurezDigital (gap=1.20), usoInteligenciaArtificial (gap=0.50). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'comercial'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs automatiz, capacit, cliente, proceso): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'gerente'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='gerente'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -227,7 +240,12 @@
         }
       ],
       "role": "comercial",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "automatiz",
+        "capacit",
+        "cliente",
+        "proceso"
+      ],
       "aspiracionProfesional": "Gerente",
       "aspiracion_slug": "gerente"
     },
@@ -314,24 +332,23 @@
         "target": "8.0/10"
       },
       {
-        "id": "MD-02",
-        "titulo": "Gobernanza de datos mínima viable",
-        "descripcion": "Definir catálogo de datos críticos, data owners y políticas básicas de calidad y acceso.",
-        "areaEnfoque": "Datos y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "4-6 semanas",
+        "id": "MD-05",
+        "titulo": "Tomar curso corto de analítica aplicada",
+        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
+        "areaEnfoque": "Talento y Formación",
+        "prioridad": "Media",
+        "plazoEstimado": "3-4 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "operaciones",
-          "tecnico"
+          "tecnico",
+          "mandos"
         ],
         "tags": [
-          "datos",
-          "gobierno",
-          "calidad"
+          "capacitacion",
+          "datos"
         ],
         "rutaDeCarrera": [
-          "analitica_datos"
+          "analitica_datos",
+          "tecnico"
         ],
         "type": "KPI",
         "subdimensiones": [

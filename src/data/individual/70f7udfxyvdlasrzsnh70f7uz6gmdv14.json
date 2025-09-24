@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.986Z",
+  "generated_at": "2025-09-24T01:46:29.053Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.986Z",
+    "generatedAt": "2025-09-24T01:46:29.053Z",
     "schema": "individual-1.0",
     "id": "70f7udfxyvdlasrzsnh70f7uz6gmdv14",
     "subject": {
       "nombreCompleto": "Carlos Naveda",
       "email": "cnaveda@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.986Z",
+      "assessed_on": "2025-09-24T01:46:29.053Z",
       "demographics": {
         "rol": "Product Manager",
         "area": "Investigación y Desarrollo",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Un viaje de descubrimientos"
+    ],
+    "D2_OPEN": [
+      "Menos reuniones para poder usarlas."
+    ],
+    "D3_OPEN": [
+      "La asignacion de permisos a herramientas es aun manual y toma semanas. Es imperativo automatizar ese proceso."
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa es poder disponibilizar informacion de forma que un agente pueda analizar y seguir el estado de la organizacion y de cada departamento"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "liderazgo",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "automatiz",
+        "proceso"
+      ]
     },
     "iniciativas": [
       {
@@ -266,30 +282,6 @@
         ]
       },
       {
-        "id": "MD-05",
-        "titulo": "Tomar curso corto de analítica aplicada",
-        "descripcion": "Completar un curso práctico de analítica de datos con casos del negocio y un mini-proyecto entregable.",
-        "areaEnfoque": "Talento y Formación",
-        "prioridad": "Media",
-        "plazoEstimado": "3-4 semanas",
-        "rolesPreferidos": [
-          "tecnico",
-          "mandos"
-        ],
-        "tags": [
-          "capacitacion",
-          "datos"
-        ],
-        "rutaDeCarrera": [
-          "analitica_datos",
-          "tecnico"
-        ],
-        "type": "KPI",
-        "subdimensiones": [
-          "alfabetizacionDeDatos"
-        ]
-      },
-      {
         "id": "MD-06",
         "titulo": "Taller de mapeo de procesos (hands-on)",
         "descripcion": "Sesión práctica para documentar 2 procesos clave con SIPOC/diagramas y definir puntos de mejora.",
@@ -307,6 +299,30 @@
         "rutaDeCarrera": [
           "operaciones",
           "mandos"
+        ],
+        "type": "KPI",
+        "subdimensiones": [
+          "proactividadDigital"
+        ]
+      },
+      {
+        "id": "MD-08",
+        "titulo": "Laboratorio de automatización sin código",
+        "descripcion": "Prototipar 1 flujo con herramientas no-code (ej. Zapier/Make) midiendo ahorro de tiempo real.",
+        "areaEnfoque": "Innovación Operacional",
+        "prioridad": "Media",
+        "plazoEstimado": "2-4 semanas",
+        "rolesPreferidos": [
+          "operaciones",
+          "comercial"
+        ],
+        "tags": [
+          "automatizacion",
+          "productividad"
+        ],
+        "rutaDeCarrera": [
+          "operaciones",
+          "comercial"
         ],
         "type": "KPI",
         "subdimensiones": [

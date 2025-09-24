@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.539Z",
+  "generated_at": "2025-09-24T01:46:28.012Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.539Z",
+    "generatedAt": "2025-09-24T01:46:28.012Z",
     "schema": "individual-1.0",
     "id": "5oddkmcdy0stfol9i35odd1w7yvkwoj3",
     "subject": {
       "nombreCompleto": "Carina Aucancela",
       "email": "caucancela@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.539Z",
+      "assessed_on": "2025-09-24T01:46:28.012Z",
       "demographics": {
         "rol": "Gestor del Banco del Barrio",
         "area": "Banco del Barrio",
@@ -207,10 +207,19 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Cada dia se aprende algo nuevo mas en el ambito digital"
+    ],
+    "D2_OPEN": [
+      "Que el sistema de neo no se caiga ya que aveces estoy realizando el ingreso de la solicitud para el Banco del Barrio y no se puede realizar es perdida de tiempo y damos una mala imagen al cliente"
+    ],
+    "D3_OPEN": [],
+    "D4_OPEN": []
+  },
   "action_plan": {
     "resumenGeneral": "Plan priorizado según brechas principales — madurezDigital: gap 1.3 · usoInteligenciaArtificial: gap 1.3.",
-    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
+    "criteriosDescripcion": "Selección multifactorial con tope de 4 iniciativas. Prioridad por brecha (gap10) y peso por dimensión: madurezDigital (gap=1.30), usoInteligenciaArtificial (gap=1.30). Pesos: {\"madurezDigital\":1,\"brechaDigital\":1,\"usoInteligenciaArtificial\":1.2,\"culturaOrganizacional\":0.9}. Bono por afinidad de rol ('rolesPreferidos' incluye 'gestor'): +0.4. Bono por señales de abiertas (coincidencia 'tags' vs cliente): +0.2. Bono por aspiración profesional ('rutaDeCarrera' incluye 'tecnico'): +0.6. Bono por subdimensiones objetivo si cubre las peores (top-2) de la dimensión: +0.3. Heurística de impacto/esfuerzo: impacto alto (+0.2), medio (+0.1); esfuerzo alto (-0.2), esfuerzo bajo (+0.1). Enriquecimiento de KPIs/OKRs: si aplica, se asigna métrica a la peor subdimensión cubierta y objetivo como max(actual+0.5, target10). Complemento transversal: si sobran cupos, se agregan acciones de cualquier dimensión alineadas a la aspiración ('rutaDeCarrera'~='tecnico'). Fallback sin brechas: se proponen 1–2 KPIs relevantes guiados por señales.",
     "criterios": {
       "top_gaps": [
         {
@@ -223,44 +232,44 @@
         }
       ],
       "role": "gestor",
-      "signals_from_open_ended": [],
+      "signals_from_open_ended": [
+        "cliente"
+      ],
       "aspiracionProfesional": "Microcredito",
       "aspiracion_slug": "tecnico"
     },
     "iniciativas": [
       {
-        "id": "MD-01",
-        "titulo": "Definir hoja de ruta de madurez digital",
-        "descripcion": "Co-crear una hoja de ruta trimestral con priorización por impacto/esfuerzo y responsables claros.",
-        "areaEnfoque": "Estrategia y Gobierno",
-        "prioridad": "Alta",
-        "plazoEstimado": "6-8 semanas",
+        "id": "MD-07",
+        "titulo": "Shadowing de PM en discovery",
+        "descripcion": "Acompañar 2-3 sesiones de descubrimiento de producto y redactar un brief con hallazgos accionables.",
+        "areaEnfoque": "Producto",
+        "prioridad": "Baja",
+        "plazoEstimado": "2-3 semanas",
         "rolesPreferidos": [
-          "liderazgo",
-          "mandos"
+          "comercial",
+          "tecnico"
         ],
         "tags": [
-          "roadmap",
-          "procesos",
-          "priorizacion"
+          "cliente",
+          "discovery"
         ],
         "rutaDeCarrera": [
-          "liderazgo"
+          "gestion_producto",
+          "comercial"
         ],
         "type": "OKR",
         "subdimensiones": [
-          "resolucionDeProblemas",
-          "proactividadDigital"
+          "resolucionDeProblemas"
         ],
-        "objective": "Alinear iniciativas a resultados de negocio con ciclos trimestrales",
         "key_results": [
           {
             "metric": "resolucionDeProblemas",
-            "target": "+1.0"
+            "target": "8.0/10"
           },
           {
             "metric": "proactividadDigital",
-            "target": "+1.0"
+            "target": "8.0/10"
           }
         ]
       },

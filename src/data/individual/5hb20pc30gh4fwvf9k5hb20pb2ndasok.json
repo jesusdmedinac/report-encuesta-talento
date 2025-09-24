@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2025-09-23T18:26:53.704Z",
+  "generated_at": "2025-09-24T01:46:28.399Z",
   "provenance": {
     "source": "respuestas-por-puntos.csv",
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
     "empresa": "Banco de Guayaquil",
-    "generatedAt": "2025-09-23T18:26:53.704Z",
+    "generatedAt": "2025-09-24T01:46:28.399Z",
     "schema": "individual-1.0",
     "id": "5hb20pc30gh4fwvf9k5hb20pb2ndasok",
     "subject": {
       "nombreCompleto": "LENIN STALIN RIVERA LLERENA",
       "email": "lrivera1@bancoguayaquil.com",
-      "assessed_on": "2025-09-23T18:26:53.704Z",
+      "assessed_on": "2025-09-24T01:46:28.399Z",
       "demographics": {
         "rol": "Asistente Senior Operaciones",
         "area": "Operaciones Atms",
@@ -207,13 +207,29 @@
       }
     }
   },
-  "openEnded": {},
+  "openEnded": {
+    "D1_OPEN": [
+      "Administrativo"
+    ],
+    "D2_OPEN": [
+      "IA"
+    ],
+    "D3_OPEN": [
+      "Dar unas charlas para tener muy en claro el objetivo de digitalizar nuestra empresa y obviamente de nuestra parte ser una guia para todos nuestros clientes y familiares"
+    ],
+    "D4_OPEN": [
+      "Mi mayor expectativa seria aprender la IA y aplicar en todo los procesos que se realicen en la vida"
+    ]
+  },
   "action_plan": {
     "resumenGeneral": "Sin brechas relevantes sobre el umbral; se sugieren acciones de mantenimiento y mejora continua.",
     "criterios": {
       "top_gaps": [],
       "role": "operaciones",
-      "signals_from_open_ended": []
+      "signals_from_open_ended": [
+        "cliente",
+        "proceso"
+      ]
     },
     "iniciativas": [
       {
