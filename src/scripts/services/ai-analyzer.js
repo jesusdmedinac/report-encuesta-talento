@@ -52,7 +52,7 @@ export function initializeAiClient(provider, modelName) {
             if (!geminiApiKey) {
                 throw new Error('La variable de entorno GEMINI_API_KEY no está configurada.');
             }
-            effectiveModelName = modelName || 'gemini-1.5-flash';
+            effectiveModelName = modelName || 'gemini-2.5-pro';
             const genAI = new GoogleGenerativeAI(geminiApiKey);
             aiClient = genAI.getGenerativeModel({ 
                 model: effectiveModelName,
@@ -65,7 +65,7 @@ export function initializeAiClient(provider, modelName) {
             if (!openaiApiKey) {
                 throw new Error('La variable de entorno OPENAI_API_KEY no está configurada.');
             }
-            effectiveModelName = modelName || 'gpt-4o';
+            effectiveModelName = modelName || 'gpt-5';
             aiClient = new OpenAI({ apiKey: openaiApiKey });
             break;
 
