@@ -36,7 +36,7 @@ const globalAverageScore = globalData?.resumenEjecutivo?.puntuacionGeneral?.punt
 
 
 ---
-<ReportLayout title="Reporte de Transformación Digital Organizacional - Profermaco">
+<ReportLayout title="Reporte de Transformación Digital Organizacional - Profermaco" current={report}>
   <Header 
     empresa={globalData.header.empresa}
     fechaDiagnostico={globalData.header.fechaDiagnostico}
@@ -139,4 +139,3 @@ const globalAverageScore = globalData?.resumenEjecutivo?.puntuacionGeneral?.punt
     anio={globalData.footer.anio}
     texto={globalData.footer.texto}
   />
-</html>

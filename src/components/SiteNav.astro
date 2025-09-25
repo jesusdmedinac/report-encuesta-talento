@@ -1,0 +1,111 @@
+---
+interface Props {
+  current?: string;
+}
+
+const { current = '' } = Astro.props;
+
+const items = [
+  { id: 'home', label: 'Inicio', href: '/' },
+  { id: 'gemini', label: 'Reporte Gemini', href: '/gemini' },
+  { id: 'openai', label: 'Reporte OpenAI', href: '/openai' },
+  { id: 'responses', label: 'Respuestas', href: '/respuestas' },
+  { id: 'analysis', label: 'Análisis SEP25', href: '/analisis/sep25' },
+];
+---
+<nav class="site-nav">
+  <a class="brand" href="/">
+    <span class="brand-title">Banco de Guayaquil</span>
+    <span class="brand-sub">Diagnóstico digital</span>
+  </a>
+  <div class="nav-links">
+    {items.map((item) => (
+      <a
+        href={item.href}
+        class={`nav-link${current === item.id ? ' active' : ''}`}
+      >
+        {item.label}
+      </a>
+    ))}
+  </div>
+</nav>
+
+<style>
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 24px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  .brand {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .brand-title {
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .brand-sub {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .nav-link:hover {
+    background: rgba(37, 99, 235, 0.12);
+    color: var(--color-company);
+  }
+
+  .nav-link.active {
+    background: rgba(37, 99, 235, 0.18);
+    color: var(--color-company);
+  }
+
+  @media (max-width: 720px) {
+    .site-nav {
+      padding: 16px;
+    }
+
+    .nav-links {
+      width: 100%;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .nav-link {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+  }
+</style>
