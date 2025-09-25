@@ -1,16 +1,17 @@
 ---
 interface Props {
   current?: string;
+  printAsset?: string;
 }
 
-const { current = '' } = Astro.props;
+const { current = '', printAsset = '' } = Astro.props;
 
 const items = [
   { id: 'home', label: 'Inicio', href: '/' },
   { id: 'gemini', label: 'Reporte Gemini', href: '/gemini' },
   { id: 'openai', label: 'Reporte OpenAI', href: '/openai' },
   { id: 'responses', label: 'Respuestas', href: '/respuestas' },
-  { id: 'analysis', label: 'Análisis SEP25', href: '/analisis/sep25' },
+  { id: 'analysis', label: 'Análisis SEP25', href: '/analisis' },
 ];
 ---
 <nav class="site-nav">
@@ -29,10 +30,84 @@ const items = [
     ))}
 
     <div class="nav-print">
-      <button type="button" class="print-button" onclick="window.print()">Imprimir reporte</button>
+      <button
+        type="button"
+        class="print-button"
+        data-print-asset={printAsset}
+      >
+        Imprimir reporte
+      </button>
     </div>
   </div>
 </nav>
+
+<script>
+  (() => {
+    const button = document.querySelector('.site-nav .print-button');
+    if (!(button instanceof HTMLButtonElement)) return;
+
+    const asset = button.dataset.printAsset;
+
+    button.addEventListener('click', () => {
+      if (!asset) {
+        window.print();
+        return;
+      }
+
+      const iframe = document.createElement('iframe');
+      iframe.style.position = 'fixed';
+      iframe.style.right = '0';
+      iframe.style.bottom = '0';
+      iframe.style.width = '0';
+      iframe.style.height = '0';
+      iframe.style.border = '0';
+      iframe.src = asset;
+
+      const cleanup = () => {
+        iframe.remove();
+      };
+
+      iframe.addEventListener('load', () => {
+        try {
+          const iframeWindow = iframe.contentWindow;
+          if (!iframeWindow) {
+            window.open(asset, '_blank');
+            cleanup();
+            return;
+          }
+
+          let fallbackTimer: number | undefined;
+
+          const handleAfterPrint = () => {
+            iframeWindow.removeEventListener('afterprint', handleAfterPrint);
+            if (fallbackTimer) {
+              window.clearTimeout(fallbackTimer);
+            }
+            cleanup();
+          };
+
+          iframeWindow.addEventListener('afterprint', handleAfterPrint);
+          fallbackTimer = window.setTimeout(() => {
+            iframeWindow.removeEventListener('afterprint', handleAfterPrint);
+            cleanup();
+          }, 30000);
+          iframeWindow.focus();
+          iframeWindow.print();
+        } catch (error) {
+          window.open(asset, '_blank');
+          cleanup();
+        }
+      });
+
+      iframe.addEventListener('error', () => {
+        window.open(asset, '_blank');
+        cleanup();
+      });
+
+      document.body.appendChild(iframe);
+    });
+  })();
+</script>
 
 <style>
   .site-nav {

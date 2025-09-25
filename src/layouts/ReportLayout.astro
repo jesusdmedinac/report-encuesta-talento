@@ -5,9 +5,10 @@ interface Props {
 	title: string;
 	current?: string;
 	noIndex?: boolean;
+  printAsset?: string;
 }
 
-const { title, current = '', noIndex = false } = Astro.props;
+const { title, current = '', noIndex = false, printAsset = '' } = Astro.props;
 ---
 
 <!doctype html>
@@ -23,7 +24,7 @@ const { title, current = '', noIndex = false } = Astro.props;
     <link type="text/css" rel="stylesheet" href="/css/style.css"/>
 	</head>
 	<body>
-		<SiteNav current={current} />
+		<SiteNav current={current} printAsset={printAsset} />
 		<slot />
 	</body>
 </html>
