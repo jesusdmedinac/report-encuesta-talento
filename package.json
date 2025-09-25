@@ -14,6 +14,8 @@
     "generate-individual": "node src/scripts/generate-individual-reports.mjs",
     "build-baremos-md": "node src/scripts/build-baremos-from-md.mjs",
     "build-action-catalog": "node src/scripts/build-action-catalog.mjs",
+    "build-analysis-json": "node src/scripts/build-analysis-json.mjs",
+    "update-global-data": "node src/scripts/update-global-data.mjs",
     "update-progress": "node src/scripts/update-progress.mjs",
     "test": "node --test"
   },

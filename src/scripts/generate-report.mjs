@@ -5,6 +5,7 @@ import path from 'path';
 import { MAPPINGS_PATH } from './config.js';
 import { getArgument, loadJson } from './utils.js';
 import { loadAndProcessCsv, performQuantitativeAnalysis } from './services/csv-processor.js';
+import { loadQuantitativeFromAnalysis } from './services/analysis-loader.js';
 import { initializeAiClient, performQualitativeAnalysis, preAnalyzeOpenEnded } from './services/ai-analyzer.js';
 import { generateReportJson } from './services/report-builder.js';
 import { validateData } from './services/validator.js';
@@ -27,8 +28,8 @@ async function main() {
         const refreshOpenEnded = process.argv.includes('--refresh-open-ended');
         const offline = process.argv.includes('--offline');
 
-        if (!csvFilePath || !empresaNombre || !reportId) {
-            throw new Error('Faltan argumentos obligatorios. Se requiere --csv, --empresa, y --reportId.');
+        if (!empresaNombre || !reportId) {
+            throw new Error('Faltan argumentos obligatorios. Se requiere --empresa y --reportId.');
         }
 
         // 2. Inicializar Cliente de IA (omitido en modo offline)
@@ -50,37 +51,50 @@ async function main() {
         console.log(`Cargando mapeos desde: ${MAPPINGS_PATH}`);
         const mappings = loadJson(MAPPINGS_PATH);
 
-        console.log(`Cargando y procesando datos desde: ${csvFilePath}`);
-        const { quantitativeData, openEndedData } = loadAndProcessCsv(csvFilePath);
-
-        // 4. Realizar Análisis
-        console.log('Realizando análisis cuantitativo...');
-        const quantitativeResults = performQuantitativeAnalysis(quantitativeData, mappings);
-        // Manejo de caché para abiertas
+        let quantitativeResults;
+        let totalRespondents = 0;
+        let openEndedData = {};
         const openEndedCachePath = path.join(process.cwd(), 'src', 'data', `openEnded.${reportId}.json`);
         let openEndedAnalysis = null;
-        if (!skipOpenEnded) {
-            if (!refreshOpenEnded && fs.existsSync(openEndedCachePath)) {
-                try {
-                    openEndedAnalysis = JSON.parse(fs.readFileSync(openEndedCachePath, 'utf8'));
-                    console.log(`Cargando caché de abiertas desde ${openEndedCachePath}`);
-                } catch (e) {
-                    console.warn('No se pudo leer el caché de abiertas. Se intentará regenerar.', e.message);
+
+        if (csvFilePath) {
+            console.log(`Cargando y procesando datos desde: ${csvFilePath}`);
+            const { quantitativeData, openEndedData: openEndedFromCsv } = loadAndProcessCsv(csvFilePath);
+            totalRespondents = quantitativeData.length;
+            openEndedData = openEndedFromCsv;
+
+            console.log('Realizando análisis cuantitativo...');
+            quantitativeResults = performQuantitativeAnalysis(quantitativeData, mappings);
+
+            if (!skipOpenEnded) {
+                if (!refreshOpenEnded && fs.existsSync(openEndedCachePath)) {
+                    try {
+                        openEndedAnalysis = JSON.parse(fs.readFileSync(openEndedCachePath, 'utf8'));
+                        console.log(`Cargando caché de abiertas desde ${openEndedCachePath}`);
+                    } catch (e) {
+                        console.warn('No se pudo leer el caché de abiertas. Se intentará regenerar.', e.message);
+                    }
                 }
-            }
-            if (!offline && !openEndedAnalysis && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
-                console.log('Generando pre‑análisis de abiertas (sin script externo)...');
-                openEndedAnalysis = await preAnalyzeOpenEnded(provider, aiClient, effectiveModelName, openEndedData);
-                try {
-                    fs.writeFileSync(openEndedCachePath, JSON.stringify({
-                        source: { csvPath: csvFilePath, rowCount: quantitativeData.length, generatedAt: new Date().toISOString() },
-                        ...openEndedAnalysis,
-                    }, null, 2), 'utf8');
-                    console.log(`Caché de abiertas guardado en ${openEndedCachePath}`);
-                } catch {}
+                if (!offline && !openEndedAnalysis && Object.values(openEndedData).some(arr => Array.isArray(arr) && arr.length)) {
+                    console.log('Generando pre‑análisis de abiertas (sin script externo)...');
+                    openEndedAnalysis = await preAnalyzeOpenEnded(provider, aiClient, effectiveModelName, openEndedData);
+                    try {
+                        fs.writeFileSync(openEndedCachePath, JSON.stringify({
+                            source: { csvPath: csvFilePath, rowCount: quantitativeData.length, generatedAt: new Date().toISOString() },
+                            ...openEndedAnalysis,
+                        }, null, 2), 'utf8');
+                        console.log(`Caché de abiertas guardado en ${openEndedCachePath}`);
+                    } catch {}
+                }
+            } else {
+                console.log('Flag --skip-open-ended activo: se omite el pre‑análisis de abiertas.');
             }
         } else {
-            console.log('Flag --skip-open-ended activo: se omite el pre‑análisis de abiertas.');
+            console.log('No se proporcionó --csv. Cargando métricas desde analysisScores.json.');
+            const fallback = loadQuantitativeFromAnalysis();
+            quantitativeResults = fallback.analysisResults;
+            totalRespondents = fallback.sampleSize || 0;
+            console.log(`Se utilizaron puntajes preprocesados derivados de ${fallback.source}`);
         }
 
         console.log('Realizando análisis cualitativo...');
@@ -109,7 +123,7 @@ async function main() {
         // Determinar el modo de generación para trazabilidad
         const generationMode = offline ? 'offline' : (qualitativeResults.__generationMode || 'online');
 
-        const reportJson = generateReportJson(quantitativeResults, qualitativeResults, quantitativeData.length, empresaNombre, reportId, provider, effectiveModelName, generationMode);
+        const reportJson = generateReportJson(quantitativeResults, qualitativeResults, totalRespondents, empresaNombre, reportId, provider, effectiveModelName, generationMode);
         // Validación del reporte final contra el esquema
         try {
           validateData(reportJson, 'report');

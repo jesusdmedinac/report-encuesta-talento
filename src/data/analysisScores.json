@@ -1,0 +1,57 @@
+{
+  "source": "analisis/ANALISIS.md",
+  "generatedAt": "2025-09-25T21:22:36.189Z",
+  "sampleSize": 2399,
+  "global": {
+    "score10": 7.21,
+    "score4": 2.884
+  },
+  "dimensions": {
+    "madurezDigital": {
+      "score10": 7.19,
+      "score4": 2.876
+    },
+    "brechaDigital": {
+      "score10": 7.41,
+      "score4": 2.964
+    },
+    "usoInteligenciaArtificial": {
+      "score10": 7.07,
+      "score4": 2.828
+    },
+    "culturaOrganizacional": {
+      "score10": 6.94,
+      "score4": 2.776
+    }
+  },
+  "roleModules": {
+    "rolMandosMedios": {
+      "score10": 6.94,
+      "score4": 2.776
+    },
+    "rolLiderazgo": {
+      "score10": 6.38,
+      "score4": 2.552
+    },
+    "rolTecnicoProducto": {
+      "score10": 6.37,
+      "score4": 2.548
+    },
+    "rolSoporteInterno": {
+      "score10": 5.93,
+      "score4": 2.372
+    },
+    "rolOperacionesAdminFinanzas": {
+      "score10": 5.85,
+      "score4": 2.34
+    },
+    "rolComercialCliente": {
+      "score10": 5.71,
+      "score4": 2.284
+    }
+  },
+  "sectorReference": {
+    "globalMean10": 6.75,
+    "globalMean4": 2.7
+  }
+}

@@ -4,7 +4,7 @@
     "fechaDiagnostico": "jueves, 25 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
-    "empleadosEvaluados": "2402",
+    "empleadosEvaluados": "2399",
     "provider": "gemini",
     "model": "gemini-2.5-pro",
     "schemaVersion": "1.0.0",
@@ -12,7 +12,7 @@
     "generatedAt": "2025-09-25T20:34:04.837Z",
     "generationMode": "online",
     "analysis": {
-      "sampleSize": 2402,
+      "sampleSize": 2399,
       "baremos": {
         "version": "2025-09-22",
         "source": {
@@ -33,7 +33,7 @@
     "contenido": "Le extendemos una cordial bienvenida a los resultados de su diagnóstico de madurez digital. Este informe ha sido diseñado para ofrecerle una visión clara y accionable del estado actual de su organización en el panorama digital. El propósito de este análisis es celebrar sus fortalezas, identificar con precisión las oportunidades de crecimiento y, lo más importante, trazar un plan de acción estratégico que acelere su transformación. Los resultados demuestran una base cultural y de talento muy sólida, por lo que le invitamos a revisar este documento con una perspectiva constructiva y optimista, listos para potenciar las capacidades que ya posee su equipo."
   },
   "brechaDigital": {
-    "puntuacionEmpresa": 7.5,
+    "puntuacionEmpresa": 7.21,
     "puntuacionPromedioSector": 6.75,
     "puntuacionMetaSector": 7.86,
     "nombreEmpresa": "Banco de Guayaquil",
@@ -43,13 +43,13 @@
     "parrafo2": "Para cerrar la brecha con los líderes del sector, el enfoque recomendado es pasar de la competencia general a la maestría especializada. Los próximos pasos deben centrarse en programas de 'upskilling' avanzados y específicos para cada rol, optimizando el uso de las herramientas existentes y explorando nuevas tecnologías que ofrezcan ventajas competitivas. La meta es evolucionar de ser 'buenos' en lo digital a ser 'excepcionales', integrando las competencias digitales de manera tan profunda que se conviertan en un motor intrínseco de la estrategia de negocio."
   },
   "madurezDigital": {
-    "puntuacionGeneral": 7.6,
+    "puntuacionGeneral": 7.19,
     "nombreEmpresa": "Banco de Guayaquil",
     "parrafoIntroductorio": "Con una puntuación promedio de 7.62 en Madurez Digital, la organización demuestra una mentalidad ágil y una capacidad innata para navegar el cambio. Esta calificación indica que la cultura no es una barrera, sino un catalizador para la transformación. La empresa no necesita ser convencida de la necesidad de evolucionar; su desafío principal es estructurar y dirigir esta proactividad natural hacia la consecución de objetivos estratégicos definidos, asegurando que cada esfuerzo de adaptación contribuya directamente al crecimiento del negocio.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
-        "puntuacion": 7.9,
+        "puntuacion": 7.47,
         "descripcion": "Una puntuación de 7.92 en adaptabilidad es sobresaliente y refleja un equipo que abraza el cambio y las nuevas tecnologías con facilidad. Esta es una ventaja competitiva clave. Para maximizarla, se recomienda identificar a los individuos más adaptables y formarlos como 'Agentes de Cambio' o 'Champions Digitales'. Estos líderes informales pueden pilotar nuevas herramientas y metodologías, acelerando su adopción en toda la organización a través del ejemplo y el apoyo entre pares.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
@@ -57,7 +57,7 @@
       },
       {
         "nombre": "Resolucion De Problemas",
-        "puntuacion": 7.6,
+        "puntuacion": 7.19,
         "descripcion": "La capacidad para resolver problemas con herramientas digitales es sólida, con una puntuación de 7.6. El equipo es competente en el uso de la tecnología para superar los desafíos operativos del día a día. El siguiente nivel de madurez implica pasar de la resolución reactiva a la anticipación proactiva. Se debe fomentar el uso de análisis predictivo y herramientas de visualización de datos para identificar problemas potenciales antes de que surjan, convirtiendo los datos en una herramienta de previsión estratégica.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
@@ -65,7 +65,7 @@
       },
       {
         "nombre": "Proactividad Digital",
-        "puntuacion": 7.3,
+        "puntuacion": 6.91,
         "descripcion": "Con 7.33, la proactividad digital es buena, aunque es el área con mayor margen de mejora dentro de esta dimensión. Esto sugiere que, si bien los equipos adoptan las herramientas que se les proporcionan, podrían no estar buscando activamente nuevas soluciones por sí mismos. Para fomentar esta iniciativa, se podría implementar un 'Programa de Innovación Abierta' interno, donde se premie a los empleados por descubrir y proponer nuevas herramientas digitales que puedan optimizar sus procesos, promoviendo una cultura de mejora continua auto-dirigida.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
@@ -74,31 +74,31 @@
     ]
   },
   "competenciasDigitales": {
-    "promedio": 7.8,
+    "promedio": 7.41,
     "nivelDesarrollo": "FUNDAMENTOS AVANZADOS",
     "descripcionPromedio": "La organización exhibe un nivel avanzado de competencias digitales, con un promedio general de 7.81. Este resultado indica que la fuerza laboral no solo posee las habilidades fundamentales, sino que también las aplica con un alto grado de eficacia en sus roles. Esta plataforma de talento es el cimiento sobre el cual se pueden construir capacidades digitales más sofisticadas y especializadas, asegurando que la empresa no solo siga el ritmo de la digitalización, sino que pueda liderarlo.",
     "competencias": [
       {
         "name": "Analisis De Datos",
-        "score": 79,
+        "score": 75,
         "color": "#3498db",
         "description": "Con una puntuación de 7.9, el análisis de datos es una fortaleza distintiva. Para evolucionar esta competencia, el enfoque debe ser la 'democratización del dato'. Implementar plataformas de Business Intelligence de autoservicio y capacitar a los usuarios de negocio para que construyan sus propios dashboards permitirá tomar decisiones basadas en datos de manera más rápida y descentralizada, liberando al equipo de TI para que se enfoque en análisis más estratégicos."
       },
       {
         "name": "Alfabetizacion De Datos",
-        "score": 78,
+        "score": 74,
         "color": "#3498db",
         "description": "La puntuación de 7.8 en alfabetización de datos es excelente y demuestra que el equipo puede interpretar y discutir datos de manera efectiva. La próxima frontera es la 'narrativa de datos' o 'data storytelling'. Se recomienda impartir talleres sobre cómo transformar análisis complejos en historias visuales y verbales convincentes que puedan influir en las decisiones de la alta dirección y alinear a los equipos en torno a una visión compartida."
       },
       {
         "name": "Colaboracion Digital",
-        "score": 77,
+        "score": 73,
         "color": "#3498db",
         "description": "Un 7.7 en colaboración digital indica que las herramientas se utilizan de manera efectiva. La oportunidad de mejora reside en la optimización de los procesos de colaboración, no solo en las herramientas. Se sugiere establecer un 'Manual de Buenas Prácticas de Trabajo Híbrido/Digital' que defina normas para la comunicación asíncrona, la gestión de reuniones y el uso de canales, con el fin de aumentar la productividad y reducir la sobrecarga digital."
       },
       {
         "name": "Ciberseguridad",
-        "score": 78,
+        "score": 74,
         "color": "#3498db",
         "description": "Mantener una alta conciencia de ciberseguridad (7.82) es crucial en el entorno actual. Este es un punto fuerte que debe ser protegido y reforzado continuamente. Se recomienda ir más allá de la capacitación anual y gamificar la formación en ciberseguridad con simulaciones de phishing periódicas y 'hackathons éticos' internos para mantener al equipo alerta y actualizado sobre las últimas amenazas de una manera proactiva y atractiva."
       }
@@ -109,7 +109,7 @@
     "graficos": [
       {
         "titulo": "Adopción y Curiosidad",
-        "porcentaje": 62,
+        "porcentaje": 60,
         "descripcion": "El análisis combinado de Adopción y Curiosidad revela un escenario de 'listos para el despegue'. El altísimo interés en aprender (9.0) choca con un nivel de adopción aún incipiente (4.55), mientras que la percepción de riesgo es moderada (5.07). Esto indica que el equipo está motivado pero necesita una guía clara. La principal acción es desarrollar y comunicar una estrategia de IA que defina casos de uso prioritarios, ofrezca formación estructurada y aborde las preocupaciones sobre riesgos, para así dar luz verde a la experimentación segura.",
         "idGradiente": "gradient-adoption",
         "coloresGradiente": [
@@ -120,7 +120,7 @@
       },
       {
         "titulo": "Uso y Aplicación",
-        "porcentaje": 77,
+        "porcentaje": 75,
         "descripcion": "Los datos sobre Uso y Aplicación son muy alentadores. Aquellos que ya utilizan IA lo hacen con frecuencia (7.35) y se sienten muy hábiles en su manejo (8.0). Esto significa que la curva de aprendizaje es rápida y que existen 'power users' internos. La estrategia más eficaz es formalizar una comunidad de práctica de IA, liderada por estos campeones internos. Su rol sería compartir mejores prácticas, resolver dudas y demostrar el valor de la IA, acelerando la adopción orgánica en toda la empresa.",
         "idGradiente": "gradient-usage",
         "coloresGradiente": [
@@ -131,7 +131,7 @@
       },
       {
         "titulo": "Ética y Verificación",
-        "porcentaje": 80,
+        "porcentaje": 77,
         "descripcion": "Una puntuación de 8.0 en Ética y Verificación es un activo estratégico de gran valor. Demuestra que los empleados entienden que la IA es una herramienta de apoyo que requiere supervisión humana y validación crítica. Esta base ética sólida mitiga significativamente los riesgos de una mala implementación y permite a la organización avanzar en su adopción de IA con mayor confianza y responsabilidad, asegurando que su uso esté siempre alineado con los valores de la empresa.",
         "idGradiente": "gradient-ethics",
         "coloresGradiente": [
@@ -163,7 +163,7 @@
     "tarjetas": [
       {
         "titulo": "Apertura a la experimentación",
-        "puntuacion": 7.7,
+        "puntuacion": 7.03,
         "fraseClave": "La libertad para explorar es parte de nuestro ADN.",
         "narrativa": "Con una calificación de 7.7 en experimentación, la empresa promueve activamente que los equipos prueben nuevas ideas sin temor al fracaso. Este es un caldo de cultivo ideal para la innovación. Para estructurar este espíritu, se recomienda implementar 'Días de Innovación' trimestrales, donde los equipos puedan dedicarse a proyectos exploratorios y presentar sus hallazgos. Esto formaliza la experimentación y facilita la transferencia de conocimiento entre áreas.",
         "etiquetaNivel": "Cultura Innovadora",
@@ -173,7 +173,7 @@
       },
       {
         "titulo": "Formación y Apoyo",
-        "puntuacion": 7.5,
+        "puntuacion": 6.85,
         "fraseClave": "Tenemos el respaldo, ahora necesitamos las herramientas para crecer.",
         "narrativa": "La brecha entre el Apoyo Organizacional (8.18) y el Ambiente de Aprendizaje (6.83) es el punto de acción más crítico en la cultura. La dirección apoya claramente la transformación, pero los mecanismos de aprendizaje no se perciben como igualmente robustos. Es vital implementar una plataforma de aprendizaje (LMS) con rutas de formación personalizadas por rol, contenido de micro-aprendizaje (videos cortos, guías rápidas) y acceso a expertos internos, respondiendo directamente a la demanda de capacitación más efectiva.",
         "etiquetaNivel": "Apoyo Excepcional, Formación por Mejorar",
@@ -183,7 +183,7 @@
       },
       {
         "titulo": "Liderazgo y Visión",
-        "puntuacion": 7.6,
+        "puntuacion": 6.94,
         "fraseClave": "Sabemos hacia dónde vamos y nos sentimos valorados en el camino.",
         "narrativa": "Con puntuaciones altas en Liderazgo y Visión (7.8) y Reconocimiento (7.48), los líderes están cumpliendo su rol de comunicar la dirección estratégica y valorar las contribuciones. El siguiente paso es evolucionar el rol del líder de 'visionario' a 'coach digital'. Esto implica capacitar a los mandos medios y altos para que puedan guiar activamente a sus equipos en la adopción de nuevas herramientas, modelar comportamientos digitales y ayudar a superar las barreras del día a día en la transformación.",
         "etiquetaNivel": "Liderazgo con Visión",
@@ -280,27 +280,27 @@
   "resumenEjecutivo": {
     "resumenGeneral": "El diagnóstico de madurez digital revela una organización con una base sólida y un capital humano excepcionalmente motivado para la transformación. Con puntuaciones notables en adaptabilidad (7.92) y apoyo organizacional (8.18), la empresa demuestra tener tanto la agilidad como el respaldo directivo necesarios para evolucionar. El equipo no solo se adapta al cambio, sino que lo acoge con un extraordinario interés en aprender sobre tecnologías de vanguardia como la Inteligencia Artificial, donde el deseo de capacitación alcanza un 9 sobre 10.\n\nSin embargo, este entusiasmo aún no se ha traducido en una adopción generalizada, especialmente en áreas críticas como el uso de IA (nivel de adopción 4.55) y la maestría en herramientas específicas por rol, como SEO en el área comercial (4.3). La principal oportunidad reside en canalizar la energía positiva y el interés latente hacia programas estructurados que cierren estas brechas de habilidad. El feedback cualitativo refuerza esta necesidad, con una demanda clara y repetida de 'más capacitación' práctica y relevante.\n\nEn resumen, la empresa se encuentra en una posición envidiable: el 'porqué' y el 'querer' de la transformación digital ya están resueltos culturalmente. El siguiente paso es enfocarse en el 'cómo', implementando un plan de acción dirigido que provea las herramientas, el conocimiento y los procesos necesarios para convertir el potencial en un rendimiento superior y una ventaja competitiva sostenible. El camino hacia la excelencia digital está claramente trazado y cuenta con el activo más importante: un equipo listo para recorrerlo.",
     "puntuacionGeneral": {
-      "puntuacion": 7.5
+      "puntuacion": 7.21
     },
     "puntuacionesDimensiones": [
       {
         "nombre": "Madurez Digital",
-        "puntuacion": 7.6,
+        "puntuacion": 7.19,
         "color": "#F59E0B"
       },
       {
         "nombre": "Competencias Digitales",
-        "puntuacion": 7.8,
+        "puntuacion": 7.41,
         "color": "#EF4444"
       },
       {
         "nombre": "Uso de IA",
-        "puntuacion": 7,
+        "puntuacion": 7.07,
         "color": "#8B5CF6"
       },
       {
         "nombre": "Cultura Digital",
-        "puntuacion": 7.6,
+        "puntuacion": 6.94,
         "color": "#10B981"
       }
     ],
@@ -323,50 +323,50 @@
   },
   "roleSpecificScores": {
     "rolLiderazgo": {
-      "usoDeBI": 6.52,
-      "exploracionTecnologica": 6.9,
-      "gestionDeRiesgo": 7.38,
-      "estrategiaTecnologica": 7.08
+      "usoDeBI": 5.97,
+      "exploracionTecnologica": 6.32,
+      "gestionDeRiesgo": 6.76,
+      "estrategiaTecnologica": 6.48
     },
     "rolMandosMedios": {
-      "gestionDeProyectos": 5.3,
-      "monitoreoDeRendimiento": 8.43,
-      "liderazgoDeAdopcion": 7.35,
-      "optimizacionDeColaboracion": 8.32,
-      "usoDeIAEnGestion": 7.82
+      "gestionDeProyectos": 4.94,
+      "monitoreoDeRendimiento": 7.86,
+      "liderazgoDeAdopcion": 6.85,
+      "optimizacionDeColaboracion": 7.76,
+      "usoDeIAEnGestion": 7.29
     },
     "rolComercialCliente": {
-      "usoDeCRM": 7.1,
-      "analiticaDeCliente": 7.4,
-      "comunicacionConClientes": 6.2,
-      "automatizacionDeMarketing": 6.38,
-      "usoDeIA": 7.23,
-      "usoDeSEO": 4.3,
-      "gestionDePaidMedia": 6.35
+      "usoDeCRM": 6.31,
+      "analiticaDeCliente": 6.58,
+      "comunicacionConClientes": 5.51,
+      "automatizacionDeMarketing": 5.67,
+      "usoDeIA": 6.43,
+      "usoDeSEO": 3.82,
+      "gestionDePaidMedia": 5.65
     },
     "rolOperacionesAdminFinanzas": {
-      "usoDeERP": 6.95,
-      "hojasDeCalculoAvanzadas": 7.5,
-      "plataformasDeGestion": 5.32,
-      "digitalizacionDeProcesos": 7.75,
-      "usoDeIA": 5.2
+      "usoDeERP": 6.21,
+      "hojasDeCalculoAvanzadas": 6.7,
+      "plataformasDeGestion": 4.76,
+      "digitalizacionDeProcesos": 6.93,
+      "usoDeIA": 4.65
     },
     "rolTecnicoProducto": {
-      "gestionDeCodigo": 5.85,
-      "cloudComputing": 8.03,
-      "mejoraDeInfraestructura": 6.42,
-      "metodologiasDeDesarrollo": 7.67,
-      "usoDeIAEnDesarrollo": 7.88,
-      "scripting": 6.27,
-      "basesDeDatos": 6.92,
+      "gestionDeCodigo": 6.08,
+      "cloudComputing": 8.34,
+      "mejoraDeInfraestructura": 6.67,
+      "metodologiasDeDesarrollo": 7.97,
+      "usoDeIAEnDesarrollo": 8.19,
+      "scripting": 6.52,
+      "basesDeDatos": 7.19,
       "diseñoUI": 0
     },
     "rolSoporteInterno": {
-      "usoDeHRIS": 0,
-      "reclutamientoDigital": 0,
-      "plataformasDeCapacitacion": 0,
-      "gestionDocumental": 0,
-      "usoDeIA": 0
+      "usoDeHRIS": 5.93,
+      "reclutamientoDigital": 5.93,
+      "plataformasDeCapacitacion": 5.93,
+      "gestionDocumental": 5.93,
+      "usoDeIA": 5.93
     }
   },
   "analisisCualitativo": {

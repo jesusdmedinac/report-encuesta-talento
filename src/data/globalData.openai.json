@@ -4,7 +4,7 @@
     "fechaDiagnostico": "jueves, 25 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
-    "empleadosEvaluados": "2402",
+    "empleadosEvaluados": "2399",
     "provider": "openai",
     "model": "gpt-5",
     "schemaVersion": "1.0.0",
@@ -12,7 +12,7 @@
     "generatedAt": "2025-09-25T21:09:43.396Z",
     "generationMode": "online",
     "analysis": {
-      "sampleSize": 2402,
+      "sampleSize": 2399,
       "baremos": {
         "version": "2025-09-22",
         "source": {
@@ -33,7 +33,7 @@
     "contenido": "Bienvenidos al reporte de diagnóstico de madurez digital. El propósito es ofrecer una visión clara, basada en datos, sobre el estado actual de sus capacidades, cultura y uso de tecnologías clave como la IA, identificando fortalezas y oportunidades de mejora. El enfoque es práctico y constructivo: traducimos hallazgos en líneas de acción concretas para acelerar resultados de negocio en el corto y mediano plazo."
   },
   "brechaDigital": {
-    "puntuacionEmpresa": 7.5,
+    "puntuacionEmpresa": 7.21,
     "puntuacionPromedioSector": 6.75,
     "puntuacionMetaSector": 7.86,
     "nombreEmpresa": "Banco de Guayaquil",
@@ -43,13 +43,13 @@
     "parrafo2": "Para cerrar la brecha, recomendamos un enfoque en dos frentes: primero, estandarización y adopción formal (playbooks, marcos de riesgo y gobierno de IA, PMO ágil y plataforma de ejecución); segundo, capacidades comerciales y de talento (SEO, automatización y una academia digital sobre un LMS corporativo). Con pilotos trimestrales, métricas claras y sponsorship ejecutivo, el avance puede ser medible y sostenido."
   },
   "madurezDigital": {
-    "puntuacionGeneral": 7.6,
+    "puntuacionGeneral": 7.19,
     "nombreEmpresa": "Banco de Guayaquil",
     "parrafoIntroductorio": "La dimensión de madurez digital alcanza 7.62/10, indicando equipos capaces de adaptarse, resolver problemas y operar con iniciativa en entornos digitales. Este nivel permite capturar eficiencias inmediatas y escalar buenas prácticas, a la vez que sugiere priorizar la sistematización (procesos, herramientas compartidas y gobierno) para convertir esfuerzos individuales en resultados organizacionales.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
-        "puntuacion": 7.9,
+        "puntuacion": 7.47,
         "descripcion": "Con 7.92/10, la adaptabilidad es una fortaleza. Los equipos asimilan cambios y nuevas herramientas con rapidez. Recomendación: formalizar ciclos de experimentación trimestrales y difundir casos de uso internos para que la adaptación se traduzca en mejoras sostenidas de productividad.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
@@ -57,7 +57,7 @@
       },
       {
         "nombre": "Resolucion De Problemas",
-        "puntuacion": 7.6,
+        "puntuacion": 7.19,
         "descripcion": "La resolución de problemas en 7.6/10 muestra análisis y criterio adecuados. Para escalar, incorpore plantillas de problem framing, repositorios de soluciones reutilizables y métricas de impacto por caso, conectando la solución técnica con resultados de negocio.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
@@ -65,7 +65,7 @@
       },
       {
         "nombre": "Proactividad Digital",
-        "puntuacion": 7.3,
+        "puntuacion": 6.91,
         "descripcion": "La proactividad digital (7.33/10) es buena, pero aún hay margen para incentivar iniciativas bottom-up. Sugiere implementar challenges mensuales con reconocimiento visible, timeboxes de innovación en equipos y un backlog de mejoras priorizado por valor.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
@@ -74,31 +74,31 @@
     ]
   },
   "competenciasDigitales": {
-    "promedio": 7.8,
+    "promedio": 7.41,
     "nivelDesarrollo": "FUNDAMENTOS ESTABLECIDOS",
     "descripcionPromedio": "El promedio de competencias digitales (análisis de datos, alfabetización de datos, colaboración y ciberseguridad) es 7.81/10, señal de una base técnica confiable para operar con criterio, compartir información y resguardar activos. Este nivel sostiene la escalabilidad de iniciativas más avanzadas, como analítica aplicada e IA.",
     "competencias": [
       {
         "name": "Analisis De Datos",
-        "score": 79,
+        "score": 75,
         "color": "#3498db",
         "description": "Con 7.9/10, el análisis de datos permite decisiones oportunas. Siguiente paso: estandarizar dashboards críticos, definir owners por dominio y cerrar el ciclo con decisiones documentadas y aprendizajes."
       },
       {
         "name": "Alfabetizacion De Datos",
-        "score": 78,
+        "score": 74,
         "color": "#3498db",
         "description": "La alfabetización de datos en 7.8/10 indica comprensión de conceptos y métricas. Recomendación: microlearning sobre calidad de datos, sesgos y storytelling para que más áreas comuniquen hallazgos con impacto."
       },
       {
         "name": "Colaboracion Digital",
-        "score": 77,
+        "score": 73,
         "color": "#3498db",
         "description": "En 7.7/10, la colaboración es efectiva. Para elevarla, consolide un hub de conocimiento, lineamientos de trabajo asincrónico y normas de comunicación que reduzcan retrabajo."
       },
       {
         "name": "Ciberseguridad",
-        "score": 78,
+        "score": 74,
         "color": "#3498db",
         "description": "Ciberseguridad en 7.82/10: buen nivel de prácticas. Refuerce con simulaciones de phishing trimestrales, clasificación de información y controles preventivos en flujos de IA."
       }
@@ -109,7 +109,7 @@
     "graficos": [
       {
         "titulo": "Adopción y Curiosidad",
-        "porcentaje": 62,
+        "porcentaje": 60,
         "descripcion": "Adopción y Curiosidad: el promedio de interés, riesgo y adopción se sitúa cerca de 6.21/10. Existe una curiosidad destacada (9/10) y una prudencia saludable (5.07/10), pero la adopción formal es baja (4.55/10). Priorice un marco de uso responsable, repositorio de prompts y casos validados por área, además de evaluaciones de riesgo por tipo de dato.",
         "idGradiente": "gradient-adoption",
         "coloresGradiente": [
@@ -120,7 +120,7 @@
       },
       {
         "titulo": "Uso y Aplicación",
-        "porcentaje": 77,
+        "porcentaje": 75,
         "descripcion": "Uso y Aplicación: frecuencia (7.35/10) y habilidad (8/10) evidencian competencias listas para acelerar valor. Recomendación: programas de casos de uso con ROI, automatización de tareas repetitivas y copilotos en procesos clave (comercial, operaciones y desarrollo).",
         "idGradiente": "gradient-usage",
         "coloresGradiente": [
@@ -131,7 +131,7 @@
       },
       {
         "titulo": "Ética y Verificación",
-        "porcentaje": 80,
+        "porcentaje": 77,
         "descripcion": "Ética y Verificación: con 8/10, hay conciencia de controles. Institucionalice checklists de verificación, trazabilidad de fuentes y políticas de no exposición de datos sensibles para mantener el estándar a escala.",
         "idGradiente": "gradient-ethics",
         "coloresGradiente": [
@@ -163,7 +163,7 @@
     "tarjetas": [
       {
         "titulo": "Apertura a la experimentación",
-        "puntuacion": 7.7,
+        "puntuacion": 7.03,
         "fraseClave": "Experimentar con propósito acelera el aprendizaje colectivo.",
         "narrativa": "Con 7.7/10 en experimentación, los equipos prueban herramientas y procesos nuevos. Para potenciar el impacto, formalice ciclos de hipótesis-resultado (build-measure-learn), un portafolio de pilotos por trimestre y una ceremonia de aprendizaje compartido que convierta pruebas en estándares.",
         "etiquetaNivel": "Consolidación Temprana",
@@ -173,7 +173,7 @@
       },
       {
         "titulo": "Formación y Apoyo",
-        "puntuacion": 7.5,
+        "puntuacion": 6.85,
         "fraseClave": "Aprender todos los días, en el flujo del trabajo.",
         "narrativa": "El promedio entre ambiente de aprendizaje (6.83/10) y apoyo organizacional (8.18/10) es 7.51/10. Hay soporte, falta orquestación. Implemente un LMS con rutas por rol, cápsulas de 10–15 minutos, evaluaciones ligeras y seguimiento en OKRs, priorizando temas pedidos: herramientas actuales, nuevas tendencias y casos prácticos.",
         "etiquetaNivel": "Base Firme, Espacio para Escalar",
@@ -183,7 +183,7 @@
       },
       {
         "titulo": "Liderazgo y Visión",
-        "puntuacion": 7.6,
+        "puntuacion": 6.94,
         "fraseClave": "El liderazgo marca el ritmo y reconoce el progreso.",
         "narrativa": "Con liderazgo y visión (7.8/10) y reconocimiento (7.48/10) el promedio es 7.64/10. Recomiendo reforzar storytelling de resultados, un marco de reconocimiento a contribuciones digitales y la expectativa explícita de que líderes modelen el uso de datos e IA en decisiones.",
         "etiquetaNivel": "Dirección Clara",
@@ -317,27 +317,27 @@
   "resumenEjecutivo": {
     "resumenGeneral": "El diagnóstico evidencia una base digital sólida y homogénea: competencias clave en datos y ciberseguridad alrededor de 7.8/10, madurez digital en 7.62/10 y una cultura que habilita, con apoyo organizacional fuerte (8.18/10) y liderazgo estable (7.8/10). A nivel de roles, destacan las capacidades técnicas en cloud y metodologías, así como la gestión por desempeño en mandos medios.\nEn inteligencia artificial, el talento muestra alto interés (9/10) y buena habilidad (8/10), además de prácticas de ética y verificación maduras (8/10). Sin embargo, la adopción formal aún es baja (4.55/10) y persisten reservas sobre riesgos (5.07/10), lo que sugiere oportunidad de institucionalizar usos y marcos de seguridad. En lo comercial, la analítica de cliente es adecuada (7.4/10), aunque SEO (4.3/10) y automatización (6.38/10) requieren impulso.\nLas principales brechas están en plataformas de gestión (5.32/10), gestión de proyectos (5.3/10), diseño UI (0/10) y capacidades de soporte interno (HRIS, LMS y documentación, todos 0/10). El plan propuesto prioriza adopción responsable de IA, una academia digital con infraestructura de talento (HRIS/LMS), la profesionalización comercial (SEO/automatización) y la excelencia operativa. Con foco y cadencia, la organización puede cerrar 1.5 puntos frente a la meta sectorial en 9 a 12 meses.",
     "puntuacionGeneral": {
-      "puntuacion": 7.5
+      "puntuacion": 7.21
     },
     "puntuacionesDimensiones": [
       {
         "nombre": "Madurez Digital",
-        "puntuacion": 7.6,
+        "puntuacion": 7.19,
         "color": "#F59E0B"
       },
       {
         "nombre": "Competencias Digitales",
-        "puntuacion": 7.8,
+        "puntuacion": 7.41,
         "color": "#EF4444"
       },
       {
         "nombre": "Uso de IA",
-        "puntuacion": 7,
+        "puntuacion": 7.07,
         "color": "#8B5CF6"
       },
       {
         "nombre": "Cultura Digital",
-        "puntuacion": 7.6,
+        "puntuacion": 6.94,
         "color": "#10B981"
       }
     ],
@@ -360,50 +360,50 @@
   },
   "roleSpecificScores": {
     "rolLiderazgo": {
-      "usoDeBI": 6.52,
-      "exploracionTecnologica": 6.9,
-      "gestionDeRiesgo": 7.38,
-      "estrategiaTecnologica": 7.08
+      "usoDeBI": 5.97,
+      "exploracionTecnologica": 6.32,
+      "gestionDeRiesgo": 6.76,
+      "estrategiaTecnologica": 6.48
     },
     "rolMandosMedios": {
-      "gestionDeProyectos": 5.3,
-      "monitoreoDeRendimiento": 8.43,
-      "liderazgoDeAdopcion": 7.35,
-      "optimizacionDeColaboracion": 8.32,
-      "usoDeIAEnGestion": 7.82
+      "gestionDeProyectos": 4.94,
+      "monitoreoDeRendimiento": 7.86,
+      "liderazgoDeAdopcion": 6.85,
+      "optimizacionDeColaboracion": 7.76,
+      "usoDeIAEnGestion": 7.29
     },
     "rolComercialCliente": {
-      "usoDeCRM": 7.1,
-      "analiticaDeCliente": 7.4,
-      "comunicacionConClientes": 6.2,
-      "automatizacionDeMarketing": 6.38,
-      "usoDeIA": 7.23,
-      "usoDeSEO": 4.3,
-      "gestionDePaidMedia": 6.35
+      "usoDeCRM": 6.31,
+      "analiticaDeCliente": 6.58,
+      "comunicacionConClientes": 5.51,
+      "automatizacionDeMarketing": 5.67,
+      "usoDeIA": 6.43,
+      "usoDeSEO": 3.82,
+      "gestionDePaidMedia": 5.65
     },
     "rolOperacionesAdminFinanzas": {
-      "usoDeERP": 6.95,
-      "hojasDeCalculoAvanzadas": 7.5,
-      "plataformasDeGestion": 5.32,
-      "digitalizacionDeProcesos": 7.75,
-      "usoDeIA": 5.2
+      "usoDeERP": 6.21,
+      "hojasDeCalculoAvanzadas": 6.7,
+      "plataformasDeGestion": 4.76,
+      "digitalizacionDeProcesos": 6.93,
+      "usoDeIA": 4.65
     },
     "rolTecnicoProducto": {
-      "gestionDeCodigo": 5.85,
-      "cloudComputing": 8.03,
-      "mejoraDeInfraestructura": 6.42,
-      "metodologiasDeDesarrollo": 7.67,
-      "usoDeIAEnDesarrollo": 7.88,
-      "scripting": 6.27,
-      "basesDeDatos": 6.92,
+      "gestionDeCodigo": 6.08,
+      "cloudComputing": 8.34,
+      "mejoraDeInfraestructura": 6.67,
+      "metodologiasDeDesarrollo": 7.97,
+      "usoDeIAEnDesarrollo": 8.19,
+      "scripting": 6.52,
+      "basesDeDatos": 7.19,
       "diseñoUI": 0
     },
     "rolSoporteInterno": {
-      "usoDeHRIS": 0,
-      "reclutamientoDigital": 0,
-      "plataformasDeCapacitacion": 0,
-      "gestionDocumental": 0,
-      "usoDeIA": 0
+      "usoDeHRIS": 5.93,
+      "reclutamientoDigital": 5.93,
+      "plataformasDeCapacitacion": 5.93,
+      "gestionDocumental": 5.93,
+      "usoDeIA": 5.93
     }
   },
   "analisisCualitativo": {
