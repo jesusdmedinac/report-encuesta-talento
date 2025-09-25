@@ -1,0 +1,619 @@
+---
+import ReportLayout from '../../layouts/ReportLayout.astro';
+
+const graphPath = (id) => `/assets/analisis/sep25/${id}.png`;
+const reportPdf = '/assets/analisis/sep25/analisis-escala-madurez-digital-sep25.pdf';
+---
+<ReportLayout
+  title="Análisis SEP25 · Banco de Guayaquil"
+  current="analysis"
+  printAsset={reportPdf}
+>
+  <main class="analysis-report">
+    <section>
+      <h1 style="color: black;">Análisis de Madurez Digital · Banco Guayaquil · Sep25</h1>
+      <p>
+        Este estudio resume los resultados de la <strong>Escala de Madurez Digital (V2.7)</strong> aplicada a
+        <strong>2399 participantes</strong> del Banco Guayaquil. Se analizan cuatro dimensiones (D1–D4), sus
+        subdimensiones y módulos específicos por rol, complementadas con hallazgos cualitativos
+        derivados de preguntas abiertas y comparaciones con una muestra de referencia del sector.
+      </p>
+      <p>
+        Las dimensiones evaluadas fueron: <strong>D1</strong> Madurez Digital y Adaptabilidad, <strong>D2</strong> Brecha de
+        Competencias Digitales, <strong>D3</strong> Cultura Tecnológica y Liderazgo y <strong>D4</strong> Adopción de
+        Inteligencia Artificial. La escala validó fiabilidad mediante coeficiente omega y combinó datos
+        cuantitativos con análisis cualitativo (frecuencia y TF-IDF) para comprender las diferencias entre
+        perfiles de competencia digital.
+      </p>
+    </section>
+
+    <section>
+      <h2>Descripción de la Muestra</h2>
+      <p>
+        La muestra está compuesta por <strong>2399 colaboradores</strong> del sector bancario ecuatoriano. Presenta una
+        distribución de género equilibrada, un alto nivel educativo (más de la mitad con formación
+        universitaria), predominio de adultos jóvenes entre 25 y 34 años y amplia representación de roles
+        comerciales, operativos y técnicos dentro del banco.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('0')}
+          alt="Barras horizontales con la distribución por género: 52.4 % femenino y 47.6 % masculino"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Distribución por género.</strong> Participación femenina del 52.4&nbsp;% y masculina del 47.6&nbsp;%.</p>
+          <p><strong>Insight:</strong> equilibrio general con ligera mayoría femenina.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('1')}
+          alt="Barras horizontales por nivel educativo: 53.8 % universitario, 24.8 % posgrado, 11.1 % técnico y 10.3 % secundaria"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Distribución por nivel educativo.</strong> Predominan estudios universitarios y de posgrado.</p>
+          <p><strong>Insight:</strong> la formación avanzada caracteriza a la plantilla del banco.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('2')}
+          alt="Barras horizontales por rango de edad: 47.6 % entre 25 y 34 años; 28.3 % entre 35 y 44; 11.8 % entre 45 y 54; 9.5 % menores de 25; 2.7 % 55 o más"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Distribución etaria.</strong> Adultos jóvenes (25–34 años) representan casi la mitad de la muestra.</p>
+          <p><strong>Insight:</strong> participación decreciente conforme aumenta la edad.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('3')}
+          alt="Barras verticales que muestran la distribución por rol: Comercial/Cliente 32 %, Operaciones/Admin/Finanzas 30 %, Mandos Medios 19.7 %, Técnico/Producto 13.9 %, Soporte Interno 2.6 %, Liderazgo 1.8 %"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Distribución por rol.</strong> Mayor presencia en áreas comerciales y operativas.</p>
+          <p><strong>Insight:</strong> los equipos de liderazgo y soporte representan proporciones menores.</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Propiedades Psicométricas</h2>
+      <p>
+        El instrumento mostró fiabilidad robusta mediante coeficiente omega: <strong>D1 = 0.834</strong>,
+        <strong>D2 = 0.833</strong>, <strong>D3 = 0.834</strong> y <strong>D4 = 0.600</strong>. Las tres primeras dimensiones alcanzan niveles
+        satisfactorios (ω &gt; 0.80) y D4 se mantiene en un rango moderado aceptable para escalas en
+        desarrollo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Estructura del Instrumento</h2>
+      <p>
+        La escala se organiza en cuatro dimensiones con subdimensiones y módulos específicos por rol.
+        Cada ítem se respondió en una escala Likert transformada a valores de 1 a 10.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Dimensión</th>
+            <th>Subdimensiones</th>
+            <th>Elementos de medición clave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>D1 · Madurez Digital y Adaptabilidad</strong></td>
+            <td>Adaptabilidad y aprendizaje autónomo</td>
+            <td>
+              Probar nuevas herramientas; comodidad con cambios tecnológicos; búsqueda activa de
+              tutoriales; resolución de problemas técnicos; uso de plataformas en línea.
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Proactividad digital</td>
+            <td>
+              Uso de funciones avanzadas de software; identificación de procesos a digitalizar o
+              automatizar.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>D2 · Brecha de Competencias Digitales</strong></td>
+            <td>Uso y análisis de datos</td>
+            <td>
+              Uso de datos para decisiones; herramientas de análisis; facilidad para localizar información
+              en sistemas internos.
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Colaboración digital</td>
+            <td>
+              Funciones colaborativas en documentos en línea; presentaciones en plataformas virtuales.
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Seguridad digital</td>
+            <td>
+              Verificación de remitentes; gestión de contraseñas; uso de gestores y autenticación de dos
+              factores.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>D3 · Cultura Tecnológica y Liderazgo</strong></td>
+            <td>Liderazgo y clima digital</td>
+            <td>
+              Comunicación del liderazgo sobre impacto tecnológico; espacios de intercambio; resiliencia
+              ante fallas; reconocimiento a la innovación; acceso a formación digital.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>D4 · Adopción de IA</strong></td>
+            <td>Uso y competencia en IA</td>
+            <td>
+              Frecuencia de uso de IA generativa; comodidad al redactar prompts; estado actual de uso de
+              IA en el trabajo.
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Mentalidad y ética frente a la IA</td>
+            <td>
+              Preocupaciones sobre reemplazo laboral; interés en capacitación; verificación de exactitud en
+              salidas de IA.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <strong>Módulos específicos por rol:</strong> además de las dimensiones generales, se incluyen módulos para
+        Liderazgo (Business Intelligence y adopción tecnológica), Mandos Medios (gestión de proyectos y
+        colaboración digital), Comercial/Cliente (CRM, analytics, automatización y marketing digital),
+        Operaciones/Admin/Finanzas (ERP, logística y digitalización de procesos), Técnico/Producto (gestión
+        de código, cloud, metodologías ágiles) y Soporte Interno (RRHH/Legal) enfocado en HRIS,
+        reclutamiento digital y gestión documental.
+      </p>
+    </section>
+
+    <section>
+      <h2>Resultados Globales</h2>
+      <p>
+        El Índice Global promedio alcanzó <strong>7.21</strong>, ubicando al Banco Guayaquil en un nivel intermedio-alto de
+        madurez digital. Las competencias aplicadas superan a las organizacionales: <strong>D2</strong> lidera con <strong>7.41</strong>,
+        seguido por <strong>D1</strong> (7.19) y <strong>D4</strong> (7.07). <strong>D3</strong> presenta la menor puntuación relativa (6.94), lo que
+        evidencia un desafío en cultura y liderazgo digital.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('4')}
+          alt="Conjunto de boxplots que muestran distribuciones del índice global y de las dimensiones y subdimensiones"
+          loading="lazy"
+        />
+        <figcaption>
+          <p>
+            <strong>Distribución de puntajes por dimensión y subdimensión.</strong> D2 y el uso de IA (D4-S1)
+            destacan con medianas altas; liderazgo y mentalidad de IA muestran mayor variabilidad.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Diferencias Sociodemográficas</h2>
+      <p>
+        Se observaron diferencias estadísticamente significativas por género, nivel educativo, rol y edad.
+        El resumen ejecutivo muestra tamaños del efecto pequeños a medianos, con el rol organizacional como
+        principal factor diferenciador.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('5')}
+          alt="Boxplot del índice global por género con medianas similares alrededor de 7.1"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Índice global por género.</strong> Medianas cercanas entre hombres y mujeres.</p>
+          <p><strong>Insight:</strong> brechas de género mínimas en el resultado global.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('6')}
+          alt="Boxplot de D1 por género con distribuciones similares en torno a 7.2"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D1 · Madurez digital y adaptabilidad por género.</strong> Distribuciones paralelas.</p>
+          <p><strong>Insight:</strong> consistencia de resultados por género.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('7')}
+          alt="Boxplot de proactividad digital por género con valores similares y algunos atípicos bajos"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D1-S2 · Proactividad digital por género.</strong> Brecha ligera a favor del grupo masculino.</p>
+          <p><strong>Insight:</strong> hombres reportan mayor proactividad para automatizar procesos.</p>
+        </figcaption>
+      </figure>
+
+      <p>
+        Los hombres superan ligeramente a las mujeres (d = 0.228) en la madurez digital global, con la mayor
+        diferencia en proactividad digital (d = 0.318). Sin embargo, las brechas se mantienen en magnitudes
+        pequeñas.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('8')}
+          alt="Boxplot del índice global por nivel educativo con tendencia ascendente desde secundaria hasta posgrado"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Índice global por nivel educativo.</strong> Incremento progresivo junto a la formación.</p>
+          <p><strong>Insight:</strong> mayor educación se traduce en mayor madurez digital.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('9')}
+          alt="Boxplot de adopción de IA por nivel educativo con medianas más altas en posgrado"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4 · Adopción de IA por nivel educativo.</strong> Crece de manera clara con la formación.</p>
+          <p><strong>Insight:</strong> la educación avanzada impulsa el uso de IA.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('10')}
+          alt="Boxplot de uso y competencia en IA por nivel educativo mostrando dispersión contralada en niveles altos"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4-S1 · Uso y competencia en IA por nivel educativo.</strong> Gap pronunciado entre posgrado y secundaria.</p>
+          <p><strong>Insight:</strong> las competencias prácticas de IA se consolidan con formación superior.</p>
+        </figcaption>
+      </figure>
+
+      <p>
+        El nivel educativo tiene efectos positivos sobre la madurez digital (η² = 0.054) y especialmente sobre
+        la adopción de IA (η² = 0.10), concentrados en el uso práctico de la tecnología.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('11')}
+          alt="Boxplot del índice global por rango de edad con medianas estables entre 7.0 y 7.4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Índice global por rango de edad.</strong> Patrones estables con ligera ventaja en adultos jóvenes.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('12')}
+          alt="Boxplot de adopción de IA por rango de edad con descenso gradual en cohortes mayores"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4 · Adopción de IA por rango de edad.</strong> Cohortes jóvenes lideran el uso de IA.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('13')}
+          alt="Boxplot de mentalidad y ética frente a IA por rango de edad con valores superiores en grupos jóvenes"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4-S2 · Mentalidad y ética frente a la IA por rango de edad.</strong> Descenso progresivo con la edad.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('14')}
+          alt="Boxplot de cultura tecnológica y liderazgo por rango de edad con recuperación en el grupo 55+"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D3 · Cultura tecnológica y liderazgo por rango de edad.</strong> Patrón con ligera forma de U.</p>
+        </figcaption>
+      </figure>
+
+      <p>
+        La edad muestra efectos pequeños: el índice global desciende ligeramente con la edad (η² = 0.01) y la
+        mentalidad frente a la IA presenta el mayor diferencial entre jóvenes y cohortes mayores.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('15')}
+          alt="Boxplot del índice global por rol con mejores medianas en mandos medios, liderazgo y soporte interno"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Índice global por rol.</strong> Técnico/Producto, Mandos Medios y Liderazgo concentran los mejores resultados.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('16')}
+          alt="Boxplot de D1 por rol con valores altos en técnico/producto y mandos medios"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D1 · Madurez digital y adaptabilidad por rol.</strong> Roles técnicos y de mando lideran.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('17')}
+          alt="Boxplot de proactividad digital por rol con picos en técnico/producto"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D1-S2 · Proactividad digital por rol.</strong> Brecha marcada a favor de funciones técnicas.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('18')}
+          alt="Boxplot de adopción de IA por rol con mayores medianas en soporte interno y mandos medios"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4 · Adopción de IA por rol.</strong> Soporte interno y mandos medios registran los niveles más altos.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('19')}
+          alt="Boxplot de uso y competencia en IA por rol con liderazgo y mandos medios en la parte superior"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4-S1 · Uso y competencia en IA por rol.</strong> Mayor dominio en roles de decisión.</p>
+        </figcaption>
+      </figure>
+
+      <p>
+        El rol organizacional es el factor con mayor efecto (η² = 0.062). Técnico/Producto alcanza el índice
+        global más alto (7.76) y Operaciones/Admin/Finanzas el más bajo (7.02). La brecha más pronunciada se
+        observa en el uso de IA (η² = 0.112).
+      </p>
+    </section>
+
+    <section>
+      <h2>Competencias Especializadas por Rol</h2>
+      <p>
+        Los módulos especializados muestran promedios entre 5.71 y 6.94, indicando que las competencias
+        específicas representan un reto transversal mayor que las competencias generales.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('20')}
+          alt="Conjunto de boxplots por módulo que comparan competencias especializadas por rol"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Competencias digitales específicas por rol.</strong> Mandos Medios lideran; Comercial/Cliente es el módulo con menor desempeño.</p>
+        </figcaption>
+      </figure>
+
+      <ol>
+        <li><strong>M2 · Mandos Medios:</strong> 6.94 puntos; integración efectiva de herramientas de gestión digital.</li>
+        <li><strong>M1 · Liderazgo:</strong> 6.38 puntos; oportunidades en Business Intelligence y planificación tecnológica.</li>
+        <li><strong>M5 · Técnico/Producto:</strong> 6.37 puntos; brechas en gestión de código, cloud y metodologías ágiles.</li>
+        <li><strong>M6 · Soporte Interno (RRHH/Legal):</strong> 5.93 puntos; foco en HRIS y plataformas de e-learning.</li>
+        <li><strong>M4 · Operaciones/Finanzas:</strong> 5.85 puntos; necesidades en sistemas ERP y analítica financiera.</li>
+        <li><strong>M3 · Comercial/Cliente:</strong> 5.71 puntos; desarrollo pendiente en CRM, analytics y automatización de marketing.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Análisis Cualitativo</h2>
+      <p>
+        El análisis de texto (frecuencia y TF-IDF) revela marcos conceptuales divergentes entre cuartiles de
+        competencia digital. Los grupos con mayor madurez conceptualizan la tecnología desde la estrategia y
+        la optimización, mientras que los grupos con menor madurez la abordan desde procesos incrementales y
+        barreras operativas.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('21')}
+          alt="Barras horizontales con palabras más frecuentes en D1 para Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D1 · Palabras más frecuentes por cuartil.</strong> Ambos grupos hablan de aprendizaje y adaptación; Q4 añade curiosidad tecnológica.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('22')}
+          alt="Barras horizontales con términos distintivos TF-IDF en D1 para Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D1 · Términos distintivos (TF-IDF).</strong> Q1 alude a velocidad/dificultad; Q4 a estrategia e investigación.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('23')}
+          alt="Barras con palabras más frecuentes en D2 para cuartiles Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D2 · Palabras más frecuentes.</strong> Q4 introduce términos orientados a datos, optimización y aprovechamiento.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('24')}
+          alt="Barras con términos distintivos TF-IDF en D2 para Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D2 · Términos distintivos (TF-IDF).</strong> Q1 se centra en práctica presencial; Q4 en resultados y colaboración.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('25')}
+          alt="Barras con palabras frecuentes en D3 para Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D3 · Palabras más frecuentes.</strong> Vocabulario compartido con mayor énfasis en cultura digital para Q4.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('26')}
+          alt="Barras con términos distintivos TF-IDF en D3 para Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D3 · Términos distintivos (TF-IDF).</strong> Q1 se enfoca en dinámicas humanas; Q4 en implementación y seguridad digital.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('27')}
+          alt="Barras con palabras frecuentes en D4 para Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4 · Palabras más frecuentes.</strong> Q4 relaciona IA con información y decisiones operativas.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('28')}
+          alt="Barras con términos distintivos TF-IDF en D4 para Q1 y Q4"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>D4 · Términos distintivos (TF-IDF).</strong> Q1 expresa cautela; Q4 ve la IA como aliada operativa y reconoce sesgos.</p>
+        </figcaption>
+      </figure>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dimensión</th>
+            <th>Q1 (competencia baja)</th>
+            <th>Q4 (competencia alta)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>D1 · Madurez Digital y Aprendizaje</strong></td>
+            <td>Lenguaje ligado a ritmo, complejidad y primeras experiencias.</td>
+            <td>Enfoque estratégico y optimización continua.</td>
+          </tr>
+          <tr>
+            <td><strong>D2 · Eficiencia Digital Aplicada</strong></td>
+            <td>Herramientas concretas y aprendizaje paso a paso.</td>
+            <td>Uso de datos, optimización y resultados medibles.</td>
+          </tr>
+          <tr>
+            <td><strong>D3 · Cultura Organizacional</strong></td>
+            <td>Énfasis en dinámica humana y obstáculos organizacionales.</td>
+            <td>Implementación y soluciones concretas.</td>
+          </tr>
+          <tr>
+            <td><strong>D4 · Adopción de IA</strong></td>
+            <td>Visión cautelosa orientada a alivio operativo.</td>
+            <td>IA como aliada estratégica con conciencia de sesgos.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Comparación con Organizaciones de Referencia</h2>
+      <p>
+        Frente a una muestra de referencia de organizaciones ecuatorianas, el Banco Guayaquil presenta una
+        ventaja promedio de aproximadamente 0.5 puntos en madurez digital (7.21 vs 6.75). La diferencia es más
+        notable en roles técnicos y de liderazgo, mientras que áreas comerciales muestran convergencia con el
+        mercado.
+      </p>
+
+      <figure>
+        <img
+          src={graphPath('29')}
+          alt="Boxplot comparativo de madurez digital entre Banco Guayaquil y otras organizaciones"
+          loading="lazy"
+        />
+        <figcaption>
+          <p><strong>Comparativa general.</strong> Distribución del Banco desplazada hacia valores superiores.</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src={graphPath('30')}
+          alt="Boxplots comparativos por rol entre Banco Guayaquil y otras organizaciones"
+          loading="lazy"
+        />
+        <figcaption>
+          <p>
+            <strong>Comparativa por rol.</strong> Ventaja pronunciada del Banco en roles Técnico/Producto y Liderazgo;
+            brechas menores en Operaciones, Soporte y Comercial.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Conclusiones</h2>
+      <ul>
+        <li>La escala presenta fiabilidad adecuada, especialmente en D1–D3 (ω ≈ 0.83) y moderada en D4 (0.60).</li>
+        <li>D2 es la fortaleza principal (7.41) y D3 el desafío clave (6.94), evidenciando mayor dominio técnico que organizacional.</li>
+        <li>Rol y nivel educativo generan brechas significativas, lo que respalda la creación de baremos específicos.</li>
+        <li>El análisis cualitativo muestra marcos conceptuales divergentes: de mejora incremental (Q1) a mentalidad estratégica (Q4).</li>
+        <li>Banco Guayaquil supera a la muestra de referencia, especialmente en perfiles técnicos y de liderazgo.</li>
+        <li>Las intervenciones deberían diferenciarse por tipología de talento, abordando tanto habilidades técnicas como marcos interpretativos.</li>
+      </ul>
+    </section>
+  </main>
+</ReportLayout>
