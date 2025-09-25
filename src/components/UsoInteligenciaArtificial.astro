@@ -3,28 +3,28 @@ const {
     titulo = "Uso de la Inteligencia Artificial",
     graficos = [
         {
-            titulo: "Adopción de IA",
-            porcentaje: 21,
-            descripcion: "Profermaco está en la primera etapa de adopción de IA, con un 21% de avance que representa una base sólida para comenzar a implementar soluciones de inteligencia artificial específicas para la industria ferretera y de materiales de construcción.",
+            titulo: "Interés y preparación",
+            porcentaje: 82,
+            descripcion: "El equipo muestra una disposición alta para aprender y aplicar IA. Existe capital humano listo para profundizar en casos de uso estratégicos.",
             idGradiente: "gradient-adoption",
             coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"]
         },
         {
-            titulo: "Uso en el Trabajo",
-            porcentaje: 16,
-            descripcion: "El uso práctico de IA en las operaciones diarias está en fase inicial (16%), representando una extraordinaria oportunidad para integrar herramientas de inteligencia artificial en procesos ferreteros como gestión de inventarios y atención al cliente.",
+            titulo: "Uso en la práctica",
+            porcentaje: 68,
+            descripcion: "Los pilotos y automatizaciones existentes se encuentran en etapa intermedia; el reto es llevarlos a escala operativa.",
             idGradiente: "gradient-usage",
             coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"]
         },
         {
-            titulo: "Ética y Responsabilidad",
-            porcentaje: 26,
-            descripcion: "La conciencia ética en IA está en desarrollo (26%), proporcionando una base fundamental para implementar prácticas responsables de inteligencia artificial, especialmente importante en el sector ferretero donde la precisión en recomendaciones de productos y servicios es crítica.",
+            titulo: "Gobernanza y ética",
+            porcentaje: 72,
+            descripcion: "Hay sensibilidad sobre riesgos y verificación. Formalizar lineamientos aumentará la confianza para habilitar más casos de IA.",
             idGradiente: "gradient-ethics",
             coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"]
         }
     ],
-    resumen = "<strong>Oportunidad estratégica:</strong> Los resultados de Profermaco en inteligencia artificial muestran una primera etapa de desarrollo con fundamentos prometedores. Con adopción en 21%, uso práctico en 16% y conciencia ética en 26%, la empresa está perfectamente posicionada para implementar una estrategia gradual de IA enfocada en aplicaciones ferreterías específicas. Las principales oportunidades se encuentran en automatización de procesos de inventario, sistemas de recomendación para clientes y análisis predictivo de demanda de materiales de construcción."
+    resumen = "<strong>Oportunidad estratégica:</strong> Existe una base entusiasta para la IA: la preparación y el interés superan el 80 %, mientras que el uso formal y la gobernanza se mantienen en fase intermedia. Escalar casos con lineamientos claros permitirá convertir ese potencial en impacto medible."
 } = Astro.props;
 ---
 <section>
@@ -67,28 +67,33 @@ const {
 
 <script>
     function animateCircularProgress() {
-        const progressBars = document.querySelectorAll('.progress-bar');
-        const progressPercentages = [21, 16, 26]; // Porcentajes de progreso para Profermaco
-        
-        progressBars.forEach((bar: any, index: any) => {
-            const radius = 75;
+        const progressBars = document.querySelectorAll<SVGCircleElement>('.progress-bar');
+
+        progressBars.forEach((bar, index) => {
+            const radius = bar.r.baseVal.value || 75;
             const circumference = 2 * Math.PI * radius;
-            const percentage = progressPercentages[index];
-            const strokeDasharray = (percentage / 100) * circumference;
-            const strokeDashoffset = circumference - strokeDasharray;
-            
-            // Establecer valores iniciales
-            bar.style.strokeDasharray = circumference;
-            bar.style.strokeDashoffset = circumference;
-            
-            // Animar después de un pequeño retraso
-            setTimeout(() => {
-                bar.style.strokeDasharray = `${strokeDasharray} ${circumference}`;
-                bar.style.strokeDashoffset = '0';
-            }, 500 + index * 200);
+            const percentage = Number(bar.dataset.percent || '0');
+
+            bar.style.strokeDasharray = `${circumference} ${circumference}`;
+            bar.style.strokeDashoffset = `${circumference}`;
+
+            const runAnimation = () => {
+                const offset = circumference - (percentage / 100) * circumference;
+                bar.style.strokeDashoffset = `${offset}`;
+            };
+
+            const delay = 200 * index;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                runAnimation();
+            } else {
+                setTimeout(() => requestAnimationFrame(runAnimation), 400 + delay);
+            }
         });
     }
 
-    // Iniciar animación de los gráficos circulares
-    animateCircularProgress();
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', animateCircularProgress, { once: true });
+    } else {
+        animateCircularProgress();
+    }
 </script>

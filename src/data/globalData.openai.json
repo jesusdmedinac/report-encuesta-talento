@@ -4,96 +4,119 @@
     "fechaDiagnostico": "jueves, 18 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
-    "empleadosEvaluados": "2402",
+    "empleadosEvaluados": "2399",
     "provider": "openai",
     "model": "gpt-5",
     "schemaVersion": "1.0.0",
     "promptVersion": "1.0.0",
     "generatedAt": "2025-09-18T09:14:16.466Z",
-    "generationMode": "online"
+    "generationMode": "online",
+    "analysis": {
+      "sampleSize": 2399,
+      "baremos": {
+        "version": "2025-09-22",
+        "source": {
+          "file": "analisis/baremos.md",
+          "format": "markdown"
+        }
+      },
+      "reference": {
+        "benchmarkScore": 6.75,
+        "source": {
+          "document": "analisis/ANALISIS.md",
+          "section": "Comparación Banco Guayaquil vs. Otras Organizaciones"
+        }
+      }
+    }
   },
   "introduccion": {
     "titulo": "Introducción",
     "contenido": "Bienvenidos al reporte de madurez digital. El propósito de este diagnóstico es ofrecer una visión clara, objetiva y accionable del estado actual de sus capacidades digitales, identificando fortalezas, brechas y prioridades estratégicas. A partir de los datos cuantitativos y de los insights cualitativos, proponemos un camino pragmático para acelerar resultados de negocio con mejoras medibles, en un tono positivo y de colaboración."
   },
   "brechaDigital": {
-    "puntuacionEmpresa": 7.5,
-    "puntuacionMetaSector": 9.38,
+    "titulo": "Brecha digital frente al sector",
+    "puntuacionEmpresa": 7.21,
+    "puntuacionPromedioSector": 6.75,
+    "puntuacionMetaSector": 7.86,
+    "textoNivelActual": "Nivel intermedio-alto",
     "nombreEmpresa": "Banco de Guayaquil",
-    "textoNivelActual": "Nivel Competitivo",
-    "textoOportunidadParrafo": "Con un promedio general estimado de 7.55/10 frente a la meta sectorial de 9.38/10, la organización tiene una brecha de 1.83 puntos. Esto indica que ya compite con solvencia, pero aún existe espacio significativo para capturar eficiencias operativas, elevar la excelencia comercial y estandarizar prácticas que permitan escalar IA y automatizaciones con seguridad y trazabilidad.",
-    "parrafo1": "El estado actual evidencia bases sólidas: competencias data-driven altas (≈7.8–7.9), madurez digital central de 7.62 y una cultura que respalda el cambio (apoyo organizacional 8.18). En IA, el interés y la habilidad están presentes (9.0 y 8.0), pero el despliegue a escala aún no se consolida (adopción 4.55). En los frentes de go-to-market digital, hay desempeño moderado y disperso, con un SEO rezagado (4.3) y automatización parcial (6.38).",
-    "parrafo2": "Para cerrar la brecha, recomendamos: 1) un programa de adopción responsable de IA con gobierno, casos de uso priorizados por ROI y sandboxes seguros; 2) la digitalización de Soporte Interno (HRIS, LMS, gestión documental) para impulsar experiencia de colaborador y escalabilidad; 3) un plan de performance marketing enfocado en SEO técnico/contenidos y orquestación multicanal; y 4) estandarización de delivery (plataformas de gestión, gestión de proyectos y prácticas de UI/UX) para acelerar ciclos y calidad."
+    "textoOportunidadParrafo": "Con 7.21/10 frente a la meta avanzada de 7.86, la organización mantiene una ventaja frente al promedio sectorial (6.75) pero conserva una brecha de 0.65 puntos por cerrar.",
+    "parrafo1": "El análisis SEP25 confirma un índice global de 7.21/10. Las competencias aplicadas (D2: 7.41) lideran el desempeño, seguidas de la madurez y adaptabilidad (D1: 7.19) y la adopción de IA (D4: 7.07). La cultura tecnológica y el liderazgo (D3: 6.94) constituyen el frente con mayor margen de mejora.",
+    "parrafo2": "Para alcanzar la banda avanzada es necesario escalar la adopción responsable de IA, fortalecer el liderazgo y la cultura digital que acompañan el cambio, y profesionalizar los frentes comerciales y de soporte para conectar las capacidades digitales con resultados de negocio."
   },
   "madurezDigital": {
-    "puntuacionGeneral": 7.6,
+    "titulo": "D1 · Madurez Digital y Adaptabilidad",
+    "puntuacionGeneral": 7.19,
+    "puntuacionPromedioSector": 6.75,
+    "puntuacionMetaSector": 7.81,
     "nombreEmpresa": "Banco de Guayaquil",
-    "parrafoIntroductorio": "La madurez digital promedia 7.62/10, ubicando a la organización en un nivel competitivo. Esto significa que cuenta con capacidades consistentes para operar con herramientas digitales y resolver problemas de negocio, y que está en condiciones de capturar beneficios rápidos si se estandarizan prácticas y se escalan iniciativas de alto impacto.",
+    "parrafoIntroductorio": "La madurez digital alcanza 7.19/10: los equipos absorben el cambio con soltura y convierten la experiencia en mejoras continuas. El desafío está en expandir la proactividad digital a todas las áreas.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
-        "puntuacion": 7.9,
-        "descripcion": "Con 7.92/10, la adaptabilidad es una fortaleza. Los equipos responden bien al cambio y aprenden rápido. Recomendamos institucionalizar esta ventaja mediante ciclos de mejora continua (retrospectivas, OKR trimestrales) y pilotos controlados que conviertan la flexibilidad en resultados de negocio medibles.",
+        "puntuacion": 7.32,
+        "descripcion": "Los equipos demuestran agilidad frente a nuevas herramientas y cambios de proceso. Los roles técnicos y de mandos medios lideran la adopción (η² = 0.063), por lo que conviene formalizar sus prácticas como estándar organizacional.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "meta": 7.81
       },
       {
-        "nombre": "Resolucion De Problemas",
-        "puntuacion": 7.6,
-        "descripcion": "Con 7.6/10, la organización demuestra capacidad para enfrentar desafíos digitales. Para elevar este componente, impulse prácticas de problem framing y análisis causal (A3, 5 Porqués) y vincule métricas de impacto (tiempo de ciclo, NPS, conversión) a cada iniciativa.",
+        "nombre": "Resolución de problemas digitales",
+        "puntuacion": 7.25,
+        "descripcion": "La resolución digital se ubica en niveles intermedio-altos. Para sostener la ventaja conviene reforzar rutinas de diagnóstico (A3, 5 Porqués) y vincular los hallazgos con indicadores de impacto en negocio.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "meta": 7.81
       },
       {
-        "nombre": "Proactividad Digital",
-        "puntuacion": 7.3,
-        "descripcion": "Con 7.33/10, existe iniciativa para proponer mejoras, aunque aún hay espacio para escalar. Sugerimos un portafolio visible de experimentos con criterios de priorización por ROI y riesgo, y un sistema de reconocimiento que premie aportes replicables.",
+        "nombre": "Proactividad digital",
+        "puntuacion": 6.99,
+        "descripcion": "La proactividad presenta brechas entre género y unidades. Es clave habilitar incentivos y espacios visibles para compartir experimentos y aprendizajes que aceleren la adopción transversal.",
         "color": "var(--color-company)",
         "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "meta": 7.81
       }
     ]
   },
   "competenciasDigitales": {
-    "promedio": 7.8,
-    "nivelDesarrollo": "FUNDAMENTOS ESTABLECIDOS",
-    "descripcionPromedio": "Las competencias digitales (datos y colaboración) promedian 7.81/10, reflejando una base madura que soporta decisiones informadas y prácticas seguras. El foco debe pasar de la competencia individual a la estandarización organizacional y al impacto en KPIs del negocio.",
+    "titulo": "D2 · Competencias digitales aplicadas",
+    "promedio": 7.41,
+    "nivelDesarrollo": "Intermedio-alto",
+    "descripcionPromedio": "Las competencias aplicadas lideran el modelo (7.41/10), evidenciando dominio de datos, colaboración y seguridad por encima del benchmark.",
     "competencias": [
       {
-        "name": "Analisis De Datos",
-        "score": 79,
+        "name": "Análisis de datos",
+        "score": 74,
         "color": "#3498db",
-        "description": "Con 7.9/10, los equipos analizan datos con solvencia. Recomendación: formalizar catálogos de métricas y dashboards con dueños claros, y conectar sus insights a decisiones recurrentes (pricing, campañas, capacity planning)."
+        "description": "El uso de datos para decisiones alcanza 7.48/10. Priorizar la gobernanza de indicadores y la integración de fuentes asegura continuidad en el desempeño superior al benchmark."
       },
       {
-        "name": "Alfabetizacion De Datos",
-        "score": 78,
+        "name": "Alfabetización de datos",
+        "score": 74,
         "color": "#3498db",
-        "description": "Con 7.8/10, existe lenguaje común de datos. Refuércelo con guías de interpretación, definiciones únicas (glosario) y microlearning sobre estadística práctica y sesgos."
+        "description": "El lenguaje común de datos se consolida (7.42/10). Conviene reforzar microaprendizajes y guías de interpretación para amplificar el valor en áreas no técnicas."
       },
       {
-        "name": "Colaboracion Digital",
-        "score": 77,
+        "name": "Colaboración digital",
+        "score": 73,
         "color": "#3498db",
-        "description": "Con 7.7/10, la colaboración es buena. Estandarice canales y rituales (documentación viva, principios de comunicación asíncrona) y mida tiempos de respuesta y resolución entre áreas."
+        "description": "La colaboración digital alcanza 7.38/10. Establecer rituales compartidos y tableros transparentes ayudará a sostener la respuesta rápida entre equipos."
       },
       {
         "name": "Ciberseguridad",
-        "score": 78,
+        "score": 74,
         "color": "#3498db",
-        "description": "Con 7.82/10, la seguridad es un pilar. Para escalar IA y automatizaciones, incorpore security by design, revisiones de prompts/datos y controles de acceso basados en roles."
+        "description": "La seguridad y cumplimiento digital se mantienen en 7.36/10. Integrar seguridad por diseño en nuevos casos de IA y automatización resguardará este diferencial."
       }
     ]
   },
   "usoInteligenciaArtificial": {
-    "resumen": "<strong>La organización tiene el talento y la curiosidad para escalar IA, pero necesita convertir esa energía en adopción gobernada y casos de uso en producción.</strong> El interés en aprendizaje (9.0) y la habilidad de uso (8.0) son altos; la frecuencia es buena (7.35). La brecha está en la adopción a escala (4.55) y en gestionar adecuadamente riesgos (5.07), pese a una base ética sólida (8.0).",
+    "resumen": "La dimensión D4 se sitúa en 7.07/10. Existe una base entusiasta y preparada para IA; el reto consiste en institucionalizar casos de uso y lineamientos para convertir esa energía en impacto sostenido.",
     "graficos": [
       {
-        "titulo": "Adopción y Curiosidad",
-        "porcentaje": 62,
-        "descripcion": "Adopción y Curiosidad: El interés en aprendizaje (9.0) y la percepción de riesgo moderada (5.07) conviven con una adopción aún baja (4.55). Esto sugiere alto potencial latente que requiere gobierno claro, casos de uso priorizados por ROI, y entornos seguros (sandbox) para pasar de pilotos a producción sin comprometer cumplimiento.",
+        "titulo": "Interés y preparación",
+        "porcentaje": 82,
+        "descripcion": "El estudio constata una disposición alta para aprender y aplicar IA. Los colaboradores reportan curiosidad y preparación técnica suficientes para profundizar en casos de uso.",
         "idGradiente": "gradient-adoption",
         "coloresGradiente": [
           "#10B981",
@@ -102,9 +125,9 @@
         ]
       },
       {
-        "titulo": "Uso y Aplicación",
-        "porcentaje": 77,
-        "descripcion": "Uso y Aplicación: Con frecuencia de uso en 7.35 y habilidad en 8.0, los equipos ya operan herramientas de IA con solvencia. El siguiente salto es estandarizar plantillas, bibliotecas de prompts y patrones de integración (APIs/RPA) para capturar eficiencias repetibles.",
+        "titulo": "Uso en la práctica",
+        "porcentaje": 68,
+        "descripcion": "El uso cotidiano y la integración en procesos aún se mantienen en fase intermedia. Existen pilotos y automatizaciones puntuales, pero falta escalarlos a operaciones críticas.",
         "idGradiente": "gradient-usage",
         "coloresGradiente": [
           "#F59E0B",
@@ -113,9 +136,9 @@
         ]
       },
       {
-        "titulo": "Ética y Verificación",
-        "porcentaje": 80,
-        "descripcion": "Ética y Verificación: Con 8.0, hay una disciplina fuerte en verificación y uso responsable. Capitalice esta fortaleza creando un marco liviano de IA responsable (evaluaciones de riesgo, revisión humana, trazabilidad) que habilite velocidad con control.",
+        "titulo": "Gobernanza y ética",
+        "porcentaje": 72,
+        "descripcion": "La organización cuenta con sensibilidad ética y controles iniciales. Formalizar lineamientos y trazabilidad permitirá habilitar más casos con confianza.",
         "idGradiente": "gradient-ethics",
         "coloresGradiente": [
           "#8B5CF6",
@@ -126,215 +149,259 @@
     ]
   },
   "culturaOrganizacional": {
-    "insights": {
-      "resumen": "La cultura digital es favorable: liderazgo y visión en 7.8, apoyo organizacional en 8.18 y una apertura a experimentar de 7.7. El área a potenciar es el ambiente de aprendizaje (6.83), alineado con los comentarios cualitativos que piden capacitación práctica, segmentada y útil en el día a día.",
-      "puntos": [
-        {
-          "icono": "🤝",
-          "texto": "<strong>Apoyo organizacional</strong>: 8.18/10, hay sponsorship para acelerar."
-        },
-        {
-          "icono": "🧪",
-          "texto": "<strong>Experimentación</strong>: 7.7/10, se prueban ideas con apertura."
-        },
-        {
-          "icono": "🎓",
-          "texto": "<strong>Ambiente de aprendizaje</strong>: 6.83/10, urge rediseñar la capacitación hacia microlearning práctico."
-        }
-      ]
-    },
+    "titulo": "D3 · Cultura tecnológica y liderazgo",
     "tarjetas": [
       {
-        "titulo": "Apertura a la experimentación",
-        "puntuacion": 7.7,
-        "fraseClave": "“Experimentar con propósito, medir para escalar.”",
-        "narrativa": "La puntuación de experimentación (7.7) indica disposición a probar y aprender. Recomendamos un portafolio de experimentos con hipótesis claras, métricas de éxito y cierres formales (lo que se escala, lo que se descarta y por qué). Documentar aprendizajes en un repositorio accesible acelera la repetición del éxito.",
-        "etiquetaNivel": "Consolidación en curso",
-        "metricas": [],
-        "colorIcono": "",
-        "icono": ""
+        "titulo": "Liderazgo y visión digital",
+        "puntuacion": 7.05,
+        "etiquetaNivel": "Intermedio",
+        "colorIcono": "linear-gradient(135deg, #2563EB, #1D4ED8)",
+        "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 21V5C16 4.4 15.6 4 15 4H9C8.4 4 8 4.4 8 5V21L12 18L16 21Z\"/><circle cx=\"12\" cy=\"8\" r=\"2\"/></svg>",
+        "metricas": [
+          {
+            "icono": "👥",
+            "valor": "7.43",
+            "etiqueta": "Índice global liderazgo"
+          },
+          {
+            "icono": "📊",
+            "valor": "7.42",
+            "etiqueta": "Mandos medios"
+          },
+          {
+            "icono": "🛠️",
+            "valor": "7.76",
+            "etiqueta": "Técnico/Producto"
+          }
+        ],
+        "fraseClave": "Liderazgo dispuesto a acelerar la agenda digital",
+        "narrativa": "La dirección patrocina la transformación con resultados homogéneos (7.43/10). El reto consiste en articular una hoja de ruta que conecte prioridades estratégicas, capacitación y casos de uso de alto impacto."
       },
       {
-        "titulo": "Formación y Apoyo",
-        "puntuacion": 7.5,
-        "fraseClave": "“Formar menos, aplicar más.”",
-        "narrativa": "Combinando ambiente de aprendizaje (6.83) y apoyo organizacional (8.18), la empresa puede dar un salto si migra de cursos largos a microcaps prácticas, role-based y con casos reales. Bootcamps inter-áreas, tutoriales breves y certificaciones internas orientadas a resultados elevarán la aplicación en el puesto.",
-        "etiquetaNivel": "Fundamentos presentes",
-        "metricas": [],
-        "colorIcono": "",
-        "icono": ""
+        "titulo": "Ambiente de aprendizaje",
+        "puntuacion": 6.8,
+        "etiquetaNivel": "En desarrollo",
+        "colorIcono": "linear-gradient(135deg, #F59E0B, #F97316)",
+        "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 19H20\"/><path d=\"M12 3L20 7L12 11L4 7L12 3Z\"/><path d=\"M6 8V12C6 14.7614 8.23858 17 11 17H13C15.7614 17 18 14.7614 18 12V8\"/></svg>",
+        "metricas": [
+          {
+            "icono": "🎓",
+            "valor": "53.8%",
+            "etiqueta": "Participantes con pregrado"
+          },
+          {
+            "icono": "📈",
+            "valor": "24.8%",
+            "etiqueta": "Posgrado"
+          },
+          {
+            "icono": "🧭",
+            "valor": "η² 0.10",
+            "etiqueta": "Impacto educativo en IA"
+          }
+        ],
+        "fraseClave": "Talento con base académica robusta",
+        "narrativa": "Aunque la base de formación es alta, el análisis revela diferencias marcadas en adopción de IA según nivel educativo. Es prioritario diseñar experiencias de aprendizaje aplicadas para los segmentos con menor exposición tecnológica."
       },
       {
-        "titulo": "Liderazgo y Visión",
-        "puntuacion": 7.6,
-        "fraseClave": "“El reconocimiento multiplica los comportamientos que queremos ver.”",
-        "narrativa": "Con liderazgo y visión en 7.8 y reconocimiento en 7.48, existe guía estratégica y valoración del esfuerzo. Formalizar un sistema de reconocimiento a contribuciones replicables (estándares, automatizaciones, casos de uso IA) reforzará la alineación y acelerará la adopción.",
-        "etiquetaNivel": "Dirección clara",
-        "metricas": [],
-        "colorIcono": "",
-        "icono": ""
+        "titulo": "Apoyo organizacional",
+        "puntuacion": 6.97,
+        "etiquetaNivel": "Intermedio",
+        "colorIcono": "linear-gradient(135deg, #10B981, #059669)",
+        "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 21H3V7\"/><path d=\"M5 11L12 4L19 11\"/><path d=\"M16 21V11H8V21\"/></svg>",
+        "metricas": [
+          {
+            "icono": "🏦",
+            "valor": "52.4%",
+            "etiqueta": "Participación femenina"
+          },
+          {
+            "icono": "🧑‍🤝‍🧑",
+            "valor": "47.6%",
+            "etiqueta": "Participación masculina"
+          },
+          {
+            "icono": "🔁",
+            "valor": "Patrón en U",
+            "etiqueta": "Distribución etaria en D3"
+          }
+        ],
+        "fraseClave": "Clima propicio con margen para escalar",
+        "narrativa": "El clima organizacional sostiene la agenda digital, pero se observan variaciones por edad y área. Alinear reconocimientos, gestión del cambio y herramientas de soporte consolidará la confianza colectiva."
       }
-    ]
+    ],
+    "insights": {
+      "titulo": "💡 Hallazgos clave de cultura",
+      "puntos": [
+        {
+          "icono": "📌",
+          "texto": "<strong>Índice cultural 6.94/10:</strong> el liderazgo y el ambiente de aprendizaje requieren acompañamiento para sostener la transformación."
+        },
+        {
+          "icono": "🧭",
+          "texto": "<strong>Patrones etarios en forma de U:</strong> los grupos más jóvenes y senior comparten niveles similares, mientras que la mediana edad necesita refuerzo."
+        },
+        {
+          "icono": "🤝",
+          "texto": "<strong>Diferencias educativas:</strong> la adopción de IA varía según el nivel académico, lo que demanda programas segmentados."
+        }
+      ],
+      "resumen": "La cultura digital del banco progresa con un liderazgo comprometido y talento dispuesto. El siguiente paso es institucionalizar prácticas que hagan escalable la innovación y reduzcan disparidades por edad o formación."
+    }
   },
   "planAccion": {
-    "resumenGeneral": "Nuestra visión es convertir la base sólida actual en ventajas sostenibles: escalar IA con gobierno y ROI, digitalizar procesos de soporte para liberar capacidad, profesionalizar el go-to-market digital y estandarizar el delivery. El plan prioriza quick wins medibles y habilitadores estructurales para cerrar la brecha con la referencia sectorial.",
+    "resumenGeneral": "El plan prioriza acelerar la adopción responsable de IA, consolidar el liderazgo y la cultura digital y profesionalizar las competencias aplicadas en áreas comerciales y de soporte.",
     "iniciativas": [
       {
-        "id": "CD-001",
-        "titulo": "Programa de Adopción Responsable de IA (AR-IA)",
-        "descripcion": "Diseñar e implantar un marco de adopción de IA que combine gobierno liviano, catálogo de casos de uso priorizados por ROI y sandboxes seguros. Incluye plantillas de prompts, guías de verificación humana y criterios de paso de piloto a producción.",
+        "id": "IA-01",
+        "titulo": "Escalar casos de IA con gobierno ligero",
+        "descripcion": "Definir un portafolio priorizado de casos de IA, con criterios de impacto, riesgo y trazabilidad. Incluir guías de implementación, comité de revisión y métricas de seguimiento mensual.",
         "areaEnfoque": "Uso de IA",
         "objetivosClave": [
-          "Aumentar la adopción de IA de 4.55 a ≥7.0",
-          "Desplegar 8–12 casos de uso en producción con ROI positivo",
-          "Reducir tiempos de ciclo de tareas clave en 20–30%",
-          "Establecer lineamientos de IA responsable y trazabilidad"
+          "Incrementar la puntuación D4 de 7.07 a ≥7.5 en 12 meses",
+          "Implementar al menos 8 casos de uso en producción con ROI monitoreado",
+          "Establecer lineamientos de IA responsable basados en el análisis SEP25"
         ],
         "metricasExito": [
           {
-            "metrica": "Nivel de adopción de IA",
-            "valorObjetivo": "De 4.55 a ≥7.0"
+            "metrica": "Puntuación D4",
+            "valorObjetivo": "7.07 → 7.5"
           },
           {
-            "metrica": "Casos de uso IA en producción",
-            "valorObjetivo": "≥10 en 6–9 meses"
+            "metrica": "Casos de uso activos",
+            "valorObjetivo": "≥8"
           },
           {
-            "metrica": "Cumplimiento de pautas éticas/verificación",
-            "valorObjetivo": "≥95% de los casos auditados"
+            "metrica": "Cumplimiento de controles de trazabilidad",
+            "valorObjetivo": "≥95%"
           }
         ],
-        "responsableSugerido": "Transformación Digital + Riesgos + Tecnología",
-        "plazoEstimado": "6-9 meses",
+        "responsableSugerido": "Transformación Digital + Tecnología",
+        "plazoEstimado": "6-12 meses",
         "prioridad": "Alta"
       },
       {
-        "id": "CD-002",
-        "titulo": "Academia Digital y de IA: Microlearning Aplicado",
-        "descripcion": "Rediseñar la formación hacia microcápsulas prácticas, role-based, con bootcamps inter-áreas y casos reales. Responde al insight cualitativo de ‘menos videos largos, más contenido puntual y aplicable’. Incluye certificaciones internas y comunidades de práctica.",
-        "areaEnfoque": "Competencias Digitales y Cultura Organizacional",
+        "id": "CL-02",
+        "titulo": "Programa de liderazgo y cultura digital",
+        "descripcion": "Diseñar un itinerario de liderazgo que refuerce visión, gestión del cambio y acompañamiento a equipos. Combinar talleres con mentoring entre generaciones y seguimiento de compromisos.",
+        "areaEnfoque": "Cultura organizacional",
         "objetivosClave": [
-          "Elevar el ambiente de aprendizaje de 6.83 a ≥7.8",
-          "Mejorar habilidad de uso de IA de 8.0 a ≥8.5 con foco en casos reales",
-          "Aumentar la colaboración inter-áreas en proyectos digitales",
-          "Crear repositorio vivo de buenas prácticas y playbooks"
+          "Elevar D3 de 6.94 a ≥7.4",
+          "Cerrar las brechas etarias identificadas en el análisis",
+          "Integrar indicadores de clima digital en las revisiones trimestrales"
         ],
         "metricasExito": [
           {
-            "metrica": "Participación y finalización de microcursos",
-            "valorObjetivo": "≥80% de participación, ≥70% finalización"
+            "metrica": "Puntuación D3",
+            "valorObjetivo": "6.94 → 7.4"
           },
           {
-            "metrica": "Aplicación en el puesto (encuesta post)",
-            "valorObjetivo": "≥75% reporta uso semanal"
+            "metrica": "Brecha etaria en D3",
+            "valorObjetivo": "≤0.3 puntos"
           },
           {
-            "metrica": "NPS de formación",
-            "valorObjetivo": "≥60"
+            "metrica": "Participación de líderes",
+            "valorObjetivo": "≥85%"
           }
         ],
-        "responsableSugerido": "Personas & Cultura + Transformación Digital",
-        "plazoEstimado": "3-6 meses",
+        "responsableSugerido": "Personas & Cultura",
+        "plazoEstimado": "4-8 meses",
         "prioridad": "Alta"
       },
       {
-        "id": "CD-003",
-        "titulo": "Digitalización de Soporte Interno (HRIS, LMS y Gestión Documental)",
-        "descripcion": "Implementar o activar HRIS, plataforma de capacitación (LMS) y gestor documental con flujos y permisos. Esta capa habilita onboarding, upskilling continuo, cumplimiento y eficiencia operativa, cerrando brechas hoy en 0/10.",
-        "areaEnfoque": "Cultura Organizacional y Operaciones",
+        "id": "CD-03",
+        "titulo": "Academia aplicada de datos y marketing",
+        "descripcion": "Crear rutas de microlearning y laboratorios prácticos para roles comerciales y de soporte, enfocadas en analítica de cliente, automatización y SEO, alineadas a las brechas de 5.71-5.85 puntos.",
+        "areaEnfoque": "Competencias digitales",
         "objetivosClave": [
-          "Pasar de 0 a ≥6.5 en HRIS, LMS y gestión documental",
-          "Reducir tiempos de onboarding y trámites internos en 30%",
-          "Asegurar trazabilidad y auditoría documental",
-          "Mejorar experiencia del colaborador y cumplimiento"
+          "Elevar los módulos especializados Comercial/Cliente (5.71) y Operaciones/Admin/Finanzas (5.85) por encima de 6.5",
+          "Aumentar la adopción de prácticas de analítica y automatización en campañas clave",
+          "Generar comunidades de práctica que documenten aprendizajes"
         ],
         "metricasExito": [
           {
-            "metrica": "Índice de digitalización de Soporte Interno",
-            "valorObjetivo": "0 a ≥6.5 en 6 meses"
+            "metrica": "Puntuación módulos M3/M4",
+            "valorObjetivo": "≥6.5"
           },
           {
-            "metrica": "Tiempo medio de procesos internos",
-            "valorObjetivo": "−30%"
-          },
-          {
-            "metrica": "Satisfacción del colaborador (eNPS)",
-            "valorObjetivo": "+10 puntos"
-          }
-        ],
-        "responsableSugerido": "RR. HH. + TI",
-        "plazoEstimado": "6-9 meses",
-        "prioridad": "Alta"
-      },
-      {
-        "id": "CD-004",
-        "titulo": "Performance Marketing: SEO y Automatización Orquestada",
-        "descripcion": "Profesionalizar el frente comercial digital con un plan SEO técnico y de contenidos, integración CRM, automatizaciones de marketing y playbooks de comunicación. Se busca elevar SEO (4.3), comunicación con clientes (6.2) y automatización (6.38).",
-        "areaEnfoque": "Comercial y Marketing",
-        "objetivosClave": [
-          "Mejorar score SEO y tráfico orgánico de calidad",
-          "Aumentar la tasa de automatización de campañas y nurturing",
-          "Elevar engagement y conversión por canal",
-          "Unificar reporting de funnel con analítica de cliente (7.4→≥8.0)"
-        ],
-        "metricasExito": [
-          {
-            "metrica": "Health score SEO / Core Web Vitals",
-            "valorObjetivo": "Mejora ≥30%"
-          },
-          {
-            "metrica": "Participación de tráfico orgánico en leads",
-            "valorObjetivo": "De X a X+15 pp"
-          },
-          {
-            "metrica": "Porcentaje de campañas automatizadas",
+            "metrica": "Campañas con analítica integrada",
             "valorObjetivo": "≥70%"
+          },
+          {
+            "metrica": "Participación en comunidades",
+            "valorObjetivo": "≥150 colaboradores"
           }
         ],
         "responsableSugerido": "Marketing & Growth + Data/BI",
-        "plazoEstimado": "4-6 meses",
+        "plazoEstimado": "6-9 meses",
+        "prioridad": "Media"
+      },
+      {
+        "id": "SI-04",
+        "titulo": "Modernización de soporte interno",
+        "descripcion": "Impulsar la digitalización de procesos de RR.HH. y legales mediante HRIS, LMS y gestión documental, asegurando experiencia homogénea y cumplimiento regulatorio.",
+        "areaEnfoque": "Soporte interno",
+        "objetivosClave": [
+          "Elevar el módulo M6 (5.93) a ≥6.6",
+          "Reducir 30% los tiempos de trámite internos",
+          "Publicar repositorios actualizados y trazables"
+        ],
+        "metricasExito": [
+          {
+            "metrica": "Puntuación módulo M6",
+            "valorObjetivo": "5.93 → 6.6"
+          },
+          {
+            "metrica": "Tiempo de trámites",
+            "valorObjetivo": "−30%"
+          },
+          {
+            "metrica": "Documentos con versión controlada",
+            "valorObjetivo": "100%"
+          }
+        ],
+        "responsableSugerido": "RR.HH. + Operaciones",
+        "plazoEstimado": "6-10 meses",
         "prioridad": "Media"
       }
     ]
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "El diagnóstico muestra una base digital sólida con promedios robustos en competencias de datos (7.8–7.9), ciberseguridad (7.82) y cultura de apoyo (8.18). La madurez digital central se ubica en 7.62, apuntalada por una alta adaptabilidad (7.92) y una habilidad de uso de IA notable (8.0), con interés de aprendizaje excepcional (9.0). Estos resultados, junto con capacidades técnicas como cloud computing (8.03) y monitoreo de rendimiento en mandos medios (8.43), reflejan una organización preparada para escalar.\nLas brechas se concentran en la adopción a escala de IA (4.55), el fortalecimiento de prácticas de marketing digital (SEO 4.3; comunicación con clientes 6.2; automatización 6.38) y la estandarización operativa (plataformas de gestión 5.32; gestión de proyectos 5.3). Existen áreas críticas aún no desplegadas en Soporte Interno (HRIS, reclutamiento, formación y gestión documental con 0) y en diseño UI (0), lo que limita la captura de valor end-to-end y la experiencia de usuario.\nLa buena noticia es que la cultura, el apetito de aprendizaje y la ética en el uso de IA (8.0) son catalizadores poderosos. Con un plan de adopción responsable de IA, el despliegue de plataformas core de soporte y una agenda de upskilling enfocada y práctica, la organización puede cerrar rápidamente la brecha hacia la referencia sectorial y acelerar resultados de negocio de forma medible.",
+    "resumenGeneral": "El estudio SEP25 confirma un índice global de 7.21/10 con fortalezas profundas en competencias digitales aplicadas (D2: 7.41) y una base técnica capaz de absorber nuevas iniciativas. La madurez y adaptabilidad (D1: 7.19) sostienen el ritmo de cambio, mientras que la adopción de IA (D4: 7.07) avanza con entusiasmo y requiere mayor escalamiento. La cultura tecnológica alcanza 6.94/10, lo que subraya la necesidad de reforzar liderazgo, aprendizaje continuo y soporte operativo para que las capacidades transversales impacten todo el banco.",
     "puntuacionGeneral": {
-      "puntuacion": 7.5
+      "puntuacion": 7.21
     },
     "puntuacionesDimensiones": [
       {
-        "nombre": "Madurez Digital",
-        "puntuacion": 7.6,
+        "nombre": "Madurez digital",
+        "puntuacion": 7.19,
         "color": "#F59E0B"
       },
       {
-        "nombre": "Competencias Digitales",
-        "puntuacion": 7.8,
-        "color": "#EF4444"
+        "nombre": "Competencias digitales",
+        "puntuacion": 7.41,
+        "color": "#3B82F6"
       },
       {
         "nombre": "Uso de IA",
-        "puntuacion": 7,
+        "puntuacion": 7.07,
         "color": "#8B5CF6"
       },
       {
-        "nombre": "Cultura Digital",
-        "puntuacion": 7.6,
+        "nombre": "Cultura digital",
+        "puntuacion": 6.94,
         "color": "#10B981"
       }
     ],
     "fortalezas": [
-      "Interés en aprendizaje de IA muy alto (9.0/10) y habilidad de uso sólida (8.0/10).",
-      "Capacidades de datos y seguridad robustas: Análisis de datos (7.9), Alfabetización de datos (7.8), Ciberseguridad (7.82).",
-      "Cultura de soporte fuerte: Apoyo organizacional (8.18) y Liderazgo y visión (7.8).",
-      "Capacidades técnicas y de gestión destacadas: Cloud computing (8.03) y Monitoreo de rendimiento en mandos medios (8.43)."
+      "D2 - Competencias digitales aplicadas lidera el modelo con 7.41/10, garantizando decisiones informadas y colaboración efectiva.",
+      "Roles Técnico/Producto (7.76) y Liderazgo (7.43) muestran índices globales superiores, habilitando referentes internos para compartir mejores prácticas.",
+      "La muestra combina 52.4% de mujeres y un 78.6% con estudios universitarios o de posgrado, una base idónea para programas de especialización digital."
     ],
     "oportunidades": [
-      "Escalar la adopción de IA (4.55) con gobierno, casos de uso y seguridad; abordar la percepción de riesgo (5.07).",
-      "Impulsar el desempeño comercial digital: SEO (4.3), Comunicación con clientes (6.2) y Automatización de marketing (6.38).",
-      "Digitalizar Soporte Interno (HRIS, reclutamiento, capacitación, gestión documental) hoy en 0/10.",
-      "Fortalecer fundamentos de delivery: Plataformas de gestión (5.32), Gestión de proyectos (5.3) y Diseño UI (0)."
+      "D3 - Cultura tecnológica y liderazgo registra 6.94/10; requiere reforzar la visión compartida y el acompañamiento al cambio.",
+      "Los módulos especializados promedian entre 5.71 y 6.94, destacando oportunidades en Comercial/Cliente (5.71) y Operaciones/Admin/Finanzas (5.85).",
+      "La adopción de IA varía según nivel educativo (η² = 0.10); es necesario apoyar a los segmentos con menor exposición tecnológica."
     ]
   },
   "footer": {
@@ -342,51 +409,27 @@
     "texto": "Skilt. Todos los derechos reservados."
   },
   "roleSpecificScores": {
+    "rolTecnicoProducto": {
+      "indiceGlobal": 7.76,
+      "moduloEspecializado": 6.37
+    },
     "rolLiderazgo": {
-      "usoDeBI": 6.52,
-      "exploracionTecnologica": 6.9,
-      "gestionDeRiesgo": 7.38,
-      "estrategiaTecnologica": 7.08
+      "indiceGlobal": 7.43,
+      "moduloEspecializado": 6.38
     },
     "rolMandosMedios": {
-      "gestionDeProyectos": 5.3,
-      "monitoreoDeRendimiento": 8.43,
-      "liderazgoDeAdopcion": 7.35,
-      "optimizacionDeColaboracion": 8.32,
-      "usoDeIAEnGestion": 7.82
-    },
-    "rolComercialCliente": {
-      "usoDeCRM": 7.1,
-      "analiticaDeCliente": 7.4,
-      "comunicacionConClientes": 6.2,
-      "automatizacionDeMarketing": 6.38,
-      "usoDeIA": 7.23,
-      "usoDeSEO": 4.3,
-      "gestionDePaidMedia": 6.35
+      "indiceGlobal": 7.42,
+      "moduloEspecializado": 6.94
     },
     "rolOperacionesAdminFinanzas": {
-      "usoDeERP": 6.95,
-      "hojasDeCalculoAvanzadas": 7.5,
-      "plataformasDeGestion": 5.32,
-      "digitalizacionDeProcesos": 7.75,
-      "usoDeIA": 5.2
+      "indiceGlobal": 7.02,
+      "moduloEspecializado": 5.85
     },
-    "rolTecnicoProducto": {
-      "gestionDeCodigo": 5.85,
-      "cloudComputing": 8.03,
-      "mejoraDeInfraestructura": 6.42,
-      "metodologiasDeDesarrollo": 7.67,
-      "usoDeIAEnDesarrollo": 7.88,
-      "scripting": 6.27,
-      "basesDeDatos": 6.92,
-      "diseñoUI": 0
+    "rolComercialCliente": {
+      "moduloEspecializado": 5.71
     },
     "rolSoporteInterno": {
-      "usoDeHRIS": 0,
-      "reclutamientoDigital": 0,
-      "plataformasDeCapacitacion": 0,
-      "gestionDocumental": 0,
-      "usoDeIA": 0
+      "moduloEspecializado": 5.93
     }
   },
   "analisisCualitativo": {

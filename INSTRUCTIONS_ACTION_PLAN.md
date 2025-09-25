@@ -1,60 +1,37 @@
-¡Por supuesto! Aquí tienes un prompt claro y técnico, listo para ser entregado a un agente de IA para codificación.
+# Guía Operativa · Iteración SEP25
 
----
+Estas instrucciones reemplazan al prompt anterior del motor de planes de acción. El foco inmediato es sincronizar el reporte web con el análisis "Escala Madurez Digital SEP25" y entregar una experiencia consistente en todas las páginas auxiliares.
 
-### **Prompt para Agente de IA de Codificación**
+## 1. Fuentes de verdad obligatorias
+- Métricas cuantitativas: `analisis/ANALISIS.md` (índice global 7.21; D1=7.19, D2=7.41, D3=6.94, D4=7.07).
+- Benchmarks y metas: `analisis/baremos.md` y, si falta, `src/scripts/baremos.json`.
+- Imágenes y descripciones: `analisis/graphs/*.png` + `.md` asociado.
 
-**Rol:** Eres un desarrollador experto en backend encargado de evolucionar un sistema de recomendación de planes de acción para empleados. El sistema actual genera planes basados en un catálogo de acciones en formato JSON, que se construye a partir de tablas Markdown.
+## 2. Alineación de `globalData.*.json`
+1. Normaliza `empleadosEvaluados` a 2399 y añade `header.analysis.sampleSize`.
+2. Sustituye textos narrativos para que citen las cifras reales (puntuación empresa 7.21, sector 6.75, meta desde baremo avanzado).
+3. Revisa campos duplicados/contradictorios entre OpenAI y Gemini y unifica estructura.
+4. Valida con los esquemas (`npm test`) antes de cerrar iteración.
 
-**Objetivo Principal:** Modificar la estructura de datos y la lógica del motor de recomendación para incorporar la **aspiración profesional** del empleado como un factor clave en la generación de su plan de acción.
+## 3. Correcciones de UI inmediatas
+- Sección Uso de IA → los anillos deben leer `data-percent` del JSON; eliminar porcentajes hardcodeados.
+- `.culture-header` → habilitar `flex-wrap`, `gap` y alineación para que el badge no se encime en pantallas pequeñas.
+- Botón/enlace de regreso en `/respuestas` → priorizar `document.referrer`, fallback a `/gemini`.
+- Estilos de `/respuestas` y `/empleados/[id]` → reutilizar variables y escalas tipográficas de `/css/style.css`.
 
----
+## 4. Nueva página "Análisis SEP25"
+- Crear ruta dedicada (ej. `/analisis/sep25` o similar) que:
+  - Liste secciones clave del PDF en orden.
+  - Muestre cada gráfico (`graphs/*.png`) con título y resumen del `.md`.
+  - Incluya enlaces internos rápidos (índice) y navegación de retorno.
+- Exponer enlace desde la página de inicio (que dejará de redirigir automáticamente a `/gemini`).
 
-### **Tareas a Realizar**
+## 5. Documentación y QA
+- Actualiza `README.md`, `PLAN.md`, `PROGRESS.md` con el estado alcanzado.
+- Documenta decisiones relevantes (metas sectoriales, supuestos auditoría de datos).
+- Checklist mínima antes de entregar:
+  1. `npm test`
+  2. Render `/openai`, `/gemini`, `/respuestas`, `/empleados/<demo>`
+  3. Navegación al nuevo análisis desde la home.
 
-#### 1. Actualizar el Esquema de Datos (`action_catalog.schema.json`)
-
-Modifica el esquema JSON para incluir un nuevo campo en cada objeto de acción.
-
-* **Nuevo Campo:** `rutaDeCarrera`
-* **Tipo:** Array de strings (`string[]`).
-* **Descripción:** "Este campo enumera los roles, áreas o competencias futuras que esta acción ayuda a desarrollar. Se utilizará para alinear las acciones con las aspiraciones de carrera de un empleado".
-* **Ejemplo de valor:** `["liderazgo", "mandos", "gestion_producto"]`
-
-#### 2. Actualizar el Script `builder`
-
-El script que convierte las tablas Markdown a `action_catalog.json` debe ser modificado para reconocer y procesar la nueva columna `rutaDeCarrera` en las tablas. Asegúrate de que el contenido se parsee correctamente como un array de strings a partir de un texto separado por comas.
-
-#### 3. Ampliar el Catálogo de Acciones (`action_catalog.json`)
-
-Agrega más acciones para que el catálogo sea robusto.
-
-#### 4. Modificar la Lógica del Motor de Recomendación
-
-Esta es la tarea más crítica. El script que genera el plan de acción debe ser refactorizado.
-
-* **Nuevos Parámetros de Entrada:** La función o servicio de recomendación ahora debe aceptar un parámetro adicional: `aspiracionProfesional` (string).
-* **Nueva Lógica de Filtrado:** El algoritmo debe realizar una selección multifactorial:
-  1. **Filtro por Oportunidad:** Continuar filtrando acciones que correspondan a la dimensión de mayor oportunidad del empleado (ej. `usoInteligenciaArtificial`).
-  2. **Filtro por Aspiración:** Implementar un **nuevo filtro** que seleccione acciones donde el array `rutaDeCarrera` contenga un valor que coincida con la `aspiracionProfesional` del empleado.
-  3. **Combinación y Priorización:** El resultado final debe ser una lista combinada y priorizada de acciones. Debe incluir:
-     * Acciones que cierran su brecha de habilidad actual (Filtro 1).
-     * Acciones que lo impulsan hacia su rol futuro (Filtro 2).
-     * Acciones que cumplan ambas condiciones tendrán la máxima prioridad.
-
----
-
-### **Caso de Uso para Validación**
-
-Para validar tu implementación, utiliza el siguiente escenario:
-
-* **Input del Empleado:**
-  * `areaOportunidad`: "usoInteligenciaArtificial"
-  * `aspiracionProfesional`: "Product Manager" (el sistema debe poder mapear esto a `gestion_producto`)
-* **Lógica Esperada:**
-  1. El sistema busca acciones en la dimensión `usoInteligenciaArtificial`.
-  2. El sistema busca en **todo el catálogo** acciones donde `rutaDeCarrera` incluya `gestion_producto`.
-  3. El sistema busca acciones de `Desarrollo de Carrera` que sean relevantes.
-* **Output Esperado (Ejemplo):** Un plan que incluya IDs como `IA-01` (porque se relaciona con IA y `gestion_producto`), `DC-02` (para ganar experiencia práctica) y `DC-03` (para mentoring).
-
-Por favor, implementa estos cambios asegurando que el código sea modular y esté bien documentado.
+> Nota: El motor de planes de acción individual permanece congelado en esta iteración; cualquier cambio debe documentarse como pendiente y no tocar el pipeline determinista hasta nuevo aviso.

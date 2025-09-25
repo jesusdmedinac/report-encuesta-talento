@@ -2,6 +2,15 @@
 
 Este es un proyecto Astro para visualizar un reporte de madurez digital generado automáticamente.
 
+> **Estado SEP25 (en curso):** estamos alineando los datos del reporte con el estudio "Análisis escala Madurez Digital SEP25". Los JSON `globalData.openai.json` y `globalData.gemini.json` se encuentran en proceso de sincronización (puntuación global 7.21, D1=7.19, D2=7.41, D3=6.94, D4=7.07, benchmark 6.75). Las secciones de Uso de IA y Cultura recibirán ajustes visuales y se añadirá una página dedicada al análisis con los gráficos de `analisis/graphs`.
+
+## 📊 Página de análisis SEP25
+
+- Nueva ruta: `/analisis/sep25` (también accesible desde la portada).
+- Contiene resumen ejecutivo, métricas por dimensión y galería de gráficos generados en el estudio.
+- Las imágenes y notas se leen automáticamente desde `analisis/graphs/*.png|.md`, por lo que cualquier actualización en esa carpeta se refleja en la UI.
+- Pensada como referencia confiable cuando se requiera verificar cifras del PDF o compartir resultados con stakeholders.
+
 ## 🚀 Estructura del Proyecto
 
 ```text

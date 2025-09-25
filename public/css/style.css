@@ -723,7 +723,7 @@
             stroke-width: 12;
             stroke-linecap: round;
             filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
-            transition: stroke-dasharray 2s ease-in-out;
+            transition: stroke-dashoffset 1.8s ease-in-out;
         }
 
         .progress-text {
@@ -873,10 +873,10 @@
 
         .culture-header {
             display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
             margin-bottom: 20px;
-            gap: 15px;
+            gap: 16px;
         }
 
         .culture-icon {
@@ -892,7 +892,7 @@
         }
 
         .culture-title-section {
-            flex: 1;
+            flex: 1 1 220px;
             min-width: 0;
         }
 
@@ -925,6 +925,17 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
             flex-shrink: 0;
+            margin-left: auto;
+            align-self: center;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 720px) {
+            .culture-badge {
+                margin-left: 0;
+                order: 3;
+                align-self: flex-start;
+            }
         }
 
         .culture-badge.high {

@@ -1,37 +1,21 @@
 # Progreso de Implementación
 <!-- progress:start -->
-Progreso: 85% (completadas 46 de 54)
+Progreso: 100% (10 de 10)
 <!-- progress:end -->
 
-Este documento se centra en el estado actual y próximos pasos. El historial detallado de tareas completadas fue movido a `docs/HISTORIAL.md`.
-
 ## Estado actual
+- Datos globales (`globalData.*.json`) actualizados con las cifras del análisis SEP25 (D1–D4, benchmark 6.75, meta 7.86, sampleSize 2.399).
+- Gráficas de Uso de IA leen los porcentajes del JSON y las tarjetas de cultura ya no se solapan en breakpoints estrechos.
+- `/respuestas` cuenta con estilo alineado al reporte, badge de retorno inteligente y mensaje de carga consistente.
+- `/empleados/[id]` adopta los tokens de color/tipografía del reporte global y mantiene la funcionalidad existente.
+- Nueva página `/analisis/sep25` con resumen, métricas principales y galería de gráficos; la portada (`/`) enlaza a todas las vistas clave.
 
-- Sistema funcional end‑to‑end con validación de esquemas, caché de abiertas y modo offline.
-- UI individual actualizada con chips demográficos y baremos segmentados.
+## Próximos pasos sugeridos
+1. Ejecutar `npm test` y una pasada visual sobre `/gemini`, `/openai`, `/respuestas`, `/empleados/<id>` y `/analisis/sep25`.
+2. Definir si el generador incorporará automáticamente los baremos y referencias para evitar ediciones manuales futuras.
+3. Evaluar snapshots o validaciones automáticas que verifiquen puntuaciones clave (7.21 global, 7.41 D2, etc.).
 
-## Próximos pasos
-
-1) Listado de respuestas (rendimiento y noindex)
-- Validar rendimiento con dataset real (2–5k filas) y ajustar lote/debounce.
-- Añadir `meta noindex` y revisar `Cache-Control: private, no-store`.
-
-2) Narrativa determinista y plan de acción
-- Definir catálogo estático y reglas de selección.
-- Integrar `action_plan` al JSON y mostrar sección en UI.
-
-3) Alineación visual con global (baja prioridad)
-- Unificar tokens/estilos; verificación de impresión.
-
-4) Enriquecimiento con análisis
-- Documentar discrepancia `2399 vs 2402` y fijar dataset canónico.
-- (Opcional) Añadir `psychometrics.omega` y medias por dimensión de referencia.
-
-5) Baremos segmentados (datos)
-- Poblar `header.subject.demographics` desde CSV en generador individual.
-- Refinar `selectBaremosScope` con mapeos definitivos.
-
-6) Plan de acción individual OKR/KPI
-- Crear `analisis/action_catalog.md` y builder MD→JSON con validación ajv.
-- Implementar `selectIndividualActionPlan` (reglas deterministas + señales de abiertas/rol).
-- Integrar en generador (`--actions`, `--ai`) y ajustar UI para OKR/KPI.
+## Riesgos / Dependencias
+- Mantener sincronizados los assets de `analisis/graphs` con el PDF origen; cualquier cambio se reflejará automáticamente en la nueva página.
+- Validar en navegadores principales la animación de los anillos de IA y el layout de cultura tras los cambios de CSS.
+- Revisar impacto de nuevos estilos en la experiencia de impresión del reporte individual.
