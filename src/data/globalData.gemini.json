@@ -174,105 +174,67 @@
     ]
   },
   "culturaOrganizacional": {
-    "promedio": 6.94,
-    "titulo": "D3 · Cultura tecnológica y liderazgo",
+    "promedio": 7.59,
+    "titulo": "Cultura organizacional",
     "tarjetas": [
       {
         "titulo": "Liderazgo y visión digital",
-        "puntuacion": 7.05,
-        "etiquetaNivel": "Intermedio",
+        "puntuacion": 7.8,
         "colorIcono": "linear-gradient(135deg, #2563EB, #1D4ED8)",
         "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 21V5C16 4.4 15.6 4 15 4H9C8.4 4 8 4.4 8 5V21L12 18L16 21Z\"/><circle cx=\"12\" cy=\"8\" r=\"2\"/></svg>",
-        "metricas": [
-          {
-            "icono": "👥",
-            "valor": "7.43",
-            "etiqueta": "Índice global liderazgo"
-          },
-          {
-            "icono": "📊",
-            "valor": "7.42",
-            "etiqueta": "Mandos medios"
-          },
-          {
-            "icono": "🛠️",
-            "valor": "7.76",
-            "etiqueta": "Técnico/Producto"
-          }
-        ],
-        "fraseClave": "Liderazgo dispuesto a acelerar la agenda digital",
-        "narrativa": "La dirección patrocina la transformación con resultados homogéneos (7.43/10). El reto consiste en articular una hoja de ruta que conecte prioridades estratégicas, capacitación y casos de uso de alto impacto."
+        "fraseClave": "Visión clara que inspira confianza.",
+        "narrativa": "La puntuación indica que el liderazgo proyecta una visión digital sólida y coherente. El equipo percibe una dirección clara, lo que fomenta la alineación y la confianza en las iniciativas de transformación."
       },
       {
         "titulo": "Ambiente de aprendizaje",
         "puntuacion": 6.8,
-        "etiquetaNivel": "En desarrollo",
         "colorIcono": "linear-gradient(135deg, #F59E0B, #F97316)",
         "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 19H20\"/><path d=\"M12 3L20 7L12 11L4 7L12 3Z\"/><path d=\"M6 8V12C6 14.7614 8.23858 17 11 17H13C15.7614 17 18 14.7614 18 12V8\"/></svg>",
-        "metricas": [
-          {
-            "icono": "🎓",
-            "valor": "53.8%",
-            "etiqueta": "Participantes con pregrado"
-          },
-          {
-            "icono": "📈",
-            "valor": "24.8%",
-            "etiqueta": "Posgrado"
-          },
-          {
-            "icono": "🧭",
-            "valor": "η² 0.10",
-            "etiqueta": "Impacto educativo en IA"
-          }
-        ],
-        "fraseClave": "Talento con base académica robusta",
-        "narrativa": "Aunque la base de formación es alta, el análisis revela diferencias marcadas en adopción de IA según nivel educativo. Es prioritario diseñar experiencias de aprendizaje aplicadas para los segmentos con menor exposición tecnológica."
+        "fraseClave": "Existen oportunidades para crecer.",
+        "narrativa": "Este puntaje sugiere que, si bien hay elementos de aprendizaje, el ambiente no se percibe como un motor proactivo para el desarrollo continuo. Es un área clave a fortalecer para potenciar el talento interno."
       },
       {
         "titulo": "Apoyo organizacional",
         "puntuacion": 6.97,
-        "etiquetaNivel": "Intermedio",
         "colorIcono": "linear-gradient(135deg, #10B981, #059669)",
         "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 21H3V7\"/><path d=\"M5 11L12 4L19 11\"/><path d=\"M16 21V11H8V21\"/></svg>",
-        "metricas": [
-          {
-            "icono": "🏦",
-            "valor": "52.4%",
-            "etiqueta": "Participación femenina"
-          },
-          {
-            "icono": "🧑‍🤝‍🧑",
-            "valor": "47.6%",
-            "etiqueta": "Participación masculina"
-          },
-          {
-            "icono": "🔁",
-            "valor": "Patrón en U",
-            "etiqueta": "Distribución etaria en D3"
-          }
-        ],
-        "fraseClave": "Clima propicio con margen para escalar",
-        "narrativa": "El clima organizacional sostiene la agenda digital, pero se observan variaciones por edad y área. Alinear reconocimientos, gestión del cambio y herramientas de soporte consolidará la confianza colectiva."
+        "fraseClave": "El soporte es funcional pero puede ser más proactivo.",
+        "narrativa": "El equipo siente que recibe el apoyo necesario para sus tareas, pero hay margen para que la organización se anticipe a sus necesidades. Reforzar los sistemas de apoyo podría mejorar la agilidad y el bienestar."
+      },
+      {
+        "titulo": "Experimentación",
+        "puntuacion": 7.7,
+        "colorIcono": "linear-gradient(135deg, #EF4444, #DC2626)",
+        "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"9\" y1=\"15\" x2=\"15\" y2=\"15\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg>",
+        "fraseClave": "Cultura que valora la innovación.",
+        "narrativa": "La organización fomenta un entorno seguro para la experimentación y el aprendizaje a través del error. Esta cultura es un motor clave para la innovación y la adaptación al cambio."
+      },
+      {
+        "titulo": "Reconocimiento",
+        "puntuacion": 7.7,
+        "colorIcono": "linear-gradient(135deg, #8B5CF6, #7C3AED)",
+        "icono": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>",
+        "fraseClave": "El esfuerzo y los logros son valorados.",
+        "narrativa": "Existe una percepción positiva sobre cómo se reconoce el trabajo bien hecho y los logros significativos. Esto fortalece la motivación y el compromiso del equipo con los objetivos de la empresa."
       }
     ],
     "insights": {
-      "titulo": "💡 Hallazgos clave de cultura",
+      "titulo": "Visión Fuerte, Apoyo a Reforzar",
       "puntos": [
         {
-          "icono": "📌",
-          "texto": "<strong>Índice cultural 6.94/10:</strong> el liderazgo y el ambiente de aprendizaje requieren acompañamiento para sostener la transformación."
+          "icono": "🏆",
+          "texto": "El liderazgo inspira con una visión digital clara y valorada, estableciendo una dirección estratégica sólida para la organización."
         },
         {
-          "icono": "🧭",
-          "texto": "<strong>Patrones etarios en forma de U:</strong> los grupos más jóvenes y senior comparten niveles similares, mientras que la mediana edad necesita refuerzo."
+          "icono": "🌱",
+          "texto": "El ambiente de aprendizaje y el apoyo organizacional son las principales áreas de oportunidad para fomentar el desarrollo proactivo del talento."
         },
         {
-          "icono": "🤝",
-          "texto": "<strong>Diferencias educativas:</strong> la adopción de IA varía según el nivel académico, lo que demanda programas segmentados."
+          "icono": "💡",
+          "texto": "La cultura de experimentación y reconocimiento es un motor clave que impulsa la innovación y la motivación del equipo."
         }
       ],
-      "resumen": "La cultura digital del banco progresa con un liderazgo comprometido y talento dispuesto. El siguiente paso es institucionalizar prácticas que hagan escalable la innovación y reduzcan disparidades por edad o formación."
+      "resumen": "Con un promedio saludable de 7.59, la cultura organizacional se apoya en fortalezas notables. La visión del liderazgo, junto a un entorno que premia la experimentación y el reconocimiento, crea una base sólida y motivadora. Para alcanzar un nivel superior, el enfoque debe centrarse en transformar el apoyo y el aprendizaje en catalizadores proactivos del crecimiento, cerrando la brecha entre la visión estratégica y la experiencia diaria del empleado."
     }
   },
   "planAccion": {
