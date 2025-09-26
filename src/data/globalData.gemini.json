@@ -37,8 +37,8 @@
     "puntuacionPromedioSector": 6.75,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "Nivel Competitivo en Desarrollo",
-    "textoOportunidadParrafo": "Con una puntuación general actual de 7.2 sobre 10, la organización se posiciona en un nivel competitivo, pero con un significativo potencial de crecimiento para alcanzar la meta del sector de 7.86. Esta brecha no representa una debilidad, sino una clara hoja de ruta. Cerrar esta diferencia significa evolucionar de ser un competidor sólido a convertirse en un líder y referente de la industria, capitalizando la tecnología para crear ventajas competitivas duraderas.",
-    "parrafo1": "El estado actual de la madurez digital de la empresa puede describirse como una base sólida con una ejecución desigual. Por un lado, la organización posee competencias digitales fundamentales impresionantes (7.41), lo que indica que el talento tiene las habilidades necesarias. Sin embargo, la aplicación de estas habilidades en funciones críticas de negocio, como la gestión comercial (5.71) y las operaciones (5.85), es considerablemente menor. Este desequilibrio sugiere que el potencial tecnológico no se está aprovechando al máximo en las áreas que impulsan directamente los ingresos y la eficiencia.",
+    "textoOportunidadParrafo": "Con un percentil general actual de 60%, la organización se posiciona en un nivel competitivo, pero con un significativo potencial de crecimiento. Esta brecha no representa una debilidad, sino una clara hoja de ruta. Cerrar esta diferencia significa evolucionar de ser un competidor sólido a convertirse en un líder y referente de la industria, capitalizando la tecnología para crear ventajas competitivas duraderas.",
+    "parrafo1": "El estado actual de la madurez digital de la empresa puede describirse como una base sólida con una ejecución desigual. Por un lado, la organización posee competencias digitales fundamentales impresionantes, lo que indica que el talento tiene las habilidades necesarias. Sin embargo, la aplicación de estas habilidades en funciones críticas de negocio, como la gestión comercial y las operaciones, es considerablemente menor. Este desequilibrio sugiere que el potencial tecnológico no se está aprovechando al máximo en las áreas que impulsan directamente los ingresos y la eficiencia.",
     "parrafo2": "Para cerrar esta brecha, el enfoque recomendado es doble. Primero, es imperativo lanzar programas de capacitación y adopción de herramientas dirigidos específicamente a los roles con menor puntuación, traduciendo las habilidades generales en aplicaciones prácticas y medibles. Segundo, se debe trabajar en los habilitadores transversales: fortalecer el liderazgo para que modele el comportamiento digital deseado y evolucionar la cultura para que la innovación sea una responsabilidad compartida y no solo una aspiración. La clave es conectar el potencial individual con la estrategia organizacional."
   },
   "madurezDigital": {
@@ -51,24 +51,21 @@
         "puntuacion": 7.2,
         "descripcion": "Con una puntuación de 7.19, el equipo muestra una fuerte capacidad para adaptarse a nuevas tecnologías y procesos. Esta es una ventaja competitiva clave que reduce la fricción en la implementación de nuevas herramientas. Para capitalizarla, se recomienda involucrar a los equipos en la fase de selección de nuevas tecnologías, aprovechando su apertura para asegurar una adopción más rápida y efectiva.",
         "color": "var(--color-company)",
-        "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "colorGradiente": "#4387ff"
       },
       {
         "nombre": "Resolucion De Problemas",
         "puntuacion": 7.2,
         "descripcion": "La puntuación de 7.19 en resolución de problemas indica que los colaboradores ya utilizan herramientas digitales para superar desafíos laborales. El siguiente paso es formalizar esta habilidad. Considere la creación de 'células de innovación' o 'hackathons' internos para abordar problemas de negocio específicos, proporcionando un espacio estructurado para que esta competencia florezca y genere soluciones de alto valor.",
         "color": "var(--color-company)",
-        "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "colorGradiente": "#4387ff"
       },
       {
         "nombre": "Proactividad Digital",
         "puntuacion": 7.2,
         "descripcion": "Un nivel de proactividad de 7.19 demuestra que los empleados no esperan a que se les indique qué herramienta usar, sino que buscan activamente soluciones digitales por su cuenta. Para fomentar y canalizar esta iniciativa, es vital crear canales formales, como un buzón de ideas digitales o un comité de innovación, donde estas sugerencias puedan ser escuchadas, evaluadas y recompensadas.",
         "color": "var(--color-company)",
-        "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "colorGradiente": "#4387ff"
       }
     ]
   },

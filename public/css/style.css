@@ -474,22 +474,22 @@
         
         .bullet-range-poor {
             background: linear-gradient(to right, var(--color-low), #ebedf0);
-            width: 30%;
+            width: 20%;
             left: 0;
             opacity: 0.9;
         }
         
         .bullet-range-fair {
             background: linear-gradient(to right, var(--color-medium), #d9dde2);
-            width: 30%;
-            left: 30%;
+            width: 60%;
+            left: 20%;
             opacity: 0.9;
         }
         
         .bullet-range-good {
             background: linear-gradient(to right, var(--color-high), #c6cbd2);
-            width: 40%;
-            left: 60%;
+            width: 20%;
+            left: 80%;
             opacity: 0.9;
         }
         
@@ -572,9 +572,11 @@
         }
         
         .bullet-labels {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
+          display: flex;
+          position: absolute;
+          justify-content: space-between;
+          margin-top: 10px;
+          width: 100%;
         }
         
         .bullet-legend {

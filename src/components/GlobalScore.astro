@@ -1,4 +1,6 @@
 ---
+import { scoreToScaleDecile } from '../utils/utils';
+
 const {
   title = 'Puntuación Global',
   score,
@@ -7,7 +9,7 @@ const {
 } = Astro.props;
 
 const formattedScore = typeof score === 'number'
-  ? score.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 2 })
+  ? scoreToScaleDecile(score, 'madurezDigital')?.puntaje
   : score;
 ---
 {score !== undefined && score !== null && (

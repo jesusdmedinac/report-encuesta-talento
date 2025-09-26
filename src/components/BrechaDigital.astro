@@ -1,9 +1,10 @@
 ---
+import { scoreToScaleDecile } from "../utils/utils";
+
 const {
     titulo = "Brecha Digital",
     puntuacionEmpresa = 1.7,
     puntuacionPromedioSector = 1.6,
-    puntuacionMetaSector = 3.75,
     textoNivelActual = "Primera etapa de desarrollo",
     nombreEmpresa = "Profermaco",
     textoOportunidadParrafo = "Profermaco se encuentra en una posición excepcional para acelerar su transformación digital. Con un nivel actual de 1.7/5 y una meta sectorial de 3.75/5, existe una valiosa oportunidad de crecimiento de 2.05 puntos que posiciona a la empresa para un desarrollo digital estratégico y sistemático. Esta brecha representa el potencial perfecto para implementar mejoras graduales y sostenibles que generen impacto real en la operación farmacéutica.",
@@ -11,72 +12,69 @@ const {
     parrafo2 = "Para consolidarse como referente en el sector ferretero ecuatoriano, es fundamental que Profermaco evolucione hacia el <strong>nivel intermedio-avanzado de competencias digitales</strong> (3.75+ puntos). Este nivel representa no solo el dominio de herramientas digitales esenciales para la industria ferretera y de construcción, sino también la capacidad de optimizar procesos, tomar decisiones basadas en datos y ofrecer un servicio más eficiente a sus clientes. Las organizaciones ferreterías que alcanzan este nivel se caracterizan por equipos capacitados, procesos automatizados y una ventaja competitiva sostenible en el mercado de materiales de construcción."
 } = Astro.props;
 
-const percentil = Math.round(puntuacionEmpresa * 10);
-const oportunidadValor = (puntuacionMetaSector - puntuacionEmpresa).toFixed(2);
-
+const percentil = scoreToScaleDecile(puntuacionEmpresa, "brechaDigital")?.puntaje;
 const medidaStyle = `width: ${percentil}%; left: 0;`;
-const gapStyle = `width: ${(puntuacionMetaSector - puntuacionEmpresa) * 10}%; left: ${percentil}%;`;
-const promedioStyle = `left: ${puntuacionPromedioSector * 10}%;`;
-const targetStyle = `left: ${puntuacionMetaSector * 10}%;`;
+const percentilPromedioSector = scoreToScaleDecile(puntuacionPromedioSector, "brechaDigital")?.puntaje || 0;
+const promedioStyle = `left: ${percentilPromedioSector}%;`;
 ---
 <section>
     <h2>{titulo}</h2>
-    <p><strong>Nivel actual de {nombreEmpresa}: {textoNivelActual} ({puntuacionEmpresa}/10)</strong> <span class="percentile">Percentil {percentil}</span></p>
+    <p><strong>Nivel actual de {nombreEmpresa}: {textoNivelActual}</strong> <span class="percentile">Percentil {percentil}</span></p>
     
     <div class="bullet-graph">
         <div class="bullet-title">
-            <span>Nivel de Habilidades Digitales vs. Meta del Sector</span>
+            <span>Nivel de Habilidades Digitales</span>
         </div>
         <div class="bullet-container">
             <div class="bullet-range bullet-range-poor"></div>
             <div class="bullet-range bullet-range-fair"></div>
             <div class="bullet-range bullet-range-good"></div>
             <div class="bullet-measure" style={medidaStyle}></div>
-            <div class="bullet-gap" style={gapStyle}></div>
             <div class="bullet-average" style={promedioStyle}></div>
-            <div class="bullet-target" style={targetStyle}></div>
         </div>
-        <div class="bullet-labels">
-            <div>0</div>
-            <div>2.5</div>
-            <div>5</div>
-            <div>7.5</div>
-            <div>10</div>
-        </div>
+        {/*<div class="bullet-labels">
+          <div>0</div>
+          <div>10</div>
+          <div>20</div>
+          <div>30</div>
+          <div>40</div>
+          <div>50</div>
+          <div>60</div>
+          <div>70</div>
+          <div>80</div>
+          <div>90</div>
+          <div>100</div>
+        </div>*/}
         <div class="bullet-legend">
             <div class="bullet-item">
                 <div class="legend-color" style="background-color: var(--color-low);"></div>
-                <span>Primera etapa</span>
+                <span>Inicial (0-20)</span>
             </div>
             <div class="bullet-item">
                 <div class="legend-color" style="background-color: var(--color-medium);"></div>
-                <span>Desarrollo</span>
+                <span>En desarrollo (20-80)</span>
             </div>
             <div class="bullet-item">
                 <div class="legend-color" style="background-color: var(--color-high);"></div>
-                <span>Avanzado</span>
+                <span>Avanzado (80-100)</span>
             </div>
             <div class="bullet-item">
                 <div class="legend-color" style="background-color: var(--color-company);"></div>
-                <span>{nombreEmpresa} ({puntuacionEmpresa})</span>
+                <span>{nombreEmpresa} ({percentil})</span>
             </div>
             <div class="bullet-item">
                 <div class="legend-color" style="background-color: var(--color-average); width: 2px; height: 15px;"></div>
-                <span>Promedio sector ({puntuacionPromedioSector})</span>
+                <span>Promedio sector ({percentilPromedioSector})</span>
             </div>
-            <div class="bullet-item gap-item">
+            {/*<div class="bullet-item gap-item">
                 <div class="legend-color" style="background-color: var(--color-gap);"></div>
                 <span>Oportunidad de Crecimiento</span>
-            </div>
-            <div class="bullet-item">
-                <div class="legend-color" style="background-color: var(--color-target); width: 2px; height: 15px;"></div>
-                <span>Meta del sector ({puntuacionMetaSector})</span>
-            </div>
+            </div>*/}
         </div>
     </div>
     
     <div class="gap-banner" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(139, 92, 246, 0.03));">
-        <h4 style="color: var(--color-gap);">Extraordinaria Oportunidad de Crecimiento Digital <span class="gap-value" style="background-color: var(--color-gap); color: white;">{oportunidadValor} puntos</span></h4>
+        <h4 style="color: var(--color-gap);">Extraordinaria Oportunidad de Crecimiento Digital{/* <span class="gap-value" style="background-color: var(--color-gap); color: white;">puntos</span>*/}</h4>
         <p>{textoOportunidadParrafo}</p>
     </div>
     
