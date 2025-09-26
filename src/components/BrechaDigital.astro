@@ -1,5 +1,5 @@
 ---
-import { scoreToScaleDecile } from "../utils/utils";
+import { ClassByLevel, type NivelMadurez, type ScaleDecile, scoreToScaleDecile } from "../utils/utils";
 
 const {
     titulo = "Brecha Digital",
@@ -12,50 +12,45 @@ const {
     parrafo2 = "Para consolidarse como referente en el sector ferretero ecuatoriano, es fundamental que Profermaco evolucione hacia el <strong>nivel intermedio-avanzado de competencias digitales</strong> (3.75+ puntos). Este nivel representa no solo el dominio de herramientas digitales esenciales para la industria ferretera y de construcción, sino también la capacidad de optimizar procesos, tomar decisiones basadas en datos y ofrecer un servicio más eficiente a sus clientes. Las organizaciones ferreterías que alcanzan este nivel se caracterizan por equipos capacitados, procesos automatizados y una ventaja competitiva sostenible en el mercado de materiales de construcción."
 } = Astro.props;
 
-const percentil = scoreToScaleDecile(puntuacionEmpresa, "brechaDigital")?.puntaje;
+const scaleDecile = scoreToScaleDecile(puntuacionEmpresa, "brechaDigital") as ScaleDecile;
+const percentil = scaleDecile?.puntaje;
+const nivel = scaleDecile?.nivel as NivelMadurez;
 const medidaStyle = `width: ${percentil}%; left: 0;`;
 const percentilPromedioSector = scoreToScaleDecile(puntuacionPromedioSector, "brechaDigital")?.puntaje || 0;
 const promedioStyle = `left: ${percentilPromedioSector}%;`;
 ---
+<style>
+  .badge { border-radius: 999px; }
+  .lvl-low { padding: 0.12rem 0.5rem; background: #fee2e2; color: #7f1d1d; }
+  .lvl-mid { padding: 0.12rem 0.5rem; background: #fef3c7; color: #78350f; }
+  .lvl-high { padding: 0.12rem 0.5rem; background: #dcfce7; color: #14532d; }
+</style>
 <section>
     <h2>{titulo}</h2>
-    <p><strong>Nivel actual de {nombreEmpresa}: {textoNivelActual}</strong> <span class="percentile">Percentil {percentil}</span></p>
+    <p><strong>Nivel actual de {nombreEmpresa}:</strong> <span>Percentil {percentil}</span> <span class:list={[ClassByLevel[nivel], "badge"]}>{nivel}</span></p>
     
     <div class="bullet-graph">
         <div class="bullet-title">
             <span>Nivel de Habilidades Digitales</span>
         </div>
         <div class="bullet-container">
-            <div class="bullet-range bullet-range-poor"></div>
-            <div class="bullet-range bullet-range-fair"></div>
-            <div class="bullet-range bullet-range-good"></div>
+            <div class="bullet-range bullet-range-poor lvl-low"></div>
+            <div class="bullet-range bullet-range-fair lvl-mid"></div>
+            <div class="bullet-range bullet-range-good lvl-high"></div>
             <div class="bullet-measure" style={medidaStyle}></div>
             <div class="bullet-average" style={promedioStyle}></div>
         </div>
-        {/*<div class="bullet-labels">
-          <div>0</div>
-          <div>10</div>
-          <div>20</div>
-          <div>30</div>
-          <div>40</div>
-          <div>50</div>
-          <div>60</div>
-          <div>70</div>
-          <div>80</div>
-          <div>90</div>
-          <div>100</div>
-        </div>*/}
         <div class="bullet-legend">
             <div class="bullet-item">
-                <div class="legend-color" style="background-color: var(--color-low);"></div>
+                <div class="legend-color lvl-low"></div>
                 <span>Inicial (0-20)</span>
             </div>
             <div class="bullet-item">
-                <div class="legend-color" style="background-color: var(--color-medium);"></div>
+                <div class="legend-color lvl-mid"></div>
                 <span>En desarrollo (20-80)</span>
             </div>
             <div class="bullet-item">
-                <div class="legend-color" style="background-color: var(--color-high);"></div>
+                <div class="legend-color lvl-high"></div>
                 <span>Avanzado (80-100)</span>
             </div>
             <div class="bullet-item">
@@ -66,10 +61,6 @@ const promedioStyle = `left: ${percentilPromedioSector}%;`;
                 <div class="legend-color" style="background-color: var(--color-average); width: 2px; height: 15px;"></div>
                 <span>Promedio sector ({percentilPromedioSector})</span>
             </div>
-            {/*<div class="bullet-item gap-item">
-                <div class="legend-color" style="background-color: var(--color-gap);"></div>
-                <span>Oportunidad de Crecimiento</span>
-            </div>*/}
         </div>
     </div>
     

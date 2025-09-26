@@ -43,32 +43,30 @@
   },
   "madurezDigital": {
     "puntuacionGeneral": 7.19,
+    "puntuacionPromedioSector": 6.75,
     "nombreEmpresa": "Banco de Guayaquil",
-    "parrafoIntroductorio": "La madurez digital individual promedia 7.19/10, un nivel que habilita cambios sostenidos siempre que se ofrezcan herramientas, procesos y liderazgo consistentes. Esta base permite acelerar la adopción de nuevas prácticas y tecnologías, especialmente si las iniciativas se acompañan con formación práctica, métricas claras y una narrativa que vincule la digitalización con objetivos de negocio.",
+    "parrafoIntroductorio": "La madurez digital alcanza 7.19/10: los equipos absorben el cambio con soltura y convierten la experiencia en mejoras continuas. El desafío está en expandir la proactividad digital a todas las áreas.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
-        "puntuacion": 7.2,
-        "descripcion": "Con 7.19/10, la organización muestra buena capacidad para ajustarse a nuevas herramientas y formas de trabajo. Para capturar el siguiente salto, priorice ciclos cortos de cambio (pilotos de 6–8 semanas), manuales de adopción por rol y rituales de retrospectiva que conviertan las lecciones en estándares.",
-        "color": "var(--color-company)",
-        "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "puntuacion": 7.32,
+        "descripcion": "La adaptabilidad es una fortaleza. Los equipos responden bien al cambio y aprenden rápido. Recomendamos institucionalizar esta ventaja mediante ciclos de mejora continua (retrospectivas, OKR trimestrales) y pilotos controlados que conviertan la flexibilidad en resultados de negocio medibles.",
+        "color": "#8E24AA",
+        "colorGradiente": "#BA68C8"
       },
       {
-        "nombre": "Resolucion De Problemas",
-        "puntuacion": 7.2,
-        "descripcion": "La puntuación de 7.19/10 sugiere criterio sólido para identificar causas y proponer soluciones. Recomendamos institucionalizar marcos (A3, 5 porqués, DMAIC) y tableros con métricas de impacto, de modo que cada mejora tenga hipótesis, experimento y medición explícitos.",
-        "color": "var(--color-company)",
-        "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "nombre": "Resolución de problemas digitales",
+        "puntuacion": 7.25,
+        "descripcion": "La organización demuestra capacidad para enfrentar desafíos digitales. Para elevar este componente, impulse prácticas de problem framing y análisis causal (A3, 5 Porqués) y vincule métricas de impacto (tiempo de ciclo, NPS, conversión) a cada iniciativa.",
+        "color": "#1E88E5",
+        "colorGradiente": "#64B5F6"
       },
       {
-        "nombre": "Proactividad Digital",
-        "puntuacion": 7.2,
-        "descripcion": "Un 7.19/10 refleja disposición para proponer y probar iniciativas. Para escalar, convierta la proactividad en un flujo formal: backlog de ideas, evaluación rápida de valor-esfuerzo, sandbox de pruebas y un comité ligero que priorice y asigne sponsors.",
-        "color": "var(--color-company)",
-        "colorGradiente": "#4387ff",
-        "meta": 9.38
+        "nombre": "Proactividad digital",
+        "puntuacion": 6.99,
+        "descripcion": "Existe iniciativa para proponer mejoras, aunque aún hay espacio para escalar. Sugerimos un portafolio visible de experimentos con criterios de priorización por ROI y riesgo, y un sistema de reconocimiento que premie aportes replicables.",
+        "color": "#00897B",
+        "colorGradiente": "#4DB6AC"
       }
     ]
   },

@@ -43,29 +43,30 @@
   },
   "madurezDigital": {
     "puntuacionGeneral": 7.19,
+    "puntuacionPromedioSector": 6.75,
     "nombreEmpresa": "Banco de Guayaquil",
-    "parrafoIntroductorio": "La dimensión de Madurez Digital, con una sólida puntuación de 7.19, indica que, a nivel individual, sus colaboradores demuestran una mentalidad y un comportamiento alineados con las exigencias del entorno digital. Este resultado es muy positivo, ya que sugiere que el equipo posee la resiliencia, la curiosidad y la iniciativa necesarias para no solo aceptar el cambio, sino para ser un motor activo del mismo. Esta es una base fundamental sobre la cual se pueden construir iniciativas de transformación más ambiciosas.",
+    "parrafoIntroductorio": "La madurez digital promedia 60%, ubicando a la organización en un nivel competitivo. Esto significa que cuenta con capacidades consistentes para operar con herramientas digitales y resolver problemas de negocio, y que está en condiciones de capturar beneficios rápidos si se estandarizan prácticas y se escalan iniciativas de alto impacto.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
-        "puntuacion": 7.2,
-        "descripcion": "Con una puntuación de 7.19, el equipo muestra una fuerte capacidad para adaptarse a nuevas tecnologías y procesos. Esta es una ventaja competitiva clave que reduce la fricción en la implementación de nuevas herramientas. Para capitalizarla, se recomienda involucrar a los equipos en la fase de selección de nuevas tecnologías, aprovechando su apertura para asegurar una adopción más rápida y efectiva.",
-        "color": "var(--color-company)",
-        "colorGradiente": "#4387ff"
+        "puntuacion": 7.32,
+        "descripcion": "La competencia en Análisis de Datos es una fortaleza significativa. Esto sugiere que los colaboradores tienen una buena capacidad para interpretar y utilizar información, lo cual es vital para la toma de decisiones estratégicas. Se recomienda seguir potenciando esta habilidad mediante herramientas avanzadas y capacitación continua.",
+        "color": "#8E24AA",
+        "colorGradiente": "#BA68C8"
       },
       {
-        "nombre": "Resolucion De Problemas",
-        "puntuacion": 7.2,
-        "descripcion": "La puntuación de 7.19 en resolución de problemas indica que los colaboradores ya utilizan herramientas digitales para superar desafíos laborales. El siguiente paso es formalizar esta habilidad. Considere la creación de 'células de innovación' o 'hackathons' internos para abordar problemas de negocio específicos, proporcionando un espacio estructurado para que esta competencia florezca y genere soluciones de alto valor.",
-        "color": "var(--color-company)",
-        "colorGradiente": "#4387ff"
+        "nombre": "Resolución de problemas digitales",
+        "puntuacion": 7.25,
+        "descripcion": "Alfabetización de Datos complementa la fortaleza en análisis, indicando que el personal comprende la importancia y el manejo básico de los datos. Esta base es excelente para introducir iniciativas de 'data-driven culture'.",
+        "color": "#1E88E5",
+        "colorGradiente": "#64B5F6"
       },
       {
-        "nombre": "Proactividad Digital",
-        "puntuacion": 7.2,
-        "descripcion": "Un nivel de proactividad de 7.19 demuestra que los empleados no esperan a que se les indique qué herramienta usar, sino que buscan activamente soluciones digitales por su cuenta. Para fomentar y canalizar esta iniciativa, es vital crear canales formales, como un buzón de ideas digitales o un comité de innovación, donde estas sugerencias puedan ser escuchadas, evaluadas y recompensadas.",
-        "color": "var(--color-company)",
-        "colorGradiente": "#4387ff"
+        "nombre": "Proactividad digital",
+        "puntuacion": 6.99,
+        "descripcion": "Ciberseguridad demuestra un buen nivel de conciencia y práctica. Es crucial mantener esta fortaleza mediante actualizaciones constantes y entrenamientos periódicos, especialmente en un entorno donde las 'preocupaciones' sobre la seguridad de la información, como las expresadas en la adopción de IA, son relevantes.",
+        "color": "#00897B",
+        "colorGradiente": "#4DB6AC"
       }
     ]
   },

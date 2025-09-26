@@ -1,5 +1,13 @@
 import scales from "../scripts/baremos.json"
 
+export type NivelMadurez = "Inicial" | "En desarrollo" | "Avanzado";
+
+export const ClassByLevel: Record<NivelMadurez, string> = {
+  "Inicial": "lvl-low",
+  "En desarrollo": "lvl-mid",
+  "Avanzado": "lvl-high",
+} as const;
+
 export type ScaleDecile = {
   puntaje: number;
   nivel: string;
