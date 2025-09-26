@@ -15,14 +15,14 @@
             --color-medium: #d1d5db;   /* Gris medio claro */
             --color-high: #bec3c9;     /* Gris medio */
             --color-gap: #8B5CF6;      /* Violeta distintivo */
-            --color-company: #2563EB;  /* Azul corporativo vibrante */
+            --color-company: #d20a6e;  /* Azul corporativo vibrante */
             --color-target: #111827;   /* Negro */
             --color-average: #FF6B35;  /* Naranja para promedio del sector */
             
             /* Colores adicionales para el roadmap */
             --color-critical: #EF4444;
             --color-high-priority: #F59E0B;
-            --color-medium-priority: #3B82F6;
+            --color-medium-priority: #d20a6e;
             --color-low-priority: #10B981;
             --color-skilt: #6366F1;
         }
@@ -177,7 +177,7 @@
             left: 75%;
             top: -3px;
             border-radius: 1.5px;
-            box-shadow: 0 0 5px rgba(0, 188, 212, 0.7);
+            box-shadow: 0 0 5px #00bcd4b3;
         }
         
         .status-label {
@@ -188,7 +188,7 @@
             color: var(--primary);
             font-weight: 700;
             font-size: 0.85rem;
-            text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.8);
+            text-shadow: 0px 0px 3px #ffffffcc;
         }
         
         .status-target-label {
@@ -497,7 +497,7 @@
             position: absolute;
             height: 25px;
             top: 12.5px;
-            background: linear-gradient(to right, var(--color-company), #4387ff);
+            background: var(--color-company);
             border-radius: 2px;
             box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
         }
@@ -803,7 +803,7 @@
         
         .bullet-title span:last-child {
             font-weight: 700;
-            background: linear-gradient(135deg, var(--color-company), #4387ff);
+            background: var(--color-company);
             color: white;
             padding: 4px 12px;
             border-radius: 20px;

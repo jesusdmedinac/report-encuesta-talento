@@ -15,9 +15,8 @@ const items = [
 ];
 ---
 <nav class="site-nav">
-  <a class="brand" href="/">
-    <span class="brand-title">Banco Guayaquil</span>
-    <span class="brand-sub">Diagnóstico digital</span>
+  <a href="/">
+    <img src="/assets/analisis/sep25/logo-banco-guayaquil.png" alt="Logo Banco Guayaquil">
   </a>
   <div class="nav-links">
     {items.map((item) => (
@@ -109,10 +108,8 @@ const items = [
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    padding: 18px 24px;
-    background: rgba(255, 255, 255, 0.9);
+    background: #d20a6e;
     backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
   }
 
   .brand {
@@ -143,7 +140,7 @@ const items = [
 
   .nav-link {
     text-decoration: none;
-    color: var(--text-secondary);
+    color: #fff;
     font-weight: 600;
     font-size: 0.95rem;
     padding: 6px 12px;
@@ -152,13 +149,13 @@ const items = [
   }
 
   .nav-link:hover {
-    background: rgba(37, 99, 235, 0.12);
-    color: var(--color-company);
+    color: #160f41;
+    transition: color 0.2s ease;
   }
 
   .nav-link.active {
-    background: rgba(37, 99, 235, 0.18);
-    color: var(--color-company);
+    color: #160f41;
+    transition: color 0.2s ease;
   }
 
   .nav-print {
@@ -190,10 +187,6 @@ const items = [
   }
 
   @media (max-width: 720px) {
-    .site-nav {
-      padding: 16px;
-    }
-
     .nav-links {
       width: 100%;
       justify-content: space-between;
