@@ -33,7 +33,7 @@
     "contenido": "Bienvenidos al reporte de diagnóstico de madurez digital. Este documento transforma los resultados de su evaluación en una guía práctica para priorizar inversiones, acelerar la adopción tecnológica y fortalecer capacidades internas. El enfoque es constructivo: reconocer lo que ya funciona, identificar con precisión las brechas y proponer un plan accionable que traduzca la tecnología en resultados de negocio sostenibles."
   },
   "brechaDigital": {
-    "puntuacionEmpresa": 7.41,
+    "puntuacionEmpresa": 7.66,
     "puntuacionPromedioSector": 6.75,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "Nivel Competitivo",
@@ -42,28 +42,28 @@
     "parrafo2": "Para cerrar la brecha, recomendamos un enfoque por oleadas: <br>1) activar crecimiento con CRM, analítica de cliente y automatización de marketing; <br>2) orquestar eficiencia con digitalización de procesos, indicadores operativos y ERP/RPA ligeros; <br>3) consolidar un gobierno de IA responsable que priorice casos con ROI claro y evite riesgos; <br>4) reforzar liderazgo y mandos medios como sponsors de la transformación, con OKR e incentivos atados a resultados digitales."
   },
   "madurezDigital": {
-    "puntuacionGeneral": 7.19,
+    "puntuacionGeneral": 7.66,
     "puntuacionPromedioSector": 6.75,
     "nombreEmpresa": "Banco de Guayaquil",
     "parrafoIntroductorio": "La madurez digital alcanza 7.19/10: los equipos absorben el cambio con soltura y convierten la experiencia en mejoras continuas. El desafío está en expandir la proactividad digital a todas las áreas.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
-        "puntuacion": 7.32,
+        "puntuacion": 7.92,
         "descripcion": "La adaptabilidad es una fortaleza. Los equipos responden bien al cambio y aprenden rápido. Recomendamos institucionalizar esta ventaja mediante ciclos de mejora continua (retrospectivas, OKR trimestrales) y pilotos controlados que conviertan la flexibilidad en resultados de negocio medibles.",
         "color": "#8E24AA",
         "colorGradiente": "#BA68C8"
       },
       {
         "nombre": "Resolución de problemas digitales",
-        "puntuacion": 7.25,
+        "puntuacion": 7.6,
         "descripcion": "La organización demuestra capacidad para enfrentar desafíos digitales. Para elevar este componente, impulse prácticas de problem framing y análisis causal (A3, 5 Porqués) y vincule métricas de impacto (tiempo de ciclo, NPS, conversión) a cada iniciativa.",
         "color": "#1E88E5",
         "colorGradiente": "#64B5F6"
       },
       {
         "nombre": "Proactividad digital",
-        "puntuacion": 6.99,
+        "puntuacion": 7.32,
         "descripcion": "Existe iniciativa para proponer mejoras, aunque aún hay espacio para escalar. Sugerimos un portafolio visible de experimentos con criterios de priorización por ROI y riesgo, y un sistema de reconocimiento que premie aportes replicables.",
         "color": "#00897B",
         "colorGradiente": "#4DB6AC"
@@ -71,71 +71,104 @@
     ]
   },
   "competenciasDigitales": {
-    "promedio": 7.41,
-    "nivelDesarrollo": "FUNDAMENTOS ESTABLECIDOS",
+    "promedio": 7.8,
+    "nivelDesarrollo": "",
     "descripcionPromedio": "El promedio de 7.41/10 en competencias clave indica fundamentos bien asentados y prácticas consistentes. Este nivel permite abordar iniciativas más ambiciosas —especialmente comerciales y operativas— sin incurrir en fricciones excesivas, siempre que se acompañe con guías, automatización y datos accionables.",
     "competencias": [
       {
         "name": "Analisis De Datos",
-        "score": 74,
+        "score": 7.9,
         "color": "#3498db",
-        "description": "Con 7.41/10, existe capacidad para transformar datos en insights. Recomendamos estandarizar definiciones (glosario), habilitar datasets confiables y fomentar análisis repetibles (plantillas/notebooks) conectados a decisiones de pricing, segmentación y eficiencia operativa."
+        "description": "Con 7.9/10, los equipos analizan datos con solvencia. Recomendación: formalizar catálogos de métricas y dashboards con dueños claros, y conectar sus insights a decisiones recurrentes (pricing, campañas, capacity planning)."
       },
       {
         "name": "Alfabetizacion De Datos",
-        "score": 74,
+        "score": 7.81,
         "color": "#3498db",
-        "description": "La alfabetización en 7.41/10 facilita conversaciones basadas en evidencia. Eleve el listón con una Academia de Datos por niveles (básico, intermedio, avanzado) y certificaciones ligadas a responsabilidades de rol y acceso a datos."
+        "description": "Con 7.8/10, existe lenguaje común de datos. Refuércelo con guías de interpretación, definiciones únicas (glosario) y microlearning sobre estadística práctica y sesgos."
       },
       {
         "name": "Colaboracion Digital",
-        "score": 74,
+        "score": 7.69,
         "color": "#3498db",
-        "description": "Un 7.41/10 muestra buenos hábitos de colaboración en plataformas. Para ganar tracción, defina normas de trabajo digital (canales, naming, cadencia), uso de tableros compartidos y acuerdos de servicio entre equipos para decisiones y handoffs."
+        "description": "Con 7.7/10, la colaboración es buena. Estandarice canales y rituales (documentación viva, principios de comunicación asíncrona) y mida tiempos de respuesta y resolución entre áreas."
       },
       {
         "name": "Ciberseguridad",
-        "score": 74,
+        "score": 7.81,
         "color": "#3498db",
-        "description": "La seguridad en 7.41/10 es un pilar. Fortalezca con entrenamiento phishing-as-a-service, MFA obligatorio, revisiones trimestrales de accesos y un playbook de respuesta a incidentes alineado al uso creciente de IA y datos."
+        "description": "Con 7.82/10, la seguridad es un pilar. Para escalar IA y automatizaciones, incorpore security by design, revisiones de prompts/datos y controles de acceso basados en roles."
       }
     ]
   },
   "usoInteligenciaArtificial": {
-    "promedio": 7.07,
-    "resumen": "<strong>La organización está lista para escalar IA de forma responsable y medible</strong>: con 7.07/10 en adopción, habilidad, ética y curiosidad, el terreno está preparado para priorizar casos de negocio con ROI claro, estandarizar verificaciones y elevar la productividad en funciones comerciales, operativas y de producto.",
+    "promedio": 6.99,
+    "resumen": "La organización cuenta con interés y conciencia ética sólidos, además de una base de habilidades iniciales en el uso de IA. Sin embargo, los datos muestran que el uso frecuente y la adopción formal todavía son bajos, lo que representa una oportunidad clara: diseñar estrategias de capacitación, implementación en proyectos piloto y políticas de uso seguro que permitan pasar del interés y la teoría a la práctica aplicada.",
     "graficos": [
       {
-        "titulo": "Adopción y Curiosidad",
-        "porcentaje": 71,
-        "descripcion": "Adopción y Curiosidad: Con interés por aprender, percepción de riesgo y nivel de adopción en 7.07/10, hay apertura y criterio para avanzar. El foco debe estar en una cartera priorizada de casos (valor vs. complejidad), pilotos con métricas de impacto y un marco de riesgos que permita acelerar sin comprometer cumplimiento.",
-        "idGradiente": "gradient-adoption",
+        "titulo": "Frecuencia de uso",
+        "porcentaje": 7.34,
+        "descripcion": "Mide qué tan seguido las personas utilizan herramientas o aplicaciones de IA en su vida diaria.",
+        "idGradiente": "gradiente-uso",
         "coloresGradiente": [
-          "#10B981",
-          "#34D399",
-          "#6EE7B7"
+          "#FF8A80",
+          "#FF5252",
+          "#FF1744"
         ]
       },
       {
-        "titulo": "Uso y Aplicación",
-        "porcentaje": 71,
-        "descripcion": "Uso y Aplicación: Frecuencia de uso y habilidad en 7.07/10 indican que ya existe práctica. Para escalar, convierta usos individuales en flujos de trabajo estandarizados (plantillas, prompts validados, integraciones con CRM/ERP) y mida productividad, calidad y tiempos de ciclo.",
-        "idGradiente": "gradient-usage",
+        "titulo": "Habilidad de uso",
+        "porcentaje": 7.99,
+        "descripcion": "Refleja el nivel de destreza y confianza que los usuarios tienen al emplear tecnologías de IA.",
+        "idGradiente": "gradiente-habilidad",
         "coloresGradiente": [
-          "#F59E0B",
-          "#FBBF24",
-          "#FDE047"
+          "#EA80FC",
+          "#E040FB",
+          "#D500F9"
         ]
       },
       {
-        "titulo": "Ética y Verificación",
-        "porcentaje": 71,
-        "descripcion": "Ética y Verificación: Con 7.07/10, hay sensibilidad por la validación. Instituya un checklist de verificación por caso (fuentes, sesgo, privacidad, trazabilidad), aprobación ligera por riesgo y registros de prompts/datos para auditoría.",
-        "idGradiente": "gradient-ethics",
+        "titulo": "Nivel de adopcion",
+        "porcentaje": 4.54,
+        "descripcion": "Indica qué tan extendida está la integración de la IA en diferentes contextos o comunidades.",
+        "idGradiente": "gradiente-adopcion",
         "coloresGradiente": [
-          "#8B5CF6",
-          "#A78BFA",
-          "#C4B5FD"
+          "#8C9EFF",
+          "#536DFE",
+          "#3D5AFE"
+        ]
+      },
+      {
+        "titulo": "Qué tan peligrosa parece la IA",
+        "porcentaje": 5.08,
+        "descripcion": "Evalúa la percepción de riesgo o amenaza que la gente asocia con el uso de la IA.",
+        "idGradiente": "gradiente-peligrosa",
+        "coloresGradiente": [
+          "#80D8FF",
+          "#40C4FF",
+          "#00B0FF"
+        ]
+      },
+      {
+        "titulo": "Interes en aprendizaje",
+        "porcentaje": 9,
+        "descripcion": "Mide el grado de motivación que existe para aprender más sobre IA y sus aplicaciones.",
+        "idGradiente": "gradiente-aprendizaje",
+        "coloresGradiente": [
+          "#CCFF90",
+          "#B2FF59",
+          "#76FF03"
+        ]
+      },
+      {
+        "titulo": "Ética y verificacion",
+        "porcentaje": 8.01,
+        "descripcion": "Representa la importancia que los usuarios dan a los aspectos éticos y a la validación de la información generada por IA.",
+        "idGradiente": "gradiente-ética",
+        "coloresGradiente": [
+          "#FFFF8D",
+          "#FFFF00",
+          "#FFEA00"
         ]
       }
     ]

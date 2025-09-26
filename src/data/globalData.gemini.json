@@ -33,7 +33,7 @@
     "contenido": "Le damos la bienvenida a los resultados de su Diagnóstico de Madurez Digital. Este informe ha sido diseñado para proporcionarle una visión clara y accionable del estado actual de su organización en el panorama digital. El objetivo no es solo evaluar, sino identificar las fortalezas sobre las cuales construir y las oportunidades estratégicas que impulsarán su crecimiento futuro. A lo largo de este documento, encontrará un análisis detallado y recomendaciones concretas para guiar sus próximos pasos en este emocionante viaje de transformación."
   },
   "brechaDigital": {
-    "puntuacionEmpresa": 7.41,
+    "puntuacionEmpresa": 7.8,
     "puntuacionPromedioSector": 6.75,
     "nombreEmpresa": "Banco de Guayaquil",
     "textoNivelActual": "Nivel Competitivo en Desarrollo",
@@ -42,28 +42,28 @@
     "parrafo2": "Para cerrar esta brecha, el enfoque recomendado es doble. Primero, es imperativo lanzar programas de capacitación y adopción de herramientas dirigidos específicamente a los roles con menor puntuación, traduciendo las habilidades generales en aplicaciones prácticas y medibles. Segundo, se debe trabajar en los habilitadores transversales: fortalecer el liderazgo para que modele el comportamiento digital deseado y evolucionar la cultura para que la innovación sea una responsabilidad compartida y no solo una aspiración. La clave es conectar el potencial individual con la estrategia organizacional."
   },
   "madurezDigital": {
-    "puntuacionGeneral": 7.19,
+    "puntuacionGeneral": 7.66,
     "puntuacionPromedioSector": 6.75,
     "nombreEmpresa": "Banco de Guayaquil",
     "parrafoIntroductorio": "La madurez digital promedia 60%, ubicando a la organización en un nivel competitivo. Esto significa que cuenta con capacidades consistentes para operar con herramientas digitales y resolver problemas de negocio, y que está en condiciones de capturar beneficios rápidos si se estandarizan prácticas y se escalan iniciativas de alto impacto.",
     "componentes": [
       {
         "nombre": "Adaptabilidad",
-        "puntuacion": 7.32,
+        "puntuacion": 7.92,
         "descripcion": "La competencia en Análisis de Datos es una fortaleza significativa. Esto sugiere que los colaboradores tienen una buena capacidad para interpretar y utilizar información, lo cual es vital para la toma de decisiones estratégicas. Se recomienda seguir potenciando esta habilidad mediante herramientas avanzadas y capacitación continua.",
         "color": "#8E24AA",
         "colorGradiente": "#BA68C8"
       },
       {
         "nombre": "Resolución de problemas digitales",
-        "puntuacion": 7.25,
+        "puntuacion": 7.6,
         "descripcion": "Alfabetización de Datos complementa la fortaleza en análisis, indicando que el personal comprende la importancia y el manejo básico de los datos. Esta base es excelente para introducir iniciativas de 'data-driven culture'.",
         "color": "#1E88E5",
         "colorGradiente": "#64B5F6"
       },
       {
         "nombre": "Proactividad digital",
-        "puntuacion": 6.99,
+        "puntuacion": 7.32,
         "descripcion": "Ciberseguridad demuestra un buen nivel de conciencia y práctica. Es crucial mantener esta fortaleza mediante actualizaciones constantes y entrenamientos periódicos, especialmente en un entorno donde las 'preocupaciones' sobre la seguridad de la información, como las expresadas en la adopción de IA, son relevantes.",
         "color": "#00897B",
         "colorGradiente": "#4DB6AC"
@@ -71,71 +71,104 @@
     ]
   },
   "competenciasDigitales": {
-    "promedio": 7.41,
-    "nivelDesarrollo": "FUNDAMENTOS AVANZADOS",
+    "promedio": 7.8,
+    "nivelDesarrollo": "",
     "descripcionPromedio": "La puntuación general de 7.41 en Competencias Digitales es el activo más fuerte identificado en este diagnóstico. Revela que la organización posee un nivel avanzado de conocimientos fundamentales en áreas críticas como el análisis de datos, la colaboración y la ciberseguridad. Este alto nivel de alfabetización digital es el motor que puede y debe impulsar todas las demás áreas de la transformación. Significa que no se parte de cero; al contrario, se cuenta con el talento necesario para ejecutar una estrategia digital ambiciosa.",
     "competencias": [
       {
         "name": "Analisis De Datos",
-        "score": 74,
+        "score": 7.9,
         "color": "#3498db",
         "description": "Una puntuación de 7.41 demuestra una capacidad sólida para interpretar datos. La oportunidad aquí es evolucionar de un análisis descriptivo (¿qué pasó?) a un análisis predictivo y prescriptivo (¿qué pasará y qué debemos hacer?). Se recomienda invertir en herramientas más avanzadas y en capacitación especializada para los roles clave que puedan convertir datos en estrategia."
       },
       {
         "name": "Alfabetizacion De Datos",
-        "score": 74,
+        "score": 7.81,
         "color": "#3498db",
         "description": "Con 7.41, el equipo entiende el lenguaje de los datos. Para maximizar esta competencia, es crucial democratizar el acceso a la información a través de dashboards intuitivos (BI) y fomentar una cultura 'data-driven' donde las decisiones, desde las operativas hasta las estratégicas, estén respaldadas por evidencia cuantitativa."
       },
       {
         "name": "Colaboracion Digital",
-        "score": 74,
+        "score": 7.69,
         "color": "#3498db",
         "description": "El equipo utiliza eficazmente las herramientas de colaboración (7.41). El siguiente nivel es optimizar los flujos de trabajo interdepartamentales. Se sugiere mapear los procesos clave que involucran a múltiples áreas y re-diseñarlos aprovechando al máximo las capacidades de las plataformas colaborativas para romper silos y aumentar la agilidad."
       },
       {
         "name": "Ciberseguridad",
-        "score": 74,
+        "score": 7.81,
         "color": "#3498db",
         "description": "Una alta conciencia en ciberseguridad (7.41) es fundamental en el entorno actual. Para fortalecer esta área, se debe pasar de la conciencia a la acción proactiva. Implementar simulacros de phishing y programas de 'guardianes de la ciberseguridad' puede convertir a cada empleado en una parte activa de la defensa de la organización."
       }
     ]
   },
   "usoInteligenciaArtificial": {
-    "promedio": 7.07,
-    "resumen": "La organización muestra un compromiso inicial muy saludable con la Inteligencia Artificial, con una puntuación consistente de 7.07 en todas las áreas evaluadas. Existe un claro interés, una habilidad en desarrollo y una percepción equilibrada del riesgo. <strong>La oportunidad estratégica clave es pasar de un uso exploratorio e individual a una adopción estructurada y alineada con los objetivos de negocio.</strong> Es el momento ideal para definir casos de uso de alto impacto, establecer una gobernanza clara y lanzar proyectos piloto que demuestren el valor de la IA en áreas específicas.",
+    "promedio": 6.99,
+    "resumen": "Un dato muy favorable es que la percepción de la IA como peligrosa es baja (5.08%). Esto significa que no existe una barrera cultural de miedo o escepticismo que frene la implementación. El equipo tiene una visión pragmática y no está paralizado por los riesgos, lo que facilita la introducción de nuevas tecnologías.",
     "graficos": [
       {
-        "titulo": "Adopción y Curiosidad",
-        "porcentaje": 71,
-        "descripcion": "El interés en aprender sobre IA es alto, y el nivel de adopción es moderado (7.07). Esto, combinado con una percepción de riesgo también moderada, crea el escenario perfecto para avanzar. Indica que el equipo está listo para recibir formación más avanzada y participar en nuevas implementaciones, sin un miedo paralizante ni una confianza ciega. Se recomienda lanzar un programa de embajadores de IA para capitalizar esta curiosidad.",
-        "idGradiente": "gradient-adoption",
+        "titulo": "Frecuencia de uso",
+        "porcentaje": 7.34,
+        "descripcion": "Este gráfico muestra qué tan a menudo los encuestados utilizan la inteligencia artificial en su día a día.",
+        "idGradiente": "gradiente-uso",
         "coloresGradiente": [
-          "#10B981",
-          "#34D399",
-          "#6EE7B7"
+          "#FF8A80",
+          "#FF5252",
+          "#FF1744"
         ]
       },
       {
-        "titulo": "Uso y Aplicación",
-        "porcentaje": 71,
-        "descripcion": "Tanto la frecuencia como la habilidad de uso se sitúan en un nivel competente de 7.07. Esto sugiere que la IA está empezando a formar parte de las rutinas de trabajo, aunque probablemente de forma básica. El siguiente paso es identificar patrones de uso y promover las mejores prácticas. Crear una guía interna de 'prompts' efectivos o compartir casos de éxito internos puede ayudar a elevar el nivel de habilidad de toda la organización.",
-        "idGradiente": "gradient-usage",
+        "titulo": "Habilidad de uso",
+        "porcentaje": 7.99,
+        "descripcion": "Representa el nivel de competencia y destreza que los usuarios perciben tener al interactuar con herramientas de IA.",
+        "idGradiente": "gradiente-habilidad",
         "coloresGradiente": [
-          "#F59E0B",
-          "#FBBF24",
-          "#FDE047"
+          "#EA80FC",
+          "#E040FB",
+          "#D500F9"
         ]
       },
       {
-        "titulo": "Ética y Verificación",
-        "porcentaje": 71,
-        "descripcion": "La puntuación de 7.07 en Ética y Verificación es muy alentadora. Demuestra que los empleados son conscientes de la importancia de utilizar la IA de manera responsable y de verificar la información que genera. Para consolidar esto, la empresa debe establecer directrices claras sobre el uso ético de la IA, la privacidad de los datos y los protocolos de verificación, asegurando que la innovación no comprometa los valores corporativos.",
-        "idGradiente": "gradient-ethics",
+        "titulo": "Nivel de adopcion",
+        "porcentaje": 4.54,
+        "descripcion": "Indica el grado en que la inteligencia artificial ha sido integrada y aceptada en diversos ámbitos, tanto personales como profesionales.",
+        "idGradiente": "gradiente-adopcion",
         "coloresGradiente": [
-          "#8B5CF6",
-          "#A78BFA",
-          "#C4B5FD"
+          "#8C9EFF",
+          "#536DFE",
+          "#3D5AFE"
+        ]
+      },
+      {
+        "titulo": "Qué tan peligrosa parece la IA",
+        "porcentaje": 5.08,
+        "descripcion": "Mide la percepción pública sobre los riesgos y peligros potenciales asociados con el desarrollo y uso de la IA.",
+        "idGradiente": "gradiente-peligrosa",
+        "coloresGradiente": [
+          "#80D8FF",
+          "#40C4FF",
+          "#00B0FF"
+        ]
+      },
+      {
+        "titulo": "Interes en aprendizaje",
+        "porcentaje": 9,
+        "descripcion": "Refleja el entusiasmo y la curiosidad de las personas por adquirir nuevos conocimientos y habilidades sobre inteligencia artificial.",
+        "idGradiente": "gradiente-aprendizaje",
+        "coloresGradiente": [
+          "#CCFF90",
+          "#B2FF59",
+          "#76FF03"
+        ]
+      },
+      {
+        "titulo": "Ética y verificacion",
+        "porcentaje": 8.01,
+        "descripcion": "Señala la importancia que los encuestados le dan a la supervisión ética y la verificación de la información generada por IA.",
+        "idGradiente": "gradiente-ética",
+        "coloresGradiente": [
+          "#FFFF8D",
+          "#FFFF00",
+          "#FFEA00"
         ]
       }
     ]

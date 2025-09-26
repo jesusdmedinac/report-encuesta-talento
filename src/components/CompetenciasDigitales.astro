@@ -1,25 +1,58 @@
 ---
+import { ClassByLevel, type NivelMadurez, type ScaleDecile, scoreToScaleDecile } from "../utils/utils";
+
 const {
     titulo = "Competencias Digitales",
     promedio = 1.5,
     descripcionPromedio = "Las competencias digitales de Profermaco están en una etapa inicial de desarrollo, representando una excelente oportunidad para implementar programas de capacitación específicos para el sector ferretero y de materiales de construcción.",
-    nivelDesarrollo = "PRIMERA ETAPA DE DESARROLLO",
     datosGrafico = []
 } = Astro.props;
+
+const scaleDecile = scoreToScaleDecile(promedio, "brechaDigital") as ScaleDecile;
+const puntaje = scaleDecile?.puntaje;
+const nivel = scaleDecile?.nivel as NivelMadurez;
+
+const datosGraficoWithScaleDecile = datosGrafico.map((competencia: {
+  name: string;
+  score: number;
+  color: string;
+  description: string;
+}) => ({
+  ...competencia,
+  scaleDecile: scoreToScaleDecile(competencia.score, "brechaDigital") as ScaleDecile,
+}));
 ---
+<style>
+  .badge { border-radius: 999px; }
+  .lvl-low { padding: 0.12rem 0.5rem; background: #fee2e2; color: #7f1d1d; }
+  .lvl-mid { padding: 0.12rem 0.5rem; background: #fef3c7; color: #78350f; }
+  .lvl-high { padding: 0.12rem 0.5rem; background: #dcfce7; color: #14532d; }
+
+  .average-container {
+    background: linear-gradient(135deg, #ededed, #efefef);
+    border-left: 4px solid #aeaeae;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 25px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
 <section>
     <h2>{titulo}</h2>
     
     <div class="average-container">
         <div class="average-score">
-            <div class="average-value">{promedio}</div>
+            <div class="average-value">{puntaje}</div>
             <div class="average-label">Promedio</div>
+            <div class:list={[ClassByLevel[nivel], "badge"]}>{nivel}</div>
         </div>
         <div class="average-details">
             <div class="average-description">
                 {descripcionPromedio}
             </div>
-            <div class="level-badge">{nivelDesarrollo}</div>
         </div>
     </div>
     
@@ -30,29 +63,28 @@ const {
         
         <div class="legend-container">
             <div class="legend-items" id="legend-items">
-                <!-- Las leyendas se cargarán con JavaScript -->
             </div>
         </div>
     </div>
 </section>
 
-<script define:vars={{datosGrafico}}>
+<script define:vars={{datosGraficoWithScaleDecile}}>
     const colors = [
-        "#3498db",
-        "#2ecc71", 
-        "#e74c3c",
-        "#f1c40f",
-        "#9b59b6",
-        "#e67e22",
-        "#34495e",
-        "#16a085",
-        "#c0392b",
-        "#8e44ad"
+        "#F44336",
+        "#673AB7",
+        "#03A9F4",
+        "#4CAF50",
+        "#E91E63",
+        "#3F51B5",
+        "#00BCD4",
+        "#8BC34A",
+        "#FFC107",
+        "#AB47BC",
     ];
     
-    const competencias = datosGrafico.map((competencia, index) => ({
+    const competencias = datosGraficoWithScaleDecile.map((competencia, index) => ({
         ...competencia,
-        color: colors[index] || colors[colors.length - 1]
+        color: colors[index] || colors[colors.length - 1],
     }));
     
     competencias
@@ -106,7 +138,7 @@ const {
     competencias.forEach((competencia, index) => {
         const radius = maxRadius - index * (segmentWidth + segmentGap);
         const circumference = 2 * Math.PI * radius;
-        const scorePercentage = competencia.score / 100;
+        const scorePercentage = competencia.scaleDecile?.puntaje / 100;
         const dashLength = circumference * scorePercentage;
         const dashGap = circumference - dashLength;
         
@@ -148,7 +180,7 @@ const {
         percentLabel.setAttribute("fill", "white");
         percentLabel.setAttribute("font-size", "0.65rem");
         percentLabel.setAttribute("font-weight", "bold");
-        percentLabel.textContent = competencia.score + "%";
+        percentLabel.textContent = competencia.scaleDecile?.puntaje || 0;
         labelsGroup.appendChild(percentLabel);
         
         // Crear elemento de leyenda
@@ -163,7 +195,7 @@ const {
                 <div class="legend-content">
                     <div class="legend-header">
                         <div class="legend-name">${competencia.name}</div>
-                        <div class="legend-score">${competencia.score}%</div>
+                        <div class="legend-score">${competencia.scaleDecile?.puntaje || 0}</div>
                     </div>
                     <div class="legend-description">${competencia.description}</div>
                 </div>

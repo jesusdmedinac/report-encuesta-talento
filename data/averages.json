@@ -1,0 +1,146 @@
+{
+  "questionAverages": {
+    "D1_ADAPT: Cuando se introduce una nueva herramienta o software en la empresa, ¿con qué frecuencia eres uno de los primeros en probarlo?": 7.65,
+    "D1_ADAPT: ¿Qué tan cómodo/a te sientes cuando tus tareas diarias cambian debido a la implementación de una nueva tecnología?": 8.14,
+    "D1_ADAPT: ¿Con qué frecuencia buscas activamente tutoriales, videos o documentación para aprender a usar mejor las herramientas digitales de tu trabajo?": 7.97,
+    "D1_SOLVING: Si un programa no funciona como esperas, ¿con qué frecuencia intentas resolver el problema por tu cuenta antes de contactar a TI o soporte?": 7.74,
+    "D1_SOLVING: ¿Con qué frecuencia utilizas plataformas en línea (ej. Google, YouTube, foros) para encontrar soluciones a problemas tecnológicos relacionados con tu trabajo?": 7.46,
+    "D1_PROACTIVITY: ¿Con qué frecuencia utilizas funciones avanzadas de software (ej. atajos de teclado, scripts, fórmulas complejas) para realizar tareas más rápido?": 7.24,
+    "D1_PROACTIVITY: ¿Con qué frecuencia revisas tus procesos de trabajo para ver si hay tareas manuales que se pueden digitalizar o automatizar?": 7.41,
+    "D2_DATA: ¿Qué tan cómodo/a te sientes al utilizar datos para respaldar tus argumentos o decisiones en el trabajo?": 8.58,
+    "D2_DATA: ¿Con qué frecuencia utilizas herramientas de análisis (ej. Excel avanzado, Power BI) para visualizar o interpretar datos en tu trabajo?": 7.21,
+    "D2_DATA: ¿Con qué frecuencia encuentras la información relevante para tu trabajo de forma rápida y sencilla en los sistemas de la empresa?": 7.81,
+    "D2_COLLAB: ¿Con qué frecuencia utilizas las funciones de edición y colaboración en tiempo real en documentos (ej. Google Docs, Office 365)?": 6.92,
+    "D2_COLLAB: ¿Qué tan cómodo/a te sientes al presentar información y comunicar resultados a través de plataformas virtuales (ej. Zoom, Teams)?": 8.46,
+    "D2_SECURITY: ¿Con qué frecuencia verificas la identidad del remitente antes de hacer clic en un enlace de un correo electrónico sospechoso?": 9.36,
+    "D2_SECURITY: ¿Con qué frecuencia cambias tus contraseñas de trabajo?": 8.3,
+    "D2_SECURITY: ¿Con qué frecuencia utilizas un gestor de contraseñas (ej. LastPass, 1Password, el gestor de tu navegador) para administrar tus credenciales?": 5.63,
+    "D2_SECURITY: ¿Qué tan cómodo/a te sientes al configurar y utilizar la autenticación de dos pasos (2FA) en tus cuentas de trabajo?": 7.96,
+    "D3_LEADERSHIP: ¿Qué tan a menudo los líderes de tu área comunican cómo la tecnología está ayudando a la empresa a alcanzar sus objetivos?": 7.8,
+    "D3_ENVIRONMENT: ¿Con qué frecuencia se realizan reuniones o talleres en tu departamento para compartir conocimientos sobre nuevas herramientas o usos de la tecnología?": 6.84,
+    "D3_SUPPORT: ¿Qué tan de acuerdo estás con la siguiente afirmación?: \"La empresa me proporciona la formación necesaria para mantenerme actualizado/a digitalmente\".": 8.17,
+    "D3_ENVIRONMENT: Cuando se prueba una nueva tecnología y no funciona, ¿qué tan rápido vuelve el equipo a probar otra solución?": 7.7,
+    "D3_ENVIRONMENT: ¿Con qué frecuencia se reconoce y celebra el uso innovador de la tecnología por parte de los compañeros de trabajo?": 7.47,
+    "D4_USAGE: En los últimos 6 meses, ¿con qué frecuencia has utilizado herramientas de IA Generativa (ej. ChatGPT, Copilot, Bard) para tareas de trabajo?": 7.34,
+    "D4_USAGE: Si utilizas IA, ¿qué tan cómodo/a te sientes al escribir instrucciones claras (prompts) para obtener los resultados que necesitas?": 7.99,
+    "D4_USAGE: ¿Cuál de las siguientes afirmaciones describe mejor tu situación actual respecto al uso de IA en el trabajo?": 4.54,
+    "D4_MINDSET: ¿Qué tan preocupado/a estás de que la IA pueda reducir la necesidad de personas en tu puesto de trabajo actual?": 5.08,
+    "D4_MINDSET: ¿Qué tan interesado/a estás en recibir formación sobre cómo utilizar herramientas de IA para tu rol?": 9,
+    "D4_ETHICS: ¿Con qué frecuencia verificas la exactitud de la información generada por una IA antes de utilizarla en un entregable final?": 8.01,
+    "M1_BI: ¿Con qué frecuencia utilizas herramientas de Business Intelligence (BI) para analizar métricas de desempeño y tomar decisiones estratégicas?": 6.51,
+    "M1_EXPLORATION: ¿Con qué frecuencia dedicas tiempo a explorar nuevas tecnologías que podrían impactar tu industria o modelo de negocio?": 6.91,
+    "M1_RISK: ¿Qué tan cómodo/a te sientes al asignar presupuesto a proyectos de transformación digital de alto riesgo?": 7.37,
+    "M1_STRATEGY: ¿Con qué frecuencia discutes el impacto de la IA en la estrategia de la empresa con tu equipo?": 6.78,
+    "M1_STRATEGY: ¿Qué tan de acuerdo estás con la afirmación?: \"Mi equipo de liderazgo tiene un plan claro para integrar nuevas tecnologías en nuestra estrategia a 3 años.\"": 7.37,
+    "M2_PROJECT_MGMT: ¿Con qué frecuencia utilizas software de gestión de proyectos (ej. Asana, Jira, Planner) para organizar las tareas de tu equipo?": 5.29,
+    "M2_PERFORMANCE: ¿Qué tan cómodo/a te sientes al usar dashboards o reportes automatizados para monitorear el rendimiento de tu equipo?": 8.43,
+    "M2_ADOPTION: ¿Con qué frecuencia propones y lideras la adopción de nuevas herramientas digitales dentro de tu equipo?": 7.36,
+    "M2_COLLAB: ¿Qué tan de acuerdo estás con la afirmación?: \"Mi equipo utiliza las herramientas colaborativas de la empresa (ej. Teams, Slack) de forma óptima para comunicarse y trabajar juntos.\"": 8.33,
+    "M2_IA_MGMT: ¿Qué tan cómodo/a te sientes al utilizar IA para analizar datos y generar resúmenes de rendimiento de tu equipo?": 7.83,
+    "M3_CRM: ¿Con qué frecuencia utilizas el CRM (ej. Hubspot, Salesforce) para gestionar la totalidad de tu pipeline de ventas o relación con el cliente?": 7.1,
+    "M3_ANALYTICS: ¿Qué tan cómodo/a te sientes al usar herramientas de análisis (ej. Google Analytics) o escucha social para entender el comportamiento del cliente?": 7.4,
+    "M3_COMMUNICATION: ¿Con qué frecuencia utilizas herramientas de comunicación digital (ej. plataformas de video, chat en vivo) para interactuar con clientes externos?": 6.19,
+    "M3_AUTOMATION: ¿Qué tan de acuerdo estás con la afirmación?: \"Utilizo herramientas de automatización de ventas o marketing (ej. Hubspot, Mailchimp) para optimizar mis procesos.\"": 6.38,
+    "M3_IA_USAGE: ¿Qué tan cómodo/a te sientes al utilizar IA (ej. para generar copys, emails de ventas o resumir interacciones) en tu trabajo diario?": 7.24,
+    "M3_SEO: ¿Con qué frecuencia utilizas herramientas SEO (ej. Semrush, Ahrefs) para realizar análisis de palabras clave o monitorear el posicionamiento?": 4.29,
+    "M3_PAID_MEDIA: ¿Qué tan cómodo/a te sientes creando y gestionando campañas de publicidad pagada en redes sociales (ej. Facebook Ads, LinkedIn Ads)?": 6.35,
+    "M4_ERP: ¿Qué tan cómodo/a te sientes al utilizar el sistema ERP (Enterprise Resource Planning) para las operaciones clave de tu trabajo?": 6.95,
+    "M4_SPREADSHEETS: ¿Qué tan cómodo/a te sientes al utilizar funciones avanzadas de hojas de cálculo (ej. Tablas Dinámicas, Power Query) para analizar datos financieros o de operaciones?": 7.49,
+    "M4_PLATFORMS: ¿Con qué frecuencia utilizas plataformas digitales para la gestión de facturas, pedidos, inventario o rutas logísticas?": 5.32,
+    "M4_DIGITIZATION: ¿Qué tan de acuerdo estás con la afirmación?: \"Los procesos clave de mi área están digitalizados, reduciendo la necesidad de papel o tareas manuales.\"": 7.74,
+    "M4_IA_USAGE: ¿Con qué frecuencia utilizas herramientas de IA para ayudar con el análisis de datos o la generación de informes en tu área?": 5.2,
+    "M5_CODE_MGMT: ¿Con qué frecuencia utilizas herramientas de gestión de código y colaboración (ej. GitHub, GitLab) en tu trabajo diario?": 5.84,
+    "M5_CLOUD: ¿Qué tan cómodo/a te sientes al utilizar entornos o servicios de cloud computing (ej. AWS, Azure, Google Cloud)?": 8.03,
+    "M5_INFRA: ¿Con qué frecuencia participas en la mejora continua de la infraestructura tecnológica de la empresa?": 6.43,
+    "M5_METHODOLOGY: ¿Qué tan de acuerdo estás con la afirmación?: \"Estoy familiarizado/a con las últimas metodologías de desarrollo (ej. DevOps, Agile, CI/CD).\"": 7.66,
+    "M5_IA_DEV: ¿Qué tan cómodo/a te sientes al utilizar IA (ej. GitHub Copilot, depuradores de código) para mejorar tu código o solucionar problemas?": 7.88,
+    "M5_SCRIPTING: ¿Con qué frecuencia escribes o modificas scripts en un lenguaje como Python o JavaScript para automatizar tareas?": 6.27,
+    "M5_DATABASE: ¿Con qué frecuencia utilizas consultas SQL para extraer o manipular datos de las bases de la empresa?": 6.92
+  },
+  "dimensionAverages": {
+    "madurezDigital": 7.66,
+    "brechaDigital": 7.8,
+    "culturaOrganizacional": 7.59,
+    "usoInteligenciaArtificial": 6.99,
+    "rolLiderazgo": 6.99,
+    "rolMandosMedios": 7.45,
+    "rolComercialCliente": 6.42,
+    "rolOperacionesAdminFinanzas": 6.54,
+    "rolTecnicoProducto": 7.01,
+    "rolSoporteInterno": null
+  },
+  "subDimensionAverages": {
+    "madurezDigital": {
+      "adaptabilidad": 7.92,
+      "resolucionDeProblemas": 7.6,
+      "proactividadDigital": 7.32
+    },
+    "brechaDigital": {
+      "analisisDeDatos": 7.9,
+      "alfabetizacionDeDatos": 7.81,
+      "colaboracionDigital": 7.69,
+      "ciberseguridad": 7.81
+    },
+    "culturaOrganizacional": {
+      "liderazgoYVision": 7.8,
+      "ambienteDeAprendizaje": 6.84,
+      "apoyoOrganizacional": 8.17,
+      "experimentacion": 7.7,
+      "reconocimiento": 7.47
+    },
+    "usoInteligenciaArtificial": {
+      "frecuenciaDeUso": 7.34,
+      "habilidadDeUso": 7.99,
+      "nivelDeAdopcion": 4.54,
+      "percepcionDeRiesgo": 5.08,
+      "interesEnAprendizaje": 9,
+      "eticaYVerificacion": 8.01
+    },
+    "rolLiderazgo": {
+      "usoDeBI": 6.51,
+      "exploracionTecnologica": 6.91,
+      "gestionDeRiesgo": 7.37,
+      "estrategiaTecnologica": 7.07
+    },
+    "rolMandosMedios": {
+      "gestionDeProyectos": 5.29,
+      "monitoreoDeRendimiento": 8.43,
+      "liderazgoDeAdopcion": 7.36,
+      "optimizacionDeColaboracion": 8.33,
+      "usoDeIAEnGestion": 7.83
+    },
+    "rolComercialCliente": {
+      "usoDeCRM": 7.1,
+      "analiticaDeCliente": 7.4,
+      "comunicacionConClientes": 6.19,
+      "automatizacionDeMarketing": 6.38,
+      "usoDeIA": 7.24,
+      "usoDeSEO": 4.29,
+      "gestionDePaidMedia": 6.35
+    },
+    "rolOperacionesAdminFinanzas": {
+      "usoDeERP": 6.95,
+      "hojasDeCalculoAvanzadas": 7.49,
+      "plataformasDeGestion": 5.32,
+      "digitalizacionDeProcesos": 7.74,
+      "usoDeIA": 5.2
+    },
+    "rolTecnicoProducto": {
+      "gestionDeCodigo": 5.84,
+      "cloudComputing": 8.03,
+      "mejoraDeInfraestructura": 6.43,
+      "metodologiasDeDesarrollo": 7.66,
+      "usoDeIAEnDesarrollo": 7.88,
+      "scripting": 6.27,
+      "basesDeDatos": 6.92,
+      "diseñoUI": null
+    },
+    "rolSoporteInterno": {
+      "usoDeHRIS": null,
+      "reclutamientoDigital": null,
+      "plataformasDeCapacitacion": null,
+      "gestionDocumental": null,
+      "usoDeIA": null
+    }
+  }
+}

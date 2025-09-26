@@ -1,37 +1,22 @@
 ---
+import { scoreToScaleDecile } from "../utils/utils";
+
 const {
     titulo = "Uso de la Inteligencia Artificial",
-    graficos = [
-        {
-            titulo: "Interés y preparación",
-            porcentaje: 82,
-            descripcion: "El equipo muestra una disposición alta para aprender y aplicar IA. Existe capital humano listo para profundizar en casos de uso estratégicos.",
-            idGradiente: "gradient-adoption",
-            coloresGradiente: ["#10B981", "#34D399", "#6EE7B7"]
-        },
-        {
-            titulo: "Uso en la práctica",
-            porcentaje: 68,
-            descripcion: "Los pilotos y automatizaciones existentes se encuentran en etapa intermedia; el reto es llevarlos a escala operativa.",
-            idGradiente: "gradient-usage",
-            coloresGradiente: ["#F59E0B", "#FBBF24", "#FDE047"]
-        },
-        {
-            titulo: "Gobernanza y ética",
-            porcentaje: 72,
-            descripcion: "Hay sensibilidad sobre riesgos y verificación. Formalizar lineamientos aumentará la confianza para habilitar más casos de IA.",
-            idGradiente: "gradient-ethics",
-            coloresGradiente: ["#8B5CF6", "#A78BFA", "#C4B5FD"]
-        }
-    ],
+    graficos = [],
     resumen = "<strong>Oportunidad estratégica:</strong> Existe una base entusiasta para la IA: la preparación y el interés superan el 80 %, mientras que el uso formal y la gobernanza se mantienen en fase intermedia. Escalar casos con lineamientos claros permitirá convertir ese potencial en impacto medible."
 } = Astro.props;
+
+const graficosWithScaleDecile = graficos.map((grafico: any) => ({
+    ...grafico,
+    scaleDecile: scoreToScaleDecile(grafico.porcentaje, "usoInteligenciaArtificial")
+}));
 ---
-<section>
+<section >
     <h2>{titulo}</h2>
     
     <div class="circular-charts-wrapper">
-        {graficos.map((grafico: any) => (
+        {graficosWithScaleDecile.map((grafico: any) => (
             <div class="circular-chart-item">
                 <div class="chart-title">{grafico.titulo}</div>
                 <div class="circular-progress">
@@ -44,10 +29,10 @@ const {
                             </linearGradient>
                         </defs>
                         <circle class="progress-bg" cx="90" cy="90" r="75"></circle>
-                        <circle class="progress-bar" cx="90" cy="90" r="75" stroke={`url(#${grafico.idGradiente})`} data-percent={grafico.porcentaje}></circle>
+                        <circle class="progress-bar" cx="90" cy="90" r="75" stroke={`url(#${grafico.idGradiente})`} data-percent={grafico.scaleDecile?.puntaje || 0}></circle>
                     </svg>
                     <div class="progress-text">
-                        <div class="progress-percentage">{grafico.porcentaje}%</div>
+                        <div class="progress-percentage">{grafico.scaleDecile?.puntaje || 0}</div>
                         <div class="progress-label">Avance</div>
                     </div>
                 </div>
