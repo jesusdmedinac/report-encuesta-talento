@@ -7,7 +7,7 @@ const {
 } = Astro.props;
 
 const formattedScore = typeof score === 'number'
-  ? score.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+  ? score.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 2 })
   : score;
 ---
 {score !== undefined && score !== null && (
