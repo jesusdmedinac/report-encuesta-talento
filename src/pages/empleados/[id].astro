@@ -130,7 +130,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
         <blockquote>El presente informe muestra la descripción de la muestra, la confiabilidad de la escala y sus dimensiones mediante el coeficiente omega, los resultados generales y segmentados por variables sociodemográficas como género, edad, rol y nivel educativo, en función de las cuales se proponen baremos específicos por rol y nivel educativo.</blockquote>
 
         <section class="card">
-          <h2>Resumen de KPIs (escala 1–10)</h2>
+          <h2>Dimensiones</h2>
           <div class="kpi-cards">
             {dimsOrder.map(dim => {
               const tile = tiles.find(t => t.key === dim) || { value: 0 };
@@ -161,7 +161,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
         </section>
 
         <section class="card">
-          <h2>Dimensiones barométricas</h2>
+          <h2>Dimensiones y subdimensiones</h2>
           <div class="grid-2">
             {['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'].map(dim => (
               <div>
@@ -187,7 +187,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
 
         {doc.action_plan && doc.action_plan.iniciativas && (
           <section class="card">
-            <h2>Plan de acción priorizado</h2>
+            <h2>Plan de acción personalizado</h2>
             {doc.action_plan.resumenGeneral && (<p class="narrative">{doc.action_plan.resumenGeneral}</p>)}
             {doc.action_plan.criterios && (
               <div class="chips" style="margin-bottom:8px">
@@ -248,7 +248,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
         )}
 
         <section class="card">
-          <h2>Preguntas abiertas</h2>
+          <h2>Preguntas y respuestas abiertas</h2>
           <div class="quotes">
             {Object.entries(doc.openEnded || {}).map(([code, arr]) => {
               const question = OPEN_ENDED_QUESTIONS?.[code] || code;
