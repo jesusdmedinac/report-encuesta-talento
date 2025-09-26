@@ -65,6 +65,12 @@ function levelFromSummary(s, fallbackValue) {
   return levelLabel10(fallbackValue);
 }
 
+function formatDec(value) {
+  const numeric = Number(value);
+  const safe = Number.isFinite(numeric) ? Math.round(numeric) : 0;
+  return String(safe).padStart(3, ' ');
+}
+
 const dimsOrder = ['madurezDigital','brechaDigital','usoInteligenciaArtificial','culturaOrganizacional'];
 const dimLabels = {
   madurezDigital: 'Madurez Digital',
@@ -171,7 +177,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
                       {([10,20,30,40,50,60,70,80,90]).map(p => (<b class="tick" style={`left:${p}%`}></b>))}
                       <i style={`width:${Math.min(100, dec)}%`}></i>
                     </div>
-                    <div class="val">{dec}</div>
+                    <div class="val">{formatDec(dec)}</div>
                   </div>
                 );})}
               </div>
@@ -477,6 +483,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
     .row .val {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
       color: var(--text-secondary);
+      white-space: pre;
     }
 
     .narrative {
