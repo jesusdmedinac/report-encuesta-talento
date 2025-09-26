@@ -393,7 +393,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
 
     .kpi-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
     }
 
@@ -494,7 +494,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
 
     .grid-2 {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
     }
 
@@ -509,7 +509,7 @@ const pageTitle = doc?.header?.subject?.nombreCompleto
         padding: 22px 20px;
       }
 
-      .grid-2 {
+      .grid-2, .kpi-cards {
         grid-template-columns: 1fr;
       }
     }
