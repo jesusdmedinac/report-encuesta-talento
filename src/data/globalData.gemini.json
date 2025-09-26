@@ -243,7 +243,7 @@
       {
         "id": "CD-001",
         "titulo": "Aceleración Digital para el Área Comercial y de Cliente",
-        "descripcion": "Una iniciativa intensiva para transformar el área de menor madurez digital (5.71). Se centrará en la adopción profunda del CRM, la capacitación en analítica de clientes y el uso de herramientas de automatización de marketing e IA para personalizar la comunicación y mejorar la eficiencia del ciclo de ventas.",
+        "descripcion": "Una iniciativa intensiva para transformar el área de menor madurez digital. Se centrará en la adopción profunda del CRM, la capacitación en analítica de clientes y el uso de herramientas de automatización de marketing e IA para personalizar la comunicación y mejorar la eficiencia del ciclo de ventas.",
         "areaEnfoque": "Competencias de Rol Específico",
         "objetivosClave": [
           "Incrementar el uso y la calidad de los datos en el CRM.",
@@ -254,7 +254,7 @@
         "metricasExito": [
           {
             "metrica": "Puntuación de madurez digital del rol Comercial",
-            "valorObjetivo": "De 5.71 a 7.5"
+            "valorObjetivo": "De 30 a 70"
           },
           {
             "metrica": "Tasa de conversión de lead a cliente",
@@ -267,7 +267,7 @@
         ],
         "responsableSugerido": "Dirección Comercial",
         "plazoEstimado": "6 meses",
-        "prioridad": "Alta"
+        "prioridad": "P1"
       },
       {
         "id": "OP-002",
@@ -283,7 +283,7 @@
         "metricasExito": [
           {
             "metrica": "Puntuación de madurez del rol Operaciones/Finanzas",
-            "valorObjetivo": "De 5.85 a 7.2"
+            "valorObjetivo": "De 40 a 70"
           },
           {
             "metrica": "Horas/hombre ahorradas por mes en tareas automatizadas",
@@ -292,7 +292,7 @@
         ],
         "responsableSugerido": "Dirección de Operaciones / CFO",
         "plazoEstimado": "9 meses",
-        "prioridad": "Alta"
+        "prioridad": "P2"
       },
       {
         "id": "CU-003",
@@ -308,11 +308,11 @@
         "metricasExito": [
           {
             "metrica": "Puntuación general de Cultura Organizacional",
-            "valorObjetivo": "De 6.94 a 8.0"
+            "valorObjetivo": "De 60 a 80"
           },
           {
             "metrica": "Puntuación de rol de Liderazgo",
-            "valorObjetivo": "De 6.38 a 7.8"
+            "valorObjetivo": "De 60 a 80"
           },
           {
             "metrica": "Número de ideas de innovación presentadas por los empleados",
@@ -321,47 +321,59 @@
         ],
         "responsableSugerido": "Dirección General / Recursos Humanos",
         "plazoEstimado": "12 meses (continuo)",
-        "prioridad": "Alta"
+        "prioridad": "P3"
       }
     ]
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "Nuestro análisis de madurez digital revela que la organización cuenta con una base sólida y prometedora para acelerar su transformación. Los resultados indican un alto nivel de competencias digitales fundamentales entre los colaboradores, con puntuaciones destacadas en áreas como análisis de datos, colaboración digital y ciberseguridad (7.41 sobre 10). Esta capacidad general, junto con una notable proactividad y adaptabilidad individual (7.19), demuestra que el equipo está preparado y dispuesto a adoptar nuevos desafíos tecnológicos.\n\nEl principal desafío y, por tanto, la mayor oportunidad, reside en la brecha existente entre estas competencias generales y su aplicación práctica en roles específicos. Observamos una necesidad crítica de impulsar la digitalización en áreas de alto impacto como la Comercial y de Cliente (5.71), así como en Operaciones y Finanzas (5.85). Para capitalizar plenamente el potencial existente, es crucial fortalecer el liderazgo digital (6.38) y nutrir una cultura organizacional (6.94) que no solo permita, sino que fomente activamente la experimentación y la innovación en el día a día.\n\nEste diagnóstico presenta un mapa claro para la acción. Al enfocar los esfuerzos en cerrar la brecha entre el saber y el hacer, y al empoderar a los líderes para que guíen la carga, la compañía está en una excelente posición para convertir su potencial digital latente en resultados de negocio tangibles y sostenibles. Las bases están puestas; el siguiente paso es construir sobre ellas de manera estratégica y decidida.",
+    "resumenGeneral": [
+      "Con una puntuación general de 70, Banco de Guayaquil demuestra una madurez digital competitiva, superando la media del sector (60).",
+      "La principal fortaleza de la organización es el avanzado nivel de sus competencias digitales (70), un activo fundamental que indica que el talento posee las habilidades necesarias para la transformación.",
+      "Sin embargo, existe una brecha crítica entre este potencial y su aplicación en funciones de negocio clave. Las áreas Comercial/Cliente y Operaciones/Finanzas (5.85) muestran una madurez significativamente menor, lo que representa la principal área de oportunidad.",
+      "La cultura organizacional es sólida, apalancada en un liderazgo con visión y una cultura de experimentación, aunque se debe reforzar el ambiente de aprendizaje.",
+      "Adicionalmente, existe una oportunidad latente en Inteligencia Artificial, donde el bajo nivel de adopción contrasta con un altísimo interés de aprendizaje por parte de los empleados.",
+      "El camino estratégico es claro: capitalizar el talento existente para cerrar la brecha de aplicación en las áreas de negocio, convirtiendo el conocimiento digital en resultados medibles."
+    ],
     "puntuacionGeneral": {
-      "puntuacion": 7.21
+      "puntuacion": 7.51
     },
     "puntuacionesDimensiones": [
       {
         "nombre": "Madurez Digital",
-        "puntuacion": 7.19,
+        "puntuacion": 7.66,
         "color": "#F59E0B"
       },
       {
         "nombre": "Competencias Digitales",
-        "puntuacion": 7.41,
+        "puntuacion": 7.8,
         "color": "#EF4444"
       },
       {
         "nombre": "Uso de IA",
-        "puntuacion": 7.07,
+        "puntuacion": 6.99,
         "color": "#8B5CF6"
       },
       {
         "nombre": "Cultura Digital",
-        "puntuacion": 6.94,
+        "puntuacion": 7.59,
         "color": "#10B981"
       }
     ],
     "fortalezas": [
-      "Sólidas competencias digitales transversales, destacando en Análisis de Datos, Colaboración y Ciberseguridad con una puntuación promedio de 7.41.",
-      "Un nivel notable de madurez digital individual, reflejado en la alta capacidad de adaptabilidad, resolución de problemas y proactividad digital (7.19).",
-      "Una actitud positiva y un nivel de habilidad competente hacia la Inteligencia Artificial, mostrando un interés saludable en su aprendizaje y adopción (7.07)."
+      "La puntuación en Competencias Digitales es el activo más valioso. Los empleados demuestran un dominio avanzado en áreas cruciales como Análisis de Datos y Ciberseguridad, formando una base sólida para cualquier iniciativa.",
+      "La puntuación general de la empresa se encuentra notablemente por encima del promedio del sector bancario, lo que indica una ventaja competitiva inicial en el camino de la transformación digital.",
+      "La organización cuenta con pilares culturales fuertes, destacando un Liderazgo con visión digital clara y un entorno que fomenta la Experimentación, elementos clave para impulsar y sostener el cambio.",
+      "A pesar de la baja adopción, existe un gran interés en aprender sobre IA y una baja percepción de riesgo. Esto elimina barreras culturales y facilita la implementación de nuevas tecnologías."
     ],
     "oportunidades": [
-      "Elevar la madurez digital del área Comercial y de Cliente, que presenta la puntuación más baja (5.71) y un alto potencial de impacto en ingresos.",
-      "Fortalecer la cultura organizacional (6.94) para crear un entorno que promueva activamente la experimentación y el aprendizaje continuo.",
-      "Acelerar la adopción de herramientas digitales en los roles de Operaciones, Administración y Finanzas (5.85) para mejorar la eficiencia interna.",
-      "Impulsar la visión y el compromiso del liderazgo (6.38) como catalizador principal de la estrategia de transformación tecnológica."
+      "La oportunidad más crítica es elevar la madurez de las áreas de menor puntuación: Comercial/Cliente y Operaciones. Es vital traducir las altas competencias generales en un uso efectivo de herramientas como CRM y ERP.",
+      "Existe un enorme potencial para capitalizar el interés de los empleados y convertirlo en adopción real. Implementar pilotos de IA en áreas específicas puede generar ganancias rápidas en eficiencia.",
+      "Mejorar las áreas con menor puntuación cultural, como el Ambiente de Aprendizaje y el Apoyo Organizacional, es clave para potenciar el desarrollo proactivo del talento y responder a la demanda de más capacitación.",
+      "El rol de Liderazgo tiene una oportunidad clara para evolucionar. Se requiere capacitar a los líderes para que no solo comuniquen la visión, sino que modelen activamente el comportamiento digital deseado.",
+      "Activar la Adopción de Inteligencia Artificial",
+      "Existe un enorme potencial para capitalizar el interés de los empleados y convertirlo en adopción real. Implementar pilotos de IA en áreas específicas puede generar ganancias rápidas en eficiencia.",
+      "Mejorar las áreas con menor puntuación cultural, como el Ambiente de Aprendizaje y el Apoyo Organizacional, es clave para potenciar el desarrollo proactivo del talento y responder a la demanda de más capacitación.",
+      "El rol de Liderazgo tiene una oportunidad clara para evolucionar. Se requiere capacitar a los líderes para que no solo comuniquen la visión, sino que modelen activamente el comportamiento digital deseado."
     ]
   },
   "footer": {

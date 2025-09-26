@@ -1,5 +1,5 @@
 ---
-import { scoreToScaleDecile } from '../utils/utils';
+import { ClassByLevel, scoreToScaleDecile } from '../utils/utils';
 
 const {
   title = 'Puntuación Global',
@@ -8,18 +8,25 @@ const {
   description = 'Promedio general de todas las dimensiones evaluadas.'
 } = Astro.props;
 
-const formattedScore = typeof score === 'number'
-  ? scoreToScaleDecile(score, 'madurezDigital')?.puntaje
+const scaleDecile = typeof score === 'number'
+  ? scoreToScaleDecile(score, 'madurezDigital')
   : score;
 ---
+<style>
+  .badge { border-radius: 999px; }
+  .lvl-low { padding: 0.12rem 0.5rem; background: #fee2e2; color: #7f1d1d; }
+  .lvl-mid { padding: 0.12rem 0.5rem; background: #fef3c7; color: #78350f; }
+  .lvl-high { padding: 0.12rem 0.5rem; background: #dcfce7; color: #14532d; }
+</style>
 {score !== undefined && score !== null && (
   <section class="container global-score">
-    <div class="score-content">
+    <div class="score-content" style="display: flex; flex-direction: column; gap: 0.75rem; justify-content: center; align-items: center;">
       <div class="score-heading">
         <h2>{title}</h2>
         {label && <span class="score-badge">{label}</span>}
       </div>
-      <div class="score-value">{formattedScore}</div>
+      <div class="score-value">{scaleDecile.puntaje}</div>
+      <div class:list={[ClassByLevel[scaleDecile.nivel], "badge"]} style="width: fit-content;">{scaleDecile.nivel}</div>
       {description && <p class="score-description">{description}</p>}
     </div>
   </section>

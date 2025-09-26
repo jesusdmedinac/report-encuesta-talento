@@ -238,12 +238,12 @@
   }
   },
   "planAccion": {
-    "resumenGeneral": "Proponemos un plan de 4 iniciativas para cerrar la brecha de 0.66 puntos hacia la meta sectorial: activar crecimiento comercial data-driven, acelerar la eficiencia operativa con digitalización, escalar IA con gobierno responsable y fortalecer el liderazgo para asegurar foco y ritmo. El horizonte recomendado es 3–9 meses, con entregables incrementales y métricas de negocio desde el primer trimestre.",
+    "resumenGeneral": "Proponemos un plan de 4 iniciativas para activar el crecimiento comercial data-driven, acelerar la eficiencia operativa con digitalización, escalar IA con gobierno responsable y fortalecer el liderazgo para asegurar foco y ritmo. El horizonte recomendado es 3–9 meses, con entregables incrementales y métricas de negocio desde el primer trimestre.",
     "iniciativas": [
       {
         "id": "CD-001",
         "titulo": "Impulso Comercial Data-Driven y Automatización de Marketing",
-        "descripcion": "Estandarizar el uso de CRM, activar analítica de cliente (segmentación, lead scoring) y automatizar campañas multicanal. Importa porque la función Comercial/Cliente (5.71/10) es el principal motor de crecimiento; profesionalizarla impactará adquisición, conversión y retención.",
+        "descripcion": "Estandarizar el uso de CRM, activar analítica de cliente (segmentación, lead scoring) y automatizar campañas multicanal. Importa porque la función Comercial/Cliente es el principal motor de crecimiento; profesionalizarla impactará adquisición, conversión y retención.",
         "areaEnfoque": "Competencias Digitales",
         "objetivosClave": [
           "Incrementar adopción activa de CRM por fuerza de ventas",
@@ -267,12 +267,12 @@
         ],
         "responsableSugerido": "Dirección Comercial y Marketing (con BI/Analítica)",
         "plazoEstimado": "3-6 meses",
-        "prioridad": "Alta"
+        "prioridad": "P1"
       },
       {
         "id": "CD-002",
         "titulo": "Eficiencia Operativa y Digitalización de Procesos (ERP/RPA ligero)",
-        "descripcion": "Mapear procesos críticos, digitalizar flujos y documentos, y automatizar tareas repetitivas (RPA) integradas al ERP/plataformas. Impacta directamente tiempos de ciclo, costos y calidad, abordando la brecha de Operaciones/Admin/Finanzas (5.85/10).",
+        "descripcion": "Mapear procesos críticos, digitalizar flujos y documentos, y automatizar tareas repetitivas (RPA) integradas al ERP/plataformas. Impacta directamente tiempos de ciclo, costos y calidad, abordando la brecha de Operaciones/Admin/Finanzas.",
         "areaEnfoque": "Operaciones/Admin/Finanzas",
         "objetivosClave": [
           "Estandarizar 3–5 procesos críticos con indicadores de desempeño",
@@ -296,12 +296,12 @@
         ],
         "responsableSugerido": "COO/CFO con TI (Oficina de Procesos)",
         "plazoEstimado": "4-8 meses",
-        "prioridad": "Alta"
+        "prioridad": "P2"
       },
       {
         "id": "CD-003",
         "titulo": "Gobierno de IA Responsable y Casos de Alto Impacto",
-        "descripcion": "Crear un marco de gobierno (políticas de datos, checklist ético, verificación), un catálogo de casos priorizados por ROI y una fábrica de pilotos con métricas. Eleva el 7.07/10 de IA a resultados escalables y mitiga riesgos de sesgo, privacidad y calidad.",
+        "descripcion": "Crear un marco de gobierno (políticas de datos, checklist ético, verificación), un catálogo de casos priorizados por ROI y una fábrica de pilotos con métricas. Eleva el uso de IA a resultados escalables y mitiga riesgos de sesgo, privacidad y calidad.",
         "areaEnfoque": "Uso de IA",
         "objetivosClave": [
           "Institucionalizar estándares de uso, verificación y seguridad",
@@ -325,12 +325,12 @@
         ],
         "responsableSugerido": "CTO/CIO y Comité de IA (Legal/Compliance/BI)",
         "plazoEstimado": "3-6 meses",
-        "prioridad": "Alta"
+        "prioridad": "P3"
       },
       {
         "id": "CD-004",
         "titulo": "Programa de Liderazgo Digital y Mandos Medios Orquestadores",
-        "descripcion": "Desarrollar capabilities en BI, estrategia tecnológica y gestión de riesgos (liderazgo 6.38/10) y potenciar a mandos medios (6.94/10) como sponsors de adopción. Incluye formación, coaching, OKR de transformación y un sistema de reconocimientos alineado a resultados digitales.",
+        "descripcion": "Desarrollar capabilities en BI, estrategia tecnológica y gestión de riesgos y potenciar a mandos medios como sponsors de adopción. Incluye formación, coaching, OKR de transformación y un sistema de reconocimientos alineado a resultados digitales.",
         "areaEnfoque": "Cultura Organizacional",
         "objetivosClave": [
           "Alinear visión y prioridades digitales con OKR",
@@ -354,50 +354,58 @@
         ],
         "responsableSugerido": "CEO/CHRO con PMO de Transformación",
         "plazoEstimado": "3-6 meses",
-        "prioridad": "Media"
+        "prioridad": "P4"
       }
     ]
   },
   "resumenEjecutivo": {
-    "resumenGeneral": "El diagnóstico muestra una base digital sólida y homogénea. Las competencias centrales (análisis, alfabetización de datos, colaboración y ciberseguridad) promedian 7.41/10, lo que indica fundamentos bien establecidos. La madurez individual —adaptabilidad, resolución de problemas y proactividad— se sitúa en 7.19/10, suficiente para sostener iniciativas de cambio con un acompañamiento adecuado. El uso de IA alcanza 7.07/10, reflejando adopción pareja, interés por aprender y una consideración activa de aspectos éticos.\n\nLa cultura organizacional marca 6.94/10: hay un terreno fértil para el aprendizaje, el apoyo y la experimentación, aunque aún se requieren símbolos claros desde el liderazgo para escalar ambiciones. A nivel de roles, los mandos medios (6.94) traccionan la adopción, mientras que áreas críticas para el crecimiento —Comercial/Cliente (5.71) y Operaciones/Admin/Finanzas (5.85)— y habilitadores clave —Liderazgo (6.38) y Técnico/Producto (6.37)— son los principales cuellos de botella.\n\nEn síntesis, la organización está en “Nivel Competitivo” y a 0.66 puntos de la meta sectorial (7.86). Con un plan enfocado en comercial data-driven, digitalización operativa y gobierno de IA, es realista cerrar la brecha y capturar eficiencias y crecimiento en el corto y mediano plazo.",
+    "resumenGeneral": [
+      "El diagnóstico de transformación digital del Banco de Guayaquil muestra un nivel general de madurez de 70.",
+      "Las fortalezas incluyen competencias digitales robustas, proactividad en la adopción de tecnología, liderazgo claro en visión digital y cultura de experimentación.",
+      "Las oportunidades se concentran en fortalecer el apoyo institucional, acelerar la adopción práctica de IA, y mejorar la eficiencia comercial y operativa.",
+      "El plan de acción propuesto prioriza iniciativas en estas áreas con horizonte de 3–9 meses, buscando impacto medible y resultados sostenibles."
+    ],
     "puntuacionGeneral": {
-      "puntuacion": 7.21
+      "puntuacion": 7.51
     },
     "puntuacionesDimensiones": [
       {
         "nombre": "Madurez Digital",
-        "puntuacion": 7.19,
+        "puntuacion": 7.66,
         "color": "#F59E0B"
       },
       {
         "nombre": "Competencias Digitales",
-        "puntuacion": 7.41,
+        "puntuacion": 7.8,
         "color": "#EF4444"
       },
       {
         "nombre": "Uso de IA",
-        "puntuacion": 7.07,
+        "puntuacion": 6.99,
         "color": "#8B5CF6"
       },
       {
         "nombre": "Cultura Digital",
-        "puntuacion": 6.94,
+        "puntuacion": 7.59,
         "color": "#10B981"
       }
     ],
     "fortalezas": [
-      "Competencias digitales núcleo en 7.41/10 (análisis, alfabetización de datos, colaboración y ciberseguridad) con práctica consistente.",
-      "Madurez individual en 7.19/10: adaptabilidad, resolución de problemas y proactividad digital alineadas.",
-      "Uso de IA equilibrado en 7.07/10: adopción, habilidad y ética/validación presentes.",
-      "Mandos medios en 6.94/10 impulsando adopción y monitoreo del rendimiento."
+      "Alta adaptabilidad y capacidad de resolución de problemas digitales, con ciclos de mejora continua institucionalizados.",
+      "Proactividad digital y cultura de experimentación que permiten innovar con riesgos controlados.",
+      "Competencias clave sólidas en análisis de datos, alfabetización de datos, ciberseguridad y colaboración digital.",
+      "Liderazgo y visión digital claros, impulsando dirección estratégica y motivando a los equipos.",
+      "Reconocimiento y motivación que refuerzan el compromiso de los colaboradores hacia la transformación digital."
     ],
     "oportunidades": [
-      "Función Comercial/Cliente en 5.71/10: CRM, analítica de cliente, automatización de marketing, SEO y paid media por fortalecer.",
-      "Operaciones/Admin/Finanzas en 5.85/10: digitalización de procesos y aprovechamiento de ERP/gestión.",
-      "Rol Técnico/Producto en 6.37/10: prácticas de desarrollo, cloud, gestión de código y uso de IA en desarrollo.",
-      "Liderazgo en 6.38/10: BI, exploración tecnológica, estrategia y gestión de riesgos para dar dirección y escala."
+      "Incrementar el uso práctico y adopción de Inteligencia Artificial en diferentes roles y procesos.",
+      "Fortalecer el apoyo organizacional y recursos para iniciativas digitales de mayor impacto.",
+      "Ampliar el ambiente de aprendizaje para consolidar competencias digitales de manera continua.",
+      "Mejorar eficiencia operativa y comercial mediante digitalización de procesos y CRM/automatización de marketing.",
+      "Potenciar liderazgo y mandos medios como sponsors de adopción de tecnología con métricas y OKR."
     ]
-  },
+  }
+,
   "footer": {
     "anio": "2025",
     "texto": "Skilt. Todos los derechos reservados."
