@@ -1,11 +1,11 @@
 {
   "header": {
     "empresa": "Banco de Guayaquil",
-    "fechaDiagnostico": "jueves, 25 de septiembre de 2025",
+    "fechaDiagnostico": "Viernes, 26 de septiembre de 2025",
     "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
     "idReporte": "TBjwOGHs",
     "empleadosEvaluados": "2399",
-    "provider": "openai",
+    "provider": "OpenAI",
     "model": "gpt-5",
     "schemaVersion": "1.0.0",
     "promptVersion": "1.0.0",

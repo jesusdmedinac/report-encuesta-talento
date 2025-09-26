@@ -43,19 +43,10 @@ const fechaMostrada = generatedAt
                 <span class="meta-label">Motor:</span>
                 <span class="badge provider">{provider}</span>
                 {model && <span class="badge model">{model}</span>}
-                {generationMode && <span class={`badge mode ${generationMode}`}>{generationMode}</span>}
               </div>
             )}
         </div>
     </div>
-    <nav class="container">
-      <ul class="flex gap-4">
-        <li><a href="/respuestas" class="text-primary hover:underline">Respuestas</a></li>
-        {providers.map(provider => (
-          <li ><a href={`/${provider}`} class="text-primary hover:underline">{provider}</a></li>
-        ))}
-      </ul>
-    </nav>
     <div class="container">
       <h1>{titulo}</h1>
     </div>
