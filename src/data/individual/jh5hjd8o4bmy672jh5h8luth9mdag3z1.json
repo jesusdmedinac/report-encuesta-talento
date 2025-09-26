@@ -6,7 +6,7 @@
     "generator": "generate-individual-reports.mjs"
   },
   "header": {
-    "empresa": "Banco de Guayaquil",
+    "empresa": "Banco Guayaquil",
     "generatedAt": "2025-09-24T01:46:30.496Z",
     "schema": "individual-1.0",
     "id": "jh5hjd8o4bmy672jh5h8luth9mdag3z1",

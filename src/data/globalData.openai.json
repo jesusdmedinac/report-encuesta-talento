@@ -1,8 +1,8 @@
 {
   "header": {
-    "empresa": "Banco de Guayaquil",
+    "empresa": "Banco Guayaquil",
     "fechaDiagnostico": "Viernes, 26 de septiembre de 2025",
-    "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
+    "titulo": "Reporte de Transformación Digital para Banco Guayaquil",
     "idReporte": "TBjwOGHs",
     "empleadosEvaluados": "2399",
     "provider": "OpenAI",
@@ -35,7 +35,7 @@
   "brechaDigital": {
     "puntuacionEmpresa": 7.66,
     "puntuacionPromedioSector": 6.75,
-    "nombreEmpresa": "Banco de Guayaquil",
+    "nombreEmpresa": "Banco Guayaquil",
     "textoNivelActual": "Nivel Competitivo",
     "textoOportunidadParrafo": "Fortalecer el frente comercial con una operación data-driven y marketing automatizado, estandarizar procesos con herramientas de gestión/ERP y acelerar un gobierno de IA que priorice casos de alto impacto con criterios de ética y verificación.",
     "parrafo1": "El estado actual evidencia fundamentos robustos: competencias clave, hábitos digitales y cultura. Sin embargo, el promedio organizacional se ve tensionado por funciones esenciales para la captura de valor (Comercial/Cliente) y la eficiencia (Operaciones/Admin/Finanzas), además de un liderazgo tecnológico y capacidades técnico/producto que aún no escalan su impacto transversal.",
@@ -44,7 +44,7 @@
   "madurezDigital": {
     "puntuacionGeneral": 7.66,
     "puntuacionPromedioSector": 6.75,
-    "nombreEmpresa": "Banco de Guayaquil",
+    "nombreEmpresa": "Banco Guayaquil",
     "parrafoIntroductorio": "La madurez digital alcanza 7.19/10: los equipos absorben el cambio con soltura y convierten la experiencia en mejoras continuas. El desafío está en expandir la proactividad digital a todas las áreas.",
     "componentes": [
       {
@@ -360,7 +360,7 @@
   },
   "resumenEjecutivo": {
     "resumenGeneral": [
-      "El diagnóstico de transformación digital del Banco de Guayaquil muestra un nivel general de madurez de 70.",
+      "El diagnóstico de transformación digital del Banco Guayaquil muestra un nivel general de madurez de 70.",
       "Las fortalezas incluyen competencias digitales robustas, proactividad en la adopción de tecnología, liderazgo claro en visión digital y cultura de experimentación.",
       "Las oportunidades se concentran en fortalecer el apoyo institucional, acelerar la adopción práctica de IA, y mejorar la eficiencia comercial y operativa.",
       "El plan de acción propuesto prioriza iniciativas en estas áreas con horizonte de 3–9 meses, buscando impacto medible y resultados sostenibles."

@@ -1,8 +1,8 @@
 {
   "header": {
-    "empresa": "Banco de Guayaquil",
+    "empresa": "Banco Guayaquil",
     "fechaDiagnostico": "Viernes, 26 de septiembre de 2025",
-    "titulo": "Reporte de Transformación Digital para Banco de Guayaquil",
+    "titulo": "Reporte de Transformación Digital para Banco Guayaquil",
     "idReporte": "TBjwOGHs",
     "empleadosEvaluados": "2399",
     "provider": "Google",
@@ -35,7 +35,7 @@
   "brechaDigital": {
     "puntuacionEmpresa": 7.8,
     "puntuacionPromedioSector": 6.75,
-    "nombreEmpresa": "Banco de Guayaquil",
+    "nombreEmpresa": "Banco Guayaquil",
     "textoNivelActual": "Nivel Competitivo en Desarrollo",
     "textoOportunidadParrafo": "Con un percentil general actual de 60%, la organización se posiciona en un nivel competitivo, pero con un significativo potencial de crecimiento. Esta brecha no representa una debilidad, sino una clara hoja de ruta. Cerrar esta diferencia significa evolucionar de ser un competidor sólido a convertirse en un líder y referente de la industria, capitalizando la tecnología para crear ventajas competitivas duraderas.",
     "parrafo1": "El estado actual de la madurez digital de la empresa puede describirse como una base sólida con una ejecución desigual. Por un lado, la organización posee competencias digitales fundamentales impresionantes, lo que indica que el talento tiene las habilidades necesarias. Sin embargo, la aplicación de estas habilidades en funciones críticas de negocio, como la gestión comercial y las operaciones, es considerablemente menor. Este desequilibrio sugiere que el potencial tecnológico no se está aprovechando al máximo en las áreas que impulsan directamente los ingresos y la eficiencia.",
@@ -44,7 +44,7 @@
   "madurezDigital": {
     "puntuacionGeneral": 7.66,
     "puntuacionPromedioSector": 6.75,
-    "nombreEmpresa": "Banco de Guayaquil",
+    "nombreEmpresa": "Banco Guayaquil",
     "parrafoIntroductorio": "La madurez digital promedia 60%, ubicando a la organización en un nivel competitivo. Esto significa que cuenta con capacidades consistentes para operar con herramientas digitales y resolver problemas de negocio, y que está en condiciones de capturar beneficios rápidos si se estandarizan prácticas y se escalan iniciativas de alto impacto.",
     "componentes": [
       {
@@ -327,7 +327,7 @@
   },
   "resumenEjecutivo": {
     "resumenGeneral": [
-      "Con una puntuación general de 70, Banco de Guayaquil demuestra una madurez digital competitiva, superando la media del sector (60).",
+      "Con una puntuación general de 70, Banco Guayaquil demuestra una madurez digital competitiva, superando la media del sector (60).",
       "La principal fortaleza de la organización es el avanzado nivel de sus competencias digitales (70), un activo fundamental que indica que el talento posee las habilidades necesarias para la transformación.",
       "Sin embargo, existe una brecha crítica entre este potencial y su aplicación en funciones de negocio clave. Las áreas Comercial/Cliente y Operaciones/Finanzas (5.85) muestran una madurez significativamente menor, lo que representa la principal área de oportunidad.",
       "La cultura organizacional es sólida, apalancada en un liderazgo con visión y una cultura de experimentación, aunque se debe reforzar el ambiente de aprendizaje.",

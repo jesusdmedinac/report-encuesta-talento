@@ -193,14 +193,14 @@ Ejemplos:
 # Gemini por defecto
 ./generate.sh --provider=gemini \
   --csv=./data/respuestas-por-puntos.csv \
-  --empresa="Banco de Guayaquil" \
+  --empresa="Banco Guayaquil" \
   --reportId="TBjwOGHs" \
   --model="gemini-2.5-pro"
 
 # OpenAI (mantiene gpt-5 por defecto si no se pasa --model)
 ./generate.sh --provider=openai \
   --csv=./data/respuestas-por-puntos.csv \
-  --empresa="Banco de Guayaquil" \
+  --empresa="Banco Guayaquil" \
   --reportId="TBjwOGHs" \
   --model="gpt-5"
 
@@ -209,7 +209,7 @@ REFRESH_OPEN_ENDED=1 ./generate.sh --provider=gemini --refresh-open-ended
 
 # Usar variables de entorno para defaults
 CSV_PATH=./data/respuestas-por-puntos.csv \
-EMPRESA="Banco de Guayaquil" \
+EMPRESA="Banco Guayaquil" \
 REPORT_ID=TBjwOGHs \
 MODEL=gemini-2.5-pro \
 ./generate.sh --provider=gemini

@@ -26,7 +26,7 @@ PROVIDER=${PROVIDER_ARG:-${PROVIDER:-gemini}}
 
 # Defaults (overridable via env)
 CSV_PATH_DEFAULT="${CSV_PATH:-./data/respuestas-por-puntos.csv}"
-EMPRESA_DEFAULT="${EMPRESA:-Banco de Guayaquil}"
+EMPRESA_DEFAULT="${EMPRESA:-Banco Guayaquil}"
 REPORT_ID_DEFAULT="${REPORT_ID:-TBjwOGHs}"
 
 # Choose model default per provider (overridable via env MODEL or --model)
