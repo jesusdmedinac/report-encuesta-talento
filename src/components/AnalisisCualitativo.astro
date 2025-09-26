@@ -33,7 +33,7 @@ function sentimentColor(s) {
     {Object.entries(data.preguntas || {}).map(([code, detalle]: any) => (
       <div class="pregunta-card">
         <header class="card-header">
-          <h3 style="color: white">{code}</h3>
+          <h3 style="color: white">{detalle.pregunta}</h3>
           {detalle.metricaSentimiento && (
             <span class="badge" style={`background-color: ${sentimentColor(detalle.metricaSentimiento)}`}>{detalle.metricaSentimiento}</span>
           )}
@@ -44,18 +44,14 @@ function sentimentColor(s) {
           {(detalle.temas || []).map((t: any) => (
             <div class="tema">
               <div class="tema-head">
-                <span class="tema-id">{t.id}</span>
-                <h4>{t.etiqueta}</h4>
+                <h4 class="chips">
+                  <span class="chip">{t.etiqueta}</span>
+                </h4>
                 {typeof t.conteo !== 'undefined' && <span class="conteo">{t.conteo}</span>}
               </div>
-              {Array.isArray(t.palabrasClave) && t.palabrasClave.length > 0 && (
-                <div class="chips">
-                  {t.palabrasClave.slice(0, 6).map((k: string) => (<span class="chip">{k}</span>))}
-                </div>
-              )}
               {Array.isArray(t.citas) && t.citas.length > 0 && (
                 <ul class="citas">
-                  {t.citas.slice(0, 3).map((c: string) => (<li>“{c}”</li>))}
+                  {t.citas.slice(0, 3).map((c: string) => (<li>{c}</li>))}
                 </ul>
               )}
             </div>
